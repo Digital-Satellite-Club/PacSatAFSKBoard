@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Conn_Samtec")(type "KiCad")(uri "${KIPRJMOD}/symbols/Conn_Samtec.kicad_sym")(options "")(descr ""))
+  (lib (name "PACSAT_Minicircuits")(type "KiCad")(uri "${KIPRJMOD}/symbols/PACSAT_Minicircuits.kicad_sym")(options "")(descr ""))
+  (lib (name "PACSAT_ICs")(type "KiCad")(uri "${KIPRJMOD}/symbols/PACSAT_ICs.kicad_sym")(options "")(descr ""))
+)
