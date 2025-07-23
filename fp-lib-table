@@ -1,3 +1,11 @@
 (fp_lib_table
   (version 7)
+  (lib (name "PacSatDev_misc")(type "KiCad")(uri "${KIPRJMOD}/footprints/PacSatDev_misc.pretty")(options "")(descr ""))
+  (lib (name "PacSatDev_samtec")(type "KiCad")(uri "${KIPRJMOD}/footprints/PacSatDev_samtec.pretty")(options "")(descr ""))
+  (lib (name "PacSatDev_ti")(type "KiCad")(uri "${KIPRJMOD}/footprints/PacSatDev_ti.pretty")(options "")(descr ""))
+  (lib (name "PacSatDev_maxim")(type "KiCad")(uri "${KIPRJMOD}/footprints/PacSatDev_maxim.pretty")(options "")(descr ""))
+  (lib (name "PacSatDev_everspin")(type "KiCad")(uri "${KIPRJMOD}/footprints/PacSatDev_everspin.pretty")(options "")(descr ""))
+  (lib (name "PacSatDev_murata")(type "KiCad")(uri "${KIPRJMOD}/footprints/PacSatDev_murata.pretty")(options "")(descr ""))
+  (lib (name "PacSatDev_onsemi")(type "KiCad")(uri "${KIPRJMOD}/footprints/PacSatDev_onsemi.pretty")(options "")(descr ""))
+  (lib (name "PacSatDev_MiniCircuits")(type "KiCad")(uri "${KIPRJMOD}/footprints/PacSatDev_MiniCircuits.pretty")(options "")(descr ""))
 )
