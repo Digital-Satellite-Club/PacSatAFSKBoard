@@ -1772,12 +1772,6 @@
 		(uuid "e5af88ac-3736-4e65-8871-b901b8f0ea7a")
 	)
 	(junction
-		(at 71.12 146.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "05c0052b-23de-4db4-8892-6045844d175b")
-	)
-	(junction
 		(at 303.53 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1836,12 +1830,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "66352501-699f-4cd9-873a-8f214170406c")
-	)
-	(junction
-		(at 71.12 161.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "70aa8b8e-e9c8-4287-9f4f-77f40fdaa411")
 	)
 	(junction
 		(at 261.62 71.12)
@@ -1979,16 +1967,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 146.05) (xy 71.12 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a734f80-a136-48b9-9cab-5676a504f644")
-	)
-	(wire
-		(pts
 			(xy 255.27 124.46) (xy 261.62 124.46)
 		)
 		(stroke
@@ -2016,16 +1994,6 @@
 			(type default)
 		)
 		(uuid "26d86092-dba1-46ea-a47a-a74bae815c37")
-	)
-	(wire
-		(pts
-			(xy 58.42 161.29) (xy 71.12 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2805fdd1-7784-4ac1-a09e-274cf7b188ea")
 	)
 	(wire
 		(pts
@@ -2509,16 +2477,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 157.48) (xy 58.42 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "926189d3-4349-4816-9fb0-0b5fd3b8995f")
-	)
-	(wire
-		(pts
 			(xy 123.19 82.55) (xy 123.19 85.09)
 		)
 		(stroke
@@ -2626,16 +2584,6 @@
 			(type default)
 		)
 		(uuid "a7e1c73f-18f2-417a-bbe3-2278929e0e04")
-	)
-	(wire
-		(pts
-			(xy 58.42 149.86) (xy 58.42 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8cbd2c0-76d0-4b16-9650-2b7ef14478f5")
 	)
 	(wire
 		(pts
@@ -5344,7 +5292,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AB26T-32.768KHZ-6B"
+		(property "Value" "32.768kHz"
 			(at 67.31 163.83 90)
 			(effects
 				(font
@@ -5353,7 +5301,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_AT310_D3.0mm_L10.0mm_Horizontal"
+		(property "Footprint" "Crystal:Crystal_SMD_EuroQuartz_EQ161-2Pin_3.2x1.5mm"
 			(at 71.12 153.67 0)
 			(effects
 				(font
@@ -5802,71 +5750,6 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
 					(reference "#FLG027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 58.42 153.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dffef99d-96f1-4215-a630-f5ea71b4c6ff")
-		(property "Reference" "C27"
-			(at 55.245 158.115 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "6p"
-			(at 62.23 151.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 59.3852 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 58.42 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4bf94981-d8b6-4d08-afd8-a2a70e914df8")
-		)
-		(pin "2"
-			(uuid "59340616-76a7-4cf4-8c22-a70ec4fff374")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "C27")
 					(unit 1)
 				)
 			)

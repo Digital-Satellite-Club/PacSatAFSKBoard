@@ -1,0 +1,82 @@
+
+# TODO
+
+Replace the 4 512Kx8 MRAM chips with one 2Mx8 like the Avalanche 
+AS1016204-0108X0PWAY.
+
+Replace the DC/DC converters to ones that have the inductor built in,
+to save space.
+
+Choose one oscillator and remove the other one.
+
+Rotate the CPU so that fewer traces need to be routed under the CPU.
+Perhaps replace the CPU with a BGA version to save space, the BGA is
+16x16mm verses 22x22mm for the flat pack.  This could also provide
+more FLASH and RAM space.
+
+Replace the RTC with one that is temperature rated.  Probably only the
+MCP7940NT-E/MS from Microchip is suitable.
+
+Possibly rework board stack to have .1mm between the top layer and the
+ground layer to reduce trace size required for 50 ohms.
+
+Look at replacing the second from bottom layer with a ground layer so
+the bottom layer can be used to route RF traces.  This may not be
+necessary, though, with careful layout.
+
+Figure out where the external RF connections need to be so the layout
+can be simplified around that.
+
+Possibly replace temperature sensor chips with thermsistors to reduce
+space usage and power usage.
+
+Add CAN bus.
+
+Wire VER_BIT2 to the PC104 connector.
+
+Figure out the best way to handle the RX side of the AX5043 chips.  A
+single-ended design would save a lot of board space because you can
+get rid of one RF power splitter and the balun.  The AX5043 docs are
+kind of sparse about how to do that, there's no mention of input
+impedance on the receive side, and the transmit impedance info is
+unhelpful.  But the full RF filter input as shown in the documentation
+probably isn't required.  Maybe a balun on each RF input would be
+enough to match impedance, since the signal is already filtered.
+
+Replace receive side with LNA not requiring negative bias.  Probably
+use a Qorvo QPL9547 due to its low NF.  Or maybe a GuerillaRF GRF2106W
+which doesn't perform quite as well but uses a lot less power.
+
+Put filters on each side of the LNA.
+
+Route signals directly, don't use RF jumpers.
+
+Make the 5V regulator optional or remove it.
+
+Rework transmit RF side.  At least replace the filter with a new one,
+probably the LFCG-490+ from MiniCircuits, which also happens to be
+temperature rated.
+
+Decoupling, at least on 1.2V, seem inadequate.  Check that out.
+
+Replace unobtanium parts.
+
+Figure out temperature ratings on all chips and get as many to be 105C
+or better as possible.
+
+
+# 2025-07-23
+
+The Address notes on the two MAX31725MTA+ temperature sensors were
+backwards.  Switched the notes so they match the schematic.
+
+VER_BIT2 is not wired to the PC104.
+
+# 2025-07-24
+
+Fixed all wiring that was wrong due to schematic changes.
+
+Changed the RTC crystal to a SMD one and remove the capacitor.  The
+datasheet says no capacitor is required.
+
+Cleaned up some crazy traces.
