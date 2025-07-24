@@ -7,7 +7,8 @@ AS1016204-0108X0PWAY.
 Replace the DC/DC converters to ones that have the inductor built in,
 to save space.
 
-Choose one oscillator and remove the other one.
+Choose one oscillator and remove the other one.  Actually, just
+replace with a "O 16,0-JT22CT-A-P-3,3-LF" from Jauch.
 
 Rotate the CPU so that fewer traces need to be routed under the CPU.
 Perhaps replace the CPU with a BGA version to save space, the BGA is

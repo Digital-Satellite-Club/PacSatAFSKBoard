@@ -62,7 +62,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "PacSat_Dev_RevD_240614.kicad_prl",
+    "filename": "PacSat_AFSK.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
