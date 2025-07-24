@@ -1,0 +1,252 @@
+(footprint "Oscillator_SMD_CTS_4X5mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "https://foxonline.com/wp-content/uploads/pdfs/T5HN_T5HV.pdf")
+	(tags "Fox TXCO temperature compensated oscillator")
+	(property "Reference" "Y601"
+		(at 3.3782 2.3622 270)
+		(layer "F.SilkS")
+		(uuid "620d8ddd-22e8-4e04-b9a3-3e3d077d65f7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "588S160X2CAT"
+		(at -0.0254 4.2418 180)
+		(layer "F.Fab")
+		(uuid "b856d748-9a4f-46ce-b76b-cf3555b91116")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://foxonline.com/wp-content/uploads/pdfs/T5HN_T5HV.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc1b554c-3a2b-4e41-a649-47f95356f891")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ba8b02b4-fd31-4740-ac7f-611ea019bf70")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.1082 -1.4826)
+		(end -2.5582 -1.4826)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "297480b9-d995-42a5-a607-cd3fe107de39")
+	)
+	(fp_line
+		(start -2.1082 1.27)
+		(end -2.1082 -1.4826)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4e8f0253-622c-408f-8009-14141a0502f2")
+	)
+	(fp_line
+		(start -1.1628 -2.7432)
+		(end -1.1628 -3.2432)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ab536cee-8215-480f-bdfd-e26160ecf205")
+	)
+	(fp_line
+		(start -1.1628 -2.7432)
+		(end 1.0668 -2.7432)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "13f5b6cf-8553-4eaf-ad9a-eb7b89b3003c")
+	)
+	(fp_line
+		(start 0.35 2.6)
+		(end -0.35 2.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4f6dcfac-0746-457d-a6da-d839596b998f")
+	)
+	(fp_line
+		(start 2.5146 -1.5826)
+		(end 2.5146 1.524)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c64e7877-117e-422e-864d-fb7be75ee19b")
+	)
+	(fp_line
+		(start -2.6924 -3.3274)
+		(end 2.6924 -3.3274)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fe1255a2-43b4-4e75-8c4a-ebf0f8118686")
+	)
+	(fp_line
+		(start -2.6924 3.3528)
+		(end -2.6924 -3.3274)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a0c82aed-0ac1-4156-9b14-266b6076fbdc")
+	)
+	(fp_line
+		(start 2.6924 -3.3274)
+		(end 2.6924 3.3528)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6ac781e2-1c5d-477c-aff1-914122989d25")
+	)
+	(fp_line
+		(start 2.6924 3.3528)
+		(end -2.6924 3.3528)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7ad39447-95f0-412a-85a2-ab9d7792c553")
+	)
+	(fp_line
+		(start -1.6 -1.7)
+		(end -0.9 -2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6142a43e-a8bb-4c07-abe9-7639fe38f53c")
+	)
+	(fp_line
+		(start -1.6 2.5)
+		(end -1.6 -1.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "31a1d2f1-5fd6-4518-a246-a09b5bf2ccd2")
+	)
+	(fp_line
+		(start -0.9 -2.5)
+		(end 1.6 -2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "62ecbebf-c622-4c28-8809-c57dc6662d99")
+	)
+	(fp_line
+		(start 1.6 -2.5)
+		(end 1.6 2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6c92114b-bbee-4088-ba89-9c0296b38c11")
+	)
+	(fp_line
+		(start 1.6 2.5)
+		(end -1.6 2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d0d2fc23-a0a5-431f-88fc-0b3ba7d5339f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 270)
+		(layer "F.Fab")
+		(uuid "04d2f6da-e586-49b1-b211-6df1e5ce7654")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2 -2.5 270)
+		(size 1.6 1.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "748ee431-6b91-4c4a-bd19-918f21c4a420")
+	)
+	(pad "2" smd rect
+		(at -2 2.5 270)
+		(size 1.6 1.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "661b86e4-d0c4-4a36-8fd8-8481870e1450")
+	)
+	(pad "3" smd rect
+		(at 2 2.5 270)
+		(size 1.6 1.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d4258189-753a-485c-a34b-bf8040592233")
+	)
+	(pad "4" smd rect
+		(at 2 -2.5 270)
+		(size 1.6 1.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5d1bca04-5554-4cfd-a587-b47e3b421a92")
+	)
+	(embedded_fonts no)
+	(model "${KICAD6_3DMODEL_DIR}/Oscillator.3dshapes/Oscillator_SMD_Fox_FT5H_5.0x3.2mm.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

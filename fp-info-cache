@@ -1,4 +1,4 @@
-42079259695156
+61365824354531
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -72058,12 +72058,61 @@ MMCX
 5
 5
 PacSatDev_misc
+Mini-Circuits_HF1139_LandPatternPL-230
+Footprint for Mini-Circuits case HF1139 (https://ww2.minicircuits.com/case_style/HF1139.pdf) following land pattern PL-230, including GND vias (https://ww2.minicircuits.com/pcb/98-pl230.pdf)
+Mini-Circuits PL-230
+0
+37
+8
+PacSatDev_misc
 Mini-Circuits_HF1485-1
 Footprint for Mini-Circuits case HF1139 (https://ww2.minicircuits.com/case_style/HF1139.pdf)
 Mini-Circuits HF1139
 0
 8
 8
+PacSatDev_misc
+Oscillator_SMD_CTS_4X5mm
+https://foxonline.com/wp-content/uploads/pdfs/T5HN_T5HV.pdf
+Fox TXCO temperature compensated oscillator
+0
+4
+4
+PacSatDev_misc
+PacSat_Dev_4_26
+
+
+0
+104
+104
+PacSatDev_misc
+RF_SHIELD_BMI_S_201_F_U201
+
+
+0
+5
+5
+PacSatDev_misc
+RF_SHIELD_BMI_S_201_F_U301
+
+
+0
+5
+5
+PacSatDev_misc
+RF_SHIELD_BMI_S_202_F_U401
+
+
+0
+5
+5
+PacSatDev_misc
+RF_SHIELD_BMI_S_202_F_U501
+
+
+0
+5
+5
 PacSatDev_misc
 RF_SHIELD_PAD
 
@@ -72085,6 +72134,34 @@ TB-471
 0
 4
 4
+PacSatDev_misc
+TDFN-10-1EP_3x3mm_P0.5mm_EP0.9x2mm
+TDFN, 10 Pin (https://pdfserv.maximintegrated.com/package_dwgs/21-0429.PDF), generated with kicad-footprint-generator ipc_noLead_generator.py
+TDFN NoLead
+0
+13
+11
+PacSatDev_misc
+U_FL
+
+
+0
+3
+3
+PacSatDev_misc
+U_FL SMD
+
+
+0
+3
+3
+PacSatDev_misc
+Wire_Hole
+
+
+0
+1
+1
 PacSatDev_murata
 L_0603
 Inductor SMD 0603
