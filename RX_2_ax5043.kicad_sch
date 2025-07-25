@@ -4826,7 +4826,7 @@
 				)
 			)
 		)
-		(property "Footprint" "IND6_WBC1"
+		(property "Footprint" "PacSatDev_misc:IND6_WBC1"
 			(at 166.37 123.19 0)
 			(effects
 				(font

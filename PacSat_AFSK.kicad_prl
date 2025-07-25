@@ -6,20 +6,20 @@
     "hidden_netclasses": [],
     "hidden_nets": [
       "GND",
-      "+1V2",
-      "+5V",
+      "+1.2V",
+      "VSYS",
       "REG_3V3",
       "REG_1V2",
       "AX5043_EN_RX1",
       "AX5043_SEL4",
-      "REG_5.0V"
+      "+5V"
     ],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
       "pads": 1.0,
-      "shapes": 1.0,
+      "shapes": 0.75,
       "tracks": 1.0,
       "vias": 1.0,
       "zones": 0.6600000262260437
@@ -41,6 +41,7 @@
     "visible_items": [
       "vias",
       "footprint_text",
+      "footprint_anchors",
       "ratsnest",
       "grid",
       "footprints_front",
@@ -48,9 +49,12 @@
       "footprint_values",
       "footprint_references",
       "tracks",
+      "drc_errors",
       "bitmaps",
       "pads",
       "zones",
+      "drc_warnings",
+      "drc_exclusions",
       "shapes"
     ],
     "visible_layers": "00000000_00000000_000c1020_ffffffff",
