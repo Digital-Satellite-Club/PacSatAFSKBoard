@@ -15,6 +15,8 @@ Perhaps replace the CPU with a BGA version to save space, the BGA is
 16x16mm verses 22x22mm for the flat pack.  This could also provide
 more FLASH and RAM space.
 
+Replace big capacitors with smaller ones, if possible.
+
 Replace the RTC with one that is temperature rated.  Probably only the
 MCP7940NT-E/MS from Microchip is suitable.
 
