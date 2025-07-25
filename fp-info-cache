@@ -1,4 +1,4 @@
-61365824354531
+63122610836163
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -72043,6 +72043,13 @@ GP731
 0
 12
 8
+PacSatDev_misc
+IND6_WBC1
+
+WBC1-1TL 
+0
+6
+6
 PacSatDev_misc
 L_Murata_LQH2MCNxxxx02_2.0x1.6mm
 Inductor, Murata, LQH2MCN_02 series, 1.6x2.0x0.9mm (https://search.murata.co.jp/Ceramy/image/img/P02/JELF243A-0053.pdf)

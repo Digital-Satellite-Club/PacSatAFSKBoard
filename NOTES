@@ -7,6 +7,14 @@ AS1016204-0108X0PWAY.
 Replace the DC/DC converters to ones that have the inductor built in,
 to save space.
 
+Move most power handling to the to right hand part of the board.
+
+Move the RX ax5043s to below and slightly left of the processor.  Move
+the RF chain to below that.
+
+Move the TX chain to the right side of the board under the power
+handling.
+
 Choose one oscillator and remove the other one.  Actually, just
 replace with a "O 16,0-JT22CT-A-P-3,3-LF" from Jauch.
 
@@ -69,6 +77,9 @@ or better as possible.
 
 
 # 2025-07-23
+
+The pins for AX5043_PWR_CTL moved (and I think was renamed) and there
+is a new PA_PWR_CTL line.
 
 The Address notes on the two MAX31725MTA+ temperature sensors were
 backwards.  Switched the notes so they match the schematic.
