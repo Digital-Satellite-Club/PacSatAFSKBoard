@@ -291,17 +291,6 @@
 		)
 		(uuid "524627b2-8471-48d9-b640-2ac6258da3af")
 	)
-	(text "800"
-		(exclude_from_sim no)
-		(at 271.78 88.9 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "80b216af-94b7-485f-9623-980be68f41aa")
-	)
 	(text "300"
 		(exclude_from_sim no)
 		(at 212.09 88.9 0)
@@ -1282,48 +1271,6 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
 					(page "14")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 270.51 74.93)
-		(size 52.07 15.24)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "e22fffe3-8634-4ceb-ab1d-aa069e09a85a")
-		(property "Sheetname" "SPI_CTL"
-			(at 270.51 74.0914 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "SPI_CTL.kicad_sch"
-			(at 270.51 90.8562 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
-					(page "10")
 				)
 			)
 		)
