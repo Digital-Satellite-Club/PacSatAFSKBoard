@@ -7,7 +7,8 @@ AS1016204-0108X0PWAY.
 Replace the DC/DC converters to ones that have the inductor built in,
 to save space.
 
-Move most power handling to the to right hand part of the board.
+Move most power handling and watchdogs to the to right hand part of
+the board.
 
 Move the RX ax5043s to below and slightly left of the processor.  Move
 the RF chain to below that.

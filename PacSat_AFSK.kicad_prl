@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 6,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -10,7 +10,7 @@
       "+5V",
       "REG_3V3",
       "REG_1V2",
-      "VSYS",
+      "AX5043_EN_RX1",
       "AX5043_SEL4",
       "REG_5.0V"
     ],
