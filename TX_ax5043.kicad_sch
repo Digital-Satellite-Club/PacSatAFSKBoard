@@ -1897,6 +1897,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 139.7) (xy 209.55 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f728b89-c155-4d3a-a7b9-3afd18ce9811")
+	)
+	(wire
+		(pts
 			(xy 163.83 139.7) (xy 168.91 139.7)
 		)
 		(stroke
@@ -2147,7 +2157,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 139.7) (xy 198.12 139.7)
+			(xy 190.5 139.7) (xy 196.85 139.7)
 		)
 		(stroke
 			(width 0)
@@ -2504,16 +2514,6 @@
 			(type default)
 		)
 		(uuid "a28d2524-775f-4d6b-a650-c84eed8b14ff")
-	)
-	(wire
-		(pts
-			(xy 205.74 139.7) (xy 209.55 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a29faeca-5fac-42d5-b493-c48dd29a6ad9")
 	)
 	(wire
 		(pts
@@ -2986,7 +2986,7 @@
 		(uuid "25271d87-b630-4610-bd81-50705971d8b0")
 	)
 	(label "TXa_N"
-		(at 205.74 139.7 0)
+		(at 204.47 139.7 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -3888,7 +3888,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015009")
 		(property "Reference" "L153"
-			(at 180.34 152.4 0)
+			(at 182.88 150.368 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3896,14 +3896,14 @@
 			)
 		)
 		(property "Value" "27n"
-			(at 186.69 152.4 0)
+			(at 185.928 150.114 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:L_Murata_LQH2MCNxxxx02_2.0x1.6mm"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 184.15 149.86 0)
 			(effects
 				(font
@@ -5072,7 +5072,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:L_Murata_LQH2MCNxxxx02_2.0x1.6mm"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 148.59 135.89 0)
 			(effects
 				(font
@@ -5308,7 +5308,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 201.93 139.7 90)
+		(at 200.66 139.7 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5316,7 +5316,7 @@
 		(dnp no)
 		(uuid "65847112-4791-484a-8010-b5b92ea0eaef")
 		(property "Reference" "L155"
-			(at 201.93 137.16 90)
+			(at 200.66 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5324,7 +5324,7 @@
 			)
 		)
 		(property "Value" "43n"
-			(at 201.93 142.24 90)
+			(at 200.66 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5332,7 +5332,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 201.93 139.7 0)
+			(at 200.66 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5341,7 +5341,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 139.7 0)
+			(at 200.66 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5350,7 +5350,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 201.93 139.7 0)
+			(at 200.66 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5598,7 +5598,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:L_Murata_LQH2MCNxxxx02_2.0x1.6mm"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 226.06 119.38 0)
 			(effects
 				(font
@@ -5728,7 +5728,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:L_Murata_LQH2MCNxxxx02_2.0x1.6mm"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 252.73 176.53 0)
 			(effects
 				(font
@@ -5879,12 +5879,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1V to 5.5V, 2A, 80mΩ Ultra-Low Leakage Load Switch, SOT23-6"
 			(at 346.71 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6282,7 +6283,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:L_Murata_LQH2MCNxxxx02_2.0x1.6mm"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 218.44 157.48 0)
 			(effects
 				(font
@@ -6547,7 +6548,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:L_Murata_LQH2MCNxxxx02_2.0x1.6mm"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 172.72 132.08 0)
 			(effects
 				(font

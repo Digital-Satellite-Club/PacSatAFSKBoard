@@ -4971,7 +4971,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:L_Murata_LQH2MCNxxxx02_2.0x1.6mm"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 204.47 168.91 0)
 			(effects
 				(font

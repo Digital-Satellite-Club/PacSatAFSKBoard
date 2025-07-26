@@ -1,6 +1,8 @@
 
 # TODO
 
+Find out why CURRENT_FAULT_U89 goes into two pins on the CPU.
+
 Replace the 4 512Kx8 MRAM chips with one 2Mx8 like the Avalanche 
 AS1016204-0108X0PWAY.
 

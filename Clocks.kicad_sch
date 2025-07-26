@@ -782,7 +782,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_SO:HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3x3.1mm"
+			(property "Footprint" "Package_SO:Texas_HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3.155x3.255mm"
 				(at -13.97 0 0)
 				(effects
 					(font
@@ -3728,7 +3728,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3x3.1mm"
+		(property "Footprint" "Package_SO:Texas_HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3.155x3.255mm"
 			(at 201.93 113.03 0)
 			(effects
 				(font

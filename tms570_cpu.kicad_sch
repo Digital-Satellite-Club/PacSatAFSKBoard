@@ -4622,6 +4622,10 @@
 		(uuid "019a67e5-b8d3-44ba-b278-a06776cad51e")
 	)
 	(no_connect
+		(at 281.94 175.26)
+		(uuid "0375fb41-fe65-41e3-9aaa-ffcfcdf5cd78")
+	)
+	(no_connect
 		(at 281.94 124.46)
 		(uuid "07880c0d-699d-499f-95e6-95229309d935")
 	)
@@ -4704,6 +4708,14 @@
 	(no_connect
 		(at 281.94 116.84)
 		(uuid "bedc9e6b-e552-47dc-a7f2-db8f333bdf2e")
+	)
+	(no_connect
+		(at 281.94 137.16)
+		(uuid "c12fa1e4-de7c-4e05-b491-939a1f6f86e7")
+	)
+	(no_connect
+		(at 250.19 204.47)
+		(uuid "d15eaebc-4738-4dee-a3cf-56bda0187974")
 	)
 	(no_connect
 		(at 255.27 72.39)
@@ -4862,16 +4874,6 @@
 			(type default)
 		)
 		(uuid "160ea0a7-a09f-44d0-b751-f647cb01f7f9")
-	)
-	(wire
-		(pts
-			(xy 281.94 175.26) (xy 292.1 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "179ef988-0f56-48d8-ab7b-6ba5a73d865b")
 	)
 	(wire
 		(pts
@@ -5732,16 +5734,6 @@
 			(type default)
 		)
 		(uuid "61225d76-6171-4baf-a026-9601d09ee821")
-	)
-	(wire
-		(pts
-			(xy 281.94 137.16) (xy 307.34 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6186b674-4bd4-4ce1-80af-8aaa326e1b73")
 	)
 	(wire
 		(pts
@@ -7145,16 +7137,6 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 204.47) (xy 250.19 212.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e605af3c-9c39-4956-91f8-60b45a7b98ef")
-	)
-	(wire
-		(pts
 			(xy 237.49 207.01) (xy 237.49 209.55)
 		)
 		(stroke
@@ -7973,28 +7955,6 @@
 			)
 		)
 	)
-	(global_label "MRAM_NCS2"
-		(shape input)
-		(at 292.1 175.26 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "63a6c84a-bb94-4ac7-8fef-ae4e53022977")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 308.2996 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "MRAM_CLK"
 		(shape input)
 		(at 204.47 59.69 90)
@@ -8013,28 +7973,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MRAM_NCS3"
-		(shape input)
-		(at 250.19 212.09 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right)
-		)
-		(uuid "684551ba-f350-4242-b680-10612307d6ad")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 250.19 228.2896 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -8448,28 +8386,6 @@
 		(uuid "b390d495-014d-409b-95b5-9f5030fad7ce")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 311.3112 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MRAM_NCS1"
-		(shape input)
-		(at 307.34 137.16 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "bbc0981e-0362-4864-94ed-c5088287fd05")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 323.5396 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)

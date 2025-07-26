@@ -1,4 +1,4 @@
-70136480357452
+75397067737336
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -72645,6 +72645,27 @@ CUBESAT_MOUNT_HOLE
 0
 1
 1
+PacSatDev_misc
+GE0805C-2_MNC
+
+LFCG-490+ 
+0
+8
+8
+PacSatDev_misc
+GE0805C-2_MNC-L
+
+LFCG-490+ 
+0
+8
+8
+PacSatDev_misc
+GE0805C-2_MNC-M
+
+LFCG-490+ 
+0
+8
+8
 PacSatDev_misc
 GP731
 
