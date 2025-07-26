@@ -7977,7 +7977,7 @@
 			)
 		)
 	)
-	(global_label "Optional Reset Push Button"
+	(global_label "Processor_Reset"
 		(shape input)
 		(at 115.57 88.9 180)
 		(fields_autoplaced yes)
@@ -7989,7 +7989,7 @@
 		)
 		(uuid "6d21f814-79a4-4cb5-8365-69917d5fb05d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.6236 88.9 0)
+			(at 94.1223 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)

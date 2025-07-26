@@ -23,11 +23,17 @@ Add CAN bus.
 
 Possibly switch the MRAM and AX5043 SPI busses to simplify routine.
 
+Chack the inductor on the LNA, really verify the whole thing.
+
 Figure out a way to disable the LNA from the CPU.
 
-Figure out how to hold the processor in reset until the power is good.
-Need power good output from the converters, maybe switch to a
-TPSM828302 for 1.2V and a LP3962 for 3.3V.
+Maybe switch to 0402 parts along the RF path to reduce stray
+inductance and capacitance.
+
+Does the JTAG interface need resistors on TCK and TDO (22 ohm)?
+That's pretty standard.
+
+Make sure there is enough room around each SMD to hand solder it.
 
 Route signals directly, don't use RF jumpers.
 
@@ -43,6 +49,10 @@ Figure out temperature ratings on all chips and get as many to be 105C
 or better as possible.
 
 # Done
+
+Figure out how to hold the processor in reset until the power is good.
+Need power good output from the converters, maybe switch to a
+TPSM828302 for 1.2V and a LP3962 for 3.3V.
 
 Replace big capacitors with smaller ones, if possible.
 
@@ -133,3 +143,8 @@ Left to do:
 * The rest of the TODO list.
 
 There should be no software visible changes from the changes today.
+
+# 2025-07-23
+
+Change the DC regulators to ones with power good pins and tie that in
+to processor reset.
