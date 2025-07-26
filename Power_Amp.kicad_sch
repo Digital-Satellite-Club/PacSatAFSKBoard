@@ -831,7 +831,7 @@
 					)
 				)
 			)
-			(property "Footprint" "GE0805C-2_MNC"
+			(property "Footprint" "PacSatDev_misc:GE0805C-2_MNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -858,14 +858,6 @@
 						(size 1.27 1.27)
 					)
 					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
 				)
 			)
 			(property "ki_keywords" "LFCG-490+"
@@ -3285,7 +3277,7 @@
 				)
 			)
 		)
-		(property "Footprint" "GE0805C-2_MNC"
+		(property "Footprint" "PacSatDev_misc:GE0805C-2_MNC"
 			(at 54.61 133.35 0)
 			(effects
 				(font
@@ -4931,7 +4923,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:L_Murata_LQH2MCNxxxx02_2.0x1.6mm"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 181.61 114.3 0)
 			(effects
 				(font
@@ -4998,7 +4990,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 322.58 142.24 0)
 			(effects
 				(font
@@ -5265,7 +5257,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:L_Murata_LQH2MCNxxxx02_2.0x1.6mm"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 340.36 142.24 0)
 			(effects
 				(font
@@ -6477,7 +6469,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:L_Murata_LQH2MCNxxxx02_2.0x1.6mm"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 224.79 142.24 0)
 			(effects
 				(font
@@ -6544,7 +6536,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:L_Murata_LQH2MCNxxxx02_2.0x1.6mm"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 237.49 142.24 0)
 			(effects
 				(font
@@ -6679,7 +6671,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:L_Murata_LQH2MCNxxxx02_2.0x1.6mm"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 297.18 142.24 0)
 			(effects
 				(font

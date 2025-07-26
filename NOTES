@@ -1,7 +1,55 @@
 
 # TODO
 
+Neaten up the spacing on the AX5043s.
+
+RF shields.
+
 Find out why CURRENT_FAULT_U89 goes into two pins on the CPU.
+
+Choose one oscillator and remove the other one.  Actually, just
+replace with a "O 16,0-JT22CT-A-P-3,3-LF" from Jauch.
+
+Replace the RTC with one that is temperature rated.  Probably only the
+MCP7940NT-E/MS from Microchip is suitable.
+
+Figure out where the external RF connections need to be so the layout
+can be simplified around that.
+
+Possibly replace temperature sensor chips with thermsistors to reduce
+space usage and power usage.
+
+Add CAN bus.
+
+Possibly switch the MRAM and AX5043 SPI busses to simplify routine.
+
+Figure out a way to disable the LNA from the CPU.
+
+Figure out how to hold the processor in reset until the power is good.
+Need power good output from the converters, maybe switch to a
+TPSM828302 for 1.2V and a LP3962 for 3.3V.
+
+Route signals directly, don't use RF jumpers.
+
+Rework transmit RF side.  At least replace the filter with a new one,
+probably the LFCG-490+ from MiniCircuits, which also happens to be
+temperature rated.
+
+Decoupling, at least on 1.2V, seem inadequate.  Check that out.
+
+Replace unobtanium parts.
+
+Figure out temperature ratings on all chips and get as many to be 105C
+or better as possible.
+
+# Done
+
+Replace big capacitors with smaller ones, if possible.
+
+Move the TX chain to the right side of the board under the power
+handling.
+
+Move JTAG next to processor.
 
 Replace the 4 512Kx8 MRAM chips with one 2Mx8 like the Avalanche 
 AS1016204-0108X0PWAY.
@@ -15,38 +63,9 @@ the board.
 Move the RX ax5043s to below and slightly left of the processor.  Move
 the RF chain to below that.
 
-Move the TX chain to the right side of the board under the power
-handling.
-
-Choose one oscillator and remove the other one.  Actually, just
-replace with a "O 16,0-JT22CT-A-P-3,3-LF" from Jauch.
-
-Move JTAG next to processor.
-
-Rotate the CPU so that fewer traces need to be routed under the CPU.
-Perhaps replace the CPU with a BGA version to save space, the BGA is
-16x16mm verses 22x22mm for the flat pack.  This could also provide
-more FLASH and RAM space.
-
-Replace big capacitors with smaller ones, if possible.
-
-Replace the RTC with one that is temperature rated.  Probably only the
-MCP7940NT-E/MS from Microchip is suitable.
-
 Possibly rework board stack to have .1mm between the top layer and the
 ground layer to reduce trace size required for 50 ohms.
-
-Look at replacing the second from bottom layer with a ground layer so
-the bottom layer can be used to route RF traces.  This may not be
-necessary, though, with careful layout.
-
-Figure out where the external RF connections need to be so the layout
-can be simplified around that.
-
-Possibly replace temperature sensor chips with thermsistors to reduce
-space usage and power usage.
-
-Add CAN bus.
+(This was already done.)
 
 Wire VER_BIT2 to the PC104 connector.
 
@@ -65,20 +84,20 @@ which doesn't perform quite as well but uses a lot less power.
 
 Put filters on each side of the LNA.
 
-Route signals directly, don't use RF jumpers.
-
 Make the 5V regulator optional or remove it.
+(Removed, but space left for it.)
 
-Rework transmit RF side.  At least replace the filter with a new one,
-probably the LFCG-490+ from MiniCircuits, which also happens to be
-temperature rated.
+# Not going to do
 
-Decoupling, at least on 1.2V, seem inadequate.  Check that out.
+Look at replacing the second from bottom layer with a ground layer so
+the bottom layer can be used to route RF traces.  This may not be
+necessary, though, with careful layout.
 
-Replace unobtanium parts.
+Rotate the CPU so that fewer traces need to be routed under the CPU.
+Perhaps replace the CPU with a BGA version to save space, the BGA is
+16x16mm verses 22x22mm for the flat pack.  This could also provide
+more FLASH and RAM space.
 
-Figure out temperature ratings on all chips and get as many to be 105C
-or better as possible.
 
 
 # 2025-07-23
@@ -99,3 +118,18 @@ Changed the RTC crystal to a SMD one and remove the capacitor.  The
 datasheet says no capacitor is required.
 
 Cleaned up some crazy traces.
+
+# 2025-07-24
+
+Reworked the board, basic layout is done and most details are handled.
+Left to do:
+
+* Clock handling
+
+* Rework of the TX power amplier.
+
+* Hooking everything up.
+
+* The rest of the TODO list.
+
+There should be no software visible changes from the changes today.

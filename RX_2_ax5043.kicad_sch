@@ -2070,6 +2070,12 @@
 		(uuid "ffb05137-ba4d-44d5-8740-e503c5ba122e")
 	)
 	(junction
+		(at 130.81 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0be25996-d9cf-47ca-9f7f-9eab96f303d1")
+	)
+	(junction
 		(at 190.5 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2287,6 +2293,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 118.11) (xy 130.81 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27de9d20-e49a-45f6-ac87-7981ddf96b42")
+	)
+	(wire
+		(pts
 			(xy 191.77 121.92) (xy 191.77 106.68)
 		)
 		(stroke
@@ -2327,6 +2343,26 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 101.6) (xy 130.81 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36c93019-886b-43d5-bd33-00b05c237545")
+	)
+	(wire
+		(pts
+			(xy 130.81 123.19) (xy 135.89 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "370f0b01-a472-4fe1-83e3-7290881e605e")
+	)
+	(wire
+		(pts
 			(xy 123.19 132.08) (xy 123.19 133.35)
 		)
 		(stroke
@@ -2337,7 +2373,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 123.19) (xy 135.89 123.19)
+			(xy 125.73 123.19) (xy 130.81 123.19)
 		)
 		(stroke
 			(width 0)
@@ -3037,6 +3073,28 @@
 					(size 1.524 1.524)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Port2_P"
+		(shape input)
+		(at 130.81 101.6 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "7564612d-3d47-4aec-bd9a-099254e3ee9e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 130.81 89.9495 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -3991,6 +4049,73 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/1e7123c2-80dc-43cd-b90a-12f3fe1af0cb"
 					(reference "#PWR0312")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 130.81 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7197fb1f-dda6-4ed6-ac0f-a925814b0312")
+		(property "Reference" "R120"
+			(at 132.588 113.1316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0R"
+			(at 132.588 115.443 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 129.032 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2b9387b3-3351-473a-92a3-fa9360a96aea")
+		)
+		(pin "2"
+			(uuid "2892bd59-5df7-4768-ad45-f969f6892014")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/1e7123c2-80dc-43cd-b90a-12f3fe1af0cb"
+					(reference "R120")
 					(unit 1)
 				)
 			)

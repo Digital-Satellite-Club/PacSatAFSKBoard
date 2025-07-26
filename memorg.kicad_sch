@@ -151,20 +151,20 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LocalFlash:QSPI_FLASH_WSON_8-pin"
+		(symbol "PACSAT_ICs:QSPI_FLASH_WSON_8-pin"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -7.62 7.62 0)
+			(property "Reference" "U13"
+				(at 10.16 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "QSPI in WSON-8"
-				(at 7.112 7.874 0)
+			(property "Value" "AS1016204-0108X0PWAY"
+				(at 0 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -180,7 +180,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "AS1016204-0108X0PWAY"
 				(at -7.62 7.62 0)
 				(effects
 					(font
@@ -189,12 +189,72 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "QSPI Memory"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "0.95mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "CREATOR" "ASHISH"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "IPC-7351B"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "v3.2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "VERIFIER" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "Everspin"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
@@ -1143,7 +1203,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LocalFlash:QSPI_FLASH_WSON_8-pin")
+		(lib_id "PACSAT_ICs:QSPI_FLASH_WSON_8-pin")
 		(at 82.55 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
