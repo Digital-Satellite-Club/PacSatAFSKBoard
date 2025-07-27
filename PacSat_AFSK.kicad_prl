@@ -1,12 +1,11 @@
 {
   "board": {
-    "active_layer": 6,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
     "hidden_nets": [
       "GND",
-      "+1.2V",
       "VSYS",
       "REG_3V3",
       "REG_1V2",

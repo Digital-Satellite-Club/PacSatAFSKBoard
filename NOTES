@@ -2,11 +2,9 @@
 # TODO
 
 Does it make sense to wire the UART to the PC104?  If so, do we need
-two of the on the PC104?  Shouldn't one be for a plugin connection?
+two of the on the PC104?  Shouldn't one be for a direct plugin?
 
 RF shields.
-
-Find out why CURRENT_FAULT_U89 goes into two pins on the CPU.
 
 Choose one oscillator and remove the other one.  Actually, just
 replace with a "O 16,0-JT22CT-A-P-3,3-LF" from Jauch.
@@ -22,9 +20,7 @@ space usage and power usage.
 
 Add CAN bus.
 
-Chack the inductor on the LNA, really verify the whole thing.
-
-Figure out a way to disable the LNA from the CPU.
+Check the inductor on the LNA, really verify the whole thing.
 
 Maybe switch to 0402 parts along the RF path to reduce stray
 inductance and capacitance.
@@ -97,6 +93,10 @@ Make the 5V regulator optional or remove it.
 (Removed, but space left for it.)
 
 Possibly switch the MRAM and AX5043 SPI busses to simplify routine.
+
+Figure out a way to disable the LNA from the CPU.
+
+Find out why CURRENT_FAULT_U89 goes into two pins on the CPU.
 
 # Not going to do
 
@@ -176,3 +176,11 @@ Move AX5043_SEL3 from pin 35 to pin 92
 Move AX5043_SEL4 from pin 35 to pin 96
 Move AX5043_SEL_TX from pin 124 to pin 97
 
+Added an LNA_ENABLE control on pin 89.
+
+Removed the CURRENT_FAULT_U89 signal from pins 73 and 74.  They don't
+go anywhere else and serve no purpose I can tell.
+
+Clocks are all set up and wired in.
+
+MRAM is wired in.

@@ -3033,7 +3033,7 @@
 			)
 		)
 	)
-	(global_label "Clock2"
+	(global_label "Clock_RX2"
 		(shape input)
 		(at 184.15 78.74 180)
 		(fields_autoplaced yes)
@@ -3045,7 +3045,7 @@
 		)
 		(uuid "30bb5b6a-6784-4669-9fcf-9dfa5913e110")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.756 78.74 0)
+			(at 169.5241 78.74 0)
 			(effects
 				(font
 					(size 1.524 1.524)

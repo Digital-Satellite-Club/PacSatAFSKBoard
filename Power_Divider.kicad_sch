@@ -1592,6 +1592,16 @@
 		)
 		(uuid "4b9c3654-c3e1-457b-bb8b-432c5045fd18")
 	)
+	(text "The processor pulls this up after reset\nso no pullup is required."
+		(exclude_from_sim no)
+		(at 184.658 157.734 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "57ee34e6-cc01-4cb0-b82e-f0db594501a7")
+	)
 	(text "Note 3\nAll RF circuits must have at least 2 vias on \nall connections between PCB planes."
 		(exclude_from_sim no)
 		(at 27.94 228.6 0)
@@ -1657,16 +1667,6 @@
 			(justify left bottom)
 		)
 		(uuid "9d096fbb-2354-42c0-8468-b696582bd672")
-	)
-	(text "Figure out a way to disable the LNA\nfrom the CPU."
-		(exclude_from_sim no)
-		(at 184.912 164.084 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-		)
-		(uuid "a89e552e-c333-4d33-b6db-b8439895c882")
 	)
 	(text "-1 dB"
 		(exclude_from_sim no)
@@ -1848,12 +1848,6 @@
 		(uuid "94a29b7a-b8cc-467e-b34a-00b35d272829")
 	)
 	(junction
-		(at 158.75 162.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9708bce5-d94f-4119-9ade-ae751f2cec08")
-	)
-	(junction
 		(at 189.23 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2020,16 +2014,6 @@
 			(type default)
 		)
 		(uuid "0bc21c3e-66b4-46a7-8f5d-9ae24c34f9c2")
-	)
-	(wire
-		(pts
-			(xy 161.29 162.56) (xy 158.75 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0de9c467-048a-4f3e-ba28-239db07c444d")
 	)
 	(wire
 		(pts
@@ -2293,16 +2277,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 151.13) (xy 158.75 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b413d8e-4cc1-4af5-b19c-7b8abd0a1eec")
-	)
-	(wire
-		(pts
 			(xy 334.01 91.44) (xy 334.01 100.33)
 		)
 		(stroke
@@ -2413,16 +2387,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 160.02) (xy 161.29 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64b652d2-4320-48fa-ba5c-1bf8b3b459ba")
-	)
-	(wire
-		(pts
 			(xy 340.36 109.22) (xy 340.36 110.49)
 		)
 		(stroke
@@ -2473,7 +2437,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 162.56) (xy 158.75 165.1)
+			(xy 158.75 151.13) (xy 158.75 165.1)
 		)
 		(stroke
 			(width 0)
@@ -2670,6 +2634,16 @@
 			(type default)
 		)
 		(uuid "ae8981a9-dfff-4c2e-8faf-be404935a0d5")
+	)
+	(wire
+		(pts
+			(xy 161.29 152.4) (xy 166.37 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1b35b48-ce4b-4e79-8007-7cefd420cc5e")
 	)
 	(wire
 		(pts
@@ -3040,6 +3014,28 @@
 			(justify left bottom)
 		)
 		(uuid "0066dc97-ea54-44e7-8da0-a88f39fd8fac")
+	)
+	(global_label "LNA_ENABLE"
+		(shape input)
+		(at 166.37 152.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "0758b480-a85a-4c6f-8bc4-0f5eda8d08ec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.8829 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "Port1_P"
 		(shape input)
@@ -3835,74 +3831,6 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
 					(reference "P604")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 161.29 156.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3b090f3e-7936-411e-91ef-84b7a1ee86b0")
-		(property "Reference" "R102"
-			(at 163.068 155.0416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100K"
-			(at 163.068 157.353 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 159.512 156.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 161.29 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 161.29 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "575a6200-96e2-4290-b79d-6c138f32b200")
-		)
-		(pin "2"
-			(uuid "95f7c81a-d1f2-4788-b895-82d5aba6fd63")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
-					(reference "R102")
 					(unit 1)
 				)
 			)

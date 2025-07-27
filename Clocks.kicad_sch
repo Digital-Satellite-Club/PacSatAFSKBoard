@@ -426,175 +426,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Oscillator:ECS-2520MV-xxx-xx"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Y"
-				(at -5.08 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "ECS-2520MV-xxx-xx"
-				(at 1.27 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm"
-				(at 11.43 -8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ecsxtal.com/store/pdf/ECS-2520MV.pdf"
-				(at -4.445 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "HCMOS Crystal Clock Oscillator, 2.5x2.0 mm SMD"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Crystal Clock Oscillator ECS SMD"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Oscillator*SMD*ECS*2520MV*2.5x2.0mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "ECS-2520MV-xxx-xx_0_1"
-				(rectangle
-					(start -7.62 5.08)
-					(end 7.62 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.445 2.54) (xy -3.81 2.54) (xy -3.81 3.81) (xy -3.175 3.81) (xy -3.175 2.54) (xy -2.54 2.54)
-						(xy -2.54 3.81) (xy -1.905 3.81) (xy -1.905 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "ECS-2520MV-xxx-xx_1_1"
-				(pin input line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "Tri-State"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Oscillator:FT5HV"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1426,17 +1257,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "RX2"
-		(exclude_from_sim no)
-		(at 261.62 113.03 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "021fd524-e74f-4d16-b381-6d8df43c7da7")
-	)
 	(text "1. Review FILT voltage node and adjust current if\nneeded per ap note AND9315-D.PDF"
 		(exclude_from_sim no)
 		(at 270.51 179.07 0)
@@ -1459,72 +1279,6 @@
 		)
 		(uuid "4ff5bba1-3e05-4bf0-852a-0da09c96ce4a")
 	)
-	(text "RX1"
-		(exclude_from_sim no)
-		(at 267.97 118.11 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "5959f3c4-9288-4b5f-8507-28e456a03740")
-	)
-	(text "RX3"
-		(exclude_from_sim no)
-		(at 261.62 115.57 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "5a254da2-6c72-4835-828f-35f3038cf2f3")
-	)
-	(text "RX4"
-		(exclude_from_sim no)
-		(at 261.62 118.11 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "799598b2-bf2b-4944-8a3f-905d71f6bea2")
-	)
-	(text "TX"
-		(exclude_from_sim no)
-		(at 261.62 107.95 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "7d7eaece-841d-4142-9dfe-a8fd2f273e46")
-	)
-	(text "Review crystal footprint\n\nMay have to change due to availability\n\nWhen ECS crystal is used leave off R652."
-		(exclude_from_sim no)
-		(at 110.49 172.72 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "90eae9c5-bd1f-4ee4-9901-04a06cfa0451")
-	)
-	(text "CTS Electronic Components"
-		(exclude_from_sim no)
-		(at 162.56 110.49 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "92733c6e-92e0-489c-af6c-7a958e00d8dc")
-	)
 	(text "Note:\n"
 		(exclude_from_sim no)
 		(at 267.97 170.18 0)
@@ -1535,17 +1289,6 @@
 			(justify left bottom)
 		)
 		(uuid "a76c5578-42f4-4c7b-a10e-633f5a2b9e9f")
-	)
-	(text "Note 2"
-		(exclude_from_sim no)
-		(at 129.54 101.6 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "a9468ba4-0d60-4ad4-bec8-5b7c393154a5")
 	)
 	(text "16 MHz"
 		(exclude_from_sim no)
@@ -1591,7 +1334,7 @@
 		)
 		(uuid "e63f72d8-4005-4615-9d9a-2d9a990277cf")
 	)
-	(text "Idd = 3.5 mA"
+	(text "Idd = 5.0 mA"
 		(exclude_from_sim no)
 		(at 160.02 119.38 0)
 		(effects
@@ -1627,22 +1370,10 @@
 		(uuid "7931bea6-98da-4b05-a1d6-77ee53163abd")
 	)
 	(junction
-		(at 193.04 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "81ca70c1-f1ce-4fe8-a27e-d03936b302a3")
-	)
-	(junction
 		(at 217.17 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "85161fbd-a4a9-41f6-96fb-557a64b0c2fe")
-	)
-	(junction
-		(at 139.7 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "983750e1-4fd7-4960-a44e-dfc203292d77")
 	)
 	(junction
 		(at 215.9 132.08)
@@ -1661,12 +1392,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b4b68121-6036-428e-84fb-77e34e20153b")
-	)
-	(junction
-		(at 156.21 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d08c44ee-ae0b-46d3-a6b4-8658da8d12da")
 	)
 	(junction
 		(at 213.36 93.98)
@@ -1698,7 +1423,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 114.3) (xy 156.21 119.38)
+			(xy 156.21 114.3) (xy 156.21 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1728,37 +1453,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 146.05) (xy 193.04 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1181eab7-a047-4ec0-8411-a93facaaff4d")
-	)
-	(wire
-		(pts
-			(xy 193.04 106.68) (xy 203.2 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13f62cfc-a05f-48a6-b050-154c80e37909")
-	)
-	(wire
-		(pts
-			(xy 154.94 133.35) (xy 154.94 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1671861a-dca4-4e3a-aac0-c6e69acdebbb")
-	)
-	(wire
-		(pts
-			(xy 163.83 106.68) (xy 193.04 106.68)
+			(xy 163.83 106.68) (xy 203.2 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1795,16 +1490,6 @@
 			(type default)
 		)
 		(uuid "1d9471bd-49d3-4094-8139-0cc3af482659")
-	)
-	(wire
-		(pts
-			(xy 156.21 93.98) (xy 182.88 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ec33fec-a580-4217-b88a-5c6400d5355c")
 	)
 	(wire
 		(pts
@@ -1908,16 +1593,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 116.84) (xy 139.7 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "587792f5-93d1-40af-af59-a1b5190a0a9b")
-	)
-	(wire
-		(pts
 			(xy 218.44 93.98) (xy 218.44 100.33)
 		)
 		(stroke
@@ -2008,16 +1683,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 106.68) (xy 139.7 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8069d498-3552-42ef-8c83-31613704ce97")
-	)
-	(wire
-		(pts
 			(xy 196.85 87.63) (xy 196.85 93.98)
 		)
 		(stroke
@@ -2078,16 +1743,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 119.38) (xy 156.21 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a55e919c-2046-4d60-bea2-b8f9f3c3a9a9")
-	)
-	(wire
-		(pts
 			(xy 213.36 86.36) (xy 213.36 93.98)
 		)
 		(stroke
@@ -2105,16 +1760,6 @@
 			(type default)
 		)
 		(uuid "a875d742-7012-4d24-8935-d8c1b9c3f82d")
-	)
-	(wire
-		(pts
-			(xy 144.78 146.05) (xy 137.16 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9b65913-7217-4df4-870b-a3a489bb5c28")
 	)
 	(wire
 		(pts
@@ -2188,16 +1833,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 146.05) (xy 137.16 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdb9ec58-5449-4aa4-aedd-8504c636046b")
-	)
-	(wire
-		(pts
 			(xy 125.73 93.98) (xy 125.73 104.14)
 		)
 		(stroke
@@ -2205,26 +1840,6 @@
 			(type default)
 		)
 		(uuid "db3d0876-17d3-4d4b-8ae0-56e98d8d7d95")
-	)
-	(wire
-		(pts
-			(xy 182.88 133.35) (xy 154.94 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc0babc5-bbe9-4894-9a7f-8dce275d50a1")
-	)
-	(wire
-		(pts
-			(xy 193.04 146.05) (xy 193.04 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e42d2d67-5a87-489f-b98e-0fc7f3dbdc57")
 	)
 	(wire
 		(pts
@@ -2258,36 +1873,6 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 119.38) (xy 156.21 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f10bf551-2b75-40bd-b2b6-223d78879aed")
-	)
-	(wire
-		(pts
-			(xy 139.7 106.68) (xy 139.7 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc65e589-0040-4080-a892-b631a2e78ad9")
-	)
-	(wire
-		(pts
-			(xy 182.88 93.98) (xy 182.88 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc8ced94-52cc-412c-b539-3a9de008486a")
-	)
-	(wire
-		(pts
 			(xy 222.25 125.73) (xy 222.25 132.08)
 		)
 		(stroke
@@ -2296,7 +1881,7 @@
 		)
 		(uuid "febd4daa-922a-4587-a28f-971b5ca9acce")
 	)
-	(global_label "Clock4"
+	(global_label "Clock_TX"
 		(shape input)
 		(at 246.38 116.84 0)
 		(fields_autoplaced yes)
@@ -2308,7 +1893,7 @@
 		)
 		(uuid "4d76d01c-83fc-4b59-9a0b-81ab24f0295c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.8615 116.7448 0)
+			(at 259.1916 116.84 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -2318,7 +1903,7 @@
 			)
 		)
 	)
-	(global_label "Clock3"
+	(global_label "Clock_RX2"
 		(shape input)
 		(at 246.38 114.3 0)
 		(fields_autoplaced yes)
@@ -2330,7 +1915,7 @@
 		)
 		(uuid "6bf96a1e-5afd-4011-aba1-2d5c55426dbf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.8615 114.2048 0)
+			(at 261.0059 114.3 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -2340,7 +1925,7 @@
 			)
 		)
 	)
-	(global_label "Clock0"
+	(global_label "Clock_RX4"
 		(shape input)
 		(at 246.38 106.68 0)
 		(fields_autoplaced yes)
@@ -2352,7 +1937,7 @@
 		)
 		(uuid "7402d248-42ee-4b44-a0b3-cea8d18c83e6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.8615 106.5848 0)
+			(at 261.0059 106.68 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -2362,7 +1947,7 @@
 			)
 		)
 	)
-	(global_label "Clock1"
+	(global_label "Clock_RX3"
 		(shape input)
 		(at 246.38 109.22 0)
 		(fields_autoplaced yes)
@@ -2374,7 +1959,7 @@
 		)
 		(uuid "83adda98-68b1-4120-a43e-518a6e649637")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.8615 109.3152 0)
+			(at 261.0059 109.22 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -2384,7 +1969,7 @@
 			)
 		)
 	)
-	(global_label "Clock2"
+	(global_label "Clock_RX1"
 		(shape input)
 		(at 246.38 111.76 0)
 		(fields_autoplaced yes)
@@ -2396,7 +1981,7 @@
 		)
 		(uuid "9f6fdbec-833c-4f2f-9c23-2fd236050b2d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.8615 111.6648 0)
+			(at 261.0059 111.76 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -2406,7 +1991,7 @@
 			)
 		)
 	)
-	(global_label "Clock5"
+	(global_label "Clock_CPU"
 		(shape input)
 		(at 246.38 119.38 0)
 		(fields_autoplaced yes)
@@ -2418,7 +2003,7 @@
 		)
 		(uuid "f08f0a25-80ba-4378-b2d6-6d1c0393d3f2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.8615 119.2848 0)
+			(at 261.2237 119.38 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -3374,15 +2959,15 @@
 				)
 			)
 		)
-		(property "Value" "588S160X2CAT"
-			(at 170.18 102.87 0)
+		(property "Value" "O 16,0-JT22CT-A-P-3,3-LF"
+			(at 176.276 103.124 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:Oscillator_SMD_CTS_4X5mm"
+		(property "Footprint" "Oscillator:Oscillator_SMD_SiT_PQFN-4Pin_2.5x2.0mm"
 			(at 156.21 125.73 0)
 			(effects
 				(font
@@ -3391,7 +2976,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://foxonline.com/wp-content/uploads/pdfs/T5HN_T5HV.pdf"
+		(property "Datasheet" ""
 			(at 156.21 106.68 0)
 			(effects
 				(font
@@ -3495,74 +3080,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 139.7 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a8e1cb06-fed9-4060-80a0-0eaed281f111")
-		(property "Reference" "R652"
-			(at 141.478 111.8616 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10K"
-			(at 141.478 114.173 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 137.922 113.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 139.7 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 139.7 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c02bd535-7515-49e0-a728-e96dc525d334")
-		)
-		(pin "2"
-			(uuid "efb38130-8d3c-4c51-97af-738bbfd8d9fd")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/a735fef7-c3fa-4339-b3a6-fbce810c3c4b"
-					(reference "R652")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 257.81 91.44 0)
 		(unit 1)
@@ -3626,78 +3143,6 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/a735fef7-c3fa-4339-b3a6-fbce810c3c4b"
 					(reference "C653")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Oscillator:ECS-2520MV-xxx-xx")
-		(at 154.94 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b47b96f0-3a27-45ad-8038-22afa4bc5cae")
-		(property "Reference" "Y602"
-			(at 177.8 142.4021 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ECS-TXO-2016-33-160-TR"
-			(at 172.72 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm"
-			(at 166.37 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ecsxtal.com/store/pdf/ECS-2520MV.pdf"
-			(at 150.495 142.875 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 154.94 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dd903070-0928-4f92-ad84-c3ae0128a814")
-		)
-		(pin "2"
-			(uuid "1f46506c-18fd-46b7-9226-6963c641dbed")
-		)
-		(pin "3"
-			(uuid "4f385e61-deed-4823-b6fd-83c2824d0262")
-		)
-		(pin "4"
-			(uuid "f7061fd5-cac7-4a73-9718-5df71affa59b")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/a735fef7-c3fa-4339-b3a6-fbce810c3c4b"
-					(reference "Y602")
 					(unit 1)
 				)
 			)
