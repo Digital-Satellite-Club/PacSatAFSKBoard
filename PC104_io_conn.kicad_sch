@@ -2677,6 +2677,10 @@
 		(uuid "69804c1b-c5cf-4bff-b017-e9edaebcf6dc")
 	)
 	(no_connect
+		(at 220.98 129.54)
+		(uuid "6af171c3-a100-49d3-b81e-71adf84efbf4")
+	)
+	(no_connect
 		(at 147.32 116.84)
 		(uuid "6c9a00b7-2e20-4c2d-8aa1-91e434511226")
 	)
@@ -2715,6 +2719,10 @@
 	(no_connect
 		(at 147.32 83.82)
 		(uuid "8270e587-e094-43a4-a1b3-fce85b64380c")
+	)
+	(no_connect
+		(at 220.98 127)
+		(uuid "82b775c4-54e9-45df-bc18-908fa7b3ab30")
 	)
 	(no_connect
 		(at 109.22 91.44)
@@ -3084,16 +3092,6 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 127) (xy 224.79 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b848647b-d75e-42ff-bc0d-13e6f4300d88")
-	)
-	(wire
-		(pts
 			(xy 119.38 69.85) (xy 119.38 73.66)
 		)
 		(stroke
@@ -3141,16 +3139,6 @@
 			(type default)
 		)
 		(uuid "d632dd11-482e-47d1-912e-0f45b288cbd5")
-	)
-	(wire
-		(pts
-			(xy 220.98 129.54) (xy 224.79 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd793172-ecf9-4953-8dac-d5e385a0350d")
 	)
 	(wire
 		(pts
@@ -3322,28 +3310,6 @@
 			)
 		)
 	)
-	(global_label "UART_RTS"
-		(shape input)
-		(at 224.79 127 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "43434704-8f7f-4bfe-9035-64ad00ad8b41")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.377 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VER_BIT1"
 		(shape input)
 		(at 185.42 88.9 0)
@@ -3445,28 +3411,6 @@
 		(uuid "77758875-21f6-4a3f-a283-be8aae274eec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 248.1018 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "UART_CTS"
-		(shape input)
-		(at 224.79 129.54 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "831f249f-015c-4fd7-a321-67850c88dd8b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.377 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)

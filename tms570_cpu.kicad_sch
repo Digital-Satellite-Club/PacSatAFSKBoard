@@ -4243,6 +4243,16 @@
 		)
 		(uuid "4a8c6e04-1702-43da-93c2-50f6c4f4d805")
 	)
+	(text "For CAN bus to PC104"
+		(exclude_from_sim no)
+		(at 200.66 218.694 90)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "686a8165-36e0-4fec-8a75-60ecf75f6a3c")
+	)
 	(text "Need to review and remove things not used on this design."
 		(exclude_from_sim no)
 		(at 339.09 223.52 0)
@@ -4638,12 +4648,20 @@
 		(uuid "0e7a399f-e0a8-407e-b124-b1b529518eb6")
 	)
 	(no_connect
+		(at 201.93 204.47)
+		(uuid "158f80d9-13f4-4ee3-ba09-d29df55d6c27")
+	)
+	(no_connect
 		(at 281.94 139.7)
 		(uuid "21400e7e-5f18-427a-a151-77e90df72658")
 	)
 	(no_connect
 		(at 199.39 204.47)
 		(uuid "21f3230d-810a-49e4-9a38-170cda0d3ad8")
+	)
+	(no_connect
+		(at 214.63 72.39)
+		(uuid "23f05cb8-d575-4f48-8fce-5ea734bea572")
 	)
 	(no_connect
 		(at 199.39 72.39)
@@ -4708,6 +4726,10 @@
 	(no_connect
 		(at 281.94 116.84)
 		(uuid "bedc9e6b-e552-47dc-a7f2-db8f333bdf2e")
+	)
+	(no_connect
+		(at 212.09 72.39)
+		(uuid "bf58dd9f-a974-4dfc-a8c8-2756713fa882")
 	)
 	(no_connect
 		(at 281.94 137.16)
@@ -5284,16 +5306,6 @@
 			(type default)
 		)
 		(uuid "37fb3b19-8969-48b5-b79b-0224f4fcf8e6")
-	)
-	(wire
-		(pts
-			(xy 201.93 204.47) (xy 201.93 243.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38278816-9857-478b-b2aa-20b65f3202bb")
 	)
 	(wire
 		(pts
@@ -6034,16 +6046,6 @@
 			(type default)
 		)
 		(uuid "7e82cf88-c929-4936-824f-e7f2d7d132d2")
-	)
-	(wire
-		(pts
-			(xy 212.09 40.64) (xy 212.09 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f112474-6069-472c-9e5e-d13ebb952736")
 	)
 	(wire
 		(pts
@@ -6914,16 +6916,6 @@
 			(type default)
 		)
 		(uuid "d3ed30fb-9b7e-46a0-b41f-72afd997e722")
-	)
-	(wire
-		(pts
-			(xy 214.63 40.64) (xy 214.63 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d446b866-b8a0-4c40-9e52-990544b21aa6")
 	)
 	(wire
 		(pts
@@ -8395,28 +8387,6 @@
 			)
 		)
 	)
-	(global_label "UART_RTS"
-		(shape input)
-		(at 212.09 40.64 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "bca0aa2a-13f7-4571-afa1-9d71e0e6d562")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.09 27.053 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "PA PWR CTL"
 		(shape input)
 		(at 196.85 59.69 90)
@@ -8430,28 +8400,6 @@
 		(uuid "c4ce0d92-3e87-4258-aaf4-b907d62f6307")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 196.85 43.0322 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "UART_CTS"
-		(shape input)
-		(at 214.63 40.64 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "c78d10f2-3cc7-4f7b-897e-0aa64e6c6f07")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 214.63 27.053 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8501,28 +8449,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "HW_POWER_OFF_N"
-		(shape input)
-		(at 201.93 243.84 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right)
-		)
-		(uuid "cc76b7fd-3def-43ef-b535-6006ab577955")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.93 266.934 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
