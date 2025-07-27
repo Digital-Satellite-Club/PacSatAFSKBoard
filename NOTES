@@ -1,6 +1,19 @@
 
 # TODO
 
+On the output of the AX5043 transmit/input of the PA, there is each a
+filter.  The one on the AX5043 has parts marked "NS", which I assume
+means "don't populate".  The inductor is zero there.  C704 is also
+marked NS on the PA sheet, which is most likely wrong.  Need to figure
+all this out.
+
+Analyze the RX input filter.
+
+Add resistors to the MRAM SPI connection.
+
+Figure out the AX5043 SPI routing.  Simulate the clock line in spice
+to avoid possibility of double clocking, add proper resistors.
+
 Does it make sense to wire the UART to the PC104?  If so, do we need
 two of the on the PC104?  Shouldn't one be for a direct plugin?
 
