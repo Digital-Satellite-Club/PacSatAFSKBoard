@@ -4,8 +4,6 @@
 Does it make sense to wire the UART to the PC104?  If so, do we need
 two of the on the PC104?  Shouldn't one be for a plugin connection?
 
-Neaten up the spacing on the AX5043s.
-
 RF shields.
 
 Find out why CURRENT_FAULT_U89 goes into two pins on the CPU.
@@ -23,8 +21,6 @@ Possibly replace temperature sensor chips with thermsistors to reduce
 space usage and power usage.
 
 Add CAN bus.
-
-Possibly switch the MRAM and AX5043 SPI busses to simplify routine.
 
 Chack the inductor on the LNA, really verify the whole thing.
 
@@ -100,6 +96,8 @@ Put filters on each side of the LNA.
 Make the 5V regulator optional or remove it.
 (Removed, but space left for it.)
 
+Possibly switch the MRAM and AX5043 SPI busses to simplify routine.
+
 # Not going to do
 
 Look at replacing the second from bottom layer with a ground layer so
@@ -110,6 +108,8 @@ Rotate the CPU so that fewer traces need to be routed under the CPU.
 Perhaps replace the CPU with a BGA version to save space, the BGA is
 16x16mm verses 22x22mm for the flat pack.  This could also provide
 more FLASH and RAM space.
+
+Neaten up the spacing on the AX5043s.
 
 
 
@@ -164,3 +164,15 @@ in sending it to a GPIO.
 
 Remove the UART_RTS and UART_CTS connections.  The chip doesn't
 support these lines, no point in having them.
+
+Switched the MRAM and AX5043 SPI busses to simplify routing.  MRAM is
+now on MIPSPI3, the AX5043 is on MIBSPI1.  This puts the AX5043 SPI
+connection on the bottom of the processor by the AX5043s, and the MRAM
+SPI where there is plenty of room to add MRAM devices as necessary.
+
+Move AX5043_SEL1 from pin 24 to pin 90
+Move AX5043_SEL2 from pin 33 to pin 91
+Move AX5043_SEL3 from pin 35 to pin 92
+Move AX5043_SEL4 from pin 35 to pin 96
+Move AX5043_SEL_TX from pin 124 to pin 97
+
