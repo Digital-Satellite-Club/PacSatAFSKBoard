@@ -808,7 +808,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin power_out line
 					(at 45.72 0 180)
 					(length 7.62)
 					(name "Vout"
@@ -2563,6 +2563,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f0f0afee-0421-4779-9a70-0527c1ce28c6")
+	)
+	(no_connect
+		(at 162.56 176.53)
+		(uuid "594e888e-0bb1-448e-be7b-4f7a0acb3652")
 	)
 	(wire
 		(pts

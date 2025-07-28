@@ -2346,7 +2346,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin bidirectional line
 					(at 1.27 66.04 270)
 					(length 5.08)
 					(name "CAN1RX"
@@ -2382,7 +2382,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin bidirectional line
 					(at 3.81 66.04 270)
 					(length 5.08)
 					(name "CAN1TX"
@@ -2418,7 +2418,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin power_in line
 					(at 6.35 66.04 270)
 					(length 5.08)
 					(name "VSS"
@@ -2454,7 +2454,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin power_in line
 					(at 8.89 66.04 270)
 					(length 5.08)
 					(name "VCC"
@@ -4177,6 +4177,16 @@
 		)
 		(uuid "18e4d2a2-cecc-4f1a-9bd1-be491d709f42")
 	)
+	(text "See document on \nAX5043 clock\nsignal handling."
+		(exclude_from_sim no)
+		(at 210.566 25.654 90)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "1dccb14a-a2f3-4bda-b437-7d37692a0ec9")
+	)
 	(text "TCK"
 		(exclude_from_sim no)
 		(at 118.11 64.77 0)
@@ -4662,10 +4672,6 @@
 		(uuid "21f3230d-810a-49e4-9a38-170cda0d3ad8")
 	)
 	(no_connect
-		(at 260.35 204.47)
-		(uuid "260b0955-0ee2-46d7-a97e-744a5cf7dfca")
-	)
-	(no_connect
 		(at 260.35 72.39)
 		(uuid "2a06c162-6b7f-4753-83ae-88fbc0731d46")
 	)
@@ -4684,10 +4690,6 @@
 	(no_connect
 		(at 227.33 72.39)
 		(uuid "5adf2e31-e67a-4bd0-97e2-66e4118a2125")
-	)
-	(no_connect
-		(at 252.73 204.47)
-		(uuid "5fc0a09b-a1af-46e4-8dfe-42e29a5bdb97")
 	)
 	(no_connect
 		(at 219.71 204.47)
@@ -4736,14 +4738,6 @@
 	(no_connect
 		(at 149.86 134.62)
 		(uuid "c0efdd37-2818-4249-aa62-9540bdb0300c")
-	)
-	(no_connect
-		(at 257.81 204.47)
-		(uuid "cece8cba-0e8c-4967-ad60-08ea5c3bbf2e")
-	)
-	(no_connect
-		(at 250.19 204.47)
-		(uuid "d15eaebc-4738-4dee-a3cf-56bda0187974")
 	)
 	(no_connect
 		(at 255.27 72.39)
@@ -4949,7 +4943,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 72.39) (xy 204.47 59.69)
+			(xy 204.47 72.39) (xy 204.47 38.1)
 		)
 		(stroke
 			(width 0)
@@ -5989,6 +5983,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 204.47) (xy 257.81 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c0c702a-b84e-4a8f-8d1f-9bba0766cbc4")
+	)
+	(wire
+		(pts
 			(xy 227.33 204.47) (xy 227.33 251.46)
 		)
 		(stroke
@@ -6536,6 +6540,16 @@
 			(type default)
 		)
 		(uuid "a738e70a-ec98-4cb8-a4e8-2e0873a7bedf")
+	)
+	(wire
+		(pts
+			(xy 250.19 204.47) (xy 250.19 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a80bda7f-a653-4916-b2d6-05dee487c854")
 	)
 	(wire
 		(pts
@@ -7129,6 +7143,16 @@
 	)
 	(wire
 		(pts
+			(xy 260.35 204.47) (xy 260.35 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e23e308f-7a1c-4d27-abe7-bedd406412fe")
+	)
+	(wire
+		(pts
 			(xy 217.17 59.69) (xy 217.17 72.39)
 		)
 		(stroke
@@ -7179,6 +7203,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 30.48) (xy 204.47 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e61a7936-f05e-4239-b77c-3af6a0568a4a")
+	)
+	(wire
+		(pts
 			(xy 237.49 207.01) (xy 237.49 209.55)
 		)
 		(stroke
@@ -7196,6 +7230,16 @@
 			(type default)
 		)
 		(uuid "e7ce2426-4b1e-4105-a7b5-e58fc0395dd6")
+	)
+	(wire
+		(pts
+			(xy 252.73 204.47) (xy 252.73 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8bc9ab6-7b03-4eac-bac8-69d977fcd450")
 	)
 	(wire
 		(pts
@@ -7440,6 +7484,28 @@
 		(uuid "011c0ad5-cbda-4525-9140-51764769fffe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 173.99 243.3483 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "AX5043_EN_RX1"
+		(shape input)
+		(at 260.35 215.9 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "06bdfe5d-8c9f-4607-a838-4f1fe804c2b5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 260.35 236.9846 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7929,6 +7995,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "AX5043_EN_RX3"
+		(shape input)
+		(at 252.73 215.9 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "60008b1c-b9ae-4c5d-b482-cbf1a17fbb92")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 252.73 236.9846 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8527,6 +8615,28 @@
 			)
 		)
 	)
+	(global_label "AX5043_EN_RX2"
+		(shape input)
+		(at 257.81 215.9 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "f7b2b5ab-1439-44d2-820a-35a6e55ce758")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.81 236.9846 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VER_BIT0"
 		(shape input)
 		(at 325.12 46.99 90)
@@ -8551,7 +8661,7 @@
 	)
 	(global_label "AX5043_CLK"
 		(shape input)
-		(at 204.47 59.69 90)
+		(at 204.47 29.21 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8561,7 +8671,7 @@
 		)
 		(uuid "fc7b73da-34c9-440b-acbc-0327603400f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 204.47 42.8871 90)
+			(at 204.47 12.4071 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8584,6 +8694,28 @@
 		(uuid "fcee0874-9eb6-452d-b617-6db542ddb096")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 176.53 259.4227 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "AX5043_EN_RX4"
+		(shape input)
+		(at 250.19 215.9 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "fd0011dc-c90a-43a9-b2fe-6008a06e9ea5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.19 236.9846 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14142,6 +14274,73 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/adf61ae3-df77-4e04-8bda-b4049a36fcf4"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 204.47 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e4f6416e-4496-4a64-99cb-be6fcabc091a")
+		(property "Reference" "R131"
+			(at 196.85 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33"
+			(at 198.755 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 202.692 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.47 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 204.47 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a397d8e4-9cea-4167-928c-3e7aae5f7b92")
+		)
+		(pin "2"
+			(uuid "ae8333ce-bbbe-41a7-a267-9b1777072540")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/adf61ae3-df77-4e04-8bda-b4049a36fcf4"
+					(reference "R131")
 					(unit 1)
 				)
 			)

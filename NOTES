@@ -19,9 +19,6 @@ two of the on the PC104?  Shouldn't one be for a direct plugin?
 
 RF shields.
 
-Choose one oscillator and remove the other one.  Actually, just
-replace with a "O 16,0-JT22CT-A-P-3,3-LF" from Jauch.
-
 Replace the RTC with one that is temperature rated.  Probably only the
 MCP7940NT-E/MS from Microchip is suitable.
 
@@ -111,6 +108,9 @@ Figure out a way to disable the LNA from the CPU.
 
 Find out why CURRENT_FAULT_U89 goes into two pins on the CPU.
 
+Choose one oscillator and remove the other one.  Actually, just
+replace with a "O 16,0-JT22CT-A-P-3,3-LF" from Jauch.
+
 # Not going to do
 
 Look at replacing the second from bottom layer with a ground layer so
@@ -145,7 +145,7 @@ datasheet says no capacitor is required.
 
 Cleaned up some crazy traces.
 
-# 2025-07-24
+# 2025-07-25
 
 Reworked the board, basic layout is done and most details are handled.
 Left to do:
@@ -166,7 +166,7 @@ no onewire hardware on the CPU, it would have to be bit-banged, and
 that would cost 50 times the CPU of just doing the crypto on the
 board.
 
-# 2025-07-23
+# 2025-07-26
 
 Change the DC regulators to ones with power good pins and tie that in
 to processor reset.
@@ -197,3 +197,14 @@ go anywhere else and serve no purpose I can tell.
 Clocks are all set up and wired in.
 
 MRAM is wired in.
+
+# 2025-07-27
+
+Wired in the AX5043 SPI busses and all their control lines.
+
+Added the following connections to the CPU:
+
+AX5043_EN_RX1 to pin 36
+AX5043_EN_RX2 to pin 35
+AX5043_EN_RX3 to pin 33
+AX5043_EN_RX4 to pin 32

@@ -2893,7 +2893,17 @@
 	)
 	(wire
 		(pts
-			(xy 293.37 132.08) (xy 297.18 132.08)
+			(xy 308.61 132.08) (xy 317.5 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c736b60b-88b3-465d-8680-450bc6970321")
+	)
+	(wire
+		(pts
+			(xy 293.37 132.08) (xy 300.99 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3079,7 +3089,7 @@
 	)
 	(global_label "AX5043_CLK"
 		(shape input)
-		(at 297.18 132.08 0)
+		(at 317.5 132.08 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3089,7 +3099,7 @@
 		)
 		(uuid "82bb530f-2d18-4094-917f-503aed514253")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 313.8875 132.08 0)
+			(at 334.2075 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4264,6 +4274,73 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9432d45f-be08-406b-8d9c-bfe62f690c2f"
 					(reference "#PWR0195")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 304.8 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a0d05e7d-f6cb-4b33-b1f6-6168127719c0")
+		(property "Reference" "R129"
+			(at 305.054 134.366 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 305.054 136.906 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 304.8 133.858 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 304.8 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 304.8 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d099ba52-d167-40fc-a779-fb1497aaaa78")
+		)
+		(pin "2"
+			(uuid "948512e6-97d3-4cd1-b264-849c34563446")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9432d45f-be08-406b-8d9c-bfe62f690c2f"
+					(reference "R129")
 					(unit 1)
 				)
 			)

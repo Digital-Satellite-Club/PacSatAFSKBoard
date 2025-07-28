@@ -723,24 +723,6 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "PAD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin output line
 					(at 10.16 3.81 180)
 					(length 2.54)
@@ -2707,16 +2689,6 @@
 	)
 	(wire
 		(pts
-			(xy 318.77 132.08) (xy 318.77 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c10d7c20-aeb2-4bfa-bf66-23b7d6383650")
-	)
-	(wire
-		(pts
 			(xy 173.99 110.49) (xy 176.53 110.49)
 		)
 		(stroke
@@ -3477,71 +3449,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 318.77 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "23be6d98-d61a-4f2d-af99-f73a07a74a27")
-		(property "Reference" "#PWR0726"
-			(at 318.77 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 318.77 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 318.77 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 318.77 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 318.77 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b14e9787-2af5-4641-b33c-67c0addc6fca")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
-					(reference "#PWR0726")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 87.63 152.4 180)
 		(unit 1)
@@ -3684,9 +3591,6 @@
 		)
 		(pin "8"
 			(uuid "4dc649c2-b1d7-4f96-9419-6f54a90d76fd")
-		)
-		(pin "9"
-			(uuid "d53a495a-89c2-4234-b3a1-93b937586faf")
 		)
 		(instances
 			(project "PacSat_Dev_RevD_240614"

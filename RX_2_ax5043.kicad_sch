@@ -2423,6 +2423,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 137.16) (xy 266.7 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a704a7d-4baa-41ae-b052-69ba1779099d")
+	)
+	(wire
+		(pts
 			(xy 218.44 66.04) (xy 218.44 105.41)
 		)
 		(stroke
@@ -2793,7 +2803,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 137.16) (xy 246.38 137.16)
+			(xy 242.57 137.16) (xy 251.46 137.16)
 		)
 		(stroke
 			(width 0)
@@ -3123,7 +3133,7 @@
 	)
 	(global_label "AX5043_CLK"
 		(shape input)
-		(at 246.38 137.16 0)
+		(at 266.7 137.16 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3133,7 +3143,7 @@
 		)
 		(uuid "a5d9bdcc-79b6-40bb-8e66-e8d87caf4feb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 263.0875 137.16 0)
+			(at 283.4075 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3724,6 +3734,73 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/1e7123c2-80dc-43cd-b90a-12f3fe1af0cb"
 					(reference "C307")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 255.27 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3aadc43e-bfe6-4f20-af8a-cfd22f2aa76d")
+		(property "Reference" "R128"
+			(at 255.524 139.446 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 255.524 141.986 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 255.27 138.938 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 255.27 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 255.27 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69c63f87-196a-4806-a9a1-f602a6d219d8")
+		)
+		(pin "2"
+			(uuid "52ddfae2-8279-4de5-b119-9d730e99b6e4")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/1e7123c2-80dc-43cd-b90a-12f3fe1af0cb"
+					(reference "R128")
 					(unit 1)
 				)
 			)

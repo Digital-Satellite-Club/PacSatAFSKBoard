@@ -2743,6 +2743,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 139.7) (xy 265.43 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b13c9e35-c50a-4f27-8764-154fff46caed")
+	)
+	(wire
+		(pts
 			(xy 193.04 124.46) (xy 190.5 124.46)
 		)
 		(stroke
@@ -2823,7 +2833,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 139.7) (xy 245.11 139.7)
+			(xy 241.3 139.7) (xy 250.19 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3167,7 +3177,7 @@
 	)
 	(global_label "AX5043_CLK"
 		(shape input)
-		(at 245.11 139.7 0)
+		(at 265.43 139.7 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3177,7 +3187,7 @@
 		)
 		(uuid "dfef93ea-5c0b-4629-8a81-0e467d6bbd3b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.8175 139.7 0)
+			(at 282.1375 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4067,6 +4077,73 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/f99c6a69-4136-42a1-b9ff-80c66d5e136e"
 					(reference "#PWR0509")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 254 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f396e69-72c3-4385-9f65-fe0f68f435ec")
+		(property "Reference" "R130"
+			(at 254.254 141.986 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 254.254 144.526 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 254 141.478 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 254 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35dd774a-923c-4bae-b942-74bbb88c4078")
+		)
+		(pin "2"
+			(uuid "3b9c026d-5803-466b-a608-3fce9860f9e8")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/f99c6a69-4136-42a1-b9ff-80c66d5e136e"
+					(reference "R130")
 					(unit 1)
 				)
 			)

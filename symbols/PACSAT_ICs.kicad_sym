@@ -1057,7 +1057,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin power_out line
 				(at 45.72 0 180)
 				(length 7.62)
 				(name "Vout"
@@ -4664,7 +4664,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at 1.27 66.04 270)
 				(length 5.08)
 				(name "CAN1RX"
@@ -4700,7 +4700,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin bidirectional line
 				(at 3.81 66.04 270)
 				(length 5.08)
 				(name "CAN1TX"
@@ -4736,7 +4736,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 6.35 66.04 270)
 				(length 5.08)
 				(name "VSS"
@@ -4772,7 +4772,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 8.89 66.04 270)
 				(length 5.08)
 				(name "VCC"
