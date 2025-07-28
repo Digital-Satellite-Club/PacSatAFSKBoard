@@ -4676,10 +4676,6 @@
 		(uuid "2a06c162-6b7f-4753-83ae-88fbc0731d46")
 	)
 	(no_connect
-		(at 281.94 129.54)
-		(uuid "2fd19368-2b60-49b9-ba39-0c7aab114083")
-	)
-	(no_connect
 		(at 281.94 182.88)
 		(uuid "35e35e7e-6de7-44ea-b1b4-b1ac7a346a2c")
 	)
@@ -7443,6 +7439,16 @@
 	)
 	(wire
 		(pts
+			(xy 281.94 129.54) (xy 293.37 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc0cea67-23e6-4879-99a1-cdc5a123439e")
+	)
+	(wire
+		(pts
 			(xy 317.5 57.15) (xy 317.5 59.69)
 		)
 		(stroke
@@ -8457,6 +8463,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CPU_TEMP"
+		(shape input)
+		(at 293.37 129.54 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "bc7a6dc8-b4ab-43fc-a7dd-95cf3c158f2a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.7782 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)

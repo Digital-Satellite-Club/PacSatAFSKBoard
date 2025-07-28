@@ -1276,6 +1276,48 @@
 		)
 	)
 	(sheet
+		(at 270.51 74.93)
+		(size 52.07 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d2039b6d-fc13-4441-ac2c-ab560ff9f9c2")
+		(property "Sheetname" "Termsistors"
+			(at 270.51 74.2184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "thermsistors.kicad_sch"
+			(at 270.51 90.7546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 210.82 123.19)
 		(size 52.07 15.24)
 		(exclude_from_sim no)

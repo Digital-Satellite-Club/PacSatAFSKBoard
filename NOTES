@@ -25,8 +25,7 @@ MCP7940NT-E/MS from Microchip is suitable.
 Figure out where the external RF connections need to be so the layout
 can be simplified around that.
 
-Possibly replace temperature sensor chips with thermsistors to reduce
-space usage and power usage.
+Add a thermsistor for the PA.
 
 Add CAN bus.
 
@@ -111,6 +110,10 @@ Find out why CURRENT_FAULT_U89 goes into two pins on the CPU.
 Choose one oscillator and remove the other one.  Actually, just
 replace with a "O 16,0-JT22CT-A-P-3,3-LF" from Jauch.
 
+Neaten up the spacing on the AX5043s.
+
+Add a thermsistor for the CPU.
+
 # Not going to do
 
 Look at replacing the second from bottom layer with a ground layer so
@@ -121,8 +124,6 @@ Rotate the CPU so that fewer traces need to be routed under the CPU.
 Perhaps replace the CPU with a BGA version to save space, the BGA is
 16x16mm verses 22x22mm for the flat pack.  This could also provide
 more FLASH and RAM space.
-
-Neaten up the spacing on the AX5043s.
 
 
 
@@ -208,3 +209,9 @@ AX5043_EN_RX1 to pin 36
 AX5043_EN_RX2 to pin 35
 AX5043_EN_RX3 to pin 33
 AX5043_EN_RX4 to pin 32
+
+Added a thermsistor to AD1IN_16.
+
+The I2C temperature sensors are removed.
+
+A thermsistor by the CPU was added to pin 58.
