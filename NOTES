@@ -1,18 +1,7 @@
 
 # TODO
 
-On the output of the AX5043 transmit/input of the PA, there is each a
-filter.  The one on the AX5043 has parts marked "NS", which I assume
-means "don't populate".  The inductor is zero there.  C704 is also
-marked NS on the PA sheet, which is most likely wrong.  Need to figure
-all this out.
-
-Analyze the RX input filter.
-
 Add resistors to the MRAM SPI connection.
-
-Figure out the AX5043 SPI routing.  Simulate the clock line in spice
-to avoid possibility of double clocking, add proper resistors.
 
 Does it make sense to wire the UART to the PC104?  If so, do we need
 two of the on the PC104?  Shouldn't one be for a direct plugin?
@@ -25,8 +14,6 @@ MCP7940NT-E/MS from Microchip is suitable.
 Figure out where the external RF connections need to be so the layout
 can be simplified around that.
 
-Add a thermsistor for the PA.
-
 Add CAN bus.
 
 Check the inductor on the LNA, really verify the whole thing.
@@ -38,12 +25,6 @@ Does the JTAG interface need resistors on TCK and TDO (22 ohm)?
 That's pretty standard.
 
 Make sure there is enough room around each SMD to hand solder it.
-
-Route signals directly, don't use RF jumpers.
-
-Rework transmit RF side.  At least replace the filter with a new one,
-probably the LFCG-490+ from MiniCircuits, which also happens to be
-temperature rated.
 
 Decoupling, at least on 1.2V, seem inadequate.  Check that out.
 
@@ -125,6 +106,24 @@ Perhaps replace the CPU with a BGA version to save space, the BGA is
 16x16mm verses 22x22mm for the flat pack.  This could also provide
 more FLASH and RAM space.
 
+On the output of the AX5043 transmit/input of the PA, there is each a
+filter.  The one on the AX5043 has parts marked "NS", which I assume
+means "don't populate".  The inductor is zero there.  C704 is also
+marked NS on the PA sheet, which is most likely wrong.  Need to figure
+all this out.
+
+Analyze the RX input filter.
+
+Figure out the AX5043 SPI routing.  Simulate the clock line in spice
+to avoid possibility of double clocking, add proper resistors.
+
+Add a thermsistor for the PA.
+
+Route signals directly, don't use RF jumpers.
+
+Rework transmit RF side.  At least replace the filter with a new one,
+probably the LFCG-490+ from MiniCircuits, which also happens to be
+temperature rated.
 
 
 # 2025-07-23
@@ -215,3 +214,18 @@ Added a thermsistor to AD1IN_16.
 The I2C temperature sensors are removed.
 
 A thermsistor by the CPU was added to pin 58.
+
+# 2025-07-28
+
+Added calculations for the Qorvo TQP7M9106 to get Zin and Zout for the
+frequency in question.
+
+Rework the output PA to use a Qorvo TQP7M9106.  The old part was not
+recommended for new designs, and the Qorvo part seems more efficient.
+Do all the matching and such for that.
+
+Added a termsistor by the PA.
+
+Did simulations of the RF input and adjusted accordingly.
+
+Did simulations of the AX5043 TX output.

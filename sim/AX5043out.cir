@@ -1,0 +1,52 @@
+* This is the output circuit as recommended by the AX5043 data sheet
+* at 430 MHz.  It converts differential to single-ended and does some
+* filtering, about -25dB at 860MHz.
+* 
+*                 input+
+*                 |   input-
+*                 |   |   output
+*                 |   |   |
+.SUBCKT AX5043Out inp inn out
+
+Lina    inp 0   100n
+Linb    inn 0   100n
+
+C1a	inp a1  4.3p
+C1b	inn b1  4.3p
+
+L1a	a1  a2   43n
+L1b	b1  b2   43n
+
+C2a     a2  0    11p
+C2b     b2  0    5.6p
+L2b     b2  0    27n
+
+L3a     a2  out   27n
+
+C3b     b2  out   5.1p
+
+* Avoid issues with series inductors, they result in:
+* Warning: singular matrix:  check node l.x1.l4b#branch
+* Warning: True gmin stepping failed
+* This add a series resistor on all inductors.
+.option rseries = 1.0e-4
+
+.ENDS
+
+V1 ina inb dc 0 AC 1 sin(0 1 440MEG 0 0 0)
+Rsrca ina ina1 50
+Rsrcb inb inb1 50
+
+X1 ina1 inb1 out AX5043Out
+
+Rload out 0 50
+
+.control
+*tran .1ns 1200ns 1100ns
+*plot v(ina1,inb1), v(out)
+ac lin 50000 100Meg 1000Meg
+plot db((vm(out)^2/50)/(vm(ina1,inb1) * i(v1)))
+plot db((vm(x1.a3)^2/50)/(vm(ina1,inb1) * i(v1)))
+.endc
+
+.end
