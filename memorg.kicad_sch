@@ -151,6 +151,130 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PACSAT_ICs:QSPI_FLASH_WSON_8-pin"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -675,6 +799,16 @@
 		)
 		(uuid "0bca20a2-0181-4bc3-a479-237104462250")
 	)
+	(text "Series termination on CLK\nto avoid ringing on the line.\nThe rest of the lines\nshouldn't need it unless\nit needs to be high speed."
+		(exclude_from_sim no)
+		(at 49.022 60.706 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "6f2b80fe-a77f-48e5-a3d0-3a91f03b6686")
+	)
 	(text "Memory"
 		(exclude_from_sim no)
 		(at 198.12 175.26 0)
@@ -838,7 +972,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 66.04) (xy 99.06 66.04)
+			(xy 105.41 74.93) (xy 99.06 74.93)
 		)
 		(stroke
 			(width 0)
@@ -858,13 +992,23 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 50.8) (xy 104.14 66.04)
+			(xy 105.41 50.8) (xy 105.41 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "54ca1d48-7061-45f0-8413-bdd215084217")
+	)
+	(wire
+		(pts
+			(xy 105.41 72.39) (xy 105.41 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d3cc664-2459-4732-88c9-395aa96821f7")
 	)
 	(wire
 		(pts
@@ -878,7 +1022,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 50.8) (xy 93.98 50.8)
+			(xy 105.41 50.8) (xy 93.98 50.8)
 		)
 		(stroke
 			(width 0)
@@ -978,7 +1122,7 @@
 	)
 	(global_label "MRAM_CLK"
 		(shape input)
-		(at 99.06 66.04 180)
+		(at 99.06 74.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -988,7 +1132,7 @@
 		)
 		(uuid "17c6d393-55ca-4dd0-afc4-fdf7d1f57658")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 84.6021 66.04 0)
+			(at 84.6021 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1061,6 +1205,73 @@
 				)
 				(justify right)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 105.41 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e4778a5-8846-4d93-91d3-cd98980ca864")
+		(property "Reference" "R135"
+			(at 102.87 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33"
+			(at 107.696 70.358 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 103.632 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3cda74a4-407f-453b-bb27-4c4ff0adeb2d")
+		)
+		(pin "2"
+			(uuid "5c310e01-fcb3-43a2-a449-967f972a125d")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/552b793d-9664-4666-9fdb-015ae3bc3958"
+					(reference "R135")
+					(unit 1)
+				)
 			)
 		)
 	)

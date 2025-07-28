@@ -1,7 +1,9 @@
 
 # TODO
 
-Add resistors to the MRAM SPI connection.
+The RF lines need some rework, some from the hybrid to the AX5043s are
+kind of long, and they probably need to be coplaner.  I have added a
+coplaner net class for this board stack (.225mm trace, .7mm spacing).
 
 Does it make sense to wire the UART to the PC104?  If so, do we need
 two of the on the PC104?  Shouldn't one be for a direct plugin?
@@ -14,15 +16,10 @@ MCP7940NT-E/MS from Microchip is suitable.
 Figure out where the external RF connections need to be so the layout
 can be simplified around that.
 
-Add CAN bus.
-
 Check the inductor on the LNA, really verify the whole thing.
 
 Maybe switch to 0402 parts along the RF path to reduce stray
 inductance and capacitance.
-
-Does the JTAG interface need resistors on TCK and TDO (22 ohm)?
-That's pretty standard.
 
 Make sure there is enough room around each SMD to hand solder it.
 
@@ -94,6 +91,13 @@ replace with a "O 16,0-JT22CT-A-P-3,3-LF" from Jauch.
 Neaten up the spacing on the AX5043s.
 
 Add a thermsistor for the CPU.
+
+Add CAN bus.
+
+Add resistors to the MRAM SPI connection.
+
+Does the JTAG interface need resistors on TCK and TDO (22 ohm)?
+That's pretty standard.
 
 # Not going to do
 
@@ -229,3 +233,11 @@ Added a termsistor by the PA.
 Did simulations of the RF input and adjusted accordingly.
 
 Did simulations of the AX5043 TX output.
+
+Add a CAN bus.
+
+Added a resistor to the MRAM SPI clock signal.
+
+Add SMA connectors for TX and RX.
+
+Added resistors to JTAG interface, per the way it's defined.

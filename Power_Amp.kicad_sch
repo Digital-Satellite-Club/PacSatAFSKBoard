@@ -12,6 +12,176 @@
 		(comment 1 "N5BRG")
 	)
 	(lib_symbols
+		(symbol "Connector:Conn_Coaxial"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_Coaxial"
+				(at 2.921 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_Coaxial_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.8079)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.2221 1.8084)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2328,12 +2498,6 @@
 		(uuid "aa540c18-a3bc-48d0-8b18-e12e019723cb")
 	)
 	(junction
-		(at 334.01 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ab262507-a432-4bec-a5d7-0999b8fe79e8")
-	)
-	(junction
 		(at 147.32 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2350,12 +2514,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b6ad525a-0375-4fd8-9bca-501dbdbb0044")
-	)
-	(junction
-		(at 327.66 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bca5ebba-6784-43c1-bf40-c7cbc724cf9b")
 	)
 	(junction
 		(at 54.61 123.19)
@@ -3011,17 +3169,17 @@
 	)
 	(wire
 		(pts
-			(xy 331.47 161.29) (xy 331.47 167.64)
+			(xy 336.55 172.72) (xy 336.55 175.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "845e8fc3-96df-490b-9c2b-39e946a63a03")
+		(uuid "87154d47-fd57-4e7d-b151-6a92bd8eec72")
 	)
 	(wire
 		(pts
-			(xy 327.66 165.1) (xy 327.66 170.18)
+			(xy 327.66 165.1) (xy 327.66 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3118,16 +3276,6 @@
 			(type default)
 		)
 		(uuid "9edc7fdb-c934-494e-b6f0-e8d4ed21d4a4")
-	)
-	(wire
-		(pts
-			(xy 334.01 170.18) (xy 336.55 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a35f893c-35b6-49c2-aa17-20579860cdfd")
 	)
 	(wire
 		(pts
@@ -3461,16 +3609,6 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 170.18) (xy 327.66 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6512103-9bb1-4943-9847-710db9b122e0")
-	)
-	(wire
-		(pts
 			(xy 147.32 154.94) (xy 147.32 165.1)
 		)
 		(stroke
@@ -3478,16 +3616,6 @@
 			(type default)
 		)
 		(uuid "f9020c2b-1034-430d-b52b-25dba7acf369")
-	)
-	(wire
-		(pts
-			(xy 334.01 170.18) (xy 327.66 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fad4167a-b7c3-4827-b923-f8470467173d")
 	)
 	(wire
 		(pts
@@ -3914,6 +4042,74 @@
 			(project ""
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
 					(reference "FL86")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 336.55 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2520c31f-30e6-41ad-87dc-c76cb65080dc")
+		(property "Reference" "J87"
+			(at 336.2326 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 336.2326 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal"
+			(at 336.55 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 336.55 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 336.55 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6c96e178-6cef-44d7-a303-afb37a6eaa55")
+		)
+		(pin "1"
+			(uuid "a14584c5-15b9-43a1-9f13-ff315831d330")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
+					(reference "J87")
 					(unit 1)
 				)
 			)
@@ -4378,77 +4574,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PACSAT_DEV_misc:U_FL")
-		(at 335.28 161.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4eb7246a-cebe-43cb-81a6-c3b4dc3ac4aa")
-		(property "Reference" "P703"
-			(at 341.0458 163.8046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "U_FL"
-			(at 341.0458 166.116 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:U_FL"
-			(at 335.28 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 335.28 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 335.28 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "79c84c21-4912-4d63-8283-9d10e7cfdf43")
-		)
-		(pin "2"
-			(uuid "1eb681d5-85a4-4486-a7a5-1d8906115e9c")
-		)
-		(pin "3"
-			(uuid "e357994e-9553-41ff-967a-623371d75cab")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
-					(reference "P703")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 327.66 173.99 0)
 		(unit 1)
@@ -4638,6 +4763,72 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
 					(reference "C110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 336.55 175.26 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "642180c9-c0f4-45fc-b79f-2494ea9a80f8")
+		(property "Reference" "#PWR0191"
+			(at 336.55 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 336.55 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 336.55 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 336.55 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 336.55 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c7f525cd-f59c-48a1-8a76-422b0ad5b569")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
+					(reference "#PWR0191")
 					(unit 1)
 				)
 			)

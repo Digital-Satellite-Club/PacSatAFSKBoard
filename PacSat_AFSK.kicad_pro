@@ -75,6 +75,14 @@
         [
           "copper_edge_clearance|237749700|62249700|ea8e3317-d805-4b09-85ac-ee3e44345cf7|806309f7-a8d0-4720-adf3-a4a670c0d38d",
           ""
+        ],
+        [
+          "footprint_type_mismatch|169710000|145460000|c158dd21-86ac-4e76-991f-79f57198ed3d|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_type_mismatch|217470000|145410000|e9d1675d-8c50-4901-8a83-2ba93e85f6af|00000000-0000-0000-0000-000000000000",
+          ""
         ]
       ],
       "meta": {
@@ -537,7 +545,7 @@
         "microvia_drill": 0.1,
         "name": "+1.2V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.3048,
         "via_diameter": 0.508,
@@ -554,7 +562,7 @@
         "microvia_drill": 0.1,
         "name": "+3.3V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
         "via_diameter": 0.508,
@@ -571,7 +579,7 @@
         "microvia_drill": 0.1,
         "name": "AX5043_PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.254,
         "via_diameter": 0.508,
@@ -588,7 +596,7 @@
         "microvia_drill": 0.1,
         "name": "AbsMin",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
         "via_diameter": 0.4572,
@@ -605,7 +613,7 @@
         "microvia_drill": 0.1,
         "name": "FatPower",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.3048,
         "via_diameter": 0.508,
@@ -622,7 +630,7 @@
         "microvia_drill": 0.1,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
+        "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
         "via_diameter": 0.508,
@@ -639,7 +647,7 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 7,
+        "priority": 8,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
         "via_diameter": 0.508,
@@ -654,9 +662,23 @@
         "microvia_drill": 0.1,
         "name": "RF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1725,
+        "via_diameter": 0.508,
+        "via_drill": 0.3048
+      },
+      {
+        "clearance": 0.7,
+        "diff_pair_gap": 0.18,
+        "diff_pair_width": 0.127,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "RF Complainer",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.225,
         "via_diameter": 0.508,
         "via_drill": 0.3048
       }
