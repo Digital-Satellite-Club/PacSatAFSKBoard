@@ -2209,6 +2209,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 143.51) (xy 105.41 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43d7d535-57f1-4486-96a9-baf79d21754c")
+	)
+	(wire
+		(pts
 			(xy 199.39 134.62) (xy 212.09 134.62)
 		)
 		(stroke
@@ -2639,7 +2649,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 143.51) (xy 118.11 143.51)
+			(xy 115.57 143.51) (xy 118.11 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2909,7 +2919,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 143.51) (xy 93.98 143.51)
+			(xy 87.63 143.51) (xy 88.9 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2929,7 +2939,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 143.51) (xy 105.41 143.51)
+			(xy 96.52 143.51) (xy 97.79 143.51)
 		)
 		(stroke
 			(width 0)
@@ -4342,7 +4352,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 109.22 143.51 270)
+		(at 111.76 143.51 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4351,15 +4361,15 @@
 		(dnp no)
 		(uuid "80e0ceb6-88a9-4506-b329-b308e190792d")
 		(property "Reference" "L87"
-			(at 108.966 145.542 90)
+			(at 111.506 145.542 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "750n 1%"
-			(at 108.712 140.462 90)
+		(property "Value" "780n 1%"
+			(at 111.252 140.462 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4367,7 +4377,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 109.22 143.51 0)
+			(at 111.76 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4376,7 +4386,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 109.22 143.51 0)
+			(at 111.76 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4385,7 +4395,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 109.22 143.51 0)
+			(at 111.76 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4672,6 +4682,73 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
 					(reference "C93")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 101.6 143.51 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "acf78421-615c-47d5-8564-f370f05d60fb")
+		(property "Reference" "C108"
+			(at 101.6 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3p 2%"
+			(at 101.6 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 97.79 144.4752 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 101.6 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6c05ecf1-056f-445f-a892-44aa3f952418")
+		)
+		(pin "2"
+			(uuid "5849607d-fd6a-4fb1-86c3-f7bb18fd2a4f")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
+					(reference "C108")
 					(unit 1)
 				)
 			)
@@ -5428,7 +5505,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 97.79 143.51 270)
+		(at 92.71 143.51 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5437,15 +5514,15 @@
 		(fields_autoplaced yes)
 		(uuid "e2b0e763-2668-4be6-a21f-9126daf0e13f")
 		(property "Reference" "C601"
-			(at 97.79 135.89 90)
+			(at 92.71 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "4p 1%"
-			(at 97.79 138.43 90)
+		(property "Value" "3p 2%"
+			(at 92.71 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5453,7 +5530,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 93.98 144.4752 0)
+			(at 88.9 144.4752 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5462,7 +5539,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 143.51 0)
+			(at 92.71 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5471,7 +5548,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 97.79 143.51 0)
+			(at 92.71 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -57,7 +57,7 @@
       "shapes"
     ],
     "visible_layers": "00000000_00000000_000c1020_ffffffff",
-    "zone_display_mode": 0
+    "zone_display_mode": 1
   },
   "git": {
     "repo_type": "",
