@@ -6,7 +6,7 @@ kind of long, and they probably need to be coplaner.  I have added a
 coplaner net class for this board stack (.225mm trace, .7mm spacing).
 
 Does it make sense to wire the UART to the PC104?  If so, do we need
-two of the on the PC104?  Shouldn't one be for a direct plugin?
+two of the on the PC104?  Shouldn't one go to a plug somewhere?
 
 RF shields.
 
