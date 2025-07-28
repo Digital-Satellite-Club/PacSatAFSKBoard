@@ -5574,7 +5574,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_Coaxial"
+		(property "Value" "Molex 73251-1153"
 			(at 46.0374 139.7 0)
 			(effects
 				(font

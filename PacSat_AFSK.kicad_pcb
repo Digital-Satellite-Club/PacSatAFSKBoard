@@ -36507,7 +36507,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_Coaxial"
+		(property "Value" "Molex 73251-1153"
 			(at -1.72 -7.11 90)
 			(layer "F.Fab")
 			(uuid "f92b44af-5f4a-4121-bb96-8114f6c2324e")
@@ -47290,7 +47290,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_Coaxial"
+		(property "Value" "Molex 73251-1153"
 			(at -1.72 -7.11 90)
 			(layer "F.Fab")
 			(uuid "a155df79-8e51-443b-ba7b-e408c5cc07a6")
