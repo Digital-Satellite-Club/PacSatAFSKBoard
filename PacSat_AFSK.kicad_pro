@@ -674,7 +674,7 @@
         "diff_pair_width": 0.127,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "RF Complainer",
+        "name": "RF Coplaner",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -708,6 +708,10 @@
       {
         "netclass": "AX5043_PWR",
         "pattern": "AX5043_3V3"
+      },
+      {
+        "netclass": "RF Coplaner",
+        "pattern": "/Rx_Power_Divider/S+"
       }
     ]
   },
