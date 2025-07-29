@@ -3937,15 +3937,16 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "CONUFL001-SMD-T"
 			(at 55.88 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:U_FL"
+		(property "Footprint" "PacSatDev_misc:CONN1_CONUFL_TEC"
 			(at 55.88 113.03 0)
 			(effects
 				(font

@@ -12,7 +12,9 @@ value of the capacitory.
 Does it make sense to wire the UART to the PC104?  If so, do we need
 two of the on the PC104?  Shouldn't one go to a plug somewhere?
 
-RF shields.
+Shield on RX input section?
+
+Shield on TX PA section?
 
 Replace the RTC with one that is temperature rated.  Probably only the
 MCP7940NT-E/MS from Microchip is suitable.
@@ -24,8 +26,6 @@ Check the inductor on the LNA, really verify the whole thing.
 
 Maybe switch to 0402 parts along the RF path to reduce stray
 inductance and capacitance.
-
-Make sure there is enough room around each SMD to hand solder it.
 
 Decoupling, at least on 1.2V, seem inadequate.  Check that out.
 
@@ -106,6 +106,10 @@ That's pretty standard.
 The RF lines need some rework, some from the hybrid to the AX5043s are
 kind of long, and they probably need to be coplaner.  I have added a
 coplaner net class for this board stack (.225mm trace, .7mm spacing).
+
+Shield on receive AX5043s.
+
+Shield on transmit AX5043.
 
 # Not going to do
 
@@ -249,3 +253,9 @@ Added a resistor to the MRAM SPI clock signal.
 Add SMA connectors for TX and RX.
 
 Added resistors to JTAG interface, per the way it's defined.
+
+# 2025-07-28
+
+Replaced UFL connectors with surface mount ones.
+
+Added shields for the RX AX5043 sections.

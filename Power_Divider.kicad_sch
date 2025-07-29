@@ -3832,15 +3832,16 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "CONUFL001-SMD-T"
 			(at 358.14 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:U_FL"
+		(property "Footprint" "PacSatDev_misc:CONN1_CONUFL_TEC"
 			(at 358.14 100.33 0)
 			(effects
 				(font
@@ -4964,15 +4965,16 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "CONUFL001-SMD-T"
 			(at 339.09 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:U_FL"
+		(property "Footprint" "PacSatDev_misc:CONN1_CONUFL_TEC"
 			(at 339.09 100.33 0)
 			(effects
 				(font
@@ -5034,15 +5036,16 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "CONUFL001-SMD-T"
 			(at 349.25 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:U_FL"
+		(property "Footprint" "PacSatDev_misc:CONN1_CONUFL_TEC"
 			(at 349.25 100.33 0)
 			(effects
 				(font
@@ -5719,15 +5722,16 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "CONUFL001-SMD-T"
 			(at 367.03 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:U_FL"
+		(property "Footprint" "PacSatDev_misc:CONN1_CONUFL_TEC"
 			(at 367.03 100.33 0)
 			(effects
 				(font
