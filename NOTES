@@ -27,8 +27,6 @@ Check the inductor on the LNA, really verify the whole thing.
 Maybe switch to 0402 parts along the RF path to reduce stray
 inductance and capacitance.
 
-Decoupling, at least on 1.2V, seem inadequate.  Check that out.
-
 Replace unobtanium parts.
 
 Figure out temperature ratings on all chips and get as many to be 105C
@@ -110,6 +108,8 @@ coplaner net class for this board stack (.225mm trace, .7mm spacing).
 Shield on receive AX5043s.
 
 Shield on transmit AX5043.
+
+Decoupling, at least on 1.2V, seem inadequate.  Check that out.
 
 # Not going to do
 
@@ -259,3 +259,6 @@ Added resistors to JTAG interface, per the way it's defined.
 Replaced UFL connectors with surface mount ones.
 
 Added shields for the RX AX5043 sections.
+
+Added a bunch of decoupling caps on the CPU, basically one per CPU,
+like the launchpad did, and like is standard.

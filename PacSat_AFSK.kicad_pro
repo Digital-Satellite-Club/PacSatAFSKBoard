@@ -670,7 +670,7 @@
         "via_drill": 0.3048
       },
       {
-        "clearance": 0.7,
+        "clearance": 0.5,
         "diff_pair_gap": 0.18,
         "diff_pair_width": 0.127,
         "microvia_diameter": 0.3,
@@ -679,7 +679,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.225,
+        "track_width": 0.22,
         "via_diameter": 0.508,
         "via_drill": 0.3048
       }
