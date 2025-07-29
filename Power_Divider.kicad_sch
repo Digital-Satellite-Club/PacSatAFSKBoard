@@ -2373,16 +2373,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 143.51) (xy 105.41 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43d7d535-57f1-4486-96a9-baf79d21754c")
-	)
-	(wire
-		(pts
 			(xy 199.39 134.62) (xy 212.09 134.62)
 		)
 		(stroke
@@ -2550,6 +2540,16 @@
 			(type default)
 		)
 		(uuid "66ae20ee-36b2-4e6a-8a5f-87133f9e05e5")
+	)
+	(wire
+		(pts
+			(xy 105.41 143.51) (xy 107.95 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67f5f674-dde3-4275-8401-6f8383b33c00")
 	)
 	(wire
 		(pts
@@ -3120,6 +3120,16 @@
 			(justify left bottom)
 		)
 		(uuid "0066dc97-ea54-44e7-8da0-a88f39fd8fac")
+	)
+	(label "RF_Input"
+		(at 58.42 143.51 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "adb37340-d264-46ed-8c35-4bcc995a1f98")
 	)
 	(global_label "LNA_ENABLE"
 		(shape input)

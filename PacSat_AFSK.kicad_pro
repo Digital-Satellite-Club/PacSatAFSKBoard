@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.016,
-          "width": 1.016
+          "drill": 0.0,
+          "height": 0.95,
+          "width": 1.075
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -77,7 +77,7 @@
           ""
         ],
         [
-          "footprint_type_mismatch|169710000|145460000|c158dd21-86ac-4e76-991f-79f57198ed3d|00000000-0000-0000-0000-000000000000",
+          "footprint_type_mismatch|171870000|145420000|c158dd21-86ac-4e76-991f-79f57198ed3d|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -729,6 +729,34 @@
       {
         "netclass": "RF Coplaner",
         "pattern": "Port2_P"
+      },
+      {
+        "netclass": "RF Coplaner",
+        "pattern": "/Rx_Power_Divider/RF_Input"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Rx_Power_Divider/RFI1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Rx_Power_Divider/RFI2"
+      },
+      {
+        "netclass": "RF Coplaner",
+        "pattern": "/Rx_Power_Divider/RFI3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Rx_Power_Divider/RFI4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/Rx_Power_Divider/RFI5"
+      },
+      {
+        "netclass": "RF Coplaner",
+        "pattern": "/Rx_Power_Divider/RFI6"
       }
     ]
   },
