@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.3,
-          "width": 1.6
+          "drill": 0.762,
+          "height": 1.016,
+          "width": 1.016
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -222,6 +222,7 @@
         0.127,
         0.1524,
         0.2032,
+        0.225,
         0.254,
         0.3048,
         0.3302,
@@ -712,6 +713,22 @@
       {
         "netclass": "RF Coplaner",
         "pattern": "/Rx_Power_Divider/S+"
+      },
+      {
+        "netclass": "RF Coplaner",
+        "pattern": "Port1_P"
+      },
+      {
+        "netclass": "RF Coplaner",
+        "pattern": "Port3_P"
+      },
+      {
+        "netclass": "RF Coplaner",
+        "pattern": "Port4_P"
+      },
+      {
+        "netclass": "RF Coplaner",
+        "pattern": "Port2_P"
       }
     ]
   },

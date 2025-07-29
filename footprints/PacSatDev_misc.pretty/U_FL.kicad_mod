@@ -4,7 +4,7 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "P703"
-		(at 3.9116 -1.9812 180)
+		(at -0.05 2.075 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "f3ebb05e-33a0-4897-8ff0-692f606be2da")
@@ -315,7 +315,7 @@
 		(uuid "0325d774-1122-447f-968b-709f303220ff")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 2.4892 2.0792 180)
+		(at 0.125 2.0792 180)
 		(layer "F.Fab")
 		(uuid "4384676b-3eec-4400-b791-88dd33106d3d")
 		(effects
@@ -332,6 +332,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.25)
+		(clearance 0.3)
 		(uuid "db5b7f74-3fe6-4f49-8138-3d9c54abe438")
 	)
 	(pad "2" thru_hole roundrect
