@@ -5824,7 +5824,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PIC-S-101"
+		(property "Value" "PIC-S-201F"
 			(at 132.08 63.4999 0)
 			(effects
 				(font
