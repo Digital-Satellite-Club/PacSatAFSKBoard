@@ -2194,7 +2194,7 @@
 		)
 		(uuid "2a9063e9-b91f-4a39-bd42-368fa8b52e53")
 	)
-	(text "Place by the CPU."
+	(text "Place by the PA."
 		(exclude_from_sim no)
 		(at 302.514 127.254 0)
 		(effects
@@ -2203,6 +2203,17 @@
 			)
 		)
 		(uuid "2e1b8997-ff08-41dd-ba86-636ef7745094")
+	)
+	(text "-1.3 dB"
+		(exclude_from_sim no)
+		(at 291.084 181.61 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "2ea6c3b5-e5db-4376-9b22-2d0147bd0efc")
 	)
 	(text "Symbol Numbers 700 up"
 		(exclude_from_sim no)
@@ -2280,6 +2291,16 @@
 		)
 		(uuid "9dee4eee-de08-4399-a410-db3371da8091")
 	)
+	(text "DC bias may affect the\nvalue of this capacitor.\nMay need to adjust."
+		(exclude_from_sim no)
+		(at 227.584 151.13 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "abf3dff5-9f6a-4343-a551-0896de412301")
+	)
 	(text "Connect External 2.7 VDC supply\nhere for testing."
 		(exclude_from_sim no)
 		(at 153.67 40.64 0)
@@ -2322,6 +2343,16 @@
 			(justify left bottom)
 		)
 		(uuid "d63efe84-1235-49e7-a216-0c88bbcf0b97")
+	)
+	(text "Output impedance is\n6.23 - j13.3 ohms\nThis converts to 50 ohms\nat 435MHz"
+		(exclude_from_sim no)
+		(at 210.566 171.196 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "dc2d3d9e-dbeb-49f3-bde7-e113b8416228")
 	)
 	(junction
 		(at 143.51 160.02)
@@ -5249,7 +5280,7 @@
 		(dnp no)
 		(uuid "8c3ff6a0-8887-477b-835d-c271f0a8da53")
 		(property "Reference" "L707"
-			(at 198.12 138.43 0)
+			(at 196.342 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5257,7 +5288,7 @@
 			)
 		)
 		(property "Value" "18n"
-			(at 189.23 138.43 0)
+			(at 191.77 140.716 90)
 			(effects
 				(font
 					(size 1.27 1.27)

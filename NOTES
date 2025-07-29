@@ -1,9 +1,13 @@
 
 # TODO
 
-The RF lines need some rework, some from the hybrid to the AX5043s are
-kind of long, and they probably need to be coplaner.  I have added a
-coplaner net class for this board stack (.225mm trace, .7mm spacing).
+Probably remove the L1/L2 inductor on the AX5043s and replace them
+with a short.  I don't think we will use them.
+
+Do we need the capacitor between the LNA and the filter?  The filter
+datasheet shows an input capacitor first, so that should block the DC.
+The only concern would be the DC bias characteristic changing the
+value of the capacitory.
 
 Does it make sense to wire the UART to the PC104?  If so, do we need
 two of the on the PC104?  Shouldn't one go to a plug somewhere?
@@ -98,6 +102,10 @@ Add resistors to the MRAM SPI connection.
 
 Does the JTAG interface need resistors on TCK and TDO (22 ohm)?
 That's pretty standard.
+
+The RF lines need some rework, some from the hybrid to the AX5043s are
+kind of long, and they probably need to be coplaner.  I have added a
+coplaner net class for this board stack (.225mm trace, .7mm spacing).
 
 # Not going to do
 

@@ -1701,9 +1701,9 @@
 		)
 		(uuid "0465281f-78b9-4856-b1d0-d07facd50c0e")
 	)
-	(text "-0.5 dB"
+	(text "-6.5 dB per port\n-6db for dividing power\n-.5db for insertion loss"
 		(exclude_from_sim no)
-		(at 313.055 106.68 0)
+		(at 314.198 147.32 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1820,9 +1820,9 @@
 		)
 		(uuid "9d096fbb-2354-42c0-8468-b696582bd672")
 	)
-	(text "-1 dB"
+	(text "-2.5 dB"
 		(exclude_from_sim no)
-		(at 254 127 0)
+		(at 222.25 162.814 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1844,7 +1844,7 @@
 	)
 	(text "+20 dB"
 		(exclude_from_sim no)
-		(at 153.162 173.736 0)
+		(at 153.67 179.324 0)
 		(effects
 			(font
 				(size 1.524 1.524)

@@ -1506,7 +1506,7 @@
 		)
 		(uuid "862be1e6-361a-496f-9e7d-403657e2cc1b")
 	)
-	(text "16 dB Max Power Out @ 430 MHz"
+	(text "16 dBm Max Power Out @ 430 MHz\nIf the PA works as expected,\nThe maximum output here should\nbe limited in the AX5043 to 13dBm\nto avoid overdriving the PA."
 		(exclude_from_sim no)
 		(at 110.49 179.07 0)
 		(effects
