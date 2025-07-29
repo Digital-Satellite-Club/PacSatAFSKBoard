@@ -41,7 +41,7 @@ Check the inductor on the LNA, really verify the whole thing.
 Maybe switch to 0402 parts along the RF path to reduce stray
 inductance and capacitance.
 
-Replace unobtanium parts.
+Replace unobtanium parts (if any).
 
 Figure out temperature ratings on all chips and get as many to be 105C
 or better as possible.
@@ -284,3 +284,5 @@ oriented correctly the transformer will stick through the hole without
 a radial line on it.  The TX one was left as PIC-S-101, as it doesn't
 have a transformer in the can and doesn't need the extra height.  Both
 parts have the same base layout.
+
+Sized up some power lines for safety margin.
