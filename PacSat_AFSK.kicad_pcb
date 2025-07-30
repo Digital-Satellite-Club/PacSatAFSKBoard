@@ -9915,7 +9915,7 @@
 				)
 			)
 		)
-		(property "Value" "PIC-S-101"
+		(property "Value" "PIC-S-201F"
 			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11015,7 +11015,7 @@
 				)
 			)
 		)
-		(property "Value" "PIC-S-101"
+		(property "Value" "PIC-S-201F"
 			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14971,7 +14971,7 @@
 				)
 			)
 		)
-		(property "Value" "PIC-S-101"
+		(property "Value" "PIC-S-201F"
 			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26179,7 +26179,7 @@
 				)
 			)
 		)
-		(property "Value" "PIC-S-101"
+		(property "Value" "PIC-S-201F"
 			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27176,7 +27176,7 @@
 				)
 			)
 		)
-		(property "Value" "PIC-S-101"
+		(property "Value" "PIC-S-201F"
 			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")

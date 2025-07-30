@@ -346,3 +346,7 @@ from the RF splitter to the AX5043 to a decoupling capacitor.
 
 Changed the zero-ohm resistor between the TX AX5043 and the PA to a
 decoupling capacitor.
+
+Changed the shields on the AX5043 to PIC-S-201F which is a frame and a
+cover.  This can be replaced with a PIC-S-101 which is a single unit
+when access is no longer needed to the parts underneath.

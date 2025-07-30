@@ -1871,6 +1871,16 @@
 		)
 		(uuid "7a49baa3-c998-48e7-a11c-1f4162a03212")
 	)
+	(text "The cover for this frame is PIC-S-201C\nand also needs to be ordered.  When access\nto the parts is no longer needed (or shake\nresistance is required) the PIC-S-101 has\nthe same layout as a single unit.\n\nThis is the same for all shields on the\nAX5043 parts."
+		(exclude_from_sim no)
+		(at 129.794 29.464 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "9cb2ae56-e377-4b74-9f6b-33d845c9404f")
+	)
 	(text "Symbol Numbers 200 up"
 		(exclude_from_sim no)
 		(at 25.4 259.08 0)
@@ -4648,7 +4658,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PIC-S-101"
+		(property "Value" "PIC-S-201F"
 			(at 144.78 50.7999 0)
 			(effects
 				(font
