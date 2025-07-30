@@ -2183,6 +2183,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Inductor to bleed of static build\nup on the antenna."
+		(exclude_from_sim no)
+		(at 338.836 192.024 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "0ebd6f2c-e185-4356-91cd-64037e31cd7e")
+	)
 	(text "Adjust Voltage and Current for 2W"
 		(exclude_from_sim no)
 		(at 119.38 59.69 0)
@@ -2359,6 +2369,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "010074f1-87a5-4ff6-828c-c00b856f22d9")
+	)
+	(junction
+		(at 327.66 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0484c37f-78f8-4b93-a416-7d9f7e0e0461")
 	)
 	(junction
 		(at 147.32 149.86)
@@ -2553,6 +2569,12 @@
 		(uuid "d77d8d51-fc37-4241-9c88-0d1852c56f5e")
 	)
 	(junction
+		(at 340.36 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e49b16b6-f7d9-46b6-8512-6855ac11f17c")
+	)
+	(junction
 		(at 83.82 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2660,6 +2682,16 @@
 	)
 	(wire
 		(pts
+			(xy 327.66 180.34) (xy 327.66 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1005c603-c819-4d9d-9014-98bdc208ff89")
+	)
+	(wire
+		(pts
 			(xy 83.82 149.86) (xy 90.17 149.86)
 		)
 		(stroke
@@ -2710,6 +2742,16 @@
 	)
 	(wire
 		(pts
+			(xy 340.36 180.34) (xy 327.66 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16ee55e5-42c4-47c8-b67a-4ede5445ba96")
+	)
+	(wire
+		(pts
 			(xy 267.97 162.56) (xy 267.97 165.1)
 		)
 		(stroke
@@ -2737,6 +2779,16 @@
 			(type default)
 		)
 		(uuid "22e44746-8bc5-4d74-a50a-2899b60e185c")
+	)
+	(wire
+		(pts
+			(xy 340.36 167.64) (xy 321.31 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "272d4ac9-0bbd-480f-b6d5-7c68139e5a3c")
 	)
 	(wire
 		(pts
@@ -2990,7 +3042,7 @@
 	)
 	(wire
 		(pts
-			(xy 334.01 167.64) (xy 321.31 167.64)
+			(xy 349.25 167.64) (xy 340.36 167.64)
 		)
 		(stroke
 			(width 0)
@@ -3200,7 +3252,7 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 172.72) (xy 339.09 175.26)
+			(xy 354.33 172.72) (xy 354.33 175.26)
 		)
 		(stroke
 			(width 0)
@@ -3210,7 +3262,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 165.1) (xy 327.66 173.99)
+			(xy 327.66 165.1) (xy 327.66 180.34)
 		)
 		(stroke
 			(width 0)
@@ -3317,6 +3369,16 @@
 			(type default)
 		)
 		(uuid "a3fde161-216c-4920-a1a5-9fea9c8586f3")
+	)
+	(wire
+		(pts
+			(xy 340.36 167.64) (xy 340.36 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a59b2a1c-e3a7-4d6a-bb31-8d1f66e2e9a1")
 	)
 	(wire
 		(pts
@@ -3437,6 +3499,16 @@
 			(type default)
 		)
 		(uuid "d26ab3c0-a1cf-4a0e-9b4e-cbcb252d89fd")
+	)
+	(wire
+		(pts
+			(xy 340.36 179.07) (xy 340.36 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6d64cfd-c3fa-4f02-a9bf-b8d32e9d8899")
 	)
 	(wire
 		(pts
@@ -4081,7 +4153,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 339.09 167.64 0)
+		(at 354.33 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4090,7 +4162,7 @@
 		(fields_autoplaced yes)
 		(uuid "2520c31f-30e6-41ad-87dc-c76cb65080dc")
 		(property "Reference" "J87"
-			(at 338.7726 161.29 0)
+			(at 354.0126 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4098,7 +4170,7 @@
 			)
 		)
 		(property "Value" "Molex 73251-1153"
-			(at 338.7726 163.83 0)
+			(at 354.0126 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4106,7 +4178,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal"
-			(at 339.09 167.64 0)
+			(at 354.33 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4115,7 +4187,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 339.09 167.64 0)
+			(at 354.33 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4124,7 +4196,7 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 339.09 167.64 0)
+			(at 354.33 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4607,7 +4679,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 327.66 173.99 0)
+		(at 327.66 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4615,7 +4687,7 @@
 		(dnp no)
 		(uuid "5fdaf0c5-f07e-44e7-a3fc-75b693fef32b")
 		(property "Reference" "#PWR0200"
-			(at 327.66 180.34 0)
+			(at 327.66 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4624,7 +4696,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 327.787 178.3842 0)
+			(at 327.787 187.2742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4632,7 +4704,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 327.66 173.99 0)
+			(at 327.66 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4641,7 +4713,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 327.66 173.99 0)
+			(at 327.66 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4650,7 +4722,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 327.66 173.99 0)
+			(at 327.66 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4802,7 +4874,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 339.09 175.26 0)
+		(at 354.33 175.26 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4812,7 +4884,7 @@
 		(fields_autoplaced yes)
 		(uuid "642180c9-c0f4-45fc-b79f-2494ea9a80f8")
 		(property "Reference" "#PWR0191"
-			(at 339.09 181.61 0)
+			(at 354.33 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4821,7 +4893,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 339.09 180.34 0)
+			(at 354.33 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4829,7 +4901,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 339.09 175.26 0)
+			(at 354.33 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4838,7 +4910,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 339.09 175.26 0)
+			(at 354.33 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4847,7 +4919,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 339.09 175.26 0)
+			(at 354.33 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4994,6 +5066,72 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
 					(reference "C714")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 340.36 175.26 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7eb8ab8c-a4dc-4d54-9b58-2178ce740dd4")
+		(property "Reference" "L97"
+			(at 342.138 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 337.566 174.498 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 340.36 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 340.36 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 340.36 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "df0265ba-cbe7-4c90-9846-b86bd962fe3b")
+		)
+		(pin "2"
+			(uuid "f18c1f18-8317-46f6-a726-c539b3031e1f")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
+					(reference "L97")
 					(unit 1)
 				)
 			)

@@ -15,6 +15,9 @@ looks like it will go through the hole in top.  The transformer is
 that comes up is smaller.  The RX shields are now the PIC-S-201F, the
 TX shield is the PIC-S-101.
 
+In the shield problem, will the transformer coming up through a steel
+enclosure affect the performance of the transformer?
+
 Probably remove the L1/L2 inductor on the AX5043s and replace them
 with a short.  I don't think we will use them.
 
@@ -23,7 +26,7 @@ datasheet shows an input capacitor first, so that should block the DC.
 The only concern would be the DC bias characteristic changing the
 value of the capacitor.
 
-Does it make sense to wire the UART to the PC104?  If so, do we need
+Does it make sense to wire the UARTs to the PC104?  If so, do we need
 two of the on the PC104?  Shouldn't one go to a plug somewhere?
 
 Shield on RX input section?
@@ -124,6 +127,12 @@ Shield on receive AX5043s.
 Shield on transmit AX5043.
 
 Decoupling, at least on 1.2V, seem inadequate.  Check that out.
+
+Figure out how to orient the shields properly.
+
+Add an option for a bleedoff inductor on the transmit output.
+
+Via impedance
 
 # Not going to do
 
@@ -286,3 +295,20 @@ have a transformer in the can and doesn't need the extra height.  Both
 parts have the same base layout.
 
 Sized up some power lines for safety margin.
+
+Calculation of the via impedance (done at Sierra Circuits proto
+express) comes out to ~52 ohms.  The board is 1.56mm thick (JLCPCB
+2116 board stack), each copper layer is .035mm.  Input is:
+
+  Height of dielectric - H1 ( mm ) - 1.416
+  Dielectric Constant Er_1 - 4.5
+  Height of dielectric - H2 ( mm ) - .109
+  Dielectric Constant Er_2 - 4.5
+  Dielectric Constant Er_3 - 4.5
+  Via Diameter ( mm ) - .308
+  Anti Pad Diameter ( mm ) - 1.53
+  Annular Pad Diameter ( mm ) - .508
+  Via Pad Diameter ( mm ) - .508
+  Via Plating Thickness ( mm ) - .035
+  Annular Pad Thickness ( mm ) - .035
+  Reference Plane Thickness ( mm ) - .035
