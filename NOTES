@@ -1,31 +1,6 @@
 
 # TODO
 
-The chosen shield size for the AX5043s isn't tall enough.  The
-transform is inside the shield, and it's 3.05mm tall, but all the
-shields of the chosen size are 2.54mm tall.  I can't find a suitable
-shield smaller than that to put the transformer on the outside.  The
-shields with the proper height are way too big.  I can find a few that
-are 12.7x13.2mm that are 3.5mm tall, but they would need to be
-customized to add holes for traces.  You could just add a hole for the
-transformer, I suppose.  Or get a custom shield.  Some of the shields
-are pretty open on the top, like the PIC-S-201F, and the transformer
-looks like it will go through the hole in top.  The transformer is
-4.19x4.45x3.05mm, but that's the base dimensions, the transformer part
-that comes up is smaller.  The opening int the top of the shield is
-2.35mm at the narrowest point.  Estimating the size of the transformer
-from the pictures, I get 2.2mm.  The opening starts 1mm from the
-bottom of the shield, and that means the transformer would have to be
-pretty close to the bottom.  However, after more analysis, I had the
-orientation wrong, it's rotated 90 degrees from what I thought.  So
-it's not going to work.
-
-The RX shields are now the PIC-S-201F, the TX shield is the PIC-S-101,
-but the RX shields will need some change.
-
-In the shield problem, will the transformer coming up through a steel
-enclosure affect the performance of the transformer?
-
 Probably remove the L1/L2 inductor on the AX5043s and replace them
 with a short.  I don't think we will use them.
 
@@ -141,6 +116,31 @@ Figure out how to orient the shields properly.
 Add an option for a bleedoff inductor on the transmit output.
 
 Via impedance
+
+The chosen shield size for the AX5043s isn't tall enough.  The
+transform is inside the shield, and it's 3.05mm tall, but all the
+shields of the chosen size are 2.54mm tall.  I can't find a suitable
+shield smaller than that to put the transformer on the outside.  The
+shields with the proper height are way too big.  I can find a few that
+are 12.7x13.2mm that are 3.5mm tall, but they would need to be
+customized to add holes for traces.  You could just add a hole for the
+transformer, I suppose.  Or get a custom shield.  Some of the shields
+are pretty open on the top, like the PIC-S-201F, and the transformer
+looks like it will go through the hole in top.  The transformer is
+4.19x4.45x3.05mm, but that's the base dimensions, the transformer part
+that comes up is smaller.  The opening int the top of the shield is
+2.35mm at the narrowest point.  Estimating the size of the transformer
+from the pictures, I get 2.2mm.  The opening starts 1mm from the
+bottom of the shield, and that means the transformer would have to be
+pretty close to the bottom.  However, after more analysis, I had the
+orientation wrong, it's rotated 90 degrees from what I thought.  So
+it's not going to work.
+
+The RX shields are now the PIC-S-201F, the TX shield is the PIC-S-101,
+but the RX shields will need some change.
+
+In the shield problem, will the transformer coming up through a steel
+enclosure affect the performance of the transformer?
 
 # Not going to do
 
@@ -336,3 +336,13 @@ With this setup, no resistors on the other lines, as long as they
 settle within half a clock period plus 2ns, all should be good.  You
 could probably run this at 100MHz without an issue.  But the double
 clocking is the big problem.
+
+To solve the problem with the transformer not fitting in the shield,
+replace the transformer with a lumped sum balun as described by the
+work Jim McCullers did in the "AX5043 Receiver Impedence Matching"
+document.  I just used the values he came up with.  Changed all the
+shields back to the PIC-S-101.  Also changed the zero-ohm resistor
+from the RF splitter to the AX5043 to a decoupling capacitor.
+
+Changed the zero-ohm resistor between the TX AX5043 and the PA to a
+decoupling capacitor.

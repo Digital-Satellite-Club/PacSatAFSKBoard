@@ -2193,17 +2193,6 @@
 		)
 		(uuid "0ebd6f2c-e185-4356-91cd-64037e31cd7e")
 	)
-	(text "Adjust Voltage and Current for 2W"
-		(exclude_from_sim no)
-		(at 119.38 59.69 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right bottom)
-		)
-		(uuid "2a9063e9-b91f-4a39-bd42-368fa8b52e53")
-	)
 	(text "Place by the PA."
 		(exclude_from_sim no)
 		(at 302.514 127.254 0)
@@ -2245,17 +2234,6 @@
 			)
 		)
 		(uuid "41d87ca8-1969-4d3d-ba5a-631c45282775")
-	)
-	(text "RF Shield over these parts."
-		(exclude_from_sim no)
-		(at 31.75 186.69 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "488fcb6d-db08-4e93-9d7a-7e57dad5da11")
 	)
 	(text "33 dBm\n2 W"
 		(exclude_from_sim no)
@@ -2310,17 +2288,6 @@
 			)
 		)
 		(uuid "abf3dff5-9f6a-4343-a551-0896de412301")
-	)
-	(text "Connect External 2.7 VDC supply\nhere for testing."
-		(exclude_from_sim no)
-		(at 153.67 40.64 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right bottom)
-		)
-		(uuid "bc22a73f-8328-463d-9346-f76009b4f2b2")
 	)
 	(text "Input impedance is\n1.87 - 37.7j this\nmatches to 50 ohms\nat 435MHz."
 		(exclude_from_sim no)
@@ -4611,73 +4578,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 45.72 142.24 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4df1e4f9-3081-4e80-8abb-8c9342e7aa28")
-		(property "Reference" "R133"
-			(at 45.72 135.89 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 45.72 138.43 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 45.72 144.018 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 45.72 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 45.72 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "25590c39-1107-4077-a0f9-deae218c09be")
-		)
-		(pin "2"
-			(uuid "8b48c6e3-68db-4d69-92ba-55579490fd1e")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
-					(reference "R133")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 327.66 182.88 0)
 		(unit 1)
@@ -6195,6 +6095,73 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
 					(reference "#PWR0143")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 45.72 142.24 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e4e9533c-f723-412e-ac50-4b486f5ee17b")
+		(property "Reference" "C137"
+			(at 45.72 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100p"
+			(at 45.72 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 49.53 143.2052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0ff66930-ca55-489e-bac6-d6d28b93a7df")
+		)
+		(pin "2"
+			(uuid "17f00e5c-97ce-43a0-8da4-8f583bb9b33c")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
+					(reference "C137")
 					(unit 1)
 				)
 			)
