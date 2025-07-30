@@ -12,8 +12,6 @@ value of the capacitor.
 Does it make sense to wire the UARTs to the PC104?  If so, do we need
 two of the on the PC104?  Shouldn't one go to a plug somewhere?
 
-Shield on RX input section?
-
 Shield on TX PA section?
 
 Replace the RTC with one that is temperature rated.  Probably only the
@@ -141,6 +139,8 @@ but the RX shields will need some change.
 
 In the shield problem, will the transformer coming up through a steel
 enclosure affect the performance of the transformer?
+
+Shield on RX input section.
 
 # Not going to do
 
