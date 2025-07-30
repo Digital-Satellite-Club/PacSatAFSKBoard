@@ -12,8 +12,16 @@ transformer, I suppose.  Or get a custom shield.  Some of the shields
 are pretty open on the top, like the PIC-S-201F, and the transformer
 looks like it will go through the hole in top.  The transformer is
 4.19x4.45x3.05mm, but that's the base dimensions, the transformer part
-that comes up is smaller.  The RX shields are now the PIC-S-201F, the
-TX shield is the PIC-S-101.
+that comes up is smaller.  The opening int the top of the shield is
+2.35mm at the narrowest point.  Estimating the size of the transformer
+from the pictures, I get 2.2mm.  The opening starts 1mm from the
+bottom of the shield, and that means the transformer would have to be
+pretty close to the bottom.  However, after more analysis, I had the
+orientation wrong, it's rotated 90 degrees from what I thought.  So
+it's not going to work.
+
+The RX shields are now the PIC-S-201F, the TX shield is the PIC-S-101,
+but the RX shields will need some change.
 
 In the shield problem, will the transformer coming up through a steel
 enclosure affect the performance of the transformer?
@@ -312,3 +320,7 @@ express) comes out to ~52 ohms.  The board is 1.56mm thick (JLCPCB
   Via Plating Thickness ( mm ) - .035
   Annular Pad Thickness ( mm ) - .035
   Reference Plane Thickness ( mm ) - .035
+
+Reroute the SPI clock to the bottom of the board where it can be
+impedance controlled to 50 ohms.  Add a ground plane on the bottom to
+the entire RF section so that the impedance is the same as on the top.
