@@ -287,7 +287,7 @@ Add SMA connectors for TX and RX.
 
 Added resistors to JTAG interface, per the way it's defined.
 
-# 2025-07-28
+# 2025-07-29
 
 Replaced UFL connectors with surface mount ones.
 
@@ -338,6 +338,8 @@ With this setup, no resistors on the other lines, as long as they
 settle within half a clock period plus 2ns, all should be good.  You
 could probably run this at 100MHz without an issue.  But the double
 clocking is the big problem.
+
+# 2025-07-30
 
 To solve the problem with the transformer not fitting in the shield,
 replace the transformer with a lumped sum balun as described by the
