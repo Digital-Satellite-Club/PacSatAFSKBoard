@@ -75,6 +75,32 @@ def matrix_db_degrees_to_rect(s):
     z[1,1] = db_degrees_to_rect(s[1,1])
     return z
 
+def rect_to_db_degrees(s):
+    """ Convert a single dB/degrees value to rectangular form
+
+    :param s: The complex number in the form (value in dB, degrees)
+    :return: The number converted to rectangular form
+    """
+    # Decibels to voltage value.
+    v = np.sqrt(s.real ** 2 + s.imag ** 2)
+    vdb = np.log10(v) * 20
+    ang = np.degrees(np.arctan2(s.imag, s.real))
+    return vdb + 1j * ang
+
+def matrix_rect_to_db_degrees(s):
+    """ Matrix in dBs/degrees to rectangular form
+
+    :param s: The matrix in dBs/degrees
+    :return: The matrix in rectangular form
+    """
+    z = np.zeros([2,2], dtype=complex)
+
+    z[0,0] = rect_to_db_degrees(s[0,0])
+    z[0,1] = rect_to_db_degrees(s[0,1])
+    z[1,0] = rect_to_db_degrees(s[1,0])
+    z[1,1] = rect_to_db_degrees(s[1,1])
+    return z
+
 def z_to_zin(z, zload):
     """ Get the input impedance from the Z matrix and the load impedance.
 

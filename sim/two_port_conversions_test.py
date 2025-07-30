@@ -21,13 +21,25 @@ s22 = 0.254 * np.exp(1j * np.radians(-132.654))
 
 s_orig = np.array([[s11, s12], [s21, s22]])
 
+print(f'Original S: \n{s_orig}\n')
+
+sdb = np.array([[-7.77 + 1j * 160.117, 12.8 + 1j * 163.864],
+                [-24.0 + 1j * 115.967, -11.9 + 1j * -132.654]])
+print(f'Original Sdb: \n{sdb}\n')
+
+s = matrix_db_degrees_to_rect(sdb)
+print(f'Test (Sdb -> s): \n{s}\n')
+
+sdb = matrix_rect_to_db_degrees(s_orig)
+print(f'Test (s_orig -> sdb): \n{sdb}\n')
+s = matrix_db_degrees_to_rect(sdb)
+print(f'Test (sdb -> s): \n{s}\n')
+
 # Data specified at 50 Ohms (adding small complex component to test conversions)
 z1, z2 = 50 + 0.01j, 50 - 0.02j
 z0 = np.array([z1, z2])
 
 """ Conversions """
-print(f'Original S: \n{s_orig}\n')
-
 # S --> Z --> T --> Z --> S
 z = s_to_z(s_orig, z0)
 t = z_to_t(z, z0)
