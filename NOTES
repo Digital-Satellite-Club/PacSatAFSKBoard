@@ -20,8 +20,6 @@ MCP7940NT-E/MS from Microchip is suitable.
 Figure out where the external RF connections need to be so the layout
 can be simplified around that.
 
-Check the inductor on the LNA, really verify the whole thing.
-
 Maybe switch to 0402 parts along the RF path to reduce stray
 inductance and capacitance and reduce size.
 
@@ -143,6 +141,8 @@ enclosure affect the performance of the transformer?
 Shield on RX input section.
 
 Shield on TX PA section.
+
+Check the inductor on the LNA, really verify the whole thing.
 
 # Not going to do
 
@@ -358,3 +358,10 @@ when access is no longer needed to the parts underneath.
 Added a shield for the TX PA and RX input sections.
 
 Add a thermsistor for the power conversion area to pin 83.
+
+Rework the RF input circuitry.  I had to increase the power feed
+inductor and add an input and output impedance match circuit.  That
+required changing the parts around the LNA to 0402 size to get them to
+all fit.  You might be able to modify the input filter to adjust the
+impedance, but I couldn't figure out how to do that to match a complex
+impedance.  I'm sure it can be done, but it's a matter of how.
