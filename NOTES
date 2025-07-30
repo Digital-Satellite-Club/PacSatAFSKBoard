@@ -4,15 +4,15 @@
 Probably remove the L1/L2 inductor on the AX5043s and replace them
 with a short.  I don't think we will use them.
 
+What UFL connectors can be removed?
+
 Do we need the capacitor between the LNA and the filter?  The filter
 datasheet shows an input capacitor first, so that should block the DC.
 The only concern would be the DC bias characteristic changing the
-value of the capacitor.
+value of the capacitor.  I've asked MiniCircuits about this.
 
 Does it make sense to wire the UARTs to the PC104?  If so, do we need
-two of the on the PC104?  Shouldn't one go to a plug somewhere?
-
-Shield on TX PA section?
+two of them on the PC104?  Shouldn't one go to a plug somewhere?
 
 Replace the RTC with one that is temperature rated.  Probably only the
 MCP7940NT-E/MS from Microchip is suitable.
@@ -23,7 +23,7 @@ can be simplified around that.
 Check the inductor on the LNA, really verify the whole thing.
 
 Maybe switch to 0402 parts along the RF path to reduce stray
-inductance and capacitance.
+inductance and capacitance and reduce size.
 
 Replace unobtanium parts (if any).
 
@@ -141,6 +141,8 @@ In the shield problem, will the transformer coming up through a steel
 enclosure affect the performance of the transformer?
 
 Shield on RX input section.
+
+Shield on TX PA section.
 
 # Not going to do
 
@@ -350,3 +352,5 @@ decoupling capacitor.
 Changed the shields on the AX5043 to PIC-S-201F which is a frame and a
 cover.  This can be replaced with a PIC-S-101 which is a single unit
 when access is no longer needed to the parts underneath.
+
+Added a shield for the TX PA and RX input sections.
