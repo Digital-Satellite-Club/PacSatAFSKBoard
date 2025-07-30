@@ -324,3 +324,15 @@ express) comes out to ~52 ohms.  The board is 1.56mm thick (JLCPCB
 Reroute the SPI clock to the bottom of the board where it can be
 impedance controlled to 50 ohms.  Add a ground plane on the bottom to
 the entire RF section so that the impedance is the same as on the top.
+
+Simulated the AX5043 SPI clock and set the resistor values to 470 ohms
+and added a resistor for the end device, too.  With the current
+settings, assuming a .2ns rise time from the processor, this gives a
+fairly smooth signal on all the inputs.  The signal reaches 2.8V (from
+0 to 3V input) or .2V (from 3V to 0) in 2ns.  Resistance values 330
+and down give some issues at the RX2 input, there is a dip that could
+be double-clocked on.  Higher values will slow the rise time more.
+With this setup, no resistors on the other lines, as long as they
+settle within half a clock period plus 2ns, all should be good.  You
+could probably run this at 100MHz without an issue.  But the double
+clocking is the big problem.

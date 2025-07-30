@@ -3154,7 +3154,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 143.51) (xy 248.92 143.51)
+			(xy 245.11 143.51) (xy 251.46 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3171,6 +3171,16 @@
 			(type default)
 		)
 		(uuid "cc4cec00-c3c9-40de-8499-b08d9e4df788")
+	)
+	(wire
+		(pts
+			(xy 259.08 143.51) (xy 269.24 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdfadd52-10b0-413f-9798-062aa6e4a268")
 	)
 	(wire
 		(pts
@@ -3482,7 +3492,7 @@
 	)
 	(global_label "AX5043_CLK"
 		(shape input)
-		(at 248.92 143.51 0)
+		(at 269.24 143.51 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3492,7 +3502,7 @@
 		)
 		(uuid "9a9577c4-5a99-4320-991d-b051552e4325")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 265.6275 143.51 0)
+			(at 285.9475 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3587,6 +3597,73 @@
 				)
 				(justify left)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 255.27 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "04a40ada-3268-412c-a613-ebefaa146fb8")
+		(property "Reference" "R139"
+			(at 255.524 145.796 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470"
+			(at 255.524 148.336 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 255.27 145.288 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 255.27 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 255.27 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d7f25c6-7d1f-45ce-afa7-904d0d4569ce")
+		)
+		(pin "2"
+			(uuid "79ffdfc4-bb5b-42cf-8676-dce2b577915d")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/07d62cf1-e888-4b13-86c4-67d770627579"
+					(reference "R139")
+					(unit 1)
+				)
 			)
 		)
 	)

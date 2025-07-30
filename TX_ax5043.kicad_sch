@@ -6243,7 +6243,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "470"
 			(at 301.244 149.606 90)
 			(effects
 				(font
