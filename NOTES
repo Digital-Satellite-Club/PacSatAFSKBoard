@@ -354,3 +354,5 @@ cover.  This can be replaced with a PIC-S-101 which is a single unit
 when access is no longer needed to the parts underneath.
 
 Added a shield for the TX PA and RX input sections.
+
+Add a thermsistor for the power conversion area to pin 83.

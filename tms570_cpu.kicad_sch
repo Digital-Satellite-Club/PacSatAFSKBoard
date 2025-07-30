@@ -5115,10 +5115,6 @@
 		(at 149.86 137.16)
 		(uuid "f3c5917c-1238-4dd1-8559-214f973b42b9")
 	)
-	(no_connect
-		(at 234.95 68.58)
-		(uuid "f3d8bf41-450e-45d8-84cb-eb60160237ab")
-	)
 	(wire
 		(pts
 			(xy 81.28 165.1) (xy 91.44 165.1)
@@ -5708,16 +5704,6 @@
 			(type default)
 		)
 		(uuid "2d2eef30-344c-47ec-90d1-b92dfc4d95b0")
-	)
-	(wire
-		(pts
-			(xy 234.95 68.58) (xy 234.95 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2dd7ce1d-c707-4662-90fb-2c292e513682")
 	)
 	(wire
 		(pts
@@ -8341,6 +8327,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 64.77) (xy 234.95 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f96f20cf-173d-4301-afe3-21ca6acebf6b")
+	)
+	(wire
+		(pts
 			(xy 196.85 59.69) (xy 196.85 72.39)
 		)
 		(stroke
@@ -8479,6 +8475,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "POWER_TEMP"
+		(shape input)
+		(at 234.95 64.77 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "0a302e39-7231-4c3e-a995-34c13e3ca6c9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 234.95 47.2412 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
