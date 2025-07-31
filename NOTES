@@ -1,6 +1,9 @@
 
 # TODO
 
+There may need to be a delay on the reset line from the power good
+outputs because the power limiting circuits may take time to turn on.
+
 Write a document describing all the interfaces from the processor to
 the rest of the board.
 
@@ -406,3 +409,7 @@ current limit switches enables.  There's already a way to turn of the
 watchdog on the watchdog chip, so it doesn't seem necessary.  Plus the
 line needs to be driven to work.  Also renamed WDO_N to POWER_ENABLE
 to better reflect what it does.
+
+Wired in the power good pin on the MP5073GG-P to the processor reset
+so that the processor is held in reset until 50us after the chip
+enabled power.
