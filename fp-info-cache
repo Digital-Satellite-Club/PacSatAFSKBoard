@@ -1,4 +1,4 @@
-94688334753815
+105212115386167
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -72751,6 +72751,27 @@ PacSat_Dev_4_26
 104
 104
 PacSatDev_misc
+QFN-12_MP5073_MNP
+
+MP5073GG-P 
+0
+13
+13
+PacSatDev_misc
+QFN-12_MP5073_MNP-L
+
+MP5073GG-P 
+0
+13
+13
+PacSatDev_misc
+QFN-12_MP5073_MNP-M
+
+MP5073GG-P 
+0
+13
+13
+PacSatDev_misc
 QFN24_TQP7M9104_QOR
 
 TQP7M9106 
@@ -72918,6 +72939,27 @@ TPS79633QDCQRQ1
 0
 6
 6
+PacSatDev_ti
+DRL5
+
+74LVC1GU04DRLRG4 
+0
+5
+5
+PacSatDev_ti
+DRL5-L
+
+74LVC1GU04DRLRG4 
+0
+5
+5
+PacSatDev_ti
+DRL5-M
+
+74LVC1GU04DRLRG4 
+0
+5
+5
 PacSatDev_ti
 MP05A
 

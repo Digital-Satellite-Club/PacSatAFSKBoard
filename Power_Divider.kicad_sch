@@ -3016,6 +3016,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 195.58) (xy 172.72 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f6cc446-2be9-4c87-bc77-a35d2baeb03f")
+	)
+	(wire
+		(pts
 			(xy 124.46 143.51) (xy 130.81 143.51)
 		)
 		(stroke
@@ -3036,7 +3046,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 166.37) (xy 189.23 170.18)
+			(xy 189.23 166.37) (xy 189.23 168.91)
 		)
 		(stroke
 			(width 0)
@@ -3654,28 +3664,6 @@
 		)
 		(uuid "adb37340-d264-46ed-8c35-4bcc995a1f98")
 	)
-	(global_label "LNA_ENABLE"
-		(shape input)
-		(at 168.91 195.58 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "0758b480-a85a-4c6f-8bc4-0f5eda8d08ec")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.4229 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Port1_P"
 		(shape input)
 		(at 334.01 91.44 90)
@@ -3733,6 +3721,28 @@
 		(uuid "7866bc3b-35ba-4b0f-8f5f-78cd175d7db5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 342.9 79.7895 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LNA_ENABLE_N"
+		(shape input)
+		(at 172.72 195.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "8949463e-6f70-4df0-af12-43fb0f0e45b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.9906 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4676,7 +4686,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 189.23 170.18 0)
+		(at 189.23 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4685,7 +4695,7 @@
 		(fields_autoplaced yes)
 		(uuid "2f0b5946-0e7e-462a-a8d2-52e1ac002316")
 		(property "Reference" "#PWR0226"
-			(at 189.23 176.53 0)
+			(at 189.23 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4694,7 +4704,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 189.23 175.26 0)
+			(at 189.23 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4702,7 +4712,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 170.18 0)
+			(at 189.23 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4711,7 +4721,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 170.18 0)
+			(at 189.23 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4720,7 +4730,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 189.23 170.18 0)
+			(at 189.23 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)

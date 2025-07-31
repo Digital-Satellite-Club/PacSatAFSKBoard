@@ -53,6 +53,7 @@
 			)
 		)
 	)
+	(zone_connect 2)
 	(attr smd)
 	(fp_text user "*"
 		(at 13.6 -14.75 0)
@@ -83,6 +84,7 @@
 		(size 1 3.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(clearance 0.1)
+		(zone_connect 2)
 		(uuid "f6063047-3e14-4fab-9e31-3b1ab719b79c")
 	)
 	(pad "1" smd custom
@@ -90,6 +92,7 @@
 		(size 1 2.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(clearance 0.1)
+		(zone_connect 2)
 		(options
 			(clearance outline)
 			(anchor rect)
@@ -109,6 +112,7 @@
 		(size 1 2.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(clearance 0.1)
+		(zone_connect 2)
 		(options
 			(clearance outline)
 			(anchor rect)
@@ -128,6 +132,7 @@
 		(size 1 3.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(clearance 0.1)
+		(zone_connect 2)
 		(uuid "5ca9ad93-80d5-4377-9a3d-e5b7c418e1c6")
 	)
 	(pad "1" smd rect
@@ -135,6 +140,7 @@
 		(size 1 3.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(clearance 0.1)
+		(zone_connect 2)
 		(uuid "6e42675b-7b60-499b-b01e-4453fc213582")
 	)
 	(pad "1" smd custom
@@ -142,6 +148,7 @@
 		(size 1 2.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(clearance 0.1)
+		(zone_connect 2)
 		(options
 			(clearance outline)
 			(anchor rect)
@@ -161,6 +168,7 @@
 		(size 1 2.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(clearance 0.1)
+		(zone_connect 2)
 		(options
 			(clearance outline)
 			(anchor rect)
@@ -180,6 +188,7 @@
 		(size 1 3.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(clearance 0.1)
+		(zone_connect 2)
 		(uuid "28f67886-991c-4fcf-90ed-151b509e21d3")
 	)
 	(embedded_fonts no)

@@ -9051,7 +9051,7 @@
 			)
 		)
 	)
-	(global_label "LNA_ENABLE"
+	(global_label "LNA_ENABLE_N"
 		(shape input)
 		(at 219.71 59.69 90)
 		(fields_autoplaced yes)
@@ -9063,7 +9063,7 @@
 		)
 		(uuid "6feff6f4-9c55-4ce1-8b09-088f8105453d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.71 43.1771 90)
+			(at 219.71 40.4194 90)
 			(effects
 				(font
 					(size 1.27 1.27)

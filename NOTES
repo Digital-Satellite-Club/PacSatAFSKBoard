@@ -1,6 +1,9 @@
 
 # TODO
 
+Write a document describing all the interfaces from the processor to
+the rest of the board.
+
 Why is both the RTC and the hardware watchdog controlling the transmit
 shutdown?  It would seem only one or the other would be necessary.
 
@@ -13,17 +16,24 @@ with a short.  I don't think we will use them.
 
 What UFL connectors can be removed?
 
+Do we need all those wire holes?  A few I can understand, for powering
+the board on the bench, but there are a bunch of them, some with just
+grounds.
+
 Does it make sense to wire the UARTs to the PC104?  If so, do we need
-two of them on the PC104?  Shouldn't one go to a plug somewhere?
+two of them on the PC104?  Shouldn't one go to a plug somewhere?  If
+so, which one?
 
 Replace the RTC with one that is temperature rated.  Probably only the
-MCP7940NT-E/MS from Microchip is suitable.
+MCP7940NT-E/MS from Microchip is suitable.  It does not have an
+interrupt output, though.
 
 Figure out where the external RF connections need to be so the layout
 can be simplified around that.
 
 Maybe switch to 0402 parts along the RF path to reduce stray
-inductance and capacitance and reduce size.
+inductance and capacitance and reduce size.  Maybe on the rest of the
+board to get more space.
 
 Replace unobtanium parts (if any).
 
@@ -390,3 +400,9 @@ Monolithic Power.  The MAX4495 that was there wasn't rated for 1.2V.
 Remove the Current Fault lines for 1.2V and 3.3V.  They didn't go
 anywhere, and there's not much the processor could do about it if they
 went bad.
+
+Removed the zero ohm resistors on WDO_N, the enable line feeding the
+current limit switches enables.  There's already a way to turn of the
+watchdog on the watchdog chip, so it doesn't seem necessary.  Plus the
+line needs to be driven to work.  Also renamed WDO_N to POWER_ENABLE
+to better reflect what it does.
