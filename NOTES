@@ -13,11 +13,6 @@ with a short.  I don't think we will use them.
 
 What UFL connectors can be removed?
 
-Do we need the capacitor between the LNA and the filter?  The filter
-datasheet shows an input capacitor first, so that should block the DC.
-The only concern would be the DC bias characteristic changing the
-value of the capacitor.  I've asked MiniCircuits about this.
-
 Does it make sense to wire the UARTs to the PC104?  If so, do we need
 two of them on the PC104?  Shouldn't one go to a plug somewhere?
 
@@ -157,6 +152,13 @@ The "Current Fault_1V2" and "Current Fault_3V3" are not connected to
 anything and can probably be removed with their pull up resistor.  I
 don't think there's much value in hooking it to the processor, if
 either of these fire the processor will crash.
+
+Do we need the capacitor between the LNA and the filter?  The filter
+datasheet shows an input capacitor first, so that should block the DC.
+The only concern would be the DC bias characteristic changing the
+value of the capacitor.  I've asked MiniCircuits about this.
+* This had to be added for other reasons due to the impedance matching
+  circuit.
 
 # Not going to do
 
@@ -384,3 +386,7 @@ impedance.  I'm sure it can be done, but it's a matter of how.
 
 Replaced the 1.2V current limiter/switch with a MP5073GG from
 Monolithic Power.  The MAX4495 that was there wasn't rated for 1.2V.
+
+Remove the Current Fault lines for 1.2V and 3.3V.  They didn't go
+anywhere, and there's not much the processor could do about it if they
+went bad.

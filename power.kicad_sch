@@ -933,7 +933,7 @@
 					)
 				)
 			)
-			(property "Footprint" "QFN-12_MP5073_MNP"
+			(property "Footprint" "PacSatDev_misc:QFN-12_MP5073_MNP"
 				(at 0 0 0)
 				(effects
 					(font
@@ -960,14 +960,6 @@
 						(size 1.27 1.27)
 					)
 					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
 				)
 			)
 			(property "ki_keywords" "MP5073GG-P"
@@ -3036,12 +3028,6 @@
 		(uuid "5e075049-3b19-4c83-9a08-c14cb0e641c0")
 	)
 	(junction
-		(at 330.2 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "721d028a-ad5f-4f37-bf30-52af6dece9b0")
-	)
-	(junction
 		(at 186.69 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3212,6 +3198,10 @@
 	(no_connect
 		(at 162.56 176.53)
 		(uuid "594e888e-0bb1-448e-be7b-4f7a0acb3652")
+	)
+	(no_connect
+		(at 325.12 105.41)
+		(uuid "7b905d81-56a2-4ad1-95fc-c86cf786479d")
 	)
 	(no_connect
 		(at 341.63 36.83)
@@ -4299,16 +4289,6 @@
 	)
 	(wire
 		(pts
-			(xy 330.2 105.41) (xy 331.47 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ace4898-2a63-4f47-acac-cf6c35231869")
-	)
-	(wire
-		(pts
 			(xy 165.1 186.69) (xy 162.56 186.69)
 		)
 		(stroke
@@ -4536,16 +4516,6 @@
 			(type default)
 		)
 		(uuid "912a32dd-27fb-4833-a513-74388fbc3d5f")
-	)
-	(wire
-		(pts
-			(xy 330.2 105.41) (xy 330.2 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "913ef917-ce0f-448f-8d01-eafff90bb0fa")
 	)
 	(wire
 		(pts
@@ -4879,16 +4849,6 @@
 	)
 	(wire
 		(pts
-			(xy 325.12 105.41) (xy 330.2 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b58575da-ba3c-45aa-87a4-b1df6dc85f71")
-	)
-	(wire
-		(pts
 			(xy 368.3 55.88) (xy 368.3 57.15)
 		)
 		(stroke
@@ -4896,16 +4856,6 @@
 			(type default)
 		)
 		(uuid "b7757822-1517-4bb4-ac7c-fa4fc2fe0d40")
-	)
-	(wire
-		(pts
-			(xy 330.2 90.17) (xy 330.2 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8118855-827c-45d8-85a2-4715ace3d05a")
 	)
 	(wire
 		(pts
@@ -6121,28 +6071,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Current Fault_3V3"
-		(shape input)
-		(at 331.47 105.41 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "a0dc9f88-ec72-483e-8f69-00fb08e2de2e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 354.5351 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -10911,73 +10839,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 330.2 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "48e5c90b-7e1a-43b3-b872-494a61f8998d")
-		(property "Reference" "R107"
-			(at 332.74 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10K"
-			(at 332.74 95.885 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 328.422 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 330.2 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 330.2 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2169b54e-9795-430f-bfe3-8b47004a7e08")
-		)
-		(pin "2"
-			(uuid "c2226dd3-d115-433e-a53f-0b17ef397d1a")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "R107")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PACSAT_ICs:MAX4995ALAUT")
 		(at 307.34 186.69 0)
 		(unit 1)
@@ -11529,71 +11390,6 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "H86")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 330.2 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5e6eb600-9246-4f31-add5-73bfb706fdc1")
-		(property "Reference" "#PWR0185"
-			(at 330.2 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 330.2 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 330.2 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 330.2 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 330.2 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "13b60b55-9af0-4d5b-a0fc-a5e8d512fa80")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "#PWR0185")
 					(unit 1)
 				)
 			)
@@ -13015,7 +12811,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFN-12_MP5073_MNP"
+		(property "Footprint" "PacSatDev_misc:QFN-12_MP5073_MNP"
 			(at 300.99 34.29 0)
 			(effects
 				(font
