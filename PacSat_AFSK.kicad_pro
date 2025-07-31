@@ -903,8 +903,8 @@
       "Root"
     ],
     [
-      "9af0eacb-5211-4e23-85d7-9c1805bbe6a4",
-      "Rx_Power_Divider"
+      "adf61ae3-df77-4e04-8bda-b4049a36fcf4",
+      "TMS570_CPU"
     ],
     [
       "a735fef7-c3fa-4339-b3a6-fbce810c3c4b",
@@ -915,32 +915,24 @@
       "Power"
     ],
     [
-      "adf61ae3-df77-4e04-8bda-b4049a36fcf4",
-      "TMS570_CPU"
+      "aff81ec5-748c-4fc9-b1e8-df12a16f6289",
+      "BUS_IO_Interface"
+    ],
+    [
+      "d9a83ee4-3280-49b9-88b8-54d26cbd8ed1",
+      "AX5043"
     ],
     [
       "d15145ed-c53e-4a99-8826-f59f251ed269",
       "RX2"
     ],
     [
-      "aff81ec5-748c-4fc9-b1e8-df12a16f6289",
-      "BUS_IO_Interface"
-    ],
-    [
       "f8b8f3f7-b7c9-4906-b130-34e55b14ac7f",
       "RX3"
     ],
     [
-      "b85b88c3-87c5-49e2-804e-0759552ace3d",
-      "RF_Power_AMP_FET"
-    ],
-    [
       "f77cbd95-61fd-4703-93c6-9c7aaab91e8c",
       "RX4"
-    ],
-    [
-      "d9a83ee4-3280-49b9-88b8-54d26cbd8ed1",
-      "AX5043"
     ],
     [
       "9713ae7f-7d2c-4804-9b61-ed58b02434c3",
@@ -951,12 +943,16 @@
       "TX"
     ],
     [
-      "163b95be-82a7-4cd3-9077-48a01f79e25c",
-      "PC104_IO"
+      "9af0eacb-5211-4e23-85d7-9c1805bbe6a4",
+      "Rx_Power_Divider"
     ],
     [
-      "552b793d-9664-4666-9fdb-015ae3bc3958",
-      "Memory"
+      "b85b88c3-87c5-49e2-804e-0759552ace3d",
+      "RF_Power_AMP_FET"
+    ],
+    [
+      "163b95be-82a7-4cd3-9077-48a01f79e25c",
+      "PC104_IO"
     ]
   ],
   "text_variables": {}

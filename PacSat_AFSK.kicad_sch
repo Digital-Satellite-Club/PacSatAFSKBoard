@@ -216,7 +216,7 @@
 	)
 	(text "600"
 		(exclude_from_sim no)
-		(at 271.78 41.91 0)
+		(at 213.36 41.91 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -227,7 +227,7 @@
 	)
 	(text "650"
 		(exclude_from_sim no)
-		(at 271.78 64.77 0)
+		(at 213.36 64.77 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -235,17 +235,6 @@
 			(justify left bottom)
 		)
 		(uuid "2a88d6af-616b-4b10-b84f-af537257fb35")
-	)
-	(text "75"
-		(exclude_from_sim no)
-		(at 102.87 64.77 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "4cf0f4c4-3d45-4e2c-8879-dd825297d7c7")
 	)
 	(text "500"
 		(exclude_from_sim no)
@@ -764,13 +753,13 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
-					(page "8")
+					(page "4")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 270.51 99.06)
+		(at 212.09 73.66)
 		(size 52.07 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -786,7 +775,7 @@
 		)
 		(uuid "163b95be-82a7-4cd3-9077-48a01f79e25c")
 		(property "Sheetname" "PC104_IO"
-			(at 270.51 98.2214 0)
+			(at 212.09 72.8214 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -795,7 +784,7 @@
 			)
 		)
 		(property "Sheetfile" "PC104_io_conn.kicad_sch"
-			(at 270.51 114.9862 0)
+			(at 212.09 89.5862 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -806,55 +795,13 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
-					(page "15")
+					(page "14")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 101.6 50.8)
-		(size 52.07 15.24)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "552b793d-9664-4666-9fdb-015ae3bc3958")
-		(property "Sheetname" "Memory"
-			(at 101.6 50.0884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "memorg.kicad_sch"
-			(at 101.6 66.6246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
-					(page "17")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 270.51 27.94)
+		(at 212.09 27.94)
 		(size 52.07 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -870,7 +817,7 @@
 		)
 		(uuid "9af0eacb-5211-4e23-85d7-9c1805bbe6a4")
 		(property "Sheetname" "Rx_Power_Divider"
-			(at 270.51 27.1014 0)
+			(at 212.09 27.1014 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -879,7 +826,7 @@
 			)
 		)
 		(property "Sheetfile" "Power_Divider.kicad_sch"
-			(at 270.51 43.8662 0)
+			(at 212.09 43.8662 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -890,13 +837,13 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
-					(page "2")
+					(page "12")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 270.51 50.8)
+		(at 212.09 50.8)
 		(size 52.07 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -912,7 +859,7 @@
 		)
 		(uuid "a735fef7-c3fa-4339-b3a6-fbce810c3c4b")
 		(property "Sheetname" "Clocks"
-			(at 270.51 49.9614 0)
+			(at 212.09 49.9614 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -921,7 +868,7 @@
 			)
 		)
 		(property "Sheetfile" "Clocks.kicad_sch"
-			(at 270.51 66.7262 0)
+			(at 212.09 66.7262 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -932,7 +879,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
-					(page "4")
+					(page "3")
 				)
 			)
 		)
@@ -974,7 +921,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
-					(page "12")
+					(page "2")
 				)
 			)
 		)
@@ -1016,7 +963,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
-					(page "13")
+					(page "5")
 				)
 			)
 		)
@@ -1058,7 +1005,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
-					(page "14")
+					(page "13")
 				)
 			)
 		)
@@ -1100,7 +1047,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
-					(page "15")
+					(page "6")
 				)
 			)
 		)
