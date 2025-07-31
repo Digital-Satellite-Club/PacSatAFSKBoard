@@ -1,6 +1,13 @@
 
 # TODO
 
+Why is both the RTC and the hardware watchdog controlling the transmit
+shutdown?  It would seem only one or the other would be necessary.
+
+The inductors for impedance matching the output of the LNA are on the
+bottom of the board.  This isn't ideal, as they aren't in a shield,
+but it's pretty crowded in the LNA shield.
+
 Probably remove the L1/L2 inductor on the AX5043s and replace them
 with a short.  I don't think we will use them.
 
@@ -143,6 +150,13 @@ Shield on RX input section.
 Shield on TX PA section.
 
 Check the inductor on the LNA, really verify the whole thing.
+
+Change the 1.2V power controller to a MP5073.
+
+The "Current Fault_1V2" and "Current Fault_3V3" are not connected to
+anything and can probably be removed with their pull up resistor.  I
+don't think there's much value in hooking it to the processor, if
+either of these fire the processor will crash.
 
 # Not going to do
 
@@ -365,3 +379,8 @@ required changing the parts around the LNA to 0402 size to get them to
 all fit.  You might be able to modify the input filter to adjust the
 impedance, but I couldn't figure out how to do that to match a complex
 impedance.  I'm sure it can be done, but it's a matter of how.
+
+# 2025-07-31
+
+Replaced the 1.2V current limiter/switch with a MP5073GG from
+Monolithic Power.  The MAX4495 that was there wasn't rated for 1.2V.
