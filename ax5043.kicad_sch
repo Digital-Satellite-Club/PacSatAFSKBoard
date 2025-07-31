@@ -1,0 +1,61 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "014f7770-49e3-40ce-a0eb-23c472987035")
+	(paper "A4")
+	(lib_symbols)
+	(text "200"
+		(exclude_from_sim no)
+		(at 34.29 45.72 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "f9575428-a63e-4311-85ed-3d56652e8ce3")
+	)
+	(sheet
+		(at 33.02 31.75)
+		(size 52.07 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bc27fde3-8cca-4897-854d-674b6eeb65de")
+		(property "Sheetname" "RX_1_ax5044"
+			(at 33.02 30.9114 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RX_1_ax5043.kicad_sch"
+			(at 33.02 47.6762 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/08b601c8-ef5c-4c4a-8b80-34005eff379c"
+					(page "3")
+				)
+			)
+		)
+	)
+)

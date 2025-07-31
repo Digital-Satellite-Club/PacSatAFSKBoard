@@ -1,6 +1,10 @@
 
 # TODO
 
+There's a note in the schematic about biasing the 5043 inputs, but I
+can't find any info on that.  Need to figure out if that's something
+that needs to be done.  I can't see how, though.
+
 Why is both the RTC and the hardware watchdog controlling the transmit
 shutdown?  It would seem only one or the other would be necessary.
 
@@ -419,3 +423,6 @@ to better reflect what it does.
 Wired in the power good pin on the MP5073GG-P to the processor reset
 so that the processor is held in reset until 50us after the chip
 enabled power.
+
+Cleaned up the hierarchical sheets and re-annotated everything to make
+copying and pasting easier.

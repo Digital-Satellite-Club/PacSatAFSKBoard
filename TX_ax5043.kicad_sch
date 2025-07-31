@@ -1866,17 +1866,6 @@
 		)
 		(uuid "5a52fe3f-596f-4739-96c9-99419ba26f97")
 	)
-	(text "Symbol Numbers 150 up"
-		(exclude_from_sim no)
-		(at 20.32 261.62 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "862be1e6-361a-496f-9e7d-403657e2cc1b")
-	)
 	(text "16 dBm Max Power Out @ 430 MHz\nIf the PA works as expected,\nThe maximum output here should\nbe limited in the AX5043 to 13dBm\nto avoid overdriving the PA."
 		(exclude_from_sim no)
 		(at 110.49 179.07 0)
@@ -3633,7 +3622,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a014ffa")
-		(property "Reference" "C157"
+		(property "Reference" "C91"
 			(at 210.82 135.89 90)
 			(effects
 				(font
@@ -3683,7 +3672,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C157")
+					(reference "C91")
 					(unit 1)
 				)
 			)
@@ -3698,7 +3687,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a014ffd")
-		(property "Reference" "#PWR0184"
+		(property "Reference" "#PWR0201"
 			(at 289.56 121.92 0)
 			(effects
 				(font
@@ -3747,7 +3736,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0184")
+					(reference "#PWR0201")
 					(unit 1)
 				)
 			)
@@ -3762,7 +3751,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a014fff")
-		(property "Reference" "C158"
+		(property "Reference" "C92"
 			(at 210.82 143.51 90)
 			(effects
 				(font
@@ -3812,7 +3801,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C158")
+					(reference "C92")
 					(unit 1)
 				)
 			)
@@ -3827,7 +3816,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015000")
-		(property "Reference" "C159"
+		(property "Reference" "C93"
 			(at 234.95 123.19 90)
 			(effects
 				(font
@@ -3877,7 +3866,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C159")
+					(reference "C93")
 					(unit 1)
 				)
 			)
@@ -3892,7 +3881,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015003")
-		(property "Reference" "#PWR0175"
+		(property "Reference" "#PWR0193"
 			(at 226.06 133.35 0)
 			(effects
 				(font
@@ -3941,7 +3930,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0175")
+					(reference "#PWR0193")
 					(unit 1)
 				)
 			)
@@ -3956,7 +3945,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015004")
-		(property "Reference" "#PWR0173"
+		(property "Reference" "#PWR0191"
 			(at 218.44 172.72 0)
 			(effects
 				(font
@@ -4005,7 +3994,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0173")
+					(reference "#PWR0191")
 					(unit 1)
 				)
 			)
@@ -4020,7 +4009,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015005")
-		(property "Reference" "C163"
+		(property "Reference" "C97"
 			(at 293.37 109.22 90)
 			(effects
 				(font
@@ -4070,7 +4059,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C163")
+					(reference "C97")
 					(unit 1)
 				)
 			)
@@ -4085,7 +4074,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015006")
-		(property "Reference" "#PWR0177"
+		(property "Reference" "#PWR0195"
 			(at 231.14 133.35 0)
 			(effects
 				(font
@@ -4134,7 +4123,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0177")
+					(reference "#PWR0195")
 					(unit 1)
 				)
 			)
@@ -4149,7 +4138,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015007")
-		(property "Reference" "#PWR0176"
+		(property "Reference" "#PWR0194"
 			(at 229.87 170.18 0)
 			(effects
 				(font
@@ -4198,7 +4187,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0176")
+					(reference "#PWR0194")
 					(unit 1)
 				)
 			)
@@ -4213,7 +4202,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015008")
-		(property "Reference" "C156"
+		(property "Reference" "C90"
 			(at 194.31 152.4 90)
 			(effects
 				(font
@@ -4263,7 +4252,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C156")
+					(reference "C90")
 					(unit 1)
 				)
 			)
@@ -4278,7 +4267,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015009")
-		(property "Reference" "L153"
+		(property "Reference" "L21"
 			(at 182.88 150.368 90)
 			(effects
 				(font
@@ -4329,7 +4318,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "L153")
+					(reference "L21")
 					(unit 1)
 				)
 			)
@@ -4344,7 +4333,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a01500a")
-		(property "Reference" "#PWR0171"
+		(property "Reference" "#PWR0189"
 			(at 190.5 166.37 0)
 			(effects
 				(font
@@ -4393,7 +4382,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0171")
+					(reference "#PWR0189")
 					(unit 1)
 				)
 			)
@@ -4408,7 +4397,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a01500c")
-		(property "Reference" "C154"
+		(property "Reference" "C88"
 			(at 170.18 143.51 90)
 			(effects
 				(font
@@ -4458,7 +4447,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C154")
+					(reference "C88")
 					(unit 1)
 				)
 			)
@@ -4473,7 +4462,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a01500d")
-		(property "Reference" "C155"
+		(property "Reference" "C89"
 			(at 184.15 168.91 90)
 			(effects
 				(font
@@ -4523,7 +4512,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C155")
+					(reference "C89")
 					(unit 1)
 				)
 			)
@@ -4538,7 +4527,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a01500e")
-		(property "Reference" "#PWR0170"
+		(property "Reference" "#PWR0188"
 			(at 180.34 181.61 0)
 			(effects
 				(font
@@ -4587,7 +4576,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0170")
+					(reference "#PWR0188")
 					(unit 1)
 				)
 			)
@@ -4602,7 +4591,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015010")
-		(property "Reference" "C152"
+		(property "Reference" "C86"
 			(at 146.05 130.81 90)
 			(effects
 				(font
@@ -4652,7 +4641,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C152")
+					(reference "C86")
 					(unit 1)
 				)
 			)
@@ -4667,7 +4656,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015011")
-		(property "Reference" "C151"
+		(property "Reference" "C85"
 			(at 144.78 148.59 90)
 			(effects
 				(font
@@ -4717,7 +4706,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C151")
+					(reference "C85")
 					(unit 1)
 				)
 			)
@@ -4732,7 +4721,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015012")
-		(property "Reference" "C153"
+		(property "Reference" "C87"
 			(at 163.83 148.59 90)
 			(effects
 				(font
@@ -4782,7 +4771,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C153")
+					(reference "C87")
 					(unit 1)
 				)
 			)
@@ -4797,7 +4786,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015013")
-		(property "Reference" "#PWR0169"
+		(property "Reference" "#PWR0186"
 			(at 160.02 158.75 0)
 			(effects
 				(font
@@ -4846,7 +4835,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0169")
+					(reference "#PWR0186")
 					(unit 1)
 				)
 			)
@@ -4861,7 +4850,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015014")
-		(property "Reference" "#PWR0167"
+		(property "Reference" "#PWR0185"
 			(at 140.97 158.75 0)
 			(effects
 				(font
@@ -4910,7 +4899,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0167")
+					(reference "#PWR0185")
 					(unit 1)
 				)
 			)
@@ -4925,7 +4914,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015017")
-		(property "Reference" "C160"
+		(property "Reference" "C94"
 			(at 232.41 158.75 90)
 			(effects
 				(font
@@ -4975,7 +4964,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C160")
+					(reference "C94")
 					(unit 1)
 				)
 			)
@@ -4990,7 +4979,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015018")
-		(property "Reference" "#PWR0178"
+		(property "Reference" "#PWR0196"
 			(at 234.95 170.18 0)
 			(effects
 				(font
@@ -5039,7 +5028,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0178")
+					(reference "#PWR0196")
 					(unit 1)
 				)
 			)
@@ -5054,7 +5043,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015075")
-		(property "Reference" "R152"
+		(property "Reference" "R73"
 			(at 273.558 80.1116 0)
 			(effects
 				(font
@@ -5106,7 +5095,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "R152")
+					(reference "R73")
 					(unit 1)
 				)
 			)
@@ -5121,7 +5110,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015076")
-		(property "Reference" "R153"
+		(property "Reference" "R74"
 			(at 282.448 80.1116 0)
 			(effects
 				(font
@@ -5173,7 +5162,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "R153")
+					(reference "R74")
 					(unit 1)
 				)
 			)
@@ -5188,7 +5177,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015077")
-		(property "Reference" "#PWR0181"
+		(property "Reference" "#PWR0198"
 			(at 271.78 93.98 0)
 			(effects
 				(font
@@ -5237,7 +5226,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0181")
+					(reference "#PWR0198")
 					(unit 1)
 				)
 			)
@@ -5252,7 +5241,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015078")
-		(property "Reference" "#PWR0183"
+		(property "Reference" "#PWR0200"
 			(at 280.67 93.98 0)
 			(effects
 				(font
@@ -5301,7 +5290,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0183")
+					(reference "#PWR0200")
 					(unit 1)
 				)
 			)
@@ -5316,7 +5305,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "13423dd0-8483-473e-9c9d-2dd5b8beb6df")
-		(property "Reference" "R151"
+		(property "Reference" "R72"
 			(at 225.298 149.9616 0)
 			(effects
 				(font
@@ -5368,7 +5357,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "R151")
+					(reference "R72")
 					(unit 1)
 				)
 			)
@@ -5383,7 +5372,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2910ea51-2953-45b1-95d9-6cfadb4f76d1")
-		(property "Reference" "#PWR0174"
+		(property "Reference" "#PWR0192"
 			(at 223.52 163.83 0)
 			(effects
 				(font
@@ -5432,7 +5421,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0174")
+					(reference "#PWR0192")
 					(unit 1)
 				)
 			)
@@ -5448,7 +5437,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31258b83-b239-45b0-ae30-2311721dd635")
-		(property "Reference" "#PWR0208"
+		(property "Reference" "#PWR0187"
 			(at 177.8 110.49 0)
 			(effects
 				(font
@@ -5497,7 +5486,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0208")
+					(reference "#PWR0187")
 					(unit 1)
 				)
 			)
@@ -5512,7 +5501,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "31f8f8a0-52a5-4cb4-a776-2d355316a090")
-		(property "Reference" "L151"
+		(property "Reference" "L19"
 			(at 148.59 133.35 90)
 			(effects
 				(font
@@ -5563,7 +5552,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "L151")
+					(reference "L19")
 					(unit 1)
 				)
 			)
@@ -5578,7 +5567,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "33bcf79c-228c-4e67-8169-9d0754896d51")
-		(property "Reference" "C162"
+		(property "Reference" "C96"
 			(at 261.62 97.79 90)
 			(effects
 				(font
@@ -5628,7 +5617,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C162")
+					(reference "C96")
 					(unit 1)
 				)
 			)
@@ -5643,7 +5632,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3f69cf59-c857-4747-852e-d4e06fc2396f")
-		(property "Reference" "#PWR0124"
+		(property "Reference" "#PWR0203"
 			(at 346.71 95.25 0)
 			(effects
 				(font
@@ -5692,7 +5681,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0124")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
@@ -5707,7 +5696,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5212cd84-8c5b-4bdf-8fbc-05941febdc04")
-		(property "Reference" "#PWR0182"
+		(property "Reference" "#PWR0199"
 			(at 275.59 170.18 0)
 			(effects
 				(font
@@ -5756,7 +5745,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0182")
+					(reference "#PWR0199")
 					(unit 1)
 				)
 			)
@@ -5771,7 +5760,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "65847112-4791-484a-8010-b5b92ea0eaef")
-		(property "Reference" "L155"
+		(property "Reference" "L23"
 			(at 200.66 137.16 90)
 			(effects
 				(font
@@ -5822,7 +5811,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "L155")
+					(reference "L23")
 					(unit 1)
 				)
 			)
@@ -5837,7 +5826,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "69cb7261-cbf9-40c2-9554-47ad79d62e63")
-		(property "Reference" "C102"
+		(property "Reference" "C98"
 			(at 331.47 64.77 90)
 			(effects
 				(font
@@ -5887,7 +5876,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C102")
+					(reference "C98")
 					(unit 1)
 				)
 			)
@@ -5902,7 +5891,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "70603ec3-4539-4153-9220-3b45ab1d7912")
-		(property "Reference" "P101"
+		(property "Reference" "P7"
 			(at 196.85 170.18 0)
 			(effects
 				(font
@@ -5959,7 +5948,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "P101")
+					(reference "P7")
 					(unit 1)
 				)
 			)
@@ -5974,7 +5963,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "71330c2c-8f04-4f03-98f3-8c6c4f44c8b7")
-		(property "Reference" "C103"
+		(property "Reference" "C99"
 			(at 334.01 90.17 90)
 			(effects
 				(font
@@ -6024,7 +6013,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C103")
+					(reference "C99")
 					(unit 1)
 				)
 			)
@@ -6039,7 +6028,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "768d9e60-ac84-46f1-bdbc-10e04d78bc0f")
-		(property "Reference" "L157"
+		(property "Reference" "L25"
 			(at 223.52 119.38 90)
 			(effects
 				(font
@@ -6090,7 +6079,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "L157")
+					(reference "L25")
 					(unit 1)
 				)
 			)
@@ -6105,7 +6094,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8920ea6e-d180-4517-a7d4-85bf9e5d2e34")
-		(property "Reference" "#PWR0125"
+		(property "Reference" "#PWR0202"
 			(at 330.2 99.06 0)
 			(effects
 				(font
@@ -6154,7 +6143,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0125")
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -6169,7 +6158,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8dd4b9e6-2489-4e35-b431-9e25760e4c36")
-		(property "Reference" "L158"
+		(property "Reference" "L26"
 			(at 252.73 173.99 90)
 			(effects
 				(font
@@ -6220,7 +6209,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "L158")
+					(reference "L26")
 					(unit 1)
 				)
 			)
@@ -6235,7 +6224,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9cd53b1d-c0d2-4737-982a-eebeed39462f")
-		(property "Reference" "R102"
+		(property "Reference" "R75"
 			(at 301.244 147.066 90)
 			(effects
 				(font
@@ -6287,7 +6276,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "R102")
+					(reference "R75")
 					(unit 1)
 				)
 			)
@@ -6302,7 +6291,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a60703b6-5e69-4624-b2ee-e516e23e167b")
-		(property "Reference" "L154"
+		(property "Reference" "L22"
 			(at 200.66 129.54 90)
 			(effects
 				(font
@@ -6353,7 +6342,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "L154")
+					(reference "L22")
 					(unit 1)
 				)
 			)
@@ -6369,7 +6358,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "afea3334-5292-49fb-9d82-ebccee4e1c87")
-		(property "Reference" "U89"
+		(property "Reference" "U24"
 			(at 346.71 69.85 0)
 			(effects
 				(font
@@ -6433,7 +6422,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "U89")
+					(reference "U24")
 					(unit 1)
 				)
 			)
@@ -6448,7 +6437,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ba30b474-63e6-4cba-909f-64e706fc8c23")
-		(property "Reference" "R112"
+		(property "Reference" "R76"
 			(at 366.9284 81.788 0)
 			(effects
 				(font
@@ -6500,7 +6489,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "R112")
+					(reference "R76")
 					(unit 1)
 				)
 			)
@@ -6516,7 +6505,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bcda407b-dda1-4179-b80d-b3769c7bb164")
-		(property "Reference" "#PWR0166"
+		(property "Reference" "#PWR0184"
 			(at 125.73 129.54 0)
 			(effects
 				(font
@@ -6565,7 +6554,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0166")
+					(reference "#PWR0184")
 					(unit 1)
 				)
 			)
@@ -6580,7 +6569,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c284af51-db85-4b53-b31d-0c871250577f")
-		(property "Reference" "#PWR0172"
+		(property "Reference" "#PWR0190"
 			(at 203.2 190.5 0)
 			(effects
 				(font
@@ -6629,7 +6618,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0172")
+					(reference "#PWR0190")
 					(unit 1)
 				)
 			)
@@ -6644,7 +6633,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c45dbb83-0693-46d0-afa5-0c89aa9e549b")
-		(property "Reference" "U156"
+		(property "Reference" "U23"
 			(at 292.1 153.67 0)
 			(effects
 				(font
@@ -6776,7 +6765,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "U156")
+					(reference "U23")
 					(unit 1)
 				)
 			)
@@ -6792,7 +6781,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1b257e3-6236-4c22-8d7e-7cdcab0c4f56")
-		(property "Reference" "J92"
+		(property "Reference" "J7"
 			(at 194.31 90.1699 0)
 			(effects
 				(font
@@ -6843,7 +6832,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "J92")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -6858,7 +6847,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d44b7011-9ca9-4418-a983-577b14350abb")
-		(property "Reference" "L156"
+		(property "Reference" "L24"
 			(at 215.9 157.48 90)
 			(effects
 				(font
@@ -6909,7 +6898,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "L156")
+					(reference "L24")
 					(unit 1)
 				)
 			)
@@ -6924,7 +6913,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d4bfe44c-cf2d-4162-b362-c112b7f7e8f5")
-		(property "Reference" "#PWR0179"
+		(property "Reference" "#PWR0197"
 			(at 238.76 106.68 0)
 			(effects
 				(font
@@ -6973,7 +6962,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "#PWR0179")
+					(reference "#PWR0197")
 					(unit 1)
 				)
 			)
@@ -6988,7 +6977,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dc1f584c-c1f1-488a-86cd-5f1a59612952")
-		(property "Reference" "C161"
+		(property "Reference" "C95"
 			(at 234.95 88.9 90)
 			(effects
 				(font
@@ -7038,7 +7027,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "C161")
+					(reference "C95")
 					(unit 1)
 				)
 			)
@@ -7053,7 +7042,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dece9d5d-1183-4ed1-954b-b0a1dbb195fb")
-		(property "Reference" "P100"
+		(property "Reference" "P6"
 			(at 124.46 107.95 0)
 			(effects
 				(font
@@ -7109,7 +7098,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "P100")
+					(reference "P6")
 					(unit 1)
 				)
 			)
@@ -7124,7 +7113,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "df602483-f401-4a95-9572-30cb9df63344")
-		(property "Reference" "L152"
+		(property "Reference" "L20"
 			(at 173.99 128.27 90)
 			(effects
 				(font
@@ -7175,7 +7164,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
-					(reference "L152")
+					(reference "L20")
 					(unit 1)
 				)
 			)

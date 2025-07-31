@@ -1940,17 +1940,6 @@
 		)
 		(uuid "7404c483-e6d6-418d-8ced-c4371b0ba3b3")
 	)
-	(text "Start with 25"
-		(exclude_from_sim no)
-		(at 31.75 259.08 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "90922248-3f34-468f-9034-313dca57e2d1")
-	)
 	(text "Real Time Clock"
 		(exclude_from_sim no)
 		(at 100.33 128.27 0)
@@ -3441,7 +3430,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "055e841b-35bc-4fb7-b3ed-3377098cf6d8")
-		(property "Reference" "C29"
+		(property "Reference" "C42"
 			(at 153.035 160.655 90)
 			(effects
 				(font
@@ -3491,7 +3480,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "C29")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -3506,7 +3495,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "069bec50-ad84-4ec2-adee-48a7b201eb06")
-		(property "Reference" "R104"
+		(property "Reference" "R44"
 			(at 81.788 176.6316 0)
 			(effects
 				(font
@@ -3558,7 +3547,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "R104")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -3574,7 +3563,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f905f68-49d2-451c-908f-f6c0a66c8d4c")
-		(property "Reference" "#PWR0160"
+		(property "Reference" "#PWR0117"
 			(at 323.85 127 0)
 			(effects
 				(font
@@ -3624,7 +3613,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR0160")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -3640,7 +3629,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1163d812-3f2a-4c7f-928d-bda1ed7a4b6b")
-		(property "Reference" "#PWR0164"
+		(property "Reference" "#PWR0118"
 			(at 328.93 76.2 0)
 			(effects
 				(font
@@ -3689,7 +3678,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR0164")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -3705,7 +3694,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a4c7f09-9017-420b-b72b-2fbbdfae10b7")
-		(property "Reference" "#PWR0158"
+		(property "Reference" "#PWR0115"
 			(at 264.16 76.2 0)
 			(effects
 				(font
@@ -3755,7 +3744,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR0158")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -3771,7 +3760,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "343828e8-dcef-4179-b430-bde0ba8b278a")
-		(property "Reference" "#PWR0123"
+		(property "Reference" "#PWR0104"
 			(at 80.01 175.26 0)
 			(effects
 				(font
@@ -3820,7 +3809,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR0123")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -3836,7 +3825,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d028df9-2b78-4d29-af66-8a7bae18d2eb")
-		(property "Reference" "#PWR0156"
+		(property "Reference" "#PWR0114"
 			(at 260.35 111.76 0)
 			(effects
 				(font
@@ -3886,7 +3875,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR0156")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -3902,7 +3891,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "458a97d1-139e-46db-9bb9-ca62f4d09d2c")
-		(property "Reference" "#FLG026"
+		(property "Reference" "#FLG012"
 			(at 130.81 131.445 0)
 			(effects
 				(font
@@ -3951,7 +3940,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#FLG026")
+					(reference "#FLG012")
 					(unit 1)
 				)
 			)
@@ -3966,7 +3955,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e4778a5-8846-4d93-91d3-cd98980ca864")
-		(property "Reference" "R135"
+		(property "Reference" "R46"
 			(at 153.67 86.36 90)
 			(effects
 				(font
@@ -4018,7 +4007,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "R135")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -4034,7 +4023,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50c7a14e-9879-438f-b7c9-eff1c8c87dab")
-		(property "Reference" "#PWR0692"
+		(property "Reference" "#PWR0110"
 			(at 162.56 62.23 0)
 			(effects
 				(font
@@ -4083,7 +4072,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR0692")
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -4098,7 +4087,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "518e3d4f-2bb0-4356-8b09-8bb8a37d7a96")
-		(property "Reference" "R80"
+		(property "Reference" "R51"
 			(at 350.52 103.886 90)
 			(effects
 				(font
@@ -4150,7 +4139,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "R80")
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -4165,7 +4154,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "52d29c54-5b77-4017-8d87-0958653564a6")
-		(property "Reference" "C112"
+		(property "Reference" "C46"
 			(at 250.19 78.232 0)
 			(effects
 				(font
@@ -4219,7 +4208,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "C112")
+					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -4234,7 +4223,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "560c4ad9-5723-408d-8466-c2d2f9ecf8b6")
-		(property "Reference" "C113"
+		(property "Reference" "C47"
 			(at 316.23 76.962 0)
 			(effects
 				(font
@@ -4288,7 +4277,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "C113")
+					(reference "C47")
 					(unit 1)
 				)
 			)
@@ -4303,7 +4292,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5ffd4637-d7b2-4e25-a090-805c704d23e0")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR0112"
 			(at 171.45 179.07 0)
 			(effects
 				(font
@@ -4352,7 +4341,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR044")
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -4368,7 +4357,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61ba00af-3a19-42bf-ad92-baab49575458")
-		(property "Reference" "#PWR0165"
+		(property "Reference" "#PWR0119"
 			(at 364.49 110.49 0)
 			(effects
 				(font
@@ -4418,7 +4407,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR0165")
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -4433,7 +4422,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "65e44f9d-52dd-41f4-b333-59f1e7605480")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR0105"
 			(at 87.63 148.59 0)
 			(effects
 				(font
@@ -4482,7 +4471,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR039")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -4498,7 +4487,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66d8b21b-ca72-4419-b66a-1adba3ac9785")
-		(property "Reference" "C114"
+		(property "Reference" "C48"
 			(at 358.14 88.9 90)
 			(effects
 				(font
@@ -4550,7 +4539,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "C114")
+					(reference "C48")
 					(unit 1)
 				)
 			)
@@ -4565,7 +4554,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6ea26f96-696a-4f7d-81cc-f01bc13d8d81")
-		(property "Reference" "R28"
+		(property "Reference" "R47"
 			(at 179.07 143.51 90)
 			(effects
 				(font
@@ -4617,7 +4606,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "R28")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -4633,7 +4622,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81b8a1e8-47ae-4928-b850-ee1adf53ef45")
-		(property "Reference" "U28"
+		(property "Reference" "U12"
 			(at 110.49 139.7 0)
 			(effects
 				(font
@@ -4711,7 +4700,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "U28")
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -4726,7 +4715,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8b6eeb8e-832c-4c07-a346-c3395656f0c3")
-		(property "Reference" "#PWR0121"
+		(property "Reference" "#PWR0106"
 			(at 102.87 184.15 0)
 			(effects
 				(font
@@ -4775,7 +4764,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR0121")
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -4790,7 +4779,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "98b3b815-b1cd-4ee8-9aa3-9fe9cd667b15")
-		(property "Reference" "R79"
+		(property "Reference" "R50"
 			(at 350.52 89.916 90)
 			(effects
 				(font
@@ -4842,7 +4831,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "R79")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -4857,7 +4846,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9bd81be3-7cc2-4d93-a572-630c502ccf92")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR0109"
 			(at 133.35 82.55 0)
 			(effects
 				(font
@@ -4906,7 +4895,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR080")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -4921,7 +4910,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a94a21c5-f42f-44c5-9a95-39d8687b745e")
-		(property "Reference" "C30"
+		(property "Reference" "C44"
 			(at 168.275 160.655 90)
 			(effects
 				(font
@@ -4971,7 +4960,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "C30")
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -4986,7 +4975,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "adcf616f-cac2-483a-ac0c-ca9941b3b094")
-		(property "Reference" "Y26"
+		(property "Reference" "Y3"
 			(at 72.39 158.75 90)
 			(effects
 				(font
@@ -5039,7 +5028,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "Y26")
+					(reference "Y3")
 					(unit 1)
 				)
 			)
@@ -5054,7 +5043,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b1f734df-e868-4c8b-a56a-6cd8ccf1ca9d")
-		(property "Reference" "C76"
+		(property "Reference" "C43"
 			(at 166.37 68.58 90)
 			(effects
 				(font
@@ -5104,7 +5093,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "C76")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -5120,7 +5109,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b506ff18-8e98-4525-9e4e-5fa841971312")
-		(property "Reference" "D26"
+		(property "Reference" "D6"
 			(at 200.66 140.97 0)
 			(effects
 				(font
@@ -5189,7 +5178,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "D26")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -5353,7 +5342,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0a40e77-898d-48f2-99ec-647c67ea5e39")
-		(property "Reference" "#PWR0159"
+		(property "Reference" "#PWR0116"
 			(at 323.85 90.17 0)
 			(effects
 				(font
@@ -5403,7 +5392,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR0159")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -5418,7 +5407,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c8c95765-b450-4f16-bc2b-62ae4dc30aa9")
-		(property "Reference" "R29"
+		(property "Reference" "R48"
 			(at 180.34 152.4 90)
 			(effects
 				(font
@@ -5470,7 +5459,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "R29")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -5485,7 +5474,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c8fc8f25-9d91-4112-aef1-a94552c4c6e6")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR0108"
 			(at 119.38 81.28 0)
 			(effects
 				(font
@@ -5534,7 +5523,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR077")
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -5550,7 +5539,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd04bedf-03f6-4342-8428-01f8e884b860")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR0113"
 			(at 223.52 142.24 0)
 			(effects
 				(font
@@ -5599,7 +5588,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR045")
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -5614,7 +5603,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cd855a97-5ea2-4f25-bdf7-e86c392541ba")
-		(property "Reference" "R111"
+		(property "Reference" "R45"
 			(at 96.52 177.8 0)
 			(effects
 				(font
@@ -5666,7 +5655,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "R111")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -5682,7 +5671,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf961228-576c-4d6b-903c-c4ce258e7130")
-		(property "Reference" "#FLG027"
+		(property "Reference" "#FLG013"
 			(at 146.05 131.445 0)
 			(effects
 				(font
@@ -5731,7 +5720,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#FLG027")
+					(reference "#FLG013")
 					(unit 1)
 				)
 			)
@@ -5747,7 +5736,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db1a1f91-e6e8-413a-9b7d-356f678daa7e")
-		(property "Reference" "#PWR0693"
+		(property "Reference" "#PWR0107"
 			(at 119.38 59.69 0)
 			(effects
 				(font
@@ -5796,7 +5785,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR0693")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -5812,7 +5801,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df47f38e-a4e9-4435-8ed5-bffb95c67095")
-		(property "Reference" "U88"
+		(property "Reference" "U14"
 			(at 295.91 82.55 0)
 			(effects
 				(font
@@ -5884,7 +5873,7 @@
 		(instances
 			(project ""
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "U88")
+					(reference "U14")
 					(unit 1)
 				)
 			)
@@ -5899,7 +5888,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eb62f6d4-d812-40c6-b641-c46d6d0ef71c")
-		(property "Reference" "D27"
+		(property "Reference" "D7"
 			(at 200.66 153.67 0)
 			(effects
 				(font
@@ -5968,7 +5957,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "D27")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -5983,7 +5972,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "edb47ce5-9d6a-449d-92c4-6eb580d7c292")
-		(property "Reference" "C106"
+		(property "Reference" "C45"
 			(at 176.53 68.58 90)
 			(effects
 				(font
@@ -6033,7 +6022,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "C106")
+					(reference "C45")
 					(unit 1)
 				)
 			)
@@ -6048,7 +6037,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef20bcbd-805d-4986-b9ac-abbf53dc57f7")
-		(property "Reference" "R77"
+		(property "Reference" "R49"
 			(at 326.39 114.046 90)
 			(effects
 				(font
@@ -6100,7 +6089,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "R77")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -6115,7 +6104,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f0f7a026-c92f-43db-8315-f81b8359e7a7")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR0111"
 			(at 162.56 78.74 0)
 			(effects
 				(font
@@ -6164,7 +6153,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR083")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
