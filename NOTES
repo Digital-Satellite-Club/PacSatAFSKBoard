@@ -1,12 +1,6 @@
 
 # TODO
 
-There may need to be a delay on the reset line from the power good
-outputs because the power limiting circuits may take time to turn on.
-
-Write a document describing all the interfaces from the processor to
-the rest of the board.
-
 Why is both the RTC and the hardware watchdog controlling the transmit
 shutdown?  It would seem only one or the other would be necessary.
 
@@ -23,9 +17,15 @@ Do we need all those wire holes?  A few I can understand, for powering
 the board on the bench, but there are a bunch of them, some with just
 grounds.
 
+Clean up all the schematic notes and number all the device references
+in a logical manner.
+
 Does it make sense to wire the UARTs to the PC104?  If so, do we need
 two of them on the PC104?  Shouldn't one go to a plug somewhere?  If
 so, which one?
+
+Figure out what all the PC104 pins are supposed to do and document
+them.
 
 Replace the RTC with one that is temperature rated.  Probably only the
 MCP7940NT-E/MS from Microchip is suitable.  It does not have an
@@ -172,6 +172,12 @@ The only concern would be the DC bias characteristic changing the
 value of the capacitor.  I've asked MiniCircuits about this.
 * This had to be added for other reasons due to the impedance matching
   circuit.
+
+Write a document describing all the interfaces from the processor to
+the rest of the board.
+
+There may need to be a delay on the reset line from the power good
+outputs because the power limiting circuits may take time to turn on.
 
 # Not going to do
 
