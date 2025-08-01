@@ -481,3 +481,8 @@ values to ones that are obtainable.
 
 Switch to aluminum shields.  A number of shields are possible to use,
 see notes.
+
+Update the RF input filter again for wider bandwidth to get a 180nH
+inductor, something low enough to fit into a 0805 part with a decent
+Q.  Annotate the schematic with the Q values of the various inductors
+that I was able to find.
