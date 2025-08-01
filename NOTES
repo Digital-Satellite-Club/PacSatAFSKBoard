@@ -258,7 +258,7 @@ Remove the DS28E83Q+T crypto processor.  Nobody knew why it was there,
 there was no software for it, and it wasn't practical.  Since there is
 no onewire hardware on the CPU, it would have to be bit-banged, and
 that would cost 50 times the CPU of just doing the crypto on the
-board.
+CPU.
 
 # 2025-07-26
 
@@ -266,7 +266,7 @@ Change the DC regulators to ones with power good pins and tie that in
 to processor reset.
 
 Removed the HW_POWER_OFF_N signal to the CPU.  The CPU is going to be
-instantly powered off if that is not asserted, there's not much value
+instantly powered off if that is not asserted; there's not much value
 in sending it to a GPIO.
 
 Remove the UART_RTS and UART_CTS connections.  The chip doesn't
