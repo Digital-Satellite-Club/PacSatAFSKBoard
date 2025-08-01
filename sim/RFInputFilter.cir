@@ -1,6 +1,6 @@
-* 140-152MHz Chebychev bandpass filter, simulated from:
+* 134-158MHz Chebychev bandpass filter, simulated from:
 * https://markimicrowave.com/technical-resources/tools/lc-filter-design-tool/
-* 3rd order, conventional shunt first, 140 low cutoff, 152 high
+* 3rd order, conventional shunt first, 134 low cutoff, 158 high
 * cutoff, .10db ripple in passband, 50 ohm input, 50 ohm output
 * impedance.  input | output | | .SUBCKT Filt144MHz in out
 
@@ -12,17 +12,18 @@
 * Comments above are the exact values from the filter tool.
 * Value used are available inductors and capacitors.
 
-* 273.6p
-C1	in  0   270p
-* 4.35n
-L1	in  0   4.3n
+* 136.8p
+C1	in  0   136p
+* 8.745n
+L1	in  0   8.7n
 
-* 1.564p (implemented with 2 3p 2% in series)
-C2	in  a1 1.5p
-L2	a1  out 780n
+* 3.145p
+C2	in  a1 3.1p
+* 380.4
+L2	a1  out 380n
 
-C3	out 0   270p
-L3	out 0   4.3n
+C3	out 0   136p
+L3	out 0   8.7n
 
 * Avoid issues with series inductors, they result in:
 * Warning: singular matrix:  check node l.x1.l4b#branch
@@ -42,7 +43,7 @@ Rload out 0 50
 .control
 *tran 1ns 102000ns 101000ns
 *plot v(in1), v(out)
-ac lin 50000 130Meg 160Meg
+ac lin 50000 120Meg 180Meg
 plot db((vm(out)^2/50)/(vm(in1) * i(v1)))
 .endc
 

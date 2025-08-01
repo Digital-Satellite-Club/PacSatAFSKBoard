@@ -5,15 +5,11 @@ There's a note in the schematic about biasing the 5043 inputs, but I
 can't find any info on that.  Need to figure out if that's something
 that needs to be done.  I can't see how, though.
 
+The shields I have are steel, which is probably going to mess with the
+inductors.  Need aluminum shields.
+
 Why is both the RTC and the hardware watchdog controlling the transmit
 shutdown?  It would seem only one or the other would be necessary.
-
-I'm not terribly happy with the way the signal goes through the RX
-input, but I'm not sure what to do about it.  I've improved it a lot,
-but there's still a sharp turn on the inductor that leave the LNA are.
-You might be able to rotate the LNA so the signal comes back towards
-the center of the shield and then curves back around to leave, but I'm
-not sure that's better.
 
 The RX input filter can probably do the impedance adjustment for the
 LNA, but I'm not sure how to calculate that.
@@ -192,6 +188,13 @@ outputs because the power limiting circuits may take time to turn on.
 The inductors for impedance matching the output of the LNA are on the
 bottom of the board.  This isn't ideal, as they aren't in a shield,
 but it's pretty crowded in the LNA shield.
+
+I'm not terribly happy with the way the signal goes through the RX
+input, but I'm not sure what to do about it.  I've improved it a lot,
+but there's still a sharp turn on the inductor that leave the LNA are.
+You might be able to rotate the LNA so the signal comes back towards
+the center of the shield and then curves back around to leave, but I'm
+not sure that's better.
 
 # Not going to do
 
@@ -450,3 +453,8 @@ it's supposed to be better for RF flow.
 
 Rotate the RF filter after the LNA to improve flow and do some more
 cleanups.
+
+Reworked the LNA some more, I think I'm happy with the layout now.
+
+Widened the bandwidth of the input filter.  That reduces the inductor
+values to ones that are obtainable.
