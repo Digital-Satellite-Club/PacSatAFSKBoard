@@ -9,7 +9,11 @@ Why is both the RTC and the hardware watchdog controlling the transmit
 shutdown?  It would seem only one or the other would be necessary.
 
 I'm not terribly happy with the way the signal goes through the RX
-input, but I'm not sure what to do about it.
+input, but I'm not sure what to do about it.  I've improved it a lot,
+but there's still a sharp turn on the inductor that leave the LNA are.
+You might be able to rotate the LNA so the signal comes back towards
+the center of the shield and then curves back around to leave, but I'm
+not sure that's better.
 
 The RX input filter can probably do the impedance adjustment for the
 LNA, but I'm not sure how to calculate that.
@@ -444,3 +448,5 @@ Improved the LNA layout some more.  I have one part rotated at 45
 degrees to round a corner a little better.  It's not required, but
 it's supposed to be better for RF flow.
 
+Rotate the RF filter after the LNA to improve flow and do some more
+cleanups.
