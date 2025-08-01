@@ -1,4 +1,24 @@
 
+# Shields
+
+RF shields cover all the RF sections possible to cover.  There are 7
+shields and they use standard shield sizes.  The bottoms are
+castellated and surface mount.
+
+Six shields cover the AX5043s and the RF input section are 12.7mm
+x 13.67mm (.5"x.538") and the one that covers the PA is 26.21mm x
+26.21mm (1.032"x1.032").  There are options from at least TE
+Connectivity AMP Connectors, Leader Tech Inc, Laird Technologies EMI,
+and 3G Shielding Specialties LP.
+
+The traces running in and out of the shields are done in a way to
+accommodate all these shields, though not all have been checked.
+
+I assume shields should be non-magnetic to avoid issues with inductor
+coupling.  It's hard to find two-piece shields where the frame is
+aluminum, though.  I'm not sure of the requirements around this,
+though.
+
 # TODO
 
 There's a note in the schematic about biasing the 5043 inputs, but I
@@ -19,9 +39,6 @@ What UFL connectors can be removed?
 Do we need all those wire holes?  A few I can understand, for powering
 the board on the bench, but there are a bunch of them, some with just
 grounds.
-
-Clean up all the schematic notes and number all the device references
-in a logical manner.
 
 Does it make sense to wire the UARTs to the PC104?  If so, do we need
 two of them on the PC104?  Shouldn't one go to a plug somewhere?  If
@@ -195,6 +212,9 @@ not sure that's better.
 
 The shields I have are steel, which is probably going to mess with the
 inductors.  Need aluminum shields.
+
+Clean up all the schematic notes and number all the device references
+in a logical manner.
 
 # Not going to do
 
@@ -459,4 +479,5 @@ Reworked the LNA some more, I think I'm happy with the layout now.
 Widened the bandwidth of the input filter.  That reduces the inductor
 values to ones that are obtainable.
 
-Switch to aluminum shields.
+Switch to aluminum shields.  A number of shields are possible to use,
+see notes.

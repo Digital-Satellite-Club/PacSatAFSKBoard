@@ -1,4 +1,4 @@
-106966393049216
+108720469005501
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -72869,6 +72869,13 @@ TE_2118714-2
 0
 8
 8
+PacSatDev_misc
+TE_2118718-2
+
+
+0
+16
+16
 PacSatDev_misc
 U_FL
 
