@@ -63,6 +63,9 @@ Replace unobtanium parts (if any).
 Figure out temperature ratings on all chips and get as many to be 105C
 or better as possible.
 
+Determine current limiter values, probably need to build a board and
+measure.
+
 # Done
 
 Figure out how to hold the processor in reset until the power is good.
@@ -486,3 +489,5 @@ Update the RF input filter again for wider bandwidth to get a 180nH
 inductor, something low enough to fit into a 0805 part with a decent
 Q.  Annotate the schematic with the Q values of the various inductors
 that I was able to find.
+
+Snug in the 3.3V LDO a bit more to give more space on the side.
