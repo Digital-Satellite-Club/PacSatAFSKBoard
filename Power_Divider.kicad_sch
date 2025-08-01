@@ -2190,7 +2190,7 @@
 		)
 		(uuid "8175730b-687c-41cf-8f1b-ef288858f569")
 	)
-	(text "The output impedance of the QPL9547 is\n86.8-1.88 ohms.  This adjusts the\nimpedance to 50 ohms at 145MHz."
+	(text "The output impedance of the QPL9547 is\n86.8-j1.88 ohms.  This adjusts the\nimpedance to 50 ohms at 145MHz."
 		(exclude_from_sim no)
 		(at 200.406 179.324 0)
 		(effects
@@ -3035,16 +3035,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 166.37) (xy 189.23 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "757c03e4-8439-40b8-b03a-699c773ad039")
-	)
-	(wire
-		(pts
 			(xy 85.09 160.02) (xy 85.09 161.29)
 		)
 		(stroke
@@ -3465,16 +3455,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 167.64) (xy 142.24 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1337200-482c-4a49-a48a-55a018ae4805")
-	)
-	(wire
-		(pts
 			(xy 121.92 160.02) (xy 121.92 161.29)
 		)
 		(stroke
@@ -3765,8 +3745,8 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 142.24 163.83 0)
-		(mirror y)
+		(at 134.62 143.51 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3774,15 +3754,15 @@
 		(dnp no)
 		(uuid "000cfbdd-87f3-4915-8329-6e2d0e53a174")
 		(property "Reference" "L31"
-			(at 144.272 164.084 90)
+			(at 134.366 145.542 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "82n 1%"
-			(at 139.192 164.338 90)
+		(property "Value" "91n 1%"
+			(at 134.112 140.462 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3790,7 +3770,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
-			(at 142.24 163.83 0)
+			(at 134.62 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3799,7 +3779,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 163.83 0)
+			(at 134.62 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3808,7 +3788,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 142.24 163.83 0)
+			(at 134.62 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4183,7 +4163,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 171.45 0)
+		(at 142.24 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4192,7 +4172,7 @@
 		(fields_autoplaced yes)
 		(uuid "2287e7ce-078f-48a8-a6b8-20679d61b913")
 		(property "Reference" "#PWR0208"
-			(at 142.24 177.8 0)
+			(at 142.24 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4201,7 +4181,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 176.53 0)
+			(at 142.24 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4209,7 +4189,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 171.45 0)
+			(at 142.24 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4218,7 +4198,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 171.45 0)
+			(at 142.24 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4227,7 +4207,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 142.24 171.45 0)
+			(at 142.24 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4248,7 +4228,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 181.61 143.51 270)
+		(at 195.58 143.51 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4257,7 +4237,7 @@
 		(fields_autoplaced yes)
 		(uuid "22a2cb7e-6026-4ec1-8bb2-a68c52fccedb")
 		(property "Reference" "C109"
-			(at 181.61 135.89 90)
+			(at 195.58 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4265,7 +4245,7 @@
 			)
 		)
 		(property "Value" "1n"
-			(at 181.61 138.43 90)
+			(at 195.58 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4273,7 +4253,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 177.8 144.4752 0)
+			(at 191.77 144.4752 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4282,7 +4262,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 181.61 143.51 0)
+			(at 195.58 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4291,7 +4271,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 181.61 143.51 0)
+			(at 195.58 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4675,7 +4655,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 189.23 168.91 0)
+		(at 189.23 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4684,7 +4664,7 @@
 		(fields_autoplaced yes)
 		(uuid "2f0b5946-0e7e-462a-a8d2-52e1ac002316")
 		(property "Reference" "#PWR0212"
-			(at 189.23 175.26 0)
+			(at 189.23 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4693,7 +4673,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 189.23 173.99 0)
+			(at 189.23 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4701,7 +4681,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 168.91 0)
+			(at 189.23 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4710,7 +4690,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 168.91 0)
+			(at 189.23 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4719,7 +4699,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 189.23 168.91 0)
+			(at 189.23 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4740,7 +4720,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 134.62 143.51 270)
+		(at 142.24 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4749,23 +4729,25 @@
 		(fields_autoplaced yes)
 		(uuid "3e67d483-98b7-4661-9ba9-aefef5b33e32")
 		(property "Reference" "C104"
-			(at 134.62 135.89 90)
+			(at 146.05 151.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "13p 1%"
-			(at 134.62 138.43 90)
+			(at 146.05 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 130.81 144.4752 0)
+			(at 143.2052 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4774,7 +4756,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 134.62 143.51 0)
+			(at 142.24 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4783,7 +4765,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 134.62 143.51 0)
+			(at 142.24 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5201,73 +5183,6 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 142.24 152.4 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7a924050-c46e-49fe-b870-ed02559447cc")
-		(property "Reference" "L30"
-			(at 144.272 152.654 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10n 2%"
-			(at 139.192 152.908 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
-			(at 142.24 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2e21d31d-0eec-4ed4-add1-a70d7e7df74e")
-		)
-		(pin "2"
-			(uuid "cf6a6529-f0ec-425b-b4d6-4bd83756e123")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
-					(reference "L30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
 		(at 81.28 152.4 0)
 		(mirror y)
 		(unit 1)
@@ -5604,7 +5519,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 195.58 143.51 270)
+		(at 189.23 151.13 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5613,23 +5528,25 @@
 		(fields_autoplaced yes)
 		(uuid "8ec8d829-72a2-4ec5-b7ab-509d815ac416")
 		(property "Reference" "C110"
-			(at 195.58 135.89 90)
+			(at 193.04 149.8599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "25p"
-			(at 195.58 138.43 90)
+		(property "Value" "11p 1%"
+			(at 193.04 152.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 191.77 144.4752 0)
+			(at 188.2648 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5638,7 +5555,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 195.58 143.51 0)
+			(at 189.23 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5647,7 +5564,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 195.58 143.51 0)
+			(at 189.23 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5737,8 +5654,8 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 189.23 162.56 0)
-		(mirror y)
+		(at 181.61 143.51 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5746,15 +5663,15 @@
 		(dnp no)
 		(uuid "99de4094-55f7-429a-91b4-665bab735140")
 		(property "Reference" "L34"
-			(at 191.262 162.814 90)
+			(at 181.356 145.542 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "100n 1%"
-			(at 186.182 163.068 90)
+		(property "Value" "47n 1%"
+			(at 181.102 140.462 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5762,7 +5679,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
-			(at 189.23 162.56 0)
+			(at 181.61 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5771,7 +5688,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.23 162.56 0)
+			(at 181.61 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5780,7 +5697,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 189.23 162.56 0)
+			(at 181.61 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6483,73 +6400,6 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
 					(reference "#PWR0215")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 189.23 151.13 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d61ae36f-d677-42ac-a3e8-f731593d4147")
-		(property "Reference" "L33"
-			(at 191.262 151.384 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "8.4n 2%"
-			(at 186.182 151.638 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
-			(at 189.23 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 189.23 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 189.23 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3f416f1f-da22-4d71-bde2-d9941ef6487e")
-		)
-		(pin "2"
-			(uuid "c773bc1a-d6b7-4219-bf4e-6c1eb0317072")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
-					(reference "L33")
 					(unit 1)
 				)
 			)

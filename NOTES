@@ -8,9 +8,11 @@ that needs to be done.  I can't see how, though.
 Why is both the RTC and the hardware watchdog controlling the transmit
 shutdown?  It would seem only one or the other would be necessary.
 
-The inductors for impedance matching the output of the LNA are on the
-bottom of the board.  This isn't ideal, as they aren't in a shield,
-but it's pretty crowded in the LNA shield.
+I'm not terribly happy with the way the signal goes through the RX
+input, but I'm not sure what to do about it.
+
+The RX input filter can probably do the impedance adjustment for the
+LNA, but I'm not sure how to calculate that.
 
 Probably remove the L1/L2 inductor on the AX5043s and replace them
 with a short.  I don't think we will use them.
@@ -182,6 +184,10 @@ the rest of the board.
 
 There may need to be a delay on the reset line from the power good
 outputs because the power limiting circuits may take time to turn on.
+
+The inductors for impedance matching the output of the LNA are on the
+bottom of the board.  This isn't ideal, as they aren't in a shield,
+but it's pretty crowded in the LNA shield.
 
 # Not going to do
 
@@ -426,3 +432,8 @@ enabled power.
 
 Cleaned up the hierarchical sheets and re-annotated everything to make
 copying and pasting easier.
+
+Reworked the LNA input and output impedance matching so nothing had to
+be on the bottom of the board.  Switched the positions of the
+capacitor and inductor in the L match, that let me match more closely
+with single standard parts instead of having to use two inductors.
