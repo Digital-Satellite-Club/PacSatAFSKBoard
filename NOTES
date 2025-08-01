@@ -359,7 +359,7 @@ express) comes out to ~52 ohms.  The board is 1.56mm thick (JLCPCB
   Dielectric Constant Er_1 - 4.5
   Height of dielectric - H2 ( mm ) - .109
   Dielectric Constant Er_2 - 4.5
-  Dielectric Constant Er_3 - 4.5
+  Dielectric Constant Er_3 - 1
   Via Diameter ( mm ) - .308
   Anti Pad Diameter ( mm ) - 1.53
   Annular Pad Diameter ( mm ) - .508
@@ -437,3 +437,10 @@ Reworked the LNA input and output impedance matching so nothing had to
 be on the bottom of the board.  Switched the positions of the
 capacitor and inductor in the L match, that let me match more closely
 with single standard parts instead of having to use two inductors.
+
+# 2025-08-01
+
+Improved the LNA layout some more.  I have one part rotated at 45
+degrees to round a corner a little better.  It's not required, but
+it's supposed to be better for RF flow.
+
