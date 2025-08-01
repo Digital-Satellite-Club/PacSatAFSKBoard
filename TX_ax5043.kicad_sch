@@ -437,7 +437,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:RFShield_OnePiece"
+		(symbol "PACSAT_DEV_misc:2118714-2"
 			(pin_names
 				(offset 1.016)
 			)
@@ -445,40 +445,34 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 5.08 0)
+				(at -7.62 3.302 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
-			(property "Value" "RFShield_OnePiece"
-				(at 0 2.54 0)
+			(property "Value" "2118714-2"
+				(at -7.62 -22.86 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 -2.54 0)
+			(property "Footprint" "PacSatDev_misc:TE_2118714-2"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "One-piece EMI RF shielding cabinet"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -487,7 +481,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "RF EMI shielding cabinet"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -496,311 +490,198 @@
 					(hide yes)
 				)
 			)
-			(symbol "RFShield_OnePiece_0_1"
-				(polyline
-					(pts
-						(xy -15.24 6.35) (xy -15.24 7.62) (xy -13.97 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -15.24 2.54) (xy -15.24 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -15.24 -1.27) (xy -15.24 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -15.24 -5.08) (xy -15.24 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -13.97 -7.62) (xy -15.24 -7.62) (xy -15.24 -6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -12.7 7.62) (xy -10.16 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.16 -7.62) (xy -12.7 -7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 7.62) (xy -8.89 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 -7.62) (xy -8.89 -7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 7.62) (xy -5.08 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -7.62) (xy -5.08 -7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -7.62) (xy 1.27 -7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 7.62) (xy -1.27 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -7.62) (xy 5.08 -7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 7.62) (xy 2.54 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 -7.62) (xy 8.89 -7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.89 7.62) (xy 6.35 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 12.7 -7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 7.62) (xy 10.16 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 13.97 -7.62) (xy 15.24 -7.62) (xy 15.24 -6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 15.24 6.35) (xy 15.24 7.62) (xy 13.97 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 15.24 2.54) (xy 15.24 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 15.24 -1.27) (xy 15.24 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 15.24 -5.08) (xy 15.24 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
+			(property "PARTREV" "A2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
 				)
 			)
-			(symbol "RFShield_OnePiece_1_1"
+			(property "MANUFACTURER" "TE Connectivity"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "2.54mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "2118714-2_0_0"
+				(rectangle
+					(start -7.62 -20.32)
+					(end 7.62 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(pin passive line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "Shield"
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "SHIELD"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "1"
+					(number "SH1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -2.54 0)
+					(length 5.08)
+					(name "SHIELD__1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "SH2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -5.08 0)
+					(length 5.08)
+					(name "SHIELD__2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "SH3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -7.62 0)
+					(length 5.08)
+					(name "SHIELD__3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "SH4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -10.16 0)
+					(length 5.08)
+					(name "SHIELD__4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "SH5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -12.7 0)
+					(length 5.08)
+					(name "SHIELD__5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "SH6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -15.24 0)
+					(length 5.08)
+					(name "SHIELD__6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "SH7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -17.78 0)
+					(length 5.08)
+					(name "SHIELD__7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "SH8"
+						(effects
+							(font
+								(size 1.016 1.016)
 							)
 						)
 					)
@@ -1952,6 +1833,12 @@
 		(uuid "11e27295-ae3f-46c4-8057-f4fecf8a66ca")
 	)
 	(junction
+		(at 177.8 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d5659e4-f183-46d2-aa33-908b26bd2ed3")
+	)
+	(junction
 		(at 237.49 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2000,16 +1887,40 @@
 		(uuid "576c1fd1-9524-4161-bd20-acdaabe6bf60")
 	)
 	(junction
+		(at 177.8 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5eba7954-77d2-4c2a-bc47-a9b5c9fb52cf")
+	)
+	(junction
+		(at 177.8 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "608863e1-230b-4a3b-9af3-99d985b5e44f")
+	)
+	(junction
 		(at 223.52 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "63a31b2c-def4-4df9-ba3e-7233f743fe15")
 	)
 	(junction
+		(at 177.8 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69085691-b4b9-4864-93e9-d5edb5e08251")
+	)
+	(junction
 		(at 190.5 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d80de06-19b9-4fbf-be61-b0d02bcca3c9")
+	)
+	(junction
+		(at 177.8 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7db3a37e-665b-44fb-992f-c758c514fc46")
 	)
 	(junction
 		(at 218.44 132.08)
@@ -2024,10 +1935,22 @@
 		(uuid "8fd8ce22-df57-4167-891d-43a13df4a4f6")
 	)
 	(junction
+		(at 177.8 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "abc60558-7af4-4cae-9146-9ccbc39318ed")
+	)
+	(junction
 		(at 163.83 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb29a3a6-ede4-4806-b38d-f679b34c51b8")
+	)
+	(junction
+		(at 177.8 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1b7d9ca-5df0-42bd-af27-4becdcfdac8a")
 	)
 	(junction
 		(at 334.01 77.47)
@@ -2147,6 +2070,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 91.44) (xy 182.88 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eba9e3d-9788-471a-88da-82752aaf3557")
+	)
+	(wire
+		(pts
 			(xy 223.52 139.7) (xy 241.3 139.7)
 		)
 		(stroke
@@ -2154,6 +2087,16 @@
 			(type default)
 		)
 		(uuid "10139c55-c94f-4b0f-ae2a-e5c8bf5585a2")
+	)
+	(wire
+		(pts
+			(xy 177.8 99.06) (xy 177.8 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12789693-f4af-47c1-a1d2-c4d8c30df237")
 	)
 	(wire
 		(pts
@@ -2207,13 +2150,23 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 101.6) (xy 177.8 104.14)
+			(xy 177.8 81.28) (xy 177.8 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1d11ace1-8dee-4bcd-9eb1-5523e779d08a")
+	)
+	(wire
+		(pts
+			(xy 177.8 83.82) (xy 177.8 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dbbc404-246d-454f-ab61-41e17496427a")
 	)
 	(wire
 		(pts
@@ -2317,6 +2270,26 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 96.52) (xy 182.88 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3514aa7f-c71d-4b74-9174-4ac729270b45")
+	)
+	(wire
+		(pts
+			(xy 177.8 81.28) (xy 182.88 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "368203c4-b621-4bac-8754-a7cfb2d23a8e")
+	)
+	(wire
+		(pts
 			(xy 208.28 179.07) (xy 208.28 181.61)
 		)
 		(stroke
@@ -2417,6 +2390,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 93.98) (xy 182.88 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ae47e72-c384-48a2-b1f7-df7e341d8efe")
+	)
+	(wire
+		(pts
 			(xy 125.73 121.92) (xy 128.27 121.92)
 		)
 		(stroke
@@ -2434,6 +2417,16 @@
 			(type default)
 		)
 		(uuid "4dc25cc6-f8f4-4cc7-b0fe-934b9bdaa925")
+	)
+	(wire
+		(pts
+			(xy 177.8 91.44) (xy 177.8 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ff27e96-3086-4317-bdb5-719489dde4a1")
 	)
 	(wire
 		(pts
@@ -2534,6 +2527,16 @@
 			(type default)
 		)
 		(uuid "6689521f-558e-4e0a-a41c-fef3f532bf42")
+	)
+	(wire
+		(pts
+			(xy 177.8 88.9) (xy 182.88 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6914e09e-6b41-463f-9c64-7a24761c4949")
 	)
 	(wire
 		(pts
@@ -2847,6 +2850,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 93.98) (xy 177.8 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fbce7e2-20bf-40aa-a4b1-f9bdad3e78a0")
+	)
+	(wire
+		(pts
 			(xy 289.56 110.49) (xy 289.56 115.57)
 		)
 		(stroke
@@ -2897,6 +2910,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 88.9) (xy 177.8 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a56bce4d-a3fa-435b-aa90-a33b9b911592")
+	)
+	(wire
+		(pts
 			(xy 218.44 161.29) (xy 218.44 166.37)
 		)
 		(stroke
@@ -2914,6 +2937,16 @@
 			(type default)
 		)
 		(uuid "a61c8e53-f29a-4373-bda0-394a5bd88eb6")
+	)
+	(wire
+		(pts
+			(xy 177.8 86.36) (xy 182.88 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6ca53ad-47db-46af-84f8-3f8988a253a7")
 	)
 	(wire
 		(pts
@@ -3047,6 +3080,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 96.52) (xy 177.8 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c49fe465-0afb-408c-8325-cc3158cbce0c")
+	)
+	(wire
+		(pts
 			(xy 289.56 144.78) (xy 297.18 144.78)
 		)
 		(stroke
@@ -3077,6 +3120,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 83.82) (xy 182.88 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd927517-29b9-4f52-b3c1-527b641d1bc6")
+	)
+	(wire
+		(pts
 			(xy 138.43 127) (xy 138.43 135.89)
 		)
 		(stroke
@@ -3104,6 +3157,16 @@
 			(type default)
 		)
 		(uuid "d37b5fd9-7e61-4b5e-b657-d930bb166d5c")
+	)
+	(wire
+		(pts
+			(xy 177.8 99.06) (xy 182.88 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d54fa88f-c278-424c-8ad4-9390dbdeb34e")
 	)
 	(wire
 		(pts
@@ -3164,6 +3227,16 @@
 			(type default)
 		)
 		(uuid "de8bb120-57fa-4c0a-a7b6-eddffde344c1")
+	)
+	(wire
+		(pts
+			(xy 177.8 86.36) (xy 177.8 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df33af49-7390-4131-bddb-e265eb5afeab")
 	)
 	(wire
 		(pts
@@ -6772,17 +6845,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:RFShield_OnePiece")
-		(at 177.8 91.44 0)
+		(lib_id "PACSAT_DEV_misc:2118714-2")
+		(at 195.58 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d1b257e3-6236-4c22-8d7e-7cdcab0c4f56")
+		(uuid "d2a2401c-ad00-4484-80c1-29d4646351ed")
 		(property "Reference" "J7"
-			(at 194.31 90.1699 0)
+			(at 204.47 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6790,8 +6863,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PIC-S-201F"
-			(at 194.31 92.7099 0)
+		(property "Value" "2118714-2"
+			(at 204.47 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6799,8 +6872,18 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:RF_SHIELD_PIC_S_101"
-			(at 177.8 93.98 0)
+		(property "Footprint" "PacSatDev_misc:TE_2118714-2"
+			(at 195.58 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6808,8 +6891,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 177.8 93.98 0)
+		(property "Description" ""
+			(at 195.58 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6817,20 +6900,72 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "One-piece EMI RF shielding cabinet"
-			(at 177.8 91.44 0)
+		(property "PARTREV" "A2"
+			(at 195.58 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "1f596564-a2c0-4dea-aec4-9cfadf9030a4")
+		(property "MANUFACTURER" "TE Connectivity"
+			(at 195.58 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "2.54mm"
+			(at 195.58 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 195.58 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "SH2"
+			(uuid "8ec101c9-aa28-4661-8b69-db4ff14abb21")
+		)
+		(pin "SH1"
+			(uuid "713233d2-85ea-4875-87fc-6582b82763a6")
+		)
+		(pin "SH5"
+			(uuid "391bb7eb-d149-427f-8cb8-56a99141e011")
+		)
+		(pin "SH4"
+			(uuid "6e0b38a6-db1e-4579-8e3b-d01950cba629")
+		)
+		(pin "SH7"
+			(uuid "871a43fd-b0e4-4857-8d8f-0d37920b3d1d")
+		)
+		(pin "SH3"
+			(uuid "39bc896b-2fe7-4ffe-baaf-a51486db45cf")
+		)
+		(pin "SH6"
+			(uuid "579c79a1-4283-4473-a8a1-27c07d95ae8e")
+		)
+		(pin "SH8"
+			(uuid "1e9ba828-c672-473f-87f7-8bfb2ab5493e")
 		)
 		(instances
-			(project "PacSat_AFSK"
+			(project ""
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/5d5e49b4-9b51-4931-b763-c2c4ed8729ab"
 					(reference "J7")
 					(unit 1)

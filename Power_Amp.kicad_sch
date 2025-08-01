@@ -2554,6 +2554,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "The cover for this frame is 2118717-4\nand also needs to be ordered.  When access\nto the parts is no longer needed (or shake\nresistance is required) the 2118708-4 has\nthe same layout as a single unit.\n\nThis is the same for all shields on the\nAX5043 parts."
+		(exclude_from_sim no)
+		(at 105.918 24.638 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "06b648fc-0137-4d2a-9e0b-a818392a0589")
+	)
 	(text "Inductor to bleed of static build\nup on the antenna."
 		(exclude_from_sim no)
 		(at 338.836 192.024 0)
@@ -4407,7 +4417,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1ae1d1dd-c9aa-49a4-8315-37397bc68a77")
 		(property "Reference" "J10"
 			(at 121.92 46.9899 0)
@@ -4418,7 +4427,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PIC-S-203F"
+		(property "Value" "2118718-2"
 			(at 121.92 49.5299 0)
 			(effects
 				(font
@@ -4445,13 +4454,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "One-piece EMI RF shielding cabinet"
-			(at 105.41 48.26 0)
+		(property "Description" "EMI RF shielding aluminum 26.21mm (1.032\") by 26.6mm (1.032\")"
+			(at 107.696 37.338 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"

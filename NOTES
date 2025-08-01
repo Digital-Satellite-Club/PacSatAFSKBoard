@@ -5,9 +5,6 @@ There's a note in the schematic about biasing the 5043 inputs, but I
 can't find any info on that.  Need to figure out if that's something
 that needs to be done.  I can't see how, though.
 
-The shields I have are steel, which is probably going to mess with the
-inductors.  Need aluminum shields.
-
 Why is both the RTC and the hardware watchdog controlling the transmit
 shutdown?  It would seem only one or the other would be necessary.
 
@@ -195,6 +192,9 @@ but there's still a sharp turn on the inductor that leave the LNA are.
 You might be able to rotate the LNA so the signal comes back towards
 the center of the shield and then curves back around to leave, but I'm
 not sure that's better.
+
+The shields I have are steel, which is probably going to mess with the
+inductors.  Need aluminum shields.
 
 # Not going to do
 
@@ -458,3 +458,5 @@ Reworked the LNA some more, I think I'm happy with the layout now.
 
 Widened the bandwidth of the input filter.  That reduces the inductor
 values to ones that are obtainable.
+
+Switch to aluminum shields.

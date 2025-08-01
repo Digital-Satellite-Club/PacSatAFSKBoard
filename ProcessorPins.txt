@@ -186,4 +186,5 @@ Notes on FEED_WATCHDOG
 ----------------------
 
 This must be toggled at least once a second.  If it isn't, the
-hardware watchdog power off the board for 200ms and power it back on.
+hardware watchdog will power off the board for 200ms and power it back
+on.
