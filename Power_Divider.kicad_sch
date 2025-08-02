@@ -2187,7 +2187,7 @@
 		)
 		(uuid "eb312600-6122-497a-a6f9-ae49ba2c59f7")
 	)
-	(text "Inductors Ref Murata LQW18AN_00 series"
+	(text "All RF capacitors C0G/NP0."
 		(exclude_from_sim no)
 		(at 27.94 234.95 0)
 		(effects

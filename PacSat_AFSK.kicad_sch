@@ -969,7 +969,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "ac5043.kicad_sch"
+		(property "Sheetfile" "ax5043.kicad_sch"
 			(at 175.26 89.4846 0)
 			(effects
 				(font

@@ -1,35 +1,27 @@
+Notes on the AFSK Board
+=======================
 
-# Shields
+This keeps track of history, general information, things that need to
+be done, and things that have been done.
 
-RF shields cover all the RF sections possible to cover.  There are 7
-shields and they use standard shield sizes.  The bottoms are
-castellated and surface mount.
-
-Six shields cover the AX5043s and the RF input section are 12.7mm
-x 13.67mm (.5"x.538") and the one that covers the PA is 26.21mm x
-26.21mm (1.032"x1.032").  There are options from at least TE
-Connectivity AMP Connectors, Leader Tech Inc, Laird Technologies EMI,
-and 3G Shielding Specialties LP.
-
-The traces running in and out of the shields are done in a way to
-accommodate all these shields, though not all have been checked.
-
-I assume shields should be non-magnetic to avoid issues with inductor
-coupling.  It's hard to find two-piece shields where the frame is
-aluminum, though.  I'm not sure of the requirements around this,
-though.
+The general information will probably make it into another document at
+some point.
 
 # TODO
 
+Do steel RF shields affect the inductors under or around them?  Is
+aluminum better?
+
 There's a note in the schematic about biasing the 5043 inputs, but I
 can't find any info on that.  Need to figure out if that's something
-that needs to be done.  I can't see how, though.
+that needs to be done.  I don't really understand the comment, though.
 
 Why is both the RTC and the hardware watchdog controlling the transmit
 shutdown?  It would seem only one or the other would be necessary.
 
 The RX input filter can probably do the impedance adjustment for the
-LNA, but I'm not sure how to calculate that.
+LNA, but I'm not sure how to calculate that.  There's an impedance
+matching circuit in there now.
 
 Probably remove the L1/L2 inductor on the AX5043s and replace them
 with a short.  I don't think we will use them.
@@ -250,7 +242,30 @@ probably the LFCG-490+ from MiniCircuits, which also happens to be
 temperature rated.
 
 
-# 2025-07-23
+
+# Shields
+
+RF shields cover all the RF sections possible to cover.  There are 7
+shields and they use standard shield sizes.  The bottoms are
+castellated and surface mount.
+
+Six shields cover the AX5043s and the RF input section are 12.7mm
+x 13.67mm (.5"x.538") and the one that covers the PA is 26.21mm x
+26.21mm (1.032"x1.032").  There are options from at least TE
+Connectivity AMP Connectors, Leader Tech Inc, Laird Technologies EMI,
+and 3G Shielding Specialties LP.
+
+The traces running in and out of the shields are done in a way to
+accommodate all these shields, though not all have been checked.
+
+I assume shields should be non-magnetic to avoid issues with inductor
+coupling.  It's hard to find two-piece shields where the frame is
+aluminum, though.  I'm not sure of the requirements around this,
+though.
+
+# History
+
+## 2025-07-23
 
 The pins for AX5043_PWR_CTL moved (and I think was renamed) and there
 is a new PA_PWR_CTL line.
@@ -260,7 +275,7 @@ backwards.  Switched the notes so they match the schematic.
 
 VER_BIT2 is not wired to the PC104.
 
-# 2025-07-24
+## 2025-07-24
 
 Fixed all wiring that was wrong due to schematic changes.
 
@@ -269,7 +284,7 @@ datasheet says no capacitor is required.
 
 Cleaned up some crazy traces.
 
-# 2025-07-25
+## 2025-07-25
 
 Reworked the board, basic layout is done and most details are handled.
 Left to do:
@@ -290,7 +305,7 @@ no onewire hardware on the CPU, it would have to be bit-banged, and
 that would cost 50 times the CPU of just doing the crypto on the
 CPU.
 
-# 2025-07-26
+## 2025-07-26
 
 Change the DC regulators to ones with power good pins and tie that in
 to processor reset.
@@ -322,7 +337,7 @@ Clocks are all set up and wired in.
 
 MRAM is wired in.
 
-# 2025-07-27
+## 2025-07-27
 
 Wired in the AX5043 SPI busses and all their control lines.
 
@@ -339,7 +354,7 @@ The I2C temperature sensors are removed.
 
 A thermsistor by the CPU was added to pin 58.
 
-# 2025-07-28
+## 2025-07-28
 
 Added calculations for the Qorvo TQP7M9106 to get Zin and Zout for the
 frequency in question.
@@ -362,7 +377,7 @@ Add SMA connectors for TX and RX.
 
 Added resistors to JTAG interface, per the way it's defined.
 
-# 2025-07-29
+## 2025-07-29
 
 Replaced UFL connectors with surface mount ones.
 
@@ -414,7 +429,7 @@ settle within half a clock period plus 2ns, all should be good.  You
 could probably run this at 100MHz without an issue.  But the double
 clocking is the big problem.
 
-# 2025-07-30
+## 2025-07-30
 
 To solve the problem with the transformer not fitting in the shield,
 replace the transformer with a lumped sum balun as described by the
@@ -441,7 +456,7 @@ all fit.  You might be able to modify the input filter to adjust the
 impedance, but I couldn't figure out how to do that to match a complex
 impedance.  I'm sure it can be done, but it's a matter of how.
 
-# 2025-07-31
+## 2025-07-31
 
 Replaced the 1.2V current limiter/switch with a MP5073GG from
 Monolithic Power.  The MAX4495 that was there wasn't rated for 1.2V.
@@ -468,7 +483,7 @@ be on the bottom of the board.  Switched the positions of the
 capacitor and inductor in the L match, that let me match more closely
 with single standard parts instead of having to use two inductors.
 
-# 2025-08-01
+## 2025-08-01
 
 Improved the LNA layout some more.  I have one part rotated at 45
 degrees to round a corner a little better.  It's not required, but
