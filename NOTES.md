@@ -12,6 +12,12 @@ some point.
 Do steel RF shields affect the inductors under or around them?  Is
 aluminum better?
 
+Is the output filter on TX enough?  It's >50db at 800MHz and 1.6GHz.
+
+Add measurement of output and return power on TX.  I assume this can
+be built with directional couplers, op amps, and the ADC on the
+TMS570.
+
 There's a note in the schematic about biasing the 5043 inputs, but I
 can't find any info on that.  Need to figure out if that's something
 that needs to be done.  I don't really understand the comment, though.
