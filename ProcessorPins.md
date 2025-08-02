@@ -42,7 +42,7 @@ do and some notes at the end with some more details.
 |34		|TEST					|						|
 |35		|N2HET1[09]				|AX5043\_EN\_RX2		|Power enable for AX5043 RX 2 |
 |36		|N2HET1[4]				|AX5043\_EN\_RX1		|Power enable for AX5043 RX 1 |
-
+|||||
 |37		|MIBSPI3NCS[1]			|						| |
 |38		|N2HET1[06]				|UART\_RX1				|PC104 pin 92 |
 |39		|N2HET1[13]				|UART\_TX1				|PC104 pin 88 |
@@ -79,7 +79,7 @@ do and some notes at the end with some more details.
 |70		|AD1IN[09] / AD2IN[09]	|						| |
 |71		|AD1IN[01]				|						| |
 |72		|AD1IN[10] / AD2IN[10]	|						| |
-
+|||||
 |73		|AD1IN[02]				|						| |
 |74		|AD1IN[03]				|						| |
 |75		|AD1IN[11] / AD2IN[11]	|						| |
@@ -116,7 +116,7 @@ do and some notes at the end with some more details.
 |106	|N2HET1[08]				|ATTACHED				|PC104 Pin 31 |
 |107	|N2HET1[28]				|PB\_ENABLE				|PC104 Pin 45 |
 |108	|TMS					|JTAG pin				| |
-
+|||||
 |109	|TRST					|JTAG pin				| |
 |110	|TDI					|JTAG pin				| |
 |111	|TDO					|JTAG pin				| |
