@@ -89,7 +89,7 @@ Possibly rework board stack to have .1mm between the top layer and the
 ground layer to reduce trace size required for 50 ohms.
 (This was already done.)
 
-Wire VER_BIT2 to the PC104 connector.
+Wire VER\_BIT2 to the PC104 connector.
 
 Figure out the best way to handle the RX side of the AX5043 chips.  A
 single-ended design would save a lot of board space because you can
@@ -113,7 +113,7 @@ Possibly switch the MRAM and AX5043 SPI busses to simplify routine.
 
 Figure out a way to disable the LNA from the CPU.
 
-Find out why CURRENT_FAULT_U89 goes into two pins on the CPU.
+Find out why CURRENT\_FAULT\_U89 goes into two pins on the CPU.
 
 Choose one oscillator and remove the other one.  Actually, just
 replace with a "O 16,0-JT22CT-A-P-3,3-LF" from Jauch.
@@ -178,7 +178,7 @@ Check the inductor on the LNA, really verify the whole thing.
 
 Change the 1.2V power controller to a MP5073.
 
-The "Current Fault_1V2" and "Current Fault_3V3" are not connected to
+The "Current Fault\_1V2" and "Current Fault\_3V3" are not connected to
 anything and can probably be removed with their pull up resistor.  I
 don't think there's much value in hooking it to the processor, if
 either of these fire the processor will crash.
@@ -273,13 +273,13 @@ though.
 
 ## 2025-07-23
 
-The pins for AX5043_PWR_CTL moved (and I think was renamed) and there
-is a new PA_PWR_CTL line.
+The pins for AX5043\_PWR\_CTL moved (and I think was renamed) and there
+is a new PA\_PWR\_CTL line.
 
 The Address notes on the two MAX31725MTA+ temperature sensors were
 backwards.  Switched the notes so they match the schematic.
 
-VER_BIT2 is not wired to the PC104.
+VER\_BIT2 is not wired to the PC104.
 
 ## 2025-07-24
 
@@ -316,11 +316,11 @@ CPU.
 Change the DC regulators to ones with power good pins and tie that in
 to processor reset.
 
-Removed the HW_POWER_OFF_N signal to the CPU.  The CPU is going to be
+Removed the HW\_POWER\_OFF\_N signal to the CPU.  The CPU is going to be
 instantly powered off if that is not asserted; there's not much value
 in sending it to a GPIO.
 
-Remove the UART_RTS and UART_CTS connections.  The chip doesn't
+Remove the UART\_RTS and UART\_CTS connections.  The chip doesn't
 support these lines, no point in having them.
 
 Switched the MRAM and AX5043 SPI busses to simplify routing.  MRAM is
@@ -328,15 +328,15 @@ now on MIPSPI3, the AX5043 is on MIBSPI1.  This puts the AX5043 SPI
 connection on the bottom of the processor by the AX5043s, and the MRAM
 SPI where there is plenty of room to add MRAM devices as necessary.
 
-Move AX5043_SEL1 from pin 24 to pin 90
-Move AX5043_SEL2 from pin 33 to pin 91
-Move AX5043_SEL3 from pin 35 to pin 92
-Move AX5043_SEL4 from pin 35 to pin 96
-Move AX5043_SEL_TX from pin 124 to pin 97
+Move AX5043\_SEL1 from pin 24 to pin 90
+Move AX5043\_SEL2 from pin 33 to pin 91
+Move AX5043\_SEL3 from pin 35 to pin 92
+Move AX5043\_SEL4 from pin 35 to pin 96
+Move AX5043\_SEL\_TX from pin 124 to pin 97
 
-Added an LNA_ENABLE control on pin 89.
+Added an LNA\_ENABLE control on pin 89.
 
-Removed the CURRENT_FAULT_U89 signal from pins 73 and 74.  They don't
+Removed the CURRENT\_FAULT\_U89 signal from pins 73 and 74.  They don't
 go anywhere else and serve no purpose I can tell.
 
 Clocks are all set up and wired in.
@@ -349,12 +349,12 @@ Wired in the AX5043 SPI busses and all their control lines.
 
 Added the following connections to the CPU:
 
-AX5043_EN_RX1 to pin 36
-AX5043_EN_RX2 to pin 35
-AX5043_EN_RX3 to pin 33
-AX5043_EN_RX4 to pin 32
+AX5043\_EN\_RX1 to pin 36
+AX5043\_EN\_RX2 to pin 35
+AX5043\_EN\_RX3 to pin 33
+AX5043\_EN\_RX4 to pin 32
 
-Added a thermsistor to AD1IN_16.
+Added a thermsistor to AD1IN\_16.
 
 The I2C temperature sensors are removed.
 
@@ -407,10 +407,10 @@ express) comes out to ~52 ohms.  The board is 1.56mm thick (JLCPCB
 2116 board stack), each copper layer is .035mm.  Input is:
 
   Height of dielectric - H1 ( mm ) - 1.416
-  Dielectric Constant Er_1 - 4.5
+  Dielectric Constant Er\_1 - 4.5
   Height of dielectric - H2 ( mm ) - .109
-  Dielectric Constant Er_2 - 4.5
-  Dielectric Constant Er_3 - 1
+  Dielectric Constant Er\_2 - 4.5
+  Dielectric Constant Er\_3 - 1
   Via Diameter ( mm ) - .308
   Anti Pad Diameter ( mm ) - 1.53
   Annular Pad Diameter ( mm ) - .508
@@ -471,10 +471,10 @@ Remove the Current Fault lines for 1.2V and 3.3V.  They didn't go
 anywhere, and there's not much the processor could do about it if they
 went bad.
 
-Removed the zero ohm resistors on WDO_N, the enable line feeding the
+Removed the zero ohm resistors on WDO\_N, the enable line feeding the
 current limit switches enables.  There's already a way to turn of the
 watchdog on the watchdog chip, so it doesn't seem necessary.  Plus the
-line needs to be driven to work.  Also renamed WDO_N to POWER_ENABLE
+line needs to be driven to work.  Also renamed WDO\_N to POWER\_ENABLE
 to better reflect what it does.
 
 Wired in the power good pin on the MP5073GG-P to the processor reset
