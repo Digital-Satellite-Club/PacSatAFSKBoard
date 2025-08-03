@@ -14,10 +14,6 @@ aluminum better?
 
 Is the output filter on TX enough?  It's >50db at 800MHz and 1.6GHz.
 
-Add measurement of output and return power on TX.  I assume this can
-be built with directional couplers, op amps, and the ADC on the
-TMS570.
-
 There's a note in the schematic about biasing the 5043 inputs, but I
 can't find any info on that.  Need to figure out if that's something
 that needs to be done.  I don't really understand the comment, though.
@@ -216,6 +212,10 @@ inductors.  Need aluminum shields.
 
 Clean up all the schematic notes and number all the device references
 in a logical manner.
+
+Add measurement of output and return power on TX.  I assume this can
+be built with directional couplers, op amps, and the ADC on the
+TMS570.
 
 # Not going to do
 
@@ -512,3 +512,15 @@ Q.  Annotate the schematic with the Q values of the various inductors
 that I was able to find.
 
 Snug in the 3.3V LDO a bit more to give more space on the side.
+
+## 2025-08-03
+
+Add a directional coupler and power measurement chips (ADL5501AK) to
+feed into the ADCs (Forward power to pin 74 AD1IN[3] and reverse to
+pin 73 AS1IN[2]) and an enable for those parts into pin 124
+N2HET1[12].  Pin 124 is pulled down by default, so the chips will be
+disabled at reset.  The direction coupler is 4mm long with .1524mm
+traces .127mm apart.  At full power out (+33dBm) this will result in
+about -7dBm of power from the coupler.  This was simulated with a
+transmission line in qucs.  The voltage for that can be calculated
+from the chip manual.

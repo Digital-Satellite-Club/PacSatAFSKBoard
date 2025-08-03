@@ -80,8 +80,8 @@ do and some notes at the end with some more details.
 |71		|AD1IN[01]				|						|free adc |
 |72		|AD1IN[10] / AD2IN[10]	|						|free adc |
 |||||
-|73		|AD1IN[02]				|						|free adc |
-|74		|AD1IN[03]				|						|free adc |
+|73		|AD1IN[02]				|						|\*Reverse RF TX Power |
+|74		|AD1IN[03]				|						|\*Forward RF TX Power |
 |75		|AD1IN[11] / AD2IN[11]	|						|free adc |
 |76		|AD1IN[04]				|PWR\_FLAG\_SSPA		|Power flag from the PA current limiter |
 |77		|AD1IN[12] / AD2IN[12]	|						|+5V power measure, linear from 0-2.5V |
@@ -132,7 +132,7 @@ do and some notes at the end with some more details.
 |121	|VSS					|						| |
 |122	|VSS					|						| |
 |123	|VCC					|						| |
-|124	|H2HET1[12]				|						|free gpio |
+|124	|H2HET1[12]				|						|\*TX power measurement enable |
 |125	|H2HET1[14]				|						|free gpio |
 |126	|GIOB[0]				|AX5043\_IRQ\_RX2		|Interrupt from AX5043 RX2 |
 |127	|2HET1[30]				|CMD\_MODE				|PC104 Pin 27 |
@@ -200,3 +200,16 @@ Notes on FEED\_WATCHDOG
 This must be toggled at least once a second.  If it isn't, the
 hardware watchdog will power off the board for 200ms and power it back
 on.
+
+Notes on TX Power Measurement
+-----------------------------
+
+A directional coupler and power measurement chips (ADL5501AK) feed
+into the ADCs (Forward power to pin 74 AD1IN[3] and reverse to pin 73
+AS1IN[2]) and an enable for those parts into pin 124 N2HET1[12].  Pin
+124 is pulled down by default, so the chips will be disabled at reset.
+The direction coupler is 4mm long with .1524mm traces .127mm apart.
+At full power out (+33dBm) this will result in about -7dBm of power
+from the coupler.  This was simulated with a transmission line in
+qucs.  The voltage for that can be calculated from the chip manual.
+
