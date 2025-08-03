@@ -23,7 +23,7 @@ shutdown?  It would seem only one or the other would be necessary.
 
 The RX input filter can probably do the impedance adjustment for the
 LNA, but I'm not sure how to calculate that.  There's an impedance
-matching circuit in there now.
+matching circuit in there now, removing it would save two parts.
 
 Probably remove the L1/L2 inductor on the AX5043s and replace them
 with a short.  I don't think we will use them.
@@ -32,7 +32,7 @@ What UFL connectors can be removed?
 
 Do we need all those wire holes?  A few I can understand, for powering
 the board on the bench, but there are a bunch of them, some with just
-grounds.
+grounds.  Need to figure out their purpose.
 
 Does it make sense to wire the UARTs to the PC104?  If so, do we need
 two of them on the PC104?  Shouldn't one go to a plug somewhere?  If
@@ -217,23 +217,6 @@ Add measurement of output and return power on TX.  I assume this can
 be built with directional couplers, op amps, and the ADC on the
 TMS570.
 
-# Not going to do
-
-Look at replacing the second from bottom layer with a ground layer so
-the bottom layer can be used to route RF traces.  This may not be
-necessary, though, with careful layout.
-
-Rotate the CPU so that fewer traces need to be routed under the CPU.
-Perhaps replace the CPU with a BGA version to save space, the BGA is
-16x16mm verses 22x22mm for the flat pack.  This could also provide
-more FLASH and RAM space.
-
-On the output of the AX5043 transmit/input of the PA, there is each a
-filter.  The one on the AX5043 has parts marked "NS", which I assume
-means "don't populate".  The inductor is zero there.  C704 is also
-marked NS on the PA sheet, which is most likely wrong.  Need to figure
-all this out.
-
 Analyze the RX input filter.
 
 Figure out the AX5043 SPI routing.  Simulate the clock line in spice
@@ -247,6 +230,31 @@ Rework transmit RF side.  At least replace the filter with a new one,
 probably the LFCG-490+ from MiniCircuits, which also happens to be
 temperature rated.
 
+Look at replacing the second from bottom layer with a ground layer so
+the bottom layer can be used to route RF traces.  This may not be
+necessary, though, with careful layout. -- This was done for the RF
+portions of the board, but not the digital or power areas.
+
+On the output of the AX5043 transmit/input of the PA, there is each a
+filter.  The one on the AX5043 has parts marked "NS", which I assume
+means "don't populate".  The inductor is zero there.  C704 is also
+marked NS on the PA sheet, which is most likely wrong.  Need to figure
+all this out. -- Jim McCullers wrong a document on this, I just stole
+his stuff.
+
+# Not going to do
+
+Rotate the CPU so that fewer traces need to be routed under the CPU.
+Perhaps replace the CPU with a BGA version to save space, the BGA is
+16x16mm verses 22x22mm for the flat pack.  This could also provide
+more FLASH and RAM space. -- Moving a few lines around the processor
+made a huge difference.  This is not necessary.
+
+Maybe put the directional coupler on the layer under the transmit
+trace instead of beside it?  The coupling would be better but I would
+need to calculate the coupling.  But this is just a maybe, what's
+there is probably good enough.  Don't want to steal too much power
+from the transmitter.
 
 
 # Shields
