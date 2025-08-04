@@ -1,0 +1,79 @@
+*
+* This contains small simulations of the iput and output impedance
+* matching circuits in the LNA and PA sections.  Modify the if
+* statements to get the one you want, make sure to look at the
+* graph with the right frequencies!
+*
+* Also remember that on the output side, the load side of the match
+* is looking into the PA/LNA device.  So it's backwards.
+*
+
+.option rseries = 1.0e-4
+
+Vcc vcc 0 dc 3.3
+Vee vee 0 dc 0
+
+V1 ina 0 dc 0 AC 1 sin(1 0 440MEG 0 0 0)
+Rsrc ina in 50
+
+.if (0)
+
+* TX PA input matcher
+L1     in   out  17n
+C1     in   0    37p
+
+Rout   out  out1 1.87
+* -37.7 ohms at 435MHz
+Cout   out1 0    9.6p
+
+.else
+.if (0)
+
+* TX PA output matcher
+C1     in   out  130p
+L1     in   0    6.8n
+
+Rout   out  out1 6.23
+* -13.3 ohms at 435MHz
+Cout   out1 0    27p
+
+.else
+.if (0)
+
+* TX LNA input matcher
+L1     in   out  91n
+C1     out  0    6.4p
+
+Rout   out  out1 142.4
+* -80.8 ohms at 145MHz
+Cout   out1 0    13.6p
+
+.else
+
+* TX LNA output matcher
+L1     in   out  47n
+C1     out  0    11p
+
+Rout   out  out1 86.8
+* -1.88 ohms at 145MHz
+Cout   out1 0    583p
+
+.endif
+.endif
+.endif
+
+.control
+*tran .1ns 60ns 50ns
+*tran 10ns 22000ns 2640ns
+*plot v(in)
+
+ac lin 5000 400Meg 470Meg
+*plot db((v(out)^2/50)/(v(ina1,inb1) * i(v1)))
+plot vr(in) vi(in) vp(in)
+
+ac lin 5000 130Meg 160Meg
+*plot db((v(out)^2/50)/(v(ina1,inb1) * i(v1)))
+plot vr(in) vi(in) vp(in)
+.endc
+
+.end

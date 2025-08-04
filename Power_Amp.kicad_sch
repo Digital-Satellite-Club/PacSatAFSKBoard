@@ -2926,7 +2926,7 @@
 	)
 	(text "Input impedance is\n1.87 - 37.7j this\nmatches to 50 ohms\nat 435MHz."
 		(exclude_from_sim no)
-		(at 57.404 154.94 0)
+		(at 66.04 172.72 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -3054,12 +3054,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2d8591ba-2601-4117-bd4a-60199cf41795")
-	)
-	(junction
-		(at 72.39 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "30e22d95-0737-4012-9300-633ca11601b6")
 	)
 	(junction
 		(at 194.31 116.84)
@@ -3230,6 +3224,12 @@
 		(uuid "a68d0476-afcf-4fa6-b0a6-1ee7cd9dc726")
 	)
 	(junction
+		(at 58.42 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a818602e-a7dc-4f5b-b852-fcd5f2a1e3a1")
+	)
+	(junction
 		(at 83.82 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3353,7 +3353,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 142.24) (xy 72.39 142.24)
+			(xy 50.8 142.24) (xy 58.42 142.24)
 		)
 		(stroke
 			(width 0)
@@ -4363,16 +4363,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 142.24) (xy 74.93 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88c26ff1-73f9-4514-9bd7-cca940db250c")
-	)
-	(wire
-		(pts
 			(xy 82.55 115.57) (xy 68.58 115.57)
 		)
 		(stroke
@@ -4503,6 +4493,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 142.24) (xy 58.42 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0e07b26-2780-4446-8121-41b1b66df5e2")
+	)
+	(wire
+		(pts
 			(xy 369.57 138.43) (xy 369.57 142.24)
 		)
 		(stroke
@@ -4583,6 +4583,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 142.24) (xy 87.63 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7e16c07-3a05-4cbd-936d-c5e887a93911")
+	)
+	(wire
+		(pts
 			(xy 87.63 144.78) (xy 87.63 142.24)
 		)
 		(stroke
@@ -4620,6 +4630,16 @@
 			(type default)
 		)
 		(uuid "b09b86d4-c3f6-47ba-907b-4865aa4bb103")
+	)
+	(wire
+		(pts
+			(xy 58.42 156.21) (xy 58.42 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b149c4d5-db70-4689-990c-c3e734d95425")
 	)
 	(wire
 		(pts
@@ -4913,16 +4933,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 156.21) (xy 72.39 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db1a77bf-cd2a-41b8-8e2e-b80787b3e120")
-	)
-	(wire
-		(pts
 			(xy 82.55 82.55) (xy 160.02 82.55)
 		)
 		(stroke
@@ -4953,13 +4963,13 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 142.24) (xy 87.63 142.24)
+			(xy 58.42 142.24) (xy 62.23 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dfd765a2-753a-4449-8e04-e4517a9aa548")
+		(uuid "de845fdc-5b4b-485d-91d2-fd037b21095f")
 	)
 	(wire
 		(pts
@@ -5030,16 +5040,6 @@
 			(type default)
 		)
 		(uuid "e4d82590-b14f-4f4b-a205-9c63b365077c")
-	)
-	(wire
-		(pts
-			(xy 72.39 142.24) (xy 72.39 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e616e622-350d-4d48-b340-4f2c0e9996f2")
 	)
 	(wire
 		(pts
@@ -6193,7 +6193,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 72.39 152.4 0)
+		(at 58.42 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6201,15 +6201,15 @@
 		(dnp no)
 		(uuid "3d591e59-db57-490d-8343-0d52d70719a0")
 		(property "Reference" "C114"
-			(at 77.47 152.4 0)
+			(at 63.5 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "37p 1%"
-			(at 78.74 154.94 0)
+		(property "Value" "39p 1%"
+			(at 64.77 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6217,7 +6217,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 73.3552 156.21 0)
+			(at 59.3852 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6226,7 +6226,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 72.39 152.4 0)
+			(at 58.42 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6235,7 +6235,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 72.39 152.4 0)
+			(at 58.42 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6249,7 +6249,7 @@
 			(uuid "5fe6236f-12e3-4636-ad8a-d958397d47bf")
 		)
 		(instances
-			(project "PacSat_Dev_RevD_240614"
+			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
 					(reference "C114")
 					(unit 1)
@@ -6388,7 +6388,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 72.39 161.29 0)
+		(at 58.42 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6396,7 +6396,7 @@
 		(dnp no)
 		(uuid "431bc376-ca56-4a30-b4ae-04f947ca4463")
 		(property "Reference" "#PWR0222"
-			(at 72.39 167.64 0)
+			(at 58.42 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6405,7 +6405,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 72.517 165.6842 0)
+			(at 58.547 165.6842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6413,7 +6413,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 161.29 0)
+			(at 58.42 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6422,7 +6422,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 161.29 0)
+			(at 58.42 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6431,7 +6431,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 72.39 161.29 0)
+			(at 58.42 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6442,7 +6442,7 @@
 			(uuid "627ec557-7876-464d-ab59-e051f2212c10")
 		)
 		(instances
-			(project "PacSat_Dev_RevD_240614"
+			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
 					(reference "#PWR0222")
 					(unit 1)
@@ -8667,7 +8667,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 78.74 142.24 90)
+		(at 66.04 142.24 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8675,7 +8675,7 @@
 		(dnp no)
 		(uuid "ef2a1f6f-1977-47f6-9bf2-39eb21eff757")
 		(property "Reference" "L35"
-			(at 78.74 144.018 90)
+			(at 66.04 144.018 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8683,7 +8683,7 @@
 			)
 		)
 		(property "Value" "17n 2% Q>=40"
-			(at 75.184 140.208 90)
+			(at 62.484 140.208 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8691,7 +8691,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 78.74 142.24 0)
+			(at 66.04 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8700,7 +8700,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 78.74 142.24 0)
+			(at 66.04 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8709,7 +8709,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 142.24 0)
+			(at 66.04 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8723,7 +8723,7 @@
 			(uuid "300dbd06-3978-4963-ba13-ab64351653d4")
 		)
 		(instances
-			(project "PacSat_Dev_RevD_240614"
+			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
 					(reference "L35")
 					(unit 1)

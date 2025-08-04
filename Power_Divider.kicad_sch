@@ -2360,7 +2360,7 @@
 	)
 	(text "The output impedance of the QPL9547 is\n86.8-j1.88 ohms.  This adjusts the\nimpedance to 50 ohms at 145MHz."
 		(exclude_from_sim no)
-		(at 223.266 179.324 0)
+		(at 218.186 171.958 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -5400,7 +5400,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "13p 1%"
+		(property "Value" "6.4p 1%"
 			(at 146.05 153.6699 0)
 			(effects
 				(font
@@ -6199,7 +6199,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "11p 1%"
+		(property "Value" "580p 2%"
 			(at 207.01 152.3999 0)
 			(effects
 				(font
