@@ -41,11 +41,11 @@ is U for pullup by default and D for pulldown by default.
 |29		|VCC					|						|  | |
 |30		|N2HET1[02]				|						|BD|Green LED |
 |31		|N2HET1[05]				|						|BD|free gpio |
-|32		|MIBSPI5NCS[0]			|AX5043\_EN\_RX4		|BU|Power enable for AX5043 RX 4 |
-|33		|N2HET1[07]				|AX5043\_EN\_RX3		|BD|Power enable for AX5043 RX 3 |
+|32		|MIBSPI5NCS[0]			|AX5043\_EN\_RX4\_N		|BU|Power enable for AX5043 RX 4 |
+|33		|N2HET1[07]				|AX5043\_EN\_RX3\_N		|BD|Power enable for AX5043 RX 3 |
 |34		|TEST					|					    |  | |
-|35		|N2HET1[09]				|AX5043\_EN\_RX2		|BD|Power enable for AX5043 RX 2 |
-|36		|N2HET1[4]				|AX5043\_EN\_RX1		|BD|Power enable for AX5043 RX 1 |
+|35		|N2HET1[09]				|AX5043\_EN\_RX2\_N		|BD|Power enable for AX5043 RX 2 |
+|36		|N2HET1[4]				|AX5043\_EN\_RX1\_N		|BD|Power enable for AX5043 RX 1 |
 ||||||
 |37		|MIBSPI3NCS[1]			|						|BU|free gpio |
 |38		|N2HET1[06]				|UART\_RX1				|BD|PC104 pin 92 |
@@ -101,17 +101,17 @@ is U for pullup by default and D for pulldown by default.
 |87		|VCC					|						|  | |
 |88		|VSS					|						|  | |
 |89		|CAN1TX					|						|BU|free gpio |
-|90		|CAN1RX					|AX5043\_SEL1			|BU|SPI chip select for AX5043 RX1 |
-|91		|N2HET1[24]				|AX5043\_SEL2			|BD|SPI chip select for AX5043 RX2 |
-|92		|N2HET1[26]				|AX5043\_SEL3			|BD|SPI chip select for AX5043 RX3 |
+|90		|CAN1RX					|AX5043\_SEL1\_N		|BU|SPI chip select for AX5043 RX1 |
+|91		|N2HET1[24]				|AX5043\_SEL2\_N		|BD|SPI chip select for AX5043 RX2 |
+|92		|N2HET1[26]				|AX5043\_SEL3\_N		|BD|SPI chip select for AX5043 RX3 |
 |93		|MIBSPI1SIMO			|AX5043\_MOSI			|BU|SPI MOSI for all AX5043s |
 |94		|MIBSPI1SOMI			|AX5043\_SIMO			|BU|SPI SIMO for all AX5043s |
 |95		|MIBSPI1CLK				|AX5043\_CLK			|BU|SPI clock for all AX5043s |
-|96		|MIBSPI1NENA			|AX5043\_SEL4			|BU|SPI chip select for AX5043 RX4 |
-|97		|MIBSPI5NENA			|AX5043\_SEL\_TX		|BU|SPI chip select for AX5043 TX |
+|96		|MIBSPI1NENA			|AX5043\_SEL4\_N		|BU|SPI chip select for AX5043 RX4 |
+|97		|MIBSPI5NENA			|AX5043\_SEL\_TX\_N		|BU|SPI chip select for AX5043 TX |
 |98		|MIBSPI5SOMI[0]			|						|BU|free gpio |
 |99		|MIBSPI5SIMO[0]			|						|BU|free gpio |
-|100	|MIBSPI5CLK				|AX5043\_EN\_TX			|BU|Power enable for AX5043 TX |
+|100	|MIBSPI5CLK				|AX5043\_EN\_TX\_N		|BU|Power enable for AX5043 TX |
 |101	|VCC					|						|  | |
 |102	|VSS					|						|  | |
 |103	|VSS					|						|  | |
@@ -235,11 +235,12 @@ any of them sense that the power is bad they will pull that line down
 low.
 
 When the processor is in reset and the default settings on the
-PA\_PWR\_CTL, the AX5043\_PWR\_CTL are pulled low (and they have pull
+PA\_PWR\_EN, the AX5043\_PWR\_EN are pulled low (and they have pull
 downs, too, so that they are disabled even when the main power is
 disabled), so all power to the PA and AX5043s will be off.  The only
-other piece of the board that will be powered is the LNA (QPL9547),
-but it has a pull up on its enable line so it will be disabled, too.
+other piece of the board that will be powered is the LNA (QPL9547)
+because it is directly connected to +5V, but it has a pull up on its
+enable line so it will be disabled, too.
 
 So when the board comes up all the RF section of the board is powered
 off.
@@ -260,11 +261,11 @@ result in everything else being powered off.  After 200ms, the
 watchdog chip will enable power again.
 
 To power up and enable the RF section, the processor must first make
-sure all the AX5043 enable lines are disabled (pulled low).  This is
-not the default (some are low and some are high by default), but it
-doesn't matter because they are powered off at the main, anyway.  The
-processor then can drive AX5043\_PWR\_EN high to enable the power to
-all AX5043s.  The processor can then drive the individual AX5043
-enables high to individually power them on.  Then the processor can
-drive PWR\_FLAG\_SSPA high to power on the PA and LNA_ENABLE high to
-enable the LNA.
+sure all the AX5043 enable lines are pulled high to disable them.
+This is not the default (some are low and some are high by default),
+but it doesn't matter because they are powered off at the main,
+anyway.  The processor then can drive AX5043\_PWR\_EN high to enable
+the power to all AX5043s.  The processor can then drive the individual
+AX5043 enables low to individually power them on.  Then the processor
+can drive PA\_PWR\_EN high to power on the PA and LNA\_ENABLE high
+to enable the LNA.

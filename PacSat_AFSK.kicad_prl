@@ -9,8 +9,6 @@
       "VSYS",
       "REG_3V3",
       "REG_1V2",
-      "AX5043_EN_RX1",
-      "AX5043_SEL4",
       "+5V"
     ],
     "high_contrast_mode": 0,

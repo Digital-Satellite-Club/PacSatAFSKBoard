@@ -617,3 +617,17 @@ to the AS5043 TX device.
 Move the LNA\_ENABLE to pin 118 so it's a pull down by default and
 rework the LNA enable so the +5V is not applied to a GPIO pin
 directly.  Go through a MOSFET instead.
+
+## 2025-08-04
+
+Change the LNA\_ENABLE MOSFET to a BSS138, just to choose something
+common.  Also fix the footprint.
+
+Change the AX5043 power control chips to be MOSFETs.  No need for
+something complicated.  Use P-Channel enhancement mode MOSFETs, so the
+enable has to be pulled down to turn on the MOSFET.  Rename the
+enables to add a \_N for negative logic.
+
+Rename the AX5043 select lines to add a \_N because they are negative
+logic.
+

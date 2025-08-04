@@ -8464,7 +8464,7 @@
 			)
 		)
 	)
-	(global_label "AX5043_EN_RX1"
+	(global_label "AX5043_EN_RX1_N"
 		(shape input)
 		(at 260.35 215.9 270)
 		(fields_autoplaced yes)
@@ -8476,7 +8476,7 @@
 		)
 		(uuid "06bdfe5d-8c9f-4607-a838-4f1fe804c2b5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 260.35 236.9846 90)
+			(at 260.35 239.7423 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8530,7 +8530,7 @@
 			)
 		)
 	)
-	(global_label "AX5043_SEL2"
+	(global_label "AX5043_SEL2_N"
 		(shape input)
 		(at 214.63 59.69 90)
 		(fields_autoplaced yes)
@@ -8542,7 +8542,7 @@
 		)
 		(uuid "111608f6-9a5e-4b34-b8d7-8b9588554b81")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 214.63 41.6534 90)
+			(at 214.63 38.8957 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8662,7 +8662,7 @@
 			)
 		)
 	)
-	(global_label "AX5043_SEL_TX"
+	(global_label "AX5043_SEL_TX_N"
 		(shape input)
 		(at 199.39 59.69 90)
 		(fields_autoplaced yes)
@@ -8674,7 +8674,7 @@
 		)
 		(uuid "2a8657f7-2aa0-4bd8-ac0a-b8eece5c1165")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 199.39 39.3312 90)
+			(at 199.39 36.5735 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9014,7 +9014,7 @@
 			)
 		)
 	)
-	(global_label "AX5043_EN_RX3"
+	(global_label "AX5043_EN_RX3_N"
 		(shape input)
 		(at 252.73 215.9 270)
 		(fields_autoplaced yes)
@@ -9026,7 +9026,7 @@
 		)
 		(uuid "60008b1c-b9ae-4c5d-b482-cbf1a17fbb92")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 252.73 236.9846 90)
+			(at 252.73 239.7423 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9036,7 +9036,7 @@
 			)
 		)
 	)
-	(global_label "AX5043_EN_TX"
+	(global_label "AX5043_EN_TX_N"
 		(shape input)
 		(at 191.77 59.69 90)
 		(fields_autoplaced yes)
@@ -9048,7 +9048,7 @@
 		)
 		(uuid "6433e77c-8051-446e-9edb-3e00f01ac125")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 191.77 40.4197 90)
+			(at 191.77 37.662 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9278,7 +9278,7 @@
 			)
 		)
 	)
-	(global_label "AX5043_SEL1"
+	(global_label "AX5043_SEL1_N"
 		(shape input)
 		(at 217.17 59.69 90)
 		(fields_autoplaced yes)
@@ -9290,7 +9290,7 @@
 		)
 		(uuid "874a274a-2640-4168-a161-8d7bc8d34cfb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 217.17 41.6534 90)
+			(at 217.17 38.8957 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9366,7 +9366,7 @@
 			)
 		)
 	)
-	(global_label "AX5043_SEL3"
+	(global_label "AX5043_SEL3_N"
 		(shape input)
 		(at 212.09 59.69 90)
 		(fields_autoplaced yes)
@@ -9378,7 +9378,7 @@
 		)
 		(uuid "988b64ee-2481-4ab8-b1a2-cb2584dbe9f1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.09 41.6534 90)
+			(at 212.09 38.8957 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9454,7 +9454,7 @@
 			)
 		)
 	)
-	(global_label "AX5043_SEL4"
+	(global_label "AX5043_SEL4_N"
 		(shape input)
 		(at 201.93 59.69 90)
 		(fields_autoplaced yes)
@@ -9466,7 +9466,7 @@
 		)
 		(uuid "a0917df5-1913-4ddc-8d01-52ff3306c103")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.93 41.6534 90)
+			(at 201.93 38.8957 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9718,7 +9718,7 @@
 			)
 		)
 	)
-	(global_label "AX5043_EN_RX2"
+	(global_label "AX5043_EN_RX2_N"
 		(shape input)
 		(at 257.81 215.9 270)
 		(fields_autoplaced yes)
@@ -9730,7 +9730,7 @@
 		)
 		(uuid "f7b2b5ab-1439-44d2-820a-35a6e55ce758")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 257.81 236.9846 90)
+			(at 257.81 239.7423 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9828,7 +9828,7 @@
 			)
 		)
 	)
-	(global_label "AX5043_EN_RX4"
+	(global_label "AX5043_EN_RX4_N"
 		(shape input)
 		(at 250.19 215.9 270)
 		(fields_autoplaced yes)
@@ -9840,7 +9840,7 @@
 		)
 		(uuid "fd0011dc-c90a-43a9-b2fe-6008a06e9ea5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 250.19 236.9846 90)
+			(at 250.19 239.7423 90)
 			(effects
 				(font
 					(size 1.27 1.27)
