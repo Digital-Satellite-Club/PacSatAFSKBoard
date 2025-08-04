@@ -1478,6 +1478,181 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "PACSAT_ICs:MAX4995AAUT"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U?"
+				(at -11.43 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "MAX4495AAUT"
+				(at -6.35 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
+				(at 1.27 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MAX4995AAUT_0_1"
+				(rectangle
+					(start -12.7 6.35)
+					(end 12.7 -6.35)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MAX4995AAUT_1_1"
+				(pin power_in line
+					(at -17.78 2.54 0)
+					(length 5.08)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -17.78 0 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 -2.54 0)
+					(length 5.08)
+					(name "SETI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 17.78 2.54 180)
+					(length 5.08)
+					(name "~{FLAG}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 0 180)
+					(length 5.08)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 -2.54 180)
+					(length 5.08)
+					(name "ON"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PACSAT_ICs:MAX4995ALAUT"
 			(pin_names
 				(offset 1.016)
@@ -2824,6 +2999,16 @@
 			(justify left bottom)
 		)
 		(uuid "c00887c2-5e43-41ea-9d01-ddbb567ef827")
+	)
+	(text "NOTE: The 3.3V part below is an A suffix (ON is active high)\nand the other two MAX4495 parts are AL suffix (ON is active\nlow).  This is so this part can match the enable on the\n1.2V power controller."
+		(exclude_from_sim no)
+		(at 325.628 90.424 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "c49ca8c5-824a-448e-82b3-64e9e8c458cf")
 	)
 	(text "Enable at Powerup"
 		(exclude_from_sim no)
@@ -6006,7 +6191,7 @@
 			)
 		)
 	)
-	(global_label "AX5043 PWR CTL"
+	(global_label "AX5043 PWR CTL_N"
 		(shape input)
 		(at 335.28 149.86 0)
 		(fields_autoplaced yes)
@@ -6018,7 +6203,7 @@
 		)
 		(uuid "948aa364-b9a6-4d84-826d-bf8eea72cb46")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 357.6708 149.86 0)
+			(at 360.4285 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6204,7 +6389,7 @@
 			)
 		)
 	)
-	(global_label "PA PWR CTL"
+	(global_label "PA PWR CTL_N"
 		(shape input)
 		(at 330.2 201.93 180)
 		(fields_autoplaced yes)
@@ -6216,7 +6401,7 @@
 		)
 		(uuid "e1074747-3e4c-414e-a3b1-bab8fcac0f36")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 313.5422 201.93 0)
+			(at 310.7845 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10859,7 +11044,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PACSAT_ICs:MAX4995ALAUT")
+		(lib_id "PACSAT_ICs:MAX4995AAUT")
 		(at 307.34 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10876,7 +11061,7 @@
 				)
 			)
 		)
-		(property "Value" "MAX4495ALAUT"
+		(property "Value" "MAX4495AAUT"
 			(at 307.34 99.06 0)
 			(effects
 				(font

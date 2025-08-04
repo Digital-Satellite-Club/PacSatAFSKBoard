@@ -8794,7 +8794,7 @@
 			)
 		)
 	)
-	(global_label "AX5043 PWR CTL"
+	(global_label "AX5043 PWR CTL_N"
 		(shape input)
 		(at 194.31 59.69 90)
 		(fields_autoplaced yes)
@@ -8806,7 +8806,7 @@
 		)
 		(uuid "3df4b09f-5e44-43c2-bd4d-f7cce761a4c3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 37.2992 90)
+			(at 194.31 34.5415 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9586,7 +9586,7 @@
 			)
 		)
 	)
-	(global_label "PA PWR CTL"
+	(global_label "PA PWR CTL_N"
 		(shape input)
 		(at 196.85 59.69 90)
 		(fields_autoplaced yes)
@@ -9598,7 +9598,7 @@
 		)
 		(uuid "c4ce0d92-3e87-4258-aaf4-b907d62f6307")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 196.85 43.0322 90)
+			(at 196.85 40.2745 90)
 			(effects
 				(font
 					(size 1.27 1.27)

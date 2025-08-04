@@ -9,6 +9,36 @@ some point.
 
 # TODO
 
+Switch all the MAX4995 parts to the active high enable.  This will
+make them all the same, avoiding confusion, and also make handling the
+enable line easier since they will be pulled down.  It's hard to know
+what to pull them up with.  It may not be good to drive the GPIO lines
+with a pullup when the processor is powered off.  That will require
+moving the enable flags to new GPIOs, but that's not a big deal.
+Switch them to N2HET1[14] and N2HET1[20].
+
+The TX AX5043 is powered off if "Alarm XMIT Shutdown" is activated by
+the watchdog.  Do we really what this?  I think it would be good
+enough to just power off the PA.  Will that work?  Powering down the
+5043 means it has to be reprogrammed and it could really confuse
+things if the part was powered down while something was talking to it
+on the SPI bus.  I don't think it will hurt the PA to be driven while
+powered off.
+
+In fact, is the radio transmit killer really required?  If
+FEED\_WATCHDOG is not toggled, the board will be powered off, and that
+will accomplish the same thing.  It seems redundant.
+
+The power shutdown IC on the TX AX5043 is different than the RX ones.
+They should probably be consistent.
+
+There is a +5V pullup through 10K on the LNA enable, and that line is
+also driven by a TMS570 GPIO.  The pull up has to be there to disable
+power when the board has power forced off.  I don't think it will be
+an issue, but I'm not 100% sure there won't be an issue there when the
+processor is driving 3V on the line.  If it is an issue, this could be
+fixed easily with a FET.
+
 Do steel RF shields affect the inductors under or around them?  Is
 aluminum better?
 
@@ -257,7 +287,7 @@ there is probably good enough.  Don't want to steal too much power
 from the transmitter.
 
 
-# Shields
+# RF Shields
 
 RF shields cover all the RF sections possible to cover.  There are 7
 shields and they use standard shield sizes.  The bottoms are
@@ -276,6 +306,65 @@ I assume shields should be non-magnetic to avoid issues with inductor
 coupling.  It's hard to find two-piece shields where the frame is
 aluminum, though.  I'm not sure of the requirements around this,
 though.
+
+# Power Control and Sequencing
+
+The power control on the board is fairly simple.  One power up, the
+LP3962EMP-3.3 LDO will start supplying 3.3V to REG\_3V3 and the
+TPSM828302ARDSR will start supplying 1.2V to REG\_1V2.  They will also
+pull the PROCESSOR\_RESET pin low until their power is good, and that
+point they will not pull the reset line low any more (they are open
+drain).  At that point the MP5073GG-P is also holding reset line low
+until it is enabled.
+
+The STWD100NYWY3F hardware watchdog will power up at that time, but
+the POWER\_ENABLE pin from it will be pulled high and should remain
+high.
+
+The TPSM828302ARDSR and MAX4495AAUT will start supplying power to the
+rest of the board once they detect that power is good.  However, the
+TPSM828302ARDSR will wait .1ms after it senses the 1.2V power is good
+holding the PROCESSOR\_RESET line low, then it will let the processor
+go.
+
+All the chips driving the PROCESSOR\_RESET line have power sensors, if
+any of them sense that the power is bad they will pull that line down
+low.
+
+When the processor is in reset and the default settings on the
+PA\_PWR\_CTL\_N, the AX5043\_PWR\_CTL\_N are pulled high, so all power
+to the PA and AX5043 will be off.  The only other piece of the board
+that will be powered is the LNA (QPL9547), but it has a pull up on its
+enable line so it will be disabled, too.
+
+So when the board comes up all the RF section of the board is powered
+off.
+
+A HW\_POWER\_OFF\_N comes in from the PC104 connector; if that is
+pulled low it will power off everything on the board.  It does this by
+disabling the 3.3V and 1.2V regulators.  When 3.3V is off, the MAX4995
+controlling power to the PA will be powered off, so that will be
+disabled.  The only other part that's directly on +5V is the LNA, as
+mentioned before, but it will be disabled by default with a pullup to
++5V.
+
+There is also a hardware watchdog, as mentioned before.  The processor
+must toggle the FEED\_WATCHDOG line at least once a second.  If it
+fails to do that, the 1.2V and 3.3V current limiters will be disabled
+cutting power to the processor and all digital components.  This will
+result in everything else being powered off.  After 200ms, the
+watchdog chip will enable power again.
+
+To power up and enable the RF section, the processor must first make
+sure all the AX5043 enable lines are disabled (pulled low).  This is
+not the default, but it doesn't matter because they are all powered
+off, anyway.  The processor then can drive AX5043\_PWR\_CTL\_N low to
+enable the power to all AX5043s.  The processor can then drive the
+individual AX5043 enables high to power them on.  Then the processor
+can drive PWR\_FLAG\_SSPA low to power on the PA and LNA_ENABLE low to
+enable the LNA.
+
+There is another watchdog on the board
 
 # History
 
@@ -532,3 +621,15 @@ traces .127mm apart.  At full power out (+33dBm) this will result in
 about -7dBm of power from the coupler.  This was simulated with a
 transmission line in qucs.  The voltage for that can be calculated
 from the chip manual.
+
+Fixed an issue with the 3.3V power controller.  The 1.2V controller
+part (MP5073GG-P) is an active high enable, the MAX4495ALAUT is an
+active low enable.  So switch out the 3.3V controller with a
+MAX4495AAUT (which has an active high enable), but leave the other two
+with the AL version of the part.  The WDO_N output from the hardware
+watchdog is active low, but the logic is backwards, when the watchdog
+fires (goes low) we want it to disable the power.  I think this was
+wired incorrectly in the REVC and REVD schematics.
+
+Added a pull up on LNA\_ENABLE\_N so that the LNA is disabled even
+when the rest of the power to the board is off.
