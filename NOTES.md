@@ -9,13 +9,6 @@ some point.
 
 # TODO
 
-There is a +5V pullup through 10K on the LNA enable, and that line is
-also driven by a TMS570 GPIO.  The pull up has to be there to disable
-power when the board has power forced off.  I don't think it will be
-an issue, but I'm not 100% sure there won't be an issue there when the
-processor is driving 3V on the line.  If it is an issue, this could be
-fixed easily with a FET.
-
 Do steel RF shields affect the inductors under or around them?  Is
 aluminum better?
 
@@ -272,6 +265,13 @@ will accomplish the same thing.  It seems redundant.
 The power shutdown IC on the TX AX5043 is different than the RX ones.
 They should probably be consistent.
 
+There is a +5V pullup through 10K on the LNA enable, and that line is
+also driven by a TMS570 GPIO.  The pull up has to be there to disable
+power when the board has power forced off.  I don't think it will be
+an issue, but I'm not 100% sure there won't be an issue there when the
+processor is driving 3V on the line.  If it is an issue, this could be
+fixed easily with a FET.
+
 # Not going to do
 
 Rotate the CPU so that fewer traces need to be routed under the CPU.
@@ -285,6 +285,12 @@ trace instead of beside it?  The coupling would be better but I would
 need to calculate the coupling.  But this is just a maybe, what's
 there is probably good enough.  Don't want to steal too much power
 from the transmitter.
+
+There are now individual power enables on each AX5043.  Do we need the
+main one?  The problem is we would need a lot of processor GPIOs that
+are pulled down by default, or we would need to switch to power chips
+with active low enables.  Plus there is then no power limiting.
+Probably not a good idea.
 
 
 # RF Shields
@@ -662,3 +668,7 @@ matter, the processor would be powered off, anyway.
 
 Add a AX5043\_EN\_TX line to pin 100 of the CPU to control the power
 to the AS5043 TX device.
+
+Move the LNA\_ENABLE to pin 118 so it's a pull down by default and
+rework the LNA enable so the +5V is not applied to a GPIO pin
+directly.  Go through a MOSFET instead.
