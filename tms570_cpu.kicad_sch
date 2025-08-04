@@ -5041,6 +5041,10 @@
 		(uuid "748a593b-7c1a-45c5-9b0d-f4bb47726d17")
 	)
 	(no_connect
+		(at 149.86 119.38)
+		(uuid "7be6a985-d012-4238-aec9-067603e8b5b3")
+	)
+	(no_connect
 		(at 281.94 119.38)
 		(uuid "94371602-49f1-4fc5-9d44-911ac3fae478")
 	)
@@ -5079,10 +5083,6 @@
 	(no_connect
 		(at 179.07 72.39)
 		(uuid "e086aac9-ae28-4bfc-a2d5-3d1451a09a6a")
-	)
-	(no_connect
-		(at 191.77 72.39)
-		(uuid "e70fde9c-15b6-4323-9801-fa76debdd5ec")
 	)
 	(no_connect
 		(at 281.94 93.98)
@@ -6404,16 +6404,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 119.38) (xy 149.86 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "668c0352-2c75-4f0c-856f-02fa9836d222")
-	)
-	(wire
-		(pts
 			(xy 181.61 204.47) (xy 181.61 224.79)
 		)
 		(stroke
@@ -6931,6 +6921,16 @@
 			(type default)
 		)
 		(uuid "8e631380-72c0-47ee-bcd9-0b89c7547afa")
+	)
+	(wire
+		(pts
+			(xy 191.77 59.69) (xy 191.77 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e6524f5-e187-4a45-b190-eeab597465d0")
 	)
 	(wire
 		(pts
@@ -9036,6 +9036,28 @@
 			)
 		)
 	)
+	(global_label "AX5043_EN_TX"
+		(shape input)
+		(at 191.77 59.69 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "6433e77c-8051-446e-9edb-3e00f01ac125")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.77 40.4197 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MRAM_MISO"
 		(shape input)
 		(at 293.37 147.32 0)
@@ -9274,28 +9296,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Alarm XMIT Shutdown"
-		(shape input)
-		(at 123.19 119.38 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right)
-		)
-		(uuid "88268440-d6b8-432e-bdeb-8eb69c9b7828")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.7188 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)

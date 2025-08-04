@@ -107,7 +107,7 @@ do and some notes at the end with some more details.
 |97		|MIBSPI5NENA			|AX5043\_SEL\_TX		|SPI chip select for AX5043 TX |
 |98		|MIBSPI5SOMI[0]			|						|free gpio |
 |99		|MIBSPI5SIMO[0]			|						|free gpio |
-|100	|MIBSPI5CLK				|						|free gpio |
+|100	|MIBSPI5CLK				|AX5043\_EN\_TX			|Power enable for AX5043 TX |
 |101	|VCC					|						| |
 |102	|VSS					|						| |
 |103	|VSS					|						| |
@@ -126,7 +126,7 @@ do and some notes at the end with some more details.
 |115	|VSS					|						| |
 |116	|nRST					|\*Processor\_Reset		|Main reset pin for the processor |
 |117	|nERROR					|FAULT\_N				|PC104 PIN 19 |
-|118	|N2HET1[10]				|\*Alarm XMIT Shutdown	|From the PA watchdogs, tells if the PA power is enabled. |
+|118	|N2HET1[10]				|						|free gpio |
 |119	|ECLK					|						| |
 |120	|VCCIO					|						| |
 |121	|VSS					|						| |
@@ -186,13 +186,6 @@ there is a power issue, they will pull the reset pin.  After the 1.2V
 current limiter turns on (which takes a little bit of time, it is
 inrush limited) it will wait 50us and before releasing the reset pin,
 so reset should happen automatically on any power up or power problem.
-
-Notes on Alarm XMIT Shutdown
-----------------------------
-
-Alarm XMIT Shutdown is driven by both the RTC Int1 pin and the
-hardware watchdog Radio Transmit Killer device.  It must be written
-periodically (every 1 second or so) or the PA section will power off.
 
 Notes on FEED\_WATCHDOG
 -----------------------

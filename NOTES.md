@@ -9,21 +9,6 @@ some point.
 
 # TODO
 
-The TX AX5043 is powered off if "Alarm XMIT Shutdown" is activated by
-the watchdog.  Do we really what this?  I think it would be good
-enough to just power off the PA.  Will that work?  Powering down the
-5043 means it has to be reprogrammed and it could really confuse
-things if the part was powered down while something was talking to it
-on the SPI bus.  I don't think it will hurt the PA to be driven while
-powered off.
-
-In fact, is the radio transmit killer really required?  If
-FEED\_WATCHDOG is not toggled, the board will be powered off, and that
-will accomplish the same thing.  It seems redundant.
-
-The power shutdown IC on the TX AX5043 is different than the RX ones.
-They should probably be consistent.
-
 There is a +5V pullup through 10K on the LNA enable, and that line is
 also driven by a TMS570 GPIO.  The pull up has to be there to disable
 power when the board has power forced off.  I don't think it will be
@@ -272,6 +257,21 @@ with a pullup when the processor is powered off.  That will require
 moving the enable flags to new GPIOs, but that's not a big deal.
 Switch them to N2HET1[14] and N2HET1[20].
 
+The TX AX5043 is powered off if "Alarm XMIT Shutdown" is activated by
+the watchdog.  Do we really what this?  I think it would be good
+enough to just power off the PA.  Will that work?  Powering down the
+5043 means it has to be reprogrammed and it could really confuse
+things if the part was powered down while something was talking to it
+on the SPI bus.  I don't think it will hurt the PA to be driven while
+powered off.
+
+In fact, is the radio transmit killer really required?  If
+FEED\_WATCHDOG is not toggled, the board will be powered off, and that
+will accomplish the same thing.  It seems redundant.
+
+The power shutdown IC on the TX AX5043 is different than the RX ones.
+They should probably be consistent.
+
 # Not going to do
 
 Rotate the CPU so that fewer traces need to be routed under the CPU.
@@ -358,16 +358,15 @@ watchdog chip will enable power again.
 To power up and enable the RF section, the processor must first make
 sure all the AX5043 enable lines are disabled (pulled low).  This is
 not the default, but it doesn't matter because they are all powered
-off, anyway.  The processor then can drive AX5043\_PWR\_CTL\_N low to
+off, anyway.  The processor then can drive AX5043\_PWR\_EN high to
 enable the power to all AX5043s.  The processor can then drive the
 individual AX5043 enables high to power them on.  Then the processor
-can drive PWR\_FLAG\_SSPA low to power on the PA and LNA_ENABLE low to
-enable the LNA.
+can drive PWR\_FLAG\_SSPA high to power on the PA and LNA_ENABLE low
+to enable the LNA.
 
-There is another watchdog on the board.... FIXME - write this if
-necessary.
+# TX Power Measurement
 
-Add TX Power Measurement description.
+FIXME - write this.
 
 # History
 
@@ -649,3 +648,17 @@ inventory easier.
 
 Do the same with PA\_PWR\_CTL -> PA\_PWR\_EN, move from pin 99 to pin
 125.
+
+Make the AX5043 TX power control chip the same as the ones on the RX
+chips, just to be consistent and have one less chip to worry about.
+
+Remove the PA power watchdog.  It's not doing anything useful.  It's
+driven by the same watchdog line as the main watchdog, and if the main
+watchdog fires it's going to power off everything, resulting in the PA
+being powered off.  There were other issues, too, as it would power
+off the AX5043 TX chip, too, which could cause bad things to happen if
+the SPI bus was talking to it at that time.  But it didn't really
+matter, the processor would be powered off, anyway.
+
+Add a AX5043\_EN\_TX line to pin 100 of the CPU to control the power
+to the AS5043 TX device.
