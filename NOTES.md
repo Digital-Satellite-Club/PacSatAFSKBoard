@@ -636,3 +636,7 @@ enables to add a \_N for negative logic.
 Rename the AX5043 select lines to add a \_N because they are negative
 logic.
 
+Remove the connection from KELVIN\_GND to ground.  According to the
+TMS570 data sheet, that pin should not be connected to any other
+ground.  I don't think it matters, it's only for crystals, but it
+should probably be left floating.

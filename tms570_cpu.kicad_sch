@@ -4477,17 +4477,6 @@
 		)
 		(uuid "33f22842-2066-4b04-b1fd-7a2d6a57dec2")
 	)
-	(text "Consider Using this OSC out."
-		(exclude_from_sim no)
-		(at 205.74 266.7 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "349f2927-ca3a-48d4-8028-412db42cb98f")
-	)
 	(text "TDI"
 		(exclude_from_sim no)
 		(at 118.11 69.85 0)
@@ -4584,17 +4573,6 @@
 			(justify left bottom)
 		)
 		(uuid "d699b372-0a6c-4368-9657-b8ce8b2e1c7e")
-	)
-	(text "KELVIN GND\nNot used with\nExternal CLK.\nGND PIN"
-		(exclude_from_sim no)
-		(at 209.55 255.27 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "e1b281c0-0cea-4942-af96-1889551e37ce")
 	)
 	(text "TDO"
 		(exclude_from_sim no)
@@ -5067,6 +5045,10 @@
 	(no_connect
 		(at 281.94 116.84)
 		(uuid "bedc9e6b-e552-47dc-a7f2-db8f333bdf2e")
+	)
+	(no_connect
+		(at 217.17 204.47)
+		(uuid "cf5ce3db-dea8-41e3-b08f-4b66074efb90")
 	)
 	(no_connect
 		(at 255.27 72.39)
@@ -7771,16 +7753,6 @@
 			(type default)
 		)
 		(uuid "d534799d-756d-436b-bda1-927188bdf129")
-	)
-	(wire
-		(pts
-			(xy 217.17 204.47) (xy 217.17 238.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d663d9e9-1db6-4268-9ac1-81dcb9a448a9")
 	)
 	(wire
 		(pts
@@ -15340,70 +15312,6 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/adf61ae3-df77-4e04-8bda-b4049a36fcf4"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 217.17 238.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7010cc95-dbc8-4544-b034-c9870b124c56")
-		(property "Reference" "#PWR027"
-			(at 217.17 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 217.297 243.1542 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 217.17 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 217.17 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 217.17 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7552ff83-19ec-4401-ba75-76f62f9768d2")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/adf61ae3-df77-4e04-8bda-b4049a36fcf4"
-					(reference "#PWR027")
 					(unit 1)
 				)
 			)

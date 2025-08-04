@@ -545,6 +545,7 @@
 	(net 374 "AX5043_SEL2_N")
 	(net 375 "AX5043_SEL1_N")
 	(net 376 "AX5043_SEL_TX_N")
+	(net 377 "unconnected-(U2-KELVIN_GND-Pad19)")
 	(footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-00005a9e3833")
@@ -2001,9 +2002,9 @@
 			(at -10.55 0.25 270)
 			(size 1.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
+			(net 377 "unconnected-(U2-KELVIN_GND-Pad19)")
 			(pinfunction "KELVIN_GND")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "99ede5a8-ff43-44e8-a217-5970b2b1f910")
 		)
 		(pad "20" smd rect
@@ -84779,14 +84780,6 @@
 		(uuid "c5aba923-84dd-4990-b315-ffbf59748416")
 	)
 	(segment
-		(start 190.758 77.715)
-		(end 190.758 79.7012)
-		(width 0.3048)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "c63dd044-408f-4a18-9b02-138b184c3004")
-	)
-	(segment
 		(start 206.64 99.25)
 		(end 206.44 99.05)
 		(width 0.2032)
@@ -85631,14 +85624,6 @@
 		(layers "F.Cu" "B.Cu")
 		(net 1)
 		(uuid "1930c132-83bd-4dd2-8658-68d16669d58c")
-	)
-	(via
-		(at 190.758 79.7012)
-		(size 0.508)
-		(drill 0.3048)
-		(layers "F.Cu" "B.Cu")
-		(net 1)
-		(uuid "1b56456a-160b-4c55-8da2-585144e5bab4")
 	)
 	(via
 		(at 237.64 133.55)
