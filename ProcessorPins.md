@@ -96,7 +96,7 @@ used as a GPIO.
 |79		|AD1IN[13] / AD2IN[13]	|						|  |+1.2V power measure, 0-1.2V |
 |80		|AD1IN[06]				|						|  |+3.3V power measure, 0-1.65V |
 |81		|AD1IN[22] / AD2IN[06]	|						|  |free adc |
-|82		|AD1IN[14] / AD2IN[14]							|  | Board version number bit 2 |
+|82		|AD1IN[14] / AD2IN[14]	|						|  | Board version number bit 2 |
 |83		|AD1IN[08] / AD2IN[08]	|\*POWER\_TEMP			|  |Thermsistor in power conversion section |
 |84		|AD1IN[23] / AD2IN[07]	|\*PA\_TEMP				|  |Thermsistor near the PA |
 |85		|AD1IN[15] / AD2IN[15]	|						|  |Board version number bit 3 |
