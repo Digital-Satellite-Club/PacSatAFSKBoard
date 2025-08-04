@@ -3301,12 +3301,6 @@
 		(color 0 0 0 0)
 		(uuid "fb1bda43-553f-4d4f-ab72-9b0f402b0af9")
 	)
-	(junction
-		(at 214.63 160.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd2d4b10-a8e0-4084-8b39-352b4585e4d5")
-	)
 	(wire
 		(pts
 			(xy 124.46 50.8) (xy 124.46 48.26)
@@ -3899,16 +3893,6 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 149.86) (xy 228.6 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55311a1d-6a42-4289-8480-7a49d82e82ce")
-	)
-	(wire
-		(pts
 			(xy 143.51 160.02) (xy 194.31 160.02)
 		)
 		(stroke
@@ -4236,16 +4220,6 @@
 			(type default)
 		)
 		(uuid "6d63585f-d48a-4125-8b0e-ca08bef29962")
-	)
-	(wire
-		(pts
-			(xy 214.63 149.86) (xy 214.63 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70fec00c-0af5-48b9-8196-088b8a9ffc6e")
 	)
 	(wire
 		(pts
@@ -4599,7 +4573,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 160.02) (xy 214.63 160.02)
+			(xy 194.31 160.02) (xy 218.44 160.02)
 		)
 		(stroke
 			(width 0)
@@ -4809,16 +4783,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 149.86) (xy 214.63 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8b6a090-f7e3-42b4-acf7-252ccedfa298")
-	)
-	(wire
-		(pts
 			(xy 194.31 82.55) (xy 194.31 105.41)
 		)
 		(stroke
@@ -4869,16 +4833,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 160.02) (xy 194.31 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4452e96-4a4c-44ad-92b3-8d8dfbdb6dc1")
-	)
-	(wire
-		(pts
 			(xy 124.46 45.72) (xy 124.46 43.18)
 		)
 		(stroke
@@ -4916,16 +4870,6 @@
 			(type default)
 		)
 		(uuid "d7d198e1-371c-46d8-8bc7-ffcaeebe4fb2")
-	)
-	(wire
-		(pts
-			(xy 226.06 149.86) (xy 228.6 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d93f9829-2423-4d2a-8b52-e9a9cda91aa6")
 	)
 	(wire
 		(pts
@@ -6850,73 +6794,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 222.25 149.86 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "652ecfa3-4682-49df-aef7-7e108449b7f2")
-		(property "Reference" "C57"
-			(at 222.25 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4p 1% 30V"
-			(at 222.25 146.558 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 226.06 150.8252 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 222.25 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 222.25 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "aefff350-b9b2-4279-af53-12e42e714db7")
-		)
-		(pin "2"
-			(uuid "0cf3bba9-00e5-4b42-91d2-04c84b5d78dd")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
-					(reference "C57")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 116.84 58.42 0)
 		(unit 1)
@@ -6999,7 +6876,7 @@
 				)
 			)
 		)
-		(property "Value" "110p 1% 30V"
+		(property "Value" "130p 1% 30V"
 			(at 222.25 156.718 90)
 			(effects
 				(font
