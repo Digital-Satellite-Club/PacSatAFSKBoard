@@ -9,14 +9,6 @@ some point.
 
 # TODO
 
-Switch all the MAX4995 parts to the active high enable.  This will
-make them all the same, avoiding confusion, and also make handling the
-enable line easier since they will be pulled down.  It's hard to know
-what to pull them up with.  It may not be good to drive the GPIO lines
-with a pullup when the processor is powered off.  That will require
-moving the enable flags to new GPIOs, but that's not a big deal.
-Switch them to N2HET1[14] and N2HET1[20].
-
 The TX AX5043 is powered off if "Alarm XMIT Shutdown" is activated by
 the watchdog.  Do we really what this?  I think it would be good
 enough to just power off the PA.  Will that work?  Powering down the
@@ -272,6 +264,14 @@ marked NS on the PA sheet, which is most likely wrong.  Need to figure
 all this out. -- Jim McCullers wrong a document on this, I just stole
 his stuff.
 
+Switch all the MAX4995 parts to the active high enable.  This will
+make them all the same, avoiding confusion, and also make handling the
+enable line easier since they will be pulled down.  It's hard to know
+what to pull them up with.  It may not be good to drive the GPIO lines
+with a pullup when the processor is powered off.  That will require
+moving the enable flags to new GPIOs, but that's not a big deal.
+Switch them to N2HET1[14] and N2HET1[20].
+
 # Not going to do
 
 Rotate the CPU so that fewer traces need to be routed under the CPU.
@@ -364,7 +364,10 @@ individual AX5043 enables high to power them on.  Then the processor
 can drive PWR\_FLAG\_SSPA low to power on the PA and LNA_ENABLE low to
 enable the LNA.
 
-There is another watchdog on the board
+There is another watchdog on the board.... FIXME - write this if
+necessary.
+
+Add TX Power Measurement description.
 
 # History
 
@@ -633,3 +636,16 @@ wired incorrectly in the REVC and REVD schematics.
 
 Added a pull up on LNA\_ENABLE\_N so that the LNA is disabled even
 when the rest of the power to the board is off.
+
+Switch the logic on AX5043\_PWR\_CTL from active low to active high by
+switching from the MAX4495ALAUT to the MAX4495AAUT.  Rename it to
+AX5043\_PWR\_EN.  Move it from pin 98 to pin 141 so that it's pulled
+down by default in the processor, too.  Still need the external pull
+down in case the processor is turned off.  Pulling that line up was
+problematic, as you don't really want to use +3.3V (will be off if
+power is externally disabled) or REG_3V3 (driven if processor is
+powered off).  Also this makes all the parts the same, making
+inventory easier.
+
+Do the same with PA\_PWR\_CTL -> PA\_PWR\_EN, move from pin 99 to pin
+125.

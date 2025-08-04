@@ -105,7 +105,7 @@ do and some notes at the end with some more details.
 |95		|MIBSPI1CLK				|AX5043\_CLK			|SPI clock for all AX5043s |
 |96		|MIBSPI1NENA			|AX5043\_SEL4			|SPI chip select for AX5043 RX4 |
 |97		|MIBSPI5NENA			|AX5043\_SEL\_TX		|SPI chip select for AX5043 TX |
-|98		|MIBSPI5SOMI[0]			|AX5043\_PWR\_CTL		|Main power enable for all AX5043s |
+|98		|MIBSPI5SOMI[0]			|						|free gpio |
 |99		|MIBSPI5SIMO[0]			|						|free gpio |
 |100	|MIBSPI5CLK				|						|free gpio |
 |101	|VCC					|						| |
@@ -133,7 +133,7 @@ do and some notes at the end with some more details.
 |122	|VSS					|						| |
 |123	|VCC					|						| |
 |124	|H2HET1[12]				|						|\*TX power measurement enable |
-|125	|H2HET1[14]				|						|free gpio |
+|125	|H2HET1[14]				|PA\_PWR\_EN			|Enable PA power |
 |126	|GIOB[0]				|AX5043\_IRQ\_RX2		|Interrupt from AX5043 RX2 |
 |127	|2HET1[30]				|CMD\_MODE				|PC104 Pin 27 |
 |128	|CAN2TX					|						|free gpio |
@@ -149,7 +149,7 @@ do and some notes at the end with some more details.
 |138	|VSS					|						| |
 |139	|N2HET1[16]				|FCODE\_D3				|PC104 Pin 60 |
 |140	|N2HET1[18]				|USB\_Suspend\_Low		|PC104 Pin 104 |
-|141	|N2HET1[20]				|						|free gpio |
+|141	|N2HET1[20]				|AX5043\_PWR\_EN		|Main power enable for all AX5043s |
 |142	|GIOB[2]				|AX5043\_IRQ\_TX		|Interrupt from AX5043 TX |
 |143	|VCC					|						| |
 |144	|VSS					|						| |
