@@ -1844,16 +1844,16 @@
 		)
 		(uuid "c98c16fc-a539-4015-a200-bb2d191b1d6a")
 	)
-	(text "Inductors Ref Murata LQW18AN_00 series"
+	(text "See RX1 for Q values on inductors."
 		(exclude_from_sim no)
-		(at 44.45 232.41 0)
+		(at 177.546 165.862 0)
 		(effects
 			(font
 				(size 1.524 1.524)
 			)
 			(justify left bottom)
 		)
-		(uuid "e494b16f-29e7-42f7-931a-67b64319ac84")
+		(uuid "e0c23059-ff91-4a84-ace9-169f452f6669")
 	)
 	(text "RX3+"
 		(exclude_from_sim no)

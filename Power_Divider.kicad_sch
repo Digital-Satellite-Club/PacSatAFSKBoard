@@ -2304,7 +2304,7 @@
 		)
 		(uuid "5846d741-8711-4499-aacf-602644ee96e1")
 	)
-	(text "Note 2:\nTune resistor for best gain and lowest current.\nMay replace the FET bias with an active \nbias network. Can be a large amount of current\nconsumption."
+	(text "Note 2:\nTune resistor for best gain and lowest current."
 		(exclude_from_sim no)
 		(at 27.94 218.44 0)
 		(effects

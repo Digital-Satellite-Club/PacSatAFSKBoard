@@ -1257,17 +1257,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "1. Review FILT voltage node and adjust current if\nneeded per ap note AND9315-D.PDF"
-		(exclude_from_sim no)
-		(at 270.51 179.07 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "2d607288-4603-4128-b80c-6153130548c7")
-	)
 	(text "CLOCK"
 		(exclude_from_sim no)
 		(at 336.55 246.38 0)
@@ -1279,17 +1268,6 @@
 		)
 		(uuid "4ff5bba1-3e05-4bf0-852a-0da09c96ce4a")
 	)
-	(text "Note:\n"
-		(exclude_from_sim no)
-		(at 267.97 170.18 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "a76c5578-42f4-4c7b-a10e-633f5a2b9e9f")
-	)
 	(text "16 MHz"
 		(exclude_from_sim no)
 		(at 162.56 114.3 0)
@@ -1300,17 +1278,6 @@
 			(justify left bottom)
 		)
 		(uuid "c790c8df-65cb-4a8f-a638-216cb33bffe7")
-	)
-	(text "2. Seletec best resitor values after assembly and\nuse one percent resistors to put frequeny at 16 MHz."
-		(exclude_from_sim no)
-		(at 270.51 187.96 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "d14faeb6-ea62-4c26-8bca-9d272aa86e74")
 	)
 	(text "Idd = 3 mA"
 		(exclude_from_sim no)

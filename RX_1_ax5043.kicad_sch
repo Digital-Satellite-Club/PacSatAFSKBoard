@@ -1822,17 +1822,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Inductors Ref Murata LQW18AN_00 series"
-		(exclude_from_sim no)
-		(at 83.185 182.88 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "68c20ee8-e5d4-4409-818f-57a31d6ba6d3")
-	)
 	(text "RECEIVER 1"
 		(exclude_from_sim no)
 		(at 336.55 247.65 0)
@@ -1853,6 +1842,17 @@
 			)
 		)
 		(uuid "9cb2ae56-e377-4b74-9f6b-33d845c9404f")
+	)
+	(text "All RF capacitors C0G/NP0."
+		(exclude_from_sim no)
+		(at 135.636 177.292 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e5afb72-0d56-4c13-802a-cfc68f5d6fec")
 	)
 	(text "RX1+"
 		(exclude_from_sim no)
@@ -3723,7 +3723,7 @@
 				)
 			)
 		)
-		(property "Value" "1n"
+		(property "Value" "1n Q=12"
 			(at 175.514 145.796 90)
 			(effects
 				(font
@@ -4561,7 +4561,7 @@
 				)
 			)
 		)
-		(property "Value" "78n"
+		(property "Value" "78n 2% Q=28"
 			(at 143.51 131.572 90)
 			(effects
 				(font
@@ -5028,7 +5028,7 @@
 				)
 			)
 		)
-		(property "Value" "78n"
+		(property "Value" "78n 2% Q=28"
 			(at 165.608 146.05 90)
 			(effects
 				(font
