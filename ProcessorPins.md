@@ -229,7 +229,7 @@ high for 1 second.
 
 The MP5073GG-P and MAX4495AAUT current limiting chips will start
 supplying power to the rest of the board once they detect that power
-is good.  However, the MP5073GG-P will wait .1ms after it senses the
+is good.  However, the MP5073GG-P will wait 50us after it senses the
 1.2V power is good holding the PROCESSOR\_RESET line low, then it will
 let the processor go.
 
