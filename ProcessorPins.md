@@ -84,8 +84,8 @@ is U for pullup by default and D for pulldown by default.
 |71		|AD1IN[01]				|						|  |free adc |
 |72		|AD1IN[10] / AD2IN[10]	|						|  |free adc |
 ||||||
-|73		|AD1IN[02]				|						|  |\*Reverse RF TX Power |
-|74		|AD1IN[03]				|						|  |\*Forward RF TX Power |
+|73		|AD1IN[02]				|REV\_PWR				|  |\*Reverse RF TX Power |
+|74		|AD1IN[03]				|FWD\_PWR				|  |\*Forward RF TX Power |
 |75		|AD1IN[11] / AD2IN[11]	|						|  |free adc |
 |76		|AD1IN[04]				|PWR\_FLAG\_SSPA		|  |Power flag from the PA current limiter |
 |77		|AD1IN[12] / AD2IN[12]	|						|  |+5V power measure, linear from 0-2.5V |
@@ -136,7 +136,7 @@ is U for pullup by default and D for pulldown by default.
 |121	|VSS					|						|  | |
 |122	|VSS					|						|  | |
 |123	|VCC					|						|  | |
-|124	|H2HET1[12]				|						|BD|\*TX power measurement enable |
+|124	|H2HET1[12]				|POW\_MEAS_EN			|BD|\*TX power measurement enable |
 |125	|H2HET1[14]				|PA\_PWR\_EN			|BD|Enable PA power |
 |126	|GIOB[0]				|AX5043\_IRQ\_RX2		|BD|Interrupt from AX5043 RX2 |
 |127	|N2HET1[30]				|CMD\_MODE				|BD|PC104 Pin 27 |
@@ -210,3 +210,61 @@ At full power out (+33dBm) this will result in about -7dBm of power
 from the coupler.  This was simulated with a transmission line in
 qucs.  The voltage for that can be calculated from the chip manual.
 
+# Power Control and Sequencing
+
+The power control on the board is fairly simple.  One power up, the
+LP3962EMP-3.3 LDO will start supplying 3.3V to REG\_3V3 and the
+TPSM828302ARDSR will start supplying 1.2V to REG\_1V2.  They will also
+pull the PROCESSOR\_RESET pin low until their power is good, and that
+point they will not pull the reset line low any more (they are open
+drain).  At that point the MP5073GG-P is also holding reset line low
+until it is enabled.
+
+The STWD100NYWY3F hardware watchdog will power up at that time, but
+the POWER\_ENABLE pin from it will be pulled high and should remain
+high for 1 second.
+
+The MP5073GG-P and MAX4495AAUT current limiting chips will start
+supplying power to the rest of the board once they detect that power
+is good.  However, the MP5073GG-P will wait .1ms after it senses the
+1.2V power is good holding the PROCESSOR\_RESET line low, then it will
+let the processor go.
+
+All the chips driving the PROCESSOR\_RESET line have power sensors, if
+any of them sense that the power is bad they will pull that line down
+low.
+
+When the processor is in reset and the default settings on the
+PA\_PWR\_CTL, the AX5043\_PWR\_CTL are pulled low (and they have pull
+downs, too, so that they are disabled even when the main power is
+disabled), so all power to the PA and AX5043s will be off.  The only
+other piece of the board that will be powered is the LNA (QPL9547),
+but it has a pull up on its enable line so it will be disabled, too.
+
+So when the board comes up all the RF section of the board is powered
+off.
+
+A HW\_POWER\_OFF\_N comes in from the PC104 connector; if that is
+pulled low it will power off everything on the board.  It does this by
+disabling the 3.3V and 1.2V regulators.  When 3.3V is off, the MAX4995
+controlling power to the PA will be powered off, so that will be
+disabled.  The only other part that's directly on +5V is the LNA, as
+mentioned before, but it will be disabled by default with a pullup to
++5V.
+
+There is also a hardware watchdog, as mentioned before.  The processor
+must toggle the FEED\_WATCHDOG line at least once a second.  If it
+fails to do that, the 1.2V and 3.3V current limiters will be disabled
+cutting power to the processor and all digital components.  This will
+result in everything else being powered off.  After 200ms, the
+watchdog chip will enable power again.
+
+To power up and enable the RF section, the processor must first make
+sure all the AX5043 enable lines are disabled (pulled low).  This is
+not the default (some are low and some are high by default), but it
+doesn't matter because they are powered off at the main, anyway.  The
+processor then can drive AX5043\_PWR\_EN high to enable the power to
+all AX5043s.  The processor can then drive the individual AX5043
+enables high to individually power them on.  Then the processor can
+drive PWR\_FLAG\_SSPA high to power on the PA and LNA_ENABLE high to
+enable the LNA.
