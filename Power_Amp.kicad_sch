@@ -7019,15 +7019,15 @@
 				)
 			)
 		)
-		(property "Value" "100n"
-			(at 310.896 174.498 90)
+		(property "Value" "470n"
+			(at 311.404 175.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 313.69 175.26 0)
 			(effects
 				(font
