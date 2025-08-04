@@ -21,8 +21,9 @@ off the PA while still receiving.  Maybe another current limiter is in
 order?
 
 There's a note in the schematic about biasing the 5043 inputs, but I
-can't find any info on that.  Need to figure out if that's something
-that needs to be done.  I don't really understand the comment, though.
+can't find any info on that.  It's on the RF Input sheet.  Need to
+figure out if that's something that needs to be done.  I don't really
+understand the comment, though.
 
 Why is both the RTC and the hardware watchdog controlling the transmit
 shutdown?  It would seem only one or the other would be necessary.
@@ -33,6 +34,10 @@ matching circuit in there now, removing it would save two parts.
 
 Probably remove the L1/L2 inductor on the AX5043s and replace them
 with a short.  I don't think we will use them.
+
+Is there a reason the ANTP1 output is connected to a 50 ohm resistor?
+I can't find anything in the datasheet or errata about that, it always
+shows it disconnected when not used.
 
 What UFL connectors can be removed?
 

@@ -4,54 +4,57 @@ IO Connections on the PacSat AFSK processor
 These are the pins on the TMS570 processor, where they go, what they
 do and some notes at the end with some more details.
 
-The "G" column shows the GPIO capability, I for input, O for output, B
-for bidirectional, and blank for no GPIO capability.  The second letter
-is U for pullup by default and D for pulldown by default.
+The "G" column shows the GPIO usage and capability.  The first letter
+is how the GPIO is used: I for input, O for output, B for
+bidirectional, blank if not used as a GPIO, and ? if the function is
+not known (the PC104 pins).  The second letter is U for pullup by
+default and D for pulldown by default or blank if the pin cannot be
+used as a GPIO.
 
 |Pin3	|CPU Pin Name			|Schematic Name			|G |Description |
 |----	|------------			|--------------			|--|-----------
-|1		|GIOB[3]				|GIOA\_3				|BD|PC104 Pin 14 |
-|2		|GIOA[0]				|FCODE\_STROBE			|BD|PC104 Pin 56 |
-|3		|MIBSPI3NCS[3]			|I2C\_SCL				|BU|RTC control (MAX31331TETB+) |
-|4		|MIBSPI3NCS[2]			|I2C\_SDA				|BU|RTC control (MAX31331TETB+) |
-|5		|GIOA[1]				|AX5043\_IRQ\_RX1		|BD|Interrupt from AX5043 RX1 |
-|6		|N2HET1[11]				|						|BD|free gpio |
+|1		|GIOB[3]				|GIOA\_3				|?D|PC104 Pin 14 |
+|2		|GIOA[0]				|FCODE\_STROBE			|?D|PC104 Pin 56 |
+|3		|MIBSPI3NCS[3]			|I2C\_SCL				| U|RTC control (MAX31331TETB+) |
+|4		|MIBSPI3NCS[2]			|I2C\_SDA				| U|RTC control (MAX31331TETB+) |
+|5		|GIOA[1]				|AX5043\_IRQ\_RX1		|ID|Interrupt from AX5043 RX1 |
+|6		|N2HET1[11]				|						| D|free gpio |
 |7		|FLTP1					|						|  | |
 |8		|FLTP2					|						|  | |
-|9		|GIOA[2]				|						|BD|PC104 Pin 15 |
+|9		|GIOA[2]				|GPIOA_2				|?D|PC104 Pin 15 |
 |10		|VCCIO					|						|  | |
 |11		|VSS					|						|  | |
-|12		|CAN3RX					|						|BU|CAN\_A\_RX	CAN bus transceiver |
-|13		|CAN3TX					|CAN\_A\_TX				|BU|CAN bus transceiver |
-|14		|GIOA[5]				|AX5043\_IRQ\_RX4		|BD|Interrupt from AX5043 RX4 |
-|15		|N2HET1[22]				|ALERT\_SIGNAL			|BD|PC104 Pin 49 |
-|16		|GIOA[6]				|GIOA\_6				|BD|PC104 Pin 45 |
+|12		|CAN3RX					|CAN\_A\_RX				| U|CAN bus transceiver |
+|13		|CAN3TX					|CAN\_A\_TX				| U|CAN bus transceiver |
+|14		|GIOA[5]				|AX5043\_IRQ\_RX4		|ID|Interrupt from AX5043 RX4 |
+|15		|N2HET1[22]				|ALERT\_SIGNAL			|?D|PC104 Pin 49 |
+|16		|GIOA[6]				|GIOA\_6				|?D|PC104 Pin 45 |
 |17		|VCC					|						|  | |
 |18		|OSCIN					|						|  | |
 |19		|Kelvin\_GND			|						|  | |
 |20		|OSCOUT					|						|  | |
 |21		|VSS					|						|  | |
-|22		|GIOA[7]				|AX5043\_IRQ\_RX3		|BD|Interrupt from AX5043 RX3 |
-|23		|N2HET1[01]				|						|BD|Yellow LED |
-|24		|N2HET1[03]				|						|BD|free gpio |
-|25		|N2HET1[0]				|						|BD|Red LED |
+|22		|GIOA[7]				|AX5043\_IRQ\_RX3		|ID|Interrupt from AX5043 RX3 |
+|23		|N2HET1[01]				|						|OD|Yellow LED |
+|24		|N2HET1[03]				|						|OD|free gpio |
+|25		|N2HET1[0]				|						|OD|Red LED |
 |26		|VCCIO					|						|  | |
 |27		|VSS					|						|  | |
 |28		|VSS					|						|  | |
 |29		|VCC					|						|  | |
-|30		|N2HET1[02]				|						|BD|Green LED |
-|31		|N2HET1[05]				|						|BD|free gpio |
-|32		|MIBSPI5NCS[0]			|AX5043\_EN\_RX4\_N		|BU|Power enable for AX5043 RX 4 |
-|33		|N2HET1[07]				|AX5043\_EN\_RX3\_N		|BD|Power enable for AX5043 RX 3 |
+|30		|N2HET1[02]				|						|OD|Green LED |
+|31		|N2HET1[05]				|						| D|free gpio |
+|32		|MIBSPI5NCS[0]			|AX5043\_EN\_RX4\_N		|OU|Power enable for AX5043 RX 4 |
+|33		|N2HET1[07]				|AX5043\_EN\_RX3\_N		|OD|Power enable for AX5043 RX 3 |
 |34		|TEST					|					    |  | |
-|35		|N2HET1[09]				|AX5043\_EN\_RX2\_N		|BD|Power enable for AX5043 RX 2 |
-|36		|N2HET1[4]				|AX5043\_EN\_RX1\_N		|BD|Power enable for AX5043 RX 1 |
+|35		|N2HET1[09]				|AX5043\_EN\_RX2\_N		|OD|Power enable for AX5043 RX 2 |
+|36		|N2HET1[4]				|AX5043\_EN\_RX1\_N		|OD|Power enable for AX5043 RX 1 |
 ||||||
-|37		|MIBSPI3NCS[1]			|						|BU|free gpio |
-|38		|N2HET1[06]				|UART\_RX1				|BD|PC104 pin 92 |
-|39		|N2HET1[13]				|UART\_TX1				|BD|PC104 pin 88 |
+|37		|MIBSPI3NCS[1]			|						| U|free gpio |
+|38		|N2HET1[06]				|UART\_RX1				| D|PC104 pin 92 |
+|39		|N2HET1[13]				|UART\_TX1				| D|PC104 pin 88 |
 |40		|MIBSPI1NCS[2]			|						|BU|free gpio |
-|41		|N2HET1[15]				|FCODE\_D0				|BD|PC104 pin 64 |
+|41		|N2HET1[15]				|FCODE\_D0				|?D|PC104 pin 64 |
 |42		|VCCIO					|						|  | |
 |43		|VSS					|						|  | |
 |44		|VSS					|						|  | |
@@ -61,14 +64,14 @@ is U for pullup by default and D for pulldown by default.
 |48		|VCC					|						|  | |
 |49		|VCC					|						|  | |
 |50		|VSS					|						|  | |
-|51		|MIBSPI3SOMI			|MRAM\_MISO				|BU| |
-|52		|MIBSPI3SIMO			|MRAM\_MOSI				|BU| |
-|53		|MIBSPI3CLK				|MRAM\_CLK				|BU| |
-|54		|MIBSPI3NENA			|						|BU|free gpio |
-|55		|MIBSPI3NCS[0]			|MRAM\_NCS0				|BU| |
+|51		|MIBSPI3SOMI			|MRAM\_MISO				| U| |
+|52		|MIBSPI3SIMO			|MRAM\_MOSI				| U| |
+|53		|MIBSPI3CLK				|MRAM\_CLK				| U| |
+|54		|MIBSPI3NENA			|						| U|free gpio |
+|55		|MIBSPI3NCS[0]			|MRAM\_NCS0				| U| |
 |56		|VSS					|						|  | |
 |57		|VCC					|						|  | |
-|58		|AD1IN[16] / AD2IN[0]	|\*						|  | Thermsistor near the processor |
+|58		|AD1IN[16] / AD2IN[0]	|\*						|  |Thermsistor near the processor |
 |59		|AD1IN[17] / AD2IN[01]	|						|  |free adc |
 |60		|AD1IN[0]				|						|  |free adc |
 |61		|AD1IN[07]				|PWR\_FLAG\_AX5043		|  |Power flag from the AX5043 current limiter |
@@ -100,25 +103,25 @@ is U for pullup by default and D for pulldown by default.
 |86		|AD1EVT					|						|  | |
 |87		|VCC					|						|  | |
 |88		|VSS					|						|  | |
-|89		|CAN1TX					|						|BU|free gpio |
-|90		|CAN1RX					|AX5043\_SEL1\_N		|BU|SPI chip select for AX5043 RX1 |
-|91		|N2HET1[24]				|AX5043\_SEL2\_N		|BD|SPI chip select for AX5043 RX2 |
-|92		|N2HET1[26]				|AX5043\_SEL3\_N		|BD|SPI chip select for AX5043 RX3 |
-|93		|MIBSPI1SIMO			|AX5043\_MOSI			|BU|SPI MOSI for all AX5043s |
-|94		|MIBSPI1SOMI			|AX5043\_SIMO			|BU|SPI SIMO for all AX5043s |
-|95		|MIBSPI1CLK				|AX5043\_CLK			|BU|SPI clock for all AX5043s |
-|96		|MIBSPI1NENA			|AX5043\_SEL4\_N		|BU|SPI chip select for AX5043 RX4 |
-|97		|MIBSPI5NENA			|AX5043\_SEL\_TX\_N		|BU|SPI chip select for AX5043 TX |
-|98		|MIBSPI5SOMI[0]			|						|BU|free gpio |
-|99		|MIBSPI5SIMO[0]			|						|BU|free gpio |
-|100	|MIBSPI5CLK				|AX5043\_EN\_TX\_N		|BU|Power enable for AX5043 TX |
+|89		|CAN1TX					|						| U|free gpio |
+|90		|CAN1RX					|AX5043\_SEL1\_N		|OU|SPI chip select for AX5043 RX1 |
+|91		|N2HET1[24]				|AX5043\_SEL2\_N		|OD|SPI chip select for AX5043 RX2 |
+|92		|N2HET1[26]				|AX5043\_SEL3\_N		|OD|SPI chip select for AX5043 RX3 |
+|93		|MIBSPI1SIMO			|AX5043\_MOSI			| U|SPI MOSI for all AX5043s |
+|94		|MIBSPI1SOMI			|AX5043\_SIMO			| U|SPI SIMO for all AX5043s |
+|95		|MIBSPI1CLK				|AX5043\_CLK			| U|SPI clock for all AX5043s |
+|96		|MIBSPI1NENA			|AX5043\_SEL4\_N		|OU|SPI chip select for AX5043 RX4 |
+|97		|MIBSPI5NENA			|AX5043\_SEL\_TX\_N		|OU|SPI chip select for AX5043 TX |
+|98		|MIBSPI5SOMI[0]			|						| U|free gpio |
+|99		|MIBSPI5SIMO[0]			|						| U|free gpio |
+|100	|MIBSPI5CLK				|AX5043\_EN\_TX\_N		|OU|Power enable for AX5043 TX |
 |101	|VCC					|						|  | |
 |102	|VSS					|						|  | |
 |103	|VSS					|						|  | |
 |104	|VCCIO					|						|  | |
-|105	|MIBSPI1NCS[0]			|						|BU|free gpio |
-|106	|N2HET1[08]				|ATTACHED				|BD|PC104 Pin 31 |
-|107	|N2HET1[28]				|PB\_ENABLE				|BD|PC104 Pin 45 |
+|105	|MIBSPI1NCS[0]			|						| U|free gpio |
+|106	|N2HET1[08]				|ATTACHED				|?D|PC104 Pin 31 |
+|107	|N2HET1[28]				|PB\_ENABLE				|?D|PC104 Pin 45 |
 |108	|TMS					|JTAG pin				|  | |
 ||||||
 |109	|TRST					|JTAG pin				|  | |
@@ -130,31 +133,31 @@ is U for pullup by default and D for pulldown by default.
 |115	|VSS					|						|  | |
 |116	|nRST					|\*Processor\_Reset		|  |Main reset pin for the processor |
 |117	|nERROR					|FAULT\_N				|  |PC104 PIN 19 |
-|118	|N2HET1[10]				|LNA_ENABLE				|BD|Used to enable the LNA |
-|119	|ECLK					|						|BD|free qpio |
+|118	|N2HET1[10]				|LNA\_ENABLE			|OD|Used to enable the LNA |
+|119	|ECLK					|						| D|free qpio |
 |120	|VCCIO					|						|  | |
 |121	|VSS					|						|  | |
 |122	|VSS					|						|  | |
 |123	|VCC					|						|  | |
-|124	|H2HET1[12]				|POW\_MEAS_EN			|BD|\*TX power measurement enable |
-|125	|H2HET1[14]				|PA\_PWR\_EN			|BD|Enable PA power |
-|126	|GIOB[0]				|AX5043\_IRQ\_RX2		|BD|Interrupt from AX5043 RX2 |
-|127	|N2HET1[30]				|CMD\_MODE				|BD|PC104 Pin 27 |
-|128	|CAN2TX					|						|BU|free gpio |
-|129	|CAN2RX					|						|BU|free gpio |
-|130	|MIBSPI1NCS[1]			|\*FEED\_WATCHDOG		|BU|Resets the two hardware watchdog timers |
-|131	|LINRX					|UART\_RX2				|BU|PC104 Pin 36 |
-|132	|LINTX					|UART\_TX2				|BU|PC104 Pin 32 |
-|133	|GIOB[1]				|GIOB\_1				|BD|PC104 Pin 16 |
+|124	|H2HET1[12]				|POW\_MEAS\_EN			|OD|\*TX power measurement enable |
+|125	|H2HET1[14]				|PA\_PWR\_EN			|OD|Enable PA power |
+|126	|GIOB[0]				|AX5043\_IRQ\_RX2		|ID|Interrupt from AX5043 RX2 |
+|127	|N2HET1[30]				|CMD\_MODE				|?D|PC104 Pin 27 |
+|128	|CAN2TX					|						| U|free gpio |
+|129	|CAN2RX					|						| U|free gpio |
+|130	|MIBSPI1NCS[1]			|\*FEED\_WATCHDOG		|OU|Resets the two hardware watchdog timers |
+|131	|LINRX					|UART\_RX2				| U|PC104 Pin 36 |
+|132	|LINTX					|UART\_TX2				| U|PC104 Pin 32 |
+|133	|GIOB[1]				|GIOB\_1				|?D|PC104 Pin 16 |
 |134	|VCCP					|						|  | |
 |135	|VSS					|						|  | |
 |136	|VCCIO					|						|  | |
 |137	|VCC					|						|  | |
 |138	|VSS					|						|  | |
-|139	|N2HET1[16]				|FCODE\_D3				|BD|PC104 Pin 60 |
-|140	|N2HET1[18]				|USB\_Suspend\_Low		|BD|PC104 Pin 104 |
-|141	|N2HET1[20]				|AX5043\_PWR\_EN		|BD|Main power enable for all AX5043s |
-|142	|GIOB[2]				|AX5043\_IRQ\_TX		|BD|Interrupt from AX5043 TX |
+|139	|N2HET1[16]				|FCODE\_D3				|?D|PC104 Pin 60 |
+|140	|N2HET1[18]				|USB\_Suspend\_Low		|?D|PC104 Pin 104 |
+|141	|N2HET1[20]				|AX5043\_PWR\_EN		|OD|Main power enable for all AX5043s |
+|142	|GIOB[2]				|AX5043\_IRQ\_TX		|ID|Interrupt from AX5043 TX |
 |143	|VCC					|						|  | |
 |144	|VSS					|						|  | |
 

@@ -59715,7 +59715,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "DMP2065UQ"
+		(property "Value" "DMP2037U"
 			(at 0 -2.4 90)
 			(layer "B.Fab")
 			(uuid "871b3b6f-f942-4ccd-a29b-538753e73475")
@@ -73788,7 +73788,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "DMP2065UQ"
+		(property "Value" "DMP2037U"
 			(at 0 -2.4 90)
 			(layer "B.Fab")
 			(uuid "185c35da-d6d2-45d6-8760-f5fb56b5a6f2")
@@ -74329,7 +74329,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "DMP2065UQ"
+		(property "Value" "DMP2037U"
 			(at 0 -2.4 90)
 			(layer "B.Fab")
 			(uuid "5d43c965-bb04-4050-805f-b4099a525e52")
@@ -76518,7 +76518,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "DMP2065UQ"
+		(property "Value" "DMP2037U"
 			(at 0 -2.4 90)
 			(layer "B.Fab")
 			(uuid "de0ffc84-224d-4272-b623-1f2b5539893e")
@@ -80550,7 +80550,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "DMP2065UQ"
+		(property "Value" "DMP2037U"
 			(at 0 -2.4 90)
 			(layer "B.Fab")
 			(uuid "c49085df-f64a-40dc-a48f-bf26fbbe6fac")
@@ -88755,14 +88755,6 @@
 		(uuid "337e1b2b-b262-4a4c-b770-943d59935e4d")
 	)
 	(segment
-		(start 228.73 109.025)
-		(end 228.73 108.3875)
-		(width 0.2032)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "3410a172-7830-4137-beb4-4db823180ff7")
-	)
-	(segment
 		(start 162.72 123.69)
 		(end 161.75 122.72)
 		(width 0.2032)
@@ -89091,6 +89083,14 @@
 		(uuid "85e1ebf7-18cb-4f84-bdce-516f8be48e01")
 	)
 	(segment
+		(start 228.35 108.0075)
+		(end 228.35 109.055)
+		(width 0.2032)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "868b0359-8faa-4c2c-b8b3-46e681c5d3dd")
+	)
+	(segment
 		(start 166.22 97.97)
 		(end 167.3825 97.97)
 		(width 0.2032)
@@ -89401,6 +89401,14 @@
 		(layer "B.Cu")
 		(net 1)
 		(uuid "d265ec32-40ae-458d-bcab-521a56836d68")
+	)
+	(segment
+		(start 228.35 109.055)
+		(end 228.56 109.265)
+		(width 0.2032)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "d2b61ba8-0df0-4ef6-a530-e14bd0d22db7")
 	)
 	(segment
 		(start 225.7825 87.351)
