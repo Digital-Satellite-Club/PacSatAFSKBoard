@@ -25,9 +25,6 @@ can't find any info on that.  It's on the RF Input sheet.  Need to
 figure out if that's something that needs to be done.  I don't really
 understand the comment, though.
 
-Why is both the RTC and the hardware watchdog controlling the transmit
-shutdown?  It would seem only one or the other would be necessary.
-
 The RX input filter can probably do the impedance adjustment for the
 LNA, but I'm not sure how to calculate that.  There's an impedance
 matching circuit in there now, removing it would save two parts.
@@ -46,15 +43,14 @@ the board on the bench, but there are a bunch of them, some with just
 grounds.  Need to figure out their purpose.
 
 Does it make sense to wire the UARTs to the PC104?  If so, do we need
-two of them on the PC104?  Shouldn't one go to a plug somewhere?  If
-so, which one?
+two of them on the PC104?  Shouldn't one go to a separate connector
+somewhere?  If so, which one?
 
 Figure out what all the PC104 pins are supposed to do and document
 them.
 
 Replace the RTC with one that is temperature rated.  Probably only the
-MCP7940NT-E/MS from Microchip is suitable.  It does not have an
-interrupt output, though.
+MCP7940NT-E/MS from Microchip is suitable.
 
 Figure out where the external RF connections need to be so the layout
 can be simplified around that.
@@ -302,6 +298,11 @@ main one?  The problem is we would need a lot of processor GPIOs that
 are pulled down by default, or we would need to switch to power chips
 with active low enables.  Plus there is then no power limiting.
 Probably not a good idea.
+
+Why is both the RTC and the hardware watchdog controlling the transmit
+shutdown?  It would seem only one or the other would be necessary.
+The whole transmit shutdown thing has been removes, so this is no
+longer relevant.
 
 
 # RF Shields
