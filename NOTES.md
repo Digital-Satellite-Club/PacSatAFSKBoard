@@ -641,3 +641,9 @@ Remove the connection from KELVIN\_GND to ground.  According to the
 TMS570 data sheet, that pin should not be connected to any other
 ground.  I don't think it matters, it's only for crystals, but it
 should probably be left floating.
+
+## 2025-08-04
+
+Fixed some part values, used 4.1p style, not 4p1.
+
+Add a pin 1 indicator to a couple of ICs that didn't have it.

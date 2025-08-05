@@ -3652,7 +3652,7 @@
 				)
 			)
 		)
-		(property "Value" "4p3 1%"
+		(property "Value" "4.3p 1%"
 			(at 215.9 135.89 90)
 			(effects
 				(font
@@ -3781,7 +3781,7 @@
 				)
 			)
 		)
-		(property "Value" "4p3 1%"
+		(property "Value" "4.3p 1%"
 			(at 215.9 143.51 90)
 			(effects
 				(font
@@ -4232,7 +4232,7 @@
 				)
 			)
 		)
-		(property "Value" "5p6 1%"
+		(property "Value" "5.6p 1%"
 			(at 194.31 147.32 90)
 			(effects
 				(font
@@ -4427,7 +4427,7 @@
 				)
 			)
 		)
-		(property "Value" "5p1 1%"
+		(property "Value" "5.1p 1%"
 			(at 176.022 143.51 90)
 			(effects
 				(font

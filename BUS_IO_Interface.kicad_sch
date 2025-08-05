@@ -4369,7 +4369,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7nF"
+		(property "Value" "4.7n"
 			(at 358.14 91.44 90)
 			(effects
 				(font

@@ -6913,7 +6913,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "45k8 1%"
+		(property "Value" "45.8K 1%"
 			(at 289.56 196.215 0)
 			(effects
 				(font
@@ -7629,7 +7629,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "45k8 1%"
+		(property "Value" "45.8K 1%"
 			(at 289.56 117.475 0)
 			(effects
 				(font
@@ -9080,7 +9080,7 @@
 				)
 			)
 		)
-		(property "Value" "3u3"
+		(property "Value" "3.3u"
 			(at 95.25 35.56 90)
 			(effects
 				(font
