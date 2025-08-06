@@ -151,6 +151,157 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:FerriteBead_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FB"
+				(at 1.905 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "FerriteBead_Small"
+				(at 1.905 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ferrite bead, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FerriteBead_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.889) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -0.7874)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -2078,7 +2229,7 @@
 	)
 	(wire
 		(pts
-			(xy 347.98 81.28) (xy 360.68 81.28)
+			(xy 326.39 81.28) (xy 339.09 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2185,6 +2336,16 @@
 			(type default)
 		)
 		(uuid "139e25a4-402f-4814-a83f-7c7bef74a9c2")
+	)
+	(wire
+		(pts
+			(xy 306.07 81.28) (xy 316.23 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18965ce3-19bf-4fb0-ba0f-9f7b29ce5f5d")
 	)
 	(wire
 		(pts
@@ -2538,7 +2699,7 @@
 	)
 	(wire
 		(pts
-			(xy 289.56 81.28) (xy 337.82 81.28)
+			(xy 289.56 81.28) (xy 300.99 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3228,7 +3389,7 @@
 	)
 	(wire
 		(pts
-			(xy 342.9 88.9) (xy 342.9 105.41)
+			(xy 321.31 88.9) (xy 321.31 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3318,7 +3479,7 @@
 	)
 	(wire
 		(pts
-			(xy 342.9 105.41) (xy 359.41 105.41)
+			(xy 321.31 105.41) (xy 337.82 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3428,7 +3589,7 @@
 	)
 	(global_label "AX5043_3V3"
 		(shape input)
-		(at 360.68 81.28 0)
+		(at 339.09 81.28 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3438,7 +3599,7 @@
 		)
 		(uuid "11712823-53e4-449f-be39-61fee06c6248")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 377.3149 81.28 0)
+			(at 355.7249 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3538,7 +3699,7 @@
 	)
 	(global_label "AX5043_EN_TX_N"
 		(shape input)
-		(at 359.41 105.41 0)
+		(at 337.82 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3548,7 +3709,7 @@
 		)
 		(uuid "8b1b0cea-0aa3-4736-8354-761ea12167e8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 381.438 105.41 0)
+			(at 359.848 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5635,6 +5796,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 303.53 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a78c4e5-4543-4d3a-9ad0-17b4f26a3c9a")
+		(property "Reference" "FB8"
+			(at 303.4919 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K @ 100MHz"
+			(at 303.4919 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 303.53 83.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 303.53 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "FerriteBead_Small"
+			(at 303.53 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e35dbc3d-fa22-4d12-939d-14c3fd20b0f3")
+		)
+		(pin "2"
+			(uuid "e8c884ff-f8b1-442f-b30e-629221442730")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/2fc9a4ba-520e-46cf-be0c-1f13bbb64152"
+					(reference "FB8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 275.59 163.83 0)
 		(unit 1)
@@ -6840,7 +7069,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:Q_PMOS_GSD")
-		(at 342.9 83.82 90)
+		(at 321.31 83.82 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6849,7 +7078,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6d2bff5-c45e-4300-9b4b-0097c639de04")
 		(property "Reference" "Q7"
-			(at 342.9 74.93 90)
+			(at 321.31 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6857,7 +7086,7 @@
 			)
 		)
 		(property "Value" "DMP2037U"
-			(at 342.9 77.47 90)
+			(at 321.31 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6865,7 +7094,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 340.36 78.74 0)
+			(at 318.77 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6874,7 +7103,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 342.9 83.82 0)
+			(at 321.31 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6883,7 +7112,7 @@
 			)
 		)
 		(property "Description" "P-MOSFET transistor, gate/source/drain"
-			(at 342.9 83.82 0)
+			(at 321.31 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -304,6 +304,8 @@ an issue, but I'm not 100% sure there won't be an issue there when the
 processor is driving 3V on the line.  If it is an issue, this could be
 fixed easily with a FET.
 
+Maybe add ferrite beads to the AX5043s' power inputs?
+
 # Not going to do
 
 Rotate the CPU so that fewer traces need to be routed under the CPU.
@@ -681,3 +683,5 @@ the board.
 Fix the footprints on the diodes on the RTC.
 
 Update the ferrite beads with actual values.
+
+Add ferrite beads to the AX5043s' power inputs.
