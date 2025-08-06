@@ -16,18 +16,15 @@ Vee vee 0 dc 0
 V1 ina 0 dc 0 AC 1 sin(1 0 440MEG 0 0 0)
 Rsrc ina in 50
 
-.if (0)
+.if (1)
 
 * TX PA input matcher
 L1     in   out  17n
 C1     in   0    37p
 
-Rout   out  out1 1.87
+Rout   out2  out1 1.87
 * -37.7 ohms at 435MHz
 Cout   out1 0    9.6p
-
-.csparam loadreal = 1.87
-.csparam loadimag = -37.7
 
 .else
 .if (0)
@@ -36,12 +33,9 @@ Cout   out1 0    9.6p
 C1     in   out  130p
 L1     in   0    6.8n
 
-Rout   out  out1 6.23
+Rout   out2  out1 6.23
 * -13.3 ohms at 435MHz
 Cout   out1 0    27p
-
-.csparam loadreal = 6.23
-.csparam loadimag = -13.3
 
 .else
 .if (0)
@@ -50,12 +44,9 @@ Cout   out1 0    27p
 L1     in   out  91n
 C1     out  0    6.4p
 
-Rout   out  out1 142.4
+Rout   out2  out1 142.4
 * -80.8 ohms at 145MHz
 Cout   out1 0    13.6p
-
-.csparam loadreal = 142.4
-.csparam loadimag = -80.8
 
 .else
 
@@ -63,16 +54,16 @@ Cout   out1 0    13.6p
 L1     in   out  47n
 C1     out  0    11p
 
-Rout   out  out1 86.8
+Rout   out2  out1 86.8
 * -1.88 ohms at 145MHz
 Cout   out1 0    583p
 
-.csparam loadreal = 86.8
-.csparam loadimag = -1.88
+.endif
+.endif
+.endif
 
-.endif
-.endif
-.endif
+* For current measurement
+Vm out out2 dc 0 ac 0
 
 .control
 *tran .1ns 60ns 50ns
@@ -86,8 +77,9 @@ ac lin 5000 130Meg 160Meg
 plot vr(in) vi(in) vp(in)
 
 ac lin 5000 100Meg 2000meg
-let loadimp = unitvec(1) * loadreal + j(unitvec(1) * loadimag)
-plot db((v(out)^2/loadimp)/(v(in) * i(v1)))
+plot db((v(out) * i(Vm)) / (v(in) * i(V1)))
+plot v(out) v(in)
+plot i(Vm) i(V1)
 
 .endc
 

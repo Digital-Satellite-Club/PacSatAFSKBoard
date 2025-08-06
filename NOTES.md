@@ -9,10 +9,16 @@ some point.
 
 # TODO
 
+The 3.8K resistor on HW\_POWER\_OFF\_N is a strange value.  Can it be
+a more normal 4.7K or 10K?
+
+What does the HW SENSE (Pin 6 on CPU) do?
+
 Do steel RF shields affect the inductors under or around them?  Is
 aluminum better?
 
 Is the output filter on TX enough?  It's >50db at 800MHz and 1.6GHz.
+You get some filtering from the impedance matching network, too.
 
 The LNA doesn't have a current limiter on it.  It's best to power it
 with +5V (it will work on +3.3V, but it doesn't perform as well).  You
@@ -59,8 +65,10 @@ Figure out where the external RF connections need to be so the layout
 can be simplified around that.
 
 Maybe switch to 0402 parts along the RF path to reduce stray
-inductance and capacitance and reduce size.  Maybe on the rest of the
-board to get more space.
+inductance and capacitance and reduce size.  And perhaps don't use
+handsolder, as the pads are larger and thus have more
+capacitance/inductance.  Maybe 0402 parts on the rest of the board to
+get more space.
 
 Replace unobtanium parts (if any).
 

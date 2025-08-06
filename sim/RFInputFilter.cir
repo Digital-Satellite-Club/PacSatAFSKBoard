@@ -22,11 +22,16 @@ R1      b1  0   .078
 C2	in  a1  6.5p
 * 182.6
 L2	a1  a2  180n
-R2	a2  out .64
+R2	a2  b3 .64
 
-C3	out 0   64p
-L3	out b2   18n
+C3	b3  0   64p
+L3	b3  b2   18n
 R3      b2  0   .078
+
+* Impedance matching network
+L4      b3  b4  91n
+R4      b4  out .078
+C4      out 0   6.4p
 
 * Avoid issues with series inductors, they result in:
 * Warning: singular matrix:  check node l.x1.l4b#branch
@@ -41,13 +46,18 @@ Rsrc in in1 50
 
 X1 in1 out Filt144MHz
 
-Rload out 0 50
+* Used for current measurement.
+Vload out out2 DC 0 AC 0
+
+* Input impedance of the LNA
+Rload out2 out1 142.4
+Cload out1 0    13.6p
 
 .control
 *tran 1ns 102000ns 101000ns
 *plot v(in1), v(out)
-ac lin 50000 100Meg 200Meg
-plot db((vm(out)^2/50)/(vm(in1) * i(v1)))
+ac lin 50000 100Meg 500Meg
+plot db((v(out) * i(Vload)) / (vm(in1) * i(V1)))
 .endc
 
 .end
