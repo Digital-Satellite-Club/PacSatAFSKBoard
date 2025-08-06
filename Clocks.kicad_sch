@@ -2177,7 +2177,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "FerriteBead_Small"
+		(property "Value" "1K @ 100MHz"
 			(at 158.75 90.7669 0)
 			(effects
 				(font
@@ -2204,12 +2204,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "FerriteBead_Small"
 			(at 156.21 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2686,75 +2687,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:FerriteBead_Small")
-		(at 213.36 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "75f803a2-dee0-4acd-8f25-df5db1b23057")
-		(property "Reference" "FB3"
-			(at 215.9 80.6069 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "FerriteBead_Small"
-			(at 215.9 83.1469 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 211.582 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 213.36 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 213.36 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9cab20c5-cf32-42d5-b783-fec4ed25326d")
-		)
-		(pin "2"
-			(uuid "cf9fdb52-5539-42d3-8c2c-a6b4cae3a255")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/a735fef7-c3fa-4339-b3a6-fbce810c3c4b"
-					(reference "FB3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 125.73 107.95 0)
 		(unit 1)
@@ -2890,6 +2822,76 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/a735fef7-c3fa-4339-b3a6-fbce810c3c4b"
 					(reference "Y2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 213.36 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c535d17-e13e-4644-b49d-1545e4264a32")
+		(property "Reference" "FB3"
+			(at 215.9 80.6069 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1K @ 100MHz"
+			(at 215.9 83.1469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 211.582 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "FerriteBead_Small"
+			(at 213.36 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a1951c9-2481-4c20-8330-93734ca0a548")
+		)
+		(pin "2"
+			(uuid "f4042b2e-3a3f-4547-9fed-9b6e0cf81591")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/a735fef7-c3fa-4339-b3a6-fbce810c3c4b"
+					(reference "FB3")
 					(unit 1)
 				)
 			)

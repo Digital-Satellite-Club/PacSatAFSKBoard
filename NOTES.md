@@ -679,3 +679,5 @@ necessary MIBSPI5 lines for possibly adding another SPI bus on
 the board.
 
 Fix the footprints on the diodes on the RTC.
+
+Update the ferrite beads with actual values.
