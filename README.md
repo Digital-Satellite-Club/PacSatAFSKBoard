@@ -17,7 +17,7 @@ figure out how to program it).
 With some filter redesign it could support a number of different
 bands, too, maybe even up to 1280MHz.
 
-The board also have MRAM storage for persistent data storage and an
+The board also has MRAM storage for persistent data storage and an
 RTC for timekeeping.  There's space on the board to add more things.
 
 The board has a CAN interface and a serial interface on top of the

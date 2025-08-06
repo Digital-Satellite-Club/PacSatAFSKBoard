@@ -2273,7 +2273,7 @@
 		)
 		(uuid "37823c82-f669-459e-ad66-7187fed9bcdd")
 	)
-	(text "3rd order Chebyshev filter\nConventional Shunt First\nPassband 140-152MHz\n.1db ripple in passband\n"
+	(text "3rd order Chebyshev filter\nConventional Shunt First\nPassband 123-173MHz\n.1db ripple in passband\n"
 		(exclude_from_sim no)
 		(at 82.042 127.254 0)
 		(effects

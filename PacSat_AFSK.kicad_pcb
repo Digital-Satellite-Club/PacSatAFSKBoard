@@ -1160,7 +1160,7 @@
 				)
 			)
 		)
-		(property "Value" "RED"
+		(property "Value" "RED LED"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "ae9f4ada-c123-4f31-ac86-7f1565f782ad")
@@ -1381,7 +1381,7 @@
 				)
 			)
 		)
-		(property "Value" "YEL"
+		(property "Value" "YELLOW LED"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "7763e8cb-2b3a-4a87-bc39-0ab2d1565f7f")
@@ -24432,7 +24432,7 @@
 				)
 			)
 		)
-		(property "Value" "GRN"
+		(property "Value" "GREEN LED"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "2980a4a9-fb5a-489a-a455-06778aaefd44")
@@ -28341,7 +28341,7 @@
 				)
 			)
 		)
-		(property "Value" "CONN_02X05"
+		(property "Value" "FTSH-105-01-L-DV-K"
 			(at 0 -5.08 90)
 			(layer "F.Fab")
 			(uuid "937a7886-187e-45e0-92ca-efa190a0e701")
@@ -28364,7 +28364,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CONN_02X05"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -51288,7 +51288,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "BLUE LED"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "83ac32da-0aa9-40f0-a1c0-759bb6f6beb4")

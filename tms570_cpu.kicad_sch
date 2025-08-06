@@ -11935,7 +11935,7 @@
 				)
 			)
 		)
-		(property "Value" "CONN_02X05"
+		(property "Value" "FTSH-105-01-L-DV-K"
 			(at 111.76 59.0804 0)
 			(effects
 				(font
@@ -11961,8 +11961,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 111.76 67.31 0)
+		(property "Description" "CONN_02X05"
+			(at 112.014 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12344,14 +12344,14 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a2f9a0e")
 		(property "Reference" "D3"
-			(at 268.605 240.665 0)
+			(at 266.192 242.824 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "RED"
+		(property "Value" "RED LED"
 			(at 274.955 240.665 0)
 			(effects
 				(font
@@ -12410,14 +12410,14 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a2f9b2b")
 		(property "Reference" "D4"
-			(at 268.605 248.285 0)
+			(at 266.954 249.428 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "YEL"
+		(property "Value" "YELLOW LED"
 			(at 274.955 248.285 0)
 			(effects
 				(font
@@ -12476,14 +12476,14 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a2f9d69")
 		(property "Reference" "D5"
-			(at 268.605 255.905 0)
+			(at 266.7 256.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "GRN"
+		(property "Value" "GREEN LED"
 			(at 274.955 255.905 0)
 			(effects
 				(font
@@ -14526,7 +14526,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "BLUE LED"
 			(at 80.01 221.2975 90)
 			(effects
 				(font

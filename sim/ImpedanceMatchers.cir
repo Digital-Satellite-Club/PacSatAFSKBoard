@@ -26,6 +26,8 @@ Rout   out  out1 1.87
 * -37.7 ohms at 435MHz
 Cout   out1 0    9.6p
 
+.param loadimp = 37.7
+
 .else
 .if (0)
 
@@ -36,6 +38,8 @@ L1     in   0    6.8n
 Rout   out  out1 6.23
 * -13.3 ohms at 435MHz
 Cout   out1 0    27p
+
+.param loadimp = 15.1
 
 .else
 .if (0)
@@ -48,6 +52,8 @@ Rout   out  out1 142.4
 * -80.8 ohms at 145MHz
 Cout   out1 0    13.6p
 
+.param loadimp = 163.7
+
 .else
 
 * TX LNA output matcher
@@ -58,9 +64,16 @@ Rout   out  out1 86.8
 * -1.88 ohms at 145MHz
 Cout   out1 0    583p
 
+.param loadimp = 86.8
+
 .endif
 .endif
 .endif
+
+* loadimp is the magnitude of the impedance.
+* Is this right?  I can't find a way to put the imaginary
+* part of an impedance into a param.
+.csparam loadimp = {loadimp}
 
 .control
 *tran .1ns 60ns 50ns
@@ -68,12 +81,14 @@ Cout   out1 0    583p
 *plot v(in)
 
 ac lin 5000 400Meg 470Meg
-*plot db((v(out)^2/50)/(v(ina1,inb1) * i(v1)))
 plot vr(in) vi(in) vp(in)
 
 ac lin 5000 130Meg 160Meg
-*plot db((v(out)^2/50)/(v(ina1,inb1) * i(v1)))
 plot vr(in) vi(in) vp(in)
+
+ac lin 5000 100Meg 2000meg
+plot db((v(out)^2/loadimp)/(v(in) * i(v1)))
+
 .endc
 
 .end
