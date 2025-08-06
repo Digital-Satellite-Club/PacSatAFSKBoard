@@ -26,7 +26,8 @@ Rout   out  out1 1.87
 * -37.7 ohms at 435MHz
 Cout   out1 0    9.6p
 
-.param loadimp = 37.7
+.csparam loadreal = 1.87
+.csparam loadimag = -37.7
 
 .else
 .if (0)
@@ -39,7 +40,8 @@ Rout   out  out1 6.23
 * -13.3 ohms at 435MHz
 Cout   out1 0    27p
 
-.param loadimp = 15.1
+.csparam loadreal = 6.23
+.csparam loadimag = -13.3
 
 .else
 .if (0)
@@ -52,7 +54,8 @@ Rout   out  out1 142.4
 * -80.8 ohms at 145MHz
 Cout   out1 0    13.6p
 
-.param loadimp = 163.7
+.csparam loadreal = 142.4
+.csparam loadimag = -80.8
 
 .else
 
@@ -64,16 +67,12 @@ Rout   out  out1 86.8
 * -1.88 ohms at 145MHz
 Cout   out1 0    583p
 
-.param loadimp = 86.8
+.csparam loadreal = 86.8
+.csparam loadimag = -1.88
 
 .endif
 .endif
 .endif
-
-* loadimp is the magnitude of the impedance.
-* Is this right?  I can't find a way to put the imaginary
-* part of an impedance into a param.
-.csparam loadimp = {loadimp}
 
 .control
 *tran .1ns 60ns 50ns
@@ -87,6 +86,7 @@ ac lin 5000 130Meg 160Meg
 plot vr(in) vi(in) vp(in)
 
 ac lin 5000 100Meg 2000meg
+let loadimp = unitvec(1) * loadreal + j(unitvec(1) * loadimag)
 plot db((v(out)^2/loadimp)/(v(in) * i(v1)))
 
 .endc
