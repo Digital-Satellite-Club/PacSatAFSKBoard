@@ -9,6 +9,16 @@ some point.
 
 # TODO
 
+Why are there 4.7K resistors on the power inputs to the RTC?  And is a
+diode needed on the VCC connection?  The diode on VBAT I can
+understand, I think.  Also, VBAT voltage will be above VCC.  That
+seems to be ok according to the data sheet, I think.  Also, maybe it
+would be better to stick a big capacitor on VBAT.  A 220uF capacitor
+would last around 94 hours by my calculations.
+
+The PC104 connector is actually two connectors, a 64-pin (4x16) one
+and a 40 pin one (4x10).  Need to figure out how to represent that.
+
 The 3.8K resistor on HW\_POWER\_OFF\_N is a strange value.  Can it be
 a more normal 4.7K or 10K?
 
@@ -38,9 +48,9 @@ matching circuit in there now, removing it would save two parts.
 Probably remove the L1/L2 inductor on the AX5043s and replace them
 with a short.  I don't think we will use them.
 
-Is there a reason the ANTP1 output is connected to a 50 ohm resistor?
-I can't find anything in the datasheet or errata about that, it always
-shows it disconnected when not used.
+Is there a reason the ANTP1 output of the AX5043 is connected to a 50
+ohm resistor?  I can't find anything in the datasheet or errata about
+that, it always shows it disconnected when not used.
 
 What UFL connectors can be removed?
 
@@ -53,7 +63,8 @@ two of them on the PC104?  Shouldn't one go to a separate connector
 somewhere?  If so, which one?  UART1 is a standard UART, UART2
 supports "Local Interconnect standard 2.0" which is probably better
 for an interconnect.  So UART1 (SCI) should go to the local connector
-and UART2 (LIN) should go to the PC104, I think.
+and UART2 (LIN) should go to the PC104, I think.  More info: the LIN
+bus requires special hardware, it's not just a serial connection.
 
 Figure out what all the PC104 pins are supposed to do and document
 them.
@@ -663,3 +674,5 @@ Moved AX5043\_EN\_TX\_N from pin 100 to pin 89 and
 AX5043\_EN\_RX\_4\_N from pin 32 to 24.  This frees up all the
 necessary MIBSPI5 lines for possibly adding another SPI bus on
 the board.
+
+Fix the footprints on the diodes on the RTC.

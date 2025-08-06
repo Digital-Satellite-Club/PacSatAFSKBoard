@@ -1929,17 +1929,6 @@
 		)
 		(uuid "6f29d973-8e69-4d4f-877c-c1d0ae1793cc")
 	)
-	(text "Change footprint to coustom"
-		(exclude_from_sim no)
-		(at 186.69 161.29 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "7404c483-e6d6-418d-8ced-c4371b0ba3b3")
-	)
 	(text "Real Time Clock"
 		(exclude_from_sim no)
 		(at 100.33 128.27 0)
@@ -4999,7 +4988,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+		(property "Footprint" "Diode_SMD:D_SOD-882"
 			(at 200.66 150.495 0)
 			(effects
 				(font
@@ -5778,7 +5767,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+		(property "Footprint" "Diode_SMD:D_SOD-882"
 			(at 200.66 154.305 0)
 			(effects
 				(font
