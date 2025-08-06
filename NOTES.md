@@ -14,7 +14,10 @@ diode needed on the VCC connection?  The diode on VBAT I can
 understand, I think.  Also, VBAT voltage will be above VCC.  That
 seems to be ok according to the data sheet, I think.  Also, maybe it
 would be better to stick a big capacitor on VBAT.  A 220uF capacitor
-would last around 94 hours by my calculations.
+would last around 94 hours at 5V, or 61 hours at 3.3v, by my
+calculations.  That's the MAX31331, which uses 65nA on battery, and
+there will be leakage in the capacitor (and diode if not trickle
+charging) that will probably shorten the time.
 
 The PC104 connector is actually two connectors, a 64-pin (4x16) one
 and a 40 pin one (4x10).  Need to figure out how to represent that.
