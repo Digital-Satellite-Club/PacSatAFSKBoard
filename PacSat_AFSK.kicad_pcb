@@ -15013,7 +15013,7 @@
 				)
 			)
 		)
-		(property "Value" "4k7"
+		(property "Value" "4.7K"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "a607f356-69e2-486c-9595-1d9404212fb9")
@@ -23465,7 +23465,7 @@
 				)
 			)
 		)
-		(property "Value" "FerriteBead_Small"
+		(property "Value" "1K @ 100MHz"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "1be573ea-7de9-4679-8019-71ea0dbcac32")
@@ -23488,7 +23488,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "FerriteBead_Small"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -48538,7 +48538,7 @@
 				)
 			)
 		)
-		(property "Value" "4k7"
+		(property "Value" "4.7K"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "40c42c9d-32c6-4a32-bbfe-d027b0968e26")
@@ -70325,7 +70325,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "FerriteBead_Small"
+		(property "Value" "1K @ 100MHz"
 			(at 0 -1.43 90)
 			(layer "B.Fab")
 			(uuid "b034dd84-f5aa-42f9-b657-79dfe8643821")
@@ -70350,7 +70350,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "FerriteBead_Small"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -70364,7 +70364,7 @@
 			)
 		)
 		(property ki_fp_filters "Inductor_* L_* *Ferrite*")
-		(path "/a735fef7-c3fa-4339-b3a6-fbce810c3c4b/75f803a2-dee0-4acd-8f25-df5db1b23057")
+		(path "/a735fef7-c3fa-4339-b3a6-fbce810c3c4b/8c535d17-e13e-4644-b49d-1545e4264a32")
 		(sheetname "/Clocks/")
 		(sheetfile "Clocks.kicad_sch")
 		(attr smd)
