@@ -1975,10 +1975,6 @@
 		(uuid "8f1b11b8-b55f-4e4a-bc5a-20e62a303c54")
 	)
 	(no_connect
-		(at 85.09 214.63)
-		(uuid "a1666e2b-bef5-4fb1-8808-a662eaa9ae52")
-	)
-	(no_connect
 		(at 242.57 121.92)
 		(uuid "cb08d63d-74bb-41f4-85d6-d0b2cc86967a")
 	)

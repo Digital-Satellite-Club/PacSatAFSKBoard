@@ -36,7 +36,7 @@ used as a GPIO.
 |21		|VSS					|						|  | |
 |22		|GIOA[7]				|AX5043\_IRQ\_RX3		|ID|Interrupt from AX5043 RX3 |
 |23		|N2HET1[01]				|						|OD|Yellow LED |
-|24		|N2HET1[03]				|						|OD|free gpio |
+|24		|N2HET1[03]				|AX5043\_EN\_RX4\_N		|OD|Power enable for AX5043 RX 4 |
 |25		|N2HET1[0]				|						|OD|Red LED |
 |26		|VCCIO					|						|  | |
 |27		|VSS					|						|  | |
@@ -44,7 +44,7 @@ used as a GPIO.
 |29		|VCC					|						|  | |
 |30		|N2HET1[02]				|						|OD|Green LED |
 |31		|N2HET1[05]				|						| D|free gpio |
-|32		|MIBSPI5NCS[0]			|AX5043\_EN\_RX4\_N		|OU|Power enable for AX5043 RX 4 |
+|32		|MIBSPI5NCS[0]			|						| U|free gpio (Save for extra SPI if possible) |
 |33		|N2HET1[07]				|AX5043\_EN\_RX3\_N		|OD|Power enable for AX5043 RX 3 |
 |34		|TEST					|					    |  | |
 |35		|N2HET1[09]				|AX5043\_EN\_RX2\_N		|OD|Power enable for AX5043 RX 2 |
@@ -103,7 +103,7 @@ used as a GPIO.
 |86		|AD1EVT					|						|  | |
 |87		|VCC					|						|  | |
 |88		|VSS					|						|  | |
-|89		|CAN1TX					|						| U|free gpio |
+|89		|CAN1TX					|AX5043\_EN\_TX\_N		|OU|Power enable for AX5043 TX |
 |90		|CAN1RX					|AX5043\_SEL1\_N		|OU|SPI chip select for AX5043 RX1 |
 |91		|N2HET1[24]				|AX5043\_SEL2\_N		|OD|SPI chip select for AX5043 RX2 |
 |92		|N2HET1[26]				|AX5043\_SEL3\_N		|OD|SPI chip select for AX5043 RX3 |
@@ -112,9 +112,9 @@ used as a GPIO.
 |95		|MIBSPI1CLK				|AX5043\_CLK			| U|SPI clock for all AX5043s |
 |96		|MIBSPI1NENA			|AX5043\_SEL4\_N		|OU|SPI chip select for AX5043 RX4 |
 |97		|MIBSPI5NENA			|AX5043\_SEL\_TX\_N		|OU|SPI chip select for AX5043 TX |
-|98		|MIBSPI5SOMI[0]			|						| U|free gpio |
-|99		|MIBSPI5SIMO[0]			|						| U|free gpio |
-|100	|MIBSPI5CLK				|AX5043\_EN\_TX\_N		|OU|Power enable for AX5043 TX |
+|98		|MIBSPI5SOMI[0]			|						| U|free gpio (Save for extra SPI if possible) |
+|99		|MIBSPI5SIMO[0]			|						| U|free gpio (Save for extra SPI if possible) |
+|100	|MIBSPI5CLK				|						| U|free gpio (Save for extra SPI if possible) |
 |101	|VCC					|						|  | |
 |102	|VSS					|						|  | |
 |103	|VSS					|						|  | |

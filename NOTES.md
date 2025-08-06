@@ -44,7 +44,10 @@ grounds.  Need to figure out their purpose.
 
 Does it make sense to wire the UARTs to the PC104?  If so, do we need
 two of them on the PC104?  Shouldn't one go to a separate connector
-somewhere?  If so, which one?
+somewhere?  If so, which one?  UART1 is a standard UART, UART2
+supports "Local Interconnect standard 2.0" which is probably better
+for an interconnect.  So UART1 (SCI) should go to the local connector
+and UART2 (LIN) should go to the PC104, I think.
 
 Figure out what all the PC104 pins are supposed to do and document
 them.
@@ -647,3 +650,8 @@ should probably be left floating.
 Fixed some part values, used 4.1p style, not 4p1.
 
 Add a pin 1 indicator to a couple of ICs that didn't have it.
+
+Moved AX5043\_EN\_TX\_N from pin 100 to pin 89 and
+AX5043\_EN\_RX\_4\_N from pin 32 to 24.  This frees up all the
+necessary MIBSPI5 lines for possibly adding another SPI bus on
+the board.
