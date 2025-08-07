@@ -72,9 +72,6 @@ bus requires special hardware, it's not just a serial connection.
 Figure out what all the PC104 pins are supposed to do and document
 them.
 
-Replace the RTC with one that is temperature rated.  Probably only the
-MCP7940NT-E/MS from Microchip is suitable.
-
 Figure out where the external RF connections need to be so the layout
 can be simplified around that.
 
@@ -86,8 +83,15 @@ get more space.
 
 Replace unobtanium parts (if any).
 
-Figure out temperature ratings on all chips and get as many to be 105C
-or better as possible.
+Figure out temperature ratings on all parts and get as many to be 105C
+or better as possible.  These outliers at the moment are:
+
+    * RTC.  Probably only the MCP7940NT-E/MS from Microchip is
+	  suitable, but it draws 20 times the standby power.
+    * AX5043 - Not another option available.
+	* RBP-140+ - Could replace the filter with discrete components.
+	* AD4PS+1 - Not sure about this one, perhaps three transformers
+	  could be used.
 
 Determine current limiter values, probably need to build a board and
 measure.
@@ -685,3 +689,10 @@ Fix the footprints on the diodes on the RTC.
 Update the ferrite beads with actual values.
 
 Add ferrite beads to the AX5043s' power inputs.
+
+Changed the clock buffer from a CDCLVC1106 to a LMK1C1106A.  It
+temperature rated, has better specs, and is cheaper, and drop in
+compatible.  Looking at the power usage, it's hard to tell.  It looks
+like the specs were misinterpreted for the CDCLVC1106, the power given
+on the graph was per pin, so it would really be around 20ma, the same
+as given for the LMK1C1106A.
