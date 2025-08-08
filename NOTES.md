@@ -9,8 +9,13 @@ some point.
 
 # TODO
 
+Add enables to the CAN bus transceivers?  The chip does not really
+have an "off" state, it's a "standby" state where it's listening on
+the bus but cannot transmit.
+
 The PC104 connector is actually two connectors, a 64-pin (4x16) one
-and a 40 pin one (4x10).  Need to figure out how to represent that.
+and a 40 pin one (4x10).  I've actually more seen to 2x52 connectors
+more often on schematics.  Need to figure out how to represent that.
 
 Figure out what happens when the two lockstep processors lose sync.
 Burns knows.  If one of the processors goes bad, is there a way to
@@ -332,6 +337,8 @@ The 3.8K resistor on HW\_POWER\_OFF\_N is a strange value.  Can it be
 a more normal 4.7K or 10K?  Yes
 
 Add more vias around the ground areas in RF.
+
+Probably add another CAN bus.
 
 # Not going to do
 
@@ -755,4 +762,6 @@ Change the 3.8K resistor on HW\_POWER\_OFF\_N to a more normal 4.7K.
 Sprinkle vias all over the coplanar areas.
 
 Reworked MRAM devices to put pull-ups on the WP and IO3 pins instead
-of direct ties to +5V.
+of direct ties to +3.3V.
+
+Add a second CAN bus for redundancy.

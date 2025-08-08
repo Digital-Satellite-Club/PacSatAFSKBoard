@@ -5493,10 +5493,6 @@
 		(uuid "73b42538-d333-4191-ac43-83f9dd878cc0")
 	)
 	(no_connect
-		(at 149.86 144.78)
-		(uuid "74180d11-681f-469e-9220-001167bbd27a")
-	)
-	(no_connect
 		(at 247.65 68.58)
 		(uuid "748a593b-7c1a-45c5-9b0d-f4bb47726d17")
 	)
@@ -5511,10 +5507,6 @@
 	(no_connect
 		(at 281.94 99.06)
 		(uuid "96e086a1-e37a-4732-a182-2693f532c23d")
-	)
-	(no_connect
-		(at 149.86 147.32)
-		(uuid "992c9b61-ca41-4316-b0c9-19bfd6be96c3")
 	)
 	(no_connect
 		(at 191.77 72.39)
@@ -6427,6 +6419,16 @@
 			(type default)
 		)
 		(uuid "41eb210b-bc13-4334-a6e6-5ff28c717651")
+	)
+	(wire
+		(pts
+			(xy 127 147.32) (xy 149.86 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "420a6165-c114-48ed-98ca-eb70bff53956")
 	)
 	(wire
 		(pts
@@ -8480,6 +8482,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 144.78) (xy 149.86 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e09e1c61-f0ba-4063-8457-4487ba664c85")
+	)
+	(wire
+		(pts
 			(xy 184.15 64.77) (xy 186.69 64.77)
 		)
 		(stroke
@@ -9230,6 +9242,28 @@
 			)
 		)
 	)
+	(global_label "CAN_B_TX"
+		(shape input)
+		(at 127 144.78 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "217ed02a-1d9f-4a0c-9264-9956a0a0ad53")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 115.5976 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VER_BIT1"
 		(shape input)
 		(at 304.8 111.76 0)
@@ -9837,6 +9871,28 @@
 		(uuid "7e28ecc5-0308-4e10-9773-ad20ded165df")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 179.07 236.6353 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAN_B_RX"
+		(shape input)
+		(at 127 147.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "84208d4a-3bc8-4082-bc62-166c09c11a6b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 115.2952 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -43,7 +43,7 @@ used as a GPIO.
 |28		|VSS					|						|  | |
 |29		|VCC					|						|  | |
 |30		|N2HET1[02]				|						|OD|Green LED |
-|31		|N2HET1[05]				|						| D|free gpio |
+|31		|N2HET1[05]				|LNA\_ENABLE			|OD|Used to enable the LNA |
 |32		|MIBSPI5NCS[0]			|						| U|free gpio (Save for extra SPI if possible) |
 |33		|N2HET1[07]				|AX5043\_EN\_RX3\_N		|OD|Power enable for AX5043 RX 3 |
 |34		|TEST					|					    |  | |
@@ -133,8 +133,8 @@ used as a GPIO.
 |115	|VSS					|						|  | |
 |116	|nRST					|\*Processor\_Reset		|  |Main reset pin for the processor |
 |117	|nERROR					|FAULT\_N				|  |PC104 PIN 19 |
-|118	|N2HET1[10]				|LNA\_ENABLE			|OD|Used to enable the LNA |
-|119	|ECLK					|						| D|free qpio |
+|118	|N2HET1[10]				|						| D|free gpio |
+|119	|ECLK					|						| D|free gpio |
 |120	|VCCIO					|						|  | |
 |121	|VSS					|						|  | |
 |122	|VSS					|						|  | |
@@ -143,8 +143,8 @@ used as a GPIO.
 |125	|H2HET1[14]				|PA\_PWR\_EN			|OD|Enable PA power |
 |126	|GIOB[0]				|AX5043\_IRQ\_RX2		|ID|Interrupt from AX5043 RX2 |
 |127	|N2HET1[30]				|CMD\_MODE				|?D|PC104 Pin 27 |
-|128	|CAN2TX					|						| U|free gpio |
-|129	|CAN2RX					|						| U|free gpio |
+|128	|CAN2TX					|CAN\_B\_TX				|OU|CAN bus B transmit |
+|129	|CAN2RX					|CAN\_B\_RX				|IU|CAN bus B receive |
 |130	|MIBSPI1NCS[1]			|\*FEED\_WATCHDOG		|OU|Resets the two hardware watchdog timers |
 |131	|LINRX					|UART\_RX2				| U|PC104 Pin 36 |
 |132	|LINTX					|UART\_TX2				| U|PC104 Pin 32 |

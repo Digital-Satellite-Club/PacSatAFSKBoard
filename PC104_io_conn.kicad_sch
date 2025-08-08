@@ -2686,10 +2686,6 @@
 		(uuid "75e50608-56f6-46de-91fe-535f64a4bb62")
 	)
 	(no_connect
-		(at 109.22 124.46)
-		(uuid "7906409d-01a7-48ca-a133-6effa2ef2f5d")
-	)
-	(no_connect
 		(at 220.98 78.74)
 		(uuid "7b6fa248-5467-4b6f-ac96-5a9c311cfbfc")
 	)
@@ -2748,10 +2744,6 @@
 	(no_connect
 		(at 109.22 106.68)
 		(uuid "a64e81b2-f1d0-4fb7-851c-a444c534c7d5")
-	)
-	(no_connect
-		(at 109.22 127)
-		(uuid "a6ab3c57-6096-4770-8b6c-1135acc69b7f")
 	)
 	(no_connect
 		(at 147.32 104.14)
@@ -2933,7 +2925,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 119.38) (xy 119.38 119.38)
+			(xy 109.22 119.38) (xy 128.27 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2990,6 +2982,16 @@
 			(type default)
 		)
 		(uuid "64545362-65f4-4865-b8d7-986f65449a0a")
+	)
+	(wire
+		(pts
+			(xy 109.22 127) (xy 113.03 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68b55a29-fe75-4500-9312-5ce553d952c9")
 	)
 	(wire
 		(pts
@@ -3063,7 +3065,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 119.38) (xy 119.38 120.65)
+			(xy 128.27 119.38) (xy 128.27 123.19)
 		)
 		(stroke
 			(width 0)
@@ -3080,6 +3082,16 @@
 			(type default)
 		)
 		(uuid "acf79a83-46c7-4766-9085-eeed81ce91ee")
+	)
+	(wire
+		(pts
+			(xy 109.22 124.46) (xy 113.03 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9cfc68c-f52c-402e-aec5-f8d8622f19e6")
 	)
 	(wire
 		(pts
@@ -3355,7 +3367,7 @@
 			)
 		)
 	)
-	(global_label "CAN+"
+	(global_label "CANA+"
 		(shape input)
 		(at 113.03 109.22 0)
 		(fields_autoplaced yes)
@@ -3367,7 +3379,7 @@
 		)
 		(uuid "5557218d-373f-4069-9fcf-81edbb6eabef")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.1406 109.22 0)
+			(at 123.4469 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3377,7 +3389,7 @@
 			)
 		)
 	)
-	(global_label "CAN-"
+	(global_label "CANA-"
 		(shape input)
 		(at 113.03 111.76 0)
 		(fields_autoplaced yes)
@@ -3389,7 +3401,7 @@
 		)
 		(uuid "57e895e9-ab0c-4925-9659-cef793d51216")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.1406 111.76 0)
+			(at 123.4469 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3456,6 +3468,28 @@
 		(uuid "77758875-21f6-4a3f-a283-be8aae274eec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 248.1018 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CANB-"
+		(shape input)
+		(at 113.03 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "7ed304de-a5f1-499d-bbef-f8cc965cda94")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.6646 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3632,6 +3666,28 @@
 		(uuid "d3b69f64-ad63-443a-a73d-f317606a6dfb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 238.6673 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CANB+"
+		(shape input)
+		(at 113.03 124.46 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "d638cc37-e3ac-4c65-813c-3d5db65a9bbf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.6646 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4405,7 +4461,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 119.38 120.65 0)
+		(at 128.27 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4413,7 +4469,7 @@
 		(dnp no)
 		(uuid "fc78cdec-aa72-4a8c-91ee-2c6fe1ac1c2c")
 		(property "Reference" "#PWR0237"
-			(at 119.38 127 0)
+			(at 128.27 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4422,7 +4478,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.507 125.0442 0)
+			(at 128.397 127.5842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4430,7 +4486,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 120.65 0)
+			(at 128.27 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4439,7 +4495,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 120.65 0)
+			(at 128.27 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4448,7 +4504,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 120.65 0)
+			(at 128.27 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
