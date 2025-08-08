@@ -757,6 +757,10 @@
       {
         "netclass": "RF Coplaner",
         "pattern": "/Rx_Power_Divider/RFI6"
+      },
+      {
+        "netclass": "FatPower",
+        "pattern": "LNA_VCC"
       }
     ]
   },

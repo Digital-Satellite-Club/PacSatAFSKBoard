@@ -50,10 +50,10 @@ used as a GPIO.
 |35		|N2HET1[09]				|AX5043\_EN\_RX2\_N		|OD|Power enable for AX5043 RX 2 |
 |36		|N2HET1[4]				|AX5043\_EN\_RX1\_N		|OD|Power enable for AX5043 RX 1 |
 ||||||
-|37		|MIBSPI3NCS[1]			|						| U|free gpio |
+|37		|MIBSPI3NCS[1]			|MRAM\_NCS3				| U| |
 |38		|N2HET1[06]				|UART\_RX1				| D|PC104 pin 92 |
 |39		|N2HET1[13]				|UART\_TX1				| D|PC104 pin 88 |
-|40		|MIBSPI1NCS[2]			|						|BU|free gpio |
+|40		|MIBSPI1NCS[2]			|MRAM\_NCS2				| U| |
 |41		|N2HET1[15]				|FCODE\_D0				|?D|PC104 pin 64 |
 |42		|VCCIO					|						|  | |
 |43		|VSS					|						|  | |
@@ -67,7 +67,7 @@ used as a GPIO.
 |51		|MIBSPI3SOMI			|MRAM\_MISO				| U| |
 |52		|MIBSPI3SIMO			|MRAM\_MOSI				| U| |
 |53		|MIBSPI3CLK				|MRAM\_CLK				| U| |
-|54		|MIBSPI3NENA			|						| U|free gpio |
+|54		|MIBSPI3NENA			|MRAM\_NCS1				| U| |
 |55		|MIBSPI3NCS[0]			|MRAM\_NCS0				| U| |
 |56		|VSS					|						|  | |
 |57		|VCC					|						|  | |
@@ -89,7 +89,7 @@ used as a GPIO.
 ||||||
 |73		|AD1IN[02]				|REV\_PWR				|  |\*Reverse RF TX Power |
 |74		|AD1IN[03]				|FWD\_PWR				|  |\*Forward RF TX Power |
-|75		|AD1IN[11] / AD2IN[11]	|						|  |free adc |
+|75		|AD1IN[11] / AD2IN[11]	|PWR\_FLAG\_LNA			|  |Power flag from the LNA current limiter |
 |76		|AD1IN[04]				|PWR\_FLAG\_SSPA		|  |Power flag from the PA current limiter |
 |77		|AD1IN[12] / AD2IN[12]	|						|  |+5V power measure, linear from 0-2.5V |
 |78		|AD1IN[05]				|						|  |free adc |

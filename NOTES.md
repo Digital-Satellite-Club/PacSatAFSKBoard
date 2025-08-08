@@ -22,16 +22,12 @@ Burns knows.  If one of the processors goes bad, is there a way to
 just run with one processor?
 
 Do steel RF shields affect the inductors under or around them?  Is
-aluminum better?
+aluminum better?  - No one was sure, maybe it's non-magnetic steel?
+We will just have to try it out.
 
 Is the output filter on TX enough?  It's >50db at 800MHz and 1.6GHz.
 You get some filtering from the impedance matching network, too.
-
-The LNA doesn't have a current limiter on it.  It's best to power it
-with +5V (it will work on +3.3V, but it doesn't perform as well).  You
-don't want to put it on the PA power lines, as you may want to power
-off the PA while still receiving.  Maybe another current limiter is in
-order?  Yes
+ - Need to measure and see.
 
 There's a note in the schematic about biasing the 5043 inputs, but I
 can't find any info on that.  It's on the RF Input sheet.  Need to
@@ -53,8 +49,8 @@ ohm resistor?  I can't find anything in the datasheet or errata about
 that, it always shows it disconnected when not used. - May or may not
 be necessary.
 
-You could use this on one of the receive AX5043s ANTP1 port as an
-alternate transmitter.
+You could use one of the receive AX5043s ANTP1 port as an alternate
+transmitter.
 
 What UFL connectors can be removed?
 
@@ -74,10 +70,6 @@ inductance and capacitance and reduce size.  And perhaps don't use
 handsolder, as the pads are larger and thus have more
 capacitance/inductance.  Maybe 0402 parts on the rest of the board to
 get more space.
-
-Add 3 more MRAM parts.
-
-Replace unobtanium parts (if any).
 
 Figure out temperature ratings on all parts and get as many to be 105C
 or better as possible.  These outliers at the moment are:
@@ -332,6 +324,14 @@ and UART2 (LIN) should go to the PC104, I think.  More info: the LIN
 bus requires special hardware, it's not just a serial connection.
 Yes, put a connector on there so the UART1 pins are available, maybe
 run to the PC104, too.
+
+The LNA doesn't have a current limiter on it.  It's best to power it
+with +5V (it will work on +3.3V, but it doesn't perform as well).  You
+don't want to put it on the PA power lines, as you may want to power
+off the PA while still receiving.  Maybe another current limiter is in
+order?  Yes
+
+Add 3 more MRAM parts.
 
 # Not going to do
 
@@ -720,7 +720,7 @@ like the specs were misinterpreted for the CDCLVC1106, the power given
 on the graph was per pin, so it would really be around 20ma, the same
 as given for the LMK1C1106A.
 
-## 2025-08-05
+## 2025-08-07
 
 Increase the size of the Vbat capacitor on the RTC and do not use the
 VCC one, just do a normal decoupling cap there.
@@ -733,3 +733,7 @@ system to tell which CPU was which, not relevant here.
 
 Add a local connector to UART1 to make it easier to plug in an
 external connector.  Still left it on the PC104 along with UART2.
+
+Add a power limiter for the LNA.
+
+Add 3 more MRAM parts.

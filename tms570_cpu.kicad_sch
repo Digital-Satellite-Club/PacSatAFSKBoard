@@ -1255,7 +1255,7 @@
 					)
 				)
 			)
-			(property "Footprint" "LocalFootprints:CON3_1X3_TU_HTS_SAI"
+			(property "Footprint" "PacSatDev_misc:CON3_1X3_TU_HTS_SAI"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5465,10 +5465,6 @@
 		(uuid "019a67e5-b8d3-44ba-b278-a06776cad51e")
 	)
 	(no_connect
-		(at 281.94 175.26)
-		(uuid "0375fb41-fe65-41e3-9aaa-ffcfcdf5cd78")
-	)
-	(no_connect
 		(at 281.94 124.46)
 		(uuid "07880c0d-699d-499f-95e6-95229309d935")
 	)
@@ -5479,14 +5475,6 @@
 	(no_connect
 		(at 250.19 204.47)
 		(uuid "20be2340-f2a4-47fb-8618-fa833b959663")
-	)
-	(no_connect
-		(at 281.94 182.88)
-		(uuid "35e35e7e-6de7-44ea-b1b4-b1ac7a346a2c")
-	)
-	(no_connect
-		(at 281.94 139.7)
-		(uuid "58ec26f6-0bbd-4ba1-a9bf-f748d020f893")
 	)
 	(no_connect
 		(at 227.33 72.39)
@@ -5543,10 +5531,6 @@
 	(no_connect
 		(at 217.17 204.47)
 		(uuid "cf5ce3db-dea8-41e3-b08f-4b66074efb90")
-	)
-	(no_connect
-		(at 255.27 72.39)
-		(uuid "db34f631-e3e1-48dc-87ae-9e9db172de7b")
 	)
 	(no_connect
 		(at 149.86 121.92)
@@ -6456,6 +6440,16 @@
 	)
 	(wire
 		(pts
+			(xy 281.94 175.26) (xy 292.1 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4327eb50-f140-493b-a571-fe4e90d76cfa")
+	)
+	(wire
+		(pts
 			(xy 281.94 134.62) (xy 285.75 134.62)
 		)
 		(stroke
@@ -7316,6 +7310,16 @@
 	)
 	(wire
 		(pts
+			(xy 281.94 182.88) (xy 303.53 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84569ad5-1a71-453a-99d7-0a8969a30208")
+	)
+	(wire
+		(pts
 			(xy 138.43 69.85) (xy 132.08 69.85)
 		)
 		(stroke
@@ -7363,6 +7367,16 @@
 			(type default)
 		)
 		(uuid "87e20c9d-35ec-4987-888c-ddaa34a024eb")
+	)
+	(wire
+		(pts
+			(xy 281.94 139.7) (xy 293.37 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87edd3fc-9317-4f6e-90f2-84c38095e0cb")
 	)
 	(wire
 		(pts
@@ -8033,6 +8047,16 @@
 			(type default)
 		)
 		(uuid "be5a595f-9902-4dce-9064-632c58f62c07")
+	)
+	(wire
+		(pts
+			(xy 255.27 68.58) (xy 255.27 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bece24e2-e9ba-4bed-8a4b-8bdfca006c6d")
 	)
 	(wire
 		(pts
@@ -9052,6 +9076,28 @@
 			)
 		)
 	)
+	(global_label "MRAM_NCS1"
+		(shape input)
+		(at 293.37 139.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "102727ba-6c02-4a10-b0c0-b7ccd762479e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 309.665 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "AX5043_SEL2_N"
 		(shape input)
 		(at 214.63 59.69 90)
@@ -9136,6 +9182,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MRAM_NCS3"
+		(shape input)
+		(at 303.53 182.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "1c1e7535-9f68-45e5-a452-418dd6f23daf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 319.825 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -10108,6 +10176,28 @@
 			)
 		)
 	)
+	(global_label "MRAM_NCS2"
+		(shape input)
+		(at 292.1 175.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "baf9633b-01dc-458a-a0a0-2aeddddefe9a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 308.395 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MRAM_NCS0"
 		(shape input)
 		(at 293.37 137.16 0)
@@ -10236,6 +10326,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PWR_FLAG_LNA"
+		(shape input)
+		(at 255.27 68.58 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "e4c15121-fa11-4709-a177-e28496f8c387")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 255.27 49.1644 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -16094,7 +16206,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LocalFootprints:CON3_1X3_TU_HTS_SAI"
+		(property "Footprint" "PacSatDev_misc:CON3_1X3_TU_HTS_SAI"
 			(at 300.99 190.5 0)
 			(effects
 				(font
