@@ -9,23 +9,19 @@ some point.
 
 # TODO
 
-Why are there 4.7K resistors on the power inputs to the RTC?  And is a
-diode needed on the VCC connection?  The diode on VBAT I can
-understand, I think.  Also, VBAT voltage will be above VCC.  That
-seems to be ok according to the data sheet, I think.  Also, maybe it
-would be better to stick a big capacitor on VBAT.  A 220uF capacitor
-would last around 94 hours at 5V, or 61 hours at 3.3v, by my
-calculations.  That's the MAX31331, which uses 65nA on battery, and
-there will be leakage in the capacitor (and diode if not trickle
-charging) that will probably shorten the time.
-
 The PC104 connector is actually two connectors, a 64-pin (4x16) one
 and a 40 pin one (4x10).  Need to figure out how to represent that.
 
 The 3.8K resistor on HW\_POWER\_OFF\_N is a strange value.  Can it be
-a more normal 4.7K or 10K?
+a more normal 4.7K or 10K?  Yes
 
-What does the HW SENSE (Pin 6 on CPU) do?
+Add more vias around the ground areas in RF.
+
+Figure out what happens when the two lockstep processors lose sync.
+Burns knows.  If one of the processors goes bad, is there a way to
+just run with one processor?
+
+What does the HW SENSE (Pin 6 on CPU) do? - Get rid of it
 
 Do steel RF shields affect the inductors under or around them?  Is
 aluminum better?
@@ -37,29 +33,35 @@ The LNA doesn't have a current limiter on it.  It's best to power it
 with +5V (it will work on +3.3V, but it doesn't perform as well).  You
 don't want to put it on the PA power lines, as you may want to power
 off the PA while still receiving.  Maybe another current limiter is in
-order?
+order?  Yes
 
 There's a note in the schematic about biasing the 5043 inputs, but I
 can't find any info on that.  It's on the RF Input sheet.  Need to
 figure out if that's something that needs to be done.  I don't really
-understand the comment, though.
+understand the comment, though. - The comment was from an app note
+that Bob read that the inputs on the 5043 apparently work better if
+biased to about 1V.  He can't find the app note any more.
 
 The RX input filter can probably do the impedance adjustment for the
 LNA, but I'm not sure how to calculate that.  There's an impedance
 matching circuit in there now, removing it would save two parts.
 
 Probably remove the L1/L2 inductor on the AX5043s and replace them
-with a short.  I don't think we will use them.
+with a short.  I don't think we will use them. - Needed for 2M to
+work, need to get the inductor value.
 
 Is there a reason the ANTP1 output of the AX5043 is connected to a 50
 ohm resistor?  I can't find anything in the datasheet or errata about
-that, it always shows it disconnected when not used.
+that, it always shows it disconnected when not used. - May or may not
+be necessary.  You could use this on one of the receive ports as an
+alternate transmitter.
 
 What UFL connectors can be removed?
 
 Do we need all those wire holes?  A few I can understand, for powering
 the board on the bench, but there are a bunch of them, some with just
-grounds.  Need to figure out their purpose.
+grounds.  Need to figure out their purpose. - Used for scope clips.
+Need to add a few more.
 
 Does it make sense to wire the UARTs to the PC104?  If so, do we need
 two of them on the PC104?  Shouldn't one go to a separate connector
@@ -68,6 +70,8 @@ supports "Local Interconnect standard 2.0" which is probably better
 for an interconnect.  So UART1 (SCI) should go to the local connector
 and UART2 (LIN) should go to the PC104, I think.  More info: the LIN
 bus requires special hardware, it's not just a serial connection.
+Yes, put a connector on there so the UART1 pins are available, maybe
+run to the PC104, too.
 
 Figure out what all the PC104 pins are supposed to do and document
 them.
@@ -80,6 +84,8 @@ inductance and capacitance and reduce size.  And perhaps don't use
 handsolder, as the pads are larger and thus have more
 capacitance/inductance.  Maybe 0402 parts on the rest of the board to
 get more space.
+
+Add 3 more MRAM parts.
 
 Replace unobtanium parts (if any).
 
@@ -309,6 +315,21 @@ processor is driving 3V on the line.  If it is an issue, this could be
 fixed easily with a FET.
 
 Maybe add ferrite beads to the AX5043s' power inputs?
+
+Why are there 4.7K resistors on the power inputs to the RTC?  And is a
+diode needed on the VCC connection?  The diode on VBAT I can
+understand, I think.  Also, VBAT voltage will be above VCC.  That
+seems to be ok according to the data sheet, I think.  Also, maybe it
+would be better to stick a big capacitor on VBAT.  A 220uF capacitor
+would last around 94 hours at 5V, or 61 hours at 3.3v, by my
+calculations.  That's the MAX31331, which uses 65nA on battery, and
+there will be leakage in the capacitor (and diode if not trickle
+charging) that will probably shorten the time. - Rework this to
+increase the size of the Vbat capacitor and not use the VCC one, just
+do a normal decoupling cap there.
+
+Move the RTC away from the power conversion section to avoid it
+getting too hot.
 
 # Not going to do
 
@@ -673,7 +694,7 @@ TMS570 data sheet, that pin should not be connected to any other
 ground.  I don't think it matters, it's only for crystals, but it
 should probably be left floating.
 
-## 2025-08-04
+## 2025-08-05
 
 Fixed some part values, used 4.1p style, not 4p1.
 
@@ -696,3 +717,11 @@ compatible.  Looking at the power usage, it's hard to tell.  It looks
 like the specs were misinterpreted for the CDCLVC1106, the power given
 on the graph was per pin, so it would really be around 20ma, the same
 as given for the LMK1C1106A.
+
+## 2025-08-05
+
+Increase the size of the Vbat capacitor on the RTC and do not use the
+VCC one, just do a normal decoupling cap there.
+
+Move the RTC to the other side of the board to keep it away from
+things generating heat.

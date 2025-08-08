@@ -2408,16 +2408,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 146.05) (xy 196.85 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6db07529-486f-4627-9470-d791567040fe")
-	)
-	(wire
-		(pts
 			(xy 172.72 60.96) (xy 162.56 60.96)
 		)
 		(stroke
@@ -2468,7 +2458,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 146.05) (xy 176.53 146.05)
+			(xy 171.45 146.05) (xy 195.58 146.05)
 		)
 		(stroke
 			(width 0)
@@ -2628,7 +2618,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 146.05) (xy 171.45 152.4)
+			(xy 171.45 146.05) (xy 171.45 154.94)
 		)
 		(stroke
 			(width 0)
@@ -2878,7 +2868,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 166.37) (xy 171.45 160.02)
+			(xy 171.45 166.37) (xy 171.45 162.56)
 		)
 		(stroke
 			(width 0)
@@ -2998,7 +2988,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 146.05) (xy 223.52 138.43)
+			(xy 195.58 146.05) (xy 195.58 138.43)
 		)
 		(stroke
 			(width 0)
@@ -3065,16 +3055,6 @@
 			(type default)
 		)
 		(uuid "f9b5c963-8b49-4048-97c1-991068da91b7")
-	)
-	(wire
-		(pts
-			(xy 204.47 146.05) (xy 223.52 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9d789a5-73fd-475a-bbe8-ad2fb53f2ba9")
 	)
 	(wire
 		(pts
@@ -3365,7 +3345,7 @@
 				)
 			)
 		)
-		(property "Value" "22u"
+		(property "Value" "47u 10V"
 			(at 160.02 153.67 90)
 			(effects
 				(font
@@ -3373,7 +3353,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 157.1752 160.02 0)
 			(effects
 				(font
@@ -4409,73 +4389,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 180.34 146.05 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6ea26f96-696a-4f7d-81cc-f01bc13d8d81")
-		(property "Reference" "R47"
-			(at 179.07 143.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7K"
-			(at 185.42 143.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 180.34 147.828 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 180.34 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 180.34 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5b944c0d-725b-4975-98a1-812877ea2c6b")
-		)
-		(pin "2"
-			(uuid "d6042078-480c-4460-ab30-d6fe53b293cc")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "R47")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PACSAT_ICs:MAX31331")
 		(at 110.49 154.94 0)
 		(unit 1)
@@ -4766,7 +4679,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 171.45 156.21 0)
+		(at 171.45 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4774,15 +4687,15 @@
 		(dnp no)
 		(uuid "a94a21c5-f42f-44c5-9a95-39d8687b745e")
 		(property "Reference" "C44"
-			(at 168.275 160.655 90)
+			(at 168.275 163.195 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "22u"
-			(at 175.26 153.67 90)
+		(property "Value" ".1u"
+			(at 175.26 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4790,7 +4703,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 172.4152 160.02 0)
+			(at 172.4152 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4799,7 +4712,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 171.45 156.21 0)
+			(at 171.45 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4807,7 +4720,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 171.45 156.21 0)
+			(at 171.45 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4957,91 +4870,6 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
 					(reference "C43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N914")
-		(at 200.66 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b506ff18-8e98-4525-9e4e-5fa841971312")
-		(property "Reference" "D6"
-			(at 200.66 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RB521CS30L,315"
-			(at 200.66 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-882"
-			(at 200.66 150.495 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/85622/1n914.pdf"
-			(at 200.66 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 200.66 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 200.66 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 200.66 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e60bc562-1f49-4c11-aaf0-880c9ebd9c43")
-		)
-		(pin "2"
-			(uuid "516e4d7e-9b41-493c-8a95-dffe0762928c")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -5394,7 +5222,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 223.52 138.43 0)
+		(at 195.58 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5403,7 +5231,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd04bedf-03f6-4342-8428-01f8e884b860")
 		(property "Reference" "#PWR0113"
-			(at 223.52 142.24 0)
+			(at 195.58 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5412,7 +5240,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 223.52 134.62 0)
+			(at 195.58 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5420,7 +5248,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 138.43 0)
+			(at 195.58 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5429,7 +5257,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 138.43 0)
+			(at 195.58 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5438,7 +5266,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 223.52 138.43 0)
+			(at 195.58 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
