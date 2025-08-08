@@ -12,11 +12,6 @@ some point.
 The PC104 connector is actually two connectors, a 64-pin (4x16) one
 and a 40 pin one (4x10).  Need to figure out how to represent that.
 
-The 3.8K resistor on HW\_POWER\_OFF\_N is a strange value.  Can it be
-a more normal 4.7K or 10K?  Yes
-
-Add more vias around the ground areas in RF.
-
 Figure out what happens when the two lockstep processors lose sync.
 Burns knows.  If one of the processors goes bad, is there a way to
 just run with one processor?
@@ -332,6 +327,11 @@ Do we need all those wire holes?  A few I can understand, for powering
 the board on the bench, but there are a bunch of them, some with just
 grounds.  Need to figure out their purpose. - Used for scope clips.
 Need to add a few more.
+
+The 3.8K resistor on HW\_POWER\_OFF\_N is a strange value.  Can it be
+a more normal 4.7K or 10K?  Yes
+
+Add more vias around the ground areas in RF.
 
 # Not going to do
 
@@ -738,7 +738,7 @@ Add a power limiter for the LNA.
 
 Add 3 more MRAM parts.
 
-## 2025-08-07
+## 2025-08-08
 
 Added a series termination on the CPU clock.
 
@@ -749,3 +749,7 @@ a board stack.  This required moving some things around, but no big
 deal.
 
 Add some wire holes around the LNA and PA.
+
+Change the 3.8K resistor on HW\_POWER\_OFF\_N to a more normal 4.7K.
+
+Sprinkle vias all over the coplanar areas.

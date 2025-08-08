@@ -9571,7 +9571,7 @@
 		(dnp no)
 		(uuid "1d1e9310-6cb2-4b8e-afbf-b181b74181c8")
 		(property "Reference" "R27"
-			(at 63.5 104.14 90)
+			(at 64.008 103.632 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9579,8 +9579,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3.8K"
-			(at 68.58 104.14 90)
+		(property "Value" "4.7K"
+			(at 68.326 103.378 90)
 			(effects
 				(font
 					(size 1.27 1.27)
