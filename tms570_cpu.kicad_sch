@@ -4530,17 +4530,6 @@
 		)
 		(uuid "aa8bb1cd-420d-4df5-a59a-57adac563a94")
 	)
-	(text "HW\nSENSE"
-		(exclude_from_sim no)
-		(at 184.15 187.325 90)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left bottom)
-		)
-		(uuid "c6146c6e-1756-4d44-93be-1608a1deeefd")
-	)
 	(text "0"
 		(exclude_from_sim no)
 		(at 325.12 30.48 0)
@@ -5002,6 +4991,10 @@
 	(no_connect
 		(at 281.94 127)
 		(uuid "71e6d73b-fad1-4496-8fcb-ee741d66d4b3")
+	)
+	(no_connect
+		(at 184.15 204.47)
+		(uuid "73b42538-d333-4191-ac43-83f9dd878cc0")
 	)
 	(no_connect
 		(at 149.86 144.78)
@@ -6735,16 +6728,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 213.36) (xy 184.15 214.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "830d56bc-d633-4475-98ce-9501468ee4d1")
-	)
-	(wire
-		(pts
 			(xy 140.97 162.56) (xy 140.97 170.18)
 		)
 		(stroke
@@ -7852,16 +7835,6 @@
 			(type default)
 		)
 		(uuid "dbd4f42f-a365-4a67-9c1d-8ea992554571")
-	)
-	(wire
-		(pts
-			(xy 184.15 204.47) (xy 184.15 205.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbdde742-a524-4997-b4be-ae3c6f548f19")
 	)
 	(wire
 		(pts
@@ -12802,70 +12775,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 184.15 214.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005d71432c")
-		(property "Reference" "#PWR025"
-			(at 184.15 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 186.69 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 184.15 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 184.15 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 184.15 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e0be45b2-ef68-456c-b26e-300386b4e00c")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/adf61ae3-df77-4e04-8bda-b4049a36fcf4"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 309.88 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14368,73 +14277,6 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/adf61ae3-df77-4e04-8bda-b4049a36fcf4"
 					(reference "C22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 184.15 209.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "39670ebd-a92e-4458-851b-1cfc3166fc9d")
-		(property "Reference" "R9"
-			(at 186.69 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3k3"
-			(at 186.69 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 182.372 209.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 184.15 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c4aa74be-501b-4f02-bc69-fc6d38f14772")
-		)
-		(pin "2"
-			(uuid "0799fb28-5961-4b23-ae43-b9b36cbfda00")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/adf61ae3-df77-4e04-8bda-b4049a36fcf4"
-					(reference "R9")
 					(unit 1)
 				)
 			)

@@ -21,8 +21,6 @@ Figure out what happens when the two lockstep processors lose sync.
 Burns knows.  If one of the processors goes bad, is there a way to
 just run with one processor?
 
-What does the HW SENSE (Pin 6 on CPU) do? - Get rid of it
-
 Do steel RF shields affect the inductors under or around them?  Is
 aluminum better?
 
@@ -53,7 +51,9 @@ work, need to get the inductor value.
 Is there a reason the ANTP1 output of the AX5043 is connected to a 50
 ohm resistor?  I can't find anything in the datasheet or errata about
 that, it always shows it disconnected when not used. - May or may not
-be necessary.  You could use this on one of the receive ports as an
+be necessary.
+
+You could use this on one of the receive AX5043s ANTP1 port as an
 alternate transmitter.
 
 What UFL connectors can be removed?
@@ -330,6 +330,8 @@ do a normal decoupling cap there.
 
 Move the RTC away from the power conversion section to avoid it
 getting too hot.
+
+What does the HW\_SENSE (Pin 6 on CPU) do? - Get rid of it
 
 # Not going to do
 
@@ -725,3 +727,6 @@ VCC one, just do a normal decoupling cap there.
 
 Move the RTC to the other side of the board to keep it away from
 things generating heat.
+
+Remove the HW\_SENSE (Pin 6 on CPU) line.  It was used on a dual CPU
+system to tell which CPU was which, not relevant here.
