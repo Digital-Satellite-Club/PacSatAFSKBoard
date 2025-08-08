@@ -63,16 +63,6 @@ the board on the bench, but there are a bunch of them, some with just
 grounds.  Need to figure out their purpose. - Used for scope clips.
 Need to add a few more.
 
-Does it make sense to wire the UARTs to the PC104?  If so, do we need
-two of them on the PC104?  Shouldn't one go to a separate connector
-somewhere?  If so, which one?  UART1 is a standard UART, UART2
-supports "Local Interconnect standard 2.0" which is probably better
-for an interconnect.  So UART1 (SCI) should go to the local connector
-and UART2 (LIN) should go to the PC104, I think.  More info: the LIN
-bus requires special hardware, it's not just a serial connection.
-Yes, put a connector on there so the UART1 pins are available, maybe
-run to the PC104, too.
-
 Figure out what all the PC104 pins are supposed to do and document
 them.
 
@@ -332,6 +322,16 @@ Move the RTC away from the power conversion section to avoid it
 getting too hot.
 
 What does the HW\_SENSE (Pin 6 on CPU) do? - Get rid of it
+
+Does it make sense to wire the UARTs to the PC104?  If so, do we need
+two of them on the PC104?  Shouldn't one go to a separate connector
+somewhere?  If so, which one?  UART1 is a standard UART, UART2
+supports "Local Interconnect standard 2.0" which is probably better
+for an interconnect.  So UART1 (SCI) should go to the local connector
+and UART2 (LIN) should go to the PC104, I think.  More info: the LIN
+bus requires special hardware, it's not just a serial connection.
+Yes, put a connector on there so the UART1 pins are available, maybe
+run to the PC104, too.
 
 # Not going to do
 
@@ -730,3 +730,6 @@ things generating heat.
 
 Remove the HW\_SENSE (Pin 6 on CPU) line.  It was used on a dual CPU
 system to tell which CPU was which, not relevant here.
+
+Add a local connector to UART1 to make it easier to plug in an
+external connector.  Still left it on the PC104 along with UART2.
