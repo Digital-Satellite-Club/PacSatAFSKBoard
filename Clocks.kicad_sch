@@ -1268,6 +1268,16 @@
 		)
 		(uuid "4ff5bba1-3e05-4bf0-852a-0da09c96ce4a")
 	)
+	(text "AX5043s have capacitive termination\nat the end of the clocks per their\ndata sheet.  Only need series\ntermination on the CPU clock."
+		(exclude_from_sim no)
+		(at 248.412 134.874 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "b1c36ff1-3be1-4535-8dd0-ddd0af091156")
+	)
 	(text "16 MHz"
 		(exclude_from_sim no)
 		(at 162.56 114.3 0)
@@ -1281,7 +1291,7 @@
 	)
 	(text "Idd = 20mA"
 		(exclude_from_sim no)
-		(at 228.6 132.08 0)
+		(at 195.58 131.826 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1409,6 +1419,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 119.38) (xy 228.6 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "140c28c2-fdd2-4801-9086-3a8a45eae650")
+	)
+	(wire
+		(pts
 			(xy 163.83 106.68) (xy 203.2 106.68)
 		)
 		(stroke
@@ -1486,6 +1506,16 @@
 			(type default)
 		)
 		(uuid "353c68e8-d033-4b7a-beb2-242c06a346bc")
+	)
+	(wire
+		(pts
+			(xy 242.57 123.19) (xy 246.38 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43f21707-840e-4a2b-8f01-63d7c4a8daa8")
 	)
 	(wire
 		(pts
@@ -1619,7 +1649,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 119.38) (xy 246.38 119.38)
+			(xy 233.68 123.19) (xy 234.95 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1696,6 +1726,16 @@
 			(type default)
 		)
 		(uuid "9888298d-e3c0-4922-a691-483bc08415c1")
+	)
+	(wire
+		(pts
+			(xy 233.68 123.19) (xy 233.68 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6aa3e3a-a5a3-4f36-b068-05fbbe7ab2be")
 	)
 	(wire
 		(pts
@@ -1939,7 +1979,7 @@
 	)
 	(global_label "Clock_CPU"
 		(shape input)
-		(at 246.38 119.38 0)
+		(at 246.38 123.19 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1949,7 +1989,7 @@
 		)
 		(uuid "f08f0a25-80ba-4378-b2d6-6d1c0393d3f2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.2237 119.38 0)
+			(at 261.2237 123.19 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -2418,6 +2458,73 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/a735fef7-c3fa-4339-b3a6-fbce810c3c4b"
 					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 238.76 123.19 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53aa987e-fdd3-4ab4-b2d0-c00d625f0edd")
+		(property "Reference" "R56"
+			(at 241.3 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33"
+			(at 240.538 120.904 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 238.76 124.968 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 238.76 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1c08e802-0a6f-4b45-b59f-f59d87daa31a")
+		)
+		(pin "2"
+			(uuid "417cd303-87a8-4382-a42c-4e5f865cea31")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/a735fef7-c3fa-4339-b3a6-fbce810c3c4b"
+					(reference "R56")
 					(unit 1)
 				)
 			)

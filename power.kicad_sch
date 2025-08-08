@@ -2771,17 +2771,6 @@
 		)
 		(uuid "859b63cb-b6d8-475d-a79f-0ca136bc6db1")
 	)
-	(text "= 602mA limit"
-		(exclude_from_sim no)
-		(at 216.535 245.11 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "85e4c7fa-f92a-49c1-95b1-be26bdfcbc0d")
-	)
 	(text "FIXME: DETERMINE REAL-WORLD LOAD AND MARGIN"
 		(exclude_from_sim no)
 		(at 294.64 123.825 0)
@@ -2802,6 +2791,17 @@
 			)
 		)
 		(uuid "aee1a62c-003f-4235-a487-406ca5e5db43")
+	)
+	(text "= 200mA limit"
+		(exclude_from_sim no)
+		(at 216.535 245.11 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb7462c4-39d0-4cf1-a298-90353069cdc5")
 	)
 	(text "= 602mA limit"
 		(exclude_from_sim no)
@@ -9906,73 +9906,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 212.09 241.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "23ccc8b2-fcd2-43dd-816c-d09a41c77b3b")
-		(property "Reference" "R9"
-			(at 214.63 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "45.8K 1%"
-			(at 214.63 241.935 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 210.312 241.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 212.09 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 212.09 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "19dec8c2-0e54-45e6-b6b7-970567627e6f")
-		)
-		(pin "2"
-			(uuid "f465fbd9-2af4-4e66-8e14-f5012759c20e")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 173.99 179.07 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10994,6 +10927,73 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "H9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 212.09 241.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "50146d21-8288-481a-8700-fe6a9d558d8c")
+		(property "Reference" "R9"
+			(at 214.63 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "143k 1%"
+			(at 214.63 241.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 210.312 241.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 212.09 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "71103ec0-f07a-44e3-acb9-a59fc911a2e0")
+		)
+		(pin "2"
+			(uuid "8e211414-17bc-4c98-b344-ec78e9e2cd81")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
+					(reference "R9")
 					(unit 1)
 				)
 			)

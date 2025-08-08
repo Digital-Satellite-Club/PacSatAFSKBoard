@@ -54,11 +54,6 @@ transmitter.
 
 What UFL connectors can be removed?
 
-Do we need all those wire holes?  A few I can understand, for powering
-the board on the bench, but there are a bunch of them, some with just
-grounds.  Need to figure out their purpose. - Used for scope clips.
-Need to add a few more.
-
 Figure out what all the PC104 pins are supposed to do and document
 them.
 
@@ -332,6 +327,11 @@ off the PA while still receiving.  Maybe another current limiter is in
 order?  Yes
 
 Add 3 more MRAM parts.
+
+Do we need all those wire holes?  A few I can understand, for powering
+the board on the bench, but there are a bunch of them, some with just
+grounds.  Need to figure out their purpose. - Used for scope clips.
+Need to add a few more.
 
 # Not going to do
 
@@ -737,3 +737,15 @@ external connector.  Still left it on the PC104 along with UART2.
 Add a power limiter for the LNA.
 
 Add 3 more MRAM parts.
+
+## 2025-08-07
+
+Added a series termination on the CPU clock.
+
+Modified the resistor on the LNA power limiter to be 200ma.
+
+Move the JTAG connector to the edge of the board so it's accessible in
+a board stack.  This required moving some things around, but no big
+deal.
+
+Add some wire holes around the LNA and PA.

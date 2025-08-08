@@ -1260,6 +1260,106 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H104"
+				(at 0.7874 6.0198 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "CUBESAT_MOUNT_HOLE"
+				(at 0.7874 3.3274 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "amsat_misc:CUBESAT_MOUNT_HOLE"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CUBESAT_MOUNT_HOLE_1_0_1"
+				(circle
+					(center 0 0)
+					(radius 0.5588)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CUBESAT_MOUNT_HOLE_1_1_1"
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PACSAT_DEV_misc:LFCG-490+"
 			(pin_names
 				(offset 0.254)
@@ -3248,6 +3348,12 @@
 		(uuid "b10aedc7-7d4a-4806-b200-71b829bcf942")
 	)
 	(junction
+		(at 267.97 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b144004a-20ed-4391-a9de-14a4b20d9847")
+	)
+	(junction
 		(at 147.32 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3420,6 +3526,16 @@
 			(type default)
 		)
 		(uuid "0b76b208-3dc0-47fa-8d99-932b94925e91")
+	)
+	(wire
+		(pts
+			(xy 252.73 114.3) (xy 267.97 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d4bc5bf-a4f4-416e-ae42-eeebd18de06c")
 	)
 	(wire
 		(pts
@@ -4030,6 +4146,16 @@
 			(type default)
 		)
 		(uuid "61ae94d8-e77c-4e21-9638-516f66376a2c")
+	)
+	(wire
+		(pts
+			(xy 252.73 105.41) (xy 267.97 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "620b4b01-904a-4477-8a6c-5230bf783ecd")
 	)
 	(wire
 		(pts
@@ -5153,6 +5279,16 @@
 	)
 	(wire
 		(pts
+			(xy 267.97 114.3) (xy 267.97 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f609acab-a07f-4996-8018-7cc1a606abdc")
+	)
+	(wire
+		(pts
 			(xy 398.78 100.33) (xy 405.13 100.33)
 		)
 		(stroke
@@ -5170,6 +5306,16 @@
 			(type default)
 		)
 		(uuid "f9020c2b-1034-430d-b52b-25dba7acf369")
+	)
+	(wire
+		(pts
+			(xy 267.97 105.41) (xy 267.97 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9038913-6748-4165-8d7f-feb78d711e92")
 	)
 	(wire
 		(pts
@@ -5350,6 +5496,69 @@
 				)
 				(justify left)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
+		(at 250.19 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00868da3-4fee-4274-9e68-3a2052d4a66e")
+		(property "Reference" "H20"
+			(at 250.9774 99.3902 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "Wire_Hole"
+			(at 250.9774 102.0826 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "PacSatDev_misc:Wire_Hole"
+			(at 250.19 105.41 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 105.41 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 250.19 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "55ca44b9-8d81-4a96-821b-23662739d263")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
+					(reference "H20")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -5678,6 +5887,70 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
 					(reference "#PWR0245")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 267.97 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "18e5e4bb-1364-4c82-aca4-f5a9df3f01dd")
+		(property "Reference" "#PWR0257"
+			(at 267.97 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 268.097 121.2342 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 267.97 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 267.97 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bd4adef1-a245-4bc4-9705-c29c5d2f303f")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
+					(reference "#PWR0257")
 					(unit 1)
 				)
 			)
@@ -6527,6 +6800,69 @@
 			(project ""
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
 					(reference "U29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
+		(at 250.19 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5df58551-b24c-4cd2-9c90-86f20600a41b")
+		(property "Reference" "H21"
+			(at 250.9774 108.2802 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "Wire_Hole"
+			(at 250.9774 110.9726 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "PacSatDev_misc:Wire_Hole"
+			(at 250.19 114.3 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 114.3 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 250.19 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2116a1eb-67f8-4e1c-967c-dfedd350d07c")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
+					(reference "H21")
 					(unit 1)
 				)
 			)
