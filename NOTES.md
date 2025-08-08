@@ -753,3 +753,6 @@ Add some wire holes around the LNA and PA.
 Change the 3.8K resistor on HW\_POWER\_OFF\_N to a more normal 4.7K.
 
 Sprinkle vias all over the coplanar areas.
+
+Reworked MRAM devices to put pull-ups on the WP and IO3 pins instead
+of direct ties to +5V.
