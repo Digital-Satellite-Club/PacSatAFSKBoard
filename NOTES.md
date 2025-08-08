@@ -9,13 +9,22 @@ some point.
 
 # TODO
 
+I found https://github.com/visionspacetec, specifically the VT104
+repositories that have a PC104 bus.
+
+After the MRAMs and second CAN bus, GPIOs are running short.  We have
+some options.  A 2-4 decoder could do this, but you would also need an
+enable (and thus pullups), and it would really only recover one GPIO.
+Another option is an I2C or SPI to GPIO device.
+
 Add enables to the CAN bus transceivers?  The chip does not really
 have an "off" state, it's a "standby" state where it's listening on
 the bus but cannot transmit.
 
 The PC104 connector is actually two connectors, a 64-pin (4x16) one
-and a 40 pin one (4x10).  I've actually more seen to 2x52 connectors
-more often on schematics.  Need to figure out how to represent that.
+and a 40 pin one (4x10) per the PC104 web side.  I've actually more
+seen two 2x52 connectors more often on schematics.  Need to figure out
+how to represent that.
 
 Figure out what happens when the two lockstep processors lose sync.
 Burns knows.  If one of the processors goes bad, is there a way to
