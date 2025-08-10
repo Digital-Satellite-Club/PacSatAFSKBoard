@@ -9,8 +9,44 @@ some point.
 
 # TODO
 
+According to the cubesat documents I have been reading, its best if
+parts are automotive certified, AEC-Q100 or AEC-Q200.  I assume this
+is so they can handle the shaking of the flight to space.  The
+passives can all be certified for this, I'm pretty sure.  The only
+connectors you have to worry about are the PC104 and the SMAs.  The
+chips and modules are a different story.
+
+Parts not automotive rated:
+
+| LMK1C1106A				| clock distributor |
+| O 16,0-JT22CT-A-P-3,3-LF	| oscillator |
+| AS1016204-0108X0PWAY		| MRAM |
+| MAX31331					| RTC |
+| TPSM828302ARDSR			| 1.2V power converter |
+| LP3962EMP-3.3/NOPB		| 3.3V power converter |
+| MP5073GG-P				| 1.2V current limiter |
+| MAX4995A					| 3.3V and 5V current limiter |
+| AX5043					| radio |
+| TQP7M9106					| PA |
+| LFCG-490+					| transmit filter |
+| QPL9547					| LNA |
+| RBP-140+					| receive filter |
+| AD4PS-1+					| RF power splitter |
+| Molex 73251-1153			| SMA connector |
+| ?							| PC104 connector (unknown if AEC) |
+
+Part that are automotive rated:
+
+| STWD100NYWY3F				| Hardware watchdog |
+| TCAN1044ADDFRQ1			| CAN bus interface |
+| TMS570LS0914PGE			| CPU |
+
+If lines on the PC104 bus are outputs, wouldn't they need to be open
+collector or such if they are driven by multiple boards?  I haven't
+been able to find much about the PC104 interface.
+
 I found https://github.com/visionspacetec, specifically the VT104
-repositories that have a PC104 bus.
+repositories that have a PC104 connector.
 
 After the MRAMs and second CAN bus, GPIOs are running short.  We have
 some options.  A 2-4 decoder could do this, but you would also need an
