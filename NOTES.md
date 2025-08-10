@@ -51,7 +51,9 @@ repositories that have a PC104 connector.
 After the MRAMs and second CAN bus, GPIOs are running short.  We have
 some options.  A 2-4 decoder could do this, but you would also need an
 enable (and thus pullups), and it would really only recover one GPIO.
-Another option is an I2C or SPI to GPIO device.
+Another option is an I2C or SPI to GPIO device.  The AX5043s each have
+5 pins that can be used for GPIOs, though that means if an AX5043
+fails you can't use those GPIOs.
 
 Add enables to the CAN bus transceivers?  The chip does not really
 have an "off" state, it's a "standby" state where it's listening on
@@ -95,7 +97,8 @@ that, it always shows it disconnected when not used. - May or may not
 be necessary.
 
 You could use one of the receive AX5043s ANTP1 port as an alternate
-transmitter.
+transmitter.  You could use the same PA or a different PA, either way
+a QPC1022 RF switch could handle the choice.
 
 What UFL connectors can be removed?
 
@@ -112,7 +115,7 @@ capacitance/inductance.  Maybe 0402 parts on the rest of the board to
 get more space.
 
 Figure out temperature ratings on all parts and get as many to be 105C
-or better as possible.  These outliers at the moment are:
+or better as possible.  The outliers at the moment are:
 
     * RTC.  Probably only the MCP7940NT-E/MS from Microchip is
 	  suitable, but it draws 20 times the standby power.
@@ -810,3 +813,8 @@ Reworked MRAM devices to put pull-ups on the WP and IO3 pins instead
 of direct ties to +3.3V.
 
 Add a second CAN bus for redundancy.
+
+## 2025-08-10
+
+Fix some values on the PA and rearrange a bit to get the inductors
+away from each other.
