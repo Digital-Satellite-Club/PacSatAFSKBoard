@@ -13,7 +13,7 @@ used as a GPIO.
 
 |Pin3	|CPU Pin Name			|Schematic Name			|G |Description |
 |----	|------------			|--------------			|--|-----------
-|1		|GIOB[3]				|GIOA\_3				|?D|PC104 Pin 14 |
+|1		|GIOB[3]				|OTHER\_FAULT\_N		|?D|Fault line from other board |
 |2		|GIOA[0]				|FCODE\_STROBE			|?D|PC104 Pin 56 |
 |3		|MIBSPI3NCS[3]			|I2C\_SCL				| U|RTC control (MAX31331TETB+) |
 |4		|MIBSPI3NCS[2]			|I2C\_SDA				| U|RTC control (MAX31331TETB+) |
@@ -21,14 +21,14 @@ used as a GPIO.
 |6		|N2HET1[11]				|						| D|free gpio |
 |7		|FLTP1					|						|  | |
 |8		|FLTP2					|						|  | |
-|9		|GIOA[2]				|GPIOA_2				|?D|PC104 Pin 15 |
+|9		|GIOA[2]				|OTHER\_PRESENCE		|?D|Presence line from other board |
 |10		|VCCIO					|						|  | |
 |11		|VSS					|						|  | |
 |12		|CAN3RX					|CAN\_A\_RX				| U|CAN bus transceiver |
 |13		|CAN3TX					|CAN\_A\_TX				| U|CAN bus transceiver |
 |14		|GIOA[5]				|AX5043\_IRQ\_RX4		|ID|Interrupt from AX5043 RX4 |
 |15		|N2HET1[22]				|ALERT\_SIGNAL			|?D|PC104 Pin 49 |
-|16		|GIOA[6]				|GIOA\_6				|?D|PC104 Pin 45 |
+|16		|GIOA[6]				|GIOA\_6				|?D|Active line from other board |
 |17		|VCC					|						|  | |
 |18		|OSCIN					|						|  | |
 |19		|Kelvin\_GND			|						|  | |
@@ -132,8 +132,8 @@ used as a GPIO.
 |114	|VCC					|						|  | |
 |115	|VSS					|						|  | |
 |116	|nRST					|\*Processor\_Reset		|  |Main reset pin for the processor |
-|117	|nERROR					|FAULT\_N				|  |PC104 PIN 19 |
-|118	|N2HET1[10]				|						| D|free gpio |
+|117	|nERROR					|FAULT\_N				|  |Output ERROR line from the processor |
+|118	|N2HET1[10]				|OTHER\_HW\_POWER\_OFF\_N| D|Power off other board |
 |119	|ECLK					|						| D|free gpio |
 |120	|VCCIO					|						|  | |
 |121	|VSS					|						|  | |
@@ -213,6 +213,40 @@ At full power out (+33dBm) this will result in about -7dBm of power
 from the coupler.  This was simulated with a transmission line in
 qucs.  The voltage for that can be calculated from the chip manual.
 
+# Active/Standby Configuration
+
+The boards supports having a mate board that is the same board with
+one resistor difference to differentiate between board 1 and board 2.
+The BOARD\_NUM line is used to tell which board you are.  This also
+selects values coming from the PC104.  The "other" board is the board
+you are not.  The lines on the PC104 are:
+
+- PRESENCEn\_N - This is used to tell if the other board is present
+  (even if it is powered down).  It will be high if not present and
+  low if present.
+  
+- FAULTn\_N - This is used to tell if the other board has had a fault
+  and is failing.  This board can take over processing at that point.
+  
+- ACTIVEn\_N - Used to tell which board is active.  The board that is
+  asserting its line thinks it is active.  If both boards assert this,
+  board 1 will be active and board 2 must deactivate.
+  
+- HW\_POWER\_OFFn\_N - Used to power the other board off.  It this
+  board thinks the other board is misbehaving, it can power off the
+  other board.
+
+The lines from the other board become OTHER\_PRESENCE\_N,
+OTHER\_FAULT\_N, OTHER\_ACTIVE\_N, and OTHER\_HW\_POWER\_OFF\_N on a
+board.  The lines for this board become PRESENCE\_N, FAULT\_N,
+ACTIVE\_N, and HW\_POWER\_OFF\_N.
+
+The active board may also be externally controlled.  If the
+EXTERN\_CONTROL line is pulled high, the board will assume that some
+other external entity will choose which board is active.  In this
+case, the ACTIVE\_N line becomes an input and the processor monitors
+that line to know if it should be active or not.
+
 # Power Control and Sequencing
 
 The power control on the board is fairly simple.  One power up, the
@@ -224,7 +258,7 @@ drain).  At that point the MP5073GG-P is also holding reset line low
 until it is enabled.
 
 The STWD100NYWY3F hardware watchdog will power up at that time, but
-the POWER\_ENABLE pin from it will be pulled high and should remain
+the <POWER\_ENABLE pin from it will be pulled high and should remain
 high for 1 second.
 
 The MP5073GG-P and MAX4495AAUT current limiting chips will start
