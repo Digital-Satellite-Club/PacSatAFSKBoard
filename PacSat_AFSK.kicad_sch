@@ -735,6 +735,48 @@
 		)
 	)
 	(sheet
+		(at 113.03 127)
+		(size 50.8 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4fa888af-703c-49ed-93bb-d56d2f02c470")
+		(property "Sheetname" "Active Standby Config"
+			(at 113.03 126.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "active_standby.kicad_sch"
+			(at 113.03 145.3646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 175.26 27.94)
 		(size 52.07 15.24)
 		(exclude_from_sim no)

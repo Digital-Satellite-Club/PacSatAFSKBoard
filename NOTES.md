@@ -48,6 +48,31 @@ been able to find much about the PC104 interface.
 I found https://github.com/visionspacetec, specifically the VT104
 repositories that have a PC104 connector.
 
+Figure out what all the PC104 pins are supposed to do and document
+them.
+
+You could use one of the receive AX5043s ANTP1 port as an alternate
+transmitter.  You could use the same PA or a different PA, either way
+a QPC1022 RF switch could handle the choice.  You could even have
+separate antennas.  But maybe instead of this design the board in a
+2-board set with the necessary circuitry to switch RF from one board
+to the other and activity from one board to the other, monitoring of
+error lines, automatic takeover on a failure, etc.  Would have to sync
+stored data between the two processors.
+
+Figure out where the external RF connections need to be so the layout
+can be simplified around that.
+
+Figure out temperature ratings on all parts and get as many to be 105C
+or better as possible.  The outliers at the moment are:
+
+    * RTC.  Probably only the MCP7940NT-E/MS from Microchip is
+	  suitable, but it draws 20 times the standby power.
+    * AX5043 - Not another option available.
+	* RBP-140+ - Could replace the filter with discrete components.
+	* AD4PS+1 - Not sure about this one, perhaps three transformers
+	  could be used.
+
 After the MRAMs and second CAN bus, GPIOs are running short.  We have
 some options.  A 2-4 decoder could do this, but you would also need an
 enable (and thus pullups), and it would really only recover one GPIO.
@@ -65,8 +90,10 @@ seen two 2x52 connectors more often on schematics.  Need to figure out
 how to represent that.
 
 Figure out what happens when the two lockstep processors lose sync.
-Burns knows.  If one of the processors goes bad, is there a way to
-just run with one processor?
+If one of the processors goes bad, is there a way to just run with one
+processor?  - If there is a lockstep error, a software interrupt is
+generated and software must handle it.  The processors cannot run
+independently, they can only run in lockstep or in certain test modes.
 
 Do steel RF shields affect the inductors under or around them?  Is
 aluminum better?  - No one was sure, maybe it's non-magnetic steel?
@@ -96,33 +123,13 @@ ohm resistor?  I can't find anything in the datasheet or errata about
 that, it always shows it disconnected when not used. - May or may not
 be necessary.
 
-You could use one of the receive AX5043s ANTP1 port as an alternate
-transmitter.  You could use the same PA or a different PA, either way
-a QPC1022 RF switch could handle the choice.
-
 What UFL connectors can be removed?
-
-Figure out what all the PC104 pins are supposed to do and document
-them.
-
-Figure out where the external RF connections need to be so the layout
-can be simplified around that.
 
 Maybe switch to 0402 parts along the RF path to reduce stray
 inductance and capacitance and reduce size.  And perhaps don't use
 handsolder, as the pads are larger and thus have more
 capacitance/inductance.  Maybe 0402 parts on the rest of the board to
 get more space.
-
-Figure out temperature ratings on all parts and get as many to be 105C
-or better as possible.  The outliers at the moment are:
-
-    * RTC.  Probably only the MCP7940NT-E/MS from Microchip is
-	  suitable, but it draws 20 times the standby power.
-    * AX5043 - Not another option available.
-	* RBP-140+ - Could replace the filter with discrete components.
-	* AD4PS+1 - Not sure about this one, perhaps three transformers
-	  could be used.
 
 Determine current limiter values, probably need to build a board and
 measure.

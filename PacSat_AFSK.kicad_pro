@@ -957,6 +957,10 @@
     [
       "163b95be-82a7-4cd3-9077-48a01f79e25c",
       "PC104_IO"
+    ],
+    [
+      "4fa888af-703c-49ed-93bb-d56d2f02c470",
+      "Active Standby Config"
     ]
   ],
   "text_variables": {}
