@@ -837,3 +837,5 @@ Added support for active/standby boards in the hardware.
 ## 2025-08-13
 
 Change transmit power dissipation resistors to 2W.
+
+Moved ACTIVE\_N to a normal GPIO so it can be interrupt driven.

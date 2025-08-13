@@ -5477,6 +5477,10 @@
 		(uuid "20be2340-f2a4-47fb-8618-fa833b959663")
 	)
 	(no_connect
+		(at 184.15 204.47)
+		(uuid "28277552-7864-4728-bbfa-40e096a9a4e0")
+	)
+	(no_connect
 		(at 227.33 72.39)
 		(uuid "5adf2e31-e67a-4bd0-97e2-66e4118a2125")
 	)
@@ -6796,16 +6800,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 204.47) (xy 184.15 233.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5bd965dc-9ab2-45be-b93c-bf0ddb30e1ed")
-	)
-	(wire
-		(pts
 			(xy 99.06 111.76) (xy 99.06 116.84)
 		)
 		(stroke
@@ -6873,16 +6867,6 @@
 			(type default)
 		)
 		(uuid "61225d76-6171-4baf-a026-9601d09ee821")
-	)
-	(wire
-		(pts
-			(xy 127 157.48) (xy 149.86 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61b83f8b-8574-4e4c-92f4-2ffb511c8e42")
 	)
 	(wire
 		(pts
@@ -7703,6 +7687,16 @@
 			(type default)
 		)
 		(uuid "9dbc5aeb-d5ed-44b4-8415-4ee98ecd81af")
+	)
+	(wire
+		(pts
+			(xy 149.86 157.48) (xy 120.65 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dcd4d66-49df-453f-9fbc-fa6b3b9cc22a")
 	)
 	(wire
 		(pts
@@ -9750,28 +9744,6 @@
 			)
 		)
 	)
-	(global_label "ACTIVE_N"
-		(shape input)
-		(at 184.15 233.68 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right)
-		)
-		(uuid "60c5f330-f471-4127-9744-4f3fd44bf894")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 184.15 246.6368 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "MRAM_MISO"
 		(shape input)
 		(at 293.37 147.32 0)
@@ -9856,28 +9828,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GOIB_1"
-		(shape input)
-		(at 127 157.48 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right)
-		)
-		(uuid "770ce6e1-c81a-4731-b662-d1c6306cef8c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 116.3158 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -10450,6 +10400,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ACTIVE_N"
+		(shape input)
+		(at 120.65 157.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "ce9df69e-867f-4ec5-b4f3-a0b155a4af69")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 107.6932 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)

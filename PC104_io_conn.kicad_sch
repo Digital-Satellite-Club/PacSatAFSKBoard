@@ -2629,6 +2629,10 @@
 		(uuid "a1dfe911-7ab1-42f0-beae-1cc408fad43f")
 	)
 	(no_connect
+		(at 220.98 76.2)
+		(uuid "a315f573-6ce5-4c8b-8858-f669e02a7cb7")
+	)
+	(no_connect
 		(at 109.22 106.68)
 		(uuid "a64e81b2-f1d0-4fb7-851c-a444c534c7d5")
 	)
@@ -2769,16 +2773,6 @@
 			(type default)
 		)
 		(uuid "1e458181-5227-400c-b9c8-f5d6c069b5a3")
-	)
-	(wire
-		(pts
-			(xy 220.98 76.2) (xy 226.06 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24b558ab-ce8f-4a17-99f9-4c4072324e59")
 	)
 	(wire
 		(pts
@@ -3547,28 +3541,6 @@
 		(uuid "d638cc37-e3ac-4c65-813c-3d5db65a9bbf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 123.6646 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GOIB_1"
-		(shape input)
-		(at 226.06 76.2 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "e2bbde98-6eb4-406b-9794-808064fbb7a1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 236.7442 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)

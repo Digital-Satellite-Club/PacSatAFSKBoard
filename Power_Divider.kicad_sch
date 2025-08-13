@@ -3526,16 +3526,6 @@
 		)
 		(uuid "0066dc97-ea54-44e7-8da0-a88f39fd8fac")
 	)
-	(label "RF_Input"
-		(at 64.77 143.51 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "058c9bb7-26eb-4552-ba8e-b5cf01aa106f")
-	)
 	(global_label "RF_IN_SWITCH"
 		(shape input)
 		(at 45.72 143.51 180)
