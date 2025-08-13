@@ -59,7 +59,7 @@ pins.
 Probably switch the analog switches dealing with active standby with a
 set of zero ohm resistors.  That's a lot of resistors to switch,
 though.  Populating 8 of 16 total resistors, maybe more with the UART
-lines.
+lines.  But there are advantages to a completely passive solution.
 
 You could use one of the receive AX5043s ANTP1 port as an alternate
 transmitter.  You could use the same PA or a different PA, either way
@@ -853,3 +853,6 @@ Moved ACTIVE\_N to a normal GPIO so it can be interrupt driven.
 
 Add OTHER\_HW\_POWER\_N to a GPIO so in the externally driven
 active/standby case the other power state can be monitored.
+
+Added a test mode using the RF switches to shunt power from the
+transmitter to the receiver for an RF loopback test.

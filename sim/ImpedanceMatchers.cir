@@ -16,7 +16,7 @@ Vee vee 0 dc 0
 V1 ina 0 dc 0 AC 1 sin(1 0 440MEG 0 0 0)
 Rsrc ina in 50
 
-.if (1)
+.if (0)
 
 * TX PA input matcher
 L1     in   out  17n
@@ -27,7 +27,7 @@ Rout   out2  out1 1.87
 Cout   out1 0    9.6p
 
 .else
-.if (0)
+.if (1)
 
 * TX PA output matcher
 C1     in   out  130p
