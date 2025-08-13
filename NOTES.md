@@ -826,3 +826,7 @@ away from each other.
 ## 2025-08-12
 
 Added support for active/standby boards in the hardware.
+
+## 2025-08-13
+
+Change transmit power dissipation resistors to 2W.

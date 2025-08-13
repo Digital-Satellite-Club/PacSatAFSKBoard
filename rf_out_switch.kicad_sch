@@ -1644,8 +1644,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50"
-			(at 85.852 82.296 0)
+		(property "Value" "50R >=2W"
+			(at 78.74 76.708 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1653,7 +1653,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 79.502 81.28 90)
 			(effects
 				(font
@@ -2751,8 +2751,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50"
-			(at 197.612 111.506 0)
+		(property "Value" "50R >=2W"
+			(at 195.834 110.998 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2760,7 +2760,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 191.262 110.49 90)
 			(effects
 				(font
