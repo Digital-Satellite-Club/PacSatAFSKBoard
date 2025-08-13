@@ -825,6 +825,13 @@ away from each other.
 
 ## 2025-08-12
 
+Removed the version lines going to the PC104.  They get in the way and
+I can't imagine what use they would have.  They can be re-added if
+necessary.
+
+Moved things around at the bottom of the board to make room for the
+active/standby RF circuitry.
+
 Added support for active/standby boards in the hardware.
 
 ## 2025-08-13
