@@ -971,8 +971,12 @@
       "Active Standby Config"
     ],
     [
-      "b3c2a390-7cfd-4bda-a34a-5e43dff57412",
+      "26e0c845-9451-4c79-aef3-943c70af8ca9",
       "RF Output Switch"
+    ],
+    [
+      "64a91b23-a882-4658-bea9-c6c8274e2ac4",
+      "RF Input Switch"
     ]
   ],
   "text_variables": {}

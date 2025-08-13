@@ -923,48 +923,6 @@
 		)
 	)
 	(sheet
-		(at 113.03 158.75)
-		(size 50.8 19.05)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "b3c2a390-7cfd-4bda-a34a-5e43dff57412")
-		(property "Sheetname" "RF Output Switch"
-			(at 113.03 158.0384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "rf_out_switch.kicad_sch"
-			(at 113.03 178.3846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
-					(page "16")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 175.26 50.8)
 		(size 52.07 15.24)
 		(exclude_from_sim no)
