@@ -50,7 +50,16 @@ I found https://github.com/visionspacetec, specifically the VT104
 repositories that have a PC104 connector.
 
 Figure out what all the PC104 pins are supposed to do and document
-them.
+them.  The lines are listed in the ProcessorPins document.
+
+Figure out what to do with the UART pins on the PC104 when dealing
+with active/standby.  Really just figure out what to do with the UART
+pins.
+
+Probably switch the analog switches dealing with active standby with a
+set of zero ohm resistors.  That's a lot of resistors to switch,
+though.  Populating 8 of 16 total resistors, maybe more with the UART
+lines.
 
 You could use one of the receive AX5043s ANTP1 port as an alternate
 transmitter.  You could use the same PA or a different PA, either way

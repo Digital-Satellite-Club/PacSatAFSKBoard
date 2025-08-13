@@ -164,6 +164,49 @@ used as a GPIO.
 
 FIXME - Figure out what all the PC104 pins do.
 
+# PC104 Pins
+
+  - HW\_POWER\_OFF[12]\_N - Input to board, pulling this low causes the
+    power to be disabled on boardn.  boardn pulls this high with a 10K
+	resistor.  If driven, it should be open drain or open collector.
+	Be careful not to glitch this line.
+
+  - PRESENCE[12]\_N - The board is physically present.  This must be
+	pulled high by a 1M resistor on entity reading this value, it is
+	pulled low by a 10K resistor on boardn.
+	
+  - ACTIVE[12]\_N - boardn is asserting that it is active.  This is
+	pulled high on boardn and will be driven low by boardn when it is
+	active and not under external active/standby control.  When under
+	external active/standby control, this is an input that another
+	entity must pull low to cause the board to go active.
+	
+  - FAULT[12]\_N - Output from boardn, the processor is reporting an error.
+  
+  - PB\_ENABLE - 
+  
+  - ALERT\_SIGNAL - 
+  
+  - CMD\_MODE - 
+  
+  - ATTACHED - 
+  
+  - FCODE\_STROBE - 
+
+  - FCODE\_D3 - 
+
+  - FCODE\_D0 - 
+
+  - USB\_SUSPEND\_LOW - 
+  
+  - VSYS - +5V
+  
+  - GND
+  
+  - CAN[AB][+-] - CAN bus signals.
+  
+  - UART\_[TR]X[12] - UART pins.
+
 # \*Notes below
 
 Interrupts and GPIOs
@@ -358,42 +401,42 @@ state is not externally controlled.
 
 The boards will switch activity periodically to test the other board.
 
-PowerUp:
+  - PowerUp:
 
-  !OTHER\_PRESENCE\_N -> ActiveOtherBoardNotPresent
-  OTHER\_PRESENCE\_N && OTHER\_ACTIVE\_N -> Inactive
-  OTHER\_PRESENCE\_N && !OTHER\_ACTIVE\_N && !IAmBoard2 -> ActiveOtherBoardPresent
-  OTHER\_PRESENCE\_N && !OTHER\_ACTIVE\_N && IAmBoard2 -> InactiveWaitActivate
-    start timer
+    - !OTHER\_PRESENCE\_N -> ActiveOtherBoardNotPresent
+    - OTHER\_PRESENCE\_N && OTHER\_ACTIVE\_N -> Inactive
+    - OTHER\_PRESENCE\_N && !OTHER\_ACTIVE\_N && !IAmBoard2 -> ActiveOtherBoardPresent
+    - OTHER\_PRESENCE\_N && !OTHER\_ACTIVE\_N && IAmBoard2 -> InactiveWaitActivate
+      - start timer
 
-Inactive:
-  OTHER\_FAULT\_N -> ActiveOtherBoardPresent
-    power cycle other board.
-  !OTHER\_ACTIVE\_N -> ActiveOtherBoardPresent
-  !OTHER\_PRESENCE\_N -> ActiveOtherBoardNotPresent
-    log presence issue
+  - Inactive:
+    - OTHER\_FAULT\_N -> ActiveOtherBoardPresent
+      - power cycle other board.
+    - !OTHER\_ACTIVE\_N -> ActiveOtherBoardPresent
+    - !OTHER\_PRESENCE\_N -> ActiveOtherBoardNotPresent
+      - log presence issue
 
-InactiveWaitActivate:
-  OTHER\_FAULT\_N -> ActiveOtherBoardPresent
-    stop timer
-    power cycle other board.
-  OTHER\_ACTIVE\_N -> Inactive
-    stop timer
-  !OTHER\_ACTIVE\_N && timeout -> ActiveOtherBoardPresent
-  !OTHER\_PRESENCE\_N -> ActiveOtherBoardNotPresent
-    stop timer
-    log presence issue
+  - InactiveWaitActivate:
+    - OTHER\_FAULT\_N -> ActiveOtherBoardPresent
+      - stop timer
+      - power cycle other board.
+    - OTHER\_ACTIVE\_N -> Inactive
+      - stop timer
+    - !OTHER\_ACTIVE\_N && timeout -> ActiveOtherBoardPresent
+    - !OTHER\_PRESENCE\_N -> ActiveOtherBoardNotPresent
+      - stop timer
+      - log presence issue
 
-ActiveOtherBoardPresent:
-  OTHER\_FAULT\_N -> ActiveOtherBoardPresent
-    power cycle other board.
-  OTHER\_ACTIVE\_N -> Inactive
-  !OTHER\_PRESENCE\_N -> ActiveOtherBoardNotPresent
-    log presence issue
+  - ActiveOtherBoardPresent:
+    - OTHER\_FAULT\_N -> ActiveOtherBoardPresent
+      - power cycle other board.
+    - OTHER\_ACTIVE\_N -> Inactive
+    - !OTHER\_PRESENCE\_N -> ActiveOtherBoardNotPresent
+      - log presence issue
   
-ActiveOtherBoardNotPresent:
-  OTHER\_PRESENCE\_N -> ActiveOtherBoardPresent
-    log presence issue
+  - ActiveOtherBoardNotPresent:
+    - OTHER\_PRESENCE\_N -> ActiveOtherBoardPresent
+      - log presence issue
 
 Note that except for power up, transitions based on OTHER\_PRESENCE\_N
 should never happen.  These should be logged.
