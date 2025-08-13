@@ -75,7 +75,9 @@ some options.  A 2-4 decoder could do this, but you would also need an
 enable (and thus pullups), and it would really only recover one GPIO.
 Another option is an I2C or SPI to GPIO device.  The AX5043s each have
 5 pins that can be used for GPIOs, though that means if an AX5043
-fails you can't use those GPIOs.
+fails you can't use those GPIOs.  The interrupts from the AX5043s
+could be or-ed together, but you would have to scan all of them if you
+got an interrupt.
 
 Add enables to the CAN bus transceivers?  The chip does not really
 have an "off" state, it's a "standby" state where it's listening on
@@ -85,12 +87,6 @@ The PC104 connector is actually two connectors, a 64-pin (4x16) one
 and a 40 pin one (4x10) per the PC104 web side.  I've actually more
 seen two 2x52 connectors more often on schematics.  Need to figure out
 how to represent that.
-
-Figure out what happens when the two lockstep processors lose sync.
-If one of the processors goes bad, is there a way to just run with one
-processor?  - If there is a lockstep error, a software interrupt is
-generated and software must handle it.  The processors cannot run
-independently, they can only run in lockstep or in certain test modes.
 
 Do steel RF shields affect the inductors under or around them?  Is
 aluminum better?  - No one was sure, maybe it's non-magnetic steel?
@@ -391,6 +387,12 @@ a more normal 4.7K or 10K?  Yes
 Add more vias around the ground areas in RF.
 
 Probably add another CAN bus.
+
+Figure out what happens when the two lockstep processors lose sync.
+If one of the processors goes bad, is there a way to just run with one
+processor?  - If there is a lockstep error, a software interrupt is
+generated and software must handle it.  The processors cannot run
+independently, they can only run in lockstep or in certain test modes.
 
 # Not going to do
 
@@ -839,3 +841,6 @@ Added support for active/standby boards in the hardware.
 Change transmit power dissipation resistors to 2W.
 
 Moved ACTIVE\_N to a normal GPIO so it can be interrupt driven.
+
+Add OTHER\_HW\_POWER\_N to a GPIO so in the externally driven
+active/standby case the other power state can be monitored.

@@ -5477,10 +5477,6 @@
 		(uuid "20be2340-f2a4-47fb-8618-fa833b959663")
 	)
 	(no_connect
-		(at 184.15 204.47)
-		(uuid "28277552-7864-4728-bbfa-40e096a9a4e0")
-	)
-	(no_connect
 		(at 227.33 72.39)
 		(uuid "5adf2e31-e67a-4bd0-97e2-66e4118a2125")
 	)
@@ -7307,6 +7303,16 @@
 			(type default)
 		)
 		(uuid "833a11fa-3150-4a30-9390-5227be98c482")
+	)
+	(wire
+		(pts
+			(xy 184.15 204.47) (xy 184.15 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "838c10ac-8ec0-4be5-9372-f30f3a32da6a")
 	)
 	(wire
 		(pts
@@ -9828,6 +9834,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OTHER_HW_POWER_OFF_N"
+		(shape input)
+		(at 184.15 233.68 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "76497e5a-8be1-4f51-8243-7f7fd4ecc1f9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 265.2877 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)

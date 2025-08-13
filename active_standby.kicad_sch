@@ -1096,6 +1096,12 @@
 		(uuid "cca81986-5e6e-4546-a392-be98ae006844")
 	)
 	(junction
+		(at 130.81 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "160b8016-d1ed-4649-90cf-c8ecdb35d3ba")
+	)
+	(junction
 		(at 140.97 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1985,6 +1991,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 148.59) (xy 135.89 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f73abb79-fc1c-4f25-9842-b59f983a33cb")
+	)
+	(wire
+		(pts
 			(xy 69.85 135.89) (xy 62.23 135.89)
 		)
 		(stroke
@@ -2284,6 +2300,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OTHER_HW_POWER_OFF_N"
+		(shape input)
+		(at 135.89 148.59 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "8b214da6-f1b2-4691-a76d-ac9526081d9b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.4977 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)

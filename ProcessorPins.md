@@ -13,22 +13,22 @@ used as a GPIO.
 
 |Pin3	|CPU Pin Name			|Schematic Name			|G |Description |
 |----	|------------			|--------------			|--|-----------
-|1		|GIOB[3]				|OTHER\_FAULT\_N		|?D|Fault line from other board |
+|1		|GIOB[3]				|OTHER\_FAULT\_N		|ID|Fault line from other board |
 |2		|GIOA[0]				|FCODE\_STROBE			|?D|PC104 Pin 56 |
-|3		|MIBSPI3NCS[3]			|I2C\_SCL				| U|RTC control (MAX31331TETB+) |
-|4		|MIBSPI3NCS[2]			|I2C\_SDA				| U|RTC control (MAX31331TETB+) |
+|3		|MIBSPI3NCS[3]			|I2C\_SCL				|OU|RTC control (MAX31331TETB+) |
+|4		|MIBSPI3NCS[2]			|I2C\_SDA				|BU|RTC control (MAX31331TETB+) |
 |5		|GIOA[1]				|AX5043\_IRQ\_RX1		|ID|Interrupt from AX5043 RX1 |
-|6		|N2HET1[11]				|						| D|free gpio |
+|6		|N2HET1[11]				|OTHER\_HW\_POWER\_OFF\_N|ID|Power off state for the other board |
 |7		|FLTP1					|						|  | |
 |8		|FLTP2					|						|  | |
 |9		|GIOA[2]				|OTHER\_PRESENCE		|?D|Presence line from other board |
 |10		|VCCIO					|						|  | |
 |11		|VSS					|						|  | |
-|12		|CAN3RX					|CAN\_A\_RX				| U|CAN bus transceiver |
-|13		|CAN3TX					|CAN\_A\_TX				| U|CAN bus transceiver |
+|12		|CAN3RX					|CAN\_A\_RX				|IU|CAN bus transceiver |
+|13		|CAN3TX					|CAN\_A\_TX				|OU|CAN bus transceiver |
 |14		|GIOA[5]				|AX5043\_IRQ\_RX4		|ID|Interrupt from AX5043 RX4 |
 |15		|N2HET1[22]				|ALERT\_SIGNAL			|?D|PC104 Pin 49 |
-|16		|GIOA[6]				|GIOA\_6				|?D|Active line from other board |
+|16		|GIOA[6]				|OTHER\_ACTIVE\_N		|ID|Active line from other board |
 |17		|VCC					|						|  | |
 |18		|OSCIN					|						|  | |
 |19		|Kelvin\_GND			|						|  | |
@@ -51,8 +51,8 @@ used as a GPIO.
 |36		|N2HET1[4]				|AX5043\_EN\_RX1\_N		|OD|Power enable for AX5043 RX 1 |
 ||||||
 |37		|MIBSPI3NCS[1]			|MRAM\_NCS3				|OU| |
-|38		|N2HET1[06]				|UART\_RX1				| D|PC104 pin 92 |
-|39		|N2HET1[13]				|UART\_TX1				| D|PC104 pin 88 |
+|38		|N2HET1[06]				|UART\_RX1				|ID|PC104 pin 92 |
+|39		|N2HET1[13]				|UART\_TX1				|OD|PC104 pin 88 |
 |40		|MIBSPI1NCS[2]			|MRAM\_NCS2				|OU| |
 |41		|N2HET1[15]				|FCODE\_D0				|?D|PC104 pin 64 |
 |42		|VCCIO					|						|  | |
@@ -64,9 +64,9 @@ used as a GPIO.
 |48		|VCC					|						|  | |
 |49		|VCC					|						|  | |
 |50		|VSS					|						|  | |
-|51		|MIBSPI3SOMI			|MRAM\_MISO				| U| |
-|52		|MIBSPI3SIMO			|MRAM\_MOSI				| U| |
-|53		|MIBSPI3CLK				|MRAM\_CLK				| U| |
+|51		|MIBSPI3SOMI			|MRAM\_MISO				|IU| |
+|52		|MIBSPI3SIMO			|MRAM\_MOSI				|OU| |
+|53		|MIBSPI3CLK				|MRAM\_CLK				|OU| |
 |54		|MIBSPI3NENA			|MRAM\_NCS1				|OU| |
 |55		|MIBSPI3NCS[0]			|MRAM\_NCS0				|OU| |
 |56		|VSS					|						|  | |
@@ -107,9 +107,9 @@ used as a GPIO.
 |90		|CAN1RX					|AX5043\_SEL1\_N		|OU|SPI chip select for AX5043 RX1 |
 |91		|N2HET1[24]				|AX5043\_SEL2\_N		|OD|SPI chip select for AX5043 RX2 |
 |92		|N2HET1[26]				|AX5043\_SEL3\_N		|OD|SPI chip select for AX5043 RX3 |
-|93		|MIBSPI1SIMO			|AX5043\_MOSI			| U|SPI MOSI for all AX5043s |
-|94		|MIBSPI1SOMI			|AX5043\_SIMO			| U|SPI SIMO for all AX5043s |
-|95		|MIBSPI1CLK				|AX5043\_CLK			| U|SPI clock for all AX5043s |
+|93		|MIBSPI1SIMO			|AX5043\_MOSI			|IU|SPI MOSI for all AX5043s |
+|94		|MIBSPI1SOMI			|AX5043\_SIMO			|OU|SPI SIMO for all AX5043s |
+|95		|MIBSPI1CLK				|AX5043\_CLK			|OU|SPI clock for all AX5043s |
 |96		|MIBSPI1NENA			|AX5043\_SEL4\_N		|OU|SPI chip select for AX5043 RX4 |
 |97		|MIBSPI5NENA			|AX5043\_SEL\_TX\_N		|OU|SPI chip select for AX5043 TX |
 |98		|MIBSPI5SOMI[0]			|						| U|free gpio (Save for extra SPI if possible) |
@@ -133,7 +133,7 @@ used as a GPIO.
 |115	|VSS					|						|  | |
 |116	|nRST					|\*Processor\_Reset		|  |Main reset pin for the processor |
 |117	|nERROR					|FAULT\_N				|  |Output ERROR line from the processor |
-|118	|N2HET1[10]				|OTHER\_HW\_POWER\_OFF\_N| D|Power off other board |
+|118	|N2HET1[10]				|OTHER\_HW\_POWER\_OFF  |OD|Power off the other board |
 |119	|ECLK					|						| D|free gpio |
 |120	|VCCIO					|						|  | |
 |121	|VSS					|						|  | |
@@ -146,9 +146,9 @@ used as a GPIO.
 |128	|CAN2TX					|CAN\_B\_TX				|OU|CAN bus B transmit |
 |129	|CAN2RX					|CAN\_B\_RX				|IU|CAN bus B receive |
 |130	|MIBSPI1NCS[1]			|\*FEED\_WATCHDOG		|OU|Resets the two hardware watchdog timers |
-|131	|LINRX					|UART\_RX2				| U|PC104 Pin 36 |
-|132	|LINTX					|UART\_TX2				| U|PC104 Pin 32 |
-|133	|GIOB[1]				|ACTIVE\_N				|?D|Local active pin for active/standby |
+|131	|LINRX					|UART\_RX2				|IU|PC104 Pin 36 |
+|132	|LINTX					|UART\_TX2				|OU|PC104 Pin 32 |
+|133	|GIOB[1]				|ACTIVE\_N				|BD|Local active pin for active/standby |
 |134	|VCCP					|						|  | |
 |135	|VSS					|						|  | |
 |136	|VCCIO					|						|  | |
