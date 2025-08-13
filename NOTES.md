@@ -33,6 +33,7 @@ Parts not automotive rated:
 | RBP-140+					| receive filter |
 | AD4PS-1+					| RF power splitter |
 | Molex 73251-1153			| SMA connector |
+| QPC1022TR7				| RF switch |
 | ?							| PC104 connector (unknown if AEC) |
 
 Part that are automotive rated:
@@ -54,11 +55,7 @@ them.
 You could use one of the receive AX5043s ANTP1 port as an alternate
 transmitter.  You could use the same PA or a different PA, either way
 a QPC1022 RF switch could handle the choice.  You could even have
-separate antennas.  But maybe instead of this design the board in a
-2-board set with the necessary circuitry to switch RF from one board
-to the other and activity from one board to the other, monitoring of
-error lines, automatic takeover on a failure, etc.  Would have to sync
-stored data between the two processors.
+separate antennas.
 
 Figure out where the external RF connections need to be so the layout
 can be simplified around that.
@@ -825,3 +822,7 @@ Add a second CAN bus for redundancy.
 
 Fix some values on the PA and rearrange a bit to get the inductors
 away from each other.
+
+## 2025-08-12
+
+Added support for active/standby boards in the hardware.

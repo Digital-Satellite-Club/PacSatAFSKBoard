@@ -85,6 +85,10 @@
           ""
         ],
         [
+          "footprint_type_mismatch|203920000|145410000|9d3d3fb3-77bc-401c-ae39-9d9774d732b1|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
           "footprint_type_mismatch|217470000|145410000|e9d1675d-8c50-4901-8a83-2ba93e85f6af|00000000-0000-0000-0000-000000000000",
           ""
         ]
@@ -965,6 +969,10 @@
     [
       "4fa888af-703c-49ed-93bb-d56d2f02c470",
       "Active Standby Config"
+    ],
+    [
+      "b3c2a390-7cfd-4bda-a34a-5e43dff57412",
+      "RF Output Switch"
     ]
   ],
   "text_variables": {}

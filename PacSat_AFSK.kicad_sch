@@ -214,28 +214,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "500"
-		(exclude_from_sim no)
-		(at 212.09 137.16 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "524627b2-8471-48d9-b640-2ac6258da3af")
-	)
-	(text "925"
-		(exclude_from_sim no)
-		(at 271.78 113.03 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "e7859167-43b5-4f11-a6ad-bba5ee0cd131")
-	)
 	(junction
 		(at 53.34 246.38)
 		(diameter 0)
@@ -940,6 +918,48 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
 					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 113.03 158.75)
+		(size 50.8 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b3c2a390-7cfd-4bda-a34a-5e43dff57412")
+		(property "Sheetname" "RF Output Switch"
+			(at 113.03 158.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rf_out_switch.kicad_sch"
+			(at 113.03 178.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
+					(page "16")
 				)
 			)
 		)

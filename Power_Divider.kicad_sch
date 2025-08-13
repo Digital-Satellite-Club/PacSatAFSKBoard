@@ -2404,6 +2404,16 @@
 		)
 		(uuid "5846d741-8711-4499-aacf-602644ee96e1")
 	)
+	(text "This RF switch setup handles active/standby on board 1.\nOn board 1 the zero ohm resistor is not populated.  On board 2\nor on simplex boards none of the switch circuitry is\npopulated and only the zero ohm resistor is populated."
+		(exclude_from_sim no)
+		(at 62.484 30.988 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "5963b79c-8c1b-4f4e-b9e2-2657823d53b5")
+	)
 	(text "Note 2:\nTune resistor for best gain and lowest current."
 		(exclude_from_sim no)
 		(at 27.94 218.44 0)

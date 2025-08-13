@@ -247,6 +247,48 @@ other external entity will choose which board is active.  In this
 case, the ACTIVE\_N line becomes an input and the processor monitors
 that line to know if it should be active or not.
 
+The ACTIVE1\_N line also controls several RF switches on board 1.
+There is a second set of SMA connectors that connect from board 1 to
+board 2 to carry the RF to board 2.  If board 1 is active, the RF is
+switched to board 1 and the RF to/from board 2 is shunted to 50 ohm
+resistors.  Likewise, when board 1 is inactive, it connects the RF to
+the board 2 connectors and shunts the board 1 RF to/from 50 ohm
+resistors.
+
+On board 2, the RF switches are not populated and the RF goes through
+a zero ohm resistor to connect it, bypassing the switch connections.
+On board 1 these resistors must not be populated.  If the board is
+configured for simplex, then the RF switches are also not connected
+and the zero ohm resistors are populated.
+
+All the board switch circuitry is powered with +5V so it works even if
+the board is powered down.  Care must be taken to not drive any I/O
+lines with +5V; voltage dividers are present in several places to
+bring +5V down to +2.5V for pull ups.
+
+See the end of this document for the active/standby state machine.
+
+MRAM data is automatically synced to the other board via the CAN bus.
+The inactive side has the MRAM unmounted and is only syncing data.
+The sync protocol is reliable and the remote end must respond that it
+has written the data before the local end commits the write.  When a
+board activates, it mounts MRAM and continues operation.  Applications
+can either store all state data in MRAM or they can implement their
+own synchronization protocol.
+
+When the other board is down and then comes up, it will request a full
+sync and all data will be transferred.  On a requested activity
+switch, special handling is done to keep both sides in sync so the
+newly inactive side can simply start receiving updates and a full sync
+is not required.
+
+If the inactive board detects a sync error, it will request a full
+sync.
+
+The inactive board will have all RF powered down and will do minimal
+processing to avoid using very much power.  Basically just handling
+synchronization data.
+
 # Power Control and Sequencing
 
 The power control on the board is fairly simple.  One power up, the
@@ -258,7 +300,7 @@ drain).  At that point the MP5073GG-P is also holding reset line low
 until it is enabled.
 
 The STWD100NYWY3F hardware watchdog will power up at that time, but
-the <POWER\_ENABLE pin from it will be pulled high and should remain
+the POWER\_ENABLE pin from it will be pulled high and should remain
 high for 1 second.
 
 The MP5073GG-P and MAX4495AAUT current limiting chips will start
@@ -306,3 +348,57 @@ the power to all AX5043s.  The processor can then drive the individual
 AX5043 enables low to individually power them on.  Then the processor
 can drive PA\_PWR\_EN high to power on the PA and LNA\_ENABLE high
 to enable the LNA.
+
+# Active/Standby State Machine
+
+The logic below is for the board being active or not.  For instance,
+if OTHER\_FAULT\_N is low, then it is true.  These are all this way
+since they are all negative logic.  This is only used if the active
+state is not externally controlled.
+
+The boards will switch activity periodically to test the other board.
+
+PowerUp:
+
+  !OTHER\_PRESENCE\_N -> ActiveOtherBoardNotPresent
+  OTHER\_PRESENCE\_N && OTHER\_ACTIVE\_N -> Inactive
+  OTHER\_PRESENCE\_N && !OTHER\_ACTIVE\_N && !IAmBoard2 -> ActiveOtherBoardPresent
+  OTHER\_PRESENCE\_N && !OTHER\_ACTIVE\_N && IAmBoard2 -> InactiveWaitActivate
+    start timer
+
+Inactive:
+  OTHER\_FAULT\_N -> ActiveOtherBoardPresent
+    power cycle other board.
+  !OTHER\_ACTIVE\_N -> ActiveOtherBoardPresent
+  !OTHER\_PRESENCE\_N -> ActiveOtherBoardNotPresent
+    log presence issue
+
+InactiveWaitActivate:
+  OTHER\_FAULT\_N -> ActiveOtherBoardPresent
+    stop timer
+    power cycle other board.
+  OTHER\_ACTIVE\_N -> Inactive
+    stop timer
+  !OTHER\_ACTIVE\_N && timeout -> ActiveOtherBoardPresent
+  !OTHER\_PRESENCE\_N -> ActiveOtherBoardNotPresent
+    stop timer
+    log presence issue
+
+ActiveOtherBoardPresent:
+  OTHER\_FAULT\_N -> ActiveOtherBoardPresent
+    power cycle other board.
+  OTHER\_ACTIVE\_N -> Inactive
+  !OTHER\_PRESENCE\_N -> ActiveOtherBoardNotPresent
+    log presence issue
+  
+ActiveOtherBoardNotPresent:
+  OTHER\_PRESENCE\_N -> ActiveOtherBoardPresent
+    log presence issue
+
+Note that except for power up, transitions based on OTHER\_PRESENCE\_N
+should never happen.  These should be logged.
+
+FIXME - There needs to be some synchronization handling added to this.
+
+FIXME - Some sort of handling needs to be added in the case that the
+other board is determined to be faulty.
