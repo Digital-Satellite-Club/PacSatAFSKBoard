@@ -856,3 +856,7 @@ active/standby case the other power state can be monitored.
 
 Added a test mode using the RF switches to shunt power from the
 transmitter to the receiver for an RF loopback test.
+
+## 2025-08-13
+
+Changed SMA connectors to vertical ones.

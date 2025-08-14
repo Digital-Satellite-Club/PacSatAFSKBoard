@@ -1156,6 +1156,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 134.62) (xy 85.09 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72f4aca8-ccba-4144-9f4f-368238e84e53")
+	)
+	(wire
+		(pts
 			(xy 115.57 45.72) (xy 115.57 58.42)
 		)
 		(stroke
@@ -1530,6 +1540,28 @@
 			)
 		)
 	)
+	(global_label "RF_SWITCH_EN"
+		(shape input)
+		(at 76.2 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "ba08363d-3ee9-4ea6-92ea-322126a95fe2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 57.0747 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ACTIVE1_N"
 		(shape input)
 		(at 153.67 91.44 0)
@@ -1562,7 +1594,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "073bde99-0228-4cb6-a8cc-7ba884da9021")
+		(uuid "381f781c-b34b-44df-8c46-f29106969b38")
 		(property "Reference" "J14"
 			(at 171.7674 35.56 0)
 			(effects
@@ -1571,7 +1603,7 @@
 				)
 			)
 		)
-		(property "Value" "Molex 73251-1153"
+		(property "Value" "Wirth 60312002114503"
 			(at 171.7674 38.1 0)
 			(effects
 				(font
@@ -1579,7 +1611,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal"
+		(property "Footprint" "Connector_Coaxial:SMA_Wurth_60312002114503_Vertical"
 			(at 171.45 41.91 0)
 			(effects
 				(font
@@ -1607,84 +1639,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "969a0d1a-4dcc-4a1a-a525-424be987e07b")
+			(uuid "9abd6fee-311f-466b-891f-09e8c7f5dde4")
 		)
 		(pin "1"
-			(uuid "78c4fae6-7900-4116-a0de-5935f428cb78")
+			(uuid "216d5c06-3a38-45ce-a780-4e6fcee8609c")
 		)
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/4fa888af-703c-49ed-93bb-d56d2f02c470/26e0c845-9451-4c79-aef3-943c70af8ca9"
 					(reference "J14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_Coaxial")
-		(at 82.55 45.72 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2520c31f-30e6-41ad-87dc-c76cb65080dc")
-		(property "Reference" "J11"
-			(at 82.8674 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Molex 73251-1153"
-			(at 82.8674 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal"
-			(at 82.55 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 82.55 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1ab8aba0-92fb-4caa-90a9-2807fc0d3b82")
-		)
-		(pin "1"
-			(uuid "90863b0c-fb2b-4a33-ba53-1ef605c54229")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/4fa888af-703c-49ed-93bb-d56d2f02c470/26e0c845-9451-4c79-aef3-943c70af8ca9"
-					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -2529,6 +2492,75 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/4fa888af-703c-49ed-93bb-d56d2f02c470/26e0c845-9451-4c79-aef3-943c70af8ca9"
 					(reference "R107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 82.55 45.72 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df4f9a5e-9673-4777-9995-3778f0362a09")
+		(property "Reference" "J11"
+			(at 82.8674 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Wirth 60312002114503"
+			(at 82.8674 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:SMA_Wurth_60312002114503_Vertical"
+			(at 82.55 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 82.55 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5a7e73ee-4177-4eda-86a8-8e7fe2f4ef24")
+		)
+		(pin "1"
+			(uuid "eaf7088e-93ca-4c92-b1c0-f9f327f5927c")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/4fa888af-703c-49ed-93bb-d56d2f02c470/26e0c845-9451-4c79-aef3-943c70af8ca9"
+					(reference "J11")
 					(unit 1)
 				)
 			)
