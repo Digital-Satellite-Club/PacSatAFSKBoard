@@ -860,3 +860,8 @@ transmitter to the receiver for an RF loopback test.
 ## 2025-08-13
 
 Changed SMA connectors to vertical ones.
+
+Change SMA TX/RX connectors to U.FL connectors.  For development I
+will epoxy down a U.FL to SMA cable to the board.  For deployment
+various options exist, including UFL or soldering cables directly to
+the board and epoxying them down.
