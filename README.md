@@ -30,3 +30,6 @@ connector on the RF to test the receive and transmit chain.
 The board is designed to be able to be used in an active/standby
 configuration where you have two of the same boards and switch the RF
 between the boards depending on which is active.
+
+Change the OTHER\_HW\_POWER\_OFF transistor to a SOT-523 to save some
+space.
