@@ -162,52 +162,7 @@ used as a GPIO.
 |144	|VSS					|						|  | |
 
 
-FIXME - Figure out what all the PC104 pins do.
-
-# PC104 Pins
-
-  - HW\_POWER\_OFF[12]\_N - Input to board, pulling this low causes the
-    power to be disabled on boardn.  boardn pulls this high with a 10K
-	resistor.  If driven, it should be open drain or open collector.
-	Be careful not to glitch this line.
-
-  - PRESENCE[12]\_N - The board is physically present.  This must be
-	pulled high by a 1M resistor on entity reading this value, it is
-	pulled low by a 10K resistor on boardn.
-	
-  - ACTIVE[12]\_N - boardn is asserting that it is active.  This is
-	pulled high on boardn and will be driven low by boardn when it is
-	active and not under external active/standby control.  When under
-	external active/standby control, this is an input that another
-	entity must pull low to cause the board to go active.
-	
-  - FAULT[12]\_N - Output from boardn, the processor is reporting an error.
-  
-  - PB\_ENABLE - 
-  
-  - ALERT\_SIGNAL - 
-  
-  - CMD\_MODE - 
-  
-  - ATTACHED - 
-  
-  - FCODE\_STROBE - 
-
-  - FCODE\_D3 - 
-
-  - FCODE\_D0 - 
-
-  - USB\_SUSPEND\_LOW - 
-  
-  - VSYS - +5V
-  
-  - GND
-  
-  - CAN[AB][+-] - CAN bus signals.
-  
-  - UART\_[TR]X[12] - UART pins.
-
-# \*Notes below
+\*Notes below
 
 Interrupts and GPIOs
 --------------------
@@ -255,6 +210,51 @@ The direction coupler is 4mm long with .1524mm traces .127mm apart.
 At full power out (+33dBm) this will result in about -7dBm of power
 from the coupler.  This was simulated with a transmission line in
 qucs.  The voltage for that can be calculated from the chip manual.
+
+FIXME - Figure out what all the PC104 pins do.
+
+# PC104 Pins
+
+  - HW\_POWER\_OFF[12]\_N - Input to board, pulling this low causes the
+    power to be disabled on boardn.  boardn pulls this high with a 10K
+	resistor.  If driven, it should be open drain or open collector.
+	Be careful not to glitch this line.
+
+  - PRESENCE[12]\_N - The board is physically present.  This must be
+	pulled high by a 1M resistor on entity reading this value, it is
+	pulled low by a 10K resistor on boardn.
+	
+  - ACTIVE[12]\_N - boardn is asserting that it is active.  This is
+	pulled high on boardn and will be driven low by boardn when it is
+	active and not under external active/standby control.  When under
+	external active/standby control, this is an input that another
+	entity must pull low to cause the board to go active.
+	
+  - FAULT[12]\_N - Output from boardn, the processor is reporting an error.
+  
+  - PB\_ENABLE - 
+  
+  - ALERT\_SIGNAL - 
+  
+  - CMD\_MODE - 
+  
+  - ATTACHED - 
+  
+  - FCODE\_STROBE - 
+
+  - FCODE\_D3 - 
+
+  - FCODE\_D0 - 
+
+  - USB\_SUSPEND\_LOW - 
+  
+  - VSYS - +5V
+  
+  - GND
+  
+  - CAN[AB][+-] - CAN bus signals.
+  
+  - UART\_[TR]X[12] - UART pins.
 
 # Active/Standby Configuration
 
@@ -306,7 +306,8 @@ configured for simplex, then the RF switches are also not connected
 and the zero ohm resistors are populated.
 
 It is also possible to have separate antennas for each board.  Then
-the RF switches are not relevant and can be bypassed.
+the RF switches and second set of SMAs are not relevant and can be
+removed or just set up for loopback testing.
 
 All the board switch circuitry is powered with +5V so it works even if
 the board is powered down.  Care must be taken to not drive any I/O
@@ -360,6 +361,9 @@ If populated with the proper RF switches (the ones hooked to
 BOARD1\_RF\_IN\_BYPASS), this could be done on a simplex board, too.
 It can just deactivate its ACTIVE\_N line and the RF switch will go to
 the bypass.
+
+I am unsure if the TX AX5043 can be coerced into being able to
+transmit at both 144MHz and 440MHz.
 
 # Power Control and Sequencing
 
