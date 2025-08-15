@@ -869,3 +869,8 @@ the board and epoxying them down.
 Get rid of the GPADC zero-ohm resistors on the receiver AX5043s.
 Those cannot be used when receiving, and their use is questionable,
 anyway.  Leave it on the transmitter one as that could still be used.
+
+## 2025-08-15
+
+Change many of the passives to 0402s to make more room and reduce
+parasitics.
