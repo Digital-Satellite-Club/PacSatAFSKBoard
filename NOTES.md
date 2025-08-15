@@ -857,7 +857,7 @@ active/standby case the other power state can be monitored.
 Added a test mode using the RF switches to shunt power from the
 transmitter to the receiver for an RF loopback test.
 
-## 2025-08-13
+## 2025-08-14
 
 Changed SMA connectors to vertical ones.
 
@@ -865,3 +865,7 @@ Change SMA TX/RX connectors to U.FL connectors.  For development I
 will epoxy down a U.FL to SMA cable to the board.  For deployment
 various options exist, including UFL or soldering cables directly to
 the board and epoxying them down.
+
+Get rid of the GPADC zero-ohm resistors on the receiver AX5043s.
+Those cannot be used when receiving, and their use is questionable,
+anyway.  Leave it on the transmitter one as that could still be used.
