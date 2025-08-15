@@ -878,3 +878,5 @@ parasitics.
 Add a current limiter for the onboard +5V devices, create a new power
 rail named +5VAL for all the devices that need to be powered up even
 when the power is off.
+
+Add enable controls for the CAN bus transceivers.

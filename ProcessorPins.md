@@ -85,7 +85,7 @@ used as a GPIO.
 |69		|VCCAD					|						|  | |
 |70		|AD1IN[09] / AD2IN[09]	|						|  |free adc |
 |71		|AD1IN[01]				|						|  |free adc |
-|72		|AD1IN[10] / AD2IN[10]	|						|  |free adc |
+|72		|AD1IN[10] / AD2IN[10]	|PWR\_FLAG\_5VAL		|  |Power flag from the +5VAL current limiter |
 ||||||
 |73		|AD1IN[02]				|REV\_PWR				|  |\*Reverse RF TX Power |
 |74		|AD1IN[03]				|FWD\_PWR				|  |\*Forward RF TX Power |
@@ -119,7 +119,7 @@ used as a GPIO.
 |102	|VSS					|						|  | |
 |103	|VSS					|						|  | |
 |104	|VCCIO					|						|  | |
-|105	|MIBSPI1NCS[0]			|						| U|free gpio |
+|105	|MIBSPI1NCS[0]			|CAN\_B\_EN\_N			|OU|CAN bus B transceiver enable |
 |106	|N2HET1[08]				|ATTACHED				|?D|PC104 Pin 31 |
 |107	|N2HET1[28]				|PB\_ENABLE				|?D|PC104 Pin 45 |
 |108	|TMS					|JTAG pin				|  | |
@@ -134,7 +134,7 @@ used as a GPIO.
 |116	|nRST					|\*Processor\_Reset		|  |Main reset pin for the processor |
 |117	|nERROR					|FAULT\_N				|  |Output ERROR line from the processor |
 |118	|N2HET1[10]				|OTHER\_HW\_POWER\_OFF  |OD|Power off the other board |
-|119	|ECLK					|						| D|free gpio |
+|119	|ECLK					|CAN\_A\_EN\_N			|OD|CAN bus A transceiver enable |
 |120	|VCCIO					|						|  | |
 |121	|VSS					|						|  | |
 |122	|VSS					|						|  | |
@@ -367,8 +367,14 @@ transmit at both 144MHz and 440MHz.
 
 # Power Control and Sequencing
 
-The power control on the board is fairly simple.  One power up, the
-LP3962EMP-3.3 LDO will start supplying 3.3V to REG\_3V3 and the
+The power control on the board is fairly simple.  On power up, power
+comes in through VSYS, goes through and inductor, and goes to +5V,
+which is always powered on.  +5V goes through a current limiter to
++5VAL, which power the circuits on the board that are always on, the
+circuits the handle the board presence/active/etc. and the board1 RF
+switches, and the CAN bus transceivers.
+
+The LP3962EMP-3.3 LDO will start supplying 3.3V to REG\_3V3 and the
 TPSM828302ARDSR will start supplying 1.2V to REG\_1V2.  They will also
 pull the PROCESSOR\_RESET pin low until their power is good, and that
 point they will not pull the reset line low any more (they are open
@@ -390,30 +396,23 @@ any of them sense that the power is bad they will pull that line down
 low.
 
 When the processor is in reset and the default settings on the
-PA\_PWR\_EN, the AX5043\_PWR\_EN are pulled low (and they have pull
-downs, too, so that they are disabled even when the main power is
-disabled), so all power to the PA and AX5043s will be off.  The only
-other piece of the board that will be powered is the LNA (QPL9547)
-because it is directly connected to +5V, but it has a pull up on its
-enable line so it will be disabled, too.
-
-So when the board comes up all the RF section of the board is powered
+PA\_PWR\_EN, AX5043\_PWR\_EN, and LNA\_ENABLE are pulled low (and
+they have pull downs, too, so that they are disabled even when the
+main power is disabled), so all power to the RF elements will be
 off.
 
 A HW\_POWER\_OFF\_N comes in from the PC104 connector; if that is
-pulled low it will power off everything on the board.  It does this by
-disabling the 3.3V and 1.2V regulators.  When 3.3V is off, the MAX4995
-controlling power to the PA will be powered off, so that will be
-disabled.  The only other part that's directly on +5V is the LNA, as
-mentioned before, but it will be disabled by default with a pullup to
-+5V.
+pulled low it will power off everything on the board except for the
+devices on +5VAL.  It does this by disabling the 3.3V and 1.2V
+regulators.  When 3.3V is off, the MAX4995s controlling power to the
+PA, AX5043s, and LNA will be powered off.
 
 There is also a hardware watchdog, as mentioned before.  The processor
 must toggle the FEED\_WATCHDOG line at least once a second.  If it
 fails to do that, the 1.2V and 3.3V current limiters will be disabled
 cutting power to the processor and all digital components.  This will
-result in everything else being powered off.  After 200ms, the
-watchdog chip will enable power again.
+result in everything else being powered off (except the devices on
++5VAL).  After 200ms, the watchdog chip will enable power again.
 
 To power up and enable the RF section, the processor must first make
 sure all the AX5043 enable lines are pulled high to disable them.
@@ -423,7 +422,7 @@ anyway.  The processor then can drive AX5043\_PWR\_EN high to enable
 the power to all AX5043s.  The processor can then drive the individual
 AX5043 enables low to individually power them on.  Then the processor
 can drive PA\_PWR\_EN high to power on the PA and LNA\_ENABLE high
-to enable the LNA.
+to power on the LNA.
 
 # Active/Standby State Machine
 
