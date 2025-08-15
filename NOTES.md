@@ -16,9 +16,11 @@ passives can all be certified for this, I'm pretty sure.  The only
 connector you have to worry about is the PC104.  The chips and modules
 are a different story.
 
-Parts not automotive rated:
+Parts that are not automotive rated listed below.
 
-| LMK1C1106A				| clock distributor | Suitable devices with 6 output not available.  Could use 4 output device (LMK00804B-Q1). Could use op amps (see https://www.analog.com/en/resources/analog-dialogue/articles/high-speed-amplifiers-make-clock-buffers.html). |
+|Part						|Function			  | Info |
+|----						|--------			  |----- |
+| LMK1C1106A				| clock distributor   | Suitable devices with 6 output not available.  Could use 4 output device (LMK00804B-Q1). Could use op amps (see https://www.analog.com/en/resources/analog-dialogue/articles/high-speed-amplifiers-make-clock-buffers.html). |
 | O 16,0-JT22CT-A-P-3,3-LF	| oscillator | There don't appear to be any that are automotive and temp certified with 2.5ppm stability.  This one is temp, which is probably more important. |
 | AS1016204-0108X0PWAY		| MRAM | No suitable devices available. |
 | MAX31331					| RTC | No suitable devices available. |
@@ -35,8 +37,10 @@ Parts not automotive rated:
 | QPC1022TR7				| RF switch | ? |
 | ?							| PC104 connector | Unknown if AEC |
 
-Part that are automotive rated:
+Part that are automotive listed below.
 
+|Part						|Function			  | Info |
+|----						|--------			  |----- |
 | STWD100NYWY3F				| Hardware watchdog |
 | TCAN1044ADDFRQ1			| CAN bus interface |
 | TMS570LS0914PGE			| CPU |

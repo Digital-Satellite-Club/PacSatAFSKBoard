@@ -12,7 +12,7 @@ default and D for pulldown by default or blank if the pin cannot be
 used as a GPIO.
 
 |Pin3	|CPU Pin Name			|Schematic Name			|G |Description |
-|----	|------------			|--------------			|--|-----------
+|----	|------------			|--------------			|--|----------- |
 |1		|GIOB[3]				|OTHER\_FAULT\_N		|ID|Fault line from other board |
 |2		|GIOA[0]				|FCODE\_STROBE			|?D|PC104 Pin 56 |
 |3		|MIBSPI3NCS[3]			|I2C\_SCL				|OU|RTC control (MAX31331TETB+) |
