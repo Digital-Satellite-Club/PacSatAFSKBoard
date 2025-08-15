@@ -13,28 +13,27 @@ According to the cubesat documents I have been reading, its best if
 parts are automotive certified, AEC-Q100 or AEC-Q200.  I assume this
 is so they can handle the shaking of the flight to space.  The
 passives can all be certified for this, I'm pretty sure.  The only
-connectors you have to worry about are the PC104 and the SMAs.  The
-chips and modules are a different story.
+connector you have to worry about is the PC104.  The chips and modules
+are a different story.
 
 Parts not automotive rated:
 
-| LMK1C1106A				| clock distributor |
-| O 16,0-JT22CT-A-P-3,3-LF	| oscillator |
-| AS1016204-0108X0PWAY		| MRAM |
-| MAX31331					| RTC |
-| TPSM828302ARDSR			| 1.2V power converter |
-| LP3962EMP-3.3/NOPB		| 3.3V power converter |
-| MP5073GG-P				| 1.2V current limiter |
-| MAX4995A					| 3.3V and 5V current limiter |
-| AX5043					| radio |
-| TQP7M9106					| PA |
-| LFCG-490+					| transmit filter |
-| QPL9547					| LNA |
-| RBP-140+					| receive filter |
-| AD4PS-1+					| RF power splitter |
-| Molex 73251-1153			| SMA connector |
-| QPC1022TR7				| RF switch |
-| ?							| PC104 connector (unknown if AEC) |
+| LMK1C1106A				| clock distributor | Suitable devices with 6 output not available.  Could use 4 output device (LMK00804B-Q1). Could use op amps (see https://www.analog.com/en/resources/analog-dialogue/articles/high-speed-amplifiers-make-clock-buffers.html). |
+| O 16,0-JT22CT-A-P-3,3-LF	| oscillator | There don't appear to be any that are automotive and temp certified with 2.5ppm stability.  This one is temp, which is probably more important. |
+| AS1016204-0108X0PWAY		| MRAM | No suitable devices available. |
+| MAX31331					| RTC | No suitable devices available. |
+| TPSM828302ARDSR			| 1.2V power converter | TPSM33620S3QRDNRQ1 might work |
+| LP3962EMP-3.3/NOPB		| 3.3V power converter | TPS75233-Q1 might work |
+| MP5073GG-P				| 1.2V current limiter | No suitable devices appear to be available. |
+| MAX4995A					| 3.3V and 5V current limiter | Some devices are available from TI, like TPS2561-Q1 (dual channel) or TPS2557-Q1 (single channel). The MAX part may already be flight proven, though. |
+| AX5043					| radio | No other option. |
+| TQP7M9106					| PA | ? |
+| LFCG-490+					| transmit filter | Environmental Specs don't look good, need to replace. |
+| QPL9547					| LNA | ? |
+| RBP-140+					| receive filter | Environmental Specs seem good, probably ok. |
+| AD4PS-1+					| RF power splitter | Environmental Specs seem good, probably ok. |
+| QPC1022TR7				| RF switch | ? |
+| ?							| PC104 connector | Unknown if AEC |
 
 Part that are automotive rated:
 
@@ -87,10 +86,6 @@ Another option is an I2C or SPI to GPIO device.  The AX5043s each have
 fails you can't use those GPIOs.  The interrupts from the AX5043s
 could be or-ed together, but you would have to scan all of them if you
 got an interrupt.
-
-Add enables to the CAN bus transceivers?  The chip does not really
-have an "off" state, it's a "standby" state where it's listening on
-the bus but cannot transmit.
 
 The PC104 connector is actually two connectors, a 64-pin (4x16) one
 and a 40 pin one (4x10) per the PC104 web side.  I've actually more
@@ -402,6 +397,10 @@ inductance and capacitance and reduce size.  And perhaps don't use
 handsolder, as the pads are larger and thus have more
 capacitance/inductance.  Maybe 0402 parts on the rest of the board to
 get more space.
+
+Add enables to the CAN bus transceivers?  The chip does not really
+have an "off" state, it's a "standby" state where it's listening on
+the bus but cannot transmit.
 
 # Not going to do
 
