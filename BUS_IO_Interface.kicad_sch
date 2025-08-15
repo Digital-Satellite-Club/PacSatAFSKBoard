@@ -3887,6 +3887,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 146.05) (xy 218.44 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0ef877f-9350-448d-9025-743241f2c95f")
+	)
+	(wire
+		(pts
 			(xy 146.05 133.35) (xy 146.05 149.86)
 		)
 		(stroke
@@ -4687,28 +4697,6 @@
 			)
 		)
 	)
-	(global_label "VSYS"
-		(shape input)
-		(at 218.44 149.86 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "9d1ea684-17de-4c91-bbe0-ce9bb4634eae")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 226.6568 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "CAN_B_TX"
 		(shape input)
 		(at 262.89 156.21 180)
@@ -5426,7 +5414,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+5VAL"
 			(at 281.94 63.5 0)
 			(effects
 				(font
@@ -8312,6 +8300,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 218.44 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4a4a5cb-c0ee-4306-8011-1f1d42d693fb")
+		(property "Reference" "#PWR0290"
+			(at 218.44 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VAL"
+			(at 218.44 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 218.44 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "546627fe-713e-4e84-b97c-6c063e4ee534")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
+					(reference "#PWR0290")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PACSAT_ICs:QSPI_FLASH_WSON_8-pin")
 		(at 76.2 43.18 0)
 		(unit 1)
@@ -8938,7 +8992,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+5VAL"
 			(at 281.94 130.81 0)
 			(effects
 				(font

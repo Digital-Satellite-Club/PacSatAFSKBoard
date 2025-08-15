@@ -5517,10 +5517,6 @@
 		(uuid "e086aac9-ae28-4bfc-a2d5-3d1451a09a6a")
 	)
 	(no_connect
-		(at 281.94 93.98)
-		(uuid "e8aabb7c-aafa-46de-a53a-f63285aad2c4")
-	)
-	(no_connect
 		(at 240.03 68.58)
 		(uuid "ee52d8d6-dbc9-4b08-a89c-e1421156db41")
 	)
@@ -7726,6 +7722,16 @@
 	)
 	(wire
 		(pts
+			(xy 281.94 93.98) (xy 288.29 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ef60003-8b3f-404c-9b05-3a3c28120c3c")
+	)
+	(wire
+		(pts
 			(xy 353.06 173.99) (xy 353.06 175.26)
 		)
 		(stroke
@@ -9323,6 +9329,28 @@
 		(uuid "260cbe11-3c28-4a22-ba7c-5b8684ef4195")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 317.7339 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PWR_FLAG_5VAL"
+		(shape input)
+		(at 288.29 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "272a5604-5b81-4d83-946e-39e6ce600af7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 308.8667 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15843,7 +15871,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+5VAL"
 			(at 254 13.97 0)
 			(effects
 				(font

@@ -127,12 +127,6 @@ be necessary.
 
 What UFL connectors can be removed?
 
-Maybe switch to 0402 parts along the RF path to reduce stray
-inductance and capacitance and reduce size.  And perhaps don't use
-handsolder, as the pads are larger and thus have more
-capacitance/inductance.  Maybe 0402 parts on the rest of the board to
-get more space.
-
 Determine current limiter values, probably need to build a board and
 measure.
 
@@ -402,6 +396,12 @@ If one of the processors goes bad, is there a way to just run with one
 processor?  - If there is a lockstep error, a software interrupt is
 generated and software must handle it.  The processors cannot run
 independently, they can only run in lockstep or in certain test modes.
+
+Maybe switch to 0402 parts along the RF path to reduce stray
+inductance and capacitance and reduce size.  And perhaps don't use
+handsolder, as the pads are larger and thus have more
+capacitance/inductance.  Maybe 0402 parts on the rest of the board to
+get more space.
 
 # Not going to do
 
@@ -874,3 +874,7 @@ anyway.  Leave it on the transmitter one as that could still be used.
 
 Change many of the passives to 0402s to make more room and reduce
 parasitics.
+
+Add a current limiter for the onboard +5V devices, create a new power
+rail named +5VAL for all the devices that need to be powered up even
+when the power is off.

@@ -2877,7 +2877,7 @@
 				)
 			)
 		)
-		(property "Value" "MAX4495AAUT"
+		(property "Value" "MAX4995AAUT"
 			(at -6.35 7.62 0)
 			(effects
 				(font
@@ -2926,7 +2926,7 @@
 			)
 		)
 		(symbol "MAX4995AAUT_1_1"
-			(pin power_in line
+			(pin power_out line
 				(at -17.78 2.54 0)
 				(length 5.08)
 				(name "OUT"
@@ -3052,7 +3052,7 @@
 				)
 			)
 		)
-		(property "Value" "MAX4495ALAUT"
+		(property "Value" "MAX4995ALAUT"
 			(at -6.35 7.62 0)
 			(effects
 				(font

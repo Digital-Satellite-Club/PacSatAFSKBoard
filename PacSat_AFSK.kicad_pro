@@ -753,6 +753,10 @@
       {
         "netclass": "FatPower",
         "pattern": "LNA_VCC"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+5VAL"
       }
     ]
   },
