@@ -5,6 +5,168 @@
 	(uuid "3436dfbb-48cd-407c-a150-6157f57b99ca")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -840,6 +1002,12 @@
 		(uuid "112111f8-3791-426e-9e6e-482e6d7e634a")
 	)
 	(junction
+		(at 96.52 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "211d12fb-7eb6-428a-b364-b2183dca3805")
+	)
+	(junction
 		(at 101.6 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1239,6 +1407,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 58.42) (xy 96.52 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7632f99b-30c2-4fb4-9857-6e774940a4d6")
+	)
+	(wire
+		(pts
 			(xy 99.06 120.65) (xy 139.7 120.65)
 		)
 		(stroke
@@ -1309,7 +1487,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 58.42) (xy 106.68 58.42)
+			(xy 90.17 58.42) (xy 96.52 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1389,6 +1567,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 58.42) (xy 106.68 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8cff228-5597-4c8c-9770-6ee773d9b6e3")
+	)
+	(wire
+		(pts
 			(xy 139.7 113.03) (xy 139.7 101.6)
 		)
 		(stroke
@@ -1396,6 +1584,16 @@
 			(type default)
 		)
 		(uuid "d97245ea-df8e-4a1e-b8f6-8780c7b01c24")
+	)
+	(wire
+		(pts
+			(xy 96.52 69.85) (xy 96.52 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efc76493-dc69-4799-b6ad-8f06f75356d4")
 	)
 	(global_label "RF_IN_SWITCH"
 		(shape input)
@@ -2196,6 +2394,70 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 96.52 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b577faf9-e286-4e8b-ac8a-46a749900b51")
+		(property "Reference" "#PWR0293"
+			(at 96.52 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 96.52 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 96.52 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "43abf601-4087-48b9-b950-04a8470719a3")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/4fa888af-703c-49ed-93bb-d56d2f02c470/64a91b23-a882-4658-bea9-c6c8274e2ac4"
+					(reference "#PWR0293")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PACSAT_DEV_misc:U_FL")
 		(at 163.83 46.99 0)
 		(mirror y)
@@ -2262,6 +2524,73 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/4fa888af-703c-49ed-93bb-d56d2f02c470/64a91b23-a882-4658-bea9-c6c8274e2ac4"
 					(reference "P18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 96.52 66.04 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd67f3b1-dec6-42ce-8c64-fc8fe47c2318")
+		(property "Reference" "L40"
+			(at 98.552 66.294 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470n"
+			(at 93.472 66.548 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
+			(at 96.52 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 96.52 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "70e59dfa-0489-4a58-9d1d-5b5c463ac64b")
+		)
+		(pin "2"
+			(uuid "4d840750-4ae8-44b4-8218-e01c66b91e80")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/4fa888af-703c-49ed-93bb-d56d2f02c470/64a91b23-a882-4658-bea9-c6c8274e2ac4"
+					(reference "L40")
 					(unit 1)
 				)
 			)

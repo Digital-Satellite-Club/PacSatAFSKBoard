@@ -2319,7 +2319,7 @@
 	)
 	(text "3rd order Chebyshev filter\nConventional Shunt First\nPassband 123-173MHz\n.1db ripple in passband\n"
 		(exclude_from_sim no)
-		(at 95.25 129.54 0)
+		(at 84.074 128.778 0)
 		(effects
 			(font
 				(size 1.524 1.524)

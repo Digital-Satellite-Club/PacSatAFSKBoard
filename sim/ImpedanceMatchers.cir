@@ -10,16 +10,15 @@
 
 .option rseries = 1.0e-4
 
-Vcc vcc 0 dc 3.3
-
-V1 ina 0 dc 0 AC 1 sin(1 0 440MEG 0 0 0)
-Rsrc ina in 50
+V1 ina 0 dc 0 AC 1 sin(1 0 435MEG 0 0 0)
 
 .if (0)
 
 * TX PA input matcher
 L1     in   out  17n
 C1     in   0    37p
+
+Rsrc ina in 50
 
 Rout   out2  out1 1.87
 * -37.7 ohms at 435MHz
@@ -29,13 +28,19 @@ Cout   out1 0    9.6p
 .if (1)
 
 * TX PA output matcher
-C1     in   out  130p
-L1     in   inx  6.8n
-R1     inx  0    0.078
+L1     in  inx  1n
+R1     inx out  .078
+C1     out 0    19.4p
 
-Rout   out2  out1 6.23
+*L1     in   inx  .2n
+*R1     inx  out  0.078
+*C1     out  0    3.5p
+
+Rsrc ina inb 6.23
 * -13.3 ohms at 435MHz
-Cout   out1 0    27p
+Csrc inb in  27.5p
+
+Rout   out2  0   50
 
 .else
 .if (0)
@@ -43,6 +48,8 @@ Cout   out1 0    27p
 * TX LNA input matcher
 L1     in   out  91n
 C1     out  0    6.4p
+
+Rsrc ina in 50
 
 Rout   out2  out1 142.4
 * -80.8 ohms at 145MHz
@@ -53,6 +60,8 @@ Cout   out1 0    13.6p
 * TX LNA output matcher
 L1     in   out  47n
 C1     out  0    11p
+
+Rsrc ina in 50
 
 Rout   out2  out1 86.8
 * -1.88 ohms at 145MHz
@@ -72,9 +81,11 @@ Vm out out2 dc 0 ac 0
 
 ac lin 5000 400Meg 470Meg
 plot vr(in) vi(in) vp(in)
+plot vr(out) vi(out) vp(out)
 
 ac lin 5000 130Meg 160Meg
 plot vr(in) vi(in) vp(in)
+plot vr(out) vi(out) vp(out)
 
 ac lin 5000 100Meg 2000meg
 plot db((v(out) * i(Vm)) / (v(in) * i(V1)))
