@@ -968,6 +968,16 @@
 		)
 		(uuid "250cf0d9-e75b-4cde-b852-822abe0743bb")
 	)
+	(text "Inductor to bleed off static build\nup on the antenna."
+		(exclude_from_sim no)
+		(at 115.824 55.118 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "a5686edd-9f39-4395-8ba1-4d5cb59ca5c7")
+	)
 	(text "RX ANT IN"
 		(exclude_from_sim no)
 		(at 82.296 51.562 0)

@@ -2483,16 +2483,6 @@
 		)
 		(uuid "06b648fc-0137-4d2a-9e0b-a818392a0589")
 	)
-	(text "Inductor to bleed of static build\nup on the antenna."
-		(exclude_from_sim no)
-		(at 319.786 192.024 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-		)
-		(uuid "0ebd6f2c-e185-4356-91cd-64037e31cd7e")
-	)
 	(text "Place by the PA."
 		(exclude_from_sim no)
 		(at 165.354 237.744 0)
@@ -2567,7 +2557,7 @@
 		)
 		(uuid "7921cee6-3643-4410-a3a7-84417ea57323")
 	)
-	(text "5th order Elliptic low pass 460MHz cutoff,\n.1eb ripple in passband, 50dB stopband\nattenuation."
+	(text "5th order Elliptic low pass 460MHz cutoff,\n.1dB ripple in passband, 50dB stopband\nattenuation."
 		(exclude_from_sim no)
 		(at 264.414 191.77 0)
 		(effects

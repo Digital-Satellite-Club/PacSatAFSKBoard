@@ -9,8 +9,6 @@ some point.
 
 # TODO
 
-Replace PA output filter.
-
 According to the cubesat documents I have been reading, its best if
 parts are automotive certified, AEC-Q100 or AEC-Q200.  I assume this
 is so they can handle the shaking of the flight to space.  The
@@ -32,7 +30,6 @@ Parts that are not automotive rated listed below.
 | MAX4995A					| 3.3V and 5V current limiter | Some devices are available from TI, like TPS2561-Q1 (dual channel) or TPS2557-Q1 (single channel). The MAX part may already be flight proven, though. |
 | AX5043					| radio | No other option. |
 | TQP7M9106					| PA | ? |
-| LFCG-490+					| transmit filter | Environmental Specs don't look good, need to replace. |
 | QPL9547					| LNA | ? |
 | RBP-140+					| receive filter | Environmental Specs seem good, probably ok. |
 | AD4PS-1+					| RF power splitter | Environmental Specs seem good, probably ok. |
@@ -409,6 +406,8 @@ have an "off" state, it's a "standby" state where it's listening on
 the bus but cannot transmit.
 
 Fix DC bias issue on the output impedance filter of the LNA.
+
+Replace PA output filter.
 
 # Not going to do
 
@@ -892,3 +891,9 @@ Fixed the RF input and output filters.  Added a simulation for the
 RF output filter.
 
 Fixed DC bias issue on the output impedance filter of the LNA.
+
+## 2025-08-16
+
+Rework the output filter.  The part that was chosen really wasn't
+suitable, it didn't have good thermal or vibration characteristics and
+it wasn't enough filtering.  Switch to a discrete filter.

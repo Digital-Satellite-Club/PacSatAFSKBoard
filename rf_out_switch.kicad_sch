@@ -978,6 +978,16 @@
 		)
 		(uuid "34f86cf6-0121-4674-96b2-83df63bef7b7")
 	)
+	(text "Inductor to bleed off static build\nup on the antenna."
+		(exclude_from_sim no)
+		(at 115.57 42.672 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "76776187-72da-4f88-96bf-2d75cfdeb270")
+	)
 	(text "TX FROM_BOARD2"
 		(exclude_from_sim no)
 		(at 165.608 31.75 0)
