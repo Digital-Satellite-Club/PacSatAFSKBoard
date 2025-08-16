@@ -2844,16 +2844,6 @@
 		)
 		(uuid "9dee4eee-de08-4399-a410-db3371da8091")
 	)
-	(text "DC bias may affect the\nvalue of this capacitor.\nMay need to adjust."
-		(exclude_from_sim no)
-		(at 228.6 150.368 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-		)
-		(uuid "abf3dff5-9f6a-4343-a551-0896de412301")
-	)
 	(text "Input impedance is\n1.87 - 37.7j this\nmatches to 50 ohms\nat 435MHz."
 		(exclude_from_sim no)
 		(at 66.04 172.72 0)
@@ -2866,7 +2856,7 @@
 	)
 	(text "Output impedance is\n6.23 - j13.3 ohms\nThis converts to 50 ohms\nat 435MHz"
 		(exclude_from_sim no)
-		(at 205.994 171.704 0)
+		(at 202.184 172.212 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -3131,7 +3121,7 @@
 		(uuid "9aee2846-df40-4d1c-bb61-2668b40912ca")
 	)
 	(junction
-		(at 228.6 160.02)
+		(at 220.98 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d8411af-7416-47b6-adb5-401743119c41")
@@ -3428,7 +3418,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 160.02) (xy 228.6 160.02)
+			(xy 213.36 160.02) (xy 220.98 160.02)
 		)
 		(stroke
 			(width 0)
@@ -3438,7 +3428,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 160.02) (xy 228.6 166.37)
+			(xy 220.98 160.02) (xy 220.98 166.37)
 		)
 		(stroke
 			(width 0)
@@ -3508,7 +3498,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 160.02) (xy 210.82 160.02)
+			(xy 203.2 160.02) (xy 205.74 160.02)
 		)
 		(stroke
 			(width 0)
@@ -3758,7 +3748,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 173.99) (xy 228.6 179.07)
+			(xy 220.98 173.99) (xy 220.98 179.07)
 		)
 		(stroke
 			(width 0)
@@ -3778,7 +3768,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 160.02) (xy 251.46 160.02)
+			(xy 220.98 160.02) (xy 251.46 160.02)
 		)
 		(stroke
 			(width 0)
@@ -4528,7 +4518,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 160.02) (xy 198.12 160.02)
+			(xy 194.31 160.02) (xy 195.58 160.02)
 		)
 		(stroke
 			(width 0)
@@ -6903,7 +6893,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 201.93 160.02 90)
+		(at 199.39 160.02 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6912,7 +6902,7 @@
 		(dnp no)
 		(uuid "6a8c6f5d-509c-4656-ba3b-f503e2a565d7")
 		(property "Reference" "C123"
-			(at 201.93 163.83 90)
+			(at 199.39 163.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6920,7 +6910,7 @@
 			)
 		)
 		(property "Value" "100p 30V"
-			(at 201.93 156.718 90)
+			(at 199.39 156.718 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6928,7 +6918,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 205.74 160.9852 0)
+			(at 203.2 160.9852 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6937,7 +6927,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 160.02 0)
+			(at 199.39 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6946,7 +6936,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 201.93 160.02 0)
+			(at 199.39 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6970,7 +6960,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 228.6 170.18 0)
+		(at 220.98 170.18 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6979,7 +6969,7 @@
 		(dnp no)
 		(uuid "6b87d620-ffec-4b7a-b88d-c66293c8df67")
 		(property "Reference" "C117"
-			(at 232.41 170.18 90)
+			(at 224.79 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6987,7 +6977,7 @@
 			)
 		)
 		(property "Value" "3.5p 2% 30V"
-			(at 225.298 170.18 90)
+			(at 217.678 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6995,7 +6985,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 229.5652 166.37 0)
+			(at 221.9452 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7004,7 +6994,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 228.6 170.18 0)
+			(at 220.98 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7013,7 +7003,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 228.6 170.18 0)
+			(at 220.98 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7435,7 +7425,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 214.63 160.02 90)
+		(at 209.55 160.02 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7444,7 +7434,7 @@
 		(dnp no)
 		(uuid "87fbf27d-5bdf-46ad-9d2b-da15c8a43ced")
 		(property "Reference" "L38"
-			(at 214.63 158.242 90)
+			(at 209.55 158.242 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7452,7 +7442,7 @@
 			)
 		)
 		(property "Value" ".2n Q=13"
-			(at 214.63 162.052 90)
+			(at 209.55 162.052 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7460,7 +7450,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
-			(at 214.63 160.02 0)
+			(at 209.55 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7469,7 +7459,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 214.63 160.02 0)
+			(at 209.55 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7478,7 +7468,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 214.63 160.02 0)
+			(at 209.55 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8035,7 +8025,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 228.6 179.07 0)
+		(at 220.98 179.07 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8044,7 +8034,7 @@
 		(dnp no)
 		(uuid "ae111ff5-853c-4a07-8ea3-c108bfc58578")
 		(property "Reference" "#PWR0229"
-			(at 228.6 185.42 0)
+			(at 220.98 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8053,7 +8043,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 228.473 183.4642 0)
+			(at 220.853 183.4642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8061,7 +8051,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 179.07 0)
+			(at 220.98 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8070,7 +8060,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 179.07 0)
+			(at 220.98 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8079,7 +8069,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 228.6 179.07 0)
+			(at 220.98 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)

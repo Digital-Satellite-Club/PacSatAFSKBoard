@@ -29,22 +29,22 @@ Cout    out  0    3.5p
 .SUBCKT Filt440MHz in  out
 
 * 7.32p
-C1	in   0   7.32p
+C1	in   0   7.3p
 
 * 21.71n
-L2	in  a1  21.71n
+L2	in  a1  21.7n
 R2      a1  a2   .078
 * 767.6f
-C2	in  a2  .768p
+C2	in  a2  .75p
 
 * 11.84p
-C3	a2  0   11.84p
+C3	a2  0   12p
 
 * 17.96n
-L4	a2  a3  17.96n
+L4	a2  a3  18n
 R4	a3  out .078
 * 2.16p
-C4	a2  out 2.16p
+C4	a2  out 2.2p
 
 * 6.2p
 C5	out 0   6.2p

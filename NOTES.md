@@ -9,6 +9,8 @@ some point.
 
 # TODO
 
+Replace PA output filter.
+
 According to the cubesat documents I have been reading, its best if
 parts are automotive certified, AEC-Q100 or AEC-Q200.  I assume this
 is so they can handle the shaking of the flight to space.  The
@@ -405,6 +407,8 @@ get more space.
 Add enables to the CAN bus transceivers?  The chip does not really
 have an "off" state, it's a "standby" state where it's listening on
 the bus but cannot transmit.
+
+Fix DC bias issue on the output impedance filter of the LNA.
 
 # Not going to do
 
@@ -886,3 +890,5 @@ Add enable controls for the CAN bus transceivers.
 
 Fixed the RF input and output filters.  Added a simulation for the
 RF output filter.
+
+Fixed DC bias issue on the output impedance filter of the LNA.
