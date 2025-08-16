@@ -25,7 +25,6 @@ Parts that are not automotive rated listed below.
 | AS1016204-0108X0PWAY		| MRAM | No suitable devices available. |
 | MAX31331					| RTC | No suitable devices available. |
 | TPSM828302ARDSR			| 1.2V power converter | TPSM33620S3QRDNRQ1 might work |
-| LP3962EMP-3.3/NOPB		| 3.3V power converter | TPS75233-Q1 might work |
 | MP5073GG-P				| 1.2V current limiter | No suitable devices appear to be available. |
 | MAX4995A					| 3.3V and 5V current limiter | Some devices are available from TI, like TPS2561-Q1 (dual channel) or TPS2557-Q1 (single channel). The MAX part may already be flight proven, though. |
 | AX5043					| radio | No other option. |
@@ -43,6 +42,7 @@ Part that are automotive listed below.
 | STWD100NYWY3F				| Hardware watchdog |
 | TCAN1044ADDFRQ1			| CAN bus interface |
 | TMS570LS0914PGE			| CPU |
+| TPS7A52-Q1				| 3.3V power converter |
 
 If lines on the PC104 bus are outputs, wouldn't they need to be open
 collector or such if they are driven by multiple boards?  I haven't
@@ -897,3 +897,5 @@ Fixed DC bias issue on the output impedance filter of the LNA.
 Rework the output filter.  The part that was chosen really wasn't
 suitable, it didn't have good thermal or vibration characteristics and
 it wasn't enough filtering.  Switch to a discrete filter.
+
+Change 3.3V power convert to a TPS7A52-Q1.  It's AEC rated.
