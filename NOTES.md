@@ -883,3 +883,6 @@ rail named +5VAL for all the devices that need to be powered up even
 when the power is off.
 
 Add enable controls for the CAN bus transceivers.
+
+Fixed the RF input and output filters.  Added a simulation for the
+RF output filter.

@@ -2,7 +2,7 @@
 * https://markimicrowave.com/technical-resources/tools/lc-filter-design-tool/
 * 3rd order, conventional shunt first, 123 low cutoff, 173 high
 * cutoff, .10db ripple in passband, 50 ohm input, 50 ohm output
-* impedance.  input | output | | .SUBCKT Filt144MHz in out
+* impedance.
 
 *                  input
 *                  |   output

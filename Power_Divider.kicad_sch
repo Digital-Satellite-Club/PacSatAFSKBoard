@@ -7114,7 +7114,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "580p 2%"
+		(property "Value" "11p 1%"
 			(at 207.01 152.3999 0)
 			(effects
 				(font

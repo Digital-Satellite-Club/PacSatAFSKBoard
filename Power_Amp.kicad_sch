@@ -2792,7 +2792,7 @@
 	)
 	(text "33 dBm\n2 W"
 		(exclude_from_sim no)
-		(at 242.57 166.624 0)
+		(at 173.736 166.116 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2846,7 +2846,7 @@
 	)
 	(text "DC bias may affect the\nvalue of this capacitor.\nMay need to adjust."
 		(exclude_from_sim no)
-		(at 243.078 155.194 0)
+		(at 228.6 150.368 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -2866,7 +2866,7 @@
 	)
 	(text "Output impedance is\n6.23 - j13.3 ohms\nThis converts to 50 ohms\nat 435MHz"
 		(exclude_from_sim no)
-		(at 210.566 171.196 0)
+		(at 205.994 171.704 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -3428,6 +3428,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 160.02) (xy 228.6 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "126abba6-10c6-4d36-8ae6-874bf11062d6")
+	)
+	(wire
+		(pts
 			(xy 228.6 160.02) (xy 228.6 166.37)
 		)
 		(stroke
@@ -3495,6 +3505,16 @@
 			(type default)
 		)
 		(uuid "1b6e0941-f5d6-40a7-bb30-191f9ce0f27c")
+	)
+	(wire
+		(pts
+			(xy 205.74 160.02) (xy 210.82 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d64a659-2def-486c-aa4d-260caab3ce2b")
 	)
 	(wire
 		(pts
@@ -4508,7 +4528,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 160.02) (xy 218.44 160.02)
+			(xy 194.31 160.02) (xy 198.12 160.02)
 		)
 		(stroke
 			(width 0)
@@ -4985,16 +5005,6 @@
 			(type default)
 		)
 		(uuid "e6191c9a-9e67-4e58-972c-2849e00688fd")
-	)
-	(wire
-		(pts
-			(xy 228.6 160.02) (xy 226.06 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6824d53-bf5a-4371-820a-2cc6e87ffdfc")
 	)
 	(wire
 		(pts
@@ -6893,32 +6903,32 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 222.25 160.02 90)
+		(at 201.93 160.02 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6b87d620-ffec-4b7a-b88d-c66293c8df67")
-		(property "Reference" "C117"
-			(at 222.25 163.83 90)
+		(uuid "6a8c6f5d-509c-4656-ba3b-f503e2a565d7")
+		(property "Reference" "C123"
+			(at 201.93 163.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "130p 1% 30V"
-			(at 222.25 156.718 90)
+		(property "Value" "100p 30V"
+			(at 201.93 156.718 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 226.06 160.9852 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 205.74 160.9852 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6927,7 +6937,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.25 160.02 0)
+			(at 201.93 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6936,7 +6946,74 @@
 			)
 		)
 		(property "Description" ""
-			(at 222.25 160.02 0)
+			(at 201.93 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3c5eaf4f-624c-42b2-8398-464614ecc55a")
+		)
+		(pin "2"
+			(uuid "6eca7662-b31f-4989-9f37-b8400a23169e")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
+					(reference "C123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 228.6 170.18 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6b87d620-ffec-4b7a-b88d-c66293c8df67")
+		(property "Reference" "C117"
+			(at 232.41 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.5p 2% 30V"
+			(at 225.298 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 229.5652 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7358,8 +7435,8 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 228.6 170.18 0)
-		(mirror y)
+		(at 214.63 160.02 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7367,23 +7444,23 @@
 		(dnp no)
 		(uuid "87fbf27d-5bdf-46ad-9d2b-da15c8a43ced")
 		(property "Reference" "L38"
-			(at 230.378 170.18 90)
+			(at 214.63 158.242 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "6.8n 2% Q=40"
-			(at 226.568 170.18 90)
+		(property "Value" ".2n Q=13"
+			(at 214.63 162.052 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 228.6 170.18 0)
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
+			(at 214.63 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7392,7 +7469,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 228.6 170.18 0)
+			(at 214.63 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7401,7 +7478,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 228.6 170.18 0)
+			(at 214.63 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -11,7 +11,6 @@
 .option rseries = 1.0e-4
 
 Vcc vcc 0 dc 3.3
-Vee vee 0 dc 0
 
 V1 ina 0 dc 0 AC 1 sin(1 0 440MEG 0 0 0)
 Rsrc ina in 50
@@ -31,7 +30,8 @@ Cout   out1 0    9.6p
 
 * TX PA output matcher
 C1     in   out  130p
-L1     in   0    6.8n
+L1     in   inx  6.8n
+R1     inx  0    0.078
 
 Rout   out2  out1 6.23
 * -13.3 ohms at 435MHz
