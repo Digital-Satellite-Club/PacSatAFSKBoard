@@ -8,91 +8,124 @@
 * is looking into the PA/LNA device.  So it's backwards.
 *
 
-.option rseries = 1.0e-4
+*.option rseries = 1.0e-4
 
-V1 ina 0 dc 0 AC 1 sin(1 0 435MEG 0 0 0)
+.param pa_in=0
 
-.if (1)
+.SUBCKT ImpMatchPAIn in vmin1 vmin2 vmout1 vmout2
+
+Rsrc in     vmin1  50
 
 * TX PA input matcher
-L1     in   out  17n
-C1     in   0    37p
+C1   vmin2  0      39p
+L1   vmin2  a1     17n
 
-Rsrc ina inc 50
-
-Rout   out2  out1 1.87
 * -37.7 ohms at 435MHz
-Cout   out1 0    9.6p
+Cout a1     vmout1 9.6p
+Rout vmout2 0      1.87
 
-.else
-.if (1)
+.ENDS
 
-* TX PA output matcher
-C1     in   out  114p
-L1     out  outx 6.94n
-R1     outx 0    .078
+.SUBCKT ImpMatchPAOut in vmin1 vmin2 vmout1 vmout2
 
+Rsrc in     vmin1  6.23
 * -13.3 ohms at 435MHz
-Csrc ina inb  27.5p
-Rsrc inb inc 6.23
+Csrc vmin2  a1     27.5p
 
-Rout   out2  0   50
+* Set the DC bias between two capacitors.
+Rb1  a1     0      1Meg
 
-.else
-.if (0)
+* Impedance matching network
+* TX PA output matcher
+C1   a1     vmout1 114p
+L1   vmout1 a3     6.9n
+R1   a3     0      .078
+
+Rout vmout2 0      50
+
+.ENDS
+
+.SUBCKT ImpMatchLNAIn in vmin1 vmin2 vmout1 vmout2
+
+Rsrc in     vmin1  50
 
 * TX LNA input matcher
-L1     in   out  91n
-C1     out  0    6.4p
+L1   vmin2  a2   91n
+R1   a2     a1   .078
+C1   a1     0    6.4p
 
-Rsrc ina inc 50
-
-Rout   out2  out1 142.4
 * -80.8 ohms at 145MHz
-Cout   out1 0    13.6p
+Cout a1     vmout1 13.6p
+Rout vmout2 0      142.4
 
-.else
+.ENDS
+
+.SUBCKT ImpMatchLNAOut in vmin1 vmin2 vmout1 vmout2
+
+Rsrc in     vmin1  86.6
+* -1.88 ohms at 145MHz
+Csrc vmin2  a1     583p
+
+* Set the DC bias between two capacitors.
+Rb1  a1     0      1Meg
 
 * TX LNA output matcher
-L1     in   out  47n
-C1     out  0    11p
+C1   a1     0       11p
+L1   a1     a2      47n
+R1   a2     vmout1  .078
 
-Rsrc ina inc 50
+Rout vmout2 0      50
 
-Rout   out2  out1 86.8
-* -1.88 ohms at 145MHz
-Cout   out1 0    583p
+.ENDS
 
+.param m = 0
+
+.if (m == 1)
+X1 in vmin1 vmin2 vmout1 vmout2 ImpMatchPAIn
 .endif
+.if (m == 2)
+X1 in vmin1 vmin2 vmout1 vmout2 ImpMatchPAOut
 .endif
+.if (m == 3)
+X1 in vmin1 vmin2 vmout1 vmout2 ImpMatchLNAIn
 .endif
+.if (m == 4)
+X1 in vmin1 vmin2 vmout1 vmout2 ImpMatchLNAOut
+.endif
+
+V1 in 0 dc 0 AC 1 sin(1 0 435MEG 0 0 0)
 
 * For current measurement
-Vmin inc in dc 0 ac 0
-Rb1  inc 0 1Meg
+Vmin  vmin1  vmin2  dc 0 ac 0
 
 * For current measurement
-Vmout out out2 dc 0 ac 0
+Vmout vmout1 vmout2 dc 0 ac 0
 
 .control
-*tran .1ns 60ns 50ns
-*tran 10ns 22000ns 2640ns
-*plot v(in)
 
-ac lin 5000 400Meg 470Meg
-plot vr(in) vi(in) vp(in)
-plot vr(out) vi(out) vp(out)
+alterparam m = 1
+reset
+ac lin 5000 1Meg 1000meg
+plot title "PA Input" db((v(vmout1) * i(Vmout)) / (v(vmin1) * i(Vmin)))
+plot title "PA Input" vi(vmin1)
 
-ac lin 5000 130Meg 160Meg
-plot vr(in) vi(in) vp(in)
-plot vr(out) vi(out) vp(out)
+alterparam m = 2
+reset
+ac lin 5000 1Meg 1000meg
+plot title "PA Output" db((v(vmout1) * i(Vmout)) / (v(vmin1) * i(Vmin)))
+plot title "PA Output" vi(vmin1)
 
-ac lin 5000 1Meg 2000meg
-plot db((v(out) * i(Vmout)) / (v(in) * i(Vmin)))
-plot v(out) v(in)
-plot i(Vmout) i(Vmin)
-plot db(v(out) * i(Vmout)) db(v(in) * i(Vmin))
-plot db(v(out) * v(out) / 50)
+alterparam m = 3
+reset
+ac lin 5000 1Meg 400meg
+plot title "LNA Input" db((v(vmout1) * i(Vmout)) / (v(vmin1) * i(Vmin)))
+plot title "LNA Input" vi(vmin1)
+
+alterparam m = 4
+reset
+ac lin 5000 1Meg 400meg
+plot title "LNA Output" db((v(vmout1) * i(Vmout)) / (v(vmin1) * i(Vmin)))
+plot title "LNA Output" vi(vmin1)
 
 .endc
 

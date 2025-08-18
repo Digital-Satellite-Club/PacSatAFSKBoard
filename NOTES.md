@@ -899,3 +899,46 @@ suitable, it didn't have good thermal or vibration characteristics and
 it wasn't enough filtering.  Switch to a discrete filter.
 
 Change 3.3V power convert to a TPS7A52-Q1.  It's AEC rated.
+
+## 2025-08-18
+
+I spent practically a whole weekend trying to figure out how to
+measure impedance matching circuits.  This probably has more general
+applicability to power measurement in general, but in spice measuring
+power on a signal that is complex is problematic.  I think the problem
+is that you don't have a complex representation of the current, you
+get bizarre values out of it if you do a simple V * I.  And doing
+V^2/R is hard if R is complex and you don't really know the value.  I
+don't think these thing make any sense, in general, and I don't know
+how to directly measure the power in a complex signal.
+
+However, I have figured out a way around it.  When you have an L
+match, you have a component facing the complex impedance.  You can put
+another component in front of the filter to remove the complex
+impedance from the signal (just basically match the input imaginary
+impedance with the corresponding value).  Then adjust the component
+of the L match facing the complex impedance.
+
+Examples are in order.  Start with an easy case.  Suppose we have an
+output impedance of 6.23 - j13.3 at 435MHz.  If we plug that into a
+smith chart or an impedance matching program, we get two possible
+outcomes.  The first is a 10.9nH series inductor and a 19.4pF parallel
+capacitor.  Just split the inductor into two, 4.87nH (j13.3 ohms at
+435MHz) then 6.03.  Then the capacitor.  Take your power measurement
+between the two inductors.
+
+The other possibility is a 113.9pF series capacitor followed by a
+6.9nH parallel inductor.  You can't just split the capacitor into two.
+Or, from a smith chart representation, the first value does not pass
+over the zero imaginary impedance line.  But we can use the same
+4.87nH inductor before the capacitor to bring the value to zero
+imaginary impedance, then adjust the capacitor value (to 22.1pF) and
+measure between the inductor and capacitor.
+
+If you have a parallel device facing the complex impedance, you can
+split it in to in parallel (if that work) or as in our second example
+put a device between to cancel the complex impedance.
+
+From the simulation you can also put the resistor first after the
+voltage source and measure before it goes into the capacitor or
+inductor.  The simulations were modified to do this.
