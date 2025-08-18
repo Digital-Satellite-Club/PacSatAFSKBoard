@@ -12,13 +12,13 @@
 
 V1 ina 0 dc 0 AC 1 sin(1 0 435MEG 0 0 0)
 
-.if (0)
+.if (1)
 
 * TX PA input matcher
 L1     in   out  17n
 C1     in   0    37p
 
-Rsrc ina in 50
+Rsrc ina inc 50
 
 Rout   out2  out1 1.87
 * -37.7 ohms at 435MHz
@@ -28,17 +28,13 @@ Cout   out1 0    9.6p
 .if (1)
 
 * TX PA output matcher
-L1     in  inx  1n
-R1     inx out  .078
-C1     out 0    19.4p
+C1     in   out  114p
+L1     out  outx 6.94n
+R1     outx 0    .078
 
-*L1     in   inx  .2n
-*R1     inx  out  0.078
-*C1     out  0    3.5p
-
-Rsrc ina inb 6.23
 * -13.3 ohms at 435MHz
-Csrc inb in  27.5p
+Csrc ina inb  27.5p
+Rsrc inb inc 6.23
 
 Rout   out2  0   50
 
@@ -49,7 +45,7 @@ Rout   out2  0   50
 L1     in   out  91n
 C1     out  0    6.4p
 
-Rsrc ina in 50
+Rsrc ina inc 50
 
 Rout   out2  out1 142.4
 * -80.8 ohms at 145MHz
@@ -61,7 +57,7 @@ Cout   out1 0    13.6p
 L1     in   out  47n
 C1     out  0    11p
 
-Rsrc ina in 50
+Rsrc ina inc 50
 
 Rout   out2  out1 86.8
 * -1.88 ohms at 145MHz
@@ -72,7 +68,11 @@ Cout   out1 0    583p
 .endif
 
 * For current measurement
-Vm out out2 dc 0 ac 0
+Vmin inc in dc 0 ac 0
+Rb1  inc 0 1Meg
+
+* For current measurement
+Vmout out out2 dc 0 ac 0
 
 .control
 *tran .1ns 60ns 50ns
@@ -87,10 +87,12 @@ ac lin 5000 130Meg 160Meg
 plot vr(in) vi(in) vp(in)
 plot vr(out) vi(out) vp(out)
 
-ac lin 5000 100Meg 2000meg
-plot db((v(out) * i(Vm)) / (v(in) * i(V1)))
+ac lin 5000 1Meg 2000meg
+plot db((v(out) * i(Vmout)) / (v(in) * i(Vmin)))
 plot v(out) v(in)
-plot i(Vm) i(V1)
+plot i(Vmout) i(Vmin)
+plot db(v(out) * i(Vmout)) db(v(in) * i(Vmin))
+plot db(v(out) * v(out) / 50)
 
 .endc
 

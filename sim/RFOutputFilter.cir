@@ -9,17 +9,17 @@
 .SUBCKT ImpMatchPAOut in  out
 
 * Impedance matching network
-*Lin     in   inx  1n
-*Rin     inx  out  .078
-*Cout    out  0    19.5p
+Cin     in   out  114p
+L1      out  outx 6.9n
+R1      outx 0    .078
 
 * The above are the calculated values.  For some reason they don't
 * work well in simulation.  The below work much better in simulation.
 * I need to figure out why.
 
-Lin     in   inx  .2n
-Rin     inx  out  .078
-Cout    out  0    3.5p
+*Lin     in   inx  .2n
+*Rin     inx  out  .078
+*Cout    out  0    3.5p
 
 .ENDS
 
@@ -53,9 +53,12 @@ C5	out 0   6.2p
 
 V1 0 ina dc 0 AC 1 sin(0 1 435MEG 0 0 0)
 
-Rsrc ina ina1  6.23
-Csrc ina1 in 27p
-*Rsrc ina in  50
+Rsrc ina  ina1 6.23
+Csrc ina1 ina2 27p
+*Rsrc ina ina1  50
+
+* Used for current measurement.
+Vmin ina2 in AC 0 DC 0
 
 X1 in  im1 ImpMatchPAOut
 
@@ -79,8 +82,8 @@ ac lin 5000 400Meg 470Meg
 plot vr(out) vi(out) vp(out)
 
 ac lin 50000 300Meg 1000Meg
-plot db((v(out) * i(Vmout)) / (vm(in) * i(V1)))
-plot db((v(im1) * i(Vm1)) / (vm(in) * i(V1)))
+plot db((v(out) * i(Vmout)) / (vm(in) * i(Vmin)))
+plot db((v(im1) * i(Vm1)) / (vm(in) * i(Vmin)))
 *plot db((v(out) * i(Vmout)) / (vm(im1) * i(Vm1)))
 
 *plot db(v(out) * i(Vload)) db(v(in2) * i(VLoad1)) db(vm(in1) * i(V1))
