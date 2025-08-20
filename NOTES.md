@@ -949,3 +949,8 @@ put a device between to cancel the complex impedance.
 From the simulation you can also put the resistor first after the
 voltage source and measure before it goes into the capacitor or
 inductor.  The simulations were modified to do this.
+
+## 2025-08-20
+
+Remove the UART connections from the PC104.  It's unknown if they are
+needed, and if they are then they will need work for active/standby.

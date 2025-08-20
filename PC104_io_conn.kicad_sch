@@ -2441,6 +2441,10 @@
 		(uuid "06d592bf-6c4d-46c4-96c2-c0987b6c13d1")
 	)
 	(no_connect
+		(at 220.98 124.46)
+		(uuid "0db67c1d-52b8-4a03-be2b-1999f34907f6")
+	)
+	(no_connect
 		(at 147.32 109.22)
 		(uuid "0fad5a63-610e-4208-8c90-18e80f2a1343")
 	)
@@ -2505,6 +2509,10 @@
 		(uuid "458a0e53-baf7-49a6-90ea-034fb0b04ec0")
 	)
 	(no_connect
+		(at 220.98 86.36)
+		(uuid "467a281b-9962-4331-8086-c3aa91197701")
+	)
+	(no_connect
 		(at 182.88 111.76)
 		(uuid "4a5a58a6-05ec-486c-ac9a-d66ad50c6e14")
 	)
@@ -2515,6 +2523,14 @@
 	(no_connect
 		(at 220.98 96.52)
 		(uuid "5003f4e4-61b4-4380-8f63-fccd3b8e6e10")
+	)
+	(no_connect
+		(at 220.98 88.9)
+		(uuid "53ac0c7c-e2db-49f6-a0ff-fc3dc7517cfd")
+	)
+	(no_connect
+		(at 220.98 121.92)
+		(uuid "540a3de9-9905-49a7-baa8-e277e19f9bea")
 	)
 	(no_connect
 		(at 182.88 68.58)
@@ -2906,26 +2922,6 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 124.46) (xy 224.79 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3f78984-56c0-414c-9aa9-20dcad825f3e")
-	)
-	(wire
-		(pts
-			(xy 220.98 88.9) (xy 226.06 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a83b6d80-58c5-484a-8521-48a2df1cd5d0")
-	)
-	(wire
-		(pts
 			(xy 128.27 119.38) (xy 128.27 123.19)
 		)
 		(stroke
@@ -2933,16 +2929,6 @@
 			(type default)
 		)
 		(uuid "a972f37d-c95e-4c2f-88a4-f413a2fe63ee")
-	)
-	(wire
-		(pts
-			(xy 220.98 86.36) (xy 226.06 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acf79a83-46c7-4766-9085-eeed81ce91ee")
 	)
 	(wire
 		(pts
@@ -2973,16 +2959,6 @@
 			(type default)
 		)
 		(uuid "c8a3dd87-8055-4697-a177-98dfa1879df0")
-	)
-	(wire
-		(pts
-			(xy 220.98 121.92) (xy 224.79 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d632dd11-482e-47d1-912e-0f45b288cbd5")
 	)
 	(wire
 		(pts
@@ -3101,28 +3077,6 @@
 		(uuid "38d00ffb-9029-4fd4-b460-918ecb18b727")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 199.0299 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "UART_TX2"
-		(shape input)
-		(at 226.06 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "5053a5d0-5f7a-4fbc-8109-f21a22ea9de2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 239.5744 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3462,28 +3416,6 @@
 			)
 		)
 	)
-	(global_label "UART_RX2"
-		(shape input)
-		(at 226.06 88.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "ce563f0f-8f2e-4cd5-9665-293738a22572")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 239.9373 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ACTIVE1_N"
 		(shape input)
 		(at 185.42 93.98 0)
@@ -3497,28 +3429,6 @@
 		(uuid "d2274528-f7a5-4694-8e45-75e973beb954")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 199.8282 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "UART_RX1"
-		(shape input)
-		(at 224.79 124.46 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "d3b69f64-ad63-443a-a73d-f317606a6dfb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.6673 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3563,28 +3473,6 @@
 		(uuid "ecca4d68-12af-4ff7-829d-b54e782a2f66")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 210.0608 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "UART_TX1"
-		(shape input)
-		(at 224.79 121.92 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "fdcabac7-ec7e-4688-ab8c-6ad06630b21a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.3044 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
