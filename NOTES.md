@@ -9,6 +9,10 @@ some point.
 
 # TODO
 
+The MRAM parts are WSON packages.  SIOC packages are available, too.
+There are somewhat bigger, but might be better from a thermal point of
+view.
+
 According to the cubesat documents I have been reading, its best if
 parts are automotive certified, AEC-Q100 or AEC-Q200.  I assume this
 is so they can handle the shaking of the flight to space.  The
@@ -43,6 +47,9 @@ Part that are automotive listed below.
 | TCAN1044ADDFRQ1			| CAN bus interface |
 | TMS570LS0914PGE			| CPU |
 | TPS7A52-Q1				| 3.3V power converter |
+
+I'm assuming that most ICs won't be a problem from the vibration point
+of view.  The power modules are probably good to get certified, though.
 
 If lines on the PC104 bus are outputs, wouldn't they need to be open
 collector or such if they are driven by multiple boards?  I haven't
