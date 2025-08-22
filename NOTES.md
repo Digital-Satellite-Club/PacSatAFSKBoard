@@ -25,11 +25,11 @@ Parts that are not automotive rated listed below.
 |Part						|Function			  | Info |
 |----						|--------			  |----- |
 | LMK1C1106A				| clock distributor   | Suitable devices with 6 output not available.  Could use 4 output device (LMK00804B-Q1). Could use op amps (see https://www.analog.com/en/resources/analog-dialogue/articles/high-speed-amplifiers-make-clock-buffers.html). |
-| O 16,0-JT22CT-A-P-3,3-LF	| oscillator | There don't appear to be any that are automotive and temp certified with 2.5ppm stability.  This one is temp, which is probably more important. |
+| O 16,0-JT22CT-A-P-3,3-LF	| oscillator | There don't appear to be any that are automotive and temp certified with 2.5ppm stability.  This one is temp, which is probably more important. There is one from TXC at 16.389MHz |
 | AS1016204-0108X0PWAY		| MRAM | No suitable devices available. |
 | MAX31331					| RTC | No suitable devices available. |
 | TPSM828302ARDSR			| 1.2V power converter | TPSM33620S3QRDNRQ1 might work |
-| MP5073GG-P				| 1.2V current limiter | No suitable devices appear to be available. |
+| MP5073GG-P				| 1.2V current limiter | No suitable devices appear to be available. There is an MP5072 part that is AEC rated, basically the same chip but it's 1A instead of 2A. |
 | MAX4995A					| 3.3V and 5V current limiter | Some devices are available from TI, like TPS2561-Q1 (dual channel) or TPS2557-Q1 (single channel). The MAX part may already be flight proven, though. |
 | AX5043					| radio | No other option. |
 | TQP7M9106					| PA | ? |
