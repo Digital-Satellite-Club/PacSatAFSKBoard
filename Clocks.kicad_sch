@@ -2209,7 +2209,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d476fea-a346-46dd-8bfd-5ab009073106")
 		(property "Reference" "FB2"
-			(at 158.75 88.2269 0)
+			(at 158.75 87.5918 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2217,8 +2217,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K @ 100MHz"
-			(at 158.75 90.7669 0)
+		(property "Value" "1K@100MHz"
+			(at 158.75 90.1318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2953,7 +2953,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K @ 100MHz"
+		(property "Value" "1K@100MHz"
 			(at 215.9 83.1469 0)
 			(effects
 				(font

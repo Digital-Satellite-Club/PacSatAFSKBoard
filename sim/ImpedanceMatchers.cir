@@ -18,7 +18,7 @@ Rsrc in     vmin1  50
 
 * TX PA input matcher
 C1   vmin2  0      39p
-L1   vmin2  a1     17n
+L1   vmin2  a1     18n
 
 * -37.7 ohms at 435MHz
 Cout a1     vmout1 9.6p
@@ -37,7 +37,7 @@ Rb1  a1     0      1Meg
 
 * Impedance matching network
 * TX PA output matcher
-C1   a1     vmout1 114p
+C1   a1     vmout1 110p
 L1   vmout1 a3     6.9n
 R1   a3     0      .078
 

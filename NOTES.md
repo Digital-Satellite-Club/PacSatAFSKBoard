@@ -9,6 +9,10 @@ some point.
 
 # TODO
 
+The RBP-140+ 140MHz filter is kind of expensive, though fairly
+compact.  It's also not temperature rated.  Maybe it could be replaced
+with discrete components?
+
 The 78nH inductors in the AX5043 input section don't come in very high
 Q values, 28 is the best you can get.  77 and 79nH are even worse.
 
@@ -90,6 +94,8 @@ or better as possible.  The outliers at the moment are:
 	* RBP-140+ - Could replace the filter with discrete components.
 	* AD4PS+1 - Not sure about this one, perhaps three transformers
 	  could be used.
+	* TQP7M9106 - RF PA.  Could use a discrete device, but the parms
+	  are pretty good.
 
 After the MRAMs and second CAN bus, GPIOs are running short.  We have
 some options.  A 2-4 decoder could do this, but you would also need an

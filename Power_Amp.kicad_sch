@@ -12,6 +12,169 @@
 		(comment 1 "N5BRG")
 	)
 	(lib_symbols
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1083,106 +1246,6 @@
 						(effects
 							(font
 								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "H104"
-				(at 0.7874 6.0198 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "CUBESAT_MOUNT_HOLE"
-				(at 0.7874 3.3274 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "amsat_misc:CUBESAT_MOUNT_HOLE"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CUBESAT_MOUNT_HOLE_1_0_1"
-				(circle
-					(center 0 0)
-					(radius 0.5588)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "CUBESAT_MOUNT_HOLE_1_1_1"
-				(pin passive line
-					(at 2.54 0 180)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
 							)
 						)
 					)
@@ -2727,6 +2790,12 @@
 		(uuid "521a5e0a-5519-4bd6-baa6-a727cc9c4791")
 	)
 	(junction
+		(at 267.97 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5637a914-dbd3-4e1f-8488-23b51ff24e0b")
+	)
+	(junction
 		(at 124.46 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2887,12 +2956,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b10aedc7-7d4a-4806-b200-71b829bcf942")
-	)
-	(junction
-		(at 267.97 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b144004a-20ed-4391-a9de-14a4b20d9847")
 	)
 	(junction
 		(at 147.32 142.24)
@@ -3067,16 +3130,6 @@
 			(type default)
 		)
 		(uuid "0b76b208-3dc0-47fa-8d99-932b94925e91")
-	)
-	(wire
-		(pts
-			(xy 252.73 114.3) (xy 267.97 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d4bc5bf-a4f4-416e-ae42-eeebd18de06c")
 	)
 	(wire
 		(pts
@@ -3507,6 +3560,16 @@
 			(type default)
 		)
 		(uuid "4be53c65-e300-448d-9157-c007302910fe")
+	)
+	(wire
+		(pts
+			(xy 252.73 107.95) (xy 267.97 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ce759d1-ca5f-4892-8f4c-663550d4d150")
 	)
 	(wire
 		(pts
@@ -4840,7 +4903,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 114.3) (xy 267.97 116.84)
+			(xy 267.97 107.95) (xy 267.97 116.84)
 		)
 		(stroke
 			(width 0)
@@ -4880,7 +4943,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 105.41) (xy 267.97 114.3)
+			(xy 267.97 105.41) (xy 267.97 107.95)
 		)
 		(stroke
 			(width 0)
@@ -5099,69 +5162,6 @@
 				)
 				(justify left)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
-		(at 250.19 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "00868da3-4fee-4274-9e68-3a2052d4a66e")
-		(property "Reference" "H20"
-			(at 250.9774 99.3902 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Wire_Hole"
-			(at 250.9774 102.0826 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:Wire_Hole"
-			(at 250.19 105.41 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 250.19 105.41 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 250.19 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "55ca44b9-8d81-4a96-821b-23662739d263")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
-					(reference "H20")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -6451,69 +6451,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
-		(at 250.19 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "5df58551-b24c-4cd2-9c90-86f20600a41b")
-		(property "Reference" "H21"
-			(at 250.9774 108.2802 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Wire_Hole"
-			(at 250.9774 110.9726 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:Wire_Hole"
-			(at 250.19 114.3 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 250.19 114.3 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 250.19 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2116a1eb-67f8-4e1c-967c-dfedd350d07c")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
-					(reference "H21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
 		(at 255.27 148.59 90)
 		(mirror x)
@@ -6794,7 +6731,7 @@
 				)
 			)
 		)
-		(property "Value" "100p 30V"
+		(property "Value" "1n"
 			(at 199.39 156.718 90)
 			(effects
 				(font
@@ -6861,7 +6798,7 @@
 				)
 			)
 		)
-		(property "Value" "114p 2% 30V"
+		(property "Value" "110p 1% 30V"
 			(at 217.17 163.322 90)
 			(effects
 				(font
@@ -6971,6 +6908,74 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
 					(reference "C118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 247.65 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "791ae4de-0f7c-4eef-810e-a2cde049f397")
+		(property "Reference" "J17"
+			(at 248.285 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 248.285 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
+			(at 247.65 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247.65 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 247.65 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "82d2f319-c103-4556-9c15-70c8fa6e2742")
+		)
+		(pin "2"
+			(uuid "f02d664c-892a-4d60-a9da-126f6d0bd61b")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
+					(reference "J17")
 					(unit 1)
 				)
 			)
@@ -8861,7 +8866,7 @@
 				)
 			)
 		)
-		(property "Value" "100p"
+		(property "Value" "1n"
 			(at 45.72 138.43 90)
 			(effects
 				(font
@@ -8927,7 +8932,7 @@
 				)
 			)
 		)
-		(property "Value" "17n 2% Q>=40"
+		(property "Value" "18n 2% Q=58"
 			(at 62.484 140.208 90)
 			(effects
 				(font

@@ -71,12 +71,13 @@ def xlat_footprint(s):
     return s
 
 comment_xlats = {
-    '78n,2%,Q=28': 'LQW18AN78NG8ZD',
-    '18n,2%,Q=58': 'AISC-Q0402HQ-18NG-T',
+    '78n 2% Q=28': 'LQW18AN78NG8ZD',
+    '18n 2% Q=58': 'AISC-Q0402HQ-18NG-T',
     '22n 2% Q=67': '0402DC-22NXGRW',
     '6.9n 2% Q=69': '0402DC-6N9XGRW',
-    '36n Q>40 I>1A': '0603DC-36NXGRW',
+    '36n Q=79 I>1A': '0603DC-36NXGRW',
     '180n 2% Q=50': 'LQW2BANR18G00L',
+    '180n Q=44': '0603DC-R18XGRW',
     '91n 2% Q=64': '0603DC-91NXGRW',
     '47n 2% Q=73': '0603DC-47NXGRW',
     '27n 2% Q=82': '0603DC-27NXGRW',
@@ -87,7 +88,7 @@ comment_xlats = {
     '': '',
     '': '',
 }
-def clat_comment(s):
+def xlat_comment(s):
     if s in comment_xlats:
         return comment_xlats[s]
     return s
@@ -101,7 +102,7 @@ for line in cf:
         sys.exit(1)
         pass
     comment = xlat_comment(line[4])
-    comment = cmoment.replace(' ', ',')
+    comment = comment.replace(' ', ',')
     comment = comment.replace('Ω', 'ohm')
     footprint = xlat_footprint(line[2]).strip('"')
     ocf.writerow((comment, line[1], footprint))

@@ -13,7 +13,7 @@
 * Value used are available inductors and capacitors.
 
 * 65.57p
-C1	in  0   64p
+C1	in  0   68p
 * 18.13n
 L1	in  b1  18n
 R1      b1  0   .078
@@ -24,14 +24,14 @@ C2	in  a1  6.5p
 L2	a1  a2  180n
 R2	a2  b3 .64
 
-C3	b3  0   64p
+C3	b3  0   68p
 L3	b3  b2   18n
 R3      b2  0   .078
 
 * Impedance matching network
 L4      b3  b4  91n
 R4      b4  out .078
-C4      out 0   6.4p
+C4      out 0   6.5p
 
 * Avoid issues with series inductors, they result in:
 * Warning: singular matrix:  check node l.x1.l4b#branch

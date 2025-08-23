@@ -4447,7 +4447,7 @@
 				)
 			)
 		)
-		(property "Value" "27n 2% Q=40"
+		(property "Value" "27n 2% Q=82"
 			(at 185.928 150.114 90)
 			(effects
 				(font
@@ -4771,8 +4771,8 @@
 				)
 			)
 		)
-		(property "Value" "NS"
-			(at 151.13 130.81 90)
+		(property "Value" "~"
+			(at 148.59 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4836,7 +4836,7 @@
 				)
 			)
 		)
-		(property "Value" "NS"
+		(property "Value" "~"
 			(at 144.78 143.51 90)
 			(effects
 				(font
@@ -4901,7 +4901,7 @@
 				)
 			)
 		)
-		(property "Value" "NS"
+		(property "Value" "~"
 			(at 163.83 143.51 90)
 			(effects
 				(font
@@ -5813,7 +5813,7 @@
 				)
 			)
 		)
-		(property "Value" "1K @ 100MHz"
+		(property "Value" "1K@100MHz"
 			(at 303.4919 77.47 90)
 			(effects
 				(font
@@ -5944,7 +5944,7 @@
 				)
 			)
 		)
-		(property "Value" "43n 2% Q=40"
+		(property "Value" "43n 2% Q=82"
 			(at 200.66 142.24 90)
 			(effects
 				(font
@@ -6281,7 +6281,7 @@
 				)
 			)
 		)
-		(property "Value" "43n 2% Q=40"
+		(property "Value" "43n 2% Q=82"
 			(at 200.66 134.62 90)
 			(effects
 				(font
@@ -7018,7 +7018,7 @@
 				)
 			)
 		)
-		(property "Value" "27n 2% Q=40"
+		(property "Value" "27n 2% Q=82"
 			(at 172.72 134.62 90)
 			(effects
 				(font

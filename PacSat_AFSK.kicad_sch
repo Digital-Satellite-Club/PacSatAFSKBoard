@@ -21,7 +21,7 @@
 				(hide yes)
 			)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H104"
 				(at 0.7874 6.0198 0)
@@ -39,7 +39,7 @@
 					)
 				)
 			)
-			(property "Footprint" "amsat_misc:CUBESAT_MOUNT_HOLE"
+			(property "Footprint" "PacSatDev_misc:CUBESAT_MOUNT_HOLE"
 				(at 0 0 0)
 				(effects
 					(font

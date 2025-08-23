@@ -12,6 +12,169 @@
 		(comment 1 "N5BRG")
 	)
 	(lib_symbols
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -684,106 +847,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "H104"
-				(at 0.7874 6.0198 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "CUBESAT_MOUNT_HOLE"
-				(at 0.7874 3.3274 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "amsat_misc:CUBESAT_MOUNT_HOLE"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CUBESAT_MOUNT_HOLE_1_0_1"
-				(circle
-					(center 0 0)
-					(radius 0.5588)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "CUBESAT_MOUNT_HOLE_1_1_1"
-				(pin passive line
-					(at 2.54 0 180)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3170,6 +3233,12 @@
 		(uuid "e5939854-eea8-4396-a576-3721c0ddb491")
 	)
 	(junction
+		(at 205.74 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03969ae2-4a41-48ce-acc1-993e4519b375")
+	)
+	(junction
 		(at 104.14 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3186,12 +3255,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1442af67-9e52-40d6-b482-1fe8ff7ec468")
-	)
-	(junction
-		(at 205.74 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "14d63185-11b5-4fb4-b0ee-109a65581fd5")
 	)
 	(junction
 		(at 173.99 184.15)
@@ -3288,12 +3351,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5602555d-17fc-4a73-805c-f4f5c0a96308")
-	)
-	(junction
-		(at 243.84 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "56ef88d8-26f3-4570-8054-d2d100b7dc2f")
 	)
 	(junction
 		(at 162.56 90.17)
@@ -3428,12 +3485,6 @@
 		(uuid "c5b6fa96-6215-4359-8ce4-cef2ccf3e544")
 	)
 	(junction
-		(at 243.84 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ca072004-8601-478a-98f7-6f4e3c6954c1")
-	)
-	(junction
 		(at 273.05 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3444,12 +3495,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d46bed31-a6e1-4f34-b291-2d8ceb8659ba")
-	)
-	(junction
-		(at 161.29 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d6db5e81-ef11-4aac-9d8e-737c4c5a79c5")
 	)
 	(junction
 		(at 66.04 92.71)
@@ -3480,6 +3525,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e89bb246-0987-47d6-847d-36d9f5420536")
+	)
+	(junction
+		(at 161.29 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e93d631d-b808-472d-bc7e-4733d85376f5")
 	)
 	(junction
 		(at 273.05 144.78)
@@ -3617,7 +3668,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 55.88) (xy 161.29 55.88)
+			(xy 146.05 54.61) (xy 161.29 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3677,7 +3728,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 64.77) (xy 240.03 64.77)
+			(xy 246.38 19.05) (xy 242.57 19.05)
 		)
 		(stroke
 			(width 0)
@@ -3947,7 +3998,17 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 55.88) (xy 161.29 58.42)
+			(xy 190.5 50.8) (xy 205.74 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "278318fd-a255-4eba-a145-525611c164a1")
+	)
+	(wire
+		(pts
+			(xy 161.29 54.61) (xy 161.29 57.15)
 		)
 		(stroke
 			(width 0)
@@ -4017,7 +4078,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 48.26) (xy 205.74 57.15)
+			(xy 205.74 48.26) (xy 205.74 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4217,6 +4278,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 27.94) (xy 161.29 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "402fb39b-1c47-4c29-95f1-3bd9cc6f7d1f")
+	)
+	(wire
+		(pts
 			(xy 104.14 78.74) (xy 104.14 74.93)
 		)
 		(stroke
@@ -4224,6 +4295,16 @@
 			(type default)
 		)
 		(uuid "4078e268-451d-415b-9596-f45c0b77a276")
+	)
+	(wire
+		(pts
+			(xy 246.38 29.21) (xy 246.38 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40e4187b-344c-419a-af98-988f5412f05f")
 	)
 	(wire
 		(pts
@@ -4317,6 +4398,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 27.94) (xy 161.29 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a3d949b-9deb-4e95-a1cb-b61c7ec25aec")
+	)
+	(wire
+		(pts
 			(xy 173.99 193.04) (xy 173.99 194.31)
 		)
 		(stroke
@@ -4354,16 +4445,6 @@
 			(type default)
 		)
 		(uuid "4c6fca8b-5c43-45a4-a8a2-70fb29e19f05")
-	)
-	(wire
-		(pts
-			(xy 243.84 102.87) (xy 243.84 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e2374c2-1d74-4719-ab02-22eddac070f2")
 	)
 	(wire
 		(pts
@@ -4417,7 +4498,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 34.29) (xy 205.74 34.29)
+			(xy 190.5 27.94) (xy 205.74 27.94)
 		)
 		(stroke
 			(width 0)
@@ -4687,7 +4768,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 25.4) (xy 161.29 34.29)
+			(xy 161.29 25.4) (xy 161.29 27.94)
 		)
 		(stroke
 			(width 0)
@@ -4857,16 +4938,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 57.15) (xy 205.74 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84c0c598-72fc-45ee-8f16-09792555801c")
-	)
-	(wire
-		(pts
 			(xy 80.01 109.22) (xy 80.01 113.03)
 		)
 		(stroke
@@ -4904,16 +4975,6 @@
 			(type default)
 		)
 		(uuid "8771e635-8d45-47be-aa6d-378ce845279c")
-	)
-	(wire
-		(pts
-			(xy 161.29 34.29) (xy 161.29 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "898ec06c-ebcf-4c62-aa9d-8dcde3ca953c")
 	)
 	(wire
 		(pts
@@ -4987,16 +5048,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 57.15) (xy 205.74 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9114ad62-67d8-42fb-ba12-5cd91cfefb74")
-	)
-	(wire
-		(pts
 			(xy 287.02 189.23) (xy 289.56 189.23)
 		)
 		(stroke
@@ -5004,16 +5055,6 @@
 			(type default)
 		)
 		(uuid "912a32dd-27fb-4833-a513-74388fbc3d5f")
-	)
-	(wire
-		(pts
-			(xy 243.84 72.39) (xy 243.84 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91a0c2e6-8d98-4771-9266-5828e1c2aba2")
 	)
 	(polyline
 		(pts
@@ -5037,16 +5078,6 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 93.98) (xy 243.84 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9469be5b-fedb-486c-aae2-4a9852dc17f3")
-	)
-	(wire
-		(pts
 			(xy 109.22 90.17) (xy 109.22 137.16)
 		)
 		(stroke
@@ -5064,16 +5095,6 @@
 			(type default)
 		)
 		(uuid "96bee5b3-2751-473a-ba69-8b50330d6970")
-	)
-	(wire
-		(pts
-			(xy 228.6 93.98) (xy 243.84 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "978decef-bb92-4bf4-9696-b314615fbaf3")
 	)
 	(wire
 		(pts
@@ -5167,13 +5188,13 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 102.87) (xy 243.84 102.87)
+			(xy 231.14 29.21) (xy 246.38 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9fe78fd6-1d68-4ce3-aef0-5bf30a89892d")
+		(uuid "9f465fb5-66c1-4751-94bc-129c52d91933")
 	)
 	(wire
 		(pts
@@ -5217,7 +5238,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 46.99) (xy 161.29 46.99)
+			(xy 146.05 52.07) (xy 161.29 52.07)
 		)
 		(stroke
 			(width 0)
@@ -5487,16 +5508,6 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 81.28) (xy 243.84 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdfa5004-6133-4c9b-b516-21f5628c543d")
-	)
-	(wire
-		(pts
 			(xy 83.82 234.95) (xy 91.44 234.95)
 		)
 		(stroke
@@ -5547,7 +5558,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 34.29) (xy 205.74 36.83)
+			(xy 205.74 27.94) (xy 205.74 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5797,7 +5808,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 64.77) (xy 243.84 72.39)
+			(xy 246.38 19.05) (xy 246.38 26.67)
 		)
 		(stroke
 			(width 0)
@@ -5894,6 +5905,16 @@
 			(type default)
 		)
 		(uuid "e15ebfdf-e497-4bf2-84f8-ee3bd0478fdc")
+	)
+	(wire
+		(pts
+			(xy 205.74 50.8) (xy 205.74 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1ea0263-11c2-4a22-a434-d381d49ca8b0")
 	)
 	(wire
 		(pts
@@ -6147,7 +6168,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 72.39) (xy 243.84 72.39)
+			(xy 231.14 26.67) (xy 246.38 26.67)
 		)
 		(stroke
 			(width 0)
@@ -6184,16 +6205,6 @@
 			(type default)
 		)
 		(uuid "f7176b2b-c125-4ca7-a824-1a2af1afb6d2")
-	)
-	(wire
-		(pts
-			(xy 146.05 34.29) (xy 161.29 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f74ef6cd-a2e9-471c-8689-e4ae7c7ff77c")
 	)
 	(wire
 		(pts
@@ -6763,7 +6774,7 @@
 	)
 	(global_label "VSYS"
 		(shape input)
-		(at 240.03 64.77 180)
+		(at 242.57 19.05 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6773,7 +6784,7 @@
 		)
 		(uuid "deae7175-dba1-4a12-828a-b2c4afbdd09a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 231.8132 64.77 0)
+			(at 234.3532 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9853,7 +9864,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 161.29 46.99 0)
+		(at 161.29 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9862,7 +9873,7 @@
 		(fields_autoplaced yes)
 		(uuid "09a8415b-dbf9-4f3b-b29f-986331802062")
 		(property "Reference" "#PWR068"
-			(at 161.29 50.8 0)
+			(at 161.29 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9871,7 +9882,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 161.29 43.18 0)
+			(at 161.29 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9879,7 +9890,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 46.99 0)
+			(at 161.29 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9888,7 +9899,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 46.99 0)
+			(at 161.29 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9897,7 +9908,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 161.29 46.99 0)
+			(at 161.29 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9984,15 +9995,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 243.84 105.41 0)
+		(at 246.38 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0d6bb71f-27fe-4aa4-9077-6ee7262a2aab")
-		(property "Reference" "#PWR081"
-			(at 243.84 111.76 0)
+		(uuid "0b3ed2b4-2751-481d-8241-1043df150d5a")
+		(property "Reference" "#PWR0297"
+			(at 246.38 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10001,7 +10012,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 243.967 109.8042 0)
+			(at 246.507 36.1442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10009,7 +10020,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 243.84 105.41 0)
+			(at 246.38 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10018,7 +10029,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 243.84 105.41 0)
+			(at 246.38 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10027,7 +10038,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 243.84 105.41 0)
+			(at 246.38 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10035,12 +10046,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "bcb30943-c3f5-4328-b655-422c6fc07260")
+			(uuid "3839544a-a9f0-4fb7-91af-8916b90704b7")
 		)
 		(instances
-			(project "PacSat_Dev_RevD_240614"
+			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "#PWR081")
+					(reference "#PWR0297")
 					(unit 1)
 				)
 			)
@@ -10106,6 +10117,74 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "#PWR0277")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 226.06 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16422048-effc-4431-9aef-fb05904d3f69")
+		(property "Reference" "J11"
+			(at 226.695 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 226.695 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
+			(at 226.06 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 226.06 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48dae042-ecc5-49a7-b7d2-1b476712f4f1")
+		)
+		(pin "2"
+			(uuid "5b61a92a-f4fe-4042-bd4d-2435048a5bf5")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -10437,69 +10516,6 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "C29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
-		(at 143.51 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "22d7e475-e0e4-498c-a789-5546809b8f6b")
-		(property "Reference" "H7"
-			(at 144.2974 28.2702 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Wire_Hole"
-			(at 144.2974 30.9626 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:Wire_Hole"
-			(at 143.51 34.29 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 34.29 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 143.51 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "31f464b6-6cba-471d-929c-cfdc19eedb2c")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "H7")
 					(unit 1)
 				)
 			)
@@ -11035,7 +11051,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 205.74 36.83 0)
+		(at 205.74 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11043,7 +11059,7 @@
 		(dnp no)
 		(uuid "3a1c9709-70b5-49d5-a47d-19e219aa0aad")
 		(property "Reference" "#PWR075"
-			(at 205.74 43.18 0)
+			(at 205.74 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11052,7 +11068,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 205.867 41.2242 0)
+			(at 205.867 34.8742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11060,7 +11076,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 36.83 0)
+			(at 205.74 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11069,7 +11085,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 36.83 0)
+			(at 205.74 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11078,7 +11094,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 36.83 0)
+			(at 205.74 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11092,6 +11108,74 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 140.97 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42cbf30e-9cb5-48e1-9939-bd9fcf5b15cd")
+		(property "Reference" "J14"
+			(at 141.605 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 141.605 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
+			(at 140.97 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 140.97 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0235ef8f-b516-4fc8-b1de-775ef18492b6")
+		)
+		(pin "2"
+			(uuid "d3d5f830-49de-4b2b-ad76-d2ff8e7af472")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -11468,132 +11552,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
-		(at 143.51 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "4e7e5497-32f1-4cd3-9ebc-31f1ecb9c017")
-		(property "Reference" "H9"
-			(at 144.2974 49.8602 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Wire_Hole"
-			(at 144.2974 52.5526 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:Wire_Hole"
-			(at 143.51 55.88 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 55.88 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 143.51 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7eca5f7d-c24f-40b0-ac66-3959c860d384")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "H9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
-		(at 187.96 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "52789595-7578-43a2-93ed-2ca7a79e242e")
-		(property "Reference" "H13"
-			(at 188.7474 51.1302 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Wire_Hole"
-			(at 188.7474 53.8226 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:Wire_Hole"
-			(at 187.96 57.15 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 57.15 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 187.96 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "35f6d067-e8c6-43fc-80d5-eba133de0364")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "H13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 102.87 154.94 0)
 		(unit 1)
@@ -11653,132 +11611,6 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "#FLG05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
-		(at 226.06 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "59f3dc4e-35cd-4c8f-bc5a-36b331a71878")
-		(property "Reference" "H14"
-			(at 226.8474 66.3702 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Wire_Hole"
-			(at 226.8474 69.0626 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:Wire_Hole"
-			(at 226.06 72.39 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 72.39 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 226.06 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2d622068-05fa-408b-a2c3-a9a3a700cb86")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "H14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
-		(at 187.96 25.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "5b9a4d9d-cf64-4705-bcc0-2a37bb40e6ac")
-		(property "Reference" "H10"
-			(at 188.7474 19.3802 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Wire_Hole"
-			(at 188.7474 22.0726 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:Wire_Hole"
-			(at 187.96 25.4 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 25.4 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 187.96 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5e79fd4e-9959-4e9e-8516-60ead29bee52")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "H10")
 					(unit 1)
 				)
 			)
@@ -11987,6 +11819,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 185.42 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "62d9f181-e354-4801-b019-8d69073c56c3")
+		(property "Reference" "J15"
+			(at 186.055 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 186.055 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
+			(at 185.42 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 185.42 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9645875c-dd2c-4268-8f83-84bf6a1423f9")
+		)
+		(pin "2"
+			(uuid "697be1eb-56ac-440a-becc-7f0e03062684")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
+					(reference "J15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 281.94 251.46 0)
 		(mirror y)
@@ -12046,69 +11946,6 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "#PWR0278")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
-		(at 143.51 25.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "68037cc4-5f33-4231-ace4-49507b69a1f7")
-		(property "Reference" "H6"
-			(at 144.2974 19.3802 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Wire_Hole"
-			(at 144.2974 22.0726 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:Wire_Hole"
-			(at 143.51 25.4 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 25.4 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 143.51 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "092a76c5-68ca-4ac1-9d7c-357ef21231f0")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "H6")
 					(unit 1)
 				)
 			)
@@ -12636,7 +12473,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 161.29 58.42 0)
+		(at 161.29 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12644,7 +12481,7 @@
 		(dnp no)
 		(uuid "87fa858d-0f87-414c-8dce-8a988db45a27")
 		(property "Reference" "#PWR069"
-			(at 161.29 64.77 0)
+			(at 161.29 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12653,7 +12490,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 161.417 62.8142 0)
+			(at 161.417 61.5442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12661,7 +12498,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 58.42 0)
+			(at 161.29 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12670,7 +12507,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 58.42 0)
+			(at 161.29 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12679,7 +12516,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 161.29 58.42 0)
+			(at 161.29 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12693,69 +12530,6 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "#PWR069")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
-		(at 226.06 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "8c44e36e-3b3b-47ed-bcb1-203f228637aa")
-		(property "Reference" "H16"
-			(at 226.8474 87.9602 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Wire_Hole"
-			(at 226.8474 90.6526 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:Wire_Hole"
-			(at 226.06 93.98 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 93.98 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 226.06 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b1fd1b01-0b6c-4c3e-89d3-2c5eb61b5cfc")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "H16")
 					(unit 1)
 				)
 			)
@@ -13019,69 +12793,6 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "#FLG011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
-		(at 226.06 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "96479288-a2e9-4e52-9e91-c1db80388ae2")
-		(property "Reference" "H17"
-			(at 226.8474 96.8502 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Wire_Hole"
-			(at 226.8474 99.5426 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:Wire_Hole"
-			(at 226.06 102.87 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 102.87 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 226.06 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b681aad7-bbeb-49a0-ad32-a3cbf910e116")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "H17")
 					(unit 1)
 				)
 			)
@@ -14279,132 +13990,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
-		(at 187.96 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "cb7fbf29-afa7-43d7-9e81-ce27c02494d2")
-		(property "Reference" "H11"
-			(at 188.7474 28.2702 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Wire_Hole"
-			(at 188.7474 30.9626 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:Wire_Hole"
-			(at 187.96 34.29 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 34.29 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 187.96 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "604ddc9d-064e-4e94-aee5-97b1bb8d0cbc")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "H11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
-		(at 187.96 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "d1e955a7-1b60-4769-a47f-9a9d44a7cc39")
-		(property "Reference" "H12"
-			(at 188.7474 42.2402 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Wire_Hole"
-			(at 188.7474 44.9326 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:Wire_Hole"
-			(at 187.96 48.26 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 48.26 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 187.96 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8bd48457-8637-499a-8a44-725bd2e6c893")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "H12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 186.69 179.07 0)
 		(unit 1)
@@ -14467,6 +14052,74 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 185.42 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d57bad7c-2d66-40cc-96a0-2ac77a0bb292")
+		(property "Reference" "J13"
+			(at 186.055 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 186.055 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
+			(at 185.42 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 185.42 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47da7cb2-3a9b-4e87-bb04-4be383f93a82")
+		)
+		(pin "2"
+			(uuid "6c03a163-f038-4618-a1c9-8a6d319ba92e")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -15122,126 +14775,68 @@
 		)
 	)
 	(symbol
-		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
-		(at 226.06 81.28 0)
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 140.97 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "f2c16701-846e-4138-9861-862291cc5f72")
-		(property "Reference" "H15"
-			(at 226.8474 75.2602 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Wire_Hole"
-			(at 226.8474 77.9526 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:Wire_Hole"
-			(at 226.06 81.28 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 81.28 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 226.06 81.28 0)
+		(fields_autoplaced yes)
+		(uuid "fba9e6bd-cf32-4e54-b20e-3cdc3e66b9ef")
+		(property "Reference" "J8"
+			(at 141.605 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(pin "1"
-			(uuid "c8e281e9-8c00-45ca-b561-2baf9147d15d")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "H15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PACSAT_DEV_misc:CUBESAT_MOUNT_HOLE_1")
-		(at 143.51 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "f7bd9a65-494b-470a-addd-bfe02a9ab5f9")
-		(property "Reference" "H8"
-			(at 144.2974 40.9702 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Wire_Hole"
-			(at 144.2974 43.6626 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "PacSatDev_misc:Wire_Hole"
-			(at 143.51 46.99 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 46.99 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 143.51 46.99 0)
+		(property "Value" "Conn_01x02_Pin"
+			(at 141.605 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
+			(at 140.97 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 140.97 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
-			(uuid "57b47fbe-3f43-4665-a8ff-e9a441ab5541")
+			(uuid "eece19b2-b0ab-45f8-8c5e-d3f65c5e0b04")
+		)
+		(pin "2"
+			(uuid "190215b6-0f7a-4b9a-8f08-8440d0987680")
 		)
 		(instances
-			(project "PacSat_Dev_RevD_240614"
+			(project ""
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "H8")
+					(reference "J8")
 					(unit 1)
 				)
 			)

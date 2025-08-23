@@ -51,7 +51,7 @@
 			)
 		)
 	)
-	(attr through_hole)
+	(attr through_hole exclude_from_pos_files exclude_from_bom)
 	(fp_circle
 		(center 0 0)
 		(end 0.850452 0)

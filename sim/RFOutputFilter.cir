@@ -9,7 +9,7 @@
 .SUBCKT ImpMatchPAOut in  out
 
 * Impedance matching network
-C1     in     out 114p
+C1     in     out 110p
 L1     inx    a3  6.9n
 R1     a3     0   .078
 

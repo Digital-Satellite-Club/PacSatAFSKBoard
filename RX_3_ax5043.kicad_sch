@@ -5082,7 +5082,7 @@
 				)
 			)
 		)
-		(property "Value" "1K @ 100MHz"
+		(property "Value" "1K@100MHz"
 			(at 316.1919 60.96 90)
 			(effects
 				(font
