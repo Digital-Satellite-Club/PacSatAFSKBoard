@@ -18,7 +18,8 @@ Rsrc in     vmin1  50
 
 * TX PA input matcher
 C1   vmin2  0      39p
-L1   vmin2  a1     18n
+L1   vmin2  a1a    18n
+R1   a1a    a1     .078
 
 * -37.7 ohms at 435MHz
 Cout a1     vmout1 9.6p
@@ -39,7 +40,7 @@ Rb1  a1     0      1Meg
 * TX PA output matcher
 C1   a1     vmout1 110p
 L1   vmout1 a3     6.9n
-R1   a3     0      .078
+R1   a3     0      .063
 
 Rout vmout2 0      50
 
@@ -51,7 +52,7 @@ Rsrc in     vmin1  50
 
 * TX LNA input matcher
 L1   vmin2  a2   91n
-R1   a2     a1   .078
+R1   a2     a1   .576
 C1   a1     0    6.4p
 
 * -80.8 ohms at 145MHz
@@ -72,7 +73,7 @@ Rb1  a1     0      1Meg
 * TX LNA output matcher
 C1   a1     0       11p
 L1   a1     a2      47n
-R1   a2     vmout1  .078
+R1   a2     vmout1  .2
 
 Rout vmout2 0      50
 

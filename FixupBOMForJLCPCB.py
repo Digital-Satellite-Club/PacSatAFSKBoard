@@ -72,6 +72,7 @@ def xlat_footprint(s):
 
 comment_xlats = {
     '78n 2% Q=28': 'LQW18AN78NG8ZD',
+    '18n 2% Q=80': '0603DC-18NXGRW',
     '18n 2% Q=58': 'AISC-Q0402HQ-18NG-T',
     '22n 2% Q=67': '0402DC-22NXGRW',
     '6.9n 2% Q=69': '0402DC-6N9XGRW',

@@ -11,7 +11,7 @@
 * Impedance matching network
 C1     in     out 110p
 L1     inx    a3  6.9n
-R1     a3     0   .078
+R1     a3     0   .063
 
 .ENDS
 
@@ -34,7 +34,7 @@ C3	a2  0   12p
 
 * 17.96n
 L4	a2  a3  18n
-R4	a3  out .078
+R4	a3  out .120
 * 2.16p
 C4	a2  out 2.2p
 
