@@ -3377,7 +3377,7 @@
 				)
 			)
 		)
-		(property "Value" "1n"
+		(property "Value" "1n Q=77"
 			(at 171.704 139.446 90)
 			(effects
 				(font
@@ -3385,7 +3385,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 			(at 170.18 139.7 0)
 			(effects
 				(font
@@ -3571,7 +3571,7 @@
 				)
 			)
 		)
-		(property "Value" "15p"
+		(property "Value" "15p 1%"
 			(at 152.4 143.51 90)
 			(effects
 				(font
@@ -3701,7 +3701,7 @@
 				)
 			)
 		)
-		(property "Value" "78n"
+		(property "Value" "78n 2% Q=28"
 			(at 161.798 139.7 90)
 			(effects
 				(font
@@ -4355,7 +4355,7 @@
 				)
 			)
 		)
-		(property "Value" "15p"
+		(property "Value" "15p 1%"
 			(at 144.78 130.81 90)
 			(effects
 				(font
@@ -4971,7 +4971,7 @@
 				)
 			)
 		)
-		(property "Value" "78n"
+		(property "Value" "78n 2% Q=28"
 			(at 139.7 125.222 90)
 			(effects
 				(font

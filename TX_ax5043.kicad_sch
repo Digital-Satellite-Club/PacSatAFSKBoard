@@ -4761,7 +4761,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005a015010")
 		(property "Reference" "C86"
 			(at 146.05 130.81 90)
@@ -4826,7 +4826,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005a015011")
 		(property "Reference" "C85"
 			(at 144.78 148.59 90)
@@ -4891,7 +4891,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005a015012")
 		(property "Reference" "C87"
 			(at 163.83 148.59 90)

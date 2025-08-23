@@ -576,7 +576,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "ADL5501AKSZ-R2"
+	(symbol "ADL5501AKSZ"
 		(pin_names
 			(offset 0.254)
 		)
@@ -591,7 +591,7 @@
 				)
 			)
 		)
-		(property "Value" "ADL5501AKSZ-R2"
+		(property "Value" "ADL5501AKSZ"
 			(at 20.32 7.62 0)
 			(effects
 				(font
@@ -628,7 +628,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "ADL5501AKSZ-R2"
+		(property "ki_keywords" "ADL5501AKSZ"
 			(at 0 0 0)
 			(effects
 				(font
@@ -646,7 +646,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "ADL5501AKSZ-R2_0_1"
+		(symbol "ADL5501AKSZ_0_1"
 			(polyline
 				(pts
 					(xy 7.62 5.08) (xy 7.62 -10.16)

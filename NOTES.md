@@ -9,8 +9,11 @@ some point.
 
 # TODO
 
+The 78nH inductors in the AX5043 input section don't come in very high
+Q values, 28 is the best you can get.  77 and 79nH are even worse.
+
 The MRAM parts are WSON packages.  SIOC packages are available, too.
-There are somewhat bigger, but might be better from a thermal point of
+SIOC is somewhat bigger, but might be better from a thermal point of
 view.
 
 According to the cubesat documents I have been reading, its best if
@@ -25,7 +28,7 @@ Parts that are not automotive rated listed below.
 |Part						|Function			  | Info |
 |----						|--------			  |----- |
 | LMK1C1106A				| clock distributor   | Suitable devices with 6 output not available.  Could use 4 output device (LMK00804B-Q1). Could use op amps (see https://www.analog.com/en/resources/analog-dialogue/articles/high-speed-amplifiers-make-clock-buffers.html). |
-| O 16,0-JT22CT-A-P-3,3-LF	| oscillator | There don't appear to be any that are automotive and temp certified with 2.5ppm stability.  This one is temp, which is probably more important. There is one from TXC at 16.389MHz |
+| O 16,0-JT22CT-A-P-3,3-LF	| oscillator | There don't appear to be any that are automotive and temp certified with 2.5ppm stability.  This one is temp, which is probably more important. There is one from TXC at 16.389MHz. |
 | AS1016204-0108X0PWAY		| MRAM | No suitable devices available. |
 | MAX31331					| RTC | No suitable devices available. |
 | TPSM828302ARDSR			| 1.2V power converter | TPSM33620S3QRDNRQ1 might work |

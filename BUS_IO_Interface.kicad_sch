@@ -5103,7 +5103,7 @@
 			)
 		)
 		(property "Value" "47u 10V"
-			(at 160.02 153.67 90)
+			(at 159.766 156.464 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5168,7 +5168,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4k7"
+		(property "Value" "4.7K"
 			(at 88.392 175.387 0)
 			(effects
 				(font
@@ -8288,8 +8288,8 @@
 				)
 			)
 		)
-		(property "Value" ".1u"
-			(at 175.26 156.21 90)
+		(property "Value" "100n"
+			(at 175.26 158.242 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9226,8 +9226,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4k7"
-			(at 97.79 175.26 0)
+		(property "Value" "4.7K"
+			(at 99.314 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)

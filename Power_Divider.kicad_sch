@@ -5853,7 +5853,7 @@
 		(at 179.07 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "4dfce73c-986e-42ab-97d0-7b1ae97c74de")
@@ -6264,7 +6264,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 167.64 124.1552 0)
 			(effects
 				(font
@@ -6452,7 +6452,7 @@
 				)
 			)
 		)
-		(property "Value" "180n 2%"
+		(property "Value" "180n 2% Q=50"
 			(at 193.802 132.588 90)
 			(effects
 				(font
@@ -6713,7 +6713,7 @@
 				)
 			)
 		)
-		(property "Value" "18n 2% Q=80"
+		(property "Value" "18n 2% Q=58"
 			(at 59.182 152.908 90)
 			(effects
 				(font
@@ -6912,7 +6912,7 @@
 				)
 			)
 		)
-		(property "Value" "18n 2% Q=80"
+		(property "Value" "18n 2% Q=58"
 			(at 96.012 152.908 90)
 			(effects
 				(font
@@ -7043,12 +7043,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "CONUFL001-SMD-T"
 			(at 284.48 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PacSatDev_misc:CONN1_CONUFL_TEC"
@@ -7189,7 +7190,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 199.39 122.8852 0)
 			(effects
 				(font
@@ -8595,7 +8596,7 @@
 		(at 179.07 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "f60238ec-3c48-4c5e-a2b7-7be8cb56a187")

@@ -1343,7 +1343,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PACSAT_ICs:ADL5501AKSZ-R2"
+		(symbol "PACSAT_ICs:ADL5501AKSZ"
 			(pin_names
 				(offset 0.254)
 			)
@@ -1358,7 +1358,7 @@
 					)
 				)
 			)
-			(property "Value" "ADL5501AKSZ-R2"
+			(property "Value" "ADL5501AKSZ"
 				(at 20.32 7.62 0)
 				(effects
 					(font
@@ -1395,7 +1395,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "ADL5501AKSZ-R2"
+			(property "ki_keywords" "ADL5501AKSZ"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1413,7 +1413,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ADL5501AKSZ-R2_0_1"
+			(symbol "ADL5501AKSZ_0_1"
 				(polyline
 					(pts
 						(xy 7.62 5.08) (xy 7.62 -10.16)
@@ -5107,7 +5107,7 @@
 		(at 250.19 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "00868da3-4fee-4274-9e68-3a2052d4a66e")
@@ -6303,7 +6303,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PACSAT_ICs:ADL5501AKSZ-R2")
+		(lib_id "PACSAT_ICs:ADL5501AKSZ")
 		(at 294.64 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6320,7 +6320,7 @@
 				)
 			)
 		)
-		(property "Value" "ADL5501AKSZ-R2"
+		(property "Value" "ADL5501AKSZ"
 			(at 314.96 90.17 0)
 			(effects
 				(font
@@ -6455,7 +6455,7 @@
 		(at 250.19 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "5df58551-b24c-4cd2-9c90-86f20600a41b")
@@ -7531,7 +7531,7 @@
 				)
 			)
 		)
-		(property "Value" ".75p 2% 30v"
+		(property "Value" "0.75p 2% 30V"
 			(at 255.524 156.464 90)
 			(effects
 				(font
@@ -7597,7 +7597,7 @@
 				)
 			)
 		)
-		(property "Value" "36n Q>40 I>1A"
+		(property "Value" "36n Q=79 I>1A"
 			(at 191.77 140.716 90)
 			(effects
 				(font
@@ -8043,7 +8043,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PACSAT_ICs:ADL5501AKSZ-R2")
+		(lib_id "PACSAT_ICs:ADL5501AKSZ")
 		(at 358.14 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8060,7 +8060,7 @@
 				)
 			)
 		)
-		(property "Value" "ADL5501AKSZ-R2"
+		(property "Value" "ADL5501AKSZ"
 			(at 378.46 90.17 0)
 			(effects
 				(font
@@ -8400,7 +8400,7 @@
 				)
 			)
 		)
-		(property "Value" "7.3p 2% 30v"
+		(property "Value" "7.3p 2% 30V"
 			(at 248.412 169.926 90)
 			(effects
 				(font

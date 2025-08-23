@@ -1917,7 +1917,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50R >=2W"
+		(property "Value" "50Ω >=2W"
 			(at 78.74 76.708 90)
 			(effects
 				(font
@@ -3098,7 +3098,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50R >=2W"
+		(property "Value" "50Ω >=2W"
 			(at 195.834 110.998 90)
 			(effects
 				(font
