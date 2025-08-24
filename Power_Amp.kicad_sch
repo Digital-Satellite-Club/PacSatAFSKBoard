@@ -2567,7 +2567,7 @@
 		)
 		(uuid "2ea6c3b5-e5db-4376-9b22-2d0147bd0efc")
 	)
-	(text "Thermsistor varies from 500\nohms (125C) to 350k (-50C).\nWith a 10K bias this gives a\n.16 to 3.2V range."
+	(text "Thermsistor varies from 500\nohms (125C) to 350K (-50C).\nWith a 10K bias this gives a\n.16 to 3.2V range."
 		(exclude_from_sim no)
 		(at 142.494 205.232 0)
 		(effects
@@ -2832,12 +2832,6 @@
 		(uuid "59add2d5-56eb-45c0-9955-f43d90f33536")
 	)
 	(junction
-		(at 266.7 160.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5ca080ff-72fa-4b0f-b1a8-facb90dafff9")
-	)
-	(junction
 		(at 124.46 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2976,7 +2970,7 @@
 		(uuid "b6ad525a-0375-4fd8-9bca-501dbdbb0044")
 	)
 	(junction
-		(at 285.75 160.02)
+		(at 283.21 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d4004e03-f1ec-456c-95dd-22a96305cec3")
@@ -2986,6 +2980,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d77d8d51-fc37-4241-9c88-0d1852c56f5e")
+	)
+	(junction
+		(at 264.16 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5083ee5-3e61-430b-88a1-d1d45f458214")
 	)
 	(junction
 		(at 124.46 68.58)
@@ -3273,7 +3273,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 148.59) (xy 266.7 148.59)
+			(xy 270.51 148.59) (xy 264.16 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3313,7 +3313,7 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 160.02) (xy 280.67 160.02)
+			(xy 283.21 160.02) (xy 278.13 160.02)
 		)
 		(stroke
 			(width 0)
@@ -3523,7 +3523,7 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 173.99) (xy 285.75 179.07)
+			(xy 283.21 173.99) (xy 283.21 179.07)
 		)
 		(stroke
 			(width 0)
@@ -3973,7 +3973,7 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 148.59) (xy 285.75 160.02)
+			(xy 283.21 148.59) (xy 283.21 160.02)
 		)
 		(stroke
 			(width 0)
@@ -4003,7 +4003,7 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 160.02) (xy 285.75 166.37)
+			(xy 283.21 160.02) (xy 283.21 166.37)
 		)
 		(stroke
 			(width 0)
@@ -4030,16 +4030,6 @@
 			(type default)
 		)
 		(uuid "7ac9ba41-717f-497c-89a6-ee8842c8f61e")
-	)
-	(wire
-		(pts
-			(xy 264.16 160.02) (xy 266.7 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ad38f63-cefd-420f-9c31-e4a03b204bf9")
 	)
 	(wire
 		(pts
@@ -4343,7 +4333,7 @@
 	)
 	(wire
 		(pts
-			(xy 280.67 148.59) (xy 285.75 148.59)
+			(xy 278.13 148.59) (xy 283.21 148.59)
 		)
 		(stroke
 			(width 0)
@@ -4843,13 +4833,13 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 148.59) (xy 266.7 160.02)
+			(xy 264.16 160.02) (xy 270.51 160.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ea2c3e19-9269-4e9e-abe1-291a1cd5202b")
+		(uuid "eba2b8cc-2206-4943-a5e9-688d9db5f6e3")
 	)
 	(wire
 		(pts
@@ -4913,16 +4903,6 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 160.02) (xy 273.05 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f84a3be9-838a-4522-9f0a-a6cfea52aae8")
-	)
-	(wire
-		(pts
 			(xy 398.78 100.33) (xy 405.13 100.33)
 		)
 		(stroke
@@ -4963,7 +4943,7 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 160.02) (xy 302.26 160.02)
+			(xy 283.21 160.02) (xy 302.26 160.02)
 		)
 		(stroke
 			(width 0)
@@ -5497,7 +5477,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 276.86 148.59 90)
+		(at 274.32 148.59 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5506,15 +5486,15 @@
 		(dnp no)
 		(uuid "12b02858-6620-491f-b9c9-d527dc4e9cfe")
 		(property "Reference" "L33"
-			(at 276.86 146.812 90)
+			(at 274.32 146.812 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "18n 2% Q=58"
-			(at 276.86 150.622 90)
+		(property "Value" "18nH 2% Q=58"
+			(at 274.32 150.622 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5522,7 +5502,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
-			(at 276.86 148.59 0)
+			(at 274.32 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5531,7 +5511,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 276.86 148.59 0)
+			(at 274.32 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5540,7 +5520,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 276.86 148.59 0)
+			(at 274.32 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5643,7 +5623,7 @@
 				)
 			)
 		)
-		(property "Value" "100p"
+		(property "Value" "100pF"
 			(at 201.93 133.35 0)
 			(effects
 				(font
@@ -5694,7 +5674,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 285.75 170.18 180)
+		(at 283.21 170.18 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5702,15 +5682,15 @@
 		(dnp no)
 		(uuid "2e6e6240-db72-4215-923f-a1a23e1e7f9d")
 		(property "Reference" "C128"
-			(at 282.194 169.672 90)
+			(at 279.654 169.672 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "6.2p 2% 30v"
-			(at 289.052 169.926 90)
+		(property "Value" "6.2pF 2% 30v"
+			(at 286.512 169.926 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5718,7 +5698,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 284.7848 166.37 0)
+			(at 282.2448 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5727,7 +5707,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 285.75 170.18 0)
+			(at 283.21 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5736,7 +5716,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 285.75 170.18 0)
+			(at 283.21 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5775,7 +5755,7 @@
 				)
 			)
 		)
-		(property "Value" "68n"
+		(property "Value" "68nH"
 			(at 157.226 121.158 90)
 			(effects
 				(font
@@ -6060,7 +6040,7 @@
 				)
 			)
 		)
-		(property "Value" "39p 1%"
+		(property "Value" "39pF 1%"
 			(at 64.77 154.94 0)
 			(effects
 				(font
@@ -6320,7 +6300,7 @@
 				)
 			)
 		)
-		(property "Value" "ADL5501AKSZ"
+		(property "Value" "ADL5501AKSZ-R7"
 			(at 314.96 90.17 0)
 			(effects
 				(font
@@ -6401,7 +6381,7 @@
 				)
 			)
 		)
-		(property "Value" "12p 2% 30v"
+		(property "Value" "12pF 2% 30v"
 			(at 267.462 169.926 90)
 			(effects
 				(font
@@ -6468,7 +6448,7 @@
 				)
 			)
 		)
-		(property "Value" "22n 2% Q=67"
+		(property "Value" "22nH 2% Q=67"
 			(at 255.27 150.622 90)
 			(effects
 				(font
@@ -6599,7 +6579,7 @@
 				)
 			)
 		)
-		(property "Value" "100p"
+		(property "Value" "100pF"
 			(at 74.93 120.65 0)
 			(effects
 				(font
@@ -6731,7 +6711,7 @@
 				)
 			)
 		)
-		(property "Value" "1n"
+		(property "Value" "1nF"
 			(at 199.39 156.718 90)
 			(effects
 				(font
@@ -6798,7 +6778,7 @@
 				)
 			)
 		)
-		(property "Value" "110p 1% 30V"
+		(property "Value" "110pF 1% 30V"
 			(at 217.17 163.322 90)
 			(effects
 				(font
@@ -6864,7 +6844,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10uF"
 			(at 218.44 110.49 0)
 			(effects
 				(font
@@ -6998,7 +6978,7 @@
 				)
 			)
 		)
-		(property "Value" "1n"
+		(property "Value" "1nF"
 			(at 208.28 120.65 0)
 			(effects
 				(font
@@ -7132,7 +7112,7 @@
 				)
 			)
 		)
-		(property "Value" "1n"
+		(property "Value" "1nF"
 			(at 344.678 95.25 90)
 			(effects
 				(font
@@ -7265,7 +7245,7 @@
 				)
 			)
 		)
-		(property "Value" "6.9n 2% Q=69"
+		(property "Value" "6.9nH 2% Q=69"
 			(at 230.632 170.18 90)
 			(effects
 				(font
@@ -7536,7 +7516,7 @@
 				)
 			)
 		)
-		(property "Value" "0.75p 2% 30V"
+		(property "Value" "0.75pF 2% 30V"
 			(at 255.524 156.464 90)
 			(effects
 				(font
@@ -7602,7 +7582,7 @@
 				)
 			)
 		)
-		(property "Value" "36n Q=79 I>1A"
+		(property "Value" "36nH Q=79 I>1A"
 			(at 191.77 140.716 90)
 			(effects
 				(font
@@ -7669,7 +7649,7 @@
 				)
 			)
 		)
-		(property "Value" "1n"
+		(property "Value" "1nF"
 			(at 281.178 95.25 90)
 			(effects
 				(font
@@ -8065,7 +8045,7 @@
 				)
 			)
 		)
-		(property "Value" "ADL5501AKSZ"
+		(property "Value" "ADL5501AKSZ-R7"
 			(at 378.46 90.17 0)
 			(effects
 				(font
@@ -8196,7 +8176,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 276.86 160.02 90)
+		(at 274.32 160.02 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8204,15 +8184,15 @@
 		(dnp no)
 		(uuid "bf178663-4652-44a0-bf1e-3abcfd51bb99")
 		(property "Reference" "C127"
-			(at 277.114 153.924 90)
+			(at 274.574 153.924 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "2.2p 2% 30v"
-			(at 277.114 156.464 90)
+		(property "Value" "2.2pF 2% 30v"
+			(at 274.574 156.464 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8220,7 +8200,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 280.67 159.0548 0)
+			(at 278.13 159.0548 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8229,7 +8209,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 276.86 160.02 0)
+			(at 274.32 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8238,7 +8218,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 276.86 160.02 0)
+			(at 274.32 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8262,7 +8242,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 285.75 179.07 0)
+		(at 283.21 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8270,7 +8250,7 @@
 		(dnp no)
 		(uuid "c1212496-33ee-494a-82ed-b81ccbf16d03")
 		(property "Reference" "#PWR0291"
-			(at 285.75 185.42 0)
+			(at 283.21 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8279,7 +8259,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 285.877 183.4642 0)
+			(at 283.337 183.4642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8287,7 +8267,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 285.75 179.07 0)
+			(at 283.21 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8296,7 +8276,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 285.75 179.07 0)
+			(at 283.21 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8305,7 +8285,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 285.75 179.07 0)
+			(at 283.21 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8405,7 +8385,7 @@
 				)
 			)
 		)
-		(property "Value" "7.3p 2% 30V"
+		(property "Value" "7.3pF 2% 30V"
 			(at 248.412 169.926 90)
 			(effects
 				(font
@@ -8866,7 +8846,7 @@
 				)
 			)
 		)
-		(property "Value" "1n"
+		(property "Value" "1nF"
 			(at 45.72 138.43 90)
 			(effects
 				(font
@@ -8932,8 +8912,8 @@
 				)
 			)
 		)
-		(property "Value" "18n 2% Q=80"
-			(at 62.484 140.208 90)
+		(property "Value" "18nH 2% Q=80"
+			(at 65.278 139.954 90)
 			(effects
 				(font
 					(size 1.27 1.27)

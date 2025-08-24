@@ -71,20 +71,19 @@ def xlat_footprint(s):
     return s
 
 comment_xlats = {
-    '78n 2% Q=28': 'LQW18AN78NG8ZD',
-    '18n 2% Q=80': '0603DC-18NXGRW',
-    '18n 2% Q=58': 'AISC-Q0402HQ-18NG-T',
-    '22n 2% Q=67': '0402DC-22NXGRW',
-    '6.9n 2% Q=69': '0402DC-6N9XGRW',
-    '36n Q=79 I>1A': '0603DC-36NXGRW',
-    '180n 2% Q=50': 'LQW2BANR18G00L',
-    '180n Q=44': '0603DC-R18XGRW',
-    '91n 2% Q=64': '0603DC-91NXGRW',
-    '47n 2% Q=73': '0603DC-47NXGRW',
-    '27n 2% Q=82': '0603DC-27NXGRW',
-    '43n 2% Q=82': '0603DC-43NXGRW',
-    '78n 2% Q=28': '0603DC-43NXGRW',
-    '1n Q=77': '0402CS-1N0XJRW',
+    '78nH 2% Q=28': 'LQW18AN78NG8ZD',
+    '18nH 2% Q=80': '0603DC-18NXGRW',
+    '18nH 2% Q=58': 'AISC-Q0402HQ-18NG-T',
+    '22nH 2% Q=67': '0402DC-22NXGRW',
+    '6.9nH 2% Q=69': '0402DC-6N9XGRW',
+    '36nH Q=79 I>1A': '0603DC-36NXGRW',
+    '180nH 2% Q=50': 'LQW2BANR18G00L',
+    '180nH Q=44': '0603DC-R18XGRW',
+    '91nH 2% Q=64': '0603DC-91NXGRW',
+    '47nH 2% Q=73': '0603DC-47NXGRW',
+    '27nH 2% Q=82': '0603DC-27NXGRW',
+    '43nH 2% Q=82': '0603DC-43NXGRW',
+    '1nH Q=77': '0402CS-1N0XJRW',
     '': '',
     '': '',
     '': '',
@@ -104,7 +103,7 @@ for line in cf:
         pass
     comment = xlat_comment(line[4])
     comment = comment.replace(' ', ',')
-    comment = comment.replace('Ω', 'ohm')
+    #comment = comment.replace('Ω', 'ohm')
     footprint = xlat_footprint(line[2]).strip('"')
     ocf.writerow((comment, line[1], footprint))
     pass

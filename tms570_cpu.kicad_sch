@@ -5015,7 +5015,7 @@
 		)
 		(uuid "7416e645-c07d-4bc7-9c7c-7fd6fab70b9f")
 	)
-	(text "Thermsistor varies from 500\nohms (125C) to 350k (-50C).\nWith a 10K bias this gives a\n.16 to 3.2V range."
+	(text "Thermsistor varies from 500\nohms (125C) to 350K (-50C).\nWith a 10K bias this gives a\n.16 to 3.2V range."
 		(exclude_from_sim no)
 		(at 375.412 109.728 0)
 		(effects
@@ -11234,7 +11234,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10K"
 			(at 114.935 108.585 0)
 			(effects
 				(font
@@ -12354,7 +12354,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10K"
 			(at 93.345 108.585 0)
 			(effects
 				(font
@@ -13079,7 +13079,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1K"
 			(at 312.42 48.26 90)
 			(effects
 				(font
@@ -13146,7 +13146,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1K"
 			(at 316.23 48.26 90)
 			(effects
 				(font
@@ -13213,7 +13213,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1K"
 			(at 320.04 48.26 90)
 			(effects
 				(font
@@ -13280,7 +13280,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1K"
 			(at 323.85 48.26 90)
 			(effects
 				(font
@@ -13475,7 +13475,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 111.506 233.934 90)
 			(effects
 				(font
@@ -13674,7 +13674,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 121.666 198.374 90)
 			(effects
 				(font
@@ -14066,7 +14066,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 351.536 145.034 90)
 			(effects
 				(font
@@ -14539,7 +14539,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 150.876 233.934 90)
 			(effects
 				(font
@@ -14604,7 +14604,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 108.966 198.374 90)
 			(effects
 				(font
@@ -14736,7 +14736,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 345.186 112.014 90)
 			(effects
 				(font
@@ -14801,7 +14801,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 351.536 172.974 90)
 			(effects
 				(font
@@ -15060,7 +15060,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 79.756 175.514 90)
 			(effects
 				(font
@@ -15125,7 +15125,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 101.346 233.934 90)
 			(effects
 				(font
@@ -15583,7 +15583,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 115.316 198.374 90)
 			(effects
 				(font
@@ -15708,7 +15708,7 @@
 		(fields_autoplaced yes)
 		(uuid "8201fff8-052c-41ae-986d-3a7dc32efe1b")
 		(property "Reference" "R2"
-			(at 78.74 227.33 0)
+			(at 78.74 227.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15716,8 +15716,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.4K"
-			(at 78.74 229.87 0)
+		(property "Value" "2.4KΩ"
+			(at 78.74 229.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15848,7 +15848,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 166.116 49.784 90)
 			(effects
 				(font
@@ -16055,7 +16055,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 148.336 33.274 90)
 			(effects
 				(font
@@ -16120,7 +16120,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 362.966 172.974 90)
 			(effects
 				(font
@@ -16185,7 +16185,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 182.626 34.544 90)
 			(effects
 				(font
@@ -16250,7 +16250,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 89.916 175.514 90)
 			(effects
 				(font
@@ -16445,7 +16445,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 337.566 112.014 90)
 			(effects
 				(font
@@ -16966,7 +16966,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 144.526 233.934 90)
 			(effects
 				(font
@@ -17031,7 +17031,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 69.596 175.514 90)
 			(effects
 				(font
@@ -17163,7 +17163,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 374.396 172.974 90)
 			(effects
 				(font
@@ -17228,7 +17228,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 337.566 183.134 90)
 			(effects
 				(font
@@ -17358,7 +17358,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 102.616 198.374 90)
 			(effects
 				(font

@@ -3312,7 +3312,7 @@
 				)
 			)
 		)
-		(property "Value" "10p"
+		(property "Value" "10pF"
 			(at 214.63 87.63 90)
 			(effects
 				(font
@@ -3377,7 +3377,7 @@
 				)
 			)
 		)
-		(property "Value" "1n Q=77"
+		(property "Value" "1nH Q=77"
 			(at 171.704 139.446 90)
 			(effects
 				(font
@@ -3571,7 +3571,7 @@
 				)
 			)
 		)
-		(property "Value" "15p 1%"
+		(property "Value" "15pF 1%"
 			(at 152.4 143.51 90)
 			(effects
 				(font
@@ -3701,7 +3701,7 @@
 				)
 			)
 		)
-		(property "Value" "78n 2% Q=28"
+		(property "Value" "78nH 2% Q=28"
 			(at 161.798 139.7 90)
 			(effects
 				(font
@@ -3835,7 +3835,7 @@
 				)
 			)
 		)
-		(property "Value" "6.8p"
+		(property "Value" "6.8pF"
 			(at 195.58 83.82 90)
 			(effects
 				(font
@@ -3900,7 +3900,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "10nF"
 			(at 187.96 110.49 90)
 			(effects
 				(font
@@ -3965,7 +3965,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "10nF"
 			(at 185.42 143.51 90)
 			(effects
 				(font
@@ -4030,7 +4030,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "10nF"
 			(at 246.38 96.52 90)
 			(effects
 				(font
@@ -4355,7 +4355,7 @@
 				)
 			)
 		)
-		(property "Value" "15p 1%"
+		(property "Value" "15pF 1%"
 			(at 144.78 130.81 90)
 			(effects
 				(font
@@ -4549,7 +4549,7 @@
 				)
 			)
 		)
-		(property "Value" "DMP2037U"
+		(property "Value" "DMP2037U-7"
 			(at 284.48 66.04 90)
 			(effects
 				(font
@@ -4620,7 +4620,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100p"
+		(property "Value" "100pF"
 			(at 133.35 115.57 0)
 			(effects
 				(font
@@ -4971,7 +4971,7 @@
 				)
 			)
 		)
-		(property "Value" "78n 2% Q=28"
+		(property "Value" "78nH 2% Q=28"
 			(at 139.7 125.222 90)
 			(effects
 				(font
