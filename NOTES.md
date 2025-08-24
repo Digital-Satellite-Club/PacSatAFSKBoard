@@ -963,3 +963,12 @@ inductor.  The simulations were modified to do this.
 
 Remove the UART connections from the PC104.  It's unknown if they are
 needed, and if they are then they will need work for active/standby.
+
+## 2025-08-23
+
+Lots of work on the various parts to make the board more
+manufacturable.  Changed some values from hard to get values and
+changes the strings in the values to be used more easily.
+
+Moved the RF splitter over a bit to make room for another .5" square
+shield in case we switch to discrete components for a filter.
