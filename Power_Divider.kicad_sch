@@ -7689,7 +7689,7 @@
 				)
 			)
 		)
-		(property "Value" "18nH 2% Q=58"
+		(property "Value" "18nH 2% Q=80"
 			(at 59.182 152.908 90)
 			(effects
 				(font
@@ -7697,7 +7697,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 62.23 152.4 0)
 			(effects
 				(font
@@ -8082,7 +8082,7 @@
 				)
 			)
 		)
-		(property "Value" "18nH 2% Q=58"
+		(property "Value" "18nH 2% Q=80"
 			(at 96.012 152.908 90)
 			(effects
 				(font
@@ -8090,7 +8090,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 99.06 152.4 0)
 			(effects
 				(font

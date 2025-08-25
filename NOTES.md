@@ -976,3 +976,6 @@ shield in case we switch to discrete components for a filter.
 
 Replace the RBP-140+ on the LNA output with discrete components.  They
 should perform better and be certified.
+
+Change the inductors on the RF input filter to a larger part with a
+lower series resistance to decrease the loss in the filter.
