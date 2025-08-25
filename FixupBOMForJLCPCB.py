@@ -84,8 +84,9 @@ comment_xlats = {
     '27nH 2% Q=82': '0603DC-27NXGRW',
     '43nH 2% Q=82': '0603DC-43NXGRW',
     '1nH Q=77': '0402CS-1N0XJRW',
-    '': '',
-    '': '',
+    '7.5n 2% Q=88': '0603DC-7N5XGRW',
+    '62n 2% Q=70': 'LQW2BAN62NG00L',
+    '91n 2% Q=70': 'LQW2BAN91NG00L',
     '': '',
 }
 def xlat_comment(s):
