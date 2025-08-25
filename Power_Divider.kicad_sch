@@ -2751,7 +2751,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 148.59) (xy 274.32 148.59)
+			(xy 276.86 147.32) (xy 274.32 147.32)
 		)
 		(stroke
 			(width 0)
@@ -3121,7 +3121,7 @@
 	)
 	(wire
 		(pts
-			(xy 288.29 148.59) (xy 290.83 148.59)
+			(xy 288.29 147.32) (xy 290.83 147.32)
 		)
 		(stroke
 			(width 0)
@@ -3161,7 +3161,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 143.51) (xy 276.86 148.59)
+			(xy 276.86 143.51) (xy 276.86 147.32)
 		)
 		(stroke
 			(width 0)
@@ -3701,7 +3701,7 @@
 	)
 	(wire
 		(pts
-			(xy 290.83 148.59) (xy 290.83 143.51)
+			(xy 290.83 147.32) (xy 290.83 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3991,7 +3991,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 148.59) (xy 264.16 143.51)
+			(xy 264.16 147.32) (xy 264.16 143.51)
 		)
 		(stroke
 			(width 0)
@@ -4021,7 +4021,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 148.59) (xy 264.16 148.59)
+			(xy 266.7 147.32) (xy 264.16 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4241,7 +4241,7 @@
 	)
 	(wire
 		(pts
-			(xy 280.67 148.59) (xy 278.13 148.59)
+			(xy 280.67 147.32) (xy 278.13 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4551,7 +4551,7 @@
 	)
 	(wire
 		(pts
-			(xy 278.13 148.59) (xy 278.13 143.51)
+			(xy 278.13 147.32) (xy 278.13 143.51)
 		)
 		(stroke
 			(width 0)
@@ -5332,7 +5332,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 284.48 148.59 270)
+		(at 284.48 147.32 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5341,7 +5341,7 @@
 		(dnp no)
 		(uuid "0bdcf2f2-13d0-4a97-8c50-b85f3e83f5fd")
 		(property "Reference" "L43"
-			(at 284.48 146.05 90)
+			(at 284.48 144.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5349,7 +5349,7 @@
 			)
 		)
 		(property "Value" "91nH 2% Q=70"
-			(at 286.004 150.368 90)
+			(at 286.004 149.098 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5357,7 +5357,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
-			(at 284.48 148.59 0)
+			(at 284.48 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5366,7 +5366,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 284.48 148.59 0)
+			(at 284.48 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5375,7 +5375,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 284.48 148.59 0)
+			(at 284.48 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6550,7 +6550,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 270.51 148.59 270)
+		(at 270.51 147.32 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6559,7 +6559,7 @@
 		(dnp no)
 		(uuid "4f6b1f61-fa97-4983-87d1-ae8204b94ea4")
 		(property "Reference" "L42"
-			(at 270.51 146.304 90)
+			(at 270.51 145.034 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6567,7 +6567,7 @@
 			)
 		)
 		(property "Value" "62nH 2% Q=70"
-			(at 270.256 150.114 90)
+			(at 270.256 148.844 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6575,7 +6575,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
-			(at 270.51 148.59 0)
+			(at 270.51 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6584,7 +6584,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 270.51 148.59 0)
+			(at 270.51 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6593,7 +6593,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 270.51 148.59 0)
+			(at 270.51 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
