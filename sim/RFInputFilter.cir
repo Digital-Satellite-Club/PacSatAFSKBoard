@@ -16,7 +16,7 @@
 C1	in  0   68p
 * 18.13n
 L1	in  b1  18n
-R1      b1  0   .078
+R1      b1  0   .120
 
 * 6.519p
 C2	in  a1  6.5p
@@ -26,7 +26,7 @@ R2	a2  b3  .64
 
 C3	b3  0   68p
 L3	b3  b2   18n
-R3      b2  0   .078
+R3      b2  0   .120
 
 * Impedance matching network
 L4      b3  b4  91n

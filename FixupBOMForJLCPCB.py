@@ -71,22 +71,22 @@ def xlat_footprint(s):
     return s
 
 comment_xlats = {
-    '78nH 2% Q=28': 'LQW18AN78NG8ZD',
+    '1nH Q=77': '0402CS-1N0XJRW',
+    '6.9nH 2% Q=69': '0402DC-6N9XGRW',
+    '7.5n 2% Q=88': '0603DC-7N5XGRW',
     '18nH 2% Q=80': '0603DC-18NXGRW',
     '18nH 2% Q=58': 'AISC-Q0402HQ-18NG-T',
     '22nH 2% Q=67': '0402DC-22NXGRW',
-    '6.9nH 2% Q=69': '0402DC-6N9XGRW',
     '36nH Q=79 I>1A': '0603DC-36NXGRW',
+    '43nH 2% Q=82': '0603DC-43NXGRW',
+    '47nH 2% Q=73': '0603DC-47NXGRW',
+    '78nH 2% Q=28': 'LQW18AN78NG8ZD',
+    '91nH 2% Q=64': '0603DC-91NXGRW',
+    '91nH 2% Q=70': 'LQW2BAN91NG00L',
     '180nH 2% Q=50': 'LQW2BANR18G00L',
     '180nH Q=44': '0603DC-R18XGRW',
-    '91nH 2% Q=64': '0603DC-91NXGRW',
-    '47nH 2% Q=73': '0603DC-47NXGRW',
     '27nH 2% Q=82': '0603DC-27NXGRW',
-    '43nH 2% Q=82': '0603DC-43NXGRW',
-    '1nH Q=77': '0402CS-1N0XJRW',
-    '7.5n 2% Q=88': '0603DC-7N5XGRW',
     '62n 2% Q=70': 'LQW2BAN62NG00L',
-    '91n 2% Q=70': 'LQW2BAN91NG00L',
     '': '',
 }
 def xlat_comment(s):

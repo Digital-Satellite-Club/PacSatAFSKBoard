@@ -41,7 +41,6 @@ Parts that are not automotive rated listed below.
 | AX5043					| radio | No other option. |
 | TQP7M9106					| PA | ? |
 | QPL9547					| LNA | ? |
-| RBP-140+					| receive filter | Environmental Specs seem good, probably ok. |
 | AD4PS-1+					| RF power splitter | Environmental Specs seem good, probably ok. |
 | QPC1022TR7				| RF switch | ? |
 | ?							| PC104 connector | Unknown if AEC |
@@ -972,3 +971,8 @@ changes the strings in the values to be used more easily.
 
 Moved the RF splitter over a bit to make room for another .5" square
 shield in case we switch to discrete components for a filter.
+
+## 2025-08-25
+
+Replace the RBP-140+ on the LNA output with discrete components.  They
+should perform better and be certified.
