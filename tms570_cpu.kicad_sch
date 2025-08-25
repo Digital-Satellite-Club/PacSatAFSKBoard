@@ -5015,7 +5015,7 @@
 		)
 		(uuid "7416e645-c07d-4bc7-9c7c-7fd6fab70b9f")
 	)
-	(text "Thermsistor varies from 500\nohms (125C) to 350K (-50C).\nWith a 10K bias this gives a\n.16 to 3.2V range."
+	(text "Thermsistor varies from 500\nohms (125C) to 350KΩ (-50C).\nWith a 10KΩ bias this gives a\n.16 to 3.2V range."
 		(exclude_from_sim no)
 		(at 375.412 109.728 0)
 		(effects
@@ -11234,7 +11234,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10KΩ"
 			(at 114.935 108.585 0)
 			(effects
 				(font
@@ -12287,7 +12287,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10KΩ"
 			(at 148.59 88.265 0)
 			(effects
 				(font
@@ -12354,7 +12354,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10KΩ"
 			(at 93.345 108.585 0)
 			(effects
 				(font
@@ -12747,7 +12747,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3K"
+		(property "Value" "3KΩ"
 			(at 281.305 246.38 90)
 			(effects
 				(font
@@ -12814,7 +12814,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3K"
+		(property "Value" "3KΩ"
 			(at 281.305 254 90)
 			(effects
 				(font
@@ -12881,7 +12881,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3K"
+		(property "Value" "3KΩ"
 			(at 281.305 261.62 90)
 			(effects
 				(font
@@ -12948,7 +12948,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10KΩ"
 			(at 333.375 151.765 0)
 			(effects
 				(font
@@ -13079,7 +13079,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "1KΩ"
 			(at 312.42 48.26 90)
 			(effects
 				(font
@@ -13146,7 +13146,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "1KΩ"
 			(at 316.23 48.26 90)
 			(effects
 				(font
@@ -13213,7 +13213,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "1KΩ"
 			(at 320.04 48.26 90)
 			(effects
 				(font
@@ -13280,7 +13280,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "1KΩ"
 			(at 323.85 48.26 90)
 			(effects
 				(font
@@ -14000,8 +14000,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
-			(at 235.585 24.765 0)
+		(property "Value" "10KΩ"
+			(at 234.188 24.892 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14196,8 +14196,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
-			(at 248.285 24.765 0)
+		(property "Value" "10KΩ"
+			(at 246.888 24.892 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14328,7 +14328,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10KΩ"
 			(at 256.54 35.56 0)
 			(effects
 				(font
@@ -14670,7 +14670,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K 1%"
+		(property "Value" "10KΩ 1%"
 			(at 383.794 117.602 0)
 			(effects
 				(font
@@ -15191,8 +15191,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
-			(at 222.885 34.925 0)
+		(property "Value" "10KΩ"
+			(at 221.488 35.052 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15258,7 +15258,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22"
+		(property "Value" "22Ω"
 			(at 131.572 63.5 90)
 			(effects
 				(font
@@ -15716,7 +15716,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.4KΩ"
+		(property "Value" "2.4KΩΩ"
 			(at 78.74 229.8699 0)
 			(effects
 				(font
@@ -15989,8 +15989,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
-			(at 222.885 24.765 0)
+		(property "Value" "10KΩ"
+			(at 221.742 24.892 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16641,7 +16641,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22"
+		(property "Value" "22Ω"
 			(at 133.604 70.866 90)
 			(effects
 				(font
@@ -17097,8 +17097,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33"
-			(at 200.152 34.798 0)
+		(property "Value" "33Ω"
+			(at 198.882 34.798 0)
 			(effects
 				(font
 					(size 1.27 1.27)

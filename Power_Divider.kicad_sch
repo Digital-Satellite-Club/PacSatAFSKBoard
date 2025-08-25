@@ -5470,7 +5470,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3.32K 1%"
+		(property "Value" "3.32KΩ 1%"
 			(at 183.388 129.413 0)
 			(effects
 				(font
@@ -5800,7 +5800,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10KΩ"
 			(at 248.92 224.155 0)
 			(effects
 				(font
@@ -5867,7 +5867,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10KΩ"
 			(at 191.008 159.893 0)
 			(effects
 				(font
@@ -6623,7 +6623,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "143K 1%"
+		(property "Value" "143KΩ 1%"
 			(at 198.12 240.665 0)
 			(effects
 				(font
@@ -8673,7 +8673,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10KΩ"
 			(at 237.744 241.046 0)
 			(effects
 				(font

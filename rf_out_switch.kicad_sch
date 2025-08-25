@@ -2497,7 +2497,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10KΩ"
 			(at 86.868 140.843 0)
 			(effects
 				(font
@@ -3030,7 +3030,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10KΩ"
 			(at 86.868 130.683 0)
 			(effects
 				(font
