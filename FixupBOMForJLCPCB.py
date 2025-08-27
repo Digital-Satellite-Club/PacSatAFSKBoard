@@ -72,7 +72,9 @@ def xlat_footprint(s):
 
 comment_xlats = {
     '1nH': '0402CS-1N0XJRW',
+    '3.3nH 2%': '0603DC-3N3XGRW',
     '6.9nH 2%': '0402DC-6N9XGRW',
+    '11nH 2%': '0603DC-11NXGRW',
     '18nH 2%': '0603DC-18NXGRW',
     '18nH 2% 0402': '0402DC-18NXGRW',
     '22nH 2%': '0402DC-22NXGRW',

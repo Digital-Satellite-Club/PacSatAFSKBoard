@@ -16,10 +16,27 @@
 
 Rsrc in     vmin1  50
 
+.if (0)
+* This impedance matcher was simulating at around -3.5dB.
+
 * TX PA input matcher
-C1   vmin2  0      39p
-L1   vmin2  a1a    18n
-R1   a1a    a1     .078
+C1	vmin2	0	40p
+* Q=65 CoilCraft 0603DC
+L1	vmin2	a1a	16n
+Rl1	a1a	a1	.67
+.endif
+
+.if (1)
+* This impedance matcher was simulating at around -2.5dB.
+* Still not great, but better than the other one.
+
+* Q=65 CoilCraft 0603DC
+L0	vmin2	a0a	3.3n
+Rl0	a0a	0	.13
+* Q=65 CoilCraft 0603DC
+L1	vmin2	a1a	11n
+Rl1	a1a	a1	.46
+.endif
 
 * -37.7 ohms at 435MHz
 Cout a1     vmout1 9.6p
@@ -38,9 +55,11 @@ Rb1  a1     0      1Meg
 
 * Impedance matching network
 * TX PA output matcher
-C1   a1     vmout1 110p
-L1   vmout1 a3     6.9n
-R1   a3     0      .063
+C1	a1	vmout1	110p
+* Q=55, CoilCraft 0402DC
+L1	vmout1	a3	6.9n
+Rl1	a3	0	.34
+Cl1	vmout1	a3	.037p
 
 Rout vmout2 0      50
 
@@ -51,6 +70,7 @@ Rout vmout2 0      50
 Rsrc in     vmin1  50
 
 * TX LNA input matcher
+* Coilcraft 0805CS series has a Q of around 50
 L1   vmin2  a2   91n
 R1   a2     a1   2.45
 C1   a1     0    6.5p
@@ -71,9 +91,11 @@ Csrc vmin2  a1     583p
 Rb1  a1     0      1Meg
 
 * TX LNA output matcher
-C1   a1     0       11p
-L1   a1     a2      47n
-R1   a2     vmout1  .2
+C1	a1	0	11p
+* Coilcraft 0603DC series has a Q of around 35
+L1	a1	a2	47n
+Rl1	a2	vmout1	1.27
+Cl1	a1	a2	.186p
 
 Rout vmout2 0      50
 

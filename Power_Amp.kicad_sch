@@ -5740,6 +5740,72 @@
 	)
 	(symbol
 		(lib_id "Device:L")
+		(at 58.42 152.4 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3368757d-75c0-4653-8b12-beb1c8aca726")
+		(property "Reference" "L27"
+			(at 60.198 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3nH 2%"
+			(at 56.134 153.162 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 58.42 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 58.42 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e4557d2-f267-4917-9fbc-22c37622d4ae")
+		)
+		(pin "2"
+			(uuid "8cbf749a-83da-4d4a-9059-e87291b4a943")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
+					(reference "L27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
 		(at 160.02 121.92 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6018,72 +6084,6 @@
 			(project ""
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
 					(reference "#PWR0242")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 58.42 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3d591e59-db57-490d-8343-0d52d70719a0")
-		(property "Reference" "C114"
-			(at 63.5 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "39pF 1%"
-			(at 64.77 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 59.3852 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 58.42 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "75d9c436-767a-48de-ae2b-5e7742ad9e39")
-		)
-		(pin "2"
-			(uuid "5fe6236f-12e3-4636-ad8a-d958397d47bf")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/b85b88c3-87c5-49e2-804e-0759552ace3d"
-					(reference "C114")
 					(unit 1)
 				)
 			)
@@ -8912,7 +8912,7 @@
 				)
 			)
 		)
-		(property "Value" "18nH 2%"
+		(property "Value" "11nH 2%"
 			(at 65.278 139.954 90)
 			(effects
 				(font
