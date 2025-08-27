@@ -3232,6 +3232,16 @@
 		)
 		(uuid "e5939854-eea8-4396-a576-3721c0ddb491")
 	)
+	(text "+5 Volts always available evne when board\nis powered off by HW_POWER_OFF_N."
+		(exclude_from_sim no)
+		(at 233.934 257.81 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "fac0238b-f13f-4a46-a669-ba5613957d11")
+	)
 	(junction
 		(at 205.74 50.8)
 		(diameter 0)

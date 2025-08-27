@@ -968,7 +968,7 @@
 		)
 		(uuid "17a8d056-b82c-4d0d-bc6a-5a8d723f7770")
 	)
-	(text "This RF switch setup handles active/standby on board 1.\nOn board 1 the zero ohm resistor is not populated.  On board 2\nor on simplex boards none of the switch circuitry is\npopulated and only the zero ohm resistor is populated."
+	(text "This RF switch setup handles TX active/standby.\nOn board 1 the zero ohm resistor is not populated.  On board 2\nor on simplex boards none of the switch circuitry is\npopulated and only the zero ohm resistor is populated."
 		(exclude_from_sim no)
 		(at 156.21 147.32 0)
 		(effects
