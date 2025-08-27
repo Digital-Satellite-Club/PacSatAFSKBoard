@@ -2814,7 +2814,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d8b0a738-d848-40dc-905d-f72ee4913c54")
 		(property "Reference" "R107"
 			(at 132.588 87.7316 0)

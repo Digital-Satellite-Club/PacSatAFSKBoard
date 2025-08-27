@@ -3860,7 +3860,7 @@
 				)
 			)
 		)
-		(property "Value" "1nH Q=77"
+		(property "Value" "1nH"
 			(at 175.514 145.796 90)
 			(effects
 				(font
@@ -4766,7 +4766,7 @@
 				)
 			)
 		)
-		(property "Value" "78nH 2% Q=28"
+		(property "Value" "78nH 2%"
 			(at 143.51 131.572 90)
 			(effects
 				(font
@@ -5169,7 +5169,7 @@
 				)
 			)
 		)
-		(property "Value" "78nH 2% Q=28"
+		(property "Value" "78nH 2%"
 			(at 165.862 147.066 90)
 			(effects
 				(font

@@ -9,10 +9,6 @@ some point.
 
 # TODO
 
-The RBP-140+ 140MHz filter is kind of expensive, though fairly
-compact.  It's also not temperature rated.  Maybe it could be replaced
-with discrete components?
-
 The 78nH inductors in the AX5043 input section don't come in very high
 Q values, 28 is the best you can get.  77 and 79nH are even worse.
 
@@ -423,6 +419,10 @@ the bus but cannot transmit.
 Fix DC bias issue on the output impedance filter of the LNA.
 
 Replace PA output filter.
+
+The RBP-140+ 140MHz filter is kind of expensive, though fairly
+compact.  It's also not temperature rated.  Maybe it could be replaced
+with discrete components?
 
 # Not going to do
 
@@ -979,3 +979,18 @@ should perform better and be certified.
 
 Change the inductors on the RF input filter to a larger part with a
 lower series resistance to decrease the loss in the filter.
+
+## 2025-08-26
+
+After spending some time looking at how real inductors work, I've come
+to the conclusion that the RBP-140+ wasn't so bad.  When assuming a Q
+of 35 at 150MHz and using that resistance, it comes out that the
+elliptic filter I was using had 8dB of loss and the RF input filter
+had 2.5dB of loss.  In fact, the stats of the RF input filter were
+very similar to the RBP-140+, except that has very even group delay.
+All this needs to be re-thought.
+
+The filter simulations were all reworked based upon how Q actually
+works.  Redid the RF input filter to a lowpass elliptic filter, which
+lowered the loss and give room for bigger inductors with higher Q.
+All the inductors are reworked.

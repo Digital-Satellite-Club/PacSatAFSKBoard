@@ -1,28 +1,56 @@
-* 140-150MHz Elliptic bandpass filter, simulated from:
-* https://markimicrowave.com/technical-resources/tools/lc-filter-design-tool/
-* 3rd order, conventional shunt first, 140 low cutoff, 150 high
-* cutoff, .10db ripple in passband, 50 ohm input, 50 ohm output
-* impedance, 50.42dB stopband attenuation
+* Impedance match and filter on the output of the LNA
 
-* Realization with real components brings about 2.5dB loss and shifts
-* the frequency to 140-152MHz 3dB points.
+* Unless otherwise mentioned, assume all inductors have a Q of around 35
+* at 144MHz.  This is a pretty good assumption for the Coilcraft 0603DC
+* inductors.
 
 .SUBCKT ImpMatchLNAOut in out
 
 * TX LNA output matcher
 C1   in     0       11p
 L1   in     a1      47n
-R1   a1     out     .2
+R1   a1     out     1.27
 
 .ENDS
 
 *                    input
 *                    |   output
 *                    |   |
-.SUBCKT FiltEl144MHz in  out
+.SUBCKT Filt144MHz in  out
 
 * Comments above are the exact values from the filter tool.
 * Value used are available inductors and capacitors.
+
+.if (1)
+* 123-173MHz Chebychev bandpass filter, simulated from:
+* https://markimicrowave.com/technical-resources/tools/lc-filter-design-tool/
+* 3rd order, conventional shunt first, 123MHz low cutoff, 173MHz high
+* cutoff, .10db ripple in passband, 50 ohm input, 50 ohm output
+* impedance.
+
+* 65.57p
+C1	in	0	68p
+* 18.13n
+L1	in	b1	18n
+R1      b1	0	.5
+
+* 6.519p
+C2	in	a1	6.5p
+* 182.6 - This is a CoilCraft 0805CS series, Q around 50 at 150MHz
+L2	a1	a2	180n
+R2	a2	out	3.39
+
+C3	out	0	68p
+L3	out	b2	18n
+R3      b2	0	.5
+.endif
+
+.if (0)
+* 140-150MHz Elliptic bandpass filter, simulated from:
+* https://markimicrowave.com/technical-resources/tools/lc-filter-design-tool/
+* 3rd order, conventional shunt first, 140 low cutoff, 150 high
+* cutoff, .10db ripple in passband, 50 ohm input, 50 ohm output
+* impedance, 50.42dB stopband attenuation
 
 * Note that almost all of the loss is in R1 and R4.  R2 and R3 make
 * very little contribution to the loss.  If inductors could be found
@@ -31,17 +59,16 @@ R1   a1     out     .2
 * lowering the series resistance from 46m to 26.5m, making about 2dB
 * improvement.
 
-.if (1)
 * 322.4p
 C1	in	0	320p
 * 3.742n * 2% Q=68 0402DC-3N7XGRW
-*L1	in	b1	3.7n
-*R1	b1	0	.046
+L1	in	b1	3.7n
+R1	b1	0	.1
 * 7.5n 2% Q=88 0603DC-7N5XGRW
-L1a	in	b1a	7.5n
-R1a	b1a	0	.053
-L1b	in	b1b	7.5n
-R1b	b1b	0	.053
+*L1a	in	b1a	7.5n
+*R1a	b1a	0	.2
+*L1b	in	b1b	7.5n
+*R1b	b1b	0	.2
 
 * 13.25p
 C2	in	a1	13p
@@ -57,12 +84,12 @@ R3	a4	out	.210
 
 * Same as first values above.
 C4	out	0	320p
-*L4	out	b2	3.7n
-*R4	b2	0	.046
-L4a	out	b2a	7.5n
-R4a	b2a	0	.053
-L4b	out	b2b	7.5n
-R4b	b2b	0	.053
+L4	out	b2	3.7n
+R4	b2	0	.1
+*L4a	out	b2a	7.5n
+*R4a	b2a	0	.2
+*L4b	out	b2b	7.5n
+*R4b	b2b	0	.2
 .endif
 
 .if (0)
@@ -115,7 +142,7 @@ X1 in2 im1 ImpMatchLNAOut
 
 Vm2  im1  im2  DC 0 AC 0
 
-X2 im2 out FiltEl144MHz
+X2 im2 out Filt144MHz
 
 * Used for current measurement.
 Vload out out2 DC 0 AC 0

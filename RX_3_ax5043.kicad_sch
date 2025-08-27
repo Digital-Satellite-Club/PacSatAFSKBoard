@@ -1995,17 +1995,6 @@
 		)
 		(uuid "c98c16fc-a539-4015-a200-bb2d191b1d6a")
 	)
-	(text "See RX1 for Q values on inductors."
-		(exclude_from_sim no)
-		(at 177.546 165.862 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "e0c23059-ff91-4a84-ace9-169f452f6669")
-	)
 	(text "RX3+"
 		(exclude_from_sim no)
 		(at 168.402 110.236 0)
@@ -3575,7 +3564,7 @@
 				)
 			)
 		)
-		(property "Value" "78nH 2% Q=28"
+		(property "Value" "78nH 2%"
 			(at 213.868 134.62 90)
 			(effects
 				(font
@@ -4949,7 +4938,7 @@
 				)
 			)
 		)
-		(property "Value" "78nH 2% Q=28"
+		(property "Value" "78nH 2%"
 			(at 191.77 120.142 90)
 			(effects
 				(font
@@ -5015,7 +5004,7 @@
 				)
 			)
 		)
-		(property "Value" "1nH Q=77"
+		(property "Value" "1nH"
 			(at 223.774 134.366 90)
 			(effects
 				(font

@@ -52,7 +52,7 @@ Rsrc in     vmin1  50
 
 * TX LNA input matcher
 L1   vmin2  a2   91n
-R1   a2     a1   .576
+R1   a2     a1   2.45
 C1   a1     0    6.5p
 
 * -80.8 ohms at 145MHz

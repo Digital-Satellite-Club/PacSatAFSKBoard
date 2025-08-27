@@ -4415,7 +4415,7 @@
 				)
 			)
 		)
-		(property "Value" "27nH 2% Q=82"
+		(property "Value" "27nH 2%"
 			(at 185.928 150.114 90)
 			(effects
 				(font
@@ -5912,7 +5912,7 @@
 				)
 			)
 		)
-		(property "Value" "43nH 2% Q=82"
+		(property "Value" "43nH 2%"
 			(at 200.66 142.24 90)
 			(effects
 				(font
@@ -6249,7 +6249,7 @@
 				)
 			)
 		)
-		(property "Value" "43nH 2% Q=82"
+		(property "Value" "43nH 2%"
 			(at 200.66 134.62 90)
 			(effects
 				(font
@@ -6986,7 +6986,7 @@
 				)
 			)
 		)
-		(property "Value" "27nH 2% Q=82"
+		(property "Value" "27nH 2%"
 			(at 172.72 134.62 90)
 			(effects
 				(font

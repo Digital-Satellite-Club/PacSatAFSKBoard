@@ -2250,7 +2250,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b1edf884-f9ef-4623-a4df-34319e148499")
 		(property "Reference" "R96"
 			(at 123.698 97.8916 0)

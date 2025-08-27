@@ -2006,17 +2006,6 @@
 		)
 		(uuid "cd268f2b-3a25-4c2e-9a60-0e0017cc7f55")
 	)
-	(text "See RX1 for Q values on inductors."
-		(exclude_from_sim no)
-		(at 126.746 169.164 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "efa84a76-af70-4423-9ef0-07e4c586d826")
-	)
 	(junction
 		(at 152.4 135.89)
 		(diameter 0)
@@ -4291,7 +4280,7 @@
 				)
 			)
 		)
-		(property "Value" "78nH 2% Q=28"
+		(property "Value" "78nH 2%"
 			(at 154.94 142.24 90)
 			(effects
 				(font
@@ -4357,7 +4346,7 @@
 				)
 			)
 		)
-		(property "Value" "78nH 2% Q=28"
+		(property "Value" "78nH 2%"
 			(at 132.08 128.27 90)
 			(effects
 				(font
@@ -5355,7 +5344,7 @@
 				)
 			)
 		)
-		(property "Value" "1nH Q=77"
+		(property "Value" "1nH"
 			(at 165.1 142.24 90)
 			(effects
 				(font

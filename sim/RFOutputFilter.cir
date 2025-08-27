@@ -1,8 +1,8 @@
-* 460MHz Elliptic lowpass filter, simulated from:
-* https://markimicrowave.com/technical-resources/tools/lc-filter-design-tool/
-* 5rd order, shunt first, 460MHz cutoff, .10db ripple in passband, 50
-* ohm input, 50 ohm output impedance, 50dB stopband attenuation.
+* Impedance matching network and output filter from the PA
 
+* Unless otherwise mentioned, assume all inductors have a Q of around 65
+* at 435MHz.  This is a pretty good assumption for the Coilcraft 0603DC
+* inductors.
 *                     input
 *                     |   output
 *                     |   |
@@ -10,8 +10,9 @@
 
 * Impedance matching network
 C1     in     out 110p
+* 0402DC, Q=50
 L1     inx    a3  6.9n
-R1     a3     0   .063
+R1     a3     0   .378
 
 .ENDS
 
@@ -20,12 +21,17 @@ R1     a3     0   .063
 *                  |   |
 .SUBCKT Filt440MHz in  out
 
+* 460MHz Elliptic lowpass filter, simulated from:
+* https://markimicrowave.com/technical-resources/tools/lc-filter-design-tool/
+* 5rd order, shunt first, 460MHz cutoff, .10db ripple in passband, 50
+* ohm input, 50 ohm output impedance, 50dB stopband attenuation.
+
 * 7.32p
 C1	in   0   7.3p
 
 * 21.71n
 L2	in  a1  22n
-R2      a1  a2  .078
+R2      a1  a2  .92
 * 767.6f
 C2	in  a2  .75p
 
@@ -34,7 +40,7 @@ C3	a2  0   12p
 
 * 17.96n
 L4	a2  a3  18n
-R4	a3  out .120
+R4	a3  out .75
 * 2.16p
 C4	a2  out 2.2p
 
