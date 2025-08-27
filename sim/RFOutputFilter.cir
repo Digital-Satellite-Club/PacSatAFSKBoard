@@ -47,13 +47,19 @@ C4	a2  out 2.2p
 * 6.2p
 C5	out 0   6.2p
 
+* This is the inductor used to bleed off static from the antenna
+L0	out	b0	470n
+R0	b0	0	12
+
 .ENDS
 
 V1 ina 0 dc 0 AC 1 sin(0 1 435MEG 0 0 0)
 
 Rsrc ina  ina1 6.23
 Csrc ina1 ina2 27p
-*Rsrc ina ina1  50
+
+* Not real, used for DC bias at ina2 to avoid warnings
+Rb1  ina2 0    1meg
 
 * Used for current measurement.
 Vmin ina2 in AC 0 DC 0

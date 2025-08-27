@@ -959,7 +959,7 @@
 	)
 	(text "TX ANT OUT"
 		(exclude_from_sim no)
-		(at 90.17 38.862 0)
+		(at 90.17 31.242 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -980,7 +980,7 @@
 	)
 	(text "Inductor to bleed off static build\nup on the antenna."
 		(exclude_from_sim no)
-		(at 115.57 42.672 0)
+		(at 115.57 35.052 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1012,16 +1012,10 @@
 		(uuid "13df4af9-9c83-4b0b-8c06-48e6debf06ac")
 	)
 	(junction
-		(at 100.33 45.72)
+		(at 100.33 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1425b569-f0b2-4c43-8a63-0f604f3796c8")
-	)
-	(junction
-		(at 83.82 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "17670686-cc29-475a-8baa-b6b2f514691f")
+		(uuid "31e4d29d-0f17-4b3e-a7e5-1844287e6a20")
 	)
 	(junction
 		(at 195.58 54.61)
@@ -1054,6 +1048,12 @@
 		(uuid "959fe6c1-ef0d-41e3-85d0-225ef6be131b")
 	)
 	(junction
+		(at 83.82 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f049870-078f-4065-a4be-d4306e0aaa6b")
+	)
+	(junction
 		(at 115.57 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1076,16 +1076,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f709166e-a4f8-451f-bed8-1df698041ba9")
-	)
-	(wire
-		(pts
-			(xy 100.33 45.72) (xy 115.57 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a8beb88-09ec-48a9-8aa1-377f107503c8")
 	)
 	(wire
 		(pts
@@ -1116,6 +1106,16 @@
 			(type default)
 		)
 		(uuid "12c191c0-2743-4e8a-9d04-2a7976d26f82")
+	)
+	(wire
+		(pts
+			(xy 100.33 57.15) (xy 100.33 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14012315-1e11-4f3e-99ba-e94322702b4d")
 	)
 	(wire
 		(pts
@@ -1199,7 +1199,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 45.72) (xy 100.33 45.72)
+			(xy 87.63 38.1) (xy 100.33 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1219,7 +1219,17 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 54.61) (xy 85.09 54.61)
+			(xy 100.33 48.26) (xy 100.33 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32449e36-4e15-4bdc-adb2-749c5194a862")
+	)
+	(wire
+		(pts
+			(xy 83.82 46.99) (xy 85.09 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1229,7 +1239,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 54.61) (xy 83.82 57.15)
+			(xy 83.82 46.99) (xy 83.82 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1339,7 +1349,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 54.61) (xy 82.55 54.61)
+			(xy 83.82 46.99) (xy 82.55 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1369,7 +1379,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 45.72) (xy 115.57 58.42)
+			(xy 115.57 38.1) (xy 115.57 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1449,16 +1459,6 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 57.15) (xy 100.33 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8fea09bf-d2af-47b3-b825-505387584865")
-	)
-	(wire
-		(pts
 			(xy 81.28 68.58) (xy 110.49 68.58)
 		)
 		(stroke
@@ -1519,6 +1519,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 38.1) (xy 115.57 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a62e1dae-ca53-47ae-a3fd-cf698a4c0267")
+	)
+	(wire
+		(pts
 			(xy 172.72 46.99) (xy 171.45 46.99)
 		)
 		(stroke
@@ -1566,6 +1576,16 @@
 			(type default)
 		)
 		(uuid "ccc9eed9-862a-4cf1-9985-28a0fa1ab817")
+	)
+	(wire
+		(pts
+			(xy 100.33 38.1) (xy 100.33 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd7699a7-7b83-4373-91b2-75ead2259661")
 	)
 	(wire
 		(pts
@@ -1626,16 +1646,6 @@
 			(type default)
 		)
 		(uuid "e08b47d3-1886-485a-b6ff-bef474eacb7b")
-	)
-	(wire
-		(pts
-			(xy 100.33 45.72) (xy 100.33 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1d2230e-f7f6-4843-9dd8-31292bbc354f")
 	)
 	(wire
 		(pts
@@ -2256,7 +2266,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 100.33 53.34 0)
+		(at 100.33 44.45 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2265,7 +2275,7 @@
 		(dnp no)
 		(uuid "6a8f8228-d97d-4b30-b598-0d10ef922af1")
 		(property "Reference" "L39"
-			(at 102.362 53.594 90)
+			(at 102.362 44.704 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2273,7 +2283,7 @@
 			)
 		)
 		(property "Value" "470nH"
-			(at 97.282 53.848 90)
+			(at 97.282 44.958 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2281,7 +2291,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
-			(at 100.33 53.34 0)
+			(at 100.33 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2290,7 +2300,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 100.33 53.34 0)
+			(at 100.33 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2299,7 +2309,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 100.33 53.34 0)
+			(at 100.33 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2607,6 +2617,73 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/4fa888af-703c-49ed-93bb-d56d2f02c470/26e0c845-9451-4c79-aef3-943c70af8ca9"
 					(reference "#PWR0292")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 100.33 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9ac55c55-cfb5-4332-8dde-17b3693f5384")
+		(property "Reference" "R98"
+			(at 102.616 55.118 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10KΩ"
+			(at 97.917 55.626 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 98.552 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "28eaba58-7815-4aba-a25c-70dfdd2bd663")
+		)
+		(pin "2"
+			(uuid "3523fae5-c2da-4656-be8f-08050e6f4ec1")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/4fa888af-703c-49ed-93bb-d56d2f02c470/26e0c845-9451-4c79-aef3-943c70af8ca9"
+					(reference "R98")
 					(unit 1)
 				)
 			)
@@ -2942,7 +3019,7 @@
 	)
 	(symbol
 		(lib_id "PACSAT_DEV_misc:U_FL")
-		(at 83.82 45.72 0)
+		(at 83.82 38.1 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2951,7 +3028,7 @@
 		(dnp no)
 		(uuid "e34921d1-ae88-4107-85ee-86845a943650")
 		(property "Reference" "P15"
-			(at 86.36 41.91 0)
+			(at 86.36 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2960,7 +3037,7 @@
 			)
 		)
 		(property "Value" "CONUFL001-SMD-T"
-			(at 83.82 45.72 0)
+			(at 83.82 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2969,7 +3046,7 @@
 			)
 		)
 		(property "Footprint" "PacSatDev_misc:CONN1_CONUFL_TEC"
-			(at 83.82 45.72 0)
+			(at 83.82 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2978,7 +3055,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 45.72 0)
+			(at 83.82 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2987,7 +3064,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 83.82 45.72 0)
+			(at 83.82 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)

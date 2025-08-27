@@ -970,7 +970,7 @@
 	)
 	(text "Inductor to bleed off static build\nup on the antenna."
 		(exclude_from_sim no)
-		(at 115.824 55.118 0)
+		(at 115.824 49.53 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -980,7 +980,7 @@
 	)
 	(text "RX ANT IN"
 		(exclude_from_sim no)
-		(at 82.296 51.562 0)
+		(at 82.296 47.244 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1012,7 +1012,7 @@
 		(uuid "112111f8-3791-426e-9e6e-482e6d7e634a")
 	)
 	(junction
-		(at 96.52 58.42)
+		(at 96.52 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "211d12fb-7eb6-428a-b364-b2183dca3805")
@@ -1028,6 +1028,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "407a3714-d754-442b-a6f5-feb68a5d6da7")
+	)
+	(junction
+		(at 86.36 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "888a389d-f7fe-4608-816a-9d2adbb7f1da")
 	)
 	(junction
 		(at 121.92 68.58)
@@ -1059,11 +1065,15 @@
 		(color 0 0 0 0)
 		(uuid "bb7df835-240a-4cf8-a6a3-f27e3f4138cd")
 	)
-	(junction
-		(at 86.36 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d7a60074-3ddb-4df6-ab29-d2366f05285f")
+	(wire
+		(pts
+			(xy 96.52 71.12) (xy 96.52 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08444431-6954-4d3e-8fde-45587627b711")
 	)
 	(wire
 		(pts
@@ -1094,16 +1104,6 @@
 			(type default)
 		)
 		(uuid "107e6c59-d07c-4207-be88-69180baa9e4f")
-	)
-	(wire
-		(pts
-			(xy 86.36 67.31) (xy 86.36 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "108f58ef-05cf-47c0-bd1d-bf3f45264806")
 	)
 	(wire
 		(pts
@@ -1187,7 +1187,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 67.31) (xy 85.09 67.31)
+			(xy 86.36 62.23) (xy 85.09 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1307,7 +1307,17 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 67.31) (xy 87.63 67.31)
+			(xy 86.36 62.23) (xy 86.36 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "486162d1-0934-47ab-a61d-bf07dffadd25")
+	)
+	(wire
+		(pts
+			(xy 86.36 62.23) (xy 87.63 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1397,7 +1407,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 58.42) (xy 106.68 68.58)
+			(xy 106.68 53.34) (xy 106.68 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1414,16 +1424,6 @@
 			(type default)
 		)
 		(uuid "754441a3-88c1-4f1c-a79b-a643cd075a09")
-	)
-	(wire
-		(pts
-			(xy 96.52 58.42) (xy 96.52 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7632f99b-30c2-4fb4-9857-6e774940a4d6")
 	)
 	(wire
 		(pts
@@ -1497,7 +1497,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 58.42) (xy 96.52 58.42)
+			(xy 90.17 53.34) (xy 96.52 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1577,13 +1577,23 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 58.42) (xy 106.68 58.42)
+			(xy 96.52 53.34) (xy 106.68 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d8cff228-5597-4c8c-9770-6ee773d9b6e3")
+	)
+	(wire
+		(pts
+			(xy 96.52 53.34) (xy 96.52 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8de22f8-b51b-46f4-a16b-17e11035b50d")
 	)
 	(wire
 		(pts
@@ -1597,7 +1607,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 69.85) (xy 96.52 72.39)
+			(xy 96.52 62.23) (xy 96.52 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1912,8 +1922,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 96.52 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64005f5b-96fe-4c41-b3d1-242b59a309ee")
+		(property "Reference" "R97"
+			(at 98.806 69.088 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10KΩ"
+			(at 94.107 69.596 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 94.742 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 96.52 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8cf200f2-bb7a-4e25-80ca-065f864e729d")
+		)
+		(pin "2"
+			(uuid "6fae3876-c20b-424d-a3fa-ce8b7c076c89")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/4fa888af-703c-49ed-93bb-d56d2f02c470/64a91b23-a882-4658-bea9-c6c8274e2ac4"
+					(reference "R97")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PACSAT_DEV_misc:U_FL")
-		(at 86.36 58.42 0)
+		(at 86.36 53.34 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1922,7 +1999,7 @@
 		(dnp no)
 		(uuid "7c1dc5d9-0dc6-4daf-8f55-b76577169aa7")
 		(property "Reference" "P17"
-			(at 88.9 54.61 0)
+			(at 88.9 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1931,7 +2008,7 @@
 			)
 		)
 		(property "Value" "CONUFL001-SMD-T"
-			(at 86.36 58.42 0)
+			(at 86.36 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1940,7 +2017,7 @@
 			)
 		)
 		(property "Footprint" "PacSatDev_misc:CONN1_CONUFL_TEC"
-			(at 86.36 58.42 0)
+			(at 86.36 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1949,7 +2026,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 58.42 0)
+			(at 86.36 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1958,7 +2035,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 86.36 58.42 0)
+			(at 86.36 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2541,7 +2618,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 96.52 66.04 0)
+		(at 96.52 58.42 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2550,7 +2627,7 @@
 		(dnp no)
 		(uuid "cd67f3b1-dec6-42ce-8c64-fc8fe47c2318")
 		(property "Reference" "L40"
-			(at 98.552 66.294 90)
+			(at 98.552 58.674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2558,7 +2635,7 @@
 			)
 		)
 		(property "Value" "470nH"
-			(at 93.472 66.548 90)
+			(at 93.472 58.928 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2566,7 +2643,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
-			(at 96.52 66.04 0)
+			(at 96.52 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2575,7 +2652,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.52 66.04 0)
+			(at 96.52 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2584,7 +2661,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 96.52 66.04 0)
+			(at 96.52 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)

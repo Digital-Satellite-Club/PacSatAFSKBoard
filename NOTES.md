@@ -994,3 +994,7 @@ The filter simulations were all reworked based upon how Q actually
 works.  Redid the RF input filter to a lowpass elliptic filter, which
 lowered the loss and give room for bigger inductors with higher Q.
 All the inductors are reworked.
+
+Added a resistor to the bleed off inductors to avoid it affecting the
+performance of the filter.  Since it's on the other side of the
+inductor I don't think it will add noise (maybe?  Not 100% sure.)

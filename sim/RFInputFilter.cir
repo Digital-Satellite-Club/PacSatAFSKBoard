@@ -16,6 +16,10 @@
 * 176MHz Elliptic lowpass filter, shunt first, with 50dB stopband
 * attenuation and 1dB ripple in the passband.  50ohm input and output.
 
+* This is the inductor used to bleed off static from the antenna
+L0	in	b0	470n
+R0	b0	0	10k
+
 * 35.62
 C1	in	0	36p
 
