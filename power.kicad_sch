@@ -3243,12 +3243,6 @@
 		(uuid "fac0238b-f13f-4a46-a669-ba5613957d11")
 	)
 	(junction
-		(at 205.74 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "03969ae2-4a41-48ce-acc1-993e4519b375")
-	)
-	(junction
 		(at 104.14 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4008,16 +4002,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 50.8) (xy 205.74 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "278318fd-a255-4eba-a145-525611c164a1")
-	)
-	(wire
-		(pts
 			(xy 161.29 54.61) (xy 161.29 57.15)
 		)
 		(stroke
@@ -4085,16 +4069,6 @@
 			(type default)
 		)
 		(uuid "3036fa3d-a5cf-4f63-b50e-669010883e8a")
-	)
-	(wire
-		(pts
-			(xy 205.74 48.26) (xy 205.74 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30774c91-c4c4-4f89-b6f5-3ac09c7d9966")
 	)
 	(wire
 		(pts
@@ -4508,16 +4482,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 27.94) (xy 205.74 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53c1b670-59fb-4036-ba0a-63fdc10839ba")
-	)
-	(wire
-		(pts
 			(xy 186.69 229.87) (xy 186.69 223.52)
 		)
 		(stroke
@@ -4918,16 +4882,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 25.4) (xy 205.74 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82806b53-7e1c-423e-9a27-b6cd813c581c")
-	)
-	(wire
-		(pts
 			(xy 168.91 68.58) (xy 168.91 92.71)
 		)
 		(stroke
@@ -5258,16 +5212,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 48.26) (xy 205.74 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a56f9905-1a11-42ba-a760-e8a8bc7a1b08")
-	)
-	(wire
-		(pts
 			(xy 262.89 228.6) (xy 262.89 229.87)
 		)
 		(stroke
@@ -5565,16 +5509,6 @@
 			(type default)
 		)
 		(uuid "c02241da-24e4-49d0-b7ba-b301a9a84329")
-	)
-	(wire
-		(pts
-			(xy 205.74 27.94) (xy 205.74 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c162e03d-6afd-4d87-bd74-f2e77ed35ce9")
 	)
 	(polyline
 		(pts
@@ -5918,16 +5852,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 50.8) (xy 205.74 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1ea0263-11c2-4a22-a434-d381d49ca8b0")
-	)
-	(wire
-		(pts
 			(xy 262.89 229.87) (xy 267.97 229.87)
 		)
 		(stroke
@@ -6215,16 +6139,6 @@
 			(type default)
 		)
 		(uuid "f7176b2b-c125-4ca7-a824-1a2af1afb6d2")
-	)
-	(wire
-		(pts
-			(xy 205.74 21.59) (xy 205.74 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f872ab9a-75e0-4d10-9645-62caab17feef")
 	)
 	(wire
 		(pts
@@ -11060,70 +10974,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 205.74 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3a1c9709-70b5-49d5-a47d-19e219aa0aad")
-		(property "Reference" "#PWR075"
-			(at 205.74 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 205.867 34.8742 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 205.74 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e08aee1f-a90b-449f-8af6-1b1e12355d99")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "#PWR075")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 140.97 52.07 0)
 		(unit 1)
@@ -11823,74 +11673,6 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "R64")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 185.42 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "62d9f181-e354-4801-b019-8d69073c56c3")
-		(property "Reference" "J15"
-			(at 186.055 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 186.055 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
-			(at 185.42 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 185.42 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 185.42 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9645875c-dd2c-4268-8f83-84bf6a1423f9")
-		)
-		(pin "2"
-			(uuid "697be1eb-56ac-440a-becc-7f0e03062684")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "J15")
 					(unit 1)
 				)
 			)
@@ -13072,70 +12854,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 205.74 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a5182e54-0eaa-4804-b93c-a880c0fb3807")
-		(property "Reference" "#PWR076"
-			(at 205.74 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 205.867 64.0842 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 205.74 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ac12d354-c8fa-4d78-a660-ef0279173334")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "#PWR076")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 198.12 237.49 0)
 		(mirror y)
@@ -13933,73 +13651,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 205.74 21.59 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cb60e91c-1a40-421d-b7ac-6eb5f25c2b02")
-		(property "Reference" "#PWR074"
-			(at 205.74 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 208.28 20.3199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 205.74 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0d422cb4-2eae-43cf-b169-69995d9fb543")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "#PWR074")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 186.69 179.07 0)
 		(unit 1)
@@ -14062,74 +13713,6 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "C31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 185.42 25.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d57bad7c-2d66-40cc-96a0-2ac77a0bb292")
-		(property "Reference" "J13"
-			(at 186.055 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 186.055 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
-			(at 185.42 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 185.42 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 185.42 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "47da7cb2-3a9b-4e87-bb04-4be383f93a82")
-		)
-		(pin "2"
-			(uuid "6c03a163-f038-4618-a1c9-8a6d319ba92e")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
-					(reference "J13")
 					(unit 1)
 				)
 			)
