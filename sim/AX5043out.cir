@@ -2,28 +2,35 @@
 * at 430 MHz.  It converts differential to single-ended and does some
 * filtering, about -25dB at 860MHz.
 * 
+* Unless otherwise mentioned, assume all inductors have a Q of around 65
+* at 435MHz.  This is a pretty good assumption for the Coilcraft 0603DC
+* inductors.
+
 *                 input+
 *                 |   input-
 *                 |   |   output
 *                 |   |   |
 .SUBCKT AX5043Out inp inn out
 
-Lina    inp 0   100n
-Linb    inn 0   100n
+Lina	inp	0	100n
+Linb	inn	0	100n
 
-C1a	inp a1  4.3p
-C1b	inn b1  4.3p
+C1a	inp	a1	4.3p
+C1b	inn	b1	4.3p
 
-L1a	a1  a2   43n
-L1b	b1  b2   43n
+L1a	a1	a1a	43n
+Rl1a	a1a	a2	1.15
+L1b	b1	b1a	43n
+Rl1b	b1a	b2	1.15
 
-C2a     a2  0    11p
-C2b     b2  0    5.6p
-L2b     b2  0    27n
+C2a	a2	0	11p
+C2b	b2	0	5.6p
+L2b	b2	b2a	27n
+Rl2b	b2a	0	1.13
+L3a	a2	a2a	27n
+Rl3a	a2a	out	1.13
 
-L3a     a2  out   27n
-
-C3b     b2  out   5.1p
+C3b	b2	out	5.1p
 
 * Avoid issues with series inductors, they result in:
 * Warning: singular matrix:  check node l.x1.l4b#branch
@@ -46,7 +53,6 @@ Rload out 0 50
 *plot v(ina1,inb1), v(out)
 ac lin 50000 100Meg 1000Meg
 plot db((vm(out)^2/50)/(vm(ina1,inb1) * i(v1)))
-plot db((vm(x1.a3)^2/50)/(vm(ina1,inb1) * i(v1)))
 .endc
 
 .end

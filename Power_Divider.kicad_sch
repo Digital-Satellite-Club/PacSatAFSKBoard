@@ -2186,6 +2186,16 @@
 		)
 		(uuid "683c48d1-590e-48e2-9bb5-36a07e4f3281")
 	)
+	(text "123-173MHz Chebychev bandpass filter, simulated from:\n* https://markimicrowave.com/technical-resources/tools/lc-filter-design-tool/\n3rd order, conventional shunt first, 123MHz low cutoff, 173MHz high\ncutoff, .10db ripple in passband, 50 ohm input, 50 ohm output\nimpedance."
+		(exclude_from_sim no)
+		(at 273.812 127.254 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "687cd5f1-fd90-4763-8932-b15e45023117")
+	)
 	(text "Option Test Cap"
 		(exclude_from_sim no)
 		(at 331.47 119.38 0)
