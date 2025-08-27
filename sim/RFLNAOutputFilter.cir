@@ -7,9 +7,10 @@
 .SUBCKT ImpMatchLNAOut in out
 
 * TX LNA output matcher
-C1   in     0       11p
-L1   in     a1      47n
-R1   a1     out     1.27
+C1	in	0	11p
+L1	in	a1	47n
+Rl1	a1	out	1.27
+Cl1	in	out	.186p
 
 .ENDS
 
@@ -153,7 +154,7 @@ Rload out2 0   50
 .control
 *tran 1ns 102000ns 101000ns
 *plot v(in1), v(out)
-ac lin 50000 100Meg 200Meg
+ac lin 50000 1Meg 500Meg
 plot db((v(out) * i(Vload)) / (v(in0) * i(Vm1)))
 .endc
 

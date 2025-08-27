@@ -1,7 +1,7 @@
 * Impedance matching network and output filter from the PA
 
-* Unless otherwise mentioned, assume all inductors have a Q of around 65
-* at 435MHz.  This is a pretty good assumption for the Coilcraft 0603DC
+* Unless otherwise mentioned, assume all inductors have a Q of around 55
+* at 435MHz.  This is a pretty good assumption for the Coilcraft 0402DC
 * inductors.
 *                     input
 *                     |   output
@@ -9,10 +9,10 @@
 .SUBCKT ImpMatchPAOut in  out
 
 * Impedance matching network
-C1     in     out 110p
-* 0402DC, Q=50
-L1     inx    a3  6.9n
-R1     a3     0   .378
+C1	in	out	110p
+L1	inx	a3	6.9n
+Rl1	a3	0	.34
+Cl1	in	a1	.037p
 
 .ENDS
 
@@ -27,25 +27,27 @@ R1     a3     0   .378
 * ohm input, 50 ohm output impedance, 50dB stopband attenuation.
 
 * 7.32p
-C1	in   0   7.3p
+C1	in	0	7.3p
 
 * 21.71n
-L2	in  a1  22n
-R2      a1  a2  .92
+L2	in	a1	22n
+Rl2	a1	a2	1.1
+Cl2	in	a2	.046p
 * 767.6f
-C2	in  a2  .75p
+C2	in	a2	.75p
 
 * 11.84p
-C3	a2  0   12p
+C3	a2	0	12p
 
 * 17.96n
-L4	a2  a3  18n
-R4	a3  out .75
+L4	a2	a3	18n
+Rl4	a3	out	.89
+Cl4	a2	out	.045p
 * 2.16p
-C4	a2  out 2.2p
+C4	a2	out	2.2p
 
 * 6.2p
-C5	out 0   6.2p
+C5	out	0	6.2p
 
 * This is the inductor used to bleed off static from the antenna
 L0	out	b0	470n

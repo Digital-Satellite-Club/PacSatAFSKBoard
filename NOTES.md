@@ -998,3 +998,8 @@ All the inductors are reworked.
 Added a resistor to the bleed off inductors to avoid it affecting the
 performance of the filter.  Since it's on the other side of the
 inductor I don't think it will add noise (maybe?  Not 100% sure.)
+
+Looked at capacitance of the inductors.  The only significant change
+was in the RF input filter, since it had a parallel capacitor of 1.2pF
+and a capacitance of .18pF.  Added inductor capacitors to the
+simulations, but they didn't make much difference elsewhere.

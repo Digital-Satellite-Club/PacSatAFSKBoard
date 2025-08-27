@@ -24,10 +24,11 @@ R0	b0	0	10k
 C1	in	0	36p
 
 * 1.203p
-C2	in	out	1.2p
+C2	in	out	1p
 * 43.03n
 L1	in	b1	43n
-R1	b1	out	1.15
+Rl1	b1	out	1.15
+Cl1	in	out	.18p
 
 C3	out	0	36p
 
@@ -64,7 +65,8 @@ R3      b2	0	.5
 * TX LNA input matcher
 L1	in	a1	91n
 * Coilcraft 0805CS series has a Q of around 50
-R1	a1	out	1.7
+Rl1	a1	out	1.7
+Cl1	in	out	.16p
 C1	out	0	6.5p
 
 .ENDS

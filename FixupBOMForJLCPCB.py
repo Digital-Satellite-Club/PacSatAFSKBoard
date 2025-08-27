@@ -74,6 +74,7 @@ comment_xlats = {
     '1nH': '0402CS-1N0XJRW',
     '6.9nH 2%': '0402DC-6N9XGRW',
     '18nH 2%': '0603DC-18NXGRW',
+    '18nH 2% 0402': '0402DC-18NXGRW',
     '22nH 2%': '0402DC-22NXGRW',
     '27nH 2%': '0603DC-27NXGRW',
     '36nH I>1A': '0603DC-36NXGRW',

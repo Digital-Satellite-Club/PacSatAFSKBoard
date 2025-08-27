@@ -2101,7 +2101,7 @@
 		)
 		(uuid "15edb036-5552-4135-b7ac-6cd958c3c355")
 	)
-	(text "-6.5 dB per port\n-6db for dividing power\n-.5db for insertion loss"
+	(text "-6.5 dB per port:\n  -6db for dividing power\n  -.5db for insertion loss"
 		(exclude_from_sim no)
 		(at 339.598 170.18 0)
 		(effects
@@ -2133,6 +2133,16 @@
 			(justify left bottom)
 		)
 		(uuid "37823c82-f669-459e-ad66-7187fed9bcdd")
+	)
+	(text "The calculated capacitance is 1.2pF, but the\ninductor SRF is 1.8GHz working out to a series\ncapacitance of .18pF."
+		(exclude_from_sim no)
+		(at 121.92 130.81 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "3b58bfca-c70c-48a8-a9b0-160120476af6")
 	)
 	(text "Note 3\nAll RF circuits must have at least 2 vias on \nall connections between PCB planes."
 		(exclude_from_sim no)
@@ -7699,7 +7709,7 @@
 				)
 			)
 		)
-		(property "Value" "1.2pF 1%"
+		(property "Value" "1pF 1%"
 			(at 86.36 129.54 90)
 			(effects
 				(font

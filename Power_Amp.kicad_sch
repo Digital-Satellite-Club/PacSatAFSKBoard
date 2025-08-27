@@ -2558,7 +2558,7 @@
 	)
 	(text "-2 dB"
 		(exclude_from_sim no)
-		(at 260.858 141.986 0)
+		(at 243.078 142.494 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -5493,7 +5493,7 @@
 				)
 			)
 		)
-		(property "Value" "18nH 2%"
+		(property "Value" "18nH 2% 0402"
 			(at 274.32 150.622 90)
 			(effects
 				(font
