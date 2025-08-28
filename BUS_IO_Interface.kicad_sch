@@ -6001,7 +6001,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-8"
+		(property "Footprint" "PacSatDev_misc:TSOT-23-8"
 			(at 290.83 156.21 0)
 			(effects
 				(font
@@ -9497,7 +9497,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-8"
+		(property "Footprint" "PacSatDev_misc:TSOT-23-8"
 			(at 290.83 88.9 0)
 			(effects
 				(font

@@ -1023,3 +1023,8 @@ there was not suitable.  Lots still left to do here.
 Modified the BOM file fixer to output an XLS file instead of a CSV
 file.  The omega symbol (for ohms) is properly handled from XLS files,
 it is not from CSV files.
+
+Removed all the unknown PC104 signals.  The LTM doesn't have them, it
+has other things, will need clarification.
+
+Rework board layout some more, finish up temporary PC104 assignments.

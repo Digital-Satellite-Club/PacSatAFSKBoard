@@ -14,7 +14,7 @@ used as a GPIO.
 |Pin3	|CPU Pin Name			|Schematic Name			|G |Description |
 |----	|------------			|--------------			|--|----------- |
 |1		|GIOB[3]				|OTHER\_FAULT\_N		|ID|Fault line from other board |
-|2		|GIOA[0]				|FCODE\_STROBE			|?D|PC104 Pin 56 |
+|2		|GIOA[0]				|						| D|free gpio|
 |3		|MIBSPI3NCS[3]			|I2C\_SCL				|OU|RTC control (MAX31331TETB+) |
 |4		|MIBSPI3NCS[2]			|I2C\_SDA				|BU|RTC control (MAX31331TETB+) |
 |5		|GIOA[1]				|AX5043\_IRQ\_RX1		|ID|Interrupt from AX5043 RX1 |
@@ -27,7 +27,7 @@ used as a GPIO.
 |12		|CAN3RX					|CAN\_A\_RX				|IU|CAN bus transceiver |
 |13		|CAN3TX					|CAN\_A\_TX				|OU|CAN bus transceiver |
 |14		|GIOA[5]				|AX5043\_IRQ\_RX4		|ID|Interrupt from AX5043 RX4 |
-|15		|N2HET1[22]				|ALERT\_SIGNAL			|?D|PC104 Pin 49 |
+|15		|N2HET1[22]				|						| D|free gpio|
 |16		|GIOA[6]				|OTHER\_ACTIVE\_N		|ID|Active line from other board |
 |17		|VCC					|						|  | |
 |18		|OSCIN					|						|  | |
@@ -54,7 +54,7 @@ used as a GPIO.
 |38		|N2HET1[06]				|UART\_RX1				|ID|PC104 pin 92 |
 |39		|N2HET1[13]				|UART\_TX1				|OD|PC104 pin 88 |
 |40		|MIBSPI1NCS[2]			|MRAM\_NCS2				|OU| |
-|41		|N2HET1[15]				|FCODE\_D0				|?D|PC104 pin 64 |
+|41		|N2HET1[15]				|CAN\_A\_EN\_N			|OD|CAN bus A transceiver enable |
 |42		|VCCIO					|						|  | |
 |43		|VSS					|						|  | |
 |44		|VSS					|						|  | |
@@ -120,8 +120,8 @@ used as a GPIO.
 |103	|VSS					|						|  | |
 |104	|VCCIO					|						|  | |
 |105	|MIBSPI1NCS[0]			|CAN\_B\_EN\_N			|OU|CAN bus B transceiver enable |
-|106	|N2HET1[08]				|ATTACHED				|?D|PC104 Pin 31 |
-|107	|N2HET1[28]				|PB\_ENABLE				|?D|PC104 Pin 45 |
+|106	|N2HET1[08]				|						| D|free gpio|
+|107	|N2HET1[28]				|						| D|free gpio|
 |108	|TMS					|JTAG pin				|  | |
 ||||||
 |109	|TRST					|JTAG pin				|  | |
@@ -134,7 +134,7 @@ used as a GPIO.
 |116	|nRST					|\*Processor\_Reset		|  |Main reset pin for the processor |
 |117	|nERROR					|FAULT\_N				|  |Output ERROR line from the processor |
 |118	|N2HET1[10]				|OTHER\_HW\_POWER\_OFF  |OD|Power off the other board |
-|119	|ECLK					|CAN\_A\_EN\_N			|OD|CAN bus A transceiver enable |
+|119	|ECLK					|CAN\_A\_EN\_N			| D|free gpio |
 |120	|VCCIO					|						|  | |
 |121	|VSS					|						|  | |
 |122	|VSS					|						|  | |
@@ -142,7 +142,7 @@ used as a GPIO.
 |124	|H2HET1[12]				|POW\_MEAS\_EN			|OD|\*TX power measurement enable |
 |125	|H2HET1[14]				|PA\_PWR\_EN			|OD|Enable PA power |
 |126	|GIOB[0]				|AX5043\_IRQ\_RX2		|ID|Interrupt from AX5043 RX2 |
-|127	|N2HET1[30]				|CMD\_MODE				|?D|PC104 Pin 27 |
+|127	|N2HET1[30]				|						| D|free gpio|
 |128	|CAN2TX					|CAN\_B\_TX				|OU|CAN bus B transmit |
 |129	|CAN2RX					|CAN\_B\_RX				|IU|CAN bus B receive |
 |130	|MIBSPI1NCS[1]			|\*FEED\_WATCHDOG		|OU|Resets the two hardware watchdog timers |
@@ -154,8 +154,8 @@ used as a GPIO.
 |136	|VCCIO					|						|  | |
 |137	|VCC					|						|  | |
 |138	|VSS					|						|  | |
-|139	|N2HET1[16]				|FCODE\_D3				|?D|PC104 Pin 60 |
-|140	|N2HET1[18]				|USB\_Suspend\_Low		|?D|PC104 Pin 104 |
+|139	|N2HET1[16]				|						| D|free gpio|
+|140	|N2HET1[18]				|						| D|free gpio|
 |141	|N2HET1[20]				|AX5043\_PWR\_EN		|OD|Main power enable for all AX5043s |
 |142	|GIOB[2]				|AX5043\_IRQ\_TX		|ID|Interrupt from AX5043 TX |
 |143	|VCC					|						|  | |
@@ -231,22 +231,6 @@ FIXME - Figure out what all the PC104 pins do.
 	entity must pull low to cause the board to go active.
 	
   - FAULT[12]\_N - Output from boardn, the processor is reporting an error.
-  
-  - PB\_ENABLE - 
-  
-  - ALERT\_SIGNAL - 
-  
-  - CMD\_MODE - 
-  
-  - ATTACHED - 
-  
-  - FCODE\_STROBE - 
-
-  - FCODE\_D3 - 
-
-  - FCODE\_D0 - 
-
-  - USB\_SUSPEND\_LOW - 
   
   - VSYS - +5V
   
