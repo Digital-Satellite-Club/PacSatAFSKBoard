@@ -2902,7 +2902,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "0Ω"
 			(at 132.588 90.043 0)
 			(effects
 				(font

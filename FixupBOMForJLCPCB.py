@@ -1,17 +1,28 @@
 #!/usr/bin/python3
 
-# This program read a Kicad BOM output from stdin or from a file
-# supplied on the command line and generates a BOM suitable for JLCPCB
-# on standard output.  This involves rearranging the columns and
-# changing the column names and renaming some footprints.
+# This program read a Kicad BOM CSV output from stdin or from a file
+# supplied on the command line and generates a BOM in XLS format
+# suitable for JLCPCB on standard output.  This involves rearranging
+# the columns and changing the column names and renaming some
+# footprints.
 
 import sys
 import csv
+from openpyxl import Workbook
 
-if len(sys.argv) > 1:
-    f = open(sys.argv[1])
-else:
-    f = sys.stdin
+if len(sys.argv) < 3:
+    sys.stderr.write("No CSV BOM file and XLS output file given\n")
+    sys.exit(1)
+
+if not sys.argv[1].endswith(".csv"):
+    sys.stderr.write("First file doesn't end in '.csv': " + sys.argv[1] + "\n")
+    sys.exit(1)
+
+if not sys.argv[2].endswith(".xls"):
+    sys.stderr.write("Second file doesn't end in '.xls': " + sys.argv[2] + "\n")
+    sys.exit(1)
+
+f = open(sys.argv[1])
 
 cf = csv.reader(f, delimiter=';')
 line = cf.__next__()
@@ -21,8 +32,6 @@ if len(line) != 7:
     sys.exit(1)
     pass
 
-ocf = csv.writer(sys.stdout)
-
 expected_first_line = 'Id;Designator;Footprint;Quantity;Designation;Supplier and ref;'.split(";")
 for i in range(0, len(expected_first_line)):
     if line[i] != expected_first_line[i]:
@@ -31,7 +40,6 @@ for i in range(0, len(expected_first_line)):
         sys.exit(1)
         pass
     pass
-ocf.writerow(('Comment', 'Designator', 'Footprint'))
 
 footprint_xlats = {
     'R_0402_1005Metric': '0402',
@@ -92,7 +100,14 @@ def xlat_comment(s):
         return comment_xlats[s]
     return s
 
+wb = Workbook()
+ws = wb.active
+
 lineno = 1
+ws['A1'] = 'Comment'
+ws['A2'] = 'Designator'
+ws['A3'] = 'Footprint'
+
 for line in cf:
     lineno += 1
     if len(line) != 8:
@@ -102,7 +117,10 @@ for line in cf:
         pass
     comment = xlat_comment(line[4])
     comment = comment.replace(' ', ',')
-    #comment = comment.replace('Ω', 'ohm')
     footprint = xlat_footprint(line[2]).strip('"')
-    ocf.writerow((comment, line[1], footprint))
+    ws.cell(lineno, 1, comment)
+    ws.cell(lineno, 2, line[1])
+    ws.cell(lineno, 3, footprint)
     pass
+
+wb.save(sys.argv[2])

@@ -3409,7 +3409,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "0Ω"
 			(at 154.94 153.67 90)
 			(effects
 				(font
@@ -3476,7 +3476,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "0Ω"
 			(at 154.94 166.37 90)
 			(effects
 				(font
@@ -3875,7 +3875,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "0Ω'"
 			(at 125.73 156.21 90)
 			(effects
 				(font
@@ -4073,7 +4073,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "0Ω"
 			(at 125.73 153.67 90)
 			(effects
 				(font
@@ -4422,7 +4422,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "0Ω"
 			(at 128.27 171.45 90)
 			(effects
 				(font
@@ -4489,7 +4489,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "0Ω"
 			(at 125.73 158.75 90)
 			(effects
 				(font
@@ -4773,7 +4773,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "0Ω"
 			(at 154.94 158.75 90)
 			(effects
 				(font
@@ -4904,7 +4904,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "0Ω"
 			(at 154.94 156.21 90)
 			(effects
 				(font

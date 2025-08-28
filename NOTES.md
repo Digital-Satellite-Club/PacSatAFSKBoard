@@ -9,6 +9,9 @@ some point.
 
 # TODO
 
+The HW\_POWER\_OFF\_N line needs to disable the 3.3V current limiter
+since there is no longer a 3.3V regulator.
+
 On the CubeSat standard, do we need to be able to operate as board 0?
 That affects board layout.
 
@@ -1009,8 +1012,14 @@ was in the RF input filter, since it had a parallel capacitor of 1.2pF
 and a capacitance of .18pF.  Added inductor capacitors to the
 simulations, but they didn't make much difference elsewhere.
 
-## 2025-08-26
+## 2025-08-27
 
 Switched over to the CubeSat Kit Bus board configuration.  Replaced
 the PC104 connector with the actual correct part, the one that was
 there was not suitable.  Lots still left to do here.
+
+## 2025-08-28
+
+Modified the BOM file fixer to output an XLS file instead of a CSV
+file.  The omega symbol (for ohms) is properly handled from XLS files,
+it is not from CSV files.

@@ -5192,7 +5192,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0R"
+		(property "Value" "0Ω"
 			(at 273.558 82.423 0)
 			(effects
 				(font
@@ -5259,7 +5259,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0R"
+		(property "Value" "0Ω"
 			(at 282.448 82.423 0)
 			(effects
 				(font
@@ -5789,7 +5789,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 303.53 83.058 90)
 			(effects
 				(font
