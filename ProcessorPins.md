@@ -232,14 +232,26 @@ FIXME - Figure out what all the PC104 pins do.
 	
   - FAULT[12]\_N - Output from boardn, the processor is reporting an error.
   
-  - VSYS - +5V
+  - 5V_p - +5V that is always present when the satellite is powered.
+    The board has a 0 ohm resistor that must be populated to get power
+	from these pins.
+  
+  - 3V3_p - +3.3V that is always present when the satellite is powered.
+    The board has a 0 ohm resistor that must be populated to get power
+	from these pins.
+  
+  - 5V_S[1-3] - Switched +5V power from the power supply.  The board
+    has 0 ohm resistors, one of which must be populated to get power
+    from these pins.
+  
+  - 3V3_S[1-3] - Switched +3.3V power from the power supply.    The
+	board has a 0 ohm resistor that must be populated to get power
+	from these pins.
   
   - GND
   
   - CAN[AB][+-] - CAN bus signals.
   
-  - UART\_[TR]X[12] - UART pins.
-
 # Active/Standby Configuration
 
 The boards supports having a mate board that is the same board with
@@ -408,6 +420,25 @@ the power to all AX5043s.  The processor can then drive the individual
 AX5043 enables low to individually power them on.  Then the processor
 can drive PA\_PWR\_EN high to power on the PA and LNA\_ENABLE high
 to power on the LNA.
+
+# Board Configuration
+
+The board has a number of zero-ohm resistors for configuring the board
+type.  These are:
+
+  - BOARD\_NUM - Remove for board 1 or simplex, populate for board 2.
+
+  - EXTERN\_CONTROL - Remove if the board (or board pair) manage their
+    own activity and power state.  Populate if another entity controls
+    power and the active lines on a board pair.  This should generally
+    not be populated on a simplex board, it will always be active and
+    some other entity probably controls its power signal.
+	
+  - 5V\_S[1-3], 5V\_p - One of these should be populated depending on
+    where the board should get its +5V power.
+
+  - 3V3\_S[1-3], 3V3\_p - One of these should be populated depending on
+    where the board should get its +3.3V power.
 
 # Active/Standby State Machine
 
