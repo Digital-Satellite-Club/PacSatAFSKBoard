@@ -9,6 +9,11 @@ some point.
 
 # TODO
 
+On the CubeSat standard, do we need to be able to operate as board 0?
+That affects board layout.
+
+Which power hookups do we need?
+
 The 78nH inductors in the AX5043 input section don't come in very high
 Q values, 28 is the best you can get.  77 and 79nH are even worse.
 
@@ -1003,3 +1008,9 @@ Looked at capacitance of the inductors.  The only significant change
 was in the RF input filter, since it had a parallel capacitor of 1.2pF
 and a capacitance of .18pF.  Added inductor capacitors to the
 simulations, but they didn't make much difference elsewhere.
+
+## 2025-08-26
+
+Switched over to the CubeSat Kit Bus board configuration.  Replaced
+the PC104 connector with the actual correct part, the one that was
+there was not suitable.  Lots still left to do here.

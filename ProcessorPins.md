@@ -372,14 +372,15 @@ comes in through VSYS, goes through and inductor, and goes to +5V,
 which is always powered on.  +5V goes through a current limiter to
 +5VAL, which power the circuits on the board that are always on, the
 circuits the handle the board presence/active/etc. and the board1 RF
-switches, and the CAN bus transceivers.
+switches, and the CAN bus transceivers.  3.3V comes in to REG\_3V3
+from the bus.
 
-The LP3962EMP-3.3 LDO will start supplying 3.3V to REG\_3V3 and the
-TPSM828302ARDSR will start supplying 1.2V to REG\_1V2.  They will also
-pull the PROCESSOR\_RESET pin low until their power is good, and that
-point they will not pull the reset line low any more (they are open
-drain).  At that point the MP5073GG-P is also holding reset line low
-until it is enabled.
+The TPSM828302ARDSR will start supplying 1.2V to REG\_1V2.  It will
+also pull the PROCESSOR\_RESET pin low until their power is good, and
+that point they will not pull the reset line low any more (they are
+open drain).  At that point the MP5073GG-P is also holding reset line
+low until it is enabled.  Since the MP5073GG-P is powered by REG\_3V3
+it will not let the reset line go until that power is good.
 
 The STWD100NYWY3F hardware watchdog will power up at that time, but
 the POWER\_ENABLE pin from it will be pulled high and should remain
