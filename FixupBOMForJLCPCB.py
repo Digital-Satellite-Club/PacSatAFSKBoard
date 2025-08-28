@@ -72,9 +72,6 @@ footprint_xlats = {
 
     'SOT-23-5_HandSoldering': 'SOT-23-5',
     'SOT-23-6_HandSoldering': 'SOT-23-6',
-
-    'TE_2118714-2': 'TE_2118714-2',
-    'TE_2118718-2': 'TE_2118718-2',
 }
 def xlat_footprint(s):
     if s in footprint_xlats:
