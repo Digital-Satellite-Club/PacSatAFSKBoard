@@ -5781,7 +5781,7 @@
 				)
 			)
 		)
-		(property "Value" "1K@100MHz"
+		(property "Value" "1KΩ@100MHz"
 			(at 303.4919 77.47 90)
 			(effects
 				(font

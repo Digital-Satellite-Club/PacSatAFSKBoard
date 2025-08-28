@@ -13094,7 +13094,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NCU15XH103F60RC 10K@25C"
+		(property "Value" "NCU15XH103F60RC 10KΩ@25C"
 			(at 401.066 137.414 90)
 			(effects
 				(font
@@ -13948,8 +13948,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22"
-			(at 143.002 60.96 90)
+		(property "Value" "22Ω"
+			(at 144.272 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14725,7 +14725,7 @@
 		(dnp no)
 		(uuid "5e8a6fe9-ad9f-4330-bd1b-c938ceb82521")
 		(property "Reference" "R5"
-			(at 128.524 60.96 90)
+			(at 131.064 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14734,7 +14734,7 @@
 			)
 		)
 		(property "Value" "22Ω"
-			(at 131.572 63.5 90)
+			(at 132.588 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15910,7 +15910,7 @@
 		(dnp no)
 		(uuid "c0bd58d4-f48a-48e2-b608-4d1eda2b38fb")
 		(property "Reference" "R6"
-			(at 132.334 72.644 90)
+			(at 131.318 74.168 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15919,7 +15919,7 @@
 			)
 		)
 		(property "Value" "22Ω"
-			(at 133.604 70.866 90)
+			(at 132.588 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)

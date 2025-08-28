@@ -14,7 +14,7 @@
 			)
 		)
 	)
-	(property "Value" "TE_2118718-2"
+	(property "Value" "2118718-2"
 		(at -5.38 14.615 0)
 		(layer "F.Fab")
 		(uuid "d43c211d-6386-4d4b-9fd2-39ec4fe04256")

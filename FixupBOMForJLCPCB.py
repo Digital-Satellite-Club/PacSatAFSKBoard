@@ -72,6 +72,9 @@ footprint_xlats = {
 
     'SOT-23-5_HandSoldering': 'SOT-23-5',
     'SOT-23-6_HandSoldering': 'SOT-23-6',
+
+    'TE_2118714-2': 'TE_2118714-2',
+    'TE_2118718-2': 'TE_2118718-2',
 }
 def xlat_footprint(s):
     if s in footprint_xlats:
@@ -117,9 +120,10 @@ for line in cf:
         pass
     comment = xlat_comment(line[4])
     comment = comment.replace(' ', ',')
+    designator = line[1]
     footprint = xlat_footprint(line[2]).strip('"')
     ws.cell(lineno, 1, comment)
-    ws.cell(lineno, 2, line[1])
+    ws.cell(lineno, 2, designator)
     ws.cell(lineno, 3, footprint)
     pass
 

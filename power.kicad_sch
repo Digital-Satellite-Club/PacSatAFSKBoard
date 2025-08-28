@@ -10784,7 +10784,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NCU15XH103F60RC 10K@25C"
+		(property "Value" "NCU15XH103F60RC 10KΩ@25C"
 			(at 238.506 150.114 90)
 			(effects
 				(font

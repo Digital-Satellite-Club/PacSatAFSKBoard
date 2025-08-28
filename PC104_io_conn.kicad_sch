@@ -4119,7 +4119,7 @@
 				)
 			)
 		)
-		(property "Value" "0Ω'"
+		(property "Value" "0Ω"
 			(at 125.73 156.21 90)
 			(effects
 				(font
