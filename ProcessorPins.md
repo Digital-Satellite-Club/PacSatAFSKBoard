@@ -134,13 +134,13 @@ used as a GPIO.
 |116	|nRST					|\*Processor\_Reset		|  |Main reset pin for the processor |
 |117	|nERROR					|FAULT\_N				|  |Output ERROR line from the processor |
 |118	|N2HET1[10]				|OTHER\_HW\_POWER\_OFF  |OD|Power off the other board |
-|119	|ECLK					|CAN\_A\_EN\_N			| D|free gpio |
+|119	|ECLK					|UMBILICAL\_ATTACHED	|ID|PC104 pin |
 |120	|VCCIO					|						|  | |
 |121	|VSS					|						|  | |
 |122	|VSS					|						|  | |
 |123	|VCC					|						|  | |
 |124	|H2HET1[12]				|POW\_MEAS\_EN			|OD|\*TX power measurement enable |
-|125	|H2HET1[14]				|PA\_PWR\_EN			|OD|Enable PA power |
+|125	|H2HET1[14]				|PA\_PWR\_EN\_N			|OD|Enable PA power |
 |126	|GIOB[0]				|AX5043\_IRQ\_RX2		|ID|Interrupt from AX5043 RX2 |
 |127	|N2HET1[30]				|						| D|free gpio|
 |128	|CAN2TX					|CAN\_B\_TX				|OU|CAN bus B transmit |
@@ -231,7 +231,11 @@ FIXME - Figure out what all the PC104 pins do.
 	entity must pull low to cause the board to go active.
 	
   - FAULT[12]\_N - Output from boardn, the processor is reporting an error.
-  
+
+  - UMBILICAL\_ATTACHED - Input to the board, if high the satellite is in
+    the launch vehicle.  This inhibits transmit in hardware and causes
+	the software to behave differently.
+
   - 5V_p - +5V that is always present when the satellite is powered.
     The board has a 0 ohm resistor that must be populated to get power
 	from these pins.
