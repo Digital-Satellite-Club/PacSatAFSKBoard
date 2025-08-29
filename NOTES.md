@@ -9,9 +9,6 @@ some point.
 
 # TODO
 
-Implement the "Attached" line from the PC104 to inhibit the
-transmitter, if necessary.
-
 On the CubeSat standard, do we need to be able to operate as board 0?
 That affects board layout.
 
@@ -61,16 +58,6 @@ Part that are automotive listed below.
 I'm assuming that most ICs won't be a problem from the vibration point
 of view.  The power modules are probably good to get certified, though.
 
-If lines on the PC104 bus are outputs, wouldn't they need to be open
-collector or such if they are driven by multiple boards?  I haven't
-been able to find much about the PC104 interface.
-
-I found https://github.com/visionspacetec, specifically the VT104
-repositories that have a PC104 connector.
-
-Figure out what all the PC104 pins are supposed to do and document
-them.  The lines are listed in the ProcessorPins document.
-
 Figure out what to do with the UART pins on the PC104 when dealing
 with active/standby.  Really just figure out what to do with the UART
 pins.
@@ -108,26 +95,6 @@ Another option is an I2C or SPI to GPIO device.  The AX5043s each have
 fails you can't use those GPIOs.  The interrupts from the AX5043s
 could be or-ed together, but you would have to scan all of them if you
 got an interrupt.
-
-The PC104 connector is actually two connectors, a 64-pin (4x16) one
-and a 40 pin one (4x10) per the PC104 web side.  I've actually more
-seen two 2x52 connectors more often on schematics.  Need to figure out
-how to represent that.
-
-Do steel RF shields affect the inductors under or around them?  Is
-aluminum better?  - No one was sure, maybe it's non-magnetic steel?
-We will just have to try it out.
-
-Is the output filter on TX enough?  It's >50db at 800MHz and 1.6GHz.
-You get some filtering from the impedance matching network, too.
- - Need to measure and see.
-
-There's a note in the schematic about biasing the 5043 inputs, but I
-can't find any info on that.  It's on the RF Input sheet.  Need to
-figure out if that's something that needs to be done.  I don't really
-understand the comment, though. - The comment was from an app note
-that Bob read that the inputs on the 5043 apparently work better if
-biased to about 1V.  He can't find the app note any more.
 
 The RX input filter can probably do the impedance adjustment for the
 LNA, but I'm not sure how to calculate that.  There's an impedance
@@ -434,6 +401,30 @@ with discrete components?
 
 The HW\_POWER\_OFF\_N line needs to disable the 3.3V current limiter
 since there is no longer a 3.3V regulator.
+
+Implement the "Attached" line from the PC104 to inhibit the
+transmitter, if necessary.
+
+Do steel RF shields affect the inductors under or around them?  Is
+aluminum better?  - No one was sure, maybe it's non-magnetic steel?
+We will just have to try it out.
+
+Is the output filter on TX enough?  It's >50db at 800MHz and 1.6GHz.
+You get some filtering from the impedance matching network, too.
+ - Need to measure and see.
+
+There's a note in the schematic about biasing the 5043 inputs, but I
+can't find any info on that.  It's on the RF Input sheet.  Need to
+figure out if that's something that needs to be done.  I don't really
+understand the comment, though. - The comment was from an app note
+that Bob read that the inputs on the 5043 apparently work better if
+biased to about 1V.  He can't find the app note any more.
+
+The PC104 connector is actually two connectors, a 64-pin (4x16) one
+and a 40 pin one (4x10) per the PC104 web side.  I've actually more
+seen two 2x52 connectors more often on schematics.  Need to figure out
+how to represent that. - Pulled the design from the Pumpkin Space
+documents.
 
 # Not going to do
 
