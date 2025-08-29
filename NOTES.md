@@ -9,8 +9,8 @@ some point.
 
 # TODO
 
-The HW\_POWER\_OFF\_N line needs to disable the 3.3V current limiter
-since there is no longer a 3.3V regulator.
+Implement the "Attached" line from the PC104 to inhibit the
+transmitter, if necessary.
 
 On the CubeSat standard, do we need to be able to operate as board 0?
 That affects board layout.
@@ -431,6 +431,9 @@ Replace PA output filter.
 The RBP-140+ 140MHz filter is kind of expensive, though fairly
 compact.  It's also not temperature rated.  Maybe it could be replaced
 with discrete components?
+
+The HW\_POWER\_OFF\_N line needs to disable the 3.3V current limiter
+since there is no longer a 3.3V regulator.
 
 # Not going to do
 
@@ -1028,3 +1031,8 @@ Removed all the unknown PC104 signals.  The LTM doesn't have them, it
 has other things, will need clarification.
 
 Rework board layout some more, finish up temporary PC104 assignments.
+
+## 2025-08-29
+
+Add an AND gate to the logic for POWER\_ENABLE so that it is
+controlled by both the watchdog and the HW\_POWER\_OFF\_N line.
