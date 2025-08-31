@@ -5958,7 +5958,7 @@
 			)
 		)
 	)
-	(global_label "REG_5V"
+	(global_label "5V_IN"
 		(shape input)
 		(at 246.38 26.67 0)
 		(fields_autoplaced yes)
@@ -6024,7 +6024,7 @@
 			)
 		)
 	)
-	(global_label "REG_5V"
+	(global_label "5V_IN"
 		(shape input)
 		(at 165.1 111.76 0)
 		(fields_autoplaced yes)
@@ -6288,7 +6288,7 @@
 			)
 		)
 	)
-	(global_label "REG_3V3"
+	(global_label "3.3V_IN"
 		(shape input)
 		(at 204.47 25.4 0)
 		(fields_autoplaced yes)
@@ -6300,7 +6300,7 @@
 		)
 		(uuid "be3ff1ae-ecfe-4a85-84ed-03d3bd280a4b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 217.0639 25.4 0)
+			(at 215.685 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)

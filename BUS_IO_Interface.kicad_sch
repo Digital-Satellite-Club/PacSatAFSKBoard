@@ -9022,7 +9022,7 @@
 		(dnp no)
 		(uuid "c8c95765-b450-4f16-bc2b-62ae4dc30aa9")
 		(property "Reference" "R48"
-			(at 180.34 152.4 90)
+			(at 179.832 152.146 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9031,7 +9031,7 @@
 			)
 		)
 		(property "Value" "4.7KΩ"
-			(at 185.42 152.4 90)
+			(at 186.69 152.146 90)
 			(effects
 				(font
 					(size 1.27 1.27)

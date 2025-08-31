@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.5,
-          "width": 1.325
+          "drill": 1.02,
+          "height": 1.02,
+          "width": 1.02
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -65,35 +65,7 @@
           ""
         ],
         [
-          "courtyards_overlap|79243000|-87185500|b66104cd-813b-41dc-85a8-2dac645dadb3|d15661ea-9f62-4cf7-9183-a9b0204aca73",
-          ""
-        ],
-        [
-          "silk_overlap|12319000|-86936500|355f4374-7e3c-4c32-a30a-d31a6c655908|ed85b9af-befb-466b-80ed-3ae07f478a8b",
-          ""
-        ],
-        [
-          "silk_overlap|12319000|-86936500|eb039ac8-e6c1-43b0-81e8-1f285a3721b7|ed85b9af-befb-466b-80ed-3ae07f478a8b",
-          ""
-        ],
-        [
-          "silk_overlap|12319000|-87063500|355f4374-7e3c-4c32-a30a-d31a6c655908|c3fca328-f934-449d-9465-37af021cd6a1",
-          ""
-        ],
-        [
-          "silk_overlap|79121000|-86936500|59e7634e-4d5d-47ab-91e4-3eaf9fd15d6e|eb039ac8-e6c1-43b0-81e8-1f285a3721b7",
-          ""
-        ],
-        [
-          "silk_overlap|79121000|-87063500|59e7634e-4d5d-47ab-91e4-3eaf9fd15d6e|e420327f-7d68-4fe8-8837-16a5fa436223",
-          ""
-        ],
-        [
-          "silk_overlap|79121000|-87063500|c3fca328-f934-449d-9465-37af021cd6a1|e420327f-7d68-4fe8-8837-16a5fa436223",
-          ""
-        ],
-        [
-          "silk_overlap|79121000|-87063500|c3fca328-f934-449d-9465-37af021cd6a1|eb039ac8-e6c1-43b0-81e8-1f285a3721b7",
+          "courtyards_overlap|79065000|-87035000|b66104cd-813b-41dc-85a8-2dac645dadb3|d15661ea-9f62-4cf7-9183-a9b0204aca73",
           ""
         ]
       ],
@@ -819,52 +791,118 @@
           "show": true
         },
         {
-          "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
-          "show": true
-        },
-        {
           "group_by": true,
           "label": "Value",
           "name": "Value",
           "show": true
         },
         {
-          "group_by": true,
-          "label": "DNP",
-          "name": "${DNP}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Exclude from BOM",
-          "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Exclude from Board",
-          "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": false
         },
         {
           "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Do Not Place",
+          "name": "${DNP}",
           "show": true
         },
         {
           "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Exclude from Simulation",
+          "name": "${EXCLUDE_FROM_SIM}",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "VERIFIER",
+          "name": "VERIFIER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "CREATOR",
+          "name": "CREATOR",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
