@@ -4924,7 +4924,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 179.832 128.27 90)
 			(effects
 				(font
@@ -5321,7 +5321,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 187.452 158.75 90)
 			(effects
 				(font
@@ -5870,7 +5870,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6.5pF 1%"
+		(property "Value" "6.5pF ±.1"
 			(at 146.05 153.6699 0)
 			(effects
 				(font
@@ -6200,7 +6200,7 @@
 				)
 			)
 		)
-		(property "Value" "6.5pF 1%"
+		(property "Value" "6.5pF ±.1"
 			(at 270.51 138.43 90)
 			(effects
 				(font
@@ -7719,7 +7719,7 @@
 				)
 			)
 		)
-		(property "Value" "1pF 1%"
+		(property "Value" "1pF ±.05"
 			(at 86.36 129.54 90)
 			(effects
 				(font

@@ -4343,14 +4343,14 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a015008")
 		(property "Reference" "C90"
-			(at 194.31 153.924 90)
+			(at 194.31 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "5.6pF 1%"
+		(property "Value" "5.6pF ±.1"
 			(at 194.31 147.32 90)
 			(effects
 				(font
@@ -4545,8 +4545,8 @@
 				)
 			)
 		)
-		(property "Value" "5.1pF 1%"
-			(at 176.022 143.51 90)
+		(property "Value" "5.1pF ±.1"
+			(at 173.482 143.764 90)
 			(effects
 				(font
 					(size 1.27 1.27)

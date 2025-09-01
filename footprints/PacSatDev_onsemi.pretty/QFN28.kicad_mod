@@ -50,8 +50,7 @@
 			)
 		)
 	)
-	(solder_mask_margin 0.03)
-	(clearance 0.03)
+	(clearance 0.15)
 	(attr smd)
 	(fp_line
 		(start -3.5 -1.8)

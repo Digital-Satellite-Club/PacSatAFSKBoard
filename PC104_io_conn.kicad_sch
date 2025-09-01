@@ -4055,7 +4055,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 10v"
+		(property "Value" "10uF 10V"
 			(at 168.529 185.293 0)
 			(effects
 				(font
@@ -4123,7 +4123,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 10v"
+		(property "Value" "10uF 10V"
 			(at 88.011 162.433 0)
 			(effects
 				(font

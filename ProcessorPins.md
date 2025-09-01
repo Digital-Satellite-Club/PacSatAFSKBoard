@@ -176,9 +176,9 @@ Notes on thermsistors
 ---------------------
 
 Thermsistors are connected to ADC pins on the processor to measure
-temperatures on the board.  Resistance varies from 500 ohms (125C) to
-350k (-50C).  There is a 10K bias, so this gives this gives a .16V
-(125C) to 3.2V (-50C) voltage range.  It is supposed to be fairly
+temperatures on the board.  Resistance varies from 534 ohms (125C) to
+188.5K (-40C).  There is a 10K bias, so this gives this gives a .17V
+(125C) to 3.13V (-40C) voltage range.  It is supposed to be fairly
 linear.
 
 Notes on Processor\_Reset

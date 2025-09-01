@@ -2567,7 +2567,7 @@
 		)
 		(uuid "2ea6c3b5-e5db-4376-9b22-2d0147bd0efc")
 	)
-	(text "Thermsistor varies from 500\nohms (125C) to 350KΩ (-50C).\nWith a 10KΩ bias this gives a\n.16 to 3.2V range."
+	(text "See comment on TH2."
 		(exclude_from_sim no)
 		(at 142.494 205.232 0)
 		(effects
@@ -5493,7 +5493,7 @@
 				)
 			)
 		)
-		(property "Value" "18nH 2% 0402"
+		(property "Value" "18nH 2%"
 			(at 274.32 150.622 90)
 			(effects
 				(font
@@ -5689,7 +5689,7 @@
 				)
 			)
 		)
-		(property "Value" "6.2pF 2% 30v"
+		(property "Value" "6.2pF ±.1 30V"
 			(at 286.512 169.926 90)
 			(effects
 				(font
@@ -6381,7 +6381,7 @@
 				)
 			)
 		)
-		(property "Value" "12pF 2% 30v"
+		(property "Value" "12pF 1% 30V"
 			(at 267.462 169.926 90)
 			(effects
 				(font
@@ -6852,7 +6852,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 225.7552 119.38 0)
 			(effects
 				(font
@@ -7516,7 +7516,7 @@
 				)
 			)
 		)
-		(property "Value" "0.75pF 2% 30V"
+		(property "Value" "0.75pF ±.05 30V"
 			(at 255.524 156.464 90)
 			(effects
 				(font
@@ -7976,7 +7976,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NCU15XH103F60RC 10KΩ@25C"
+		(property "Value" "NTCG103JF103FTDS 10KΩ@25C"
 			(at 171.196 231.394 90)
 			(effects
 				(font
@@ -8191,7 +8191,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2pF 2% 30v"
+		(property "Value" "2.2pF ±.05 30V"
 			(at 274.574 156.464 90)
 			(effects
 				(font
@@ -8385,7 +8385,7 @@
 				)
 			)
 		)
-		(property "Value" "7.3pF 2% 30V"
+		(property "Value" "7.3pF ±.1 30V"
 			(at 248.412 169.926 90)
 			(effects
 				(font

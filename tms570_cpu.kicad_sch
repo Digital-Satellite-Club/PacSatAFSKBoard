@@ -4832,7 +4832,7 @@
 		)
 		(uuid "7416e645-c07d-4bc7-9c7c-7fd6fab70b9f")
 	)
-	(text "Thermsistor varies from 500\nohms (125C) to 350KΩ (-50C).\nWith a 10KΩ bias this gives a\n.16 to 3.2V range."
+	(text "Thermsistor varies from 534\nohms (125C) to 188.5KΩ (-40C).\nWith a 10KΩ bias this gives a\n.17 to 3.13V range."
 		(exclude_from_sim no)
 		(at 375.412 109.728 0)
 		(effects
@@ -13122,7 +13122,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NCU15XH103F60RC 10KΩ@25C"
+		(property "Value" "NTCG103JF103FTDS 10KΩ@25C"
 			(at 401.066 137.414 90)
 			(effects
 				(font

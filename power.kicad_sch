@@ -3003,16 +3003,6 @@
 		)
 		(uuid "32536896-4738-4cb3-a2db-9ec719f9845b")
 	)
-	(text "Thermsistor varies from 500\nohms (125C) to 350KΩ (-50C).\nWith a 10KΩ bias this gives a\n.16 to 3.2V range."
-		(exclude_from_sim no)
-		(at 209.804 123.952 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "3d0288f3-513f-4a9d-ae2d-15ef969bd1f4")
-	)
 	(text "FB pin should be as close to .5V as possible."
 		(exclude_from_sim no)
 		(at 195.58 198.374 0)
@@ -3043,6 +3033,16 @@
 			)
 		)
 		(uuid "4ec0dc02-1ded-478e-950c-6b0e117ddb85")
+	)
+	(text "See comment on TH2."
+		(exclude_from_sim no)
+		(at 209.804 124.968 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "544e8a0a-5b11-4585-9719-ec051bb26f43")
 	)
 	(text "Both WATCHDOG_OUT_N and HW_POWER_OFF_N must be high\nto enable power to the logic."
 		(exclude_from_sim no)
@@ -10664,7 +10664,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 259.08 236.728 90)
 			(effects
 				(font
@@ -11182,7 +11182,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.4KΩΩ"
+		(property "Value" "2.4KΩ"
 			(at 162.56 129.5399 0)
 			(effects
 				(font
@@ -11707,7 +11707,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NCU15XH103F60RC 10KΩ@25C"
+		(property "Value" "NTCG103JF103FTDS 10KΩ@25C"
 			(at 238.506 150.114 90)
 			(effects
 				(font
