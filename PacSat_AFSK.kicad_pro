@@ -962,68 +962,8 @@
       "Root"
     ],
     [
-      "adf61ae3-df77-4e04-8bda-b4049a36fcf4",
-      "TMS570_CPU"
-    ],
-    [
-      "a735fef7-c3fa-4339-b3a6-fbce810c3c4b",
-      "Clocks"
-    ],
-    [
-      "00000000-0000-0000-0000-00005a0ea76a",
-      "Power"
-    ],
-    [
-      "aff81ec5-748c-4fc9-b1e8-df12a16f6289",
-      "BUS_IO_Interface"
-    ],
-    [
-      "d9a83ee4-3280-49b9-88b8-54d26cbd8ed1",
-      "AX5043"
-    ],
-    [
-      "bc27fde3-8cca-4897-854d-674b6eeb65de",
-      "RX_1_ax5043"
-    ],
-    [
-      "3e6f7332-644d-4717-84ac-71c159dc6072",
-      "RX_2_ax5043"
-    ],
-    [
-      "6f28879f-0500-4efd-92c5-41e4c690888d",
-      "RX_3_ax5043"
-    ],
-    [
-      "7fb6f4ad-3f2f-474c-8e36-07b875720381",
-      "RX_4_ax5043"
-    ],
-    [
-      "2fc9a4ba-520e-46cf-be0c-1f13bbb64152",
-      "TX_ax5043"
-    ],
-    [
-      "9af0eacb-5211-4e23-85d7-9c1805bbe6a4",
-      "Rx_Power_Divider"
-    ],
-    [
-      "b85b88c3-87c5-49e2-804e-0759552ace3d",
-      "RF_Power_AMP_FET"
-    ],
-    [
       "163b95be-82a7-4cd3-9077-48a01f79e25c",
       "PC104_IO"
-    ],
-    [
-      "4fa888af-703c-49ed-93bb-d56d2f02c470",
-      "Active Standby Config"
-    ],
-    [
-      "26e0c845-9451-4c79-aef3-943c70af8ca9",
-      "RF Output Switch"
-    ],
-    [
-      "64a91b23-a882-4658-bea9-c6c8274e2ac4",
-      "RF Input Switch"
     ]
   ],
   "text_variables": {}

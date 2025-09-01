@@ -7,7 +7,6 @@
     "hidden_nets": [
       "GND",
       "REG_3V3",
-      "REG_1V2",
       "+5V"
     ],
     "high_contrast_mode": 0,
