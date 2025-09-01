@@ -9,10 +9,6 @@ some point.
 
 # TODO
 
-The JTAG 22 ohm resistors are 0201, and the 33 ohm resistors are 0201,
-which is sort of undesirable, but I couldn't find any automotive rated
-resistors in 0402.
-
 On the CubeSat standard, do we need to be able to operate as board 0?
 That affects board layout.
 

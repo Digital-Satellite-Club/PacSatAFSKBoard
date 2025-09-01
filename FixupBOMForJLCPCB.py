@@ -220,7 +220,7 @@ other_components = {
     ('AS1016204-0108X0PWAY', 'WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm'): '',
     ('QPL9547', 'DFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.6mm'): '',
     ('AX5043', 'QFN28'): '',
-    ('TMS570LS0914PGE', 'TQFP-144_20x20mm_Pitch0.5mm'): '',
+    ('TMS5700914APGEQQ1', 'TQFP-144_20x20mm_Pitch0.5mm'): '',
     ('2118714-2', 'TE_2118714-2'): '',
     ('SN3257QDYYRQ1', 'DYY0016A'): '',
     ('TCAN1044ADDFRQ1', 'TSOT-23-8'): '',
@@ -235,7 +235,7 @@ other_components = {
     ('32.768kHz', 'Crystal_SMD_EuroQuartz_EQ161-2Pin_3.2x1.5mm'): '',
     ('STWD100NYWY3F', 'SOT-23-5'): '',
     ('AD4PS+1', 'CJ725'): '',
-    ('ESQ-126-39-G-D_SAI', 'CONN_ESQ-126-39-G-D_SAI'): '',
+    ('ESQ-126-39-G-D', 'CONN_ESQ-126-39-G-D_SAI'): '',
     ('SN74AHC1G02QDCKRQ1', 'DCK5'): '',
     ('TPSM828302ARDSR', 'RDS0009A-MFG'): '',
     ('MP5073GG-P', 'QFN-12_MP5073_MNP'): '',
@@ -254,7 +254,7 @@ def xlat_value_to_partnum(s, footprint):
         return value_to_partnum_xlats_2[v]
     if v not in value_to_partnum_xlats_2 and v not in other_components:
         unknown_components.append(s + "; " + footprint)
-    return (s, '')
+    return ('', s)
 
 if do_xls:
     wb = Workbook()
@@ -290,7 +290,8 @@ else:
     outfile = open(outfn, "w")
     ocf = csv.writer(outfile)
     lineno = 1
-    ocf.writerow(('Comment', 'Designator', 'Footprint', 'Value', 'Manufacturer'))
+    ocf.writerow(('Comment', 'Designator', 'Footprint', 'Value',
+                  'Manufacturer'))
     for line in cf:
         lineno += 1
         if len(line) != 8:

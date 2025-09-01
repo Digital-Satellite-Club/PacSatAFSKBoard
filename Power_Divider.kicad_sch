@@ -2369,6 +2369,12 @@
 		(uuid "0431d879-1a55-4875-b26c-a987e3bda3e1")
 	)
 	(junction
+		(at 245.11 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c73ff19-9037-4a17-89a5-8b90e4b01e2b")
+	)
+	(junction
 		(at 262.89 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2403,6 +2409,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2a6c0d0e-fe65-4902-92e5-e43280e9ecdf")
+	)
+	(junction
+		(at 123.19 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ab18460-7985-4d82-848f-5e1536cf47f9")
 	)
 	(junction
 		(at 391.16 133.35)
@@ -2523,6 +2535,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8a0a8f54-07d6-4171-8583-6e85b3d87d68")
+	)
+	(junction
+		(at 119.38 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93311c54-0e42-4bdd-bd3c-8fc91678f258")
+	)
+	(junction
+		(at 241.3 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95a6b865-e315-4e6e-905c-8df9e5d5e2ec")
 	)
 	(junction
 		(at 262.89 44.45)
@@ -2672,6 +2696,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 143.51) (xy 255.27 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00ddc913-ad0c-4e9c-9a76-4ddf37e01420")
+	)
+	(wire
+		(pts
 			(xy 101.6 134.62) (xy 101.6 143.51)
 		)
 		(stroke
@@ -2719,6 +2753,16 @@
 			(type default)
 		)
 		(uuid "07c8b498-da43-4295-9313-3fff5d1b0d40")
+	)
+	(wire
+		(pts
+			(xy 119.38 143.51) (xy 130.81 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08527d22-a439-4ff8-a201-caf376bafc33")
 	)
 	(wire
 		(pts
@@ -2782,6 +2826,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 151.13) (xy 119.38 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12f9b255-3dfb-4a23-bd8c-6c072c3263f4")
+	)
+	(wire
+		(pts
 			(xy 210.82 143.51) (xy 214.63 143.51)
 		)
 		(stroke
@@ -2792,7 +2846,17 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 143.51) (xy 255.27 143.51)
+			(xy 123.19 160.02) (xy 123.19 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15133bef-6689-454a-9637-5ac9f96b954d")
+	)
+	(wire
+		(pts
+			(xy 237.49 143.51) (xy 241.3 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2872,6 +2936,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 161.29) (xy 123.19 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "206a8fd5-8b58-47d2-9203-ef679e1011f4")
+	)
+	(wire
+		(pts
 			(xy 255.27 160.02) (xy 259.08 160.02)
 		)
 		(stroke
@@ -2919,6 +2993,16 @@
 			(type default)
 		)
 		(uuid "287433ec-71a6-45ab-8856-5743bdfd84f7")
+	)
+	(wire
+		(pts
+			(xy 123.19 161.29) (xy 125.73 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b9ab826-6bd3-456f-a0df-1e164f119558")
 	)
 	(wire
 		(pts
@@ -3182,6 +3266,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 162.56) (xy 245.11 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5226a28b-6ae8-413e-835d-5af8b3d7d2bb")
+	)
+	(wire
+		(pts
 			(xy 382.27 132.08) (xy 382.27 133.35)
 		)
 		(stroke
@@ -3432,7 +3526,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 143.51) (xy 130.81 143.51)
+			(xy 101.6 143.51) (xy 119.38 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3519,6 +3613,16 @@
 			(type default)
 		)
 		(uuid "7e4ce558-ab81-424e-bf8c-46f661e2b781")
+	)
+	(wire
+		(pts
+			(xy 245.11 161.29) (xy 245.11 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eb8b32a-b620-4b2e-958e-275926cbb5b9")
 	)
 	(wire
 		(pts
@@ -3882,6 +3986,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 161.29) (xy 247.65 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd343d56-6b87-41bf-9bef-aeeacfd85940")
+	)
+	(wire
+		(pts
 			(xy 373.38 132.08) (xy 373.38 133.35)
 		)
 		(stroke
@@ -3889,6 +4003,26 @@
 			(type default)
 		)
 		(uuid "bd68b1cd-24e1-44eb-9273-f1eabe3a49bc")
+	)
+	(wire
+		(pts
+			(xy 119.38 143.51) (xy 119.38 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be562323-091a-4b6e-8aa5-32d629810112")
+	)
+	(wire
+		(pts
+			(xy 125.73 160.02) (xy 125.73 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c166c3cc-3360-40e0-b45a-434be9894fdb")
 	)
 	(wire
 		(pts
@@ -4172,6 +4306,26 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 162.56) (xy 247.65 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e72f2d12-f98d-4b9a-a50a-570a51d82016")
+	)
+	(wire
+		(pts
+			(xy 242.57 152.4) (xy 241.3 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8457c7b-df02-44d6-b3d7-4de446ef06e4")
+	)
+	(wire
+		(pts
 			(xy 330.2 140.97) (xy 330.2 146.05)
 		)
 		(stroke
@@ -4299,6 +4453,16 @@
 			(type default)
 		)
 		(uuid "fad8aaf4-12d0-490c-aa8e-514e7e2efd11")
+	)
+	(wire
+		(pts
+			(xy 241.3 143.51) (xy 241.3 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fad9bc46-3dad-47f3-b79b-a78d708da81a")
 	)
 	(wire
 		(pts
@@ -4960,6 +5124,77 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
 					(reference "R77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PACSAT_DEV_misc:U_FL")
+		(at 124.46 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11888d8f-f855-4d3e-8b02-bcd0e4c00001")
+		(property "Reference" "P19"
+			(at 121.92 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CONUFL001-SMD-T"
+			(at 124.46 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PacSatDev_misc:CONN1_CONUFL_TEC"
+			(at 124.46 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4a97b9ba-97e6-4829-a142-9508401a99cb")
+		)
+		(pin "2"
+			(uuid "a7a9e816-3c0c-487a-8c85-acfc11ad4b22")
+		)
+		(pin "3"
+			(uuid "fb74d5f5-3d36-417f-9811-fb4a171b2fd0")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
+					(reference "P19")
 					(unit 1)
 				)
 			)
@@ -5846,6 +6081,77 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
 					(reference "#PWR0169")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PACSAT_DEV_misc:U_FL")
+		(at 246.38 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "328f9429-bef4-405d-b20c-1a0dc10e0f51")
+		(property "Reference" "P20"
+			(at 243.84 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CONUFL001-SMD-T"
+			(at 246.38 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PacSatDev_misc:CONN1_CONUFL_TEC"
+			(at 246.38 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ed773025-d4a0-460e-8c81-161cd8add25f")
+		)
+		(pin "2"
+			(uuid "aef0ca68-978c-4c44-bd81-b6fff63ab008")
+		)
+		(pin "3"
+			(uuid "e35c77b2-3c3f-4b6b-836b-e36451ae2430")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
+					(reference "P20")
 					(unit 1)
 				)
 			)
@@ -7905,6 +8211,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 123.19 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb6de309-b91e-4c6a-8978-690f796b9ae5")
+		(property "Reference" "#PWR070"
+			(at 123.19 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.19 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0940d02d-d56b-46e3-8ebd-0b8f55d6daca")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
+					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 298.45 152.4 180)
 		(unit 1)
@@ -9110,6 +9481,71 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
 					(reference "C57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 245.11 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f5e2b7f8-316d-489f-8908-259a50144c06")
+		(property "Reference" "#PWR072"
+			(at 245.11 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 245.11 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 245.11 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fca866a8-7a3b-4121-90f6-620b2ac5953a")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/9af0eacb-5211-4e23-85d7-9c1805bbe6a4"
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
