@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" "CONN_ESQ-126-39-G-D_SAI"
+	(property "Value" "CONN_ESQ-126-39-G-D"
 		(at 31.75 -1.27 0)
 		(unlocked yes)
 		(layer "F.Fab")

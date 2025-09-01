@@ -4585,7 +4585,7 @@
 				)
 			)
 		)
-		(property "Value" "ESQ-126-39-G-D_SAI"
+		(property "Value" "ESQ-126-39-G-D"
 			(at 144.78 92.71 0)
 			(effects
 				(font
@@ -4936,7 +4936,7 @@
 				)
 			)
 		)
-		(property "Value" "ESQ-126-39-G-D_SAI"
+		(property "Value" "ESQ-126-39-G-D"
 			(at 248.92 92.71 0)
 			(effects
 				(font

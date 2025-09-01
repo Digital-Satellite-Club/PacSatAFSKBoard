@@ -148,9 +148,9 @@ value_to_partnum_xlats_2 = {
     ('1nF',		'0402'): ('Murata',	'GCM1555C1H102JA16D'),
     ('4.7nF',		'0402'): ('Murata',	'GCM1885C1H472JA16J'),
     ('10nF',		'0402'): ('Murata',	'GCM155R71H103KA55D'),
-    ('100nF',		'0402'): ('Murata',	'GCM155R71H104KA55D'),
+    ('100nF',		'0402'): ('Murata',	'GCM155R71C104KA55D'),
     ('1uF',		'0603'): ('Murata',	'GCM188R71C105KA64J'),
-    ('1uF',		'0805'): ('Murata',	'GCM155R71H104KA55D'),
+    ('1uF',		'0805'): ('Murata',	'GCM21BR71E105KA56L'),
     ('4.7uF',		'0805'): ('Murata',	'GCM21BR71C475KA73L'),
     ('10uF',		'0805'): ('Murata',	'GCM21BR71A106KE22K'),
     ('10uF 10V',	'1206'): ('Murata',	'GCM31CR71C106KA64L'),
@@ -206,6 +206,11 @@ value_to_partnum_xlats_2 = {
     ('464KΩ 1%',	'0402'): ('Panasonic',	'ERJ-2RKF4643X'),
 
     ('1KΩ@100MHz',	'0603'): ('Laird-Signal',	'MI0603J102R-10'),
+
+    ('BLUE LED', '0603'): ('Rohm', 'SMLD12BN1WT86C'),
+    ('RED LED', '0603'): ('Rohm', 'CSL0902UT1C'),
+    ('YELLOW LED', '0603'): ('Rohm', 'CSL0901YT1C'),
+    ('GREEN LED', '0603'): ('Rohm', 'CSL0902ET1C'),
 }
 
 other_components = {
@@ -220,23 +225,19 @@ other_components = {
     ('SN3257QDYYRQ1', 'DYY0016A'): '',
     ('TCAN1044ADDFRQ1', 'TSOT-23-8'): '',
     ('FTSH-105-01-L-DV-K', 'FTSH-105-01-L-DV-K'): '',
-    ('YELLOW LED', '0603'): '',
     ('MAX4995AAUT+T', 'SOT-23-6_Handsoldering'): '',
     ('TQP7M9106', 'QFN24_TQP7M9104_QOR'): '',
     ('CONUFL001-SMD-T', 'CONN1_CONUFL_TEC'): '',
     ('QPC1022TR7', 'QPC1022_QOR'): '',
     ('NTCG103JF103FTDS 10KΩ@25C', '0402'): '',
-    ('RED LED', '0603'): '',
     ('2118718-2', 'TE_2118718-2'): '',
     ('TS-103-G-A', 'CON3_1X3_TU_HTS_SAI'): '',
     ('32.768kHz', 'Crystal_SMD_EuroQuartz_EQ161-2Pin_3.2x1.5mm'): '',
-    ('GREEN LED', '0603'): '',
     ('STWD100NYWY3F', 'SOT-23-5'): '',
     ('AD4PS+1', 'CJ725'): '',
     ('ESQ-126-39-G-D_SAI', 'CONN_ESQ-126-39-G-D_SAI'): '',
     ('SN74AHC1G02QDCKRQ1', 'DCK5'): '',
     ('TPSM828302ARDSR', 'RDS0009A-MFG'): '',
-    ('BLUE LED', '0603'): '',
     ('MP5073GG-P', 'QFN-12_MP5073_MNP'): '',
     ('O 16,0-JT22CT-A-P-3,3-LF', 'Oscillator_SMD_SiT_PQFN-4Pin_2.5x2.0mm'): '',
     ('DMP2037U-7', 'SOT-23'): '',
@@ -275,7 +276,7 @@ if do_xls:
             pass
         designator = line[1]
         footprint = xlat_footprint(line[2]).strip('"')
-        (partnum, mfg) = xlat_value_to_partnum(line[4], footprint)
+        (mfg, partnum) = xlat_value_to_partnum(line[4], footprint)
         partnum = partnum.replace(' ', ',')
         ws.cell(lineno, 1, partnum)
         ws.cell(lineno, 2, designator)
@@ -299,7 +300,7 @@ else:
             pass
         designator = line[1]
         footprint = xlat_footprint(line[2]).strip('"')
-        (partnum, mfg) = xlat_value_to_partnum(line[4], footprint)
+        (mfg, partnum) = xlat_value_to_partnum(line[4], footprint)
         partnum = partnum.replace(' ', ',')
         #comment = comment.replace('Ω', 'ohm')
         ocf.writerow((partnum, designator, footprint, line[4], mfg))
