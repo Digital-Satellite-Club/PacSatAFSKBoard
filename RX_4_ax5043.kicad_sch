@@ -4405,7 +4405,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91018436-ba76-4175-9e69-18ba977ee168")
-		(property "Reference" "J5"
+		(property "Reference" "S4"
 			(at 147.32 46.9899 0)
 			(effects
 				(font
@@ -4518,7 +4518,7 @@
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/7fb6f4ad-3f2f-474c-8e36-07b875720381"
-					(reference "J5")
+					(reference "S4")
 					(unit 1)
 				)
 			)

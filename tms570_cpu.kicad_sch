@@ -11705,7 +11705,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a17f30c")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 111.76 56.769 0)
 			(effects
 				(font
@@ -11780,7 +11780,7 @@
 		(instances
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/adf61ae3-df77-4e04-8bda-b4049a36fcf4"
-					(reference "J2")
+					(reference "J3")
 					(unit 1)
 				)
 			)
