@@ -880,7 +880,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PACSAT_ICs:QSPI_FLASH_WSON_8-pin"
+		(symbol "PACSAT_ICs:QSPI_FLASH_SOIC_8-pin"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -892,7 +892,7 @@
 					)
 				)
 			)
-			(property "Value" "AS1016204-0108X0PWAY"
+			(property "Value" "AS1016204-0108X0PSAY"
 				(at 0 8.89 0)
 				(effects
 					(font
@@ -900,7 +900,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_SON:WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm"
+			(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
 				(at 0.762 -11.43 0)
 				(effects
 					(font
@@ -909,7 +909,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "AS1016204-0108X0PWAY"
+			(property "Datasheet" "AS1016204-0108X0PSAY"
 				(at -7.62 7.62 0)
 				(effects
 					(font
@@ -987,7 +987,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "QSPI_FLASH_WSON_8-pin_0_1"
+			(symbol "QSPI_FLASH_SOIC_8-pin_0_1"
 				(rectangle
 					(start -8.89 6.35)
 					(end 8.89 -6.35)
@@ -1000,7 +1000,7 @@
 					)
 				)
 			)
-			(symbol "QSPI_FLASH_WSON_8-pin_1_1"
+			(symbol "QSPI_FLASH_SOIC_8-pin_1_1"
 				(pin input line
 					(at -11.43 3.81 0)
 					(length 2.54)
@@ -5416,7 +5416,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PACSAT_ICs:QSPI_FLASH_WSON_8-pin")
+		(lib_id "PACSAT_ICs:QSPI_FLASH_SOIC_8-pin")
 		(at 68.58 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5432,7 +5432,7 @@
 				)
 			)
 		)
-		(property "Value" "AS1016204-0108X0PWAY"
+		(property "Value" "AS1016204-0108X0PSAY"
 			(at 68.58 85.09 0)
 			(effects
 				(font
@@ -5440,7 +5440,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm"
+		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
 			(at 69.342 105.41 0)
 			(effects
 				(font
@@ -5449,7 +5449,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "AS1016204-0108X0PWAY"
+		(property "Datasheet" "AS1016204-0108X0PSAY"
 			(at 60.96 86.36 0)
 			(effects
 				(font
@@ -5828,7 +5828,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PACSAT_ICs:QSPI_FLASH_WSON_8-pin")
+		(lib_id "PACSAT_ICs:QSPI_FLASH_SOIC_8-pin")
 		(at 181.61 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5844,7 +5844,7 @@
 				)
 			)
 		)
-		(property "Value" "AS1016204-0108X0PWAY"
+		(property "Value" "AS1016204-0108X0PSAY"
 			(at 181.61 34.29 0)
 			(effects
 				(font
@@ -5852,7 +5852,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm"
+		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
 			(at 182.372 54.61 0)
 			(effects
 				(font
@@ -5861,7 +5861,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "AS1016204-0108X0PWAY"
+		(property "Datasheet" "AS1016204-0108X0PSAY"
 			(at 173.99 35.56 0)
 			(effects
 				(font
@@ -8668,7 +8668,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PACSAT_ICs:QSPI_FLASH_WSON_8-pin")
+		(lib_id "PACSAT_ICs:QSPI_FLASH_SOIC_8-pin")
 		(at 76.2 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8684,7 +8684,7 @@
 				)
 			)
 		)
-		(property "Value" "AS1016204-0108X0PWAY"
+		(property "Value" "AS1016204-0108X0PSAY"
 			(at 76.2 34.29 0)
 			(effects
 				(font
@@ -8692,7 +8692,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm"
+		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
 			(at 76.962 54.61 0)
 			(effects
 				(font
@@ -8701,7 +8701,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "AS1016204-0108X0PWAY"
+		(property "Datasheet" "AS1016204-0108X0PSAY"
 			(at 68.58 35.56 0)
 			(effects
 				(font
@@ -10169,7 +10169,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PACSAT_ICs:QSPI_FLASH_WSON_8-pin")
+		(lib_id "PACSAT_ICs:QSPI_FLASH_SOIC_8-pin")
 		(at 180.34 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10185,7 +10185,7 @@
 				)
 			)
 		)
-		(property "Value" "AS1016204-0108X0PWAY"
+		(property "Value" "AS1016204-0108X0PSAY"
 			(at 180.34 85.09 0)
 			(effects
 				(font
@@ -10193,7 +10193,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm"
+		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
 			(at 181.102 105.41 0)
 			(effects
 				(font
@@ -10202,7 +10202,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "AS1016204-0108X0PWAY"
+		(property "Datasheet" "AS1016204-0108X0PSAY"
 			(at 172.72 86.36 0)
 			(effects
 				(font

@@ -857,7 +857,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PACSAT_DEV_misc:2118718-2"
+		(symbol "PACSAT_DEV_misc:2118718-2_CUSTOM"
 			(pin_names
 				(offset 1.016)
 			)
@@ -873,7 +873,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "2118718-2"
+			(property "Value" "2118718-2_CUSTOM"
 				(at -7.62 -43.18 0)
 				(effects
 					(font
@@ -882,7 +882,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "PacSatDev_misc:TE_2118718-2"
+			(property "Footprint" "PacSatDev_misc:TE_2118718-2_CUSTOM"
 				(at 0 0 0)
 				(effects
 					(font
@@ -950,7 +950,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "2118718-2_0_0"
+			(symbol "2118718-2_CUSTOM_0_0"
 				(rectangle
 					(start -7.62 -40.64)
 					(end 7.62 2.54)
@@ -6024,7 +6024,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PACSAT_DEV_misc:2118718-2")
+		(lib_id "PACSAT_DEV_misc:2118718-2_CUSTOM")
 		(at 142.24 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6042,7 +6042,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2118718-2"
+		(property "Value" "2118718-2_CUSTOM"
 			(at 151.13 55.8799 0)
 			(effects
 				(font
@@ -6051,7 +6051,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PacSatDev_misc:TE_2118718-2"
+		(property "Footprint" "PacSatDev_misc:TE_2118718-2_CUSTOM"
 			(at 142.24 35.56 0)
 			(effects
 				(font

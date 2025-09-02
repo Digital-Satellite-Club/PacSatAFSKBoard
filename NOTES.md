@@ -14,10 +14,6 @@ That affects board layout.
 
 Which power hookups do we need?
 
-The MRAM parts are WSON packages.  SIOC packages are available, too.
-SIOC is somewhat bigger, but might be better from a thermal point of
-view.
-
 According to the cubesat documents I have been reading, its best if
 parts are automotive certified, AEC-Q100 or AEC-Q200.  I assume this
 is so they can handle the shaking of the flight to space.  The
@@ -427,6 +423,10 @@ The 78nH inductors in the AX5043 input section don't come in very high
 Q values, 28 is the best you can get (and only from Murata).  77 and
 79nH are even worse. - Actually, 38@143MHz is what the inductor is, so
 that's not too bad.  Not much different than the Coilcraft ones.
+
+The MRAM parts are WSON packages.  SIOC packages are available, too.
+SIOC is somewhat bigger, but might be better from a thermal point of
+view.
 
 # Not going to do
 
@@ -1034,3 +1034,6 @@ controlled by both the watchdog and the HW\_POWER\_OFF\_N line.
 
 Rework board to be the Fox Plus setup.  Saved the old configuration in
 the CSKB_Base tag.
+
+Convert MRAM parts into SIOC packages for more reliability with
+thermal cycling.
