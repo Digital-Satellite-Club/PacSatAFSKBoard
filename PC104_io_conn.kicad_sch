@@ -2267,17 +2267,6 @@
 		)
 		(uuid "1adb9dd4-4681-492a-9b7e-b46fedbb6f9e")
 	)
-	(text "Timer Signals"
-		(exclude_from_sim no)
-		(at 289.56 106.68 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "51acacf7-37b4-433c-b6c2-b1d67c3f8c86")
-	)
 	(text "PACSAT BOARD IO"
 		(exclude_from_sim no)
 		(at 332.74 245.11 0)
@@ -2288,17 +2277,6 @@
 			(justify left bottom)
 		)
 		(uuid "747abccd-52b4-4027-8d37-43084c2cb215")
-	)
-	(text "EXTERNAL\nUSB Interface"
-		(exclude_from_sim no)
-		(at 288.29 129.54 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "f43dc0bb-fe09-4600-8432-bbc142c1fa97")
 	)
 	(junction
 		(at 251.46 181.61)
@@ -3523,9 +3501,9 @@
 		(at 208.28 173.99 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "18b6bb9a-f6af-4f80-86ec-fdd67f31cd79")
 		(property "Reference" "R111"
 			(at 213.106 172.72 90)
@@ -4271,9 +4249,9 @@
 		(at 280.67 199.39 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "bd40cf12-0690-42e0-8a8e-b5d4edb873bf")
 		(property "Reference" "R112"
 			(at 285.496 198.12 90)

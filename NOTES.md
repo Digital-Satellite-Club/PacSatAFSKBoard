@@ -14,9 +14,6 @@ That affects board layout.
 
 Which power hookups do we need?
 
-The 78nH inductors in the AX5043 input section don't come in very high
-Q values, 28 is the best you can get.  77 and 79nH are even worse.
-
 The MRAM parts are WSON packages.  SIOC packages are available, too.
 SIOC is somewhat bigger, but might be better from a thermal point of
 view.
@@ -425,6 +422,11 @@ and a 40 pin one (4x10) per the PC104 web side.  I've actually more
 seen two 2x52 connectors more often on schematics.  Need to figure out
 how to represent that. - Pulled the design from the Pumpkin Space
 documents.
+
+The 78nH inductors in the AX5043 input section don't come in very high
+Q values, 28 is the best you can get (and only from Murata).  77 and
+79nH are even worse. - Actually, 38@143MHz is what the inductor is, so
+that's not too bad.  Not much different than the Coilcraft ones.
 
 # Not going to do
 
