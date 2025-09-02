@@ -1027,3 +1027,8 @@ Rework board layout some more, finish up temporary PC104 assignments.
 
 Add an AND gate to the logic for POWER\_ENABLE so that it is
 controlled by both the watchdog and the HW\_POWER\_OFF\_N line.
+
+## 2025-09-01
+
+Rework board to be the Fox Plus setup.  Saved the old configuration in
+the CSKB_Base tag.

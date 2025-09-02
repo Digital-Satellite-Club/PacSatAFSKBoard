@@ -1,4 +1,4 @@
-133316638819559
+135073411062700
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -73303,6 +73303,13 @@ TE_2118718-2
 0
 16
 16
+PacSatDev_misc
+TE_2118718-2_CUSTOM
+
+
+0
+15
+15
 PacSatDev_misc
 TSOT-23-8
 TSOT, 8 Pin (https://www.jedec.org/sites/default/files/docs/MO-193D.pdf variant BA), generated with kicad-footprint-generator ipc_gullwing_generator.py
