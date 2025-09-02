@@ -281,7 +281,7 @@ other_components = {
 
 def xlat_value_to_partnum(s, footprint):
     v = (s, footprint)
-    if use_murata v in value_to_partnum_xlats_1b:
+    if use_murata and v in value_to_partnum_xlats_1b:
         return value_to_partnum_xlats_1b[v]
     if v in value_to_partnum_xlats_1:
         return value_to_partnum_xlats_1[v]
