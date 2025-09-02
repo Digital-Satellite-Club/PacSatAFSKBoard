@@ -13,6 +13,7 @@ from openpyxl import Workbook
 infn = None
 outfn = None
 do_stage2_xlat = False
+use_murata = False
 
 unknown_components = []
 
@@ -23,6 +24,8 @@ for i in sys.argv[1:]:
             in_flags = False
         elif i == '-2':
             do_stage2_xlat = True
+        elif i == '-murata':
+            use_murata = True
         else:
             sys.stderr.write("Unknown flag: " + i)
             sys.exit(1)
@@ -116,8 +119,10 @@ def xlat_footprint(s):
         return footprint_xlats[s]
     return s
 
+# Mostly Coilcraft parts.  All are automotive certified and have
+# somewhat higher Q values than the Murata parts.
 value_to_partnum_xlats_1 = {
-    ('1nH',     	'0402'): ('Coilcraft',	'0402CS-1N0XJRW'),
+    ('1nH',     	'0402'): ('Coilcraft',	'0402DC-1N0XJRW '),
     ('3.3nH 2%',	'0603'): ('Coilcraft',	'0603DC-3N3XGRW'),
     ('6.9nH 2%',	'0402'): ('Coilcraft',	'0402DC-6N9XGRW'),
     ('11nH 2%', 	'0603'): ('Coilcraft',	'0603DC-11NXGRW'),
@@ -134,11 +139,36 @@ value_to_partnum_xlats_1 = {
     ('91nH 2%', 	'0805'): ('Coilcraft',	'0805CS-910XGRC'),
     ('100nH',   	'0603'): ('Coilcraft',	'0603CS-R10XJRW'),
     ('180nH 2%',	'0805'): ('Coilcraft',	'0805CS-181XGRC'),
+    ('470nH',   	'0805'): ('Coilcraft',	'0805CS-471XGRC'),
     ('',	''): ('',	''),
 }
 
+# These are all Murata parts.  The 0805 parts are not automotive
+# certified.
+value_to_partnum_xlats_1b = {
+    ('1nH',     	'0402'): ('Murata',	'LQG15WZ1N0B02D'),
+    ('3.3nH 2%',	'0603'): ('Murata',	'LQW18AS3N3G0ZD'),
+    ('6.9nH 2%',	'0402'): ('Murata',	'LQW15AN6N9G8Z'),
+    ('11nH 2%', 	'0603'): ('Murata',	'LQW18AS11NG0ZD'),
+    ('18nH 2%', 	'0603'): ('Murata',	'LQW18AS18NG0ZD'),
+    ('18nH 2%', 	'0402'): ('Murata',	'LQW15AN18NG8ZD'),
+    ('22nH 2%', 	'0402'): ('Murata',	'LQW15AN22NG8ZD'),
+    ('27nH 2%', 	'0603'): ('Murata',	'LQW18AS27NG0ZD'),
+    ('36nH I>1A',	'0603'): ('Murata',	'LQW18AS36NG0ZD'),
+    ('43nH 2%', 	'0603'): ('Murata',	'LQW18AS43NG0ZD'),
+    ('43nH 2%', 	'0805'): ('Murata',	'LQW2BAN43NG00L'),
+    ('47nH 2%', 	'0603'): ('Murata',	'LQW18AS47NG0ZD'),
+    ('68nH',    	'0603'): ('Murata',	'LQW18AS68NG0ZD'),
+    ('78nH 2%', 	'0603'): ('Murata',	'LQW18AN78NG8ZD'),
+    ('91nH 2%', 	'0805'): ('Murata',	'LQW2BAN91NG00L'),
+    ('100nH',   	'0603'): ('Murata',	'LQW18ASR10G0ZD'),
+    ('180nH 2%',	'0805'): ('Murata',	'LQW2BANR18G00L'),
+    ('470nH',   	'0805'): ('Murata',	'LQW21FTR47M0HL'),
+    ('',	''): ('',	''),
+}
+
+# General passive parts.
 value_to_partnum_xlats_2 = {
-    ('470nH',	'0805'): ('Coilcraft',	'0805CS-471XGRC'),
     ('3.3uH',	'1210'): ('Murata',	'DFE322520FD-3R3M=P2'),
     ('',	''): ('',	''),
 
@@ -214,40 +244,42 @@ value_to_partnum_xlats_2 = {
 }
 
 other_components = {
-    ('RB521CS30L,315', 'D_SOD-882'): '',
-    ('LMK1C1106A', 'Texas_HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3.155x3.255mm'): '',
-    ('MAX31331TETB+', 'TDFN-10-1EP_3x3mm_P0.5mm_EP0.9x2mm'): '',
-    ('AS1016204-0108X0PWAY', 'WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm'): '',
-    ('QPL9547', 'DFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.6mm'): '',
-    ('AX5043', 'QFN28'): '',
-    ('TMS5700914APGEQQ1', 'TQFP-144_20x20mm_Pitch0.5mm'): '',
-    ('2118714-2', 'TE_2118714-2'): '',
-    ('SN3257QDYYRQ1', 'DYY0016A'): '',
-    ('TCAN1044ADDFRQ1', 'TSOT-23-8'): '',
-    ('FTSH-105-01-L-DV-K', 'FTSH-105-01-L-DV-K'): '',
-    ('MAX4995AAUT+T', 'SOT-23-6_Handsoldering'): '',
-    ('TQP7M9106', 'QFN24_TQP7M9104_QOR'): '',
-    ('CONUFL001-SMD-T', 'CONN1_CONUFL_TEC'): '',
-    ('QPC1022TR7', 'QPC1022_QOR'): '',
-    ('NTCG103JF103FTDS 10KΩ@25C', '0402'): '',
-    ('2118718-2', 'TE_2118718-2'): '',
-    ('TS-103-G-A', 'CON3_1X3_TU_HTS_SAI'): '',
-    ('32.768kHz', 'Crystal_SMD_EuroQuartz_EQ161-2Pin_3.2x1.5mm'): '',
-    ('STWD100NYWY3F', 'SOT-23-5'): '',
-    ('AD4PS+1', 'CJ725'): '',
-    ('ESQ-126-39-G-D', 'CONN_ESQ-126-39-G-D_SAI'): '',
-    ('SN74AHC1G02QDCKRQ1', 'DCK5'): '',
-    ('TPSM828302ARDSR', 'RDS0009A-MFG'): '',
-    ('MP5073GG-P', 'QFN-12_MP5073_MNP'): '',
-    ('O 16,0-JT22CT-A-P-3,3-LF', 'Oscillator_SMD_SiT_PQFN-4Pin_2.5x2.0mm'): '',
-    ('DMP2037U-7', 'SOT-23'): '',
-    ('ADL5501AKSZ-R7', 'KS-6_ADI'): '',
-    ('SN74AHC1G09QDCKRQ1', 'DCK5'): '',
-    ('BSS138', 'SOT-523'): '',
+    ('RB521CS30L,315', 'D_SOD-882'): None,
+    ('LMK1C1106A', 'Texas_HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3.155x3.255mm'): None,
+    ('MAX31331TETB+', 'TDFN-10-1EP_3x3mm_P0.5mm_EP0.9x2mm'): None,
+    ('AS1016204-0108X0PWAY', 'WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm'): None,
+    ('QPL9547', 'DFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.6mm'): None,
+    ('AX5043', 'QFN28'): None,
+    ('TMS5700914APGEQQ1', 'TQFP-144_20x20mm_Pitch0.5mm'): None,
+    ('2118714-2', 'TE_2118714-2'): None,
+    ('SN3257QDYYRQ1', 'DYY0016A'): None,
+    ('TCAN1044ADDFRQ1', 'TSOT-23-8'): None,
+    ('FTSH-105-01-L-DV-K', 'FTSH-105-01-L-DV-K'): None,
+    ('MAX4995AAUT+T', 'SOT-23-6_Handsoldering'): None,
+    ('TQP7M9106', 'QFN24_TQP7M9104_QOR'): None,
+    ('CONUFL001-SMD-T', 'CONN1_CONUFL_TEC'): None,
+    ('QPC1022TR7', 'QPC1022_QOR'): None,
+    ('NTCG103JF103FTDS 10KΩ@25C', '0402'): None,
+    ('2118718-2', 'TE_2118718-2'): None,
+    ('TS-103-G-A', 'CON3_1X3_TU_HTS_SAI'): None,
+    ('32.768kHz', 'Crystal_SMD_EuroQuartz_EQ161-2Pin_3.2x1.5mm'): None,
+    ('STWD100NYWY3F', 'SOT-23-5'): None,
+    ('AD4PS+1', 'CJ725'): None,
+    ('ESQ-126-39-G-D', 'CONN_ESQ-126-39-G-D_SAI'): None,
+    ('SN74AHC1G02QDCKRQ1', 'DCK5'): None,
+    ('TPSM828302ARDSR', 'RDS0009A-MFG'): None,
+    ('MP5073GG-P', 'QFN-12_MP5073_MNP'): None,
+    ('O 16,0-JT22CT-A-P-3,3-LF', 'Oscillator_SMD_SiT_PQFN-4Pin_2.5x2.0mm'): None,
+    ('DMP2037U-7', 'SOT-23'): None,
+    ('ADL5501AKSZ-R7', 'KS-6_ADI'): None,
+    ('SN74AHC1G09QDCKRQ1', 'DCK5'): None,
+    ('BSS138', 'SOT-523'): None,
 }    
 
 def xlat_value_to_partnum(s, footprint):
     v = (s, footprint)
+    if use_murata v in value_to_partnum_xlats_1b:
+        return value_to_partnum_xlats_1b[v]
     if v in value_to_partnum_xlats_1:
         return value_to_partnum_xlats_1[v]
     if do_stage2_xlat and v in value_to_partnum_xlats_2:
@@ -257,6 +289,7 @@ def xlat_value_to_partnum(s, footprint):
     return ('', s)
 
 if do_xls:
+    # Output in Excel format
     wb = Workbook()
     ws = wb.active
 
@@ -287,6 +320,7 @@ if do_xls:
     wb.save(outfn)
     pass
 else:
+    # Output in CSV format
     outfile = open(outfn, "w")
     ocf = csv.writer(outfile)
     lineno = 1

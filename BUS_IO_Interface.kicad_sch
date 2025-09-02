@@ -1073,24 +1073,6 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -8.89 90)
-					(length 2.54)
-					(name "PAD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at 11.43 3.81 180)
 					(length 2.54)
@@ -3051,16 +3033,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 102.87) (xy 68.58 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6729a70a-1802-42c0-8e7e-72d861e8f370")
-	)
-	(wire
-		(pts
 			(xy 341.63 104.14) (xy 341.63 106.68)
 		)
 		(stroke
@@ -3591,16 +3563,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 102.87) (xy 180.34 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3c0ccd8-f735-4263-823f-11c4de700d9c")
-	)
-	(wire
-		(pts
 			(xy 355.6 93.98) (xy 355.6 107.95)
 		)
 		(stroke
@@ -3608,16 +3570,6 @@
 			(type default)
 		)
 		(uuid "a5304b6f-113a-4d8c-9ab9-ff48a91f029a")
-	)
-	(wire
-		(pts
-			(xy 181.61 52.07) (xy 181.61 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a53e95bc-ad0a-4cdc-b8b5-c2baf6812f30")
 	)
 	(wire
 		(pts
@@ -4308,16 +4260,6 @@
 			(type default)
 		)
 		(uuid "f1b7e95c-f914-44b7-93ab-9bd6cfcf21ea")
-	)
-	(wire
-		(pts
-			(xy 76.2 52.07) (xy 76.2 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f24f73b4-bdd0-49a1-8652-1b2511a947d5")
 	)
 	(wire
 		(pts
@@ -5551,9 +5493,6 @@
 		(pin "3"
 			(uuid "f2b02fe8-9f50-45a4-9f7f-079807a46527")
 		)
-		(pin "9"
-			(uuid "54da3bf5-7018-4ccb-beda-6a9a19bd1a30")
-		)
 		(instances
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
@@ -5962,9 +5901,6 @@
 		)
 		(pin "3"
 			(uuid "cce5e91a-2985-4ee5-ac20-902a246f8906")
-		)
-		(pin "9"
-			(uuid "404e40d5-3639-4729-ab8b-00fb78f7f96f")
 		)
 		(instances
 			(project "PacSat_AFSK"
@@ -7322,70 +7258,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 68.58 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6d4ba6fb-53f7-41e2-b1a0-4b9f8bb0d9b7")
-		(property "Reference" "#PWR0168"
-			(at 68.58 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 68.707 109.8042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 68.58 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3862c242-b714-4af0-b978-7286426f51ee")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR0168")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 375.92 160.02 90)
 		(unit 1)
@@ -8081,134 +7953,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 76.2 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9bd81be3-7cc2-4d93-a572-630c502ccf92")
-		(property "Reference" "#PWR0109"
-			(at 76.2 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 76.327 59.0042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fa51ae71-6f4a-45d1-90e2-1d088ac4c73c")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR0109")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 180.34 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a4088f7e-2def-4ea4-89ec-e68ae3cd0429")
-		(property "Reference" "#PWR0253"
-			(at 180.34 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 180.467 109.8042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.34 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 180.34 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "46331a0e-6b44-45b3-8ad2-217407b1582a")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR0253")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 167.64 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8802,9 +8546,6 @@
 		)
 		(pin "3"
 			(uuid "dfbc3797-b697-4bc9-968a-e3877d8ae70e")
-		)
-		(pin "9"
-			(uuid "47628c6b-a97b-4f51-938b-73ca2180547c")
 		)
 		(instances
 			(project "PacSat_AFSK"
@@ -9561,70 +9302,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 181.61 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e0c4ae64-ae93-4950-b50c-6ea3b998db2d")
-		(property "Reference" "#PWR0246"
-			(at 181.61 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 181.737 59.0042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 181.61 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 181.61 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 181.61 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0c1c0387-774d-4766-8d55-55b1b2a79520")
-		)
-		(instances
-			(project "PacSat_AFSK"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/aff81ec5-748c-4fc9-b1e8-df12a16f6289"
-					(reference "#PWR0246")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 341.63 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10303,9 +9980,6 @@
 		)
 		(pin "3"
 			(uuid "4a4deefc-8a3f-4d89-a766-70381ab10842")
-		)
-		(pin "9"
-			(uuid "f5003945-d8cc-4a85-a900-dbdb6262596c")
 		)
 		(instances
 			(project "PacSat_AFSK"

@@ -2094,12 +2094,6 @@
 		(uuid "395090f1-4667-4202-a403-5195b6b44b3d")
 	)
 	(junction
-		(at 140.97 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "425b1d49-42b4-4910-818a-bbba53d73cf4")
-	)
-	(junction
 		(at 218.44 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2152,12 +2146,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "abc60558-7af4-4cae-9146-9ccbc39318ed")
-	)
-	(junction
-		(at 158.75 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b726a219-cade-4ce7-a96f-ad9d75251ba8")
 	)
 	(junction
 		(at 163.83 135.89)
@@ -2337,16 +2325,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 149.86) (xy 158.75 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "194ebc2b-3bfe-4405-8ef4-47d2b8ac86b5")
-	)
-	(wire
-		(pts
 			(xy 177.8 81.28) (xy 177.8 83.82)
 		)
 		(stroke
@@ -2434,16 +2412,6 @@
 			(type default)
 		)
 		(uuid "32aebe44-ca69-4208-a9ed-574fa6841bd3")
-	)
-	(wire
-		(pts
-			(xy 146.05 127) (xy 140.97 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33153c10-9175-4216-bfbc-4cb408120a3a")
 	)
 	(wire
 		(pts
@@ -2597,16 +2565,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 142.24) (xy 158.75 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52ec368a-0cbe-490e-869d-6d7e2746d20c")
-	)
-	(wire
-		(pts
 			(xy 176.53 132.08) (xy 180.34 132.08)
 		)
 		(stroke
@@ -2634,16 +2592,6 @@
 			(type default)
 		)
 		(uuid "5c67edb0-2c50-4175-bb14-5250588c5d9a")
-	)
-	(wire
-		(pts
-			(xy 140.97 149.86) (xy 140.97 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5dca3d07-b45a-4da0-85b2-1b07691e18ce")
 	)
 	(wire
 		(pts
@@ -2747,16 +2695,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 127) (xy 158.75 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "709f0d81-8377-44ec-ac80-b18a99e889d3")
-	)
-	(wire
-		(pts
 			(xy 226.06 107.95) (xy 226.06 115.57)
 		)
 		(stroke
@@ -2807,16 +2745,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 135.89) (xy 163.83 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7dbb3a73-1413-49d9-b9af-1dbba4a1dd6e")
-	)
-	(wire
-		(pts
 			(xy 242.57 166.37) (xy 242.57 176.53)
 		)
 		(stroke
@@ -2844,16 +2772,6 @@
 			(type default)
 		)
 		(uuid "85b48045-cc37-43f1-bc66-1863704dcdaf")
-	)
-	(wire
-		(pts
-			(xy 158.75 127) (xy 158.75 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "860989ff-d742-4ff1-8e5f-fc17f02fa10b")
 	)
 	(wire
 		(pts
@@ -2907,16 +2825,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 135.89) (xy 146.05 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "943fc961-41d7-4087-9cb6-f1307d322a26")
-	)
-	(wire
-		(pts
 			(xy 289.56 139.7) (xy 292.1 139.7)
 		)
 		(stroke
@@ -2964,16 +2872,6 @@
 			(type default)
 		)
 		(uuid "9c0383e8-7350-4e03-8e3f-1d8ef54fe847")
-	)
-	(wire
-		(pts
-			(xy 140.97 142.24) (xy 140.97 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d333b80-6109-4179-9dd7-a7ae6c81d201")
 	)
 	(wire
 		(pts
@@ -3187,16 +3085,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 135.89) (xy 158.75 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c41cdb49-ca78-4454-8e88-a1afd0b292e3")
-	)
-	(wire
-		(pts
 			(xy 220.98 132.08) (xy 220.98 134.62)
 		)
 		(stroke
@@ -3237,16 +3125,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 127) (xy 140.97 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdd3cff5-12a5-4801-96cc-62f70d49d4bf")
-	)
-	(wire
-		(pts
 			(xy 289.56 142.24) (xy 313.69 142.24)
 		)
 		(stroke
@@ -3277,7 +3155,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 135.89) (xy 140.97 135.89)
+			(xy 121.92 135.89) (xy 163.83 135.89)
 		)
 		(stroke
 			(width 0)
@@ -4724,329 +4602,6 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 149.86 127 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "00000000-0000-0000-0000-00005a015010")
-		(property "Reference" "C86"
-			(at 147.32 130.81 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 149.86 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 146.05 127.9652 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 149.86 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "aed8f907-1657-454f-8c69-bfb45cf98294")
-		)
-		(pin "2"
-			(uuid "c3827716-1dcf-4e2e-b565-f731c30fc783")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/2fc9a4ba-520e-46cf-be0c-1f13bbb64152"
-					(reference "C86")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 140.97 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "00000000-0000-0000-0000-00005a015011")
-		(property "Reference" "C85"
-			(at 144.78 148.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 144.78 143.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 141.9352 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 140.97 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "29f0411f-a9da-486e-90b1-10df1c6b3d85")
-		)
-		(pin "2"
-			(uuid "3785faed-8dfa-4ba9-a3dc-b8b556ca6a87")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/2fc9a4ba-520e-46cf-be0c-1f13bbb64152"
-					(reference "C85")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 158.75 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "00000000-0000-0000-0000-00005a015012")
-		(property "Reference" "C87"
-			(at 162.56 148.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 162.56 143.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 159.7152 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 158.75 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 158.75 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "58b09506-a71f-4e47-a5fd-fc3cd1b6384c")
-		)
-		(pin "2"
-			(uuid "c494bd06-2bba-45f7-bae0-c1e1ac3aeecf")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/2fc9a4ba-520e-46cf-be0c-1f13bbb64152"
-					(reference "C87")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 158.75 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005a015013")
-		(property "Reference" "#PWR0186"
-			(at 158.75 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 158.877 156.7942 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 158.75 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 158.75 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 158.75 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "10321a3a-c8b8-418a-b38e-24033b0f5245")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/2fc9a4ba-520e-46cf-be0c-1f13bbb64152"
-					(reference "#PWR0186")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 140.97 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005a015014")
-		(property "Reference" "#PWR0185"
-			(at 140.97 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 141.097 156.7942 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 140.97 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 140.97 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d16f41a7-c263-493f-8caf-05e952f8c0f0")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/2fc9a4ba-520e-46cf-be0c-1f13bbb64152"
-					(reference "#PWR0185")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 234.95 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5627,72 +5182,6 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/2fc9a4ba-520e-46cf-be0c-1f13bbb64152"
 					(reference "#PWR0187")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 149.86 135.89 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "31f8f8a0-52a5-4cb4-a776-2d355316a090")
-		(property "Reference" "L19"
-			(at 149.86 133.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 149.86 138.43 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 149.86 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 149.86 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "77fd6c0f-4bb5-4775-bd6f-2d6b964b448d")
-		)
-		(pin "2"
-			(uuid "9d5afecd-1c25-490a-8c0b-77d759de22b7")
-		)
-		(instances
-			(project "PacSat_Dev_RevD_240614"
-				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/d9a83ee4-3280-49b9-88b8-54d26cbd8ed1/2fc9a4ba-520e-46cf-be0c-1f13bbb64152"
-					(reference "L19")
 					(unit 1)
 				)
 			)

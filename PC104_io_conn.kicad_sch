@@ -2956,7 +2956,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 139.7) (xy 270.51 139.7)
+			(xy 255.27 139.7) (xy 269.24 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3212,7 +3212,7 @@
 	)
 	(global_label "UMBILICAL_ATTACHED"
 		(shape input)
-		(at 270.51 139.7 0)
+		(at 269.24 139.7 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3222,7 +3222,7 @@
 		)
 		(uuid "3f341124-ca15-4491-acc2-735a5b5e204e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 297.0376 139.7 0)
+			(at 295.7676 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)

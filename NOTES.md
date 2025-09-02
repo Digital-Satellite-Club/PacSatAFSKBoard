@@ -9,7 +9,7 @@ some point.
 
 # TODO
 
-On the CubeSat standard, do we need to be able to operate as board 0?
+On the CSKB standard, do we need to be able to operate as board 0?
 That affects board layout.
 
 Which power hookups do we need?
@@ -51,10 +51,6 @@ Part that are automotive listed below.
 I'm assuming that most ICs won't be a problem from the vibration point
 of view.  The power modules are probably good to get certified, though.
 
-Figure out what to do with the UART pins on the PC104 when dealing
-with active/standby.  Really just figure out what to do with the UART
-pins.
-
 Probably switch the analog switches dealing with active standby with a
 set of zero ohm resistors.  That's a lot of resistors to switch,
 though.  Populating 8 of 16 total resistors, maybe more with the UART
@@ -64,9 +60,6 @@ You could use one of the receive AX5043s ANTP1 port as an alternate
 transmitter.  You could use the same PA or a different PA, either way
 a QPC1022 RF switch could handle the choice.  You could even have
 separate antennas.
-
-Figure out where the external RF connections need to be so the layout
-can be simplified around that.
 
 Figure out temperature ratings on all parts and get as many to be 105C
 or better as possible.  The outliers at the moment are:
@@ -80,22 +73,9 @@ or better as possible.  The outliers at the moment are:
 	* TQP7M9106 - RF PA.  Could use a discrete device, but the parms
 	  are pretty good.
 
-After the MRAMs and second CAN bus, GPIOs are running short.  We have
-some options.  A 2-4 decoder could do this, but you would also need an
-enable (and thus pullups), and it would really only recover one GPIO.
-Another option is an I2C or SPI to GPIO device.  The AX5043s each have
-5 pins that can be used for GPIOs, though that means if an AX5043
-fails you can't use those GPIOs.  The interrupts from the AX5043s
-could be or-ed together, but you would have to scan all of them if you
-got an interrupt.
-
 The RX input filter can probably do the impedance adjustment for the
 LNA, but I'm not sure how to calculate that.  There's an impedance
 matching circuit in there now, removing it would save two parts.
-
-Probably remove the L1/L2 inductor on the AX5043s and replace them
-with a short.  I don't think we will use them. - Needed for 2M to
-work, need to get the inductor value.
 
 Is there a reason the ANTP1 output of the AX5043 is connected to a 50
 ohm resistor?  I can't find anything in the datasheet or errata about
@@ -427,6 +407,29 @@ that's not too bad.  Not much different than the Coilcraft ones.
 The MRAM parts are WSON packages.  SIOC packages are available, too.
 SIOC is somewhat bigger, but might be better from a thermal point of
 view.
+
+Figure out what to do with the UART pins on the PC104 when dealing
+with active/standby.  Really just figure out what to do with the UART
+pins. - UART pins are not currently used.
+
+Figure out where the external RF connections need to be so the layout
+can be simplified around that. - We are putting the RF connections on
+UF.L connectors to simplify things.  We will glue on a cable for
+testing and for flight.
+
+Probably remove the L1/L2 inductor on the AX5043s and replace them
+with a short.  I don't think we will use them. - Needed for 2M to
+work, need to get the inductor value.
+
+After the MRAMs and second CAN bus, GPIOs are running short.  We have
+some options.  A 2-4 decoder could do this, but you would also need an
+enable (and thus pullups), and it would really only recover one GPIO.
+Another option is an I2C or SPI to GPIO device.  The AX5043s each have
+5 pins that can be used for GPIOs, though that means if an AX5043
+fails you can't use those GPIOs.  The interrupts from the AX5043s
+could be or-ed together, but you would have to scan all of them if you
+got an interrupt. - Removed a lot of the connections to the bus as
+they aren't needed.
 
 # Not going to do
 
@@ -1037,3 +1040,9 @@ the CSKB_Base tag.
 
 Convert MRAM parts into SIOC packages for more reliability with
 thermal cycling.
+
+## 2025-09-01
+
+Rework the TX side to fit into two small shields.  This required
+removing the unused TX filter after the AX5043.  I believe it has been
+proven to not be needed.
