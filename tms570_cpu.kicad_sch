@@ -10816,7 +10816,7 @@
 			)
 		)
 		(property "Value" "10KΩ"
-			(at 114.935 108.585 0)
+			(at 114.046 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11860,7 +11860,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a17fde6")
 		(property "Reference" "R8"
-			(at 148.59 86.36 0)
+			(at 147.828 86.741 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11869,7 +11869,7 @@
 			)
 		)
 		(property "Value" "10KΩ"
-			(at 148.59 88.265 0)
+			(at 147.828 88.646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11936,7 +11936,7 @@
 			)
 		)
 		(property "Value" "10KΩ"
-			(at 93.345 108.585 0)
+			(at 92.456 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)

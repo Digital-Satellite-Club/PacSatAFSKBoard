@@ -140,6 +140,8 @@ value_to_partnum_xlats_1 = {
     ('100nH',   	'0603'): ('Coilcraft',	'0603CS-R10XJRW'),
     ('180nH 2%',	'0805'): ('Coilcraft',	'0805CS-181XGRC'),
     ('470nH',   	'0805'): ('Coilcraft',	'0805CS-471XGRC'),
+    ('1uH',             '0805'): ('Murata',	'DFE201612PD-1R0M'),
+    ('3.3uH',           '1210'): ('Murata',	'DFE322520FD-3R3M'),
     ('',	''): ('',	''),
 }
 
@@ -164,14 +166,13 @@ value_to_partnum_xlats_1b = {
     ('100nH',   	'0603'): ('Murata',	'LQW18ASR10G0ZD'),
     ('180nH 2%',	'0805'): ('Murata',	'LQW2BANR18G00L'),
     ('470nH',   	'0805'): ('Murata',	'LQW21FTR47M0HL'),
+    ('1uH',     	'0805'): ('Murata',	'DFE201612PD-1R0M'),
+    ('3.3uH',           '1210'): ('Murata',	'DFE322520FD-3R3M'),
     ('',	''): ('',	''),
 }
 
 # General passive parts.
 value_to_partnum_xlats_2 = {
-    ('3.3uH',	'1210'): ('Murata',	'DFE322520FD-3R3M=P2'),
-    ('',	''): ('',	''),
-
     ('6.8pF',		'0402'): ('Murata',     'GCM1555C1H6R8BA16J'),
     ('10pF',		'0402'): ('Murata',	'GCM1555C1H100JA16D'),
     ('100pF',		'0402'): ('Murata',	'GCM1555C1H101JA16D'),
@@ -183,6 +184,7 @@ value_to_partnum_xlats_2 = {
     ('1uF',		'0805'): ('Murata',	'GCM21BR71E105KA56L'),
     ('4.7uF',		'0805'): ('Murata',	'GCM21BR71C475KA73L'),
     ('10uF',		'0805'): ('Murata',	'GCM21BR71A106KE22K'),
+    ('22uF',		'0805'): ('Murata',	'GCM21BR71A226KE22K'),
     ('10uF 10V',	'1206'): ('Murata',	'GCM31CR71C106KA64L'),
     ('47uF 10V',	'1206'): ('Murata',	'GRT31CR61A476KE13L'),
     ('',	''): ('',	''),
@@ -231,6 +233,7 @@ value_to_partnum_xlats_2 = {
     ('10KΩ 1%', 	'0402'): ('Panasonic',	'ERJ-PA2F1002X'),
     ('45.3KΩ 1%',	'0402'): ('Panasonic',	'ERJ-2RKF4532X'),
     ('47KΩ 1%', 	'0402'): ('Panasonic',	'ERA-2AED473X'),
+    ('68KΩ 1%', 	'0402'): ('Panasonic',	'ERA-2AED683X'),
     ('143KΩ 1%',	'0402'): ('Panasonic',	'ERJ-2RKF1433X'),
     ('330KΩ 1%',	'0402'): ('Panasonic',	'ERJ-PA2F3303X'),
     ('464KΩ 1%',	'0402'): ('Panasonic',	'ERJ-2RKF4643X'),
