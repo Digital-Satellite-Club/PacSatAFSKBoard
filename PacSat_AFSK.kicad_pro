@@ -1021,6 +1021,10 @@
     [
       "64a91b23-a882-4658-bea9-c6c8274e2ac4",
       "RF Input Switch"
+    ],
+    [
+      "64d2244f-7d4e-4177-819f-a6d774d6c2de",
+      "Power Supply Adapter"
     ]
   ],
   "text_variables": {}

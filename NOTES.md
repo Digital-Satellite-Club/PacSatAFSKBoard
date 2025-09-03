@@ -9,6 +9,11 @@ some point.
 
 # TODO
 
+Need to get the current QxH pin functions and verify that they are
+correct.  The CAN bus at least needs to be tied in.  Also, it has 3.3V
+run to it on the original power adapter board, but I don't see that in
+any bus diagram I have seen.
+
 On the CSKB standard, do we need to be able to operate as board 0?
 That affects board layout.
 
@@ -1048,3 +1053,7 @@ removing the unused TX filter after the AX5043.  I believe it has been
 proven to not be needed.
 
 Replace the 1.2V regulator with a non-module one (automative rated)
+
+## 2025-09-03
+
+Added the CSKB power adapter to the PacSat board.

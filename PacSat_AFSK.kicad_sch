@@ -755,6 +755,48 @@
 		)
 	)
 	(sheet
+		(at 46.99 125.73)
+		(size 52.07 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "64d2244f-7d4e-4177-819f-a6d774d6c2de")
+		(property "Sheetname" "Power Supply Adapter"
+			(at 46.99 125.0184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_supply_adapt.kicad_sch"
+			(at 46.99 142.8246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38"
+					(page "18")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 175.26 27.94)
 		(size 52.07 15.24)
 		(exclude_from_sim no)
