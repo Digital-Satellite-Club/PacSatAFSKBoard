@@ -9,10 +9,8 @@ some point.
 
 # TODO
 
-Need to get the current QxH pin functions and verify that they are
-correct.  The CAN bus at least needs to be tied in.  Also, it has 3.3V
-run to it on the original power adapter board, but I don't see that in
-any bus diagram I have seen.
+Need to get the current requirements for 3.3V and 5V to make sure the
+traces are big enough to avoid a big voltage drop.
 
 On the CSKB standard, do we need to be able to operate as board 0?
 That affects board layout.
@@ -435,6 +433,12 @@ fails you can't use those GPIOs.  The interrupts from the AX5043s
 could be or-ed together, but you would have to scan all of them if you
 got an interrupt. - Removed a lot of the connections to the bus as
 they aren't needed.
+
+Need to get the current QxH pin functions and verify that they are
+correct.  The CAN bus at least needs to be tied in.  Also, it has 3.3V
+run to it on the original power adapter board, but I don't see that in
+any bus diagram I have seen. - Found the current LIHU schematic, ran
+CAN bus.  3.3V wasn't on there, but it was to a N.C. pin.
 
 # Not going to do
 
