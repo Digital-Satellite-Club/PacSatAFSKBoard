@@ -1066,3 +1066,7 @@ Replace the 1.2V regulator with a non-module one (automative rated)
 ## 2025-09-03
 
 Added the CSKB power adapter to the PacSat board.
+
+## 2025-09-04
+
+Added an option to power 1.2V from 3.3V or 5V.

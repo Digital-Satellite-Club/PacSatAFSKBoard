@@ -3556,6 +3556,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 156.21) (xy 97.79 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02d0a763-f2e7-49f4-b427-dbf9ddb0b7d8")
+	)
+	(wire
+		(pts
 			(xy 53.34 97.79) (xy 82.55 97.79)
 		)
 		(stroke
@@ -3723,6 +3733,16 @@
 			(type default)
 		)
 		(uuid "1080b7d1-bca5-4715-a226-66e226609ec5")
+	)
+	(wire
+		(pts
+			(xy 82.55 146.05) (xy 85.09 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10edfe22-a620-47cc-ab7e-2f935aaa74df")
 	)
 	(wire
 		(pts
@@ -5126,6 +5146,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 146.05) (xy 85.09 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9e8afd9-ee02-4e22-bcd5-f06c31102628")
+	)
+	(wire
+		(pts
 			(xy 152.4 181.61) (xy 165.1 181.61)
 		)
 		(stroke
@@ -5263,6 +5293,16 @@
 			(type default)
 		)
 		(uuid "c534d391-aad1-4d8d-b978-e426d3c48f6c")
+	)
+	(wire
+		(pts
+			(xy 85.09 156.21) (xy 86.36 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c57a02bf-3057-47c1-886d-b4e90907a525")
 	)
 	(wire
 		(pts
@@ -5726,6 +5766,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 156.21) (xy 97.79 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcdd4be2-a378-4b31-bdf0-73f4cd5d17ce")
+	)
+	(wire
+		(pts
 			(xy 160.02 132.08) (xy 160.02 134.62)
 		)
 		(stroke
@@ -5846,6 +5896,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "REG_3V3"
+		(shape input)
+		(at 82.55 146.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "260d29d3-54de-4963-ab30-ff9ee3b19f89")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 70.0515 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -13383,6 +13455,74 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "#FLG09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 90.17 156.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "f8039a09-6d37-4a90-8860-0c289ce26672")
+		(property "Reference" "R100"
+			(at 91.44 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0Ω"
+			(at 91.44 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 90.17 157.988 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 90.17 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73f626a5-15d8-4aaf-b052-77c33f9eb266")
+		)
+		(pin "2"
+			(uuid "16e5b052-efc5-40da-8f3b-9a51df75e62b")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
+					(reference "R100")
 					(unit 1)
 				)
 			)
