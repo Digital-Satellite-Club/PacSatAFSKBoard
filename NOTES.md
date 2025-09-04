@@ -9,6 +9,11 @@ some point.
 
 # TODO
 
+The 1.2V converter could be powered off of 5V or 3.3V.  From an
+efficiency point of view I don't think it makes much difference.  But
+it might be better to be able to choose, as there may be more space
+capacity on one power rail than the other.
+
 Need to get the current requirements for 3.3V and 5V to make sure the
 traces are big enough to avoid a big voltage drop.
 
