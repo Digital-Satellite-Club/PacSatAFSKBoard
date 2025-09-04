@@ -1048,3 +1048,7 @@ removing the unused TX filter after the AX5043.  I believe it has been
 proven to not be needed.
 
 Replace the 1.2V regulator with a non-module one (automative rated)
+
+## 2025-09-04
+
+Added an option to allow 1.2V to come from 3.3V or 5V.
