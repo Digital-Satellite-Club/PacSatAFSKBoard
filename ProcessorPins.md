@@ -355,7 +355,7 @@ within readable range for the receive AX5043s.  And though the
 mismatch will be bad for the transmitter, the power is low enough to
 not harm the PA.  So this can be used as a self test of the
 transmitter and receiver while the board is in inactive mode.  If the
-signal too hot, the AX5043 can reduce output power.
+signal too hot, the transmit AX5043 can reduce output power.
 
 If populated with the proper RF switches (the ones hooked to
 BOARD1\_RF\_IN\_BYPASS), this could be done on a simplex board, too.
@@ -427,8 +427,10 @@ to power on the LNA.
 
 # Board Configuration
 
-The board has a number of zero-ohm resistors for configuring the board
-type.  These are:
+The board has a number of zero-ohm resistors for configuring the
+board.  These are:
+
+  - 1.2V\_INPUT - Determines whether 1.2V is derived from 3.3V or 5V.
 
   - BOARD\_NUM - Remove for board 1 or simplex, populate for board 2.
 
