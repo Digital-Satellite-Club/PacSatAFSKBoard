@@ -5814,6 +5814,16 @@
 		)
 		(uuid "4e559f90-5235-45ed-9c03-65ca5f678860")
 	)
+	(label "1.2V_INPUT"
+		(at 104.14 166.37 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "55895855-1bb8-4c0e-94b2-e6835f43bc70")
+	)
 	(label "PA_POWER_ON"
 		(at 134.62 36.83 180)
 		(effects
