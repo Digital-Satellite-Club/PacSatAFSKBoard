@@ -3112,7 +3112,7 @@
 		)
 		(uuid "426eb1e9-15ec-46b8-aa34-782448add154")
 	)
-	(text "If UMBILICAL_ATTACHED is high, do not power the PA.\nOtherwise use the PA power line from the processor.\nThe DNP resistor is for bench testing."
+	(text "If UMBILICAL_ATTACHED is high, do not power the PA.\nOtherwise use the PA power line from the processor.\nThe DNP resistor is for bench testing or if this line\nis not used."
 		(exclude_from_sim no)
 		(at 91.694 64.516 0)
 		(effects
