@@ -234,7 +234,11 @@ FIXME - Figure out what all the PC104 pins do.
 
   - UMBILICAL\_ATTACHED - Input to the board, if high the satellite is in
     the launch vehicle.  This inhibits transmit in hardware and causes
-	the software to behave differently.
+	the software to behave differently.  If this line is not used make
+	sure to populate the resistor pulling it down.
+	
+  - SAFE\_MODE\_N - Connected to the processor so a controlling system
+    can tell it to go into a safe mode.  What it does depends on context.
 
   - 5V_p - +5V that is always present when the satellite is powered.
     The board has a 0 ohm resistor that must be populated to get power
@@ -251,7 +255,9 @@ FIXME - Figure out what all the PC104 pins do.
   - 3V3_S[1-3] - Switched +3.3V power from the power supply.    The
 	board has a 0 ohm resistor that must be populated to get power
 	from these pins.
-  
+
+  - I2C\_SDA, I2C\_SCL - I2C bus pins
+
   - GND
   
   - CAN[AB][+-] - CAN bus signals.

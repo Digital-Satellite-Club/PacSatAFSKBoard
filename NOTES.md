@@ -1052,3 +1052,7 @@ Replace the 1.2V regulator with a non-module one (automative rated)
 ## 2025-09-04
 
 Added an option to allow 1.2V to come from 3.3V or 5V.
+
+## 2025-09-04
+
+Add connections to CSKB I2C pins, which look pretty standard.

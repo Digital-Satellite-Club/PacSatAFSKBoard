@@ -2373,10 +2373,6 @@
 		(uuid "28b05fca-d0d2-4398-bfc6-cddf1cd41540")
 	)
 	(no_connect
-		(at 138.43 147.32)
-		(uuid "2a9fc681-f519-41ef-9bf0-200297cf5313")
-	)
-	(no_connect
 		(at 151.13 127)
 		(uuid "2c38f403-bcb1-467e-a68f-8b14f32a50f0")
 	)
@@ -2635,10 +2631,6 @@
 	(no_connect
 		(at 242.57 121.92)
 		(uuid "f0bf7bb2-10de-438a-841e-c2154ab81402")
-	)
-	(no_connect
-		(at 138.43 149.86)
-		(uuid "f58d1d29-007d-4c8d-84fb-c9ed8d32565b")
 	)
 	(no_connect
 		(at 138.43 129.54)
@@ -3016,6 +3008,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 149.86) (xy 138.43 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db9a74c8-0df7-4e24-b481-fd58344d653b")
+	)
+	(wire
+		(pts
 			(xy 266.7 199.39) (xy 269.24 199.39)
 		)
 		(stroke
@@ -3083,6 +3085,16 @@
 			(type default)
 		)
 		(uuid "fa236386-65c9-4d72-8998-837c20e5ab16")
+	)
+	(wire
+		(pts
+			(xy 125.73 147.32) (xy 138.43 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faa42ea6-3325-4bd1-a386-4f32cdcbb4a3")
 	)
 	(label "3V3_p"
 		(at 228.6 129.54 0)
@@ -3184,6 +3196,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C_SCL"
+		(shape input)
+		(at 125.73 149.86 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "18252120-79d5-4f49-ae57-e137660779b6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 113.8619 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3311,6 +3345,28 @@
 		(uuid "7b607017-199f-4a43-9bd9-1968fe775ded")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 189.4315 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C_SDA"
+		(shape input)
+		(at 125.73 147.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "8776cd47-660e-4208-ab19-ed979338a3f1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 113.7893 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
