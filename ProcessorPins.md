@@ -427,8 +427,7 @@ to power on the LNA.
 
 # Board Configuration
 
-The board has a number of zero-ohm resistors for configuring the
-board.  These are:
+The board has a number of resistors for configuration.  These are:
 
   - 1.2V\_INPUT - Determines whether 1.2V is derived from 3.3V or 5V.
 
@@ -445,6 +444,26 @@ board.  These are:
 
   - 3V3\_S[1-3], 3V3\_p - One of these should be populated depending on
     where the board should get its +3.3V power.
+
+  - RF\_SWITCH\_EN - Removing the resistor to +5AL will disable all
+    the RF switches into high impedance mode.  Then the zero ohm
+    resistors to bypass the switches can be added.
+
+  - UMIBLICAL\_ATTACHED - If this line is not externally used, the
+    resistor from this to ground must be populated.
+
+In addition, for simplex, or if each board in a two-board set has its
+own antenna connections or antennas, all the chips and resistors on
+the RF Output Switch and RF Input Switch schematic pages can be
+removed, the zero-ohm resistor between RF\_OUT\_SWITCH and "TX ANT
+OUT" can be added, and the zero-ohm resistor between RF\_IN\_SWITCH
+and "RX ANT IN" be added to remove all the RF switching.
+
+To completely remove active-standby, in addition to the previous
+paragraph, all the parts and resistor and the Active Standby Config
+page can be removed and the zero-ohm resistor between
+HW\_POWER\_OFF1\_N and HW\_POWER\_OFF\_N added for external power
+control of the board.
 
 # Active/Standby State Machine
 
