@@ -473,6 +473,10 @@ page can be removed and the zero-ohm resistor between
 HW\_POWER\_OFF1\_N and HW\_POWER\_OFF\_N added for external power
 control of the board.
 
+The power output measurement circuitry on the RF\_Power\_AMP\_FET page
+can be removed if output or reflected power measurements are not
+necessary.
+
 # Active/Standby State Machine
 
 The logic below is for the board being active or not.  For instance,

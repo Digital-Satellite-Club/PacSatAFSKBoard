@@ -3403,7 +3403,7 @@
 		)
 		(uuid "95031e22-61dc-4fbb-a385-a5310949796a")
 	)
-	(label "TCANT_N"
+	(label "TXANT_N"
 		(at 224.79 137.16 0)
 		(effects
 			(font
