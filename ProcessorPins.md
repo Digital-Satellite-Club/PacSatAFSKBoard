@@ -449,7 +449,9 @@ The board has a number of resistors for configuration.  These are:
     where the board should get its +5V power.
 
   - 3V3\_S[1-3], 3V3\_p - One of these should be populated depending on
-    where the board should get its +3.3V power.
+    where the board should get its +3.3V power.  In addition, there is
+	an optional buck regulator that can be populated to derive 3.3V
+	from 5V.
 
   - RF\_SWITCH\_EN - Removing the resistor to +5AL will disable all
     the RF switches into high impedance mode.  Then the zero ohm

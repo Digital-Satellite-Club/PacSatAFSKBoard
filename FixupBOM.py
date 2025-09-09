@@ -231,9 +231,11 @@ value_to_partnum_xlats_2 = {
 
     ('3.32KΩ 1%',	'0402'): ('Panasonic',	'ERJ-2RKF3321X'),
     ('10KΩ 1%', 	'0402'): ('Panasonic',	'ERJ-PA2F1002X'),
+    ('19.6KΩ 1%', 	'0402'): ('Panasonic',	'ERJ-PA2F1962X'),
     ('45.3KΩ 1%',	'0402'): ('Panasonic',	'ERJ-2RKF4532X'),
     ('47KΩ 1%', 	'0402'): ('Panasonic',	'ERA-2AED473X'),
     ('68KΩ 1%', 	'0402'): ('Panasonic',	'ERA-2AED683X'),
+    ('88.7KΩ 1%', 	'0402'): ('Panasonic',	'ERJ-PA2F8872X'),
     ('143KΩ 1%',	'0402'): ('Panasonic',	'ERJ-2RKF1433X'),
     ('330KΩ 1%',	'0402'): ('Panasonic',	'ERJ-PA2F3303X'),
     ('464KΩ 1%',	'0402'): ('Panasonic',	'ERJ-2RKF4643X'),

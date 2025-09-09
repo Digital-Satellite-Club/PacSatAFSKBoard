@@ -1050,6 +1050,17 @@ Replace the 1.2V regulator with a non-module one (automative rated)
 
 Added an option to allow 1.2V to come from 3.3V or 5V.
 
-## 2025-09-04
+## 2025-09-07
 
 Add connections to CSKB I2C pins, which look pretty standard.
+
+## 2025-09-08
+
+Switched back to the CSKB board.
+
+## 2025-09-09
+
+Added a bypass resistor so the power off pin can still available if
+the digital switches use for setting the board number are removed.
+
+Add an optional way to derive 3.3V from 5V.
