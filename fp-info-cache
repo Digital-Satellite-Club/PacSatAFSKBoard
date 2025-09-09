@@ -1,4 +1,4 @@
-136830260480606
+138811287443907
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -73030,6 +73030,13 @@ ESQ-126-39-G-D
 0
 52
 52
+PacSatDev_misc
+CONN_M80-5301042
+
+M80-5301042 
+0
+10
+10
 PacSatDev_misc
 CUBESAT_MOUNT_HOLE
 
