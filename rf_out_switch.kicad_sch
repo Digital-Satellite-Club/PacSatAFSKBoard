@@ -968,7 +968,7 @@
 		)
 		(uuid "17a8d056-b82c-4d0d-bc6a-5a8d723f7770")
 	)
-	(text "This RF switch setup handles TX active/standby.\nOn board 1 the zero ohm resistor is not populated.  On board 2\nor on simplex boards none of the switch circuitry is\npopulated and only the zero ohm resistor is populated."
+	(text "This RF switch setup handles TX active/standby.\nOn board 1 the zero ohm resistor is not populated.  On board 2\nor on simplex boards none of the switch circuitry is\npopulated (or the resistor to the left is removed to disable\nthe switches) and only the zero ohm resistor is populated."
 		(exclude_from_sim no)
 		(at 156.21 147.32 0)
 		(effects
@@ -977,6 +977,16 @@
 			)
 		)
 		(uuid "34f86cf6-0121-4674-96b2-83df63bef7b7")
+	)
+	(text "Remove this resistor to disable all RF switches,\nthen the zero-ohms connecting TX and RX directly\nto the antennas can be installed."
+		(exclude_from_sim no)
+		(at 53.848 125.222 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "68f2e65a-2e5a-4cba-81df-d80b14706212")
 	)
 	(text "Inductor to bleed off static build\nup on the antenna."
 		(exclude_from_sim no)

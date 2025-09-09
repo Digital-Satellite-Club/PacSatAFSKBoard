@@ -12,8 +12,6 @@ some point.
 On the CSKB standard, do we need to be able to operate as board 0?
 That affects board layout.
 
-Which power hookups do we need?
-
 According to the cubesat documents I have been reading, its best if
 parts are automotive certified, AEC-Q100 or AEC-Q200.  I assume this
 is so they can handle the shaking of the flight to space.  The
@@ -67,8 +65,7 @@ or better as possible.  The outliers at the moment are:
     * RTC.  Probably only the MCP7940NT-E/MS from Microchip is
 	  suitable, but it draws 20 times the standby power.
     * AX5043 - Not another option available.
-	* RBP-140+ - Could replace the filter with discrete components.
-	* AD4PS+1 - Not sure about this one, perhaps three transformers
+	* AD4PS-1+ - Not sure about this one, perhaps three transformers
 	  could be used.
 	* TQP7M9106 - RF PA.  Could use a discrete device, but the parms
 	  are pretty good.
