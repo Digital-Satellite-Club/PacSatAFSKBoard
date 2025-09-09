@@ -3451,6 +3451,12 @@
 		(uuid "b6084b0f-eab3-4ee6-8869-72b4b0b4c230")
 	)
 	(junction
+		(at 57.15 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c642e118-d01b-4c6a-9f6b-00a543e668f1")
+	)
+	(junction
 		(at 273.05 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3743,6 +3749,16 @@
 			(type default)
 		)
 		(uuid "134ecfcd-ccae-49ef-a114-51aed4427f2c")
+	)
+	(wire
+		(pts
+			(xy 57.15 92.71) (xy 82.55 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13c1e0fe-06fd-4784-a697-e953deef3151")
 	)
 	(wire
 		(pts
@@ -4396,6 +4412,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 76.2) (xy 57.15 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "538a4d0f-0147-42bd-94eb-a0823f7daf3e")
+	)
+	(wire
+		(pts
 			(xy 186.69 229.87) (xy 186.69 223.52)
 		)
 		(stroke
@@ -4653,6 +4679,16 @@
 			(type default)
 		)
 		(uuid "77a94b20-7b75-49c8-9fa0-653755c39717")
+	)
+	(wire
+		(pts
+			(xy 57.15 87.63) (xy 57.15 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7823ddcb-65ac-45c7-894b-6f1bdf980864")
 	)
 	(wire
 		(pts
@@ -5066,7 +5102,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 92.71) (xy 82.55 92.71)
+			(xy 49.53 92.71) (xy 57.15 92.71)
 		)
 		(stroke
 			(width 0)
@@ -6132,7 +6168,7 @@
 	)
 	(global_label "HW_POWER_OFF_N"
 		(shape input)
-		(at 76.2 92.71 180)
+		(at 49.53 92.71 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6142,7 +6178,7 @@
 		)
 		(uuid "6a914661-4c55-4c79-90d6-98b16fbde2f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.106 92.71 0)
+			(at 26.436 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9452,6 +9488,70 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "#PWR0284")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 57.15 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a6ee058-f4d4-4035-87c9-e1507e949534")
+		(property "Reference" "#PWR0268"
+			(at 57.15 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7be9bebf-1a2f-4512-af7f-401a0c9ea4ef")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
+					(reference "#PWR0268")
 					(unit 1)
 				)
 			)
@@ -12864,6 +12964,74 @@
 			(project "PacSat_AFSK"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
 					(reference "U35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 57.15 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c733f969-16bb-4a3e-adfa-c9f9cfd1cf2c")
+		(property "Reference" "R113"
+			(at 58.928 82.6516 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10KΩ"
+			(at 58.928 84.963 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 55.372 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a2047d0f-23f6-4900-85b2-5e9321d20cae")
+		)
+		(pin "2"
+			(uuid "d123cf70-3e76-4a9d-9e02-8d08e34d19c4")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/00000000-0000-0000-0000-00005a0ea76a"
+					(reference "R113")
 					(unit 1)
 				)
 			)
