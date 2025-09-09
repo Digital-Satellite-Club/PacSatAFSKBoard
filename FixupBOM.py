@@ -229,6 +229,7 @@ value_to_partnum_xlats_2 = {
     
     ('50Ω >=2W',        '1206'): ('Rohm',	'ESR18EZPF49R9'),
 
+    ('2KΩ 1%',  	'0402'): ('Panasonic',	'ERJ-U02F2001X'),
     ('3.32KΩ 1%',	'0402'): ('Panasonic',	'ERJ-2RKF3321X'),
     ('10KΩ 1%', 	'0402'): ('Panasonic',	'ERJ-PA2F1002X'),
     ('45.3KΩ 1%',	'0402'): ('Panasonic',	'ERJ-2RKF4532X'),
