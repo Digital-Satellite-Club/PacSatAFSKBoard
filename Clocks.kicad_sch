@@ -1599,7 +1599,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 110.49) (xy 196.85 93.98)
+			(xy 196.85 110.49) (xy 196.85 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1856,6 +1856,16 @@
 			(type default)
 		)
 		(uuid "ee4a7625-74a9-4134-991b-58d33c4e0647")
+	)
+	(wire
+		(pts
+			(xy 196.85 95.25) (xy 196.85 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe79f2cf-c115-4762-b157-9d6268fafae8")
 	)
 	(wire
 		(pts
@@ -3068,6 +3078,75 @@
 			(project "PacSat_Dev_RevD_240614"
 				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/a735fef7-c3fa-4339-b3a6-fbce810c3c4b"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 196.85 99.06 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a69460b3-5e7d-4345-8505-988179cfd74c")
+		(property "Reference" "R114"
+			(at 195.072 97.8916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10KΩ"
+			(at 195.072 100.203 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 198.628 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e92c21d0-6d1c-4718-a109-e18c8ae8557f")
+		)
+		(pin "2"
+			(uuid "ad39d6e3-def3-4d2d-8b59-936c40a780df")
+		)
+		(instances
+			(project "PacSat_AFSK"
+				(path "/cc9f42d2-6985-41ac-acab-5ab7b01c5b38/a735fef7-c3fa-4339-b3a6-fbce810c3c4b"
+					(reference "R114")
 					(unit 1)
 				)
 			)
