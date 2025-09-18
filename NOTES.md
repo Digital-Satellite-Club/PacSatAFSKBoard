@@ -9,6 +9,11 @@ some point.
 
 # TODO
 
+The hardware watchdog needs to be able to be physically disabled so
+the board can be programmed without the watchdog getting in the way.
+Probably add a jumper by the JTAG and serial lines to disable the
+watchdog.
+
 On the CSKB standard, do we need to be able to operate as board 0?
 That affects board layout.
 
@@ -1064,3 +1069,10 @@ Added a bypass resistor so the power off pin can still available if
 the digital switches use for setting the board number are removed.
 
 Add an optional way to derive 3.3V from 5V.
+
+## 2025-09-16
+
+Added a pull-up resistor to the clock distributor instead of tying
+the enable directly to ground.
+
+Removed a redundant pull up on the HW\_POWER\_OFF\_N line.
