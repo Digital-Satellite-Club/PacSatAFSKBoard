@@ -21,7 +21,7 @@ used as a GPIO.
 |6		|N2HET1[11]				|OTHER\_HW\_POWER\_OFF\_N|ID|Power off state for the other board |
 |7		|FLTP1					|						|  | |
 |8		|FLTP2					|						|  | |
-|9		|GIOA[2]				|OTHER\_PRESENCE		|?D|Presence line from other board |
+|9		|GIOA[2]				|OTHER\_PRESENCE\_N		|ID|Presence line from other board |
 |10		|VCCIO					|						|  | |
 |11		|VSS					|						|  | |
 |12		|CAN3RX					|CAN\_A\_RX				|IU|CAN bus transceiver |
@@ -145,7 +145,7 @@ used as a GPIO.
 |127	|N2HET1[30]				|						| D|free gpio|
 |128	|CAN2TX					|CAN\_B\_TX				|OU|CAN bus B transmit |
 |129	|CAN2RX					|CAN\_B\_RX				|IU|CAN bus B receive |
-|130	|MIBSPI1NCS[1]			|\*FEED\_WATCHDOG		|OU|Resets the two hardware watchdog timers |
+|130	|MIBSPI1NCS[1]			|\*FEED\_WATCHDOG		|OU|Resets the hardware watchdog timer |
 |131	|LINRX					|UART\_RX2				|IU|PC104 Pin 36 |
 |132	|LINTX					|UART\_TX2				|OU|PC104 Pin 32 |
 |133	|GIOB[1]				|ACTIVE\_N				|BD|Local active pin for active/standby |
