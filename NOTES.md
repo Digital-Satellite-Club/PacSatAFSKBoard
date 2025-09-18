@@ -9,16 +9,13 @@ some point.
 
 # TODO
 
-The 1.2V converter could be powered off of 5V or 3.3V.  From an
-efficiency point of view I don't think it makes much difference.  But
-it might be better to be able to choose, as there may be more space
-capacity on one power rail than the other.
+The hardware watchdog needs to be able to be physically disabled so
+the board can be programmed without the watchdog getting in the way.
+Probably add a jumper by the JTAG and serial lines to disable the
+watchdog.
 
 Need to get the current requirements for 3.3V and 5V to make sure the
 traces are big enough to avoid a big voltage drop.
-
-On the CSKB standard, do we need to be able to operate as board 0?
-That affects board layout.
 
 According to the cubesat documents I have been reading, its best if
 parts are automotive certified, AEC-Q100 or AEC-Q200.  I assume this
@@ -1067,3 +1064,10 @@ Added the CSKB power adapter to the PacSat board.
 ## 2025-09-04
 
 Added an option to power 1.2V from 3.3V or 5V.
+
+## 2025-09-16
+
+Added a pull-up resistor to the clock distributor instead of tying
+the enable directly to ground.
+
+Removed a redundant pull up on the HW\_POWER\_OFF\_N line.
