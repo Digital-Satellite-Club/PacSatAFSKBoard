@@ -37,7 +37,7 @@ used as a GPIO.
 |22		|GIOA[7]				|AX5043\_IRQ\_RX3		|ID|Interrupt from AX5043 RX3 |
 |23		|N2HET1[01]				|						|OD|Yellow LED |
 |24		|N2HET1[03]				|AX5043\_EN\_RX4\_N		|OD|Power enable for AX5043 RX 4 |
-|25		|N2HET1[0]				|						|OD|Red LED |
+|25		|N2HET1[00]				|						|OD|Red LED |
 |26		|VCCIO					|						|  | |
 |27		|VSS					|						|  | |
 |28		|VSS					|						|  | |
@@ -48,7 +48,7 @@ used as a GPIO.
 |33		|N2HET1[07]				|AX5043\_EN\_RX3\_N		|OD|Power enable for AX5043 RX 3 |
 |34		|TEST					|					    |  | |
 |35		|N2HET1[09]				|AX5043\_EN\_RX2\_N		|OD|Power enable for AX5043 RX 2 |
-|36		|N2HET1[4]				|AX5043\_EN\_RX1\_N		|OD|Power enable for AX5043 RX 1 |
+|36		|N2HET1[04]				|AX5043\_EN\_RX1\_N		|OD|Power enable for AX5043 RX 1 |
 ||||||
 |37		|MIBSPI3NCS[1]			|MRAM\_NCS3				|OU| |
 |38		|N2HET1[06]				|UART\_RX1				|ID|PC104 pin 92 |
@@ -100,7 +100,7 @@ used as a GPIO.
 |83		|AD1IN[08] / AD2IN[08]	|\*POWER\_TEMP			|  |Thermsistor in power conversion section |
 |84		|AD1IN[23] / AD2IN[07]	|\*PA\_TEMP				|  |Thermsistor near the PA |
 |85		|AD1IN[15] / AD2IN[15]	|						|  |Board version number bit 3 |
-|86		|AD1EVT					|						|  | |
+|86		|AD1EVT					|						| D|free gpio |
 |87		|VCC					|						|  | |
 |88		|VSS					|						|  | |
 |89		|CAN1TX					|AX5043\_EN\_TX\_N		|OU|Power enable for AX5043 TX |
@@ -140,7 +140,7 @@ used as a GPIO.
 |122	|VSS					|						|  | |
 |123	|VCC					|						|  | |
 |124	|H2HET1[12]				|POW\_MEAS\_EN			|OD|\*TX power measurement enable |
-|125	|H2HET1[14]				|PA\_PWR\_EN\_N			|OD|Enable PA power |
+|125	|H2HET1[14]				|PA\_PWR\_ON			|OD|Enable PA power |
 |126	|GIOB[0]				|AX5043\_IRQ\_RX2		|ID|Interrupt from AX5043 RX2 |
 |127	|N2HET1[30]				|						| D|free gpio|
 |128	|CAN2TX					|CAN\_B\_TX				|OU|CAN bus B transmit |
