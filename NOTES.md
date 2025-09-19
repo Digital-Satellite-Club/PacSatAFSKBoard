@@ -9,6 +9,10 @@ some point.
 
 # TODO
 
+Modify the board1/board2 resistor notes to say that putting in a 40K
+resistor there (basically setting the voltage to 1V) will set the
+board to be simplex.
+
 The hardware watchdog needs to be able to be physically disabled so
 the board can be programmed without the watchdog getting in the way.
 Probably add a jumper by the JTAG and serial lines to disable the
