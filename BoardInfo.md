@@ -196,6 +196,12 @@ Things to do for a new board:
 
 * Inductors in the PA output filter are *not* changed yet.
 
+* The PA on this board is not working very well.  It's drawing 500ma
+  quiescent, like board 6 is, and it starts oscillating if you put too
+  much power into it.  It may be that the Iref changes are botched
+  
+* C124 and L30 are currently removed for a test.
+
 ### Fixed
 
 * The RF power output switch U33 appears to always be connected from
