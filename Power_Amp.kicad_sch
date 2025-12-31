@@ -2392,6 +2392,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Was L35"
+		(exclude_from_sim no)
+		(at 68.58 146.558 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "1e5b68bd-3d52-4cd1-8a32-313414356252")
+	)
 	(text "Place by the PA."
 		(exclude_from_sim no)
 		(at 165.354 237.744 0)
@@ -3881,7 +3891,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 115.57) (xy 68.58 121.92)
+			(xy 68.58 115.57) (xy 68.58 119.38)
 		)
 		(stroke
 			(width 0)
@@ -4291,7 +4301,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 142.24) (xy 87.63 142.24)
+			(xy 72.39 142.24) (xy 87.63 142.24)
 		)
 		(stroke
 			(width 0)
@@ -4681,7 +4691,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 142.24) (xy 62.23 142.24)
+			(xy 58.42 142.24) (xy 64.77 142.24)
 		)
 		(stroke
 			(width 0)
@@ -5471,7 +5481,7 @@
 				)
 			)
 		)
-		(property "Value" "18nH 2%"
+		(property "Value" "16nH 2%"
 			(at 274.32 150.622 90)
 			(effects
 				(font
@@ -5798,7 +5808,7 @@
 				)
 			)
 		)
-		(property "Value" "3.3nH 2%"
+		(property "Value" "2.7nH 2%"
 			(at 56.134 153.162 90)
 			(effects
 				(font
@@ -6538,7 +6548,7 @@
 				)
 			)
 		)
-		(property "Value" "22nH 2%"
+		(property "Value" "20nH 2%"
 			(at 255.27 150.622 90)
 			(effects
 				(font
@@ -6653,7 +6663,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 68.58 125.73 0)
+		(at 68.58 123.19 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6662,7 +6672,7 @@
 		(dnp no)
 		(uuid "63db147d-1e1e-4e3c-bb2d-2ffb343e37d3")
 		(property "Reference" "C113"
-			(at 74.93 123.19 0)
+			(at 74.168 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6670,7 +6680,7 @@
 			)
 		)
 		(property "Value" "100pF"
-			(at 74.93 120.65 0)
+			(at 74.168 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6678,7 +6688,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 67.6148 129.54 0)
+			(at 67.6148 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6687,7 +6697,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 68.58 125.73 0)
+			(at 68.58 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6696,7 +6706,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 68.58 125.73 0)
+			(at 68.58 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7335,7 +7345,7 @@
 				)
 			)
 		)
-		(property "Value" "5.8nH 2%"
+		(property "Value" "5.0nH 2%"
 			(at 230.632 170.18 90)
 			(effects
 				(font
@@ -8395,7 +8405,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 68.58 129.54 0)
+		(at 68.58 127 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8404,7 +8414,7 @@
 		(dnp no)
 		(uuid "bbc29ae9-8940-4af7-b58f-4152c2499d3c")
 		(property "Reference" "#PWR0221"
-			(at 68.58 135.89 0)
+			(at 68.58 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8413,7 +8423,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 68.453 133.9342 0)
+			(at 68.453 131.3942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8421,7 +8431,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 129.54 0)
+			(at 68.58 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8430,7 +8440,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 129.54 0)
+			(at 68.58 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8439,7 +8449,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 68.58 129.54 0)
+			(at 68.58 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8654,7 +8664,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 66.04 142.24 90)
+		(at 68.58 142.24 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8663,7 +8673,7 @@
 		(dnp no)
 		(uuid "c91a711b-aec0-47d4-bb61-2ac62ac2a1b0")
 		(property "Reference" "C27"
-			(at 66.04 135.89 90)
+			(at 68.58 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8671,7 +8681,7 @@
 			)
 		)
 		(property "Value" "47pF"
-			(at 66.04 138.43 90)
+			(at 68.58 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8679,7 +8689,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 69.85 143.2052 0)
+			(at 72.39 143.2052 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8688,7 +8698,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 66.04 142.24 0)
+			(at 68.58 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8697,7 +8707,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 142.24 0)
+			(at 68.58 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)

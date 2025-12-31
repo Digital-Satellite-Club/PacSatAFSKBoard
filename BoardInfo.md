@@ -19,7 +19,8 @@ Things to do for a new board:
   boards.)
 
 * Replace L35 with a 47pF capacitor.  No need to cut traces or
-  anything.
+  anything.  (Higher frequency performance would be improved with a
+  43pF capacitor, the 47pF high end starts going down at 436MHz.)
   
 * Replace L27 with a 2.7nH inductor.
 
@@ -69,11 +70,7 @@ Things to do for a new board:
 * This board has the capacitor on the PA RF input added between
   the L35 inductor and the PA, so the TX\_PA\_DRV input/output
   connector (P13) can be used on this board.
-
-* The PA power input inductor (L37) has been changed to 100nH.
-
-* C117 has not been changed to a 68pF capacitor.
-
+ 
 * U.FL connector P6 got pulled off the board.
 
 * Currently C124, L30, C125, L33 and L38 are not installed.  I pulled
@@ -84,6 +81,16 @@ Things to do for a new board:
 * The OTHER\_HW\_POWER\_OFF\_N line is not cut between Q2 and the CPU,
   so until that is done the board cannot be used for active/standby.
   
+* Replaced L27 with a 2.7nH part to account for trace inductance.
+
+* Replaced L35 with a 47pF capacitor.
+
+* Replaced L37 with a 100nH 1A inductor.
+
+* Replaced C117 with a 27pF capacitor.
+
+* Replaced L38 with a 5.0nH inductor.
+
 ## Board 6 - First board I worked on for initial bringup
 
 * The RF switches have been removed and jumpers places on the RF connections.
@@ -129,6 +136,25 @@ Things to do for a new board:
   right-angle version of those parts.  I've put on a TS-102-G-A that I
   had, but it doesn't have a ground so the ground had to be handled
   elsewhere.
+  
+* Removed C125; it's capacitance doesn't seem to be required.
+  Parasitic capacitance seems to be enough.
+  
+* Replaced L27 with a 2.7nH part to account for trace inductance.
+
+* Replaced L38 with a 5.0nH part to account for trace inductance.
+
+* Replaced L30 with a 20nH part to raise the frequency a little.
+
+* Replaces l33 with a 16nH part to raise the frequency a little.
+
+* It appears as part of testing I overheated the PA.  It's not working
+  correctly, quiescent current is now around 500ma and I can't
+  increase input power to more than 47% of the AX5043 output, and then
+  it only puts out about 1W and is drawing 700ma when doing that.  I
+  undid all the previous changes, but it even got worse, only .5W
+  output.  So everything is back as specified above, but it is what it
+  is.
 
 ## Board 8 - 3rd board I worked on
 
@@ -145,8 +171,6 @@ Things to do for a new board:
   inductor, then the 240ohm resistor, and the 0.1uF capacitor from above
   the inductor to ground.
   
-* C117 has been changed to a 68pF capacitor, I believe.
-
 * Change the L match on the PA input to a 47pf capacitor and a 15nH
   inductor.  This seems to work ok, though per simulation it has more
   loss than the two inductor L match.  This does make TX\_PA\_DRV
@@ -154,11 +178,23 @@ Things to do for a new board:
   capacitor and inductor are switched places.  The 15nH should go in
   L38's place and the capacitor should go in L27's place.
 
-* The PA power input inductor (L37) has been changed to 100nH.
-
 * R27 and R117 are changed to a 100 ohm and 200 ohm resistor as an
   experiment trying to fix a problem.  It didn't fix the problem, but
   that's not going to hurt anything, so those are left on for now.
+
+* Replaced L27 with a 2.7nH part to account for trace inductance.
+
+* Replaced L35 with a 47pF capacitor.
+
+* The PA power input inductor (L37) has been changed to 100nH 1A;.
+
+* Replaced C117 with a 27pF capacitor.
+
+* Replaced L38 with a 5.0nH inductor.
+
+* Removed C125.
+
+* Inductors in the PA output filter are *not* changed yet.
 
 ### Fixed
 
