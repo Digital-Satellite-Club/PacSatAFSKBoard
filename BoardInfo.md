@@ -24,23 +24,24 @@ Things to do for a new board:
   
 * Replace L27 with a 2.7nH inductor.
 
-* Replace C117 with a 27pF capacitor.
+* Replace C117 with a 18pF capacitor.
 
-* Replace L38 with a 5.8nH inductor. (Maybe 5.0nH)
+* Replace L38 with a 5.8nH inductor.
 
 * Change the PA power input inductor (L37) to a 100nH part with low
   DCR.
   
 * Change L30 to a 20nH inductor.
 
-* Change L33 to a 16nH inductor.
-
-* Remove C125.
+* Change L33 to a 17nH inductor.
 
 * Add R112 so the boards can supply/get power from the PC104.
 
 * Cut the OTHER\_HW\_POWER\_OFF\_N line between Q2 and the CPU.  It
   was causing issues.
+  
+* Remove R80 and R82.  The input impedance of the power measurement
+  chip is 50 ohms.
   
 # Current Board Status
 
@@ -106,17 +107,19 @@ Things to do for a new board:
   power issue someplace.  Fixing the PA power controller did seem to
   help.  To get it out, you have to let the board warm up a little
   then bring the voltage down and back up until it works.
+
+  The board draws a lot more power than it should.  Something in the
+  power section got messed up, it appears.
+
+  The reset loop has stopped happening for some reason, but it's still
+  drawing excess power.
   
 * The hardware watchdog is disabled by a solder bridge.  I couldn't get
   the wire out of the holes for the jumper.
 
-* The board draws a lot more power than it should.  Something in the
-  power section got messed up, it appears.
-  
 * MITSI replaced the PA with a new chip because the old one was broken.
 
-* The PA power input inductor (L37) has been changed to 83nH.  (It was
-  changed to 100nH earlier).
+* The PA power input inductor (L37) has been changed to 100nH 1A.
 
 * PA output match capacitor (C117) was changed to 68pF.
 
@@ -146,7 +149,7 @@ Things to do for a new board:
 
 * Replaced L30 with a 20nH part to raise the frequency a little.
 
-* Replaces l33 with a 16nH part to raise the frequency a little.
+* Replaces L33 with a 16nH part to raise the frequency a little.
 
 * It appears as part of testing I overheated the PA.  It's not working
   correctly, quiescent current is now around 500ma and I can't
@@ -155,6 +158,15 @@ Things to do for a new board:
   undid all the previous changes, but it even got worse, only .5W
   output.  So everything is back as specified above, but it is what it
   is.
+  
+* Removed R80 and R82, the 50 ohm resistors on the power measurement
+  circuit.  The input impedance of the power measurement chip is 50
+  ohms, no need for resistors, which will mess up the impedance.  It's
+  working a little better with that change.
+  
+* Replaced L38 with 5.8nH and C117 with 18pF.
+
+* Re-added C125 as .75pF.
 
 ## Board 8 - 3rd board I worked on
 
@@ -186,7 +198,7 @@ Things to do for a new board:
 
 * Replaced L35 with a 47pF capacitor.
 
-* The PA power input inductor (L37) has been changed to 100nH 1A;.
+* The PA power input inductor (L37) has been changed to 100nH 1A.
 
 * Replaced C117 with a 27pF capacitor.
 

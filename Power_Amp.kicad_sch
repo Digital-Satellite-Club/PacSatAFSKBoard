@@ -2486,6 +2486,16 @@
 		)
 		(uuid "7921cee6-3643-4410-a3a7-84417ea57323")
 	)
+	(text "Output impedance if the PA is\n4.63 - j.508 ohms.  The 7mm trace\nbetween the PA and the match is\n2.2nH with .91pF, converting the\nimpedance to 4.8 + j .82 ohms.\nThis L-match converts to 50 ohms\nat 435MHz"
+		(exclude_from_sim no)
+		(at 211.328 196.088 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "7d62b7f6-7113-4b37-91bf-50280d7bc8c6")
+	)
 	(text "5th order Elliptic low pass 460MHz cutoff,\n.1dB ripple in passband, 50dB stopband\nattenuation."
 		(exclude_from_sim no)
 		(at 264.414 191.77 0)
@@ -2516,16 +2526,6 @@
 			)
 		)
 		(uuid "d3602d58-4abf-44b7-9a95-14bf17ca573e")
-	)
-	(text "Output impedance is\n4.63 - .508j ohms\nThis converts to 50 ohms\nat 435MHz"
-		(exclude_from_sim no)
-		(at 221.234 192.532 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-		)
-		(uuid "dc2d3d9e-dbeb-49f3-bde7-e113b8416228")
 	)
 	(text "Directional coupler 4mm long\ntrack width .1524mm with .127mm\nseparation.\n\nThis is optional and may be removed\nif power measurements aren't required."
 		(exclude_from_sim no)
@@ -5481,7 +5481,7 @@
 				)
 			)
 		)
-		(property "Value" "16nH 2%"
+		(property "Value" "17nH 2%"
 			(at 274.32 150.622 90)
 			(effects
 				(font
@@ -5677,7 +5677,7 @@
 				)
 			)
 		)
-		(property "Value" "6.2pF ±.1 30V"
+		(property "Value" "5.4pF ±.1 30V"
 			(at 286.512 169.926 90)
 			(effects
 				(font
@@ -6481,7 +6481,7 @@
 				)
 			)
 		)
-		(property "Value" "12pF 1% 30V"
+		(property "Value" "11pF 1% 30V"
 			(at 267.462 169.926 90)
 			(effects
 				(font
@@ -6878,7 +6878,7 @@
 				)
 			)
 		)
-		(property "Value" "27pF 1% 30V"
+		(property "Value" "18pF 1% 30V"
 			(at 220.98 163.322 90)
 			(effects
 				(font
@@ -7345,7 +7345,7 @@
 				)
 			)
 		)
-		(property "Value" "5.0nH 2%"
+		(property "Value" "5.8nH 2%"
 			(at 230.632 170.18 90)
 			(effects
 				(font
@@ -8680,7 +8680,7 @@
 				)
 			)
 		)
-		(property "Value" "47pF"
+		(property "Value" "43pF"
 			(at 68.58 138.43 90)
 			(effects
 				(font
@@ -8746,7 +8746,7 @@
 				)
 			)
 		)
-		(property "Value" "7.3pF ±.1 30V"
+		(property "Value" "6.4pF ±.1 30V"
 			(at 248.412 169.926 90)
 			(effects
 				(font
