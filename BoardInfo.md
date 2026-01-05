@@ -218,6 +218,9 @@ Things to do for a new board:
 
 * Re-added C125.  It's necessary for impedance, per simulation.
 
+* C124 is currently removed.  No point in adding it back until the new
+  parts come in.
+
 ### Fixed
 
 * The RF power output switch U33 appears to always be connected from
