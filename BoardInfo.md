@@ -258,6 +258,11 @@ Things to do for a new board:
   
 * PA output L match is now 15pF and 5.8nH and seems to work quite
   well.
+  
+* Input match is now 22pF and 2.7nH.  That changed the output match
+  a little, it's now 18pF and 5.8nH.  That again changed the input
+  match.  The input match is a little to high at around 90 ohms, but
+  it's close enough for that.  That's a VSWR of 1.8.
 
 ### Fixed
 
