@@ -35,6 +35,12 @@ Things to do for a new board:
 
 * Change L33 to a 17nH inductor.
 
+* Change C124 to 6.4pF.
+
+* Change C126 to 11pF.
+
+* CHange C128 to 5.4pF.
+
 * Add R112 so the boards can supply/get power from the PC104.
 
 * Cut the OTHER\_HW\_POWER\_OFF\_N line between Q2 and the CPU.  It
@@ -42,6 +48,9 @@ Things to do for a new board:
   
 * Remove R80 and R82.  The input impedance of the power measurement
   chip is 50 ohms.
+  
+* Change the PA power input inductor (L37) to a 100nH 1A part with
+  100mOhm DCs.
   
 # Current Board Status
 
@@ -91,6 +100,12 @@ Things to do for a new board:
 * Replaced C117 with a 27pF capacitor.
 
 * Replaced L38 with a 5.0nH inductor.
+
+* Replaced L38 with 5.8nH and C117 with 18pF.
+
+* Installed the proper filter components.
+
+* Removed R80 and R82 (50 ohm RF power measurement resistors).
 
 ## Board 6 - First board I worked on for initial bringup
 
@@ -164,9 +179,19 @@ Things to do for a new board:
   ohms, no need for resistors, which will mess up the impedance.  It's
   working a little better with that change.
   
-* Replaced L38 with 5.8nH and C117 with 18pF.
+* Replaced L38 with 5.8nH and C117 with 18pF 5%.
 
 * Re-added C125 as .75pF.
+
+* Changed C124 to 6.4pF
+
+* Changed C126 to 11pF
+
+* Changed C128 to 5.4pF
+
+* Changed L33 to 17nH
+
+* Board is no longer usable, the debug connector came off.
 
 ## Board 8 - 3rd board I worked on
 
@@ -218,8 +243,21 @@ Things to do for a new board:
 
 * Re-added C125.  It's necessary for impedance, per simulation.
 
-* C124 is currently removed.  No point in adding it back until the new
-  parts come in.
+* Replaced L38 with 5.8nH and C117 with 18pF.
+
+* Removed R105 to disable the RF switches and added a zero-ohm
+  resistor to R107.
+  
+* R79 was changed to a 300 ohm component because I lost the 240 ohm
+  component, and I think it was burned up from too much soldering,
+  anyway.  I have added a 1.2K resistor in parallel (on top) to get it
+  to 240 ohms.
+  
+* The filter input components and all the PA L matches are pulled out.
+  The PA is isolated so it can be characterized.
+  
+* PA output L match is now 15pF and 5.8nH and seems to work quite
+  well.
 
 ### Fixed
 
@@ -231,3 +269,24 @@ Things to do for a new board:
   going out, turning the switch on and off give a 35dB difference in
   power.  This appears to not be an issue.
 
+### Commands
+
+inhibit tx
+
+set tx power 4 100
+
+set tx power 4 50
+
+set tx power 4 35
+
+test freq 4
+
+set gpio 17 1
+
+set gpio 17 0
+
+get power flags
+
+set freq 4 435760
+
+toggle rf power print

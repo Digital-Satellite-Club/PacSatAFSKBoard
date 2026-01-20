@@ -9,10 +9,9 @@
 .SUBCKT ImpMatchPAOut in  out
 
 * Impedance matching network
-C1	in	out	18p
+C1	in	out	15p
 * Coilcraft 0402DC-5N8XGRW 5.8nH
-* Add .2nH for parasitics
-L1	out	a3	6.0n
+L1	out	a3	5.8n
 Rl1	a3	0	.34
 Cl1	out	0	.037p
 
@@ -58,7 +57,7 @@ L4	a2	a3	17.4n
 Rl4	a3	out	1.01
 Cl4	a2	out	.059p
 * 2.07p
-C4	a2	out	2.1p
+C4	a2	out	2.2p
 
 * 5.94p
 * Use a 5.4p cap, add .6p for parasitics
@@ -78,23 +77,16 @@ Vin ina 0 dc 0 AC 1 sin(0 1 435MEG 0 0 0)
 Csrc ina  ina1 718p
 Rsrc ina1 ina2 4.63
 
-* Not real, used for DC bias at ina2 to avoid warnings
-Rb1  ina2 0    1meg
+* Inductor on the PA output.
+Lpa  ina2  0 100n
 
 * Used for current measurement.
-Vmin ina2 in AC 0 DC 0
+Vmin ina2 ina3 AC 0 DC 0
 
-* Inductor on the PA output.
-Lpa  in  0 100n
+* Trace inductance, see L-match output impedance below for details.
+Lp1  ina3  in 3.4n
 
-* 7mm of trace, coplanar .225mm with .5mm spacing, .109mm over ground
-* Calculated from https://wcalc.sourceforge.net/cgi-bin/coplanar.cgi
-* .31uH/mm, .134pF/mm
-Lp1  in  in1 2.1n
-Cp1  in1 0   .93p
-* Output impedance of this is 4.8 + .82j
-
-X1 in1 im1 ImpMatchPAOut
+X1 in im1 ImpMatchPAOut
 
 X2 im1 out Filt440MHz
 
@@ -143,6 +135,29 @@ Vmout out out2 DC 0 AC 0
 Rload out2 0    50
 .endif
 
+.param m = 0
+
+* Output impedance of the L match
+.if (m == 5)
+
+Csrc 0  ina1 718p
+Rsrc ina1 in 4.63
+
+* Inductor on the PA output.
+Lpa  in  0 100n
+
+* 7mm of trace, coplanar .225mm with .5mm spacing, .109mm over ground
+* Calculated from https://wcalc.sourceforge.net/cgi-bin/coplanar.cgi
+* .31uH/mm, .134pF/mm.  Finagled this a little bit, measurement shows
+* a little more inductance than the 2.1 calculated and no capacitance.
+Lp1  in  in1 3.4n
+*Cp1  in1 0   .93p
+
+X1 in1 out ImpMatchPAOut
+
+I1  0  out  dc 0 ac 1
+.endif
+
 .control
 *tran 1ns 102000ns 101000ns
 *plot v(in1), v(out)
@@ -168,6 +183,11 @@ reset
 ac lin 50000 3Meg 1000Meg
 plot title "Filter Loss" db((v(out) * i(Vmout)) / (v(ina1) * i(Vmin)))
 *plot vr(out) vi(out) vp(out)
+
+alterparam m = 5
+reset
+ac lin 50000 3Meg 1000Meg
+plot title "L Match Output Impedance" v(out) vi(out)
 
 .endc
 

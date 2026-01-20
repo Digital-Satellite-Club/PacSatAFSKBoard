@@ -37,11 +37,14 @@ Rsrc in     vmin1  4.63
 * -.508 ohms at 435MHz
 Csrc vmin2  a1     720p
 
+* Trace inductance, see L-match output impedance below for details.
+Lp1  a1  a2 3.4n
+
 * Impedance matching network
 * TX PA output matcher
 
 * This could be reduced to 25p for better performance.
-C1	a1	vmout1	27p
+C1	a2	vmout1	15p
 * Q=55, CoilCraft 0402DC
 L1	vmout1	a3	5.8n
 Rl1	a3	0	.34
