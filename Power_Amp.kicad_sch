@@ -6878,7 +6878,7 @@
 				)
 			)
 		)
-		(property "Value" "18pF 1% 30V"
+		(property "Value" "20pF 1% 30V"
 			(at 220.98 163.322 90)
 			(effects
 				(font

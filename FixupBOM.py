@@ -202,9 +202,7 @@ value_to_partnum_xlats_2 = {
     ('12pF 1% 30V', 	'0402'): ('Murata',	'GCQ1555C1H120FB01D'),
     ('15pF 1%', 	'0402'): ('Murata',	'GCQ1555C1H150FB01D'),
     ('36pF 1%', 	'0402'): ('Murata',	'GCQ1555C1H360FB01D'),
-    ('62pF 1%', 	'0402'): ('Murata',	'GCM1555C1H620FA16D'),
     ('68pF 1%', 	'0402'): ('Murata',	'GCM1555C1H680FA16D'),
-    ('110pF 1% 30V',	'0402'): ('Murata',	'GCM1555C1H111FA16D'),
     ('',	''): ('',	    ''),
 
     ('0',       '0402'): ('Panasonic',	'ERJ-2GE0R00X'),

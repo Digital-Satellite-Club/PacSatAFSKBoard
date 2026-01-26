@@ -9,7 +9,7 @@
 .SUBCKT ImpMatchPAOut in  out
 
 * Impedance matching network
-C1	in	out	18p
+C1	in	out	20p
 * Coilcraft 0402DC-5N8XGRW 5.8nH
 L1	out	a3	5.8n
 Rl1	a3	0	.34
@@ -84,7 +84,7 @@ Lpa  ina2  0 100n
 Vmin ina2 ina3 AC 0 DC 0
 
 * Trace inductance, see L-match output impedance below for details.
-Lp1  ina3  in 3.4n
+Lp1  ina3  in 2.6n
 
 X1 in im1 ImpMatchPAOut
 
@@ -150,7 +150,7 @@ Lpa  in  0 100n
 * Calculated from https://wcalc.sourceforge.net/cgi-bin/coplanar.cgi
 * .31uH/mm, .134pF/mm.  Finagled this a little bit, measurement shows
 * a little more inductance than the 2.1 calculated and no capacitance.
-Lp1  in  in1 3.4n
+Lp1  in  in1 2.6n
 *Cp1  in1 0   .93p
 
 X1 in1 out ImpMatchPAOut
@@ -164,7 +164,7 @@ I1  0  out  dc 0 ac 1
 
 alterparam m = 1
 reset
-ac lin 50000 3Meg 1000Meg
+ac lin 50000 3Meg 2000Meg
 plot title "Full Chain Filter Loss" db((v(out) * i(Vmout)) / (v(ina2) * i(Vmin)))
 *plot vr(out) vi(out) vp(out)
 

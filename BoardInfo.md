@@ -1,57 +1,3 @@
-# New Board Bring up
-
-Things to do for a new board:
-
-* Add power connector.
-
-* Add watchdog jumper.
-
-* Replace RX AX5043 inductors.  18nH works well.
-
-* Add blue wire for the LNA bias from between R77 and C105 to
-  between L32 and C107/108.
-
-* Replace U5 with the proper part.
-
-* Possibly replace R117 with a 15/18K resistor.  The voltage is
-  a little low for the AND gate input.  (Testing shows this is
-  not necessary, so this doesn't have to be done on prototype
-  boards.)
-
-* Replace L35 with a 47pF capacitor.  No need to cut traces or
-  anything.  (Higher frequency performance would be improved with a
-  43pF capacitor, the 47pF high end starts going down at 436MHz.)
-  
-* Replace L27 with a 2.7nH inductor.
-
-* Replace C117 with a 18pF capacitor.
-
-* Replace L38 with a 5.8nH inductor.
-
-* Change the PA power input inductor (L37) to a 100nH part with low
-  DCR.
-  
-* Change L30 to a 20nH inductor.
-
-* Change L33 to a 17nH inductor.
-
-* Change C124 to 6.4pF.
-
-* Change C126 to 11pF.
-
-* CHange C128 to 5.4pF.
-
-* Add R112 so the boards can supply/get power from the PC104.
-
-* Cut the OTHER\_HW\_POWER\_OFF\_N line between Q2 and the CPU.  It
-  was causing issues.
-  
-* Remove R80 and R82.  The input impedance of the power measurement
-  chip is 50 ohms.
-  
-* Change the PA power input inductor (L37) to a 100nH 1A part with
-  100mOhm DCs.
-  
 # Current Board Status
 
 ## Issues that apply to all boards
@@ -70,6 +16,10 @@ Things to do for a new board:
 * Like the previous entry, the ACTIVE\_N line will be driven low when
   the CPU is in reset.  This will probably not be fixed; I can't think
   of an easy way.
+  
+* The RF switches short the disabled connection instead of leaving
+  them open like I expected.  Apparently a short is considered
+  reflective, too.  So the RF switches are disabled on all boards.
 
 ## Board 5 - 2nd board I worked on
 
@@ -85,7 +35,7 @@ Things to do for a new board:
 
 * Currently C124, L30, C125, L33 and L38 are not installed.  I pulled
   them off to measure power out of the PA, and they are pretty much
-  destroyed.  L33 and L38 came off when I was unsoldering the other
+   destroyed.  L33 and L38 came off when I was unsoldering the other
   devices.
   
 * The OTHER\_HW\_POWER\_OFF\_N line is not cut between Q2 and the CPU,
@@ -106,6 +56,10 @@ Things to do for a new board:
 * Installed the proper filter components.
 
 * Removed R80 and R82 (50 ohm RF power measurement resistors).
+
+* Replaced L35 with a 22pF capacitor.
+
+* Replace C117 with a 18pF capacitor.
 
 ## Board 6 - First board I worked on for initial bringup
 
@@ -193,6 +147,10 @@ Things to do for a new board:
 
 * Board is no longer usable, the debug connector came off.
 
+## Board 5 - 4th board I worked on
+
+* Applied all changes except cutting OTHER\_HW\_POWER\_OFF\_N.
+
 ## Board 8 - 3rd board I worked on
 
 * Applied all the board bring up changes.
@@ -246,7 +204,7 @@ Things to do for a new board:
 * Replaced L38 with 5.8nH and C117 with 18pF.
 
 * Removed R105 to disable the RF switches and added a zero-ohm
-  resistor to R107.
+  resistor to R107 and R96 to let RF through.
   
 * R79 was changed to a 300 ohm component because I lost the 240 ohm
   component, and I think it was burned up from too much soldering,
@@ -263,18 +221,70 @@ Things to do for a new board:
   a little, it's now 18pF and 5.8nH.  That again changed the input
   match.  The input match is a little to high at around 90 ohms, but
   it's close enough for that.  That's a VSWR of 1.8.
+  
+* Put some power out on the output through the match.  The frequency
+  on the match was still a little high, it seemed to be peaking at
+  about 445MHz and couldn't put out full power at 435MHz.  Changed the
+  PA output capacitor to 20pF.  That seems to work well.  Well, it's a
+  little low now, perhaps 19pF would be ideal.
+  
+* Changed all the RF output filter parts to their required values.  I'm
+  getting around 1.2W out of the filter at this point.
 
-### Fixed
+# New Board Bring up
 
-* The RF power output switch U33 appears to always be connected from
-  RF\_OUT\_SWTICH to the antenna output, no matter the setting of
-  ACTIVE1\_N.  It's not that way on board 5, so it appears to be the
-  switch.  I'm wondering if an over voltage messed it up?  Or maybe
-  transmitted power?  But maybe it's working.  If I have a signal
-  going out, turning the switch on and off give a 35dB difference in
-  power.  This appears to not be an issue.
+Things to do for a new board:
 
-### Commands
+* Add power connector.
+
+* Add watchdog jumper.
+
+* Replace U5 with the proper part.
+
+* Replace L35 with a 22pF capacitor.
+
+* Add R112 so the boards can supply/get power from the PC104.
+
+* Replace RX AX5043 inductors.  18nH works well.
+
+* Add blue wire for the LNA bias from between R77 and C105 to
+  between L32 and C107/108.
+
+* Possibly replace R117 with a 15/18K resistor.  The voltage is
+  a little low for the AND gate input.  (Testing shows this is
+  not necessary, so this doesn't have to be done on prototype
+  boards.)
+
+* Replace L27 with a 2.7nH inductor.
+
+* Remove R80 and R82.  The input impedance of the power measurement
+  chip is 50 ohms.
+  
+* Remove R105 to disable the RF switches.
+
+* Add zero-ohm R107 and R96 to bypass the RF switches.
+
+* Change the PA power input inductor (L37) to a 100nH 1A part with
+  100mOhm DCs.
+  
+* Change C124 to 6.4pF.
+
+* Change L30 to a 20nH inductor.
+
+* Change C126 to 11pF.
+
+* Change L33 to a 17nH inductor.
+
+* Change C128 to 5.4pF.
+
+* Replace C117 w ith a 20pF capacitor.
+
+* Replace L38 with a 5.8nH inductor.
+
+* Cut the OTHER\_HW\_POWER\_OFF\_N line between Q2 and the CPU.  It
+  was causing issues.
+  
+# Commands
 
 inhibit tx
 
@@ -283,6 +293,8 @@ set tx power 4 100
 set tx power 4 50
 
 set tx power 4 35
+
+set tx power 4 22
 
 test freq 4
 
@@ -295,3 +307,9 @@ get power flags
 set freq 4 435760
 
 toggle rf power print
+
+set unix time  (date +'%s' to get unix time)
+
+trace can 1
+
+send can <canNum> <priority> <type> <id> <dest> <msglen> <bytes....>
