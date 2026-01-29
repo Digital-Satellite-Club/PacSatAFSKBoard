@@ -176,7 +176,7 @@ ac lin 5000 1Meg 400meg
 plot title "LNA Input Loss" db((v(vmout1) * i(Vmout)) / (v(vmin1) * i(Vmin)))
 alterparam measimp = 1
 reset
-ac lin 5000 1Meg 400meg
+ac lin 5000 100Meg 400meg
 plot title "LNA Input Impedance" v(vmin2) vi(vmin2)
 
 alterparam measimp = 0

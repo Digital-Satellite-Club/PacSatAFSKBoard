@@ -30,7 +30,8 @@
 * This board has the capacitor on the PA RF input added between
   the L35 inductor and the PA, so the TX\_PA\_DRV input/output
   connector (P13) can be used on this board.
- 
+
+
 * U.FL connector P6 got pulled off the board.
 
 * Currently C124, L30, C125, L33 and L38 are not installed.  I pulled
@@ -60,6 +61,9 @@
 * Replaced L35 with a 22pF capacitor.
 
 * Replace C117 with a 18pF capacitor.
+
+* Added a 18nH inductor to the transmit AX5043, it will range on both
+  144 and 440 now.  So a loopback check is feasible.
 
 ## Board 6 - First board I worked on for initial bringup
 
